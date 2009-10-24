@@ -13,7 +13,7 @@ On the PHP / Apache server (port 80):
 On the Tomcat / Java server (port 8080):
   * OWASP WebGoat version 5.3
   * OWASP CSRFGuard Test Application version 2.2
-  * [[yazd][http://www.forumsoftware.ca/]] version 1.0
+  * [http://www.forumsoftware.ca/ Yazd] version 1.0
   * Mandiant Struts Forms
    * 
 
