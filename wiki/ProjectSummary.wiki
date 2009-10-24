@@ -18,9 +18,11 @@ On the Tomcat / Java server (port 8080):
 
 = Management =
 
-Once booted, the VM can be administered few a few different mechanisms.  In all cases, use a username of "root" and a password of "owaspbwa".  Note, I don't consider these components "in scope" for the vulnerabilities in the VM... they are just there to support management.  Administrative interfaces:
+Once booted, the VM can be administered few a few different mechanisms. Note, I don't consider these components "in scope" for the vulnerabilities in the VM... they are just there to support management.  Administrative interfaces:
   * SSH
   * Samba shares
   * Console login
   * PHPMyAdmin (at `http://ip/phpmyadmin`)
   * Tomcat Manager (at `http://ip:8080/manager`)
+
+*In all cases, use a username of "root" and a password of "owaspbwa".*
