@@ -22,5 +22,5 @@ Once booted, the VM can be administered few a few different mechanisms.  In all 
   * SSH
   * Samba shares
   * Console login
-  * PHPMyAdmin (at !http://ip/phpmyadmin)
-  * Tomcat Manager (at !http://ip:8080/manager)
+  * PHPMyAdmin (at `http://ip/phpmyadmin`)
+  * Tomcat Manager (at `http://ip:8080/manager`)
