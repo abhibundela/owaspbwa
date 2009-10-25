@@ -16,6 +16,12 @@ On the Tomcat / Java server (port 8080):
   * [http://www.forumsoftware.ca/ Yazd] version 1.0
   * [http://www.mandiant.com/ Mandiant] Struts Forms
 
+= User Accounts =
+
+The various vulnerable web applications have some user accounts created and some content included.  
+
+* TODO - I need to document the accounts for each application. *
+
 = Management =
 
 Once booted, the VM can be administered few a few different mechanisms. Note, I don't consider these components "in scope" for the vulnerabilities in the VM... they are just there to support management.  Administrative interfaces:
