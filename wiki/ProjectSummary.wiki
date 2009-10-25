@@ -23,7 +23,7 @@ Once booted, the VM can be administered few a few different mechanisms. Note, I 
   * Samba shares
   * Console login
   * PHPMyAdmin (at `http://ip/phpmyadmin`)
-  * Tomcat Manager (at `http://ip:8080/manager`)
+  * Tomcat Manager (at `http://ip:8080/manager/html`)
 
 *In all cases, use a username of "root" and a password of "owaspbwa".*
 
