@@ -11,4 +11,4 @@ Things to do before the 1.0 release at [http://www.appsecdc.org OWASP AppSec DC 
   * Create default.html page(s) for Tomcat and Apache servers
   * Document user accounts for various applications.
   * Create script to delete logs, etc before publishing VM (and run it)
-  * Find place to host VM for conference (ideally via BitTorrent)
+  * Find place to host VM for conference (ideally via !BitTorrent)
