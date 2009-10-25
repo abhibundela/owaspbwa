@@ -1,0 +1,13 @@
+#summary Things to do on the project
+
+= To Do List=
+
+Things to do before the 1.0 release at [http://www.appsecdc.org OWASP AppSec DC Conference] in November 2009:
+  * Fix / delete applications that are still not working
+     * Flash applications
+     * !PersonalBlog
+     * Others?
+  * Delete struts hello world application (unless it is needed)
+  * Create default.html page(s) for Tomcat and Apache servers
+  * Create script to delete logs, etc before publishing VM (and run it)
+  * Find place to host VM for conference
