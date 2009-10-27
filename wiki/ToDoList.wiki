@@ -17,3 +17,6 @@ Things to do before the 1.0 release at [http://www.appsecdc.org OWASP AppSec DC 
      * Delete the bash histories for root and user
      * Other things?
   * Find place to host VM for conference (ideally via !BitTorrent)
+
+= Apps to Add (if time allows) =
+   * Old version of Squirrel Mail - http://squirrelmail.org/
