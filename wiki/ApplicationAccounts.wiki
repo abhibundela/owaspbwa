@@ -7,8 +7,6 @@ Below are accounts for various applications in the OWASP-BWA project VM.  Note, 
 *IN ALL CASES, THE USERID AND PASSWORD ARE THE SAME*
 
 || Application || User Accounts ||
-|| phpBB (http://ip/phpBB/) || user - regular user
-admin - administrator
-other user - comment ||
+|| phpBB (http://ip/phpBB/) || user - regular user<br>admin - administrator<br>other user - comment ||
 || asdf || asdf ||
 || || ||
