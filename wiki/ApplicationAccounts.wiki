@@ -1,0 +1,14 @@
+#summary List of accounts for various applications in the OWASP-BWA project.
+
+= Introduction =
+
+Below are accounts for various applications in the OWASP-BWA project VM.  Note, this does not include management accounts that are not considered "in scope" for the project (such as OS accounts available via SSH and Samba or MySQL user accounts).
+
+*IN ALL CASES, THE USERID AND PASSWORD ARE THE SAME*
+
+|| Application || User Accounts ||
+|| phpBB (http://ip/phpBB/) || user - regular user
+admin - administrator
+other user - comment ||
+|| asdf || asdf ||
+|| || ||
