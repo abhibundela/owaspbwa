@@ -7,6 +7,8 @@ Below are accounts for various applications in the OWASP-BWA project VM.  Note, 
 *IN ALL CASES, THE USERID AND PASSWORD ARE THE SAME*
 
 || Application || User Accounts ||
-|| phpBB (`http://ip/phpBB/`) || user - regular user<br>admin - administrator<br>other user - comment ||
+|| phpBB (`http://ip/phpBB2/`) || ? ||
+|| WordPress(`http://ip/wordpress/`) || ? ||
 || Yazd (`http://ip:8080/yazd/`) || admin - administrator<br>user - normal user<br>user2 - normal user<br>mod - forum moderator ||
+|| WebGoat (`http://ip:8080/WebGoat/attack`) || admin - administrator<br>guest - guest ||
 || || ||
