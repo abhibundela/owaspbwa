@@ -8,5 +8,5 @@ Below are accounts for various applications in the OWASP-BWA project VM.  Note, 
 
 || Application || User Accounts ||
 || phpBB (`http://ip/phpBB/`) || user - regular user<br>admin - administrator<br>other user - comment ||
-|| asdf || asdf ||
+|| Yazd (`http://ip:8080/yazd/`) || admin - administrator<br>user - normal user<br>user2 - normal user<br>mod - forum moderator ||
 || || ||
