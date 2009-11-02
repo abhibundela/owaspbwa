@@ -7,16 +7,19 @@ Things to do before the 1.0 release at [http://www.appsecdc.org OWASP AppSec DC 
      * Flash applications
      * !PersonalBlog
      * Others?
+     * Squirrelmail
   * Delete struts hello world application (unless it is needed)
   * Create CSRF-able version of the CSRFGuard test app (disable guard)
   * Finish Mandiant struts forms
-  * Create default.html page(s) for Tomcat and Apache servers
-  * Document user accounts for various applications.
+  * Finalize default.html page(s) for Tomcat and Apache servers
+  * Finish documenting user accounts for various applications.
   * Create script to delete logs, etc before publishing VM (and run it).  Script should likely:
      * Delete all files under /var/log (but not any directories)
      * Delete the bash histories for root and user
+     * Delete all files and directories in /tmp
+     * Maybe clean some other things from user and root home directories (especially . directories)
      * Other things?
   * Find place to host VM for conference (ideally via !BitTorrent)
 
 = Apps to Add (if time allows) =
-   * Old version of Squirrel Mail - http://squirrelmail.org/
+   * ?
