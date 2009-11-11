@@ -10,13 +10,13 @@ The VM is in [http://www.vmware.com VMware] format compatible with their no-cost
 The VM can be downloaded as a .zip file or as a much smaller [http://www.7-zip.org/ .7z 7-zip Archive].  *BOTH FILES CONTAIN THE EXACT SAME VM!*  Please download the .7z archive if possible to save bandwidth (and time).
 
 .7z File:
-  * Size: 
-  * MD5:
+  * Size: 499 MB 
+  * MD5: d69131c4b09373b277f0b77390dae3ba
   * Download from [http://fred.mandiant.com/OWASP_Broken_Web_Apps_VM_v0.9.7z http://fred.mandiant.com/OWASP_Broken_Web_Apps_VM_v0.9.7z]
 
 Zip File:
-  * Size
-  * MD5:
+  * Size: 773 MB
+  * MD5: b1cacc36b890e51e985b026600f4ac7b
   * Download from [http://fred.mandiant.com/OWASP_Broken_Web_Apps_VM_v0.9.zip http://fred.mandiant.com/OWASP_Broken_Web_Apps_VM_v0.9.zip]
 
 = Installation =
