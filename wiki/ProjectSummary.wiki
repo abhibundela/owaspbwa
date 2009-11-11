@@ -18,6 +18,10 @@ On the Tomcat / Java server (port 8080):
   * [http://www.forumsoftware.ca/ Yazd] version 1.0
   * [http://www.mandiant.com/ Mandiant] Struts Forms
 
+|foo|bar|
+|asdf|qwer|
+
+
 = User Accounts =
 
 The various vulnerable web applications have some user accounts created and some content included.  See [ApplicationAccounts] for details.
