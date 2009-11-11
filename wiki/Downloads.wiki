@@ -5,7 +5,7 @@
 
 Version 0.9 of the OWASP Broken Web Applications Virtual Machine has been released on November 11, 2009 in advance of the [http://appsecdc.org/ OWASP AppSec DC Conference].
 
-The VM can be downloaded as a .zip file or as a much smaller [http://www.7-zip.org/ .7z 7-zip Archive].  *BOTH FILES CONTAIN THE EXACT SAME VM!*
+The VM can be downloaded as a .zip file or as a much smaller [http://www.7-zip.org/ .7z 7-zip Archive].  *BOTH FILES CONTAIN THE EXACT SAME VM!*  Please download the .7z archive if possible to save bandwidth (and time).
 
 .7z File:
   * Size: 
