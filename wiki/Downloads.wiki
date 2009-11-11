@@ -1,0 +1,5 @@
+#summary Download Information for the OWASP Broken Web Applications Project
+
+= Downloads =
+
+Version 0.9 of the OWASP Broken Web Applications Virtual Machine has been released on November 11, 2009 in advance of the [www.appsecdc.org OWASP AppSec DC Conference].
