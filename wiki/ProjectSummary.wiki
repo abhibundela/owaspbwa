@@ -12,7 +12,7 @@ Intentionally Vulnerable Applications:
   * [http://www.owasp.org/index.php/Category:OWASP_CSRFGuard_Project OWASP CSRFGuard] Test Application version 2.2 (Java)
   * [http://www.mandiant.com/ Mandiant] Struts Forms (Java)
   * Simple ASP.NET Forms (ASP.NET/C#)
-  * Simple Form with DOM Cross Site Scripting (HTML/JavaScript)
+  * Simple Form with DOM Cross Site Scripting (HTML/!JavaScript)
 
 Old Versions of Real Applications:
   * [http://wordpress.org/ WordPress] 2.0.0 (PHP, released December 31, 2005, downloaded from [http://www.oldapps.com/Wordpress.php www.oldapps.com])
