@@ -12,9 +12,11 @@ On the PHP / Apache server (port 80):
 
 On the Tomcat / Java server (port 8080):
   * [http://www.owasp.org/index.php/Category:OWASP_WebGoat_Project OWASP WebGoat] version 5.3
-  * [http://www.owasp.org/index.php/Category:OWASP_CSRFGuard_Project OWASP CSRFGuard] Test Application version 2.2 (should not have any vulnerabilities)
+  * [http://www.owasp.org/index.php/Category:OWASP_CSRFGuard_Project OWASP CSRFGuard] Test Application version 2.2
   * [http://www.forumsoftware.ca/ Yazd] version 1.0
   * [http://www.mandiant.com/ Mandiant] Struts Forms
+  * Simple ASP.NET Forms
+  * Simple form with DOM Cross Site Scripting
 
 = User Accounts =
 
