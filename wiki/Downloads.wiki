@@ -17,7 +17,7 @@ The VM can be downloaded as a .zip file or as a much smaller [http://www.7-zip.o
 Zip File:
   * Size: 773 MB
   * MD5: b1cacc36b890e51e985b026600f4ac7b
-  * Download from [http://fred.mandiant.com/OWASP_Broken_Web_Apps_VM_v0.9.zip http://fred.mandiant.com/OWASP_Broken_Web_Apps_VM_v0.9.zip]
+  * Download from `http://fred.mandiant.com/OWASP_Broken_Web_Apps_VM_v0.9.zip` (deliberately not a link to encourage users to click on the .7z download above)
 
 = Installation =
 
