@@ -1,11 +1,10 @@
 #summary Things to do on the project
 
 = To Do List=
+   * Look in to why network card does not get an IP address from DHCP on boot.
 
-Things to do before the 0.9 release at [http://www.appsecdc.org OWASP AppSec DC Conference] in November 2009:
 
-  * Finish Mandiant struts forms
-  * Burn a few CDs to hand out at the conference 
-
-= Apps to Add (if time allows) =
-   * ?
+= Apps to Add (suggested by [http://mtesauro.com/ Matt Tesauro]) =
+   * gtd-php version 0.7 (http://sourceforge.net/projects/gtd-php/files/)
+   * OrangeHRM version 2.4.2 (http://www.orangehrm.com/)
+   * Get-Boo version 1.04 (http://sourceforge.net/projects/getboo/files/)
