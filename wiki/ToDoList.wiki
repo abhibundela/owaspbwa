@@ -1,6 +1,8 @@
 #summary Things to do on the project
 
-= To Do List=
+Below is a list of items that we would like to accomplish for the 1.0 release.
+
+= General / Bug Fixes =
    * Look in to why network card does not get an IP address from DHCP on boot.
 
 
@@ -8,3 +10,5 @@
    * gtd-php version 0.7 (http://sourceforge.net/projects/gtd-php/files/)
    * OrangeHRM version 2.4.2 (http://www.orangehrm.com/)
    * Get-Boo version 1.04 (http://sourceforge.net/projects/getboo/files/)
+
+= Other Apps to Add =
