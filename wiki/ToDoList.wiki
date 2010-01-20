@@ -4,6 +4,7 @@ Below is a list of items that we would like to accomplish for the 1.0 release.
 
 = General / Bug Fixes =
    * Look in to why network card does not get an IP address from DHCP on boot.
+   * Copy .htaccess file to vicnum directory to disable PHP magic quotes (which prevent SQL Injection attacks from working)
 
 = Apps to Upgrade
    * OWASP Vicnum (http://www.owasp.org/index.php/Category:OWASP_Vicnum_Project)
