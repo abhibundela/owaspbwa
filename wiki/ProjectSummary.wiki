@@ -44,3 +44,5 @@ Once booted, the VM can be administered few a few different mechanisms. Note, I 
 I don't have a catalog of all the vulnerabilities contained in the VM.  My plan is to track those here on Google Code as "Issues" with the label "Known-Vulnerability" and with a status of SubmittedKV and VerifiedKV. 
 
 Please review the [http://code.google.com/p/owaspbwa/issues/list Issues Page] to see what people have already reported and feel free to submit some additional items for everyone's benefit.
+
+I have also been experimenting with documenting the issues in a Google Docs Spreadsheet.  You can view what I have so far at http://spreadsheets.google.com/ccc?key=0AjS7iIavl273dFkzME1WSE5faHg0Ykhya1c3SmdrVmc&hl=en.
