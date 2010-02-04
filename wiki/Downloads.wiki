@@ -25,7 +25,7 @@ The VM requires no installation.  Simply extract the files from the archive and 
 
 Note - The VM is entirely command line driven.  X-Windows or other GUI systems have not been installed.
 
-If you would like to access your VM from links off this site, the one configuration change you may need to make is to add an entry to your hosts file pointing to the name owaspbwa to the IP address of your VM.
+If you would like to access your VM from links off this site, the one configuration change you may need to make is to add an entry to your hosts file pointing to the name owaspbwa to the IP address of your VM.  It is recommended that you do this so that you can follow links on this web site to pages on your local OWASPBWA VM.
 
 = Known Bugs = 
 
