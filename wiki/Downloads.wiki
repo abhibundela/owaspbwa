@@ -3,7 +3,7 @@
 
 = Downloads =
 
-Version 0.9 of the OWASP Broken Web Applications Virtual Machine (VM) has been released on November 11, 2009 in advance of the [http://appsecdc.org/ OWASP AppSec DC Conference].
+Version 0.9 of the OWASP Broken Web Applications Virtual Machine (VM) was released on November 11, 2009 for the [http://appsecdc.org/ OWASP AppSec DC Conference].
 
 The VM is in [http://www.vmware.com VMware] format compatible with their no-cost [http://www.vmware.com/products/player/ VMware Player] and [http://www.vmware.com/products/server/ VMware Server] products (along with their commercial products).  
 
@@ -26,3 +26,7 @@ The VM requires no installation.  Simply extract the files from the archive and 
 Note - The VM is entirely command line driven.  X-Windows or other GUI systems have not been installed.
 
 If you would like to access your VM from links off this site, the one configuration change you may need to make is to add an entry to your hosts file pointing to the name owaspbwa to the IP address of your VM.
+
+= Known Bugs = 
+
+Known bugs (not the intentional security issues) in the VM are listed at [KnownBugsIn09]
