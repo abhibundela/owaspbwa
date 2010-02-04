@@ -26,7 +26,7 @@ Old Versions of Real Applications:
 
 = Download = 
 
-See the [Downloads download page] for information about where to get the VM.
+See the [Downloads downloads page] for information about where to get the VM.
 
 = User Accounts =
 
