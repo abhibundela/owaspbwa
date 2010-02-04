@@ -4,4 +4,4 @@
 = Known Bugs in OWASP BWA v0.9 =
 
   * *The VM may not get an IP address on boot* - If this happens, log in as root (the password is owaspbwa) and run dhclient.  That should give the machine an IP address.
-  * The OWASP Vicnum application is protected by PHP "magic quotes".  This prevents SQL injection on the application.
+  * The OWASP Vicnum application is protected by PHP "magic quotes".  This prevents SQL injection in the application, even though it is vulnerable.
