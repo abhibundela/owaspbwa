@@ -16,4 +16,4 @@ Below is a list of items that we would like to accomplish for the 1.0 release.
    * Get-Boo version 1.04 (http://sourceforge.net/projects/getboo/files/)
 
 = Other Apps to Add =
-   * AppSensor Demo Application (when released - demo at http://defendtheapp.com/AppSensorDemo/login.jsp and code should be released at http://code.google.com/p/appsensor/)
+   * !AppSensor Demo Application (when released - demo at http://defendtheapp.com/AppSensorDemo/login.jsp and code should be released at http://code.google.com/p/appsensor/)
