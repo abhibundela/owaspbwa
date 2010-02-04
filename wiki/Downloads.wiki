@@ -7,7 +7,7 @@ Version 0.9 of the OWASP Broken Web Applications Virtual Machine (VM) was releas
 
 The VM is in [http://www.vmware.com VMware] format compatible with their no-cost [http://www.vmware.com/products/player/ VMware Player] and [http://www.vmware.com/products/server/ VMware Server] products (along with their commercial products).  
 
-The VM can be downloaded as a .zip file or as a much smaller [http://www.7-zip.org/ .7z 7-zip Archive].  *BOTH FILES CONTAIN THE EXACT SAME VM!*  Please download the .7z archive if possible to save bandwidth (and time). 7-zip IS [http://www.7-zip.org/download.html available for Mac].
+The VM can be downloaded as a .zip file or as a much smaller [http://www.7-zip.org/ .7z 7-zip Archive].  *BOTH FILES CONTAIN THE EXACT SAME VM!*  Please download the .7z archive if possible to save bandwidth (and time). 7-zip IS [http://www.7-zip.org/download.html available for Mac, Linux, and other Operating Systems].
 
 .7z File:
   * Size: 499 MB 
