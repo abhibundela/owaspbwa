@@ -24,6 +24,10 @@ Old Versions of Real Applications:
   * [http://www.phpbb.com/ phpBB] 2.0.0 (PHP, released April 4, 2002, downloaded from [http://www.oldapps.com/phpbb.php www.oldapps.com]) 
   * [http://www.forumsoftware.ca/ Yazd] version 1.0 (Java, released February 20, 2002)
 
+= Download = 
+
+See the [Download download page] for information about where to get the VM.
+
 = User Accounts =
 
 The various vulnerable web applications have some user accounts created and some content included.  See [ApplicationAccounts] for details.
