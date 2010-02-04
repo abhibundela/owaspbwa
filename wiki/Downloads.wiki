@@ -31,4 +31,4 @@ If you would like to access your VM from links off this site, the one configurat
 
 All known bugs (not the intentional security issues) in the VM are listed at [KnownBugsIn09].  
 
-*Most importantly, the VM may not get an IP address from DHCP on boot up.  If this happens, log in as root (the password is owaspbwa) and run dhclient. That should give the machine an IP address.*
+*Most importantly, the VM may not get an IP address from DHCP on boot up.*  If this happens, log in as root (the password is owaspbwa) and run dhclient. That should give the machine an IP address.
