@@ -1,0 +1,60 @@
+<!-- Note to anyone who may want to edit this page.  It is hard linked to both /var/lib/tomcat6/webapps/ROOT/index.html and /var/www/index.html (symlinking didn't work) -->
+
+<html>
+<head>
+<title>OWASP Broken Web Applications</title>
+</head>
+<body>
+<center><h1>OWASP Broken Web Applications</h1></center>
+<p>
+This is the VM for the <a href="http://www.owasp.org">Open Web Application Security Project (OWASP)</a> <a href="http://code.google.com/p/owaspbwa/">Broken Web Applications </a>project.  It contains many, very vulnerable web applications.  More information about this project can be found at <a href="http://code.google.com/p/owaspbwa/">http://code.google.com/p/owaspbwa/</a>.
+<p>
+<center><b>!!! This VM has many serious security issues, we strongly recommend that you run<br>
+    it only in "host only" or "NAT" network in the virtual machine settings !!!</b></center>
+<p>
+This VM has two web servers running.  One Apache server  on port 80 and one Tomcat server on port 8080.  The following vulnerable web applications are running on the VM (listed in no particular order).
+<p>
+Intentionally Vulnerable Applications:
+<ul>
+<script type="text/javascript">
+
+var ip = location.href.split("/")[2].split(":")[0];
+var apachebase = "http://" + ip +"/";
+var tomcatbase = "http://" + ip + ":8080/";
+
+document.write('<li><a href="' + tomcatbase + 'WebGoat/attack">OWASP WebGoat version 5.3-SNAPSHOT</a> (Java, use username=guest, password=guest, <a href="http://www.owasp.org/index.php/Category:OWASP_WebGoat_Project">home page</a>)</li>');
+document.write('<li><a href="' + apachebase + 'vicnum">OWASP Vicnum</a> (Perl, <a href="http://www.owasp.org/index.php/Category:OWASP_Vicnum_Project">home page</a>)</li>');
+document.write('<li><a href="' + apachebase + 'mutillidae">Mutillidae version 1.3</a> (PHP, <a href="http://www.irongeek.com/i.php?page=security/mutillidae-deliberately-vulnerable-php-owasp-top-10">home page</a>)</li>');
+document.write('<li><a href="' + apachebase + 'dvwa">Damn Vulnerable Web Application version 1.06</a> (PHP, use username=admin, password=password, <a href="http://www.dvwa.co.uk/">home page</a>)</li>');
+document.write('<li><a href="' + tomcatbase + 'OWASP-CSRFGuard-Test-Application.html">OWASP CSRFGuard Test Application version 2.2</a> (Java, <a href="http://www.owasp.org/index.php/Category:OWASP_CSRFGuard_Project">home page</a>)</li>');
+document.write('<li><a href="' + tomcatbase + 'mandiant-struts-forms.html">Mandiant Struts Forms</a> (Java/Struts)</li>');
+document.write('<li><a href="' + apachebase + 'mono">Simple ASP.NET Forms</a> (ASP.NET/C#)</li>');
+document.write('<li><a href="' + apachebase + 'dom-xss-example.html">Simple Form with DOM Cross Site Scripting</a> (HTML/JavaScript)</li>');
+</script>
+<NOSCRIPT>
+ <h1>You must enable JavaScript to see the list of applications</h1>
+</NOSCRIPT>
+
+</ul>
+<p>
+Old Versions of Real Applications:
+<ul>
+<script type="text/javascript">
+document.write('<li><a href="' + apachebase + 'wordpress">WordPress version 2.0.0</a> (PHP, released December 31, 2005, <a href="http://wordpress.org/">home page</a>) </li>');
+document.write('<li><a href="' + apachebase + 'phpBB2">phpBB version 2.0.0</a> (PHP, released April 4, 2002, <a href="http://www.phpbb.com/">home page</a>) </li>');
+document.write('<li><a href="' + tomcatbase + 'yazd10/bay">Yazd version 1.0</a> (Java, released February 20, 2002, <a href="http://www.forumsoftware.ca/">home page</a>) </li>');
+</script>
+<NOSCRIPT>
+ <h1>You must enable JavaScript to see the list of applications</h1>
+</NOSCRIPT>
+</ul>
+For more information about the specific versions of applications running and how to adminsiter this VM, see <a href="http://code.google.com/p/owaspbwa/wiki/ProjectSummary">http://code.google.com/p/owaspbwa/wiki/ProjectSummary</a>.  
+<p>
+For usernames to use with these applications, see <a href="http://code.google.com/p/owaspbwa/wiki/ApplicationAccounts">http://code.google.com/p/owaspbwa/wiki/ApplicationAccounts</a>.  
+<p>
+For information about the known vulnerabilities in these applications, see <a href="http://code.google.com/p/owaspbwa/issues/list">http://code.google.com/p/owaspbwa/issues/list</a>.
+<p>
+<center>This project is sponsored by <a href="http://www.mandiant.com">MANDIANT</a> <a href="http://www.mandiant.com"><img src="mandiant.png"align="center" border=0></a></center>
+	
+<p>
+</body></html>

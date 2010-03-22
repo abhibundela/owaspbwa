@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>phpBB 2.0.0 :: Extras</title>
+<link rel="stylesheet" href="../templates/subSilver/subSilver.css" type="text/css" />
+<style type="text/css">
+<!--
+p,ul,td {font-size:10pt;}
+h2 {font-size:15pt;font-weight:bold;}
+h3 {font-size:12pt;}
+//-->
+</style>
+</head>
+<body bgcolor="#E5E5E5" text="#000000" link="#006699" vlink="#006699">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="10" align="center"> 
+	<tr> 
+		<td class="bodyline"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td>
+				
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td><img src="../templates/subSilver/images/logo_phpBB.gif" border="0" alt="phpBB2 : Creating Communities" vspace="1" /></a></td>
+		<td align="center" width="100%" valign="middle"><span class="maintitle">phpBB 2.0.0 Extras</span></td>
+	</tr>
+</table>
+
+<p>This directory contains a few extra <i>add-ons</i> or what we call <b>mods</b> for phpBB 2.0.0.</p>
+
+<p align="center"><u>Please note none of these are directly supported by phpBB Group</u></p>
+
+<p>You should contact the author/s (via our forums) if you want further information. A large number of additional mods are available introducing increased funtionality to the standard phpBB2 release. You can find many additional mods at our main site:</p>
+
+<p><a href="http://www.phpbb.com/mods/" target="_new">http://www.phpbb.com/mods/</a></p>
+
+<h2><u>Template cacheing</u></h2>
+
+<p><b>Authors: Crimsonbane, psoTFX and nathan</b></p>
+
+<p>During development of phpBB2 a recurring issue of server load has cropped up. phpBB 2.0.0 differs from many of its contemporaries by doing many more tasks at runtime. While this allows for simpler upgrade and modification paths it also leads to a greater strain being placed on the server. To help reduce this issue a cacheing template system was created based on work by Crimsonbane. This stores a compiled version of each template resulting in a generally significant reduction in server load and perhaps page generation time.</p>
+
+<p>Two versions of the cacheing system are contained in this directory, one uses flat files the other a MySQL database. Testing has shown that, in general, the average virtual host seems to show better performance with the flat file solution. However this may not be the case for your system, so please feel free to try both.</p>
+
+<p>In both cases you need to rename your existing template.php script (in includes/) and replace it with whichever template_*.php you want to try.</p>
+
+<h3>template_file_cache.php</h3>
+
+<p>To use the flat file system you need to add the following folders to templates/subSilver (or whatever template/s you are using): </p>
+
+<pre>cache/ 
+cache/admin/</pre>
+
+<p>And give both of them global write access (ie. chmod a+w, or if you prefer chmod 777). <b>Please note</b> that creating a world writeable directory is of course a potential security issue. Most of the time this is not a great issue, however on virtual hosting accounts there may be users who have nothing better to do than cause problems. Therefore you should monitor the status of these directories regularly and report any problems to your hosting provider (who will be in a position to take action against any offending user).</p>
+
+<h3>template_db_cache.php</h3>
+
+<p>To use the database system (note that this is <b>only</b> compatible with MySQL at present) you need to create the following table (replacing the phpbb_ prefix with your own if you used something different):</p>
+
+<pre>
+CREATE TABLE phpbb_template_cache ( 
+  template_name char(255) NOT NULL default '', 
+  template_handle char(50) NOT NULL default '', 
+  template_cached int(11) NOT NULL default '0', 
+  template_echo tinyint(1) NOT NULL default '1', 
+  template_compile text NOT NULL, 
+  PRIMARY KEY  (template_name) 
+) 
+</pre>
+
+<p>These files should not be incorporated into any mod or other plug-in, etc. They have been tested quite thoroughly but we cannot guarantee their stability in all cases. The system is based on work by Crimsonbane and of course Nathan's original templating system.</p>
+
+<h2><u>attachments.zip</u></h2>
+
+<p><b>Author: Acyd Burn</b></p>
+
+<p>This modification introduces the ability to upload attachments to posts. It incorporates a number of advanced options, statistics and admin functions. We will endeavour to retain compatibility with this mod in the next release of 2.x so feel free to install and play.</p>
+
+<p>Please ensure you follow the directions in the archive to the letter. Installation of this modification requires changes to a number of files in addition to the database. Do not attempt to install this if you are not comfortable making these changes!</p>
+
+<h2><u>card_ban_system.zip</u></h2>
+
+<p><b>Author: Niels Chr. Denmark</b></p>
+
+<p>Many administators have requested a more advanced method of warning and banning users who have misbehaved on their forums. Niels has developed an advanced system which may be suitable for this purpose in many cases. It uses a series of cards; green, yellow, blue and red to allow users granted permission to warn moderators about troublesome posters. These warnings are logged and moderators informed and if abuse continues and the number of cards increases beyond an admin defineable number the user will be automatically banned.</p>
+
+<p>As with the attachment mod this is an invasive addition and you should not attempt to install it unless you are confident with modifying scripts and running database commands manually.</p>
+
+<h2><u>guest_lang.zip</u></h2>
+
+<p><b>Author: Niels Chr. Denmark</b></p>
+
+<p>By default phpBB 2.0.0 uses the admin defineable 'default_language' for all guest visitors. Most of the time this will be adaquate. However for boards which cater for visitors from many different nations this may not be entirely suitable. Niels has put together a modification which allows users to temporarily alter their default language to any one of those installed. This should address issues with new users not being to understand the registration process for example.</p>
+
+<h2><u>last_visit.zip</u></h2>
+
+<p><b>Author: Niels Chr. Denmark</b></p>
+
+<p>phpBB 2.0.0 retains the last visit date of all registered users. However this information is by default reported only for the current user. This modification outputs the last visit time of all users directly in their profile and elsewhere.</p>
+
+<h2><u>male_female.zip</u></h2>
+
+<p><b>Author: Niels Chr. Denmark</b></p>
+
+<p>While phpBB 2.0.0 allows users to set a significant amount of personal information it does not include the sex of the user. This mod solves that problem. In addition it allows for output of a little male/female symbol in various templates such as viewtopic.</p>
+
+<p>Again this modification involves modifying the database and you should not attempt to install it unless you are confident with modifying scripts and running database commands manually.</p>
+
+<h2><u>Copyright and disclaimer</u></h2>
+
+<p>This application is opensource software released under the <a href="http://www.gnu.org/licenses/gpl.html" target="_new">GPL</a>. Please see source code and the Docs directory for more details. The phpBB2 package, its contents and the template cacheing files are Copyright © 2001/2002 <a href="http://www.phpbb.com/" target="_new">phpBB Group</a>, All Rights Reserved. Other packages are the copyright of their respective authors.</p>
+
+				</td>
+			</tr>
+		</table></td>
+	</tr>
+</table>
+
+</body>
+</html>

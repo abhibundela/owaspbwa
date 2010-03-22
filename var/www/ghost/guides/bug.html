@@ -1,0 +1,15 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<link type='text/css' rel='stylesheet' href='../stylesheet/styles.css' />
+</head>
+<body style='background-color:#3a3d32'>
+<h2>Browser Bugs, Fuzzing, and ActiveX Controls</h2>
+<p>
+Browser security bugs are a huge problem and allow attackers to exploit holes in the actual software. Over the years Internet Explorer has been a huge player as one of the most commonly targeted browsers. There are many ways to test for holes in the application and its add-ons or controls. One of the tools that I added to my tools list was axman, through the use of this tool and windbg an attacker can find vulnerable activeX controls for internet explorer. Axman is an activeX fuzzer that runs through all of the active x controls and spits out a list of what it sees as vulnerable. Then the you should go through and test each one to verify that it is in deed vulnerable. There are many different fuzzing tools online that you can use to test for possible vulnerabilities not just in the browser but also the actual web application. Once a browser bug is found there are a few different ways to exploit:<br />
+1) Creating a script that uses the bug to crash the victims browser, inject malware, rootkits, viruses, or gain access through a backdoor<br />
+2) Creating a Metasploit module that will exploit the newly found vulnerability<br /><br />
+There are many other ways to exploit a vulnerability many of which have not been covered in these documents and you should do further research.
+</p>
+</body>
+</html>
