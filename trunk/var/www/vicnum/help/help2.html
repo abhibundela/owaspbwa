@@ -1,0 +1,33 @@
+<head><TITLE> Help on Installing Vicnum </TITLE>  <HEAD>
+
+<body>
+<H2> Vicnum Install Instructions  </h2>
+<hr size="3" color="#FF00FF"></h2>
+
+<h3> 
+
+If you are working off a vm then login as root with a password of vicnum find out the IP address and point your browser at it.
+<p>
+
+Otherwise copy the files into the appropriate /var/www folder and play with LAMP to make it work. A few things to look out for.
+
+<ul>
+<li>    Make sure appropriate Apache modules are loaded
+<li>    Modify http config file to find perl code in the cgi-bin directory
+<li>    Consider putting an .htaccess file to protect the admin folder
+<li>	Review Magic quotes setting in php.ini (forces escapes on certain characters)
+<li>	PHP code will write to MYSQL database of vicnum, table of results, user root and password of vicnum
+<li>	Database tables and permissions need to be set in mysql
+<p>
+
+create table results (idnum int(4) NOT NULL auto_increment PRIMARY KEY, name char(100), guess int(3) ZEROFILL, count int(2), tod TIMESTAMP );<p> grant ALL on *.* to root@localhost IDENTIFIED BY 'vicnum' ;
+</ul><p>
+<hr size="3" color="#FF00FF">
+<pre>
+
+
+<h4>The Vicnum project was developed for educational purposes to demonstrate common web vulnerabilities. 
+
+For comments please visit the <a href="http://www.owasp.org/index.php/Category:OWASP_Vicnum_Project">OWASP project page.<A>
+<br></pre>
+</body>

