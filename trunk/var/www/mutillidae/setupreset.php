@@ -44,7 +44,8 @@ $result = mysql_query($query);
 echo mysql_error($conn );
 
 $query = "INSERT INTO accounts (username, password, mysignature) VALUES
-	('admin', 'adminpass', 'Monkey!!!'),
+	('admin', 'admin', 'Monkey!!!'),
+	('user', 'user', 'User Account'),
 	('adrian', 'somepassword', 'Zombie Films Rock!!!'),
 	('john', 'monkey', 'I like the smell of confunk'),
 	('ed', 'pentest', 'Commandline KungFu anyone?')";
@@ -60,7 +61,8 @@ $query ="INSERT INTO `blogs_table` (`cid`, `blogger_name`, `comment`, `date`) VA
 	(5, 'john', 'Listen to Pauldotcom!', '2009-03-01 22:29:04'),
 	(6, 'john', 'Why give users the ability to get to the unfiltered Internet? It''s just asking for trouble. ', '2009-03-01 22:29:49'),
 	(7, 'john', 'Chocolate is GOOD!!!', '2009-03-01 22:30:06'),
-	(8, 'admin', 'Fear me, for I am ROOT!', '2009-03-01 22:31:13')";
+	(8, 'admin', 'Fear me, for I am ROOT!', '2009-03-01 22:31:13'),
+	(9, 'user', 'User blog post', '2010-03-23 22:31:13')";
 //echo $query;
 $result = mysql_query($query);
 echo mysql_error($conn );

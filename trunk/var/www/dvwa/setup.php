@@ -53,11 +53,11 @@ if( isset( $_POST[ 'create_db' ] ) ) {
 	$baseUrl = substr( $baseUrl, 0, $stripPos ).'dvwa/hackable/users/';
 
 	$insert = "INSERT INTO users VALUES
-		('1','admin','admin','admin',MD5('password'),'{$baseUrl}admin.jpg'),
+		('1','admin','admin','admin',MD5('admin'),'{$baseUrl}admin.jpg'),
 		('2','Gordon','Brown','gordonb',MD5('abc123'),'{$baseUrl}gordonb.jpg'),
 		('3','Hack','Me','1337',MD5('charley'),'{$baseUrl}1337.jpg'),
 		('4','Pablo','Picasso','pablo',MD5('letmein'),'{$baseUrl}pablo.jpg'),
-		('5','bob','smith','smithy',MD5('password'),'{$baseUrl}smithy.jpg');";
+		('5','bob','smith','user',MD5('user'),'{$baseUrl}smithy.jpg');";
 	if( !mysql_query( $insert ) ){
 		dvwaMessagePush( "Data could not be inserted into 'users' table<br />SQL: ".mysql_error() );
 		dvwaPageReload();

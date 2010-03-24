@@ -26,7 +26,7 @@ $mysql_db = 		"peruggia";
 //General
 $title = 		"Peruggia";
 $version = 		"1.2";
-$peruggia_root = 	"http://owaspbwa/peruggia/";
+$peruggia_root = $_SERVER['PHP_SELF'];
 error_reporting(1);	// You may or may not want to see these, your choice
 
 //Vulnerabilities (true or false)
