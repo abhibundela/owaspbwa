@@ -56,6 +56,4 @@ I have also been experimenting with documenting the issues in a Google Docs Spre
 
 = Known Bugs = 
 
-All known bugs (not the intentional security issues) in the VM are listed at [KnownBugsIn09].  
-
-*Most importantly, the VM may not get an IP address from DHCP on boot up.*  If this happens, log in as root (the password is owaspbwa) and run dhclient. That should give the machine an IP address.
+All known bugs (not the intentional security issues) in the VM are listed at [KnownBugsIn091rc1].
