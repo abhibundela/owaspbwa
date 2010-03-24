@@ -11,7 +11,7 @@ Below are accounts for various applications in the OWASPBWA project VM.  Note, t
 || phpBB (http://owaspbwa/phpBB2/) || admin - administrator<br>user - normal user<br>mod - forum moderator ||
 || !WordPress(http://owaspbwa/wordpress/) || admin - Administrator<br>user - normal user) ||
 || Yazd (http://owaspbwa:8080/yazd10/) || admin - administrator<br>user - normal user<br>user2 - normal user<br>mod - forum moderator ||
-|| !WebGoat (http://owaspbwa:8080/WebGoat/attack) || admin - administrator<br>guest - guest ||
+|| !WebGoat (http://owaspbwa:8080/WebGoat/attack) || guest - normal user<br>admin - tomcat administrator<br>webgoat - webgoat administrator ||
 || Peruggia (http://owaspbwa/peruggia/) || admin - administrator<br>user - normal user ||
 || Ghost (http://owaspbwa/ghost/) || admin - administrator<br>test - normal user <br>anonymous - normal user ||
 || Mutillidae (http://owaspbwa/mutillidae/) || admin - administrator<br>user - normal user ||
