@@ -6,6 +6,11 @@ compatible with their no-cost and commercial VMware products.
 More information about the project can be found at 
 http://www.owaspbwa.org/. 
 
+The VM can be downloaded as a .zip file or as a much smaller .7z 7-zip 
+Archive.  BOTH FILES CONTAIN THE EXACT SAME VM!  We recommend that you 
+download the .7z archive if possible to save bandwidth (and time).  
+7-zip is available for Windows, Mac, Linux, and other Operating Systems. 
+
 !!! This VM has many serious security issues, we strongly recommend that 
 you run it only in "host only" or "NAT" network in the virtual machine 
 settings !!! 
