@@ -28,6 +28,8 @@ Version 0.91rc1 - 2010-03-24
   configuration files, and some applications that run on Tomcat web 
   server into SVN with symlinks to the SVN directory in the normal file
   system.
+- Fixed bug in where permissions on /var/www/dvwa were not set properly
+  (thanks to Dale Castle for reporting this)
 
 Version 0.9 - 2009-11-11
 - Initial Release
