@@ -17,7 +17,7 @@
  * 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
  */
 
-$images = array_diff(scandir("images"), array(".", ".."));
+$images = array_diff(scandir("images"), array(".", "..", ".svn"));
 
 if(sizeof($images) == 0){
 
