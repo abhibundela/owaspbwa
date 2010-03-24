@@ -1,15 +1,17 @@
-#summary List of accounts for various applications in the OWASP-BWA project.
+#summary List of accounts for various applications in the OWASPBWA project.
 
 = Introduction =
 
-Below are accounts for various applications in the OWASP-BWA project VM.  Note, this does not include management accounts that are not considered "in scope" for the project (such as OS accounts available via SSH and Samba or MySQL user accounts).
+Below are accounts for various applications in the OWASPBWA project VM.  Note, this does not include management accounts that are not considered "in scope" for the project (such as OS accounts available via SSH and Samba or MySQL user accounts).
 
 *IN ALL CASES, THE USERID AND PASSWORD ARE THE SAME*
 
 || Application || User Accounts ||
-|| Damn Vulnerable Web Application (DVWA, http://owaspbwa/dvwa/) || admin (password=password) ||
+|| Damn Vulnerable Web Application (DVWA, http://owaspbwa/dvwa/) || admin - administrator<br>user - user ||
 || phpBB (http://owaspbwa/phpBB2/) || admin - administrator<br>user - normal user<br>mod - forum moderator ||
 || !WordPress(http://owaspbwa/wordpress/) || admin - Administrator<br>user - normal user) ||
 || Yazd (http://owaspbwa:8080/yazd10/) || admin - administrator<br>user - normal user<br>user2 - normal user<br>mod - forum moderator ||
 || !WebGoat (http://owaspbwa:8080/WebGoat/attack) || admin - administrator<br>guest - guest ||
+|| Peruggia (http://owaspbwa/peruggia/) || admin - administrator<br>user - normal user ||
+|| Ghost (http://owaspbwa/ghost/) || admin - administrator<br>test - normal user <br>anonymous - normal user ||
 || || ||
