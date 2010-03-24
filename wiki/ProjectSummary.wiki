@@ -5,16 +5,19 @@
 
 The Open Web Application Security Project (OWASP) Broken Web Applications Project is distributed as a Virtual Machine in [http://www.vmware.com VMware] format compatible with their no-cost [http://www.vmware.com/products/player/ VMware Player] and [http://www.vmware.com/products/server/ VMware Server] products (along with their commercial products).
 
-= Applications included (as of the 0.9 release) =
+= Applications included (as of the 0.91rc1 release) =
 
 This project includes applications from various sources (listed in no particular order).
 
 Intentionally Vulnerable Applications:
   * [http://www.owasp.org/index.php/Category:OWASP_WebGoat_Project OWASP WebGoat] version 5.3-SNAPSHOT (Java)
-  * [http://www.owasp.org/index.php/Category:OWASP_Vicnum_Project OWASP Vicnum] version 1.3 (Perl)
+  * [http://www.owasp.org/index.php/Category:OWASP_Vicnum_Project OWASP Vicnum] version 1.4 (PHP/Perl)
   * [http://www.irongeek.com/i.php?page=security/mutillidae-deliberately-vulnerable-php-owasp-top-10 Mutillidae version 1.3] (PHP)
   * [http://www.dvwa.co.uk/ Damn Vulnerable Web Application] version 1.06 (PHP)
+  * [http://webdevelopmentsolutions.org/ Ghost] (PHPe)
+  * [http://peruggia.sourceforge.net/ Peruggia] version 1.2 (PHP)
   * [http://www.owasp.org/index.php/Category:OWASP_CSRFGuard_Project OWASP CSRFGuard] Test Application version 2.2 (Java)
+  * [http://www.owasp.org/index.php/Category:OWASP_AppSensor_Project OWASP AppSensor Demo Application] (Java)
   * [http://www.mandiant.com/ Mandiant] Struts Forms (Java/Struts)
   * Simple ASP.NET Forms (ASP.NET/C#)
   * Simple Form with DOM Cross Site Scripting (HTML/!JavaScript)
