@@ -1,4 +1,4 @@
-#summary Known bugs (not intentional security issues) in version 0.9 of the OWASPBWA VM.
+#summary Known bugs (not intentional security issues) in version 0.91rc1 of the OWASPBWA VM.
 
 = Known Bugs in OWASPBWA v0.91rc1 =
 
