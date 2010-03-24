@@ -14,4 +14,4 @@ Below are accounts for various applications in the OWASPBWA project VM.  Note, t
 || !WebGoat (http://owaspbwa:8080/WebGoat/attack) || admin - administrator<br>guest - guest ||
 || Peruggia (http://owaspbwa/peruggia/) || admin - administrator<br>user - normal user ||
 || Ghost (http://owaspbwa/ghost/) || admin - administrator<br>test - normal user <br>anonymous - normal user ||
-|| || ||
+|| Mutillidae (http://owaspbwa/mutillidae/) || admin - administrator<br>user - normal user ||
