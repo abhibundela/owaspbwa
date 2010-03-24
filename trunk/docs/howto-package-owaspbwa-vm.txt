@@ -1,4 +1,3 @@
-
 How to package a new version of the OWASPBWA VM.
 
 - Update /etc/issue file with new version number
