@@ -2,18 +2,7 @@
 
 Below is a list of items that we would like to accomplish for the 1.0 release.
 
-= General / Bug Fixes =
-   * Look in to why network card does not get an IP address from DHCP on boot.
-   * Copy .htaccess file to vicnum directory to disable PHP magic quotes (which prevent SQL Injection attacks from working)
-
-= Apps to Upgrade =
-   * OWASP Vicnum (http://www.owasp.org/index.php/Category:OWASP_Vicnum_Project)
-   * OWASP WebGoat (http://www.owasp.org/index.php/Category:OWASP_WebGoat_Project)
-
 = Apps to Add (suggested by [http://mtesauro.com/ Matt Tesauro]) =
    * gtd-php version 0.7 (http://sourceforge.net/projects/gtd-php/files/)
    * OrangeHRM version 2.4.2 (http://www.orangehrm.com/)
    * Get-Boo version 1.04 (http://sourceforge.net/projects/getboo/files/)
-
-= Other Apps to Add =
-   * !AppSensor Demo Application (when released - demo at http://defendtheapp.com/AppSensorDemo/login.jsp and code should be released at http://code.google.com/p/appsensor/)
