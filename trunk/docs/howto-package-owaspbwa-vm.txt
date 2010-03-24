@@ -1,0 +1,14 @@
+
+How to package a new version of the OWASPBWA VM.
+
+- Update /etc/issue file with new version number
+- Update owaspbwa-readme.txt with new version number
+- Commit changes to SVN
+- 
+- Clean up any data in applications / databases
+- Copy owaspbwa-readme.txt out of the VM (or SVN repository) into directory where VM is located on host
+- Go to single user mode
+- Run owaspbwa-zero-free-space.sh
+- Power off VM
+- Shrink disk
+- Use 7-zip to 
