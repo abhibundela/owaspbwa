@@ -3,21 +3,21 @@
 
 = Downloads =
 
-Version 0.9 of the OWASP Broken Web Applications Virtual Machine (VM) was released on November 11, 2009 for the [http://appsecdc.org/ OWASP AppSec DC Conference].
+Version 0.91rc1 of the OWASP Broken Web Applications Virtual Machine (VM) was released on March 24, 2010.
 
 The VM is in [http://www.vmware.com VMware] format compatible with their no-cost [http://www.vmware.com/products/player/ VMware Player] and [http://www.vmware.com/products/server/ VMware Server] products (along with their commercial products).  
 
-The VM can be downloaded as a .zip file or as a much smaller [http://www.7-zip.org/ .7z 7-zip Archive].  *BOTH FILES CONTAIN THE EXACT SAME VM!*  Please download the .7z archive if possible to save bandwidth (and time). 7-zip IS [http://www.7-zip.org/download.html available for Mac, Linux, and other Operating Systems].
+The VM can be downloaded as a .zip file or as a much smaller [http://www.7-zip.org/ .7z 7-zip Archive].  *BOTH FILES CONTAIN THE EXACT SAME VM!*  I recommend that you download the .7z archive if possible to save bandwidth (and time). 7-zip IS [http://www.7-zip.org/download.html available for Mac, Linux, and other Operating Systems].
+
+Download from [https://sourceforge.net/projects/owaspbwa/files/ https://sourceforge.net/projects/owaspbwa/files/].
 
 .7z File:
   * Size: 499 MB 
-  * MD5: d69131c4b09373b277f0b77390dae3ba
-  * Download from [http://fred.mandiant.com/OWASP_Broken_Web_Apps_VM_v0.9.7z http://fred.mandiant.com/OWASP_Broken_Web_Apps_VM_v0.9.7z]
+  * MD5: 3f20226db811f09ed528ab7f58bce61b
 
 Zip File:
   * Size: 773 MB
-  * MD5: b1cacc36b890e51e985b026600f4ac7b
-  * Download from `http://fred.mandiant.com/OWASP_Broken_Web_Apps_VM_v0.9.zip` (deliberately not a link to encourage users to click on the .7z download above)
+  * MD5: b4727567d8691c0bc3aea218392e58c8
 
 = Installation =
 
@@ -29,6 +29,4 @@ If you would like to access your VM from links off this site, the one configurat
 
 = Known Bugs = 
 
-All known bugs (not the intentional security issues) in the VM are listed at [KnownBugsIn09].  
-
-*Most importantly, the VM may not get an IP address from DHCP on boot up.*  If this happens, log in as root (the password is owaspbwa) and run dhclient. That should give the machine an IP address.
+All known bugs (not the intentional security issues) in the VM are listed at [KnownBugsIn091rc1].  
