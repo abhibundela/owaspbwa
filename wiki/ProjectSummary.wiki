@@ -14,7 +14,7 @@ Intentionally Vulnerable Applications:
   * [http://www.owasp.org/index.php/Category:OWASP_Vicnum_Project OWASP Vicnum] version 1.4 (PHP/Perl)
   * [http://www.irongeek.com/i.php?page=security/mutillidae-deliberately-vulnerable-php-owasp-top-10 Mutillidae version 1.3] (PHP)
   * [http://www.dvwa.co.uk/ Damn Vulnerable Web Application] version 1.06 (PHP)
-  * [http://webdevelopmentsolutions.org/ Ghost] (PHPe)
+  * [http://webdevelopmentsolutions.org/ Ghost] (PHP)
   * [http://peruggia.sourceforge.net/ Peruggia] version 1.2 (PHP)
   * [http://www.owasp.org/index.php/Category:OWASP_CSRFGuard_Project OWASP CSRFGuard] Test Application version 2.2 (Java)
   * [http://www.owasp.org/index.php/Category:OWASP_AppSensor_Project OWASP AppSensor Demo Application] (Java)
