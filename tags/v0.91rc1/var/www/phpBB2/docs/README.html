@@ -1,0 +1,349 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>phpBB 2.0.0 :: Readme</title>
+<link rel="stylesheet" href="../templates/subSilver/subSilver.css" type="text/css" />
+<style type="text/css">
+<!--
+p,ul,td {font-size:10pt;}
+h2 {font-size:15pt;font-weight:bold;color:red}
+h3 {font-size:12pt;color:blue}
+//-->
+</style>
+</head>
+<body bgcolor="#E5E5E5" text="#000000" link="#006699" vlink="#006699">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="10" align="center"> 
+	<tr> 
+		<td class="bodyline"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td>
+				
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td><img src="../templates/subSilver/images/logo_phpBB.gif" border="0" alt="phpBB2 : Creating Communities" vspace="1" /></a></td>
+		<td align="center" width="100%" valign="middle"><span class="maintitle">phpBB 2.0.0 README</span></td>
+	</tr>
+</table>
+
+<p>Thank you for downloading phpBB 2.0.0, the long awaited re-write of the popular phpBB 1.x online community forum. This README will guide through the basics of installation and operation of phpBB2. Please ensure you read this and the accompanying documentation fully <b>before</b> proceeding with the installation.</p>
+
+<ol>
+<li><a href="#install">Installing phpBB 2.0.0</a></li>
+<li><a href="#run">Running phpBB 2.0.0</a></li>
+<ol type="i">
+<li><a href="#i18n">Internationalisation (i18n)</a></li>
+<li><a href="#styles">Styles</a></li>
+<li><a href="#mods">Mods</a></li>
+</ol>
+<li><a href="#help">Getting help with phpBB2</a></li>
+<li><a href="#status">Status of this version</a></li>
+<li><a href="#bugs">Reporting Bugs</a></li>
+<li><a href="#curbugs">Overview of current bug list</a></li>
+<li><a href="#php">PHP compatibility issues</a></li>
+<ol type="i">
+<li><a href="#phpsec">Notice on recent PHP security issues</a></li>
+</ol>
+<li><a href="#changelog">Changelog overview</a></li>
+<ol type="i">
+<li><a href="#final">Changes since RC-4</a></li>
+<li><a href="#rc4">Changes since RC-3</a></li>
+<li><a href="#rc3">Changes since RC-2</a></li>
+<li><a href="#rc2">Changes since RC-1</a></li>
+<li><a href="#rc1">Changes since RC-1 (pre)</a></li>
+</ol>
+<li><a href="#disclaimer">Disclaimer</a></li>
+</ol>
+
+<a name="install"></a><h2><u>1. Installing phpBB 2.0.0</u></h2>
+
+<p>Installation and upgrade instructions can be found in the <a href="INSTALL.html">INSTALL</a> document contained in this distribution. If you are intending to upgrade from a previous phpBB 1.4.x installation we highly recommend you backup any existing data before proceeding!</p>
+
+<p><b>Please note</b> that users of Release Candidate (RC) versions of phpBB2 should run the update_to_FINAL.php script <b>BEFORE</b> attempting to access your board. Failing to do so may result in errors and unexpected behaviour! While these won't do any damage they will prevent you using your board.</p>
+
+<p>If you are using RC-1 (pre) you may find some other DB changes have occured and should examine the schemas to see if your installation requires any modifications (note that most of these have already been discussed on the phpBB2 forums and are handled by the update script). If you are uncomfortable doing any of this we recommend you re-install (you may backup your existing data if you wish, re-install phpBB2 and then insert your backup).</p>
+
+<p>Users of phpBB 2.0 Beta-1 cannot directly upgrade to phpBB 2.0 RC-2, 3 or 4, sorry.</p>
+
+<a name="run"></a><h2><u>2. Running phpBB 2.0.0</u></h2>
+
+<p>Once installed phpBB 2.0 is easily managed by both admin and moderator control panels. A full userguide will be available shortly. Till that time please examine the <a href="FAQ.html">FAQ</a> or visit our forums (noted below) where you will more than likely find the answer to any question/s you have using the search facility, if not feel free to ask.</p>
+
+<a name="i18n"></a><h3>2.i. Internationalisation, i18n</h3>
+
+<p>A number of language packs and subSilver localisations are now available. You can find them on our official download page:</p>
+
+<p><a href="http://www.phpbb.com/downloads.php" target="_new">http://www.phpbb.com/downloads.php</a></p>
+
+<p>This is the <i>Official</i> location for all support language sets. If you download a package from a 3rd party site you do so with the understanding that we cannot offer support. So please, do not ask for help in these cases!</p>
+
+<p>Installation of these packages is straightforward, simply download the required language pack and unarchive it into the languages/ folder. Please ensure you retain the directory structure when doing this! To install the subSilver image packs you should unarchive the file/s into the templates/subSilver/images directory, again you must retain the directory structure. Once installed the languages will become immediately available.</p>
+
+<p>If your language is not available please visit our forums where you will find a topic listing translations currently available or in preparation. This topic also gives you information should you wish to volunteer to translate a language not currently listed</p>
+
+<p><b>Please note</b> that users who have upgraded to 2.0.0 from versions prior to RC-3 should will <b>need</b> to download new versions of the language/subSilver image packs. Any package downloaded prior to the availability of RC-3 will <b>not</b> function correctly with this version of phpBB2.</p>
+
+<a name="styles"></a><h3>2.ii. Styles</h3>
+
+<p>Although phpBB Group are rather proud of the subSilver style (which has influenced many of our competitors boards <i>updated</i> designs!) we realise that it may not be to everyones tastes. Therefore phpBB2 allows styles to be switched with relative ease. Firstly you need to locate and download a style you like. We maintain such a site at</p>
+
+<p><a href="http://www.phpbb.com/styles/" target="_new">http://www.phpbb.com/styles/</a></p>
+
+<p><b>Please note</b> that 3rd party styles downloaded for versions of phpBB2 prior to its final (2.0.0) release will <b>not</b> function correctly. You should either remove these styles or (if available) update them to meet changes in 2.0.0.</p>
+
+<p>Once you have downloaded a style the usual next step is to unarchive (or upload the unarchived contents of) the package into your templates/ directory. You then need to visit Administration -> Styles -> Add, you should see the new style available, click add and it will become available for all your users.</p>
+
+<a name="mods"></a><h3>2.iii. Mods</h3>
+
+<p>Although not officially supported by phpBB Group, phpBB2 has a thriving mod (formerly known as <i>hacks</i>) scene. These third party modifications to the standard phpBB2 extend its capabilities still further. Included with this package (in the contrib/ folder) are a number of the more popular mods. You may like to take advantage of some of the extra facilities these offer (do make sure you read the README within that folder before doing anything!). These are just a few of the mods available, many more can be found on our mods site:
+
+<p><a href="http://www.phpbb.com/mods" target="_new">http://www.phpbb.com/mods</a></p>
+
+<p><b>Please remember</b> that any bugs or other issues that occur after you have added any modification should <b>NOT</b> be reported to the bug tracker (see below). First remove the modification and see if the problem is resolved. Also remember that any modifications which modify the database in any way may render upgrading your forum to future versions more difficult unless we state otherwise. With all this said many users have and continue to utilise many of the mods already available with great success</p>
+
+<a name="help"></a><h2><u>3. Getting help with phpBB2</u></h2>
+
+<p>phpBB2 can seem a little daunting to new users in places, particularly with regard the permission system. The first thing you should do is check the <a href="FAQ.html">FAQ</a> which covers a few basic getting started questions. If you need additional help there are two places you can go to ask. We have a thriving and typically friendly community of users who have a range of experience levels. You can find this community at our main site:</p>
+
+<p><a href="http://www.phpbb.com/" target="_new">http://www.phpbb.com/</a></p>
+
+<p>Please read the forum rules, FAQ and make use of Search before asking questions, etc. it will save you and us a lot of time.</p>
+
+<p>If you do seek help via our forums please be sure to do a Search before posting. This may save both you and us time and allow developers and moderators to spend more time responding to people with unknown issues and problems. Please also remember that phpBB is an entirely volunteer effort, no one receives any compensation for the time they give, this includes moderators as well as developers. So please be respectful and mindful when awaiting responses.</p>
+
+<p>Another place you may find help is our IRC channel. This operates on the Openprojects IRC network, <b>irc.openprojects.net</b>  and the channel is <b>#phpbb</b> and can be accessed by any good IRC client such as mIRC, XChat, etc. Again, please do not abuse this service and be respectful of other users.</p>
+
+<a name="status"></a><h2><u>4. Status of this version</u></h2>
+
+<p>This is the first release of phpBB2 to be declared stable taking the version number 2.0.0. The 2.0.0 line is feature frozen, point releases will see only bugs and such like fixed. Our next major release will be phpBB 2.2 and work has already started on this (the unstable development version is 2.1). Please feel free to suggest new features for phpBB 2.2, we already have a number of improvements in mind and these can be viewed using our task tracker:</p>
+
+<p><a href="http://sourceforge.net/pm/task.php?group_project_id=13524&group_id=7885&func=browse" target="_new">http://sourceforge.net/pm/task.php?group_project_id=13524&group_id=7885</a></p>
+
+<p>We do not guarantee that all these will appear in 2.2 but we will do our best! If your idea does not appear on this list please visit our feature request list:</p>
+
+<p><a href="http://sourceforge.net/tracker/?atid=357885&group_id=7885&func=browse" target="_new">http://sourceforge.net/tracker/?atid=357885&group_id=7885</a></p>
+
+<p>Before submitting your idea please <b>ensure</b> you have read through the entries in that list. If your idea is similar to an existing one please feel free to add a comment to it. Please <b>do not</b> submit duplicate suggestions!</p>
+
+<p>For some suggestions we may ask for your feedback via our forums. For those interested in the development of phpBB 2.2 you should keep an eye on the community forums (particularly the Feature Discussion forum) where you may be able to influence the direction we take with certain new features. Finally you may like to visit our development forum to see how things are progressing:</p>
+
+<p><a href="http://area51.phpbb.com/phpBB2/" target="_new">http://area51.phpbb.com/phpBB2/</a></p>
+
+<p>Please note that these forums should not be used to obtain support or otherwise ask questions on phpBB 2.0.0, the main community forums are the place for this.</p>
+
+<a name="bugs"></a><h2><u>5. Reporting Bugs</u></h2>
+
+<p>The phpBB Group uses a bug tracking system to store, list and manage all reported bugs, it can be found at the location listed below. Please <b>DO NOT</b> post bug reports to our forums, they will be locked.</p>
+
+<p><a href="http://www.phpbb.com/bugs/" target="_new">http://www.phpbb.com/bugs/</a></p>
+
+<p>While we very much appreciate receiving bug reports (the more reports the more stable phpBB2 will be) we ask you carry out a few steps before adding new entries:</p>
+<ul>
+<li>Firstly determine if your bug is reproduceable, how to determine this depends on the bug in question. Only if the bug is reproduceable is it likely to be a problem with phpBB 2.0 (or in some way connected). If something cannot be reproduced it may turn out to have been your hosting provider working on something, a user doing something silly, etc. Bug reports for non-reproduceable events can slow down our attempts to fix real, reproduceable issues</li>
+<li>Next please read or search through the existing bug reports (remember to check open <b>AND</b> closed reports!) to see if <i>your</i> bug (or one very similar to it) is already listed. If it is please add to that existing bug rather than creating a new duplicate entry (all this does is slow us down).</li>
+<li>Check the forums (use search!) to see if people have discussed anything that sounds similar to what you are seeing. However, as noted above please <b>DO NOT</b> post your particular bug to the forum unless it's non-reproduceable or you are sure it's related to something you have done rather phpBB 2.0</li>
+<li>If no existing bug exists then please feel free to add it</li>
+</ul>
+
+<p>If you do post a new bug (i.e. one that isn't already listed in the bug tracker) firstly make sure you have logged in (your username and password are the same as for the community forums) then please include the following details:</p>
+<ul>
+<li>Your server type/version, eg. Apache 1.2.22, IIS 4, Sambar, etc.</li>
+<li>PHP version and mode of operation, eg. PHP 4.1.1 as a module, PHP 4.0.1 running as CGI, etc.</li>
+<li>DB type/version, eg. MySQL 3.23.32, PostgreSQL 7.1.2, MSSQL Server 2000 SP1, etc.</li>
+</ul>
+
+<p>Please also be as detailed as you can in your report, if possible list the steps required to duplicate the problem. If you have a fix which you are <b>VERY SURE</b> works (and is consistent with our coding guidelines) and does not introduce further problems or incompatibilities please let us know. However only include it in the bug report if you really must, if we need it we'll ask you for it.</p>
+
+<p>Once a bug has been submitted you will be emailed any follow up comments added to it. <b>Please</b> if you are requested to supply additional information, <b>do so</b>! It is <u>extremely frustrating</u> for us to receive bug reports, ask for additional information but get nothing. In these cases we have a policy of <u>closing the bug</u>, which may leave a very real problem in place. Obviously we would rather not have this situation arise.</p>
+
+<a name="curbugs"></a><h2><u>6. Overview of current bug list</u></h2>
+
+<p>This list is not complete (see above link for full list) but does represent those bugs which may effect users on a wider scale. Other bugs listed in the tracker have typically been shown to be limited to certain setups or methods of installation/upgrade.</p>
+
+<ul>
+<li>Cannot post very large messages when using PostgreSQL 7.0.x (limitation of Postgresql 7.0.x)</li>
+<li>By default cannot post very large messages with MSSQL (this can be configured within MSSQL)</li>
+<li>Possible issues with gzip (note that these may be PHP related and not phpBB problems)</li>
+<li>Search may not work correctly with non-latin & multibyte charsets (somewhat a limitation of PHP3/4)</li>
+<li>Netscape may act strangely on some systems (proving hard to reproduce consistently)</li>
+<li>Upgrade may fail to complete on large boards under some hosts</li>
+</ul>
+
+<a name="php"></a><h2><u>7. PHP compatibility issues</u></h2>
+
+<p>Please remember that running any application on a developmental version of PHP can lead to strange/unexpected results which may appear to be bugs in the application (which may not be true). Therefore we recommend you upgrade to the newest stable version of PHP before running phpBB2 (the most recent stable release of PHP is 4.1.2). If you are running a developmental version of PHP please check any bugs you find on a system running a stable release before submitting.</p>
+
+<p>This board has been developed and tested under Linux and Windows (amongst others) running IIS and Apache using MySQL 3.23 and 4.0.0, MSSQL Server 2000, MS Access 2000 and XP and PostgreSQL 7.x.</p>
+
+<a name="phpsec"></a><h3>7.i. Notice on recent PHP security issues</h3>
+
+<p>At the end of February 2002 a <a href="http://security.e-matters.de/advisories/012002.html" target="_new">major security issue</a> was found with PHP 3 and 4 which has resulted in many hosting providers disabling file uploads (although patches fixing the security issues are available and a new version of PHP 4 has been released).</p>
+
+<p>Because of this, and to cope with situations where hosts didn't allow such uploads anyway we have implemented various checks in phpBB2. These checks prevent you from enabling or making use of functions which will not operate correctly on PHP as installed on your server. At this time this includes locally uploaded avatars and DB restore.</p>
+
+<p>Third party mods may also be effected but these are outside our control, you should contact the mod writer for more information.</p>
+
+<a name="changelog"></a><h2><u>8. Changelog overview</u></h2>
+
+<p>This is a non-exhaustive overview of the changes made from preceeding versions of phpBB2. It should not be relied upon to determine specific changes which may need to be made to any non-standard (previous) installs of phpBB2!</p>
+
+<a name="final"></a><h3>8.i. Changes since RC-4</h3>
+
+<ul>
+<li>Fixed improper report of general error when posting messages containing errors</li>
+<li>Fixed post text being doubled up if it contained one or more &lt; without closing &gt;</li>
+<li>Fixed pruning errors due to search function name change</li>
+<li>Hopefully fixed various issues which led to incorrect reply and excess page counts</li>
+<li>Fixed groupcp not displaying all email buttons to group moderator or admin</li>
+<li>Fixed failure to display error notice when uploading oversized avatars</li>
+<li>Hopefully corrected problem with viewonline displaying too few/many users online</li>
+<li>Partially addressed issue with activation URLs >76 chars</li>
+<li>Fixed additional search facilities failing to work or working incorrectly</li>
+<li>Fixed search syntax highlighting</li>
+<li>Addressed various webservers handling of page redirects</li>
+<li>Fixed word censor not replacing first or last words</li>
+<li>Fixed avatar height and width check for locally uploaded images</li>
+<li>Hopefully fixed cache control header</li>
+<li>Added check for PM box size limit of 0 to prevent div0 error</li>
+<li>Fixed failure to fully delete PMs in outbox</li>
+<li>Fixed display problem with polls</li>
+<li>Fixed problem with guest username not being displayed for topic results in search</li>
+<li>Fixed problem with quotes in various profile fields</li>
+<li>Fixed schema problem with user_timezone</li>
+<li>Fixed page display issue with MS Access</li>
+<li>Fixed user level issue when altering user from user to admin and vice versa</li>
+<li>Fixed incorrect parseing of some email templates</li>
+<li>Reduced size of MS Access primer</li>
+<li>Fixed various remaining usergroup display issues</li>
+</ul>
+
+<a name="rc4"></a><h3>8.ii. Changes since RC-3</h3>
+
+<ul>
+<li>Addressed serious security issue with included files</li>
+<li>Fixed non-use of database table prefix name during upgrade</li>
+<li>Split functions and profile into separate modules</li>
+<li>Fixed (hopefully) remaining issues with colourisation of moderator usernames</li>
+<li>Updated install to include entry of additional, required, information</li>
+<li>Fixed (hopefully) AOL incompatibilities</li>
+<li>Fixed non-display of moderators in index/viewforum</li>
+<li>Fixed group control panel 'no groups exist' problems</li>
+<li>Fix HTTP_X_FORWARDED_FOR spoofing possibility</li>
+<li>Fix ignoring of private range IP's in HTTP_X_FORWARDED_FOR</li>
+<li>Enable multiple wildcard email banning, eg. *name*@somewhere.tld</li>
+<li>Fix problems with posts being truncated if containing &lt; and &gt; characters</li>
+<li>Prevent URL, BBCode and most smiley parseing in [code][/code]</li>
+<li>Fix problems with use of certain reserved chars in word censor list</li>
+<li>Fix default search useage to be as described (was doing AND by default)</li>
+<li>Fix various avatar issues with profile, gallery and viewtopic</li>
+<li>Enable safe mode support for uploading avatars</li>
+<li>Fix broken modcp IP view issue</li>
+<li>Fix potential session_id re-write vulnerability</li>
+<li>Finish localisation of days and months (AM/PM are not and will not be localised in 2.0)</li>
+<li>Remove link to external subSilver stylesheet from default subSilver templates</li>
+<li>Handle TRANSACTIONS correctly in MySQL 3.x (by returning correct responses)</li>
+<li>Fix checkbox resetting problem while previewing posts</li>
+<li>Fix a login redirect issue</li>
+<li>Remove some additional unused fields during upgrade</li>
+<li>Fix (hopefully) remaining ICQ overlay issue with view profile in subSilver</li>
+</ul>
+
+<a name="rc3"></a><h3>8.iii. Changes since RC-2</h3>
+
+<ul>
+<li>Fixed infamous install parse error</li>
+<li>Major update of posting and related search functions (fixing various issues and increasing speed)</li>
+<li>Fixed display of author and last poster names when both are different guest users</li>
+<li>Fixed upgrade stall issues (hopefully!) and improved output</li>
+<li>Fixed highlighting code for viewtopic and search</li>
+<li>Reduced size of several files and functions</li>
+<li>Moved localised images to sub-directories</li>
+<li>Improved user feedback of disallowed usernames</li>
+<li>Fixed various MSSQL bugs</li>
+<li>Fixed installation of MSSQL/MSSQL-ODBC</li>
+<li>Fixed security issue with upgrade.php</li>
+<li>Finished implemention of various additional features</li>
+<li>Fixed various user, group and forum permissions problems</li>
+<li>Fixed issues with BBCode [ and ] (hopefully!)</li>
+<li>Fixed autologin problems with MS IIS</li>
+<li>Hopefully fixed problems with URIs in emails on some server configs</li>
+<li>Fixed 'blank' profile and DB utilities problems on submit</li>
+<li>Fixed incorrect language being used in email subjects</li>
+<li>Fixed issues with incorrect private message new/unread counts</li>
+<li>Fixed various PostgreSQL related errors</li>
+<li>Automatically forward users to login screen in more situations</li>
+<li>AEnabled (coloured) online indication of moderators and admins</li>
+<li>Enabled maximum online user count</li>
+<li>Altered online user count to ignore duplicate IPs (will now underestimate rather than overestimate)</li>
+<li>Enabled viewing of users browsing each forum</li>
+<li>Fixed (hopefully) display of overlayed ICQ icon in Netscape using subSilver</li>
+<li>Fixed display of guest usernames for last post and author</li>
+<li>Hidden usergroups are now completely hidden from view</li>
+</ul>
+
+<a name="rc2"></a><h3>8.iv. Changes since RC-1</h3>
+
+<ul>
+<li>Fixed numerous PostgreSQL related issues</li>
+<li>Significant updates and additions to the upgrade script</li>
+<li>Various (missed) hard coded language strings fixed</li>
+<li>Fixed viewforum error when no forum id specified</li>
+<li>Fixed old constant name useage in search system</li>
+<li>Fixed display of moved posts when viewing unanswered posts</li>
+<li>Fixed failure of search for user and keyword when displaying as posts</li>
+<li>Fixed PM popup notification</li>
+<li>Fixed view more emoticon session page problem</li>
+<li>Fixed view profile email links</li>
+<li>Fixed display of websites in profile</li>
+<li>Fixed backup database failure</li>
+<li>Fixed MS Access schema error when posting topics</li>
+<li>Fixed problem with hypenated/dotted DB names in MySQL 3.23.6+</li>
+<li>Various other fixes and updates</li>
+</ul>
+
+<a name="rc1"></a><h3>8.v. Changes since RC-1 (pre)</h3>
+
+<ul>
+<li>Upgrade script completed for initial fully functional release</li>
+<li>Sessions code updated</li>
+<li>Mark read code updated and hopefully fixed</li>
+<li>Significant changes to properly deal with \' for non-MySQL boards</li>
+<li>mssql, msaccess and mssql-odbc DB classes re-written</li>
+<li>Avatar issues addressed and fixed</li>
+<li>Search (INSERT) bug using MySQL fixed</li>
+<li>Search highlighting issues addressed</li>
+<li>Search own/other users posts fixed</li>
+<li>BBCode fixes for magic URIs and other issues</li>
+<li>Template updates for subSilver</li>
+<li>User and group permissions problems fixed</li>
+<li>Forum management problems (deletion of forum causing category not to display) fixed</li>
+<li>Pagination problem with groupcp fixed</li>
+<li>Backslash issues with posting and profile fixed</li>
+<li>Backslash issues with emails fixed</li>
+<li>preg_quote problems fixed</li>
+<li>User management updated with full avatar control and missing fields</li>
+<li>Private messaging box limits fixed</li>
+<li>Private messaging ?folder= strangeness fixed</li>
+<li>Forum pruning code updated to cope with search system</li>
+<li>Emoticon system in posting updated</li>
+<li>BBCode FAQ link added to posting form</li>
+<li>Language file updates to address concerns of translators</li>
+<li>Various other bug fixes and updates</li>
+</ul>
+
+<p>Note that a full list of fixed bugs can be found at the bug tracker (see section on bug reporting above)</p>
+
+<a name="disclaimer"></a><h2><u>9. Copyright and disclaimer</u></h2>
+
+<p>This application is opensource software released under the <a href="http://www.gnu.org/licenses/gpl.html" target="_new">GPL</a>. Please see source code and the Docs directory for more details. This package and its contents are Copyright © 2001/2002 <a href="http://www.phpbb.com/" target="_new">phpBB Group</a>, All Rights Reserved.</p>
+
+				</td>
+			</tr>
+		</table></td>
+	</tr>
+</table>
+
+</body>
+</html>

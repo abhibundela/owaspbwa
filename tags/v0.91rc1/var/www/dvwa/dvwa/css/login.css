@@ -1,0 +1,49 @@
+body {
+	background: #f8fafa;
+	font-size: 16px;
+}
+
+label {
+	width: 5em;
+	float: left;
+	text-align: right;
+	margin-right: 0.5em;
+	display: block;
+	overflow: hidden;
+}
+
+.submit input {
+	margin-left: 5.5em;
+} 
+
+input {
+	float: left;
+	background: #f8fafa;
+	border: 1px solid #ACADAD;
+	width: 130px;
+}
+
+.submit input {
+	margin-left: 7em;
+	color: #000;
+	background: #f8fafa;
+	border: 1px outset #ACADAD;
+	float: left;
+	width: 60px;
+} 
+
+fieldset {
+	border: 2px solid #ACADAD;
+	width: 15em;
+	background: #C3D9FF;
+	padding: 10px 20px 10px 20px;
+	overflow: hidden;
+}
+
+legend {
+	color: #000000;
+	background: #f8fafa;
+	border: 1px solid #ACADAD;
+	padding: 2px 6px;
+	float: left;
+} 
