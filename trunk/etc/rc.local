@@ -11,6 +11,6 @@
 #
 # By default this script does nothing.
 
-/usr/local/bin/rc.local-owaspbwa-info.sh > /dev/console
+/usr/local/bin/rc.local-owaspbwa-info.sh > /dev/tty1 # output to first virtual console
 
 exit 0
