@@ -16,4 +16,4 @@ Below are accounts for various applications in the OWASPBWA project VM.  Note, t
 || Ghost (http://owaspbwa/ghost/) || admin - administrator<br>test - normal user <br>anonymous - normal user ||
 || Mutillidae (http://owaspbwa/mutillidae/) || admin - administrator<br>user - normal user ||
 || OrangeHRM (http://owaspbwa/orangehrm/) || admin - administrator<br>user1 - normal user<br>user2 - normal user ||
-|| GetBoo (http://owaspbwa/getboo/) || admin - administrator<br>user - normal user<br>demo - demonstration user ||
+|| !GetBoo (http://owaspbwa/getboo/) || admin - administrator<br>user - normal user<br>demo - demonstration user ||
