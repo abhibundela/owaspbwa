@@ -3,7 +3,7 @@
 
 = Downloads =
 
-Version 0.91rc1 of the OWASP Broken Web Applications Virtual Machine (VM) was released on March 24, 2010.
+Version 0.92rc1 of the OWASP Broken Web Applications Virtual Machine (VM) was released on November 10, 2010.
 
 The VM is in [http://www.vmware.com VMware] format compatible with their no-cost [http://www.vmware.com/products/player/ VMware Player] and [http://www.vmware.com/products/server/ VMware Server] products (along with their commercial products).  
 
@@ -12,12 +12,12 @@ The VM can be downloaded as a .zip file or as a much smaller [http://www.7-zip.o
 Download from [https://sourceforge.net/projects/owaspbwa/files/ https://sourceforge.net/projects/owaspbwa/files/].
 
 .7z File:
-  * Size: 558 MB 
-  * MD5: 3f20226db811f09ed528ab7f58bce61b
+  * Size: xxx MB 
+  * MD5: xxx
 
 Zip File:
-  * Size: 838 MB
-  * MD5: b4727567d8691c0bc3aea218392e58c8
+  * Size: xxx MB
+  * MD5: xxx
 
 = Installation =
 
@@ -29,4 +29,6 @@ If you would like to access your VM from links off this site, the one configurat
 
 = Known Bugs = 
 
-All known bugs (not the intentional security issues) in the VM are listed at [KnownBugsIn091rc1].  
+All known bugs (not the intentional security issues) in the VM are in the issue tracker (in the menu above).  Please report any additional bugs you discover.
+
+The known security vulnerabilities in the applications are tracked at http://sourceforge.net/apps/trac/owaspbwa/report/1.  Please submit any additional issues that you discover.
