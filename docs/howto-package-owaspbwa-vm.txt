@@ -1,3 +1,8 @@
+
+Below are notes by and for the OWASP BWA developers intended for their own use.  Users should not need to use these.
+
+-----------------------------------------------------------------------
+
 How to package a new version of the OWASPBWA VM.
 
 - Update /etc/issue file with new version number
