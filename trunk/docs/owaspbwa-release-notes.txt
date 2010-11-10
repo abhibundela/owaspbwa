@@ -15,6 +15,23 @@ download the .7z archive if possible to save bandwidth (and time).
 you run it only in "host only" or "NAT" network in the virtual machine 
 settings !!! 
 
+Version 0.92rc1 - 2010-11-10
+- Developed method for tracking known issues in the applications at
+  http://sourceforge.net/apps/trac/owaspbwa/report/1.
+- Updated base OS to Ubuntu 10.04 LTS
+- Updated DVWA to SVN version > 1.07
+- Updated Mutillidae to version 1.5
+- Updated WebGoat to SVN version > 5.3
+- Added and configured three "real" applications suggested by Matt Tesauro:
+  - Added application: GetBoo version 1.04 
+    (http://sourceforge.net/projects/getboo/files/) 
+  - Added application: GTD-PHP version 0.7 
+    (http://sourceforge.net/projects/gtd-php/files/) 
+  - Added application: OrangeHRM version 2.4.2 
+    (http://www.orangehrm.com/) 
+- Fixed bug in DVWA database permissions that was preventing stored XSS 
+  from working (thanks to Owen Wright for reporting this)
+
 Version 0.91rc1 - 2010-03-24
 - Updated OWASP Vicnum to version 1.4
   (http://www.owasp.org/index.php/Category:OWASP_Vicnum_Project) 

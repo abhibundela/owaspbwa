@@ -1,0 +1,15 @@
+
+Below are notes by and for the OWASP BWA developers intended for their own use.  Users should not need to use these.
+
+-----------------------------------------------------------------------
+
+After upgrading the Ubuntu OS, prevent "tying" VM to a specific MAC address, with the following steps:
+
+# mv /lib/udev/write_net_rules /lib/udev/write_net_rules.disabled
+
+# rm /etc/udev/rules.d/70-persistent-net.rules
+
+# reboot
+
+-----------------------------------------------------------------------
+
