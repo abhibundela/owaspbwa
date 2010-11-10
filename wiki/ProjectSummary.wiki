@@ -5,15 +5,15 @@
 
 The Open Web Application Security Project (OWASP) Broken Web Applications Project is distributed as a Virtual Machine in [http://www.vmware.com VMware] format compatible with their no-cost [http://www.vmware.com/products/player/ VMware Player] and [http://www.vmware.com/products/server/ VMware Server] products (along with their commercial products).
 
-= Applications included (as of the 0.91rc1 release) =
+= Applications included (as of the 0.92rc1 release) =
 
 This project includes applications from various sources (listed in no particular order).
 
 Intentionally Vulnerable Applications:
-  * [http://www.owasp.org/index.php/Category:OWASP_WebGoat_Project OWASP WebGoat] version 5.3-SNAPSHOT (Java)
+  * [http://www.owasp.org/index.php/Category:OWASP_WebGoat_Project OWASP WebGoat] version 5.3.x(Java)
   * [http://www.owasp.org/index.php/Category:OWASP_Vicnum_Project OWASP Vicnum] version 1.4 (PHP/Perl)
-  * [http://www.irongeek.com/i.php?page=security/mutillidae-deliberately-vulnerable-php-owasp-top-10 Mutillidae version 1.3] (PHP)
-  * [http://www.dvwa.co.uk/ Damn Vulnerable Web Application] version 1.06 (PHP)
+  * [http://www.irongeek.com/i.php?page=security/mutillidae-deliberately-vulnerable-php-owasp-top-10 Mutillidae version 1.5] (PHP)
+  * [http://www.dvwa.co.uk/ Damn Vulnerable Web Application] version 1.07.x (PHP)
   * [http://webdevelopmentsolutions.org/ Ghost] (PHP)
   * [http://peruggia.sourceforge.net/ Peruggia] version 1.2 (PHP)
   * [http://www.owasp.org/index.php/Category:OWASP_CSRFGuard_Project OWASP CSRFGuard] Test Application version 2.2 (Java)
@@ -26,6 +26,9 @@ Old Versions of Real Applications:
   * [http://wordpress.org/ WordPress] 2.0.0 (PHP, released December 31, 2005, downloaded from [http://www.oldapps.com/Wordpress.php www.oldapps.com])
   * [http://www.phpbb.com/ phpBB] 2.0.0 (PHP, released April 4, 2002, downloaded from [http://www.oldapps.com/phpbb.php www.oldapps.com]) 
   * [http://www.forumsoftware.ca/ Yazd] version 1.0 (Java, released February 20, 2002)
+  * [http://www.gtd-php/.com gtd-php] version 0.7 (PHP, released September 30, 2006)
+  * [http://www.orangehrm.com/ OrangeHRM] version 2.4.2 (PHP, released May 7, 2009)
+  * [http://sourceforge.net/projects/getboo/ GetBoo] version 1.04 (PHP, released April 7, 2008)
 
 = Download = 
 
@@ -48,12 +51,8 @@ Once booted, the VM can be administered few a few different mechanisms. Note, I 
 
 = Vulnerabilities =
 
-I don't have a catalog of all the vulnerabilities contained in the VM.  My plan is to track those here on Google Code as "Issues" with the label "Known-Vulnerability" and with a status of SubmittedKV and VerifiedKV. 
-
-Please review the [http://code.google.com/p/owaspbwa/issues/list Issues Page] to see what people have already reported and feel free to submit some additional items for everyone's benefit.
-
-I have also been experimenting with documenting the issues in a Google Docs Spreadsheet.  You can view what I have so far at http://spreadsheets.google.com/ccc?key=0AjS7iIavl273dFkzME1WSE5faHg0Ykhya1c3SmdrVmc&hl=en.
+The known security vulnerabilities in the applications are tracked at http://sourceforge.net/apps/trac/owaspbwa/report/1. Please submit any additional issues that you discover. 
 
 = Known Bugs = 
 
-All known bugs (not the intentional security issues) in the VM are listed at [KnownBugsIn091rc1].
+All known bugs (not the intentional security issues) in the VM are in the issue tracker (see "Issues" in the menu bar above). Please report any additional bugs you discover. 
