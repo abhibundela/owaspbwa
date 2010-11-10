@@ -55,4 +55,4 @@ The known security vulnerabilities in the applications are tracked at http://sou
 
 = Known Bugs = 
 
-All known bugs (not the intentional security issues) in the VM are in the issue tracker (see "Issues" in the menu bar above). Please report any additional bugs you discover. 
+All known bugs (not the intentional security issues) in the VM are in the Google Code issue tracker (see "Issues" in the menu above).  Please report any additional bugs you discover.
