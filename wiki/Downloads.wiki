@@ -12,12 +12,12 @@ The VM can be downloaded as a .zip file or as a much smaller [http://www.7-zip.o
 Download from [https://sourceforge.net/projects/owaspbwa/files/ https://sourceforge.net/projects/owaspbwa/files/].
 
 .7z File:
-  * Size: xxx MB 
-  * MD5: xxx
+  * Size: 621 MB 
+  * MD5: 267efe9692776660b5f9bf2744c60145
 
 Zip File:
-  * Size: xxx MB
-  * MD5: xxx
+  * Size: 900 MB
+  * MD5: 1bc08b36f304e05ba1e86483a1c13d00
 
 = Installation =
 
