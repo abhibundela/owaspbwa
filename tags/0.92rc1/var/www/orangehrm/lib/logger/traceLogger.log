@@ -1,0 +1,5 @@
+
+INFO - 2009-04-24 13:51 - Testing file logger - test info 1
+DEBUG - 2009-04-24 13:51 - Testing file logger - test debug 1
+WARN - 2009-04-24 13:51 - Testing file logger - test error 1
+INFO - 2009-04-24 13:51 - test message
