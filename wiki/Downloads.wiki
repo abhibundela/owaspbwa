@@ -9,7 +9,7 @@ The VM is in [http://www.vmware.com VMware] format compatible with their no-cost
 
 The VM can be downloaded as a .zip file or as a much smaller [http://www.7-zip.org/ .7z 7-zip Archive].  *BOTH FILES CONTAIN THE EXACT SAME VM!*  I recommend that you download the .7z archive if possible to save bandwidth (and time). 7-zip IS [http://www.7-zip.org/download.html available for Mac, Linux, and other Operating Systems].
 
-Download from [https://sourceforge.net/projects/owaspbwa/files/ https://sourceforge.net/projects/owaspbwa/files/].
+Download from [http://sourceforge.net/projects/owaspbwa/files/ http://sourceforge.net/projects/owaspbwa/files/].
 
 .7z File:
   * Size: 606 MB 
