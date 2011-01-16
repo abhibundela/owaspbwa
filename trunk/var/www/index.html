@@ -10,57 +10,52 @@ This is the VM for the <a href="http://www.owasp.org">Open Web Application Secur
 <center><b>!!! This VM has many serious security issues, we strongly recommend that you run<br>
     it only in "host only" or "NAT" network in the virtual machine settings !!!</b></center>
 <p>
-This VM has two web servers running.  One Apache server  on port 80 and one Tomcat server on port 8080.  The following vulnerable web applications are running on the VM (listed in no particular order).
+The following vulnerable web applications are running on the VM (listed in no particular order).
 <p>
 Intentionally Vulnerable Applications:
 <ul>
-<script type="text/javascript">
 
-var ip = location.href.split("/")[2].split(":")[0];
-var apachebase = "http://" + ip +"/";
-var tomcatbase = "http://" + ip + ":8080/";
+<li><a href="WebGoat/attack">OWASP WebGoat version 5.3.x</a> (Java, use username=guest, password=guest, <a href="http://www.owasp.org/index.php/Category:OWASP_WebGoat_Project">home page</a>)</li>
 
-document.write('<li><a href="' + tomcatbase + 'WebGoat/attack">OWASP WebGoat version 5.3.x</a> (Java, use username=guest, password=guest, <a href="http://www.owasp.org/index.php/Category:OWASP_WebGoat_Project">home page</a>)</li>');
-document.write('<li><a href="' + apachebase + 'vicnum">OWASP Vicnum version 1.4</a> (PHP/Perl, <a href="http://www.owasp.org/index.php/Category:OWASP_Vicnum_Project">home page</a>)</li>');
-document.write('<li><a href="' + apachebase + 'mutillidae">Mutillidae version 1.5</a> (PHP, <a href="http://www.irongeek.com/i.php?page=security/mutillidae-deliberately-vulnerable-php-owasp-top-10">home page</a>)</li>');
-document.write('<li><a href="' + apachebase + 'dvwa">Damn Vulnerable Web Application version 1.07x</a> (PHP, use username=admin, password=admin, <a href="http://www.dvwa.co.uk/">home page</a>)</li>');
-document.write('<li><a href="' + apachebase + 'ghost">Ghost</a> (PHP, <a href="http://www.gh0s7.net">home page</a>)</li>');
-document.write('<li><a href="' + apachebase + 'peruggia">Peruggia version 1.2</a> (PHP, <a href="http://peruggia.sourceforge.net/">home page</a>)</li>');
-document.write('<li><a href="' + tomcatbase + 'OWASP-CSRFGuard-Test-Application.html">OWASP CSRFGuard Test Application version 2.2</a> (Java, <a href="http://www.owasp.org/index.php/Category:OWASP_CSRFGuard_Project">home page</a>)</li>');
-document.write('<li><a href="' + tomcatbase + 'mandiant-struts-forms.html">Mandiant Struts Forms</a> (Java/Struts)</li>');
-document.write('<li><a href="' + apachebase + 'mono">Simple ASP.NET Forms</a> (ASP.NET/C#)</li>');
-document.write('<li><a href="' + apachebase + 'dom-xss-example.html">Simple Form with DOM Cross Site Scripting</a> (HTML/JavaScript)</li>');
-</script>
-<NOSCRIPT>
- <h1>You must enable JavaScript to see the list of applications</h1>
-</NOSCRIPT>
+<li><a href="vicnum">OWASP Vicnum version 1.4</a> (PHP/Perl, <a href="http://www.owasp.org/index.php/Category:OWASP_Vicnum_Project">home page</a>)</li>
+
+<li><a href="mutillidae">Mutillidae version 1.5</a> (PHP, <a href="http://www.irongeek.com/i.php?page=security/mutillidae-deliberately-vulnerable-php-owasp-top-10">home page</a>)</li>
+
+<li><a href="dvwa">Damn Vulnerable Web Application version 1.07x</a> (PHP, use username=admin, password=admin, <a href="http://www.dvwa.co.uk/">home page</a>)</li>
+
+<li><a href="ghost">Ghost</a> (PHP, <a href="http://www.gh0s7.net">home page</a>)</li>
+
+<li><a href="peruggia">Peruggia version 1.2</a> (PHP, <a href="http://peruggia.sourceforge.net/">home page</a>)</li>
+
+<li><a href="OWASP-CSRFGuard-Test-Application.html">OWASP CSRFGuard Test Application version 2.2</a> (Java, <a href="http://www.owasp.org/index.php/Category:OWASP_CSRFGuard_Project">home page</a>)</li>
+
+<li><a href="mandiant-struts-forms.html">Mandiant Struts Forms</a> (Java/Struts)</li>
+
+<li><a href="mono">Simple ASP.NET Forms</a> (ASP.NET/C#)</li>
+
+<li><a href="dom-xss-example.html">Simple Form with DOM Cross Site Scripting</a> (HTML/JavaScript)</li>
 
 </ul>
 <p>
 Old Versions of Real Applications:
 <ul>
-<script type="text/javascript">
-document.write('<li><a href="' + apachebase + 'wordpress">WordPress version 2.0.0</a> (PHP, released December 31, 2005, <a href="http://wordpress.org/">home page</a>) </li>');
-document.write('<li><a href="' + apachebase + 'phpBB2">phpBB version 2.0.0</a> (PHP, released April 4, 2002, <a href="http://www.phpbb.com/">home page</a>) - CURRENTLY NOT WORKING</li>');
-document.write('<li><a href="' + apachebase + 'orangehrm">OrangeHRM version 2.4.2</a> (PHP, released May 7, 2009, <a href="http://www.orangehrm.com/">home page</a>) </li>');
-document.write('<li><a href="' + apachebase + 'getboo">GetBoo version 1.04</a> (PHP, released April 7, 2008, <a href="http://sourceforge.net/projects/getboo/">home page</a>) </li>');
-document.write('<li><a href="' + apachebase + 'gtd-php">GTD-PHP version 0.7</a> (PHP, released September 30, 2006, <a href="http://www.gtd-php.com/">home page</a>) </li>');
-document.write('<li><a href="' + tomcatbase + 'yazd10/bay">Yazd version 1.0</a> (Java, released February 20, 2002, <a href="http://www.forumsoftware.ca/">home page</a>) </li>');
-</script>
-<NOSCRIPT>
- <h1>You must enable JavaScript to see the list of applications</h1>
-</NOSCRIPT>
+<li><a href="wordpress">WordPress version 2.0.0</a> (PHP, released December 31, 2005, <a href="http://wordpress.org/">home page</a>) </li>
+
+<li><a href="phpBB2">phpBB version 2.0.0</a> (PHP, released April 4, 2002, <a href="http://www.phpbb.com/">home page</a>) - CURRENTLY NOT WORKING</li>
+
+<li><a href="orangehrm">OrangeHRM version 2.4.2</a> (PHP, released May 7, 2009, <a href="http://www.orangehrm.com/">home page</a>) </li>
+
+<li><a href="getboo">GetBoo version 1.04</a> (PHP, released April 7, 2008, <a href="http://sourceforge.net/projects/getboo/">home page</a>) </li>
+
+<li><a href="gtd-php">GTD-PHP version 0.7</a> (PHP, released September 30, 2006, <a href="http://www.gtd-php.com/">home page</a>) </li>
+
+<li><a href="yazd10/bay">Yazd version 1.0</a> (Java, released February 20, 2002, <a href="http://www.forumsoftware.ca/">home page</a>) </li>
 </ul>
 
 <p>
 OWASP Demonstration Applications (no known vulnerabilities):
 <ul>
-<script type="text/javascript">
-document.write('<li><a href="' + tomcatbase + 'AppSensorDemo/">OWASP AppSensor Demo Application</a> (Java, <a href="http://www.owasp.org/index.php/Category:OWASP_AppSensor_Project">home page</a>)</li>');
-</script>
-<NOSCRIPT>
- <h1>You must enable JavaScript to see the list of applications</h1>
-</NOSCRIPT>
+<li><a href="AppSensorDemo/">OWASP AppSensor Demo Application</a> (Java, <a href="http://www.owasp.org/index.php/Category:OWASP_AppSensor_Project">home page</a>)</li>
 </ul>
 For more information about the specific versions of applications running and how to adminsiter this VM, see <a href="http://code.google.com/p/owaspbwa/wiki/ProjectSummary">http://code.google.com/p/owaspbwa/wiki/ProjectSummary</a>.  
 <p>
