@@ -15,6 +15,12 @@ download the .7z archive if possible to save bandwidth (and time).
 you run it only in "host only" or "NAT" network in the virtual machine 
 settings !!! 
 
+Version 0.93rc1 - 2011-01-19
+- Configured mod_proxy on Apache web server to reverse proxy applications
+  running on Tomcat web server. Disabled direct access to Tomcat server.
+- Rebuilt OrangeHRM database to fix login issue (thanks to Dave van Stein 
+  for reporting this)
+
 Version 0.92rc2 - 2010-11-15
 - Fixed bug with MySQL databases not starting properly (thanks to Tom
   Neaves for reporting this)
