@@ -8,6 +8,7 @@ How to package a new version of the OWASPBWA VM.
 - Update /etc/issue file with new version number
 - Update owaspbwa-readme.txt with new version number
 - Clean up any data in applications / databases
+- Run owaspbwa-modsecurity-crs-off.sh to ensure that the ModSecurity Core Rule Set is not logging or blocking requests.
 - Commit changes to SVN
 - Copy owaspbwa-readme.txt out of the VM (or SVN repository) into directory where VM is located on host
 - On console, go to single user mode by running init 1
