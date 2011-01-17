@@ -5,8 +5,7 @@ echo -e
 echo -e "\r!!! This VM has many serious security issues, we strongly recommend that you run" 
 echo -e "\r    it only in \"host only\" or \"NAT\" network in the virtual machine settings !!!" 
 echo -e "\r" 
-echo -e "\rYou can access the web apps at http://$IP/ (for the Apache server)" 
-echo -e "\rand http://$IP:8080/ (for the Tomcat server)" 
+echo -e "\rYou can access the web apps at http://$IP/" 
 echo -e 
 echo -e "\rYou can administer / configure this machine through the console here, by SSHing" 
 echo -e "\rto $IP, via Samba at \\\\\\\\$IP\\, or via phpmyadmin at" 
