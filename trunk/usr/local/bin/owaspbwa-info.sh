@@ -6,8 +6,7 @@ echo
 echo "!!! This VM has many serious security issues, we strongly recommend that you run"
 echo "    it only in \"host only\" or \"NAT\" network in the virtual machine settings !!!"
 echo
-echo "You can access the web apps at http://$IP/ (for the Apache server)" 
-echo "and http://$IP:8080/ (for the Tomcat server)"
+echo "You can access the web apps at http://$IP/" 
 echo
 echo "You can administer / configure this machine through the console here, by SSHing"
 echo "to $IP, via Samba at \\\\\\\\$IP\\, or via phpmyadmin at"
