@@ -3,8 +3,8 @@ IP=`ifconfig  | grep 'inet addr:'| grep -v '127.0.0.1' | cut -d: -f2 | awk '{ pr
 echo
 echo Welcome to the OWASP Broken Web Apps VM
 echo 
-echo "!!! This VM has many serious security issues, we strongly recommend that you run"
-echo "    it only in \"host only\" or \"NAT\" network in the virtual machine settings !!!"
+echo "!!! This VM has many serious security issues. We strongly recommend that you run"
+echo "    it only on the \"host only\" or \"NAT\" network in the VM settings !!!"
 echo
 echo "You can access the web apps at http://$IP/" 
 echo
