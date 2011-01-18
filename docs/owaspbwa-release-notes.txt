@@ -11,15 +11,18 @@ Archive.  BOTH FILES CONTAIN THE EXACT SAME VM!  We recommend that you
 download the .7z archive if possible to save bandwidth (and time).  
 7-zip is available for Windows, Mac, Linux, and other Operating Systems. 
 
-!!! This VM has many serious security issues, we strongly recommend that 
-you run it only in "host only" or "NAT" network in the virtual machine 
+!!! This VM has many serious security issues. We strongly recommend that 
+you run it only on the "host only" or "NAT" network in the virtual machine 
 settings !!! 
 
 Version 0.93rc1 - 2011-01-19
-- Configured mod_proxy on Apache web server to reverse proxy applications
-  running on Tomcat web server. Disabled direct access to Tomcat server.
 - Rebuilt OrangeHRM database to fix login issue (thanks to Dave van Stein 
   for reporting this)
+- Configured mod_proxy on Apache web server to reverse proxy applications
+  running on Tomcat web server. Disabled direct access to Tomcat server.  
+- Configured the ModSecurity Core Rule Set.  It is disabled by default, 
+  but can be enabled through the use of new shell scripts in 
+  /usr/local/bin.
 
 Version 0.92rc2 - 2010-11-15
 - Fixed bug with MySQL databases not starting properly (thanks to Tom

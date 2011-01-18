@@ -7,17 +7,15 @@
 <p>
 This is the VM for the <a href="http://www.owasp.org">Open Web Application Security Project (OWASP)</a> <a href="http://code.google.com/p/owaspbwa/">Broken Web Applications</a> project.  It contains many, very vulnerable web applications.  More information about this project can be found at <a href="http://www.owaspbwa.org/">http://www.owaspbwa.org/</a>.
 <p>
-<center><b>!!! This VM has many serious security issues, we strongly recommend that you run<br>
-    it only in "host only" or "NAT" network in the virtual machine settings !!!</b></center>
+<center><b>!!! This VM has many serious security issues.  We strongly recommend that you run<br>
+    it only on the "host only" or "NAT" network in the virtual machine settings !!!</b></center>
 <p>
 The following vulnerable web applications are running on the VM (listed in no particular order).
 <p>
-Intentionally Vulnerable Applications:
+<h3>Intentionally Vulnerable Training Applications:</h3>
 <ul>
 
 <li><a href="WebGoat/attack">OWASP WebGoat version 5.3.x</a> (Java, use username=guest, password=guest, <a href="http://www.owasp.org/index.php/Category:OWASP_WebGoat_Project">home page</a>)</li>
-
-<li><a href="vicnum">OWASP Vicnum version 1.4</a> (PHP/Perl, <a href="http://www.owasp.org/index.php/Category:OWASP_Vicnum_Project">home page</a>)</li>
 
 <li><a href="mutillidae">Mutillidae version 1.5</a> (PHP, <a href="http://www.irongeek.com/i.php?page=security/mutillidae-deliberately-vulnerable-php-owasp-top-10">home page</a>)</li>
 
@@ -25,7 +23,11 @@ Intentionally Vulnerable Applications:
 
 <li><a href="ghost">Ghost</a> (PHP, <a href="http://www.gh0s7.net">home page</a>)</li>
 
-<li><a href="peruggia">Peruggia version 1.2</a> (PHP, <a href="http://peruggia.sourceforge.net/">home page</a>)</li>
+</ul>
+
+<p>
+<h3>Intentionally Vulnerable Demonstration Pages / Small Applications:</h3>
+<ul>
 
 <li><a href="OWASP-CSRFGuard-Test-Application.html">OWASP CSRFGuard Test Application version 2.2</a> (Java, <a href="http://www.owasp.org/index.php/Category:OWASP_CSRFGuard_Project">home page</a>)</li>
 
@@ -36,12 +38,22 @@ Intentionally Vulnerable Applications:
 <li><a href="dom-xss-example.html">Simple Form with DOM Cross Site Scripting</a> (HTML/JavaScript)</li>
 
 </ul>
+
 <p>
-Old Versions of Real Applications:
+<h3>Intentionally Vulnerable Realistic Applications (suitable for testing web application scanners):</h3>
+<ul>
+
+<li><a href="vicnum">OWASP Vicnum version 1.4</a> (PHP/Perl, <a href="http://www.owasp.org/index.php/Category:OWASP_Vicnum_Project">home page</a>)</li>
+
+<li><a href="peruggia">Peruggia version 1.2</a> (PHP, <a href="http://peruggia.sourceforge.net/">home page</a>)</li>
+
+</ul>
+
+<p>
+<h3>Old Versions of Real Applications (believed to have vulnerabilities and suitable for testing web application scanners):</h3>
 <ul>
 <li><a href="wordpress">WordPress version 2.0.0</a> (PHP, released December 31, 2005, <a href="http://wordpress.org/">home page</a>) </li>
 
-<li><a href="phpBB2">phpBB version 2.0.0</a> (PHP, released April 4, 2002, <a href="http://www.phpbb.com/">home page</a>) - CURRENTLY NOT WORKING</li>
 
 <li><a href="orangehrm">OrangeHRM version 2.4.2</a> (PHP, released May 7, 2009, <a href="http://www.orangehrm.com/">home page</a>) </li>
 
@@ -50,18 +62,25 @@ Old Versions of Real Applications:
 <li><a href="gtd-php">GTD-PHP version 0.7</a> (PHP, released September 30, 2006, <a href="http://www.gtd-php.com/">home page</a>) </li>
 
 <li><a href="yazd10/bay">Yazd version 1.0</a> (Java, released February 20, 2002, <a href="http://www.forumsoftware.ca/">home page</a>) </li>
+
+<li><a href="phpBB2">phpBB version 2.0.0</a> (PHP, released April 4, 2002, <a href="http://www.phpbb.com/">home page</a>) - <b>Currently not working</b></li>
+
 </ul>
 
 <p>
-OWASP Demonstration Applications (no known vulnerabilities):
+<h3>OWASP Demonstration Applications (no known vulnerabilities):</h3>
 <ul>
 <li><a href="AppSensorDemo/">OWASP AppSensor Demo Application</a> (Java, <a href="http://www.owasp.org/index.php/Category:OWASP_AppSensor_Project">home page</a>)</li>
 </ul>
+<h4>For More Information</h4>
 For more information about the specific versions of applications running and how to adminsiter this VM, see <a href="http://code.google.com/p/owaspbwa/wiki/ProjectSummary">http://code.google.com/p/owaspbwa/wiki/ProjectSummary</a>.  
 <p>
 For usernames to use with these applications, see <a href="http://code.google.com/p/owaspbwa/wiki/ApplicationAccounts">http://code.google.com/p/owaspbwa/wiki/ApplicationAccounts</a>.  
+<h4>Calls for Feedback</h4>
 <p>
 For information about the known vulnerabilities in these applications (or to submit some), visit <a href="http://sourceforge.net/apps/trac/owaspbwa/report/1">http://sourceforge.net/apps/trac/owaspbwa/report/1</a>.
+<p>
+If you encounter a problem with this VM (including with any of the installed applications), please submit an issue report on Google Code at <a href="http://code.google.com/p/owaspbwa/issues/list">http://code.google.com/p/owaspbwa/issues/list</a>.
 <p>
 <center>This project is sponsored by <a href="http://www.mandiant.com">MANDIANT</a> <a href="http://www.mandiant.com"><img src="mandiant.png"align="center" border=0></a></center>
 	
