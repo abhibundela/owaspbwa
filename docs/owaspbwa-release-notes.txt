@@ -19,10 +19,16 @@ Version 0.93rc1 - 2011-01-19
 - Rebuilt OrangeHRM database to fix login issue (thanks to Dave van Stein 
   for reporting this)
 - Configured mod_proxy on Apache web server to reverse proxy applications
-  running on Tomcat web server. Disabled direct access to Tomcat server.  
+  running on Tomcat web server. Disabled direct access to Tomcat server  
+- Installed ModSecurity to 2.5.13 from source (needed by Core Rule Set)
 - Configured the ModSecurity Core Rule Set.  It is disabled by default, 
   but can be enabled through the use of new shell scripts in 
-  /usr/local/bin.
+  /usr/local/bin
+- Adjusted Samba shares to follow symlinks
+- Removed some miscellaneous old / duplicate files
+- Attempted to fix phpBB issues, but was unsuccessful.  That application
+  is broken for this release and marked as such in the index.html file
+  (thanks to Dave van Stein for reporting this issue)
 
 Version 0.92rc2 - 2010-11-15
 - Fixed bug with MySQL databases not starting properly (thanks to Tom
