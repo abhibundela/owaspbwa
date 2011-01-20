@@ -1,6 +1,0 @@
-#summary Known bugs (not intentional security issues) in version 0.91rc1 of the OWASPBWA VM.
-#labels Featured
-
-= Known Bugs in OWASPBWA v0.91rc1 =
-
-  * The index.html file incorrectly states that you need to add an entry to your hosts file for 'owaspbwa' in order for the Peruggia application to work.  This issue was fixed before the 0.91rc1 release, but the index.html file was not updated.
