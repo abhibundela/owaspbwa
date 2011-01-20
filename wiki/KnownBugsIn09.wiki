@@ -1,6 +1,0 @@
-#summary Known bugs (not intentional security issues) in version 0.9 of the OWASPBWA VM.
-
-= Known Bugs in OWASPBWA v0.9 =
-
-  * *The VM may not get an IP address on boot* - If this happens, log in as root (the password is owaspbwa) and run dhclient.  That should give the machine an IP address. You can also manually add an IP using `ifconfig eth1 inet 1.2.3.4/24` with the IP replaced by something appropriate for your network.
-  * The OWASP Vicnum application is protected by PHP "magic quotes".  This prevents SQL injection in the application, even though it is vulnerable.
