@@ -1,0 +1,110 @@
+# File crc32 crc32(crlf) size size(crlf)  or  R File
+modules/remote/GalleryRemote.inc	2968303476	1450167465	33388	34408
+modules/remote/ItemAddGalleryRemote.inc	2207150709	3923754947	2253	2331
+modules/remote/RemoteSiteAdmin.inc	3359389883	2738023737	2826	2924
+modules/remote/classes/GalleryRemoteConstants.class	3460219740	4221307766	2779	2867
+modules/remote/classes/GalleryRemoteProperties.class	3571544508	667969507	3108	3216
+modules/remote/locale/af/LC_MESSAGES/modules_remote.mo	1942922101	1942922101	1841	1841
+modules/remote/locale/cs/LC_MESSAGES/modules_remote.mo	3077375471	3077375471	2084	2084
+modules/remote/locale/da/LC_MESSAGES/modules_remote.mo	808649515	808649515	1767	1767
+modules/remote/locale/de/LC_MESSAGES/modules_remote.mo	942439044	942439044	1861	1861
+modules/remote/locale/es/LC_MESSAGES/modules_remote.mo	4234741394	4234741394	1918	1918
+modules/remote/locale/eu/LC_MESSAGES/modules_remote.mo	1345209744	1345209744	2020	2020
+modules/remote/locale/fi/LC_MESSAGES/modules_remote.mo	1529095168	1529095168	1913	1913
+modules/remote/locale/fr/LC_MESSAGES/modules_remote.mo	1226534550	1226534550	2025	2025
+modules/remote/locale/hu/LC_MESSAGES/modules_remote.mo	589050102	589050102	648	648
+modules/remote/locale/is/LC_MESSAGES/modules_remote.mo	2855603416	2855603416	417	417
+modules/remote/locale/it/LC_MESSAGES/modules_remote.mo	2575314999	2575314999	1841	1841
+modules/remote/locale/ja/LC_MESSAGES/modules_remote.mo	2951954008	2951954008	1148	1148
+modules/remote/locale/lt/LC_MESSAGES/modules_remote.mo	121715680	121715680	2073	2073
+modules/remote/locale/nl/LC_MESSAGES/modules_remote.mo	1918603311	1918603311	1771	1771
+modules/remote/locale/no/LC_MESSAGES/modules_remote.mo	3094967798	3094967798	1887	1887
+modules/remote/locale/pl/LC_MESSAGES/modules_remote.mo	3228790822	3228790822	2070	2070
+modules/remote/locale/pt_BR/LC_MESSAGES/modules_remote.mo	3064144234	3064144234	1963	1963
+modules/remote/locale/ru/LC_MESSAGES/modules_remote.mo	803417588	803417588	2636	2636
+modules/remote/locale/sr/LC_MESSAGES/modules_remote.mo	964495913	964495913	1993	1993
+modules/remote/locale/sv/LC_MESSAGES/modules_remote.mo	254297182	254297182	2063	2063
+modules/remote/locale/tr/LC_MESSAGES/modules_remote.mo	721281172	721281172	2082	2082
+modules/remote/locale/zh_CN/LC_MESSAGES/modules_remote.mo	785017703	785017703	1806	1806
+modules/remote/locale/zh_TW/LC_MESSAGES/modules_remote.mo	3863481229	3863481229	1903	1903
+modules/remote/module.inc	2785056046	1504811287	2604	2690
+modules/remote/po/GNUmakefile	4182585338	210146087	97	101
+modules/remote/po/af.po	2908161135	3301431855	2791	2856
+modules/remote/po/cs.po	342525505	3947345598	2997	3076
+modules/remote/po/da.po	2350525508	1002451439	2759	2824
+modules/remote/po/de.po	2161360560	884890196	3049	3131
+modules/remote/po/es.po	1266533847	2450354861	2796	2860
+modules/remote/po/eu.po	1923618130	3671971983	2874	2945
+modules/remote/po/fi.po	1920514472	3819149593	2762	2831
+modules/remote/po/fr.po	3619885925	864374493	2952	3031
+modules/remote/po/hu.po	3781397784	2385185767	2302	2369
+modules/remote/po/is.po	1291603867	1002227572	2131	2200
+modules/remote/po/it.po	1198310163	4173539965	2765	2829
+modules/remote/po/ja.po	1577243256	2684694254	2424	2493
+modules/remote/po/lt.po	2162177762	2391157339	3070	3151
+modules/remote/po/nl.po	1116787930	4014311340	2926	3005
+modules/remote/po/no.po	288612798	3702161648	2928	2995
+modules/remote/po/pl.po	1803035109	4232137728	3002	3067
+modules/remote/po/pt_BR.po	1324655582	491023718	2865	2941
+modules/remote/po/ru.po	3931539738	2341367407	3710	3781
+modules/remote/po/sr.po	1130057861	1559780095	2847	2918
+modules/remote/po/strings.raw	1726358009	1522366028	936	956
+modules/remote/po/sv.po	3356496710	3665180123	3281	3368
+modules/remote/po/tr.po	4183972575	3237833366	3110	3181
+modules/remote/po/zh_CN.po	1802955064	3589563077	2671	2744
+modules/remote/po/zh_TW.po	3028128117	3969796407	2771	2846
+modules/remote/templates/ItemAddGalleryRemote.tpl	2492790494	3043643764	924	939
+modules/remote/templates/RemoteSiteAdmin.tpl	3793704600	749441717	1092	1122
+R	modules/remote/locale/cs_CZ/LC_MESSAGES/modules_remote.mo
+R	modules/remote/locale/cs_CZ/LC_MESSAGES
+R	modules/remote/locale/cs_CZ
+R	modules/remote/locale/de_DE/LC_MESSAGES/modules_remote.mo
+R	modules/remote/locale/de_DE/LC_MESSAGES
+R	modules/remote/locale/de_DE
+R	modules/remote/locale/fr_FR/LC_MESSAGES/modules_remote.mo
+R	modules/remote/locale/fr_FR/LC_MESSAGES
+R	modules/remote/locale/fr_FR
+R	modules/remote/locale/is_IS/LC_MESSAGES/modules_remote.mo
+R	modules/remote/locale/is_IS/LC_MESSAGES
+R	modules/remote/locale/is_IS
+R	modules/remote/locale/it_IT/LC_MESSAGES/modules_remote.mo
+R	modules/remote/locale/it_IT/LC_MESSAGES
+R	modules/remote/locale/it_IT
+R	modules/remote/locale/ja_JP/LC_MESSAGES/modules_remote.mo
+R	modules/remote/locale/ja_JP/LC_MESSAGES
+R	modules/remote/locale/ja_JP
+R	modules/remote/locale/nl_NL/LC_MESSAGES/modules_remote.mo
+R	modules/remote/locale/nl_NL/LC_MESSAGES
+R	modules/remote/locale/nl_NL
+R	modules/remote/locale/no_NO/LC_MESSAGES/modules_remote.mo
+R	modules/remote/locale/no_NO/LC_MESSAGES
+R	modules/remote/locale/no_NO
+R	modules/remote/locale/pl_PL/LC_MESSAGES/modules_remote.mo
+R	modules/remote/locale/pl_PL/LC_MESSAGES
+R	modules/remote/locale/pl_PL
+R	modules/remote/locale/ru_RU/LC_MESSAGES/modules_remote.mo
+R	modules/remote/locale/ru_RU/LC_MESSAGES
+R	modules/remote/locale/ru_RU
+R	modules/remote/locale/sr_YU/LC_MESSAGES/modules_remote.mo
+R	modules/remote/locale/sr_YU/LC_MESSAGES
+R	modules/remote/locale/sr_YU
+R	modules/remote/locale/sv_SE/LC_MESSAGES/modules_remote.mo
+R	modules/remote/locale/sv_SE/LC_MESSAGES
+R	modules/remote/locale/sv_SE
+R	modules/remote/locale/tr_TR/LC_MESSAGES/modules_remote.mo
+R	modules/remote/locale/tr_TR/LC_MESSAGES
+R	modules/remote/locale/tr_TR
+R	modules/remote/po/cs_CZ.po
+R	modules/remote/po/de_DE.po
+R	modules/remote/po/fr_FR.po
+R	modules/remote/po/is_IS.po
+R	modules/remote/po/it_IT.po
+R	modules/remote/po/ja_JP.po
+R	modules/remote/po/nl_NL.po
+R	modules/remote/po/no_NO.po
+R	modules/remote/po/pl_PL.po
+R	modules/remote/po/ru_RU.po
+R	modules/remote/po/sr_YU.po
+R	modules/remote/po/sv_SE.po
+R	modules/remote/po/tr_TR.po
+R	modules/remote/templates/SiteAdmin.tpl

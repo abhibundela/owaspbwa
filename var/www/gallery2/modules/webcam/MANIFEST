@@ -1,0 +1,100 @@
+# File crc32 crc32(crlf) size size(crlf)  or  R File
+modules/webcam/ItemAddWebCam.inc	3071078609	1385941945	5021	5182
+modules/webcam/WebCamSiteAdmin.inc	2007262524	4124638889	3131	3233
+modules/webcam/locale/af/LC_MESSAGES/modules_webcam.mo	699623040	699623040	2035	2035
+modules/webcam/locale/cs/LC_MESSAGES/modules_webcam.mo	1813472273	1813472273	2066	2066
+modules/webcam/locale/de/LC_MESSAGES/modules_webcam.mo	1230596031	1230596031	2065	2065
+modules/webcam/locale/eu/LC_MESSAGES/modules_webcam.mo	478868335	478868335	1999	1999
+modules/webcam/locale/fr/LC_MESSAGES/modules_webcam.mo	1461969508	1461969508	2024	2024
+modules/webcam/locale/is/LC_MESSAGES/modules_webcam.mo	3151492626	3151492626	417	417
+modules/webcam/locale/it/LC_MESSAGES/modules_webcam.mo	1434969678	1434969678	2013	2013
+modules/webcam/locale/ja/LC_MESSAGES/modules_webcam.mo	1855178522	1855178522	1596	1596
+modules/webcam/locale/nl/LC_MESSAGES/modules_webcam.mo	4014932244	4014932244	2039	2039
+modules/webcam/locale/no/LC_MESSAGES/modules_webcam.mo	1973635963	1973635963	2196	2196
+modules/webcam/locale/pl/LC_MESSAGES/modules_webcam.mo	1840405487	1840405487	2089	2089
+modules/webcam/locale/ru/LC_MESSAGES/modules_webcam.mo	3760129648	3760129648	2784	2784
+modules/webcam/locale/sr/LC_MESSAGES/modules_webcam.mo	3462769493	3462769493	2040	2040
+modules/webcam/locale/sv/LC_MESSAGES/modules_webcam.mo	1131227713	1131227713	2069	2069
+modules/webcam/locale/tr/LC_MESSAGES/modules_webcam.mo	2628532960	2628532960	2031	2031
+modules/webcam/locale/zh_CN/LC_MESSAGES/modules_webcam.mo	2341090052	2341090052	2000	2000
+modules/webcam/locale/zh_TW/LC_MESSAGES/modules_webcam.mo	3674216398	3674216398	2017	2017
+modules/webcam/module.inc	3495164370	1156562457	7684	7940
+modules/webcam/po/GNUmakefile	1866879166	2808215985	98	103
+modules/webcam/po/af.po	1912816869	2664350840	2969	3068
+modules/webcam/po/cs.po	2564418884	1121032371	2987	3087
+modules/webcam/po/de.po	1441022432	2984631565	3165	3272
+modules/webcam/po/eu.po	985980517	1341508341	2823	2921
+modules/webcam/po/fr.po	1414921115	534929729	2905	3004
+modules/webcam/po/is.po	2088336076	1974656026	2248	2344
+modules/webcam/po/it.po	1938620801	160275954	2911	3006
+modules/webcam/po/ja.po	3683870349	809843482	2724	2820
+modules/webcam/po/nl.po	374988289	4225723909	3077	3181
+modules/webcam/po/no.po	1469791499	4106589287	3127	3225
+modules/webcam/po/pl.po	466584365	4227659185	2993	3089
+modules/webcam/po/ru.po	3433261993	573061604	3725	3826
+modules/webcam/po/sr.po	3075754643	2248938713	2862	2960
+modules/webcam/po/strings.raw	847448567	394617063	959	989
+modules/webcam/po/sv.po	1077057202	3372852447	3200	3308
+modules/webcam/po/tr.po	1170971722	3910921261	3084	3186
+modules/webcam/po/zh_CN.po	2708870980	1261602858	2824	2921
+modules/webcam/po/zh_TW.po	347968860	1386850794	2843	2941
+modules/webcam/templates/ItemAddWebCam.tpl	2505704609	2888576784	2031	2093
+modules/webcam/templates/WebCamSiteAdmin.tpl	220686080	3201197607	1299	1339
+R	modules/webcam/ItemAddLiveImage.inc
+R	modules/webcam/classes/GNUmakefile
+R	modules/webcam/classes/GalleryLiveImage.class
+R	modules/webcam/classes/GalleryLiveImageHelper.class
+R	modules/webcam/classes/interfaces/GNUmakefile
+R	modules/webcam/classes/interfaces/GalleryLiveImage.inc
+R	modules/webcam/classes/interfaces
+R	modules/webcam/locale/cs_CZ/LC_MESSAGES/modules_webcam.mo
+R	modules/webcam/locale/cs_CZ/LC_MESSAGES
+R	modules/webcam/locale/cs_CZ
+R	modules/webcam/locale/de_DE/LC_MESSAGES/modules_webcam.mo
+R	modules/webcam/locale/de_DE/LC_MESSAGES
+R	modules/webcam/locale/de_DE
+R	modules/webcam/locale/fr_FR/LC_MESSAGES/modules_webcam.mo
+R	modules/webcam/locale/fr_FR/LC_MESSAGES
+R	modules/webcam/locale/fr_FR
+R	modules/webcam/locale/is_IS/LC_MESSAGES/modules_webcam.mo
+R	modules/webcam/locale/is_IS/LC_MESSAGES
+R	modules/webcam/locale/is_IS
+R	modules/webcam/locale/it_IT/LC_MESSAGES/modules_webcam.mo
+R	modules/webcam/locale/it_IT/LC_MESSAGES
+R	modules/webcam/locale/it_IT
+R	modules/webcam/locale/ja_JP/LC_MESSAGES/modules_webcam.mo
+R	modules/webcam/locale/ja_JP/LC_MESSAGES
+R	modules/webcam/locale/ja_JP
+R	modules/webcam/locale/nl_NL/LC_MESSAGES/modules_webcam.mo
+R	modules/webcam/locale/nl_NL/LC_MESSAGES
+R	modules/webcam/locale/nl_NL
+R	modules/webcam/locale/no_NO/LC_MESSAGES/modules_webcam.mo
+R	modules/webcam/locale/no_NO/LC_MESSAGES
+R	modules/webcam/locale/no_NO
+R	modules/webcam/locale/ru_RU/LC_MESSAGES/modules_webcam.mo
+R	modules/webcam/locale/ru_RU/LC_MESSAGES
+R	modules/webcam/locale/ru_RU
+R	modules/webcam/locale/sr_YU/LC_MESSAGES/modules_webcam.mo
+R	modules/webcam/locale/sr_YU/LC_MESSAGES
+R	modules/webcam/locale/sr_YU
+R	modules/webcam/locale/sv_SE/LC_MESSAGES/modules_webcam.mo
+R	modules/webcam/locale/sv_SE/LC_MESSAGES
+R	modules/webcam/locale/sv_SE
+R	modules/webcam/locale/tr_TR/LC_MESSAGES/modules_webcam.mo
+R	modules/webcam/locale/tr_TR/LC_MESSAGES
+R	modules/webcam/locale/tr_TR
+R	modules/webcam/po/cs_CZ.po
+R	modules/webcam/po/de_DE.po
+R	modules/webcam/po/fr_FR.po
+R	modules/webcam/po/is_IS.po
+R	modules/webcam/po/it_IT.po
+R	modules/webcam/po/ja_JP.po
+R	modules/webcam/po/nl_NL.po
+R	modules/webcam/po/no_NO.po
+R	modules/webcam/po/ru_RU.po
+R	modules/webcam/po/sr_YU.po
+R	modules/webcam/po/sv_SE.po
+R	modules/webcam/po/tr_TR.po
+R	modules/webcam/templates/ItemAddLiveImage.tpl
+R	modules/webcam/templates/SiteAdmin.tpl
+R	modules/webcam/test/phpunit/ItemAddLiveImageTest.class

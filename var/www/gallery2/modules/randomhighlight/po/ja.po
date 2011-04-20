@@ -1,0 +1,66 @@
+# $Id: ja.po,v 1.5 2006/03/22 04:20:51 mindless Exp $
+#
+# Gallery - a web based photo album viewer and editor
+# Copyright (C) 2000-2006 Bharat Mediratta
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery: Random Highlight 1.0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-08-15 20:09+0900\n"
+"PO-Revision-Date: 2005-12-05 14:24+0900\n"
+"Last-Translator: Kennichi Uehara <ken.w3m+nospam@gmail.com>\n"
+"Language-Team: Japanese <gallery-devel@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Random Highlight"
+msgstr "ランダムハイライト"
+
+msgid "Periodically change the album highlight"
+msgstr "アルバムのハイライトを一定時間毎に変更する"
+
+msgid "Display"
+msgstr "表示"
+
+msgid "Activate random highlight for this album"
+msgstr "このアルバムに対してランダムハイライトを有効にする"
+
+msgid "Random Highlight Settings"
+msgstr "ランダムハイライトの設定"
+
+msgid "Settings saved successfully"
+msgstr "設定の保存に成功しました"
+
+msgid ""
+"Enter length of time a random highlight album should keep one highlight "
+"before picking a new one."
+msgstr ""
+
+msgid "Duration in minutes:"
+msgstr "継続期間(分):"
+
+#, fuzzy
+msgid "Invalid duration value"
+msgstr "継続期間の値が無効です"
+
+msgid "Save"
+msgstr "保存"
+
+msgid "Reset"
+msgstr "リセット"

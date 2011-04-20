@@ -1,0 +1,243 @@
+<?php
+/*
+ * $RCSfile: RewriteUrlGenerator.class,v $
+ *
+ * Gallery - a web based photo album viewer and editor
+ * Copyright (C) 2000-2006 Bharat Mediratta
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or (at
+ * your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+/**
+ * @package Rewrite
+ * @version $Revision: 1.31 $ $Date: 2006/01/11 22:16:01 $
+ * @author Douglas Cau <douglas@cau.se>
+ */
+
+/**
+ * Required class
+ */
+GalleryCoreApi::requireOnce('modules/core/classes/GalleryUrlGenerator.class');
+
+/**
+ * Generic Rewrite URL Generator class
+ *
+ * @package Rewrite
+ * @subpackage Classes
+ */
+class RewriteUrlGenerator extends GalleryUrlGenerator {
+
+    /**
+     * If there's an error, use parent GalleryUrlGenerator functions.
+     *
+     * @var bool has an error occured?
+     * @access private
+     */
+    var $_error = false;
+
+    /**
+     * Short URL map.
+     *
+     * @var array of view => short URL pattern
+     * @access private
+     */
+    var $_shortUrls = array();
+    
+    /**
+     * @see GalleryUrlGenerator::init
+     */
+    function init($baseUri=null, $g2Uri=null, $embedSessionString=null) {
+	$ret = parent::init($baseUri, $g2Uri, $embedSessionString);
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	list ($ret, $this->_shortUrls) = GalleryCoreApi::getPluginParameter(
+	    'module', 'rewrite', 'shortUrls');
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+	$this->_shortUrls = empty($this->_shortUrls) ? array() : unserialize($this->_shortUrls);
+
+	return null;
+    }
+
+    /**
+     * This function is called at the end of URL generator initialization. If an onLoad
+     * function is specified for the current view it loads the needed file and calls
+     * the function which should parse any request params that wasn't parsed by the
+     * rewrite parser (eg %path% to itemId).
+     *
+     * @return object GalleryStatus a status code
+     * @private
+     */
+    function _onLoad() {
+	list ($view, $subView) = GalleryUtilities::getRequestVariables('view', 'subView');
+	$match = $view;
+	if (!empty($subView)) {
+	    $match .= '|' . $subView;
+	}
+
+	if (!empty($match) && isset($this->_shortUrls[$match]['onLoad'])) {
+	    GalleryCoreApi::requireOnce('modules/' .
+		    $this->_shortUrls[$match]['onLoad'][0] . '/classes/' .
+		    $this->_shortUrls[$match]['onLoad'][1] . '.class');
+	    $ret = call_user_func(array(
+		    $this->_shortUrls[$match]['onLoad'][1],
+		    $this->_shortUrls[$match]['onLoad'][2]));
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	}
+
+	return null;
+    }
+
+    /**
+     * @see GalleryUrlGenerator::generateUrl
+     */
+    function generateUrl($params=array(), $options=array()) {
+	$index = null;	
+	if ($this->_error) {
+	    return parent::generateUrl($params, $options);
+	}
+
+	/* Match by view + subview, or only view. */
+	if (isset($params['view']) && isset($params['subView']) &&
+		isset($this->_shortUrls[$params['view'] . '|' . $params['subView']])) {
+	    $index = $params['view'] . '|' . $params['subView'];
+	} else if (isset($params['view']) && isset($this->_shortUrls[$params['view']])) {
+	    $index = $params['view'];
+	}
+
+	/* Build the short style URL */
+	if (isset($index) && !isset($params['href'])) {
+	    /* Check if we are forced to append the session id in embedded G2 */
+	    if ($this->embedForceSessionId($params)) {
+		$options['forceSessionId'] = true;
+	    }
+	    
+	    $trueParams = $params;
+	    /* Parse and replace all keywords */
+	    $url = $this->_shortUrls[$index]['pattern'];
+	    $functions = array();
+	    if (isset($this->_shortUrls[$index]['functions'])) {
+		$functions = $this->_shortUrls[$index]['functions'];
+	    }
+	    if (!$this->_parseShortUrl($url, $params, $functions)) {
+		return parent::generateUrl($trueParams, $options);
+	    }
+
+	    unset($params['view']);
+	    if (strpos($index, '|') !== false) {
+		unset($params['subView']);
+	    }
+
+	    $forceDirect = ($trueParams['view'] == 'core.DownloadItem' ||
+			    !empty($options['forceDirect']));
+	    $options['baseUrl'] = $this->_getBaseUrl($forceDirect) . $url .
+		$this->_getBaseParamString($forceDirect);
+	}
+
+	return parent::generateUrl($params, $options);
+    }
+
+    /**
+     * Substitute all keywords with values from url params or custom functions.
+     *
+     * @param string url to be parsed
+     * @param array of url parameters
+     * @param array of custom functions
+     * @return boolean true on success
+     * @access private
+     */
+    function _parseShortUrl(&$url, &$params, $functions) {
+	$entity = null;
+
+	preg_match_all('/%([a-zA-Z]+)%/', $url, $regs);
+	foreach ($regs[1] as $arg) {
+	    if (isset($functions[$arg])) {
+		GalleryCoreApi::requireOnce('modules/' . $functions[$arg][0] .
+		    '/classes/' . $functions[$arg][1] . '.class');
+
+		$ret = call_user_func_array(
+		    array($functions[$arg][1], $functions[$arg][2]),
+		    array(&$url, &$params, &$entity));
+		if (!$ret) {
+		    return $ret;
+		}
+	    } else if (!empty($params[$arg])) {
+		$url = str_replace('%' . $arg . '%', urlencode($params[$arg]), $url);
+
+		/* We cant unset the itemId until we have replaced all keywords. a keyword */
+		if ($arg != 'itemId') {
+		    unset($params[$arg]);
+		} else {
+		    $unsetItemId = 1;
+		}
+	    } else {
+		return false;
+	    }
+	}
+
+	if (isset($unsetItemId)) {
+	    unset($params['itemId']);
+	}
+	return true;
+    }
+
+    /**
+     * @param int itemId of the entity to load
+     * @return object GalleryEntity
+     */
+    function loadEntity(&$itemId) {
+	/* Assume rootAlbum if itemId not specified */
+	if (empty($itemId)) {
+	    list ($ret, $itemId) =
+		GalleryCoreApi::getPluginParameter('module', 'core', 'id.rootAlbum');
+	    if ($ret) {
+		return null;
+	    }
+	}
+
+	list ($ret, $entity) = GalleryCoreApi::loadEntitiesById($itemId);
+	if ($ret) {
+	    return null;
+	}
+	return $entity;
+    }
+
+    /**
+     * Return the base URL for all generated short URLs
+     *
+     * @param boolean (optional) if true, ensure G2 base url is returned (different when embedded)
+     * @return string the base URL
+     * @access private
+     */
+    function _getBaseUrl($forceDirect=false) {
+	return $this->getCurrentUrlDir($forceDirect);
+    }
+
+    /**
+     * Return the base URL parameters for all generated short URLs, e.g. '?module=gallery'
+     *
+     * @param boolean (optional) if true, ensure G2 base url is returned (different when embedded)
+     * @return string the base URL parameters
+     * @access private
+     */
+    function _getBaseParamString($forceDirect=false) {
+	return '';
+    }
+}
+?>

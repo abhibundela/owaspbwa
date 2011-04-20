@@ -1,0 +1,177 @@
+<?php
+/*
+ * $RCSfile: RewriteApi.class,v $
+ *
+ * Gallery - a web based photo album viewer and editor
+ * Copyright (C) 2000-2006 Bharat Mediratta
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or (at
+ * your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+/**
+ * @package Rewrite
+ * @version $Revision: 1.2 $ $Date: 2006/01/10 04:42:16 $
+ * @author Douglas Cau <douglas@cau.se>
+ */
+
+/**
+ * A helper class for the URL Rewrite module
+ *
+ * @package Rewrite
+ * @subpackage Classes
+ */
+class RewriteApi {
+
+    /**
+     * If this is set an error has occured where we couldn't report it.
+     *
+     * @var object GalleryStatus a status code
+     */
+    var $_error;
+
+    /**
+     * Holds the active parser.
+     *
+     * @var object RewriteParser active parser
+     */
+    var $_parser;
+
+    function RewriteApi() {
+	GalleryCoreApi::requireOnce('modules/rewrite/classes/RewriteHelper.class');
+	list ($ret, $this->_parser) = RewriteHelper::getRewriteParser();
+	if ($ret) {
+	    $this->_error = $ret->wrap(__FILE__, __LINE__);
+	}
+    }
+
+    /**
+     * When using this API you should first make sure that your code is compatible with it.
+     *
+     * @param array major, minor version
+     * @return array object GalleryStatus a status code
+     *              boolean true if compatible with given version
+     */
+    function isCompatibleWithApi($version) {
+	if (isset($this->_error)) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	return array(null,
+	    GalleryUtilities::isCompatibleWithApi($this->getApiVersion(), $version));
+    }
+
+    /**
+     * Embedded configuration
+     *
+     * All embedded-related functions need to be called while Gallery is in embedded mode.
+     */
+
+    /**
+     * Checks if the parser needs configuration.
+     *
+     * @return array object GalleryStatus a status code
+     *               boolean true if configuration is needed
+     */
+    function needsEmbedConfig() {
+   	if (isset($this->_error)) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	if (!GalleryUtilities::isEmbedded()) {
+	    return array(GalleryCoreApi::error(ERROR_UNSUPPORTED_OPERATION, __FILE__, __LINE__,
+		'use in embedded mode'), null);
+	}
+
+	list ($ret, $status) = $this->_parser->needsEmbedConfig();
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	return array(null, $status);
+    }
+
+    /**
+     * Returns the current active configuration values.
+     *
+     * @return array object GalleryStatus a status code
+     *               array configuration settings (key => value)
+     */
+    function fetchEmbedConfig() {
+	if (isset($this->_error)) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	if (!GalleryUtilities::isEmbedded()) {
+	    return array(GalleryCoreApi::error(ERROR_UNSUPPORTED_OPERATION, __FILE__, __LINE__,
+		'use in embedded mode'), null);
+	}
+
+	list ($ret, $config) = $this->_parser->fetchEmbedConfig();
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	return array(null, $config);
+    }
+
+    /**
+     * Saves the configuration.
+     *
+     * @param array settings to save (key => value)
+     * @return array object GalleryStatus a status code
+     *               int Rewrite Status code
+     *               string translated error message
+     */
+    function saveEmbedConfig($params) {
+	if (isset($this->_error)) {
+	    return array($ret->wrap(__FILE__, __LINE__), null, null);
+	}
+
+	if (!GalleryUtilities::isEmbedded()) {
+	    return array(GalleryCoreApi::error(ERROR_UNSUPPORTED_OPERATION, __FILE__, __LINE__,
+		'use in embedded mode'), null, null);
+	}
+
+	list ($ret, $status, $errstr) = $this->_parser->saveEmbedConfig($params);
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null, null);
+	}
+
+	return array(null, $status, $errstr);
+    }
+
+    /* Getters below */
+
+    /**
+     * @return array api version
+     */
+    function getApiVersion() {
+	return array(1, 0);
+    }
+
+    /**
+     * @return string parser id
+     */
+    function getParserId() {
+    	return $this->_parser->getParserId();
+    }
+
+    /**
+     * @return string parser type
+     */
+    function getParserType() {
+    	return $this->_parser->getParserType();
+    }
+}
+?>

@@ -1,0 +1,1 @@
+|a:5:{s:8:"iconpack";s:20:"paularmstrongdesigns";s:8:"_version";s:5:"1.1.0";s:10:"_callbacks";s:17:"getSiteAdminViews";s:16:"_requiredCoreApi";s:3:"7,0";s:18:"_requiredModuleApi";s:3:"3,0";}

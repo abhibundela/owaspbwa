@@ -1,0 +1,265 @@
+# File crc32 crc32(crlf) size size(crlf)  or  R File
+modules/imageframe/CSS.inc	4081816121	691339317	3513	3633
+modules/imageframe/Sample.inc	3257997163	1383131320	3250	3350
+modules/imageframe/classes/ImageFrameImpl.class	3374278791	3980658323	5680	5847
+modules/imageframe/classes/ImageFrameInterface_1_1.class	1255264953	3545959409	2777	2856
+modules/imageframe/frames/README.html	2896792283	3586425870	3105	3179
+modules/imageframe/frames/bamboo/BB.gif	2421711625	2421711625	1139	1139
+modules/imageframe/frames/bamboo/BBL.gif	47905217	47905217	1127	1127
+modules/imageframe/frames/bamboo/BBR.gif	1297244259	1297244259	1129	1129
+modules/imageframe/frames/bamboo/BL.gif	3304872160	3304872160	1181	1181
+modules/imageframe/frames/bamboo/BR.gif	1980468781	1980468781	1217	1217
+modules/imageframe/frames/bamboo/LL.gif	548120118	548120118	1269	1269
+modules/imageframe/frames/bamboo/LLB.gif	2461150154	2461150154	1279	1279
+modules/imageframe/frames/bamboo/LLT.gif	2197215114	2197215114	1274	1274
+modules/imageframe/frames/bamboo/RR.gif	3652919976	3652919976	1264	1264
+modules/imageframe/frames/bamboo/RRB.gif	2327337193	2327337193	1269	1269
+modules/imageframe/frames/bamboo/RRT.gif	2132450001	2132450001	1275	1275
+modules/imageframe/frames/bamboo/TL.gif	1980468781	1980468781	1217	1217
+modules/imageframe/frames/bamboo/TR.gif	1980468781	1980468781	1217	1217
+modules/imageframe/frames/bamboo/TT.gif	60986664	60986664	1137	1137
+modules/imageframe/frames/bamboo/TTL.gif	2147880121	2147880121	1141	1141
+modules/imageframe/frames/bamboo/TTR.gif	149192587	149192587	1127	1127
+modules/imageframe/frames/bamboo/frame.inc	2725606916	630526253	1037	1105
+modules/imageframe/frames/book/BB.gif	922057793	922057793	49	49
+modules/imageframe/frames/book/BL.gif	1863523508	1863523508	52	52
+modules/imageframe/frames/book/BR.gif	4268019184	4268019184	67	67
+modules/imageframe/frames/book/RR.gif	1194765051	1194765051	63	63
+modules/imageframe/frames/book/TR.gif	3396600407	3396600407	50	50
+modules/imageframe/frames/book/frame.inc	306557597	2631609097	907	974
+modules/imageframe/frames/brand/BB.jpg	3133489043	3133489043	342	342
+modules/imageframe/frames/brand/BBL.jpg	1807198160	1807198160	526	526
+modules/imageframe/frames/brand/BBR.jpg	388361801	388361801	545	545
+modules/imageframe/frames/brand/BL.jpg	2632831581	2632831581	556	556
+modules/imageframe/frames/brand/BR.jpg	4138496059	4138496059	546	546
+modules/imageframe/frames/brand/LL.jpg	1928021510	1928021510	361	361
+modules/imageframe/frames/brand/LLB.jpg	2021761703	2021761703	542	542
+modules/imageframe/frames/brand/LLT.jpg	3570682825	3570682825	529	529
+modules/imageframe/frames/brand/RR.jpg	3091039748	3091039748	359	359
+modules/imageframe/frames/brand/RRB.jpg	3882315800	3882315800	572	572
+modules/imageframe/frames/brand/RRT.jpg	3900795591	3900795591	556	556
+modules/imageframe/frames/brand/TL.jpg	1343185269	1343185269	567	567
+modules/imageframe/frames/brand/TR.jpg	2042919526	2042919526	559	559
+modules/imageframe/frames/brand/TT.jpg	1698052410	1698052410	341	341
+modules/imageframe/frames/brand/TTL.jpg	1271614636	1271614636	521	521
+modules/imageframe/frames/brand/TTR.jpg	2549110413	2549110413	543	543
+modules/imageframe/frames/brand/frame.inc	1535962087	1875639845	1043	1111
+modules/imageframe/frames/dotapple/BB.gif	3791352794	3791352794	1027	1027
+modules/imageframe/frames/dotapple/BL.gif	1052790307	1052790307	456	456
+modules/imageframe/frames/dotapple/BR.gif	799996887	799996887	468	468
+modules/imageframe/frames/dotapple/LL.gif	3351605297	3351605297	1197	1197
+modules/imageframe/frames/dotapple/RR.gif	1384584765	1384584765	1159	1159
+modules/imageframe/frames/dotapple/TL.gif	2832349255	2832349255	490	490
+modules/imageframe/frames/dotapple/TR.gif	2987994836	2987994836	477	477
+modules/imageframe/frames/dotapple/TT.gif	283120355	283120355	1024	1024
+modules/imageframe/frames/dotapple/frame.inc	118350454	4193729330	975	1043
+modules/imageframe/frames/dots/frame.inc	1046773748	1837053526	204	213
+modules/imageframe/frames/flicking/BB.gif	519897628	519897628	814	814
+modules/imageframe/frames/flicking/BL.gif	3887138229	3887138229	832	832
+modules/imageframe/frames/flicking/BR.gif	3155837350	3155837350	830	830
+modules/imageframe/frames/flicking/LL.gif	1513069506	1513069506	810	810
+modules/imageframe/frames/flicking/RR.gif	394095109	394095109	810	810
+modules/imageframe/frames/flicking/TL.gif	1423828513	1423828513	819	819
+modules/imageframe/frames/flicking/TR.gif	545067145	545067145	819	819
+modules/imageframe/frames/flicking/TT.gif	364574179	364574179	810	810
+modules/imageframe/frames/flicking/frame.inc	2880626309	156629704	965	1033
+modules/imageframe/frames/gold/BB.gif	1565808633	1565808633	1368	1368
+modules/imageframe/frames/gold/BL.gif	349438457	349438457	1568	1568
+modules/imageframe/frames/gold/BR.gif	799709413	799709413	1560	1560
+modules/imageframe/frames/gold/LL.gif	3286977659	3286977659	1414	1414
+modules/imageframe/frames/gold/RR.gif	3455143771	3455143771	1422	1422
+modules/imageframe/frames/gold/TL.gif	2472832552	2472832552	1555	1555
+modules/imageframe/frames/gold/TR.gif	1249242811	1249242811	1574	1574
+modules/imageframe/frames/gold/TT.gif	67815526	67815526	1370	1370
+modules/imageframe/frames/gold/frame.inc	2291789317	4010332820	971	1039
+modules/imageframe/frames/gold2/BB.jpg	1630506388	1630506388	396	396
+modules/imageframe/frames/gold2/BBL.jpg	2807230815	2807230815	574	574
+modules/imageframe/frames/gold2/BBR.jpg	2919447319	2919447319	587	587
+modules/imageframe/frames/gold2/BL.jpg	2984626737	2984626737	735	735
+modules/imageframe/frames/gold2/BR.jpg	1471931515	1471931515	713	713
+modules/imageframe/frames/gold2/LL.jpg	3821411407	3821411407	394	394
+modules/imageframe/frames/gold2/LLB.jpg	4206189180	4206189180	449	449
+modules/imageframe/frames/gold2/LLT.jpg	1787454599	1787454599	449	449
+modules/imageframe/frames/gold2/RR.jpg	19138138	19138138	389	389
+modules/imageframe/frames/gold2/RRB.jpg	1346742899	1346742899	459	459
+modules/imageframe/frames/gold2/RRT.jpg	2197722152	2197722152	459	459
+modules/imageframe/frames/gold2/TL.jpg	3394040231	3394040231	711	711
+modules/imageframe/frames/gold2/TR.jpg	44016216	44016216	734	734
+modules/imageframe/frames/gold2/TT.jpg	3486697624	3486697624	402	402
+modules/imageframe/frames/gold2/TTL.jpg	1281669600	1281669600	578	578
+modules/imageframe/frames/gold2/TTR.jpg	2882245650	2882245650	594	594
+modules/imageframe/frames/gold2/frame.inc	2212987152	1833694768	1037	1105
+modules/imageframe/frames/notebook/BB.gif	2204724996	2204724996	184	184
+modules/imageframe/frames/notebook/BL.gif	3300848859	3300848859	658	658
+modules/imageframe/frames/notebook/BR.gif	2597791243	2597791243	342	342
+modules/imageframe/frames/notebook/LL.gif	3103229424	3103229424	1106	1106
+modules/imageframe/frames/notebook/RR.gif	1558883715	1558883715	198	198
+modules/imageframe/frames/notebook/TL.gif	1258715099	1258715099	632	632
+modules/imageframe/frames/notebook/TR.gif	4268292438	4268292438	330	330
+modules/imageframe/frames/notebook/TT.gif	349669551	349669551	169	169
+modules/imageframe/frames/notebook/frame.inc	4233523972	2714347646	990	1058
+modules/imageframe/frames/polaroid/BB.gif	688726079	688726079	44	44
+modules/imageframe/frames/polaroid/BL.gif	2970501908	2970501908	81	81
+modules/imageframe/frames/polaroid/BR.gif	1249990999	1249990999	73	73
+modules/imageframe/frames/polaroid/LL.gif	3495933725	3495933725	50	50
+modules/imageframe/frames/polaroid/RR.gif	3188377406	3188377406	42	42
+modules/imageframe/frames/polaroid/TL.gif	1158751472	1158751472	64	64
+modules/imageframe/frames/polaroid/TR.gif	3432555852	3432555852	64	64
+modules/imageframe/frames/polaroid/TT.gif	2630212311	2630212311	50	50
+modules/imageframe/frames/polaroid/frame.inc	83620302	2063137603	941	1008
+modules/imageframe/frames/polaroids/BB.gif	850231272	850231272	47	47
+modules/imageframe/frames/polaroids/BL.gif	2690281127	2690281127	102	102
+modules/imageframe/frames/polaroids/BR.gif	613417322	613417322	125	125
+modules/imageframe/frames/polaroids/LL.gif	3495933725	3495933725	50	50
+modules/imageframe/frames/polaroids/RR.gif	1737123900	1737123900	44	44
+modules/imageframe/frames/polaroids/TL.gif	1158751472	1158751472	64	64
+modules/imageframe/frames/polaroids/TR.gif	3210578365	3210578365	80	80
+modules/imageframe/frames/polaroids/TT.gif	2630212311	2630212311	50	50
+modules/imageframe/frames/polaroids/frame.inc	605728516	3779523855	942	1009
+modules/imageframe/frames/shadow/BB.png	3127255451	3127255451	187	187
+modules/imageframe/frames/shadow/BBL.png	4027018186	4027018186	277	277
+modules/imageframe/frames/shadow/BR.png	2610974460	2610974460	263	263
+modules/imageframe/frames/shadow/RR.png	1973009174	1973009174	167	167
+modules/imageframe/frames/shadow/RRT.png	587473276	587473276	291	291
+modules/imageframe/frames/shadow/frame.inc	3611083970	3036472769	912	979
+modules/imageframe/frames/shell/BB.jpg	3351408703	3351408703	1120	1120
+modules/imageframe/frames/shell/BL.jpg	3608062087	3608062087	10883	10883
+modules/imageframe/frames/shell/BR.jpg	1879304288	1879304288	10985	10985
+modules/imageframe/frames/shell/LL.jpg	2309387221	2309387221	899	899
+modules/imageframe/frames/shell/RR.jpg	1504490709	1504490709	900	900
+modules/imageframe/frames/shell/TL.jpg	2373044274	2373044274	1069	1069
+modules/imageframe/frames/shell/TR.jpg	3222994650	3222994650	1123	1123
+modules/imageframe/frames/shell/TT.jpg	1102939964	1102939964	1045	1045
+modules/imageframe/frames/shell/frame.inc	71756076	3962726170	973	1041
+modules/imageframe/frames/slide/BB.gif	453921154	453921154	124	124
+modules/imageframe/frames/slide/BL.gif	480744660	480744660	454	454
+modules/imageframe/frames/slide/BR.gif	577794196	577794196	454	454
+modules/imageframe/frames/slide/LL.gif	1322165446	1322165446	129	129
+modules/imageframe/frames/slide/RR.gif	79178272	79178272	129	129
+modules/imageframe/frames/slide/TL.gif	2420017403	2420017403	454	454
+modules/imageframe/frames/slide/TR.gif	2118035780	2118035780	455	455
+modules/imageframe/frames/slide/TT.gif	239177280	239177280	124	124
+modules/imageframe/frames/slide/frame.inc	2024896319	601084067	968	1036
+modules/imageframe/frames/wood/BB.gif	2045394578	2045394578	947	947
+modules/imageframe/frames/wood/BL.gif	2209108768	2209108768	1505	1505
+modules/imageframe/frames/wood/BR.gif	1351363522	1351363522	1506	1506
+modules/imageframe/frames/wood/LL.gif	4076649904	4076649904	946	946
+modules/imageframe/frames/wood/RR.gif	2264776948	2264776948	949	949
+modules/imageframe/frames/wood/TL.gif	2583590289	2583590289	1511	1511
+modules/imageframe/frames/wood/TR.gif	2173158634	2173158634	1513	1513
+modules/imageframe/frames/wood/TT.gif	1114424752	1114424752	946	946
+modules/imageframe/frames/wood/frame.inc	2785489871	3632780849	971	1039
+modules/imageframe/images/sample.jpg	3494279573	3494279573	10407	10407
+modules/imageframe/locale/af/LC_MESSAGES/modules_imageframe.mo	1706963379	1706963379	1253	1253
+modules/imageframe/locale/cs/LC_MESSAGES/modules_imageframe.mo	1821522628	1821522628	1377	1377
+modules/imageframe/locale/da/LC_MESSAGES/modules_imageframe.mo	594509848	594509848	1166	1166
+modules/imageframe/locale/de/LC_MESSAGES/modules_imageframe.mo	2753420016	2753420016	1194	1194
+modules/imageframe/locale/eu/LC_MESSAGES/modules_imageframe.mo	658223553	658223553	1261	1261
+modules/imageframe/locale/fi/LC_MESSAGES/modules_imageframe.mo	1368035708	1368035708	1291	1291
+modules/imageframe/locale/fr/LC_MESSAGES/modules_imageframe.mo	1996708954	1996708954	1313	1313
+modules/imageframe/locale/hu/LC_MESSAGES/modules_imageframe.mo	3696272138	3696272138	1241	1241
+modules/imageframe/locale/is/LC_MESSAGES/modules_imageframe.mo	1672924309	1672924309	421	421
+modules/imageframe/locale/it/LC_MESSAGES/modules_imageframe.mo	2588564011	2588564011	1067	1067
+modules/imageframe/locale/ja/LC_MESSAGES/modules_imageframe.mo	2633442822	2633442822	1334	1334
+modules/imageframe/locale/lt/LC_MESSAGES/modules_imageframe.mo	3419318554	3419318554	1317	1317
+modules/imageframe/locale/nl/LC_MESSAGES/modules_imageframe.mo	1137780389	1137780389	1232	1232
+modules/imageframe/locale/no/LC_MESSAGES/modules_imageframe.mo	1850718619	1850718619	1270	1270
+modules/imageframe/locale/pl/LC_MESSAGES/modules_imageframe.mo	2667609545	2667609545	1325	1325
+modules/imageframe/locale/ru/LC_MESSAGES/modules_imageframe.mo	1128453641	1128453641	1589	1589
+modules/imageframe/locale/sr/LC_MESSAGES/modules_imageframe.mo	1075900472	1075900472	1251	1251
+modules/imageframe/locale/sv/LC_MESSAGES/modules_imageframe.mo	1850340154	1850340154	1324	1324
+modules/imageframe/locale/tr/LC_MESSAGES/modules_imageframe.mo	293121255	293121255	1244	1244
+modules/imageframe/locale/zh_CN/LC_MESSAGES/modules_imageframe.mo	1321974144	1321974144	1290	1290
+modules/imageframe/locale/zh_TW/LC_MESSAGES/modules_imageframe.mo	2510479742	2510479742	1298	1298
+modules/imageframe/module.inc	900366565	2534562490	1933	1994
+modules/imageframe/po/GNUmakefile	1866879166	2808215985	98	103
+modules/imageframe/po/af.po	3141112816	2946435198	2156	2252
+modules/imageframe/po/cs.po	31314694	2286174237	2262	2359
+modules/imageframe/po/da.po	23125826	422442614	2102	2197
+modules/imageframe/po/de.po	3261926031	876639884	2266	2364
+modules/imageframe/po/eu.po	3566057514	840324468	2094	2187
+modules/imageframe/po/fi.po	3914069914	2310545925	2090	2183
+modules/imageframe/po/fr.po	3636404621	2023081679	2149	2242
+modules/imageframe/po/hu.po	1083252348	3761834238	2075	2168
+modules/imageframe/po/is.po	3968607498	4252597791	1881	1974
+modules/imageframe/po/it.po	3134753465	2104979554	2097	2190
+modules/imageframe/po/ja.po	520133570	2289781237	2169	2262
+modules/imageframe/po/lt.po	2345691189	2061834756	2378	2477
+modules/imageframe/po/nl.po	3709666779	1185143797	2191	2286
+modules/imageframe/po/no.po	485411118	231684747	2223	2320
+modules/imageframe/po/pl.po	975936207	2316544786	2165	2260
+modules/imageframe/po/ru.po	2498820709	2539859826	2513	2611
+modules/imageframe/po/sr.po	1385957337	3551430268	2088	2182
+modules/imageframe/po/strings.raw	1590671087	3908262074	1067	1125
+modules/imageframe/po/sv.po	4283820720	3115394812	2358	2459
+modules/imageframe/po/tr.po	537973653	2521672206	2298	2397
+modules/imageframe/po/zh_CN.po	3769821197	2583279728	2098	2193
+modules/imageframe/po/zh_TW.po	2091731699	3139492979	2106	2200
+modules/imageframe/templates/ImageFrameHead.tpl	1267002460	3318803149	459	468
+modules/imageframe/templates/ImageFrameStyle.tpl	531302525	1829299420	3373	3424
+modules/imageframe/templates/SampleBody.tpl	4099042391	4230534471	1214	1246
+modules/imageframe/templates/containers/ImageFrame.tpl	3185463174	1753261034	3053	3125
+R	modules/imageframe/Callbacks.inc
+R	modules/imageframe/classes/ImageFrameInterface_1.0.class
+R	modules/imageframe/locale/cs_CZ/LC_MESSAGES/modules_imageframe.mo
+R	modules/imageframe/locale/cs_CZ/LC_MESSAGES
+R	modules/imageframe/locale/cs_CZ
+R	modules/imageframe/locale/da_DK/LC_MESSAGES/modules_imageframe.mo
+R	modules/imageframe/locale/da_DK/LC_MESSAGES
+R	modules/imageframe/locale/da_DK
+R	modules/imageframe/locale/de_DE/LC_MESSAGES/modules_imageframe.mo
+R	modules/imageframe/locale/de_DE/LC_MESSAGES
+R	modules/imageframe/locale/de_DE
+R	modules/imageframe/locale/eu_ES/LC_MESSAGES/modules_imageframe.mo
+R	modules/imageframe/locale/eu_ES/LC_MESSAGES
+R	modules/imageframe/locale/eu_ES
+R	modules/imageframe/locale/fr_FR/LC_MESSAGES/modules_imageframe.mo
+R	modules/imageframe/locale/fr_FR/LC_MESSAGES
+R	modules/imageframe/locale/fr_FR
+R	modules/imageframe/locale/hu_HU/LC_MESSAGES/modules_imageframe.mo
+R	modules/imageframe/locale/hu_HU/LC_MESSAGES
+R	modules/imageframe/locale/hu_HU
+R	modules/imageframe/locale/is_IS/LC_MESSAGES/modules_imageframe.mo
+R	modules/imageframe/locale/is_IS/LC_MESSAGES
+R	modules/imageframe/locale/is_IS
+R	modules/imageframe/locale/it_IT/LC_MESSAGES/modules_imageframe.mo
+R	modules/imageframe/locale/it_IT/LC_MESSAGES
+R	modules/imageframe/locale/it_IT
+R	modules/imageframe/locale/ja_JP/LC_MESSAGES/modules_imageframe.mo
+R	modules/imageframe/locale/ja_JP/LC_MESSAGES
+R	modules/imageframe/locale/ja_JP
+R	modules/imageframe/locale/nl_NL/LC_MESSAGES/modules_imageframe.mo
+R	modules/imageframe/locale/nl_NL/LC_MESSAGES
+R	modules/imageframe/locale/nl_NL
+R	modules/imageframe/locale/no_NO/LC_MESSAGES/modules_imageframe.mo
+R	modules/imageframe/locale/no_NO/LC_MESSAGES
+R	modules/imageframe/locale/no_NO
+R	modules/imageframe/locale/ru_RU/LC_MESSAGES/modules_imageframe.mo
+R	modules/imageframe/locale/ru_RU/LC_MESSAGES
+R	modules/imageframe/locale/ru_RU
+R	modules/imageframe/locale/sr_YU/LC_MESSAGES/modules_imageframe.mo
+R	modules/imageframe/locale/sr_YU/LC_MESSAGES
+R	modules/imageframe/locale/sr_YU
+R	modules/imageframe/locale/sv_SE/LC_MESSAGES/modules_imageframe.mo
+R	modules/imageframe/locale/sv_SE/LC_MESSAGES
+R	modules/imageframe/locale/sv_SE
+R	modules/imageframe/locale/tr_TR/LC_MESSAGES/modules_imageframe.mo
+R	modules/imageframe/locale/tr_TR/LC_MESSAGES
+R	modules/imageframe/locale/tr_TR
+R	modules/imageframe/po/cs_CZ.po
+R	modules/imageframe/po/da_DK.po
+R	modules/imageframe/po/de_DE.po
+R	modules/imageframe/po/eu_ES.po
+R	modules/imageframe/po/fr_FR.po
+R	modules/imageframe/po/hu_HU.po
+R	modules/imageframe/po/is_IS.po
+R	modules/imageframe/po/it_IT.po
+R	modules/imageframe/po/ja_JP.po
+R	modules/imageframe/po/nl_NL.po
+R	modules/imageframe/po/no_NO.po
+R	modules/imageframe/po/ru_RU.po
+R	modules/imageframe/po/sr_YU.po
+R	modules/imageframe/po/sv_SE.po
+R	modules/imageframe/po/tr_TR.po
+R	modules/imageframe/templates/ImageFrame.tpl
+R	modules/imageframe/templates/SampleHead.tpl

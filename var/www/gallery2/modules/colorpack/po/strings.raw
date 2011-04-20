@@ -1,0 +1,24 @@
+# $Id: strings.raw,v 1.94 2005/09/09 09:56:19 bharat Exp $
+
+/* module.inc */
+gettext("Color Packs")
+gettext("Select different color palettes for themes")
+gettext("Display")
+
+/* classes/ColorPackImpl.class */
+gettext("None")
+
+/* packs/black/color.css */
+gettext("Black")
+
+/* packs/blue/color.css */
+gettext("Blue")
+
+/* packs/bluebottle/color.css */
+gettext("Blue Bottle")
+
+/* packs/deepsea/color.css */
+gettext("Deep Sea")
+
+/* packs/goldleaf/color.css */
+gettext("Gold Leaf")

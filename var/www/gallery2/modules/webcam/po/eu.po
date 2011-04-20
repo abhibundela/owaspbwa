@@ -1,0 +1,98 @@
+# $Id: eu.po,v 1.4 2006/03/22 04:21:55 mindless Exp $
+#
+# Gallery - a web based photo album viewer and editor
+# Copyright (C) 2000-2006 Bharat Mediratta
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery: WebCam 1.0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-02-17 23:38+0100\n"
+"PO-Revision-Date: 2006-02-19 20:59+0100\n"
+"Last-Translator: Piarres Beobide <pi@beobide.net>\n"
+"Language-Team: Basque <gallery-translations@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Pootle 0.6.3.20060126\n"
+
+msgid "WebCam/Live Image"
+msgstr "WebCam/Zuzeneko Irudia"
+
+msgid "WebCam"
+msgstr "WEbCan"
+
+msgid "Support periodically updated images like a webcam"
+msgstr "Onartu web kamerenak bezala aldiro aldatzen diren irudiak"
+
+msgid "Import"
+msgstr "Inportatu"
+
+msgid "Enter a URL below to a webcam or other live image anywhere on the net."
+msgstr "Idatzi web kamarara edo beste irudi \"bizi\" batetara URL-a."
+
+msgid "URL"
+msgstr "URL-a"
+
+msgid "You must enter a URL to an image"
+msgstr "Irudi baten URL-a idatzi behar duzu"
+
+msgid "The URL entered must begin with http://"
+msgstr "URL-a http://-rekin hasi behar da"
+
+msgid "The image URL you specified is unavailable"
+msgstr "Zuk ezarritako irudi URL-a ezin da eskuratu"
+
+msgid "The image URL you specified is not an image type"
+msgstr "Ezarritako irudi URL-a ez da irudi moetakoa"
+
+msgid "Check URL"
+msgstr "URL-a egiaztatu"
+
+#, c-format
+msgid "URL: %s"
+msgstr "URL-a: %s"
+
+msgid "change"
+msgstr "aldatu"
+
+msgid "Add Image"
+msgstr "Irudia Gehitu"
+
+msgid "WebCam Settings"
+msgstr "WebCam Ezarpenak"
+
+msgid "Settings saved successfully"
+msgstr "Ezarpenak behar bezala gorde dira"
+
+msgid ""
+"Enter length of time a webcam item should keep one image before refreshing "
+"from the source url."
+msgstr "Idatzi web kamara elementua jaotrri url-tik berritu aurretik itxoin behar den denbora."
+
+msgid "Duration in minutes:"
+msgstr "Iraupena minututan:"
+
+msgid "Invalid duration value"
+msgstr "Iraupen baliogabea"
+
+msgid "Save"
+msgstr "Gorde"
+
+msgid "Reset"
+msgstr "Berezarri"
+

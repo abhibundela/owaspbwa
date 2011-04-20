@@ -1,0 +1,27 @@
+# $Id: strings.raw,v 1.5 2006/02/13 00:38:10 mindless Exp $
+
+/* module.inc */
+gettext("Rating") /* also in: classes/RatingSortOrder.class templates/RatingItemEdit.tpl */
+gettext("Item Rating Interface")
+gettext("Extra Data")
+gettext("[rating] Add ratings")
+gettext("[rating] View ratings")
+gettext("[rating] All access")
+
+/* templates/RatingInterface.tpl */
+gettext("%s votes")
+
+/* templates/RatingItemEdit.tpl */
+gettext("This will enable or disable ratings for this album and, optionally, for its subalbums.  You can use permissions to allow viewing or adding ratings for specific users or groups.")
+gettext("Enable rating for this album")
+gettext("... and for all subalbums")
+
+/* templates/RatingSiteAdmin.tpl */
+gettext("Rating Settings")
+gettext("Settings saved successfully")
+gettext("Allow users to rate entire albums, in addition to individual items.")
+gettext("Save")
+gettext("Reset")
+
+/* templates/blocks/blocks.inc */
+gettext("Rating interface")

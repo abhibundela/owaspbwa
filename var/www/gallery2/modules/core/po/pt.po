@@ -1,0 +1,3693 @@
+# $Id: pt.po,v 1.11 2006/03/22 04:18:35 mindless Exp $
+#
+# Gallery - a web based photo album viewer and editor
+# Copyright (C) 2000-2006 Bharat Mediratta
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery: Core 1.1.0\n"
+"POT-Creation-Date: 2003-09-18 12:00+0900\n"
+"PO-Revision-Date: 2003-10-01 15:46+0900\n"
+"Last-Translator: Hugo Cruz <hugo.cruz@netcabo.pt>\n"
+"Language-Team: Portuguese Portugal<gallery-devel@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1 || n == 0);\n"
+
+#, fuzzy
+msgid "Gallery Email Test"
+msgstr "Módulos da Galeria"
+
+msgid "forever"
+msgstr "para sempre"
+
+msgid "High Priority (Me first!)"
+msgstr ""
+
+msgid "Low Priority (I want to share!)"
+msgstr ""
+
+msgid "No Markup"
+msgstr ""
+
+msgid "BBCode"
+msgstr ""
+
+msgid "Raw HTML"
+msgstr ""
+
+msgid "Database"
+msgstr ""
+
+msgid "File"
+msgstr "Ficheiro"
+
+#, c-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d minuto"
+msgstr[1] "%d minutos"
+
+#, c-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d hora"
+msgstr[1] "%d horas"
+
+#, c-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d dia"
+msgstr[1] "%d dias"
+
+#, c-format
+msgid "%d week"
+msgid_plural "%d weeks"
+msgstr[0] "%d semana"
+msgstr[1] "%d semanas"
+
+msgid "<none>"
+msgstr "<nenhum>"
+
+msgid "install"
+msgstr "instalar"
+
+msgid "upgrade"
+msgstr ""
+
+msgid "configure"
+msgstr "configurar"
+
+msgid "activate"
+msgstr "activar"
+
+#, fuzzy
+msgid "uninstall"
+msgstr "instalar"
+
+msgid "deactivate"
+msgstr "desactivar"
+
+msgid "No acceleration"
+msgstr ""
+
+msgid "Partial acceleration"
+msgstr ""
+
+msgid "Full acceleration"
+msgstr ""
+
+msgid "Performing Maintenance Tasks"
+msgstr ""
+
+#, c-format
+msgid "Downloading %s"
+msgstr ""
+
+#, fuzzy
+msgid "Done."
+msgstr "OK"
+
+msgid "Upgrade"
+msgstr ""
+
+msgid "Download"
+msgstr ""
+
+msgid "Inherit settings from parent album"
+msgstr ""
+
+#, fuzzy
+msgid "Use these settings"
+msgstr "Parâmetros da Conta"
+
+#, fuzzy
+msgid "Installing the core module"
+msgstr "Módulo 'Core' Galeria"
+
+msgid "key"
+msgstr "chave"
+
+msgid "All access"
+msgstr "Acesso a todos"
+
+msgid "[core] View item"
+msgstr "[core] Ver item"
+
+msgid "[core] View resized version(s)"
+msgstr "[core] Ver versão(ões) com o tamanho alterado"
+
+msgid "[core] View original version"
+msgstr "[core] Ver versão original"
+
+msgid "[core] View all versions"
+msgstr "[core] Ver todas as versões"
+
+msgid "[core] Add sub-album"
+msgstr "[core] Adicionar sub-album"
+
+msgid "[core] Add sub-item"
+msgstr "[core] Adicionar sub-item"
+
+msgid "[core] Edit item"
+msgstr "[core] Editar item"
+
+msgid "[core] Change item permissions"
+msgstr "[core] Alterar permissões do item"
+
+msgid "[core] Delete item"
+msgstr "[core] Apagar item"
+
+#, fuzzy
+msgid "Upgrading permissions"
+msgstr "permissões"
+
+#, fuzzy
+msgid "Deleting old permission tables"
+msgstr "permissões"
+
+#, fuzzy
+msgid "Registered Users"
+msgstr "editar utilizadores"
+
+#, fuzzy
+msgid "All Users"
+msgstr "Utilizadores"
+
+msgid "Detecting broken derivatives"
+msgstr ""
+
+msgid "Clearing fast-download cache"
+msgstr ""
+
+#, fuzzy
+msgid "Deleting old fast-download cache"
+msgstr "permissões"
+
+msgid "Converting MySQL data to UTF8"
+msgstr ""
+
+#, fuzzy
+msgid "Site Admins"
+msgstr "Administração"
+
+msgid "Everybody"
+msgstr ""
+
+msgid "Guest"
+msgstr "Convidado"
+
+msgid "Gallery"
+msgstr "Galeria"
+
+#, fuzzy
+msgid "This is the main page of your Gallery"
+msgstr "Topo da galeria."
+
+#, c-format
+msgid "Upgrading permissions (%d items complete, %d remaining)"
+msgstr ""
+
+msgid "Detecting broken derivatives, loading "
+msgstr ""
+
+msgid "Detecting broken derivatives "
+msgstr ""
+
+msgid "Detecting broken derivatives, "
+msgstr ""
+
+msgid "Detecting broken derivatives, saving "
+msgstr ""
+
+#, fuzzy, c-format
+msgid "Deleting old session files (iteration %d)"
+msgstr "permissões"
+
+#, fuzzy
+msgid "add items"
+msgstr "adicionar item"
+
+msgid "Album created successfully."
+msgstr "O Album foi criado com sucesso"
+
+msgid "add sub-album"
+msgstr "adicional sub-album"
+
+#, fuzzy
+msgid "add items confirmation"
+msgstr "editar animação"
+
+#, fuzzy
+msgid "Base filename"
+msgstr "Nome do ficheiro"
+
+msgid "Caption"
+msgstr "Descrição"
+
+msgid "Blank"
+msgstr ""
+
+msgid "From Web Browser"
+msgstr "Do Web Browser"
+
+#, fuzzy, c-format
+msgid "%d megabyte"
+msgid_plural "%d megabytes"
+msgstr[0] "%d byte"
+msgstr[1] "%d bytes"
+
+#, fuzzy, c-format
+msgid "%d kilobytes"
+msgid_plural "%d kilobytes"
+msgstr[0] "%d byte"
+msgstr[1] "%d bytes"
+
+msgid "From Local Server"
+msgstr "Do Servidor Local"
+
+msgid "Photo"
+msgstr "Foto"
+
+msgid "From Web Page"
+msgstr "Da Página Web"
+
+msgid "Gallery Item Administration"
+msgstr "Administração do Item"
+
+msgid "create link"
+msgstr ""
+
+#, fuzzy
+msgid "link an item"
+msgstr "Mover um Item"
+
+#, fuzzy
+msgid "delete an item"
+msgstr "apagar item"
+
+#, fuzzy
+msgid "delete confirmation"
+msgstr "apagar animação"
+
+#, fuzzy, c-format
+msgid "delete %s"
+msgstr "Apagar Utilizador"
+
+#, fuzzy, c-format
+msgid "edit %s"
+msgstr "Editar Utilizador"
+
+msgid "Settings saved successfully."
+msgstr "Parâmetros gravados com sucesso."
+
+msgid "&laquo; default theme &raquo;"
+msgstr "&laquo; Tema de defeito &raquo;"
+
+#, fuzzy
+msgid "Recreating resized images"
+msgstr "Recriar imagens cujo tamanho foi alterado"
+
+#, fuzzy
+msgid "Rebuilding resized images..."
+msgstr "Recriar imagens cujo tamanho foi alterado"
+
+#, fuzzy
+msgid "Rebuilding thumbnails..."
+msgstr "Recriar thumbnails"
+
+msgid "Album"
+msgstr "Album"
+
+#, fuzzy, c-format
+msgid "Processing image %d of %d"
+msgstr "Página %d de %d"
+
+#, fuzzy
+msgid "Changes saved successfully"
+msgstr "As alterações foram gravadas com sucesso"
+
+#, fuzzy
+msgid "Animation Size"
+msgstr "Animação"
+
+#, fuzzy
+msgid "edit captions"
+msgstr "Opções de Administração"
+
+msgid "General"
+msgstr "Geral"
+
+#, fuzzy
+msgid "Movie Size"
+msgstr "Parâmetros do filme"
+
+#, fuzzy
+msgid "Thumbnail cropped successfully"
+msgstr "O Album foi criado com sucesso"
+
+#, fuzzy
+msgid "Thumbnail reset successfully"
+msgstr "O Album foi criado com sucesso"
+
+#, fuzzy
+msgid "Photo 5x3"
+msgstr "Foto"
+
+#, fuzzy
+msgid "Photo 6x4"
+msgstr "Foto"
+
+#, fuzzy
+msgid "Photo 7x5"
+msgstr "Foto"
+
+#, fuzzy
+msgid "Photo 10x8"
+msgstr "Foto"
+
+msgid "Fullscreen 4x3"
+msgstr ""
+
+msgid "Widescreen 16x9"
+msgstr ""
+
+msgid "CinemaScope 2.35x1"
+msgstr ""
+
+msgid "Square 1x1"
+msgstr ""
+
+#, fuzzy
+msgid "As Image"
+msgstr "Editar Imagem"
+
+msgid "Landscape"
+msgstr ""
+
+msgid "Portrait"
+msgstr ""
+
+#, fuzzy
+msgid "Crop Thumbnail"
+msgstr "Sem Thumbnail"
+
+#, fuzzy
+msgid "Reverted rotate and scale changes successfully"
+msgstr "Imagens rodadas com sucesso"
+
+#, fuzzy
+msgid "Rotated photo successfully"
+msgstr "Imagens rodadas com sucesso"
+
+#, fuzzy
+msgid "Scaled photo successfully"
+msgstr "Tamanho da imagem alterado com sucesso"
+
+#, fuzzy
+msgid "Modify Photo"
+msgstr "Imagem alterada"
+
+#, fuzzy
+msgid "Successfully saved theme settings"
+msgstr "Foi adicionado %d ficheiro com sucesso."
+
+msgid "Theme"
+msgstr "Tema"
+
+msgid "make highlight"
+msgstr "realçar"
+
+msgid "move item"
+msgstr "mover item"
+
+#, fuzzy, c-format
+msgid "move %s"
+msgstr "Mover"
+
+#, fuzzy, c-format
+msgid "edit %s permissions"
+msgstr "permissões"
+
+msgid "reorder items"
+msgstr "reordenar items"
+
+msgid "Maintenance"
+msgstr ""
+
+msgid "Gallery Site Administration"
+msgstr "Administração do Site"
+
+msgid "site admin"
+msgstr "administração do site"
+
+msgid "Gallery User Administration"
+msgstr "Administração de Utilizadores"
+
+#, fuzzy
+msgid "change password"
+msgstr "Alterar Password"
+
+#, fuzzy
+msgid "your account"
+msgstr "A sua conta"
+
+#, fuzzy
+msgid "Password Recovery"
+msgstr "Password"
+
+#, fuzzy
+msgid "Core"
+msgstr "configurar"
+
+#, fuzzy
+msgid "Gallery 2 Core Module"
+msgstr "Módulo 'Core' Galeria"
+
+msgid "Add Items"
+msgstr "Adicionar Items"
+
+#, fuzzy
+msgid "Edit Album"
+msgstr "Adicionar Sub-Album"
+
+#, fuzzy
+msgid "Edit Photo"
+msgstr "Imagem alterada"
+
+#, fuzzy
+msgid "Edit Movie"
+msgstr "Filme"
+
+#, fuzzy
+msgid "Create Link"
+msgstr "Criar"
+
+#, fuzzy
+msgid "Add Album"
+msgstr "Adicionar Sub-Album"
+
+#, fuzzy
+msgid "Edit Permissions"
+msgstr "Permissões"
+
+#, fuzzy
+msgid "View Permissions"
+msgstr "Permissões"
+
+#, fuzzy
+msgid "Delete Album"
+msgstr "Apagar um Grupo"
+
+#, fuzzy
+msgid "Delete Photo"
+msgstr "Apagar Utilizador"
+
+#, fuzzy
+msgid "Delete Movie"
+msgstr "Apagar Utilizador"
+
+#, fuzzy
+msgid "Move Album"
+msgstr "Reordenar Album"
+
+#, fuzzy
+msgid "Move Photo"
+msgstr "Imagem alterada"
+
+#, fuzzy
+msgid "Move Movie"
+msgstr "Parâmetros do filme"
+
+#, fuzzy
+msgid "Edit Captions"
+msgstr "Editar Animação"
+
+msgid "Make Highlight"
+msgstr "Realçar"
+
+msgid "Reorder Items"
+msgstr "Reordenar Items"
+
+#, fuzzy
+msgid "Site Admin"
+msgstr "Administração"
+
+msgid "Login"
+msgstr "Login"
+
+msgid "Your Account"
+msgstr "A sua Conta"
+
+msgid "Logout"
+msgstr "Logout"
+
+msgid "Modules"
+msgstr "Módulos"
+
+msgid "Repository"
+msgstr ""
+
+#, fuzzy
+msgid "Themes"
+msgstr "Tema"
+
+msgid "Display"
+msgstr ""
+
+msgid "Users"
+msgstr "Utilizadores"
+
+msgid "Groups"
+msgstr "Grupos"
+
+msgid "Performance"
+msgstr ""
+
+msgid "Toolkit Priority"
+msgstr ""
+
+msgid "Graphics Toolkits"
+msgstr ""
+
+msgid "Account Settings"
+msgstr "Parâmetros da Conta"
+
+msgid "Change Password"
+msgstr "Alterar Password"
+
+#, fuzzy
+msgid "Link Album"
+msgstr "Album"
+
+#, fuzzy
+msgid "Link Photo"
+msgstr "Foto"
+
+#, fuzzy
+msgid "Link Movie"
+msgstr "Filme"
+
+#, fuzzy, c-format
+msgid "Edit %s"
+msgstr "Editar Utilizador"
+
+#, fuzzy, c-format
+msgid "Delete %s"
+msgstr "Apagar Utilizador"
+
+#, fuzzy, c-format
+msgid "Move %s"
+msgstr "Mover"
+
+#, fuzzy, c-format
+msgid "Link %s"
+msgstr "Login"
+
+#, fuzzy
+msgid "Build all thumbnails/resizes"
+msgstr "Thumbnails/Tamanhos"
+
+msgid ""
+"Ensure data files for all derivatives (thumbnails, etc) have been built and rebuild broken "
+"ones."
+msgstr ""
+
+#, fuzzy
+msgid "Build All Thumbnails/Resizes"
+msgstr "Thumbnails/Tamanhos"
+
+msgid "Debug output for failed items:"
+msgstr ""
+
+#, fuzzy, c-format
+msgid "Checked %d items"
+msgstr "adicionar item"
+
+#, fuzzy, c-format
+msgid "%d items built"
+msgstr "adicionar item"
+
+#, c-format
+msgid "%d items failed"
+msgstr ""
+
+#, fuzzy
+msgid "Delete user sessions"
+msgstr "Permissões do Filesystem"
+
+msgid ""
+"Delete all persistent user sessions according to your current session expiration settings."
+msgstr ""
+
+msgid "Delete database cache"
+msgstr ""
+
+msgid ""
+"Gallery stores commonly used database information on disk for increased performance. If you "
+"modify the database directly, you should run this task to clean out the cache and force "
+"Gallery to reload the information from the database."
+msgstr ""
+
+#, fuzzy, c-format
+msgid "Successfully deleted directory: %s"
+msgstr "Foi adicionado %d ficheiro com sucesso."
+
+#, c-format
+msgid "Unable to delete directory: %s"
+msgstr ""
+
+#, fuzzy
+msgid "Delete template cache"
+msgstr "Apagar Item"
+
+msgid ""
+"Gallery compiles template files and saves them for increased performance.  If you're "
+"experiencing problems that say <i>Smarty error</i> then you might try running this task.  "
+"Also run this if you remove a local/*.tpl file so Smarty will switch back to the default tpl "
+"file."
+msgstr ""
+
+#, fuzzy
+msgid "Template cache deleted successfully"
+msgstr "O Album foi criado com sucesso"
+
+#, fuzzy
+msgid "album"
+msgstr "(album)"
+
+msgid "Animation"
+msgstr "Animação"
+
+#, fuzzy
+msgid "animation"
+msgstr "Animação"
+
+msgid "Gallery Core"
+msgstr "'Core' da Galeria"
+
+msgid "Gallery Core Module"
+msgstr "Módulo 'Core' Galeria"
+
+msgid "Search descriptions"
+msgstr "Pesquisar descrições"
+
+msgid "Search keywords"
+msgstr "Pesquisar palavras chave"
+
+msgid "Search summaries"
+msgstr "Pesquisar sumários"
+
+msgid "Search titles"
+msgstr "Pesquisar títulos"
+
+msgid "Description"
+msgstr "Descrição"
+
+msgid "Keywords"
+msgstr "Palavras Chave"
+
+msgid "Summary"
+msgstr "Sumário"
+
+msgid "Title"
+msgstr "Título"
+
+msgid "Owner"
+msgstr "Proprietário"
+
+#, fuzzy
+msgid "Group"
+msgstr "Grupos"
+
+#, fuzzy
+msgid "group"
+msgstr "Grupos"
+
+msgid "Other"
+msgstr ""
+
+msgid "Movie"
+msgstr "Filme"
+
+#, fuzzy
+msgid "movie"
+msgstr "Filme"
+
+#, fuzzy
+msgid "photo"
+msgstr "Foto"
+
+msgid "download"
+msgstr ""
+
+#, fuzzy
+msgid "Plugins directory does not exist."
+msgstr "O utilizador '%s' não existe."
+
+msgid ""
+"Couldn't create plugins subdirectory. Make sure the webserver has write permissions in it."
+msgstr ""
+
+msgid "Couldn't create repository cache path."
+msgstr ""
+
+msgid ""
+"Couldn't create cache subdirectory. Make sure the web server has write permissions in it."
+msgstr ""
+
+#, c-format
+msgid "Error downloading index from '%s'."
+msgstr ""
+
+#, c-format
+msgid "Error downloading index hash from '%s'."
+msgstr ""
+
+msgid "Index integrity check failed."
+msgstr ""
+
+#, fuzzy
+msgid "&laquo; default sort order &raquo;"
+msgstr "&laquo; Sem Ordenação &raquo;"
+
+#, fuzzy
+msgid "Manual sort order"
+msgstr "Ordenação por defeito"
+
+#, fuzzy
+msgid "Origination Date"
+msgstr "Data de Criação"
+
+msgid "Creation Date"
+msgstr "Data de Criação"
+
+msgid "Last Changed Date"
+msgstr "Data da Última Alteração"
+
+msgid "Name"
+msgstr "Nome"
+
+msgid "View Count"
+msgstr ""
+
+msgid "Random"
+msgstr ""
+
+#, fuzzy
+msgid "&laquo; no presort &raquo;"
+msgstr "&laquo; Nenhum &raquo;"
+
+#, fuzzy
+msgid "Albums First"
+msgstr "Parâmetros do Album"
+
+msgid "Most Viewed First"
+msgstr ""
+
+msgid "Ascending"
+msgstr "Ascendente"
+
+msgid "Descending"
+msgstr "Descendente"
+
+msgid "Validation disabled until you set allowSessionAccess in config.php"
+msgstr ""
+
+#, fuzzy
+msgid "This page is valid XHTML 1.0"
+msgstr "Esta página é válida de acordo com HTML 4.01"
+
+#, fuzzy
+msgid "Donate to the Gallery project"
+msgstr "Voltar à vista de Item"
+
+msgid "G2.1: Blackjack"
+msgstr ""
+
+#, c-format
+msgid "Estimated time remaining: %d:%02d"
+msgstr ""
+
+#, c-format
+msgid "Memory used: %s, total: %s"
+msgstr ""
+
+msgid "Rows per album page"
+msgstr ""
+
+msgid "Columns per album page"
+msgstr ""
+
+msgid "Number of items to show per page"
+msgstr ""
+
+msgid "Row height (pixels)"
+msgstr ""
+
+msgid "Column width (pixels)"
+msgstr ""
+
+msgid "Show image owners"
+msgstr ""
+
+msgid "Show album owners"
+msgstr ""
+
+msgid "Show micro navigation thumbnails"
+msgstr ""
+
+msgid "Blocks to show in the sidebar"
+msgstr ""
+
+msgid "Blocks to show on album pages"
+msgstr ""
+
+msgid "Blocks to show on photo pages"
+msgstr ""
+
+msgid "View Samples"
+msgstr ""
+
+#, fuzzy
+msgid "Album Frame"
+msgstr "Parâmetros do Album"
+
+msgid "Item Frame"
+msgstr ""
+
+#, fuzzy
+msgid "Photo Frame"
+msgstr "Foto"
+
+msgid "Color Pack"
+msgstr ""
+
+#, fuzzy
+msgid "You must enter a number greater than 0"
+msgstr "Introduza um número (maior que zero)"
+
+msgid "Format: [module.BlockName param=value] ..."
+msgstr ""
+
+#, c-format
+msgid "%dx%d"
+msgstr ""
+
+#, fuzzy
+msgid "Audio"
+msgstr "reverter"
+
+#, fuzzy
+msgid "audio"
+msgstr "reverter"
+
+#, fuzzy
+msgid "Archive"
+msgstr "Activo"
+
+#, fuzzy
+msgid "archive"
+msgstr "activar"
+
+msgid "Document"
+msgstr ""
+
+msgid "document"
+msgstr ""
+
+#, fuzzy
+msgid "Spreadsheet"
+msgstr "reset"
+
+#, fuzzy
+msgid "spreadsheet"
+msgstr "reset"
+
+msgid "Unknown"
+msgstr "Desconhecido"
+
+#, fuzzy
+msgid "unknown"
+msgstr "Desconhecido"
+
+#, c-format
+msgid ""
+"Invalid return URL! The requested URL %s tried to insert a redirection to %s which is not a "
+"part of this Gallery."
+msgstr ""
+
+msgid "Back"
+msgstr ""
+
+#, c-format
+msgid "Back to %s"
+msgstr ""
+
+#, fuzzy
+msgid "User"
+msgstr "Utilizadores"
+
+#, fuzzy
+msgid "user"
+msgstr "Utilizadores"
+
+msgid "Optimize database"
+msgstr ""
+
+msgid ""
+"Improve the performance of your database.  Results will vary depending on which database "
+"you're using, but this routine maintenance will make your Gallery run faster.  Especially "
+"useful after adding or deleting many items."
+msgstr ""
+
+#, fuzzy
+msgid "Database optimized successfully"
+msgstr "Imagens rodadas com sucesso"
+
+msgid "Reset view counts"
+msgstr ""
+
+msgid ""
+"Reset number of views to zero for all albums and items.  This task flushes the database "
+"cache as well."
+msgstr ""
+
+#, fuzzy
+msgid "View counts reset successfully"
+msgstr "O Album foi criado com sucesso"
+
+msgid "Refresh capture dates"
+msgstr ""
+
+msgid ""
+"Update capture date stored in Gallery for all items with an available date in the original "
+"data file (usually from EXIF data)."
+msgstr ""
+
+msgid "Processing..."
+msgstr ""
+
+msgid "Refresh Capture Dates"
+msgstr ""
+
+#, fuzzy, c-format
+msgid "Processing item %d of %d"
+msgstr "Página %d de %d"
+
+#, fuzzy, c-format
+msgid "Updated %d of %d items"
+msgstr "Página %d de %d"
+
+#, fuzzy
+msgid "System information"
+msgstr "editar animação"
+
+msgid "Get system details; useful for copy/paste into G2 support forum."
+msgstr ""
+
+#, fuzzy
+msgid "core"
+msgstr "configurar"
+
+#, fuzzy
+msgid "Gallery version"
+msgstr "Galeria"
+
+#, fuzzy
+msgid "PHP version"
+msgstr "Versão"
+
+#, fuzzy
+msgid "Webserver"
+msgstr "Caminho do Servidor"
+
+msgid "Toolkits"
+msgstr ""
+
+#, fuzzy
+msgid "Acceleration"
+msgstr "Acção"
+
+msgid "Operating system"
+msgstr ""
+
+msgid "Default theme"
+msgstr "Tema de defeito"
+
+#, fuzzy
+msgid "Locale"
+msgstr "Alteração de tamanho"
+
+#, fuzzy
+msgid "Browser"
+msgstr "Navegar na Galeria"
+
+msgid "General Settings"
+msgstr "Parâmetros gerais"
+
+msgid "Settings saved successfully"
+msgstr "Parâmetros gravados com sucesso"
+
+#, fuzzy
+msgid "Added local upload directory successfully"
+msgstr "Directório local adicionado com sucesso"
+
+#, fuzzy
+msgid "Removed local upload directory successfully"
+msgstr "O directório de upload local foi removido com sucesso"
+
+#, fuzzy
+msgid "Test email sent successfully"
+msgstr "O Album foi criado com sucesso"
+
+msgid "There was a problem processing your request, see below for details."
+msgstr ""
+
+msgid "Error sending test email, see below for details."
+msgstr ""
+
+#, fuzzy
+msgid "Language Settings"
+msgstr "Parâmetros de Linguagem"
+
+#, fuzzy
+msgid ""
+"Select language defaults for Gallery. Individual users can override this setting in their "
+"personal preferences or via the language selector block if available. Gallery will try to "
+"automatically detect the language preference of each user if the browser preference check is "
+"enabled."
+msgstr ""
+"Linguagem por defeito da galleria. Os utilizadores individuais podem alterar este parâmetro "
+"nas preferências pessoais."
+
+msgid "Default language"
+msgstr "Linguagem de defeito"
+
+msgid "Check Browser Preference"
+msgstr ""
+
+msgid "gettext"
+msgstr ""
+
+#, c-format
+msgid ""
+"Your webserver does not support localization.  Please instruct your system administrator to "
+"reconfigure PHP with the %s option enabled."
+msgstr ""
+
+#, fuzzy
+msgid "Date Formats"
+msgstr "depois"
+
+#, c-format
+msgid ""
+"Specify how dates and times are displayed by Gallery.  See %sphp.net%s for details of how to "
+"enter a format string.  Note that the display of some tokens varies according to the active "
+"language."
+msgstr ""
+
+#, fuzzy
+msgid "Style"
+msgstr "Alteração de tamanho"
+
+msgid "Format"
+msgstr ""
+
+#, fuzzy
+msgid "Sample"
+msgstr "Alteração de tamanho"
+
+#, fuzzy
+msgid "Date"
+msgstr "depois"
+
+#, fuzzy
+msgid "Time"
+msgstr "mover imagem"
+
+msgid "Date/Time"
+msgstr ""
+
+msgid "Filesystem Permissions"
+msgstr "Permissões do Filesystem"
+
+msgid ""
+"Specify the default permissions for files and directories that Gallery creates. This doesn't "
+"apply to files/directories that Gallery has already created."
+msgstr ""
+"Especificar as permissões de defeito para ficheiros e directórios que a Galeria cria. Isto "
+"não se aplica a ficheiros ou directorias que a Galeria tenha criado anteriormente."
+
+msgid "New directories"
+msgstr "Novas directorias"
+
+msgid "New files"
+msgstr "Novos ficheiros"
+
+msgid "Local Server Upload Paths"
+msgstr "Caminhos para Upload de Servidor Local"
+
+msgid ""
+"Specify the legal directories on the local server where a user can store files and then "
+"upload them into Gallery using the <i>Upload from Local Server</i> feature.  The paths you "
+"enter here and all the files and directories under those paths will be available to any "
+"Gallery user who has upload privileges, so you should limit this to directories that won't "
+"contain sensitive data (eg. /tmp or /usr/ftp/incoming)"
+msgstr ""
+"Especificar as directorias do servidor local onde o utilizador por colocar os ficheiros para "
+"inserir na Galeria usando a funcionalidade <i>Upload do servidor local</i>. Todos os "
+"caminhos aqui introduzidos e todos os ficheiros e directorias dentro dos mesmos, estarão "
+"disponíveis a qualquer utilizador da Galeria que tenham permissões de Upload. Estes caminhos "
+"devem estar limitados a directorias que não contenham dados sensíveis (ex. /tmp ou /usr/ftp/"
+"incoming)"
+
+msgid "Path"
+msgstr "Caminho"
+
+msgid "Action"
+msgstr "Acção"
+
+msgid "remove"
+msgstr "apagar"
+
+msgid "Add"
+msgstr "Adicionar"
+
+msgid "You must enter a directory to add."
+msgstr "Introduza um directório a adicionar."
+
+msgid "open_basedir documentation"
+msgstr ""
+
+#, c-format
+msgid ""
+"Your webserver is configured to prevent you from accessing that directory.  Please refer to "
+"the %s and consult your webserver administrator."
+msgstr ""
+
+msgid "The webserver does not have permissions to read that directory."
+msgstr ""
+
+msgid "The path you specified is not a valid directory."
+msgstr ""
+
+msgid "Session Settings"
+msgstr "Parâmetros da Sessão"
+
+#, fuzzy
+msgid "Session Lifetime"
+msgstr "Parâmetros da Sessão"
+
+msgid "Inactivity Timeout"
+msgstr "Timeout de Inactividade"
+
+msgid "Embedded Markup"
+msgstr ""
+
+msgid ""
+"What kind of markup should we allow in user-entered fields?  For security reasons we do not "
+"recommend that you allow raw HTML.  BBCode is a special kind of markup that is secure and "
+"allows for simple text formatting like bold, italics, lists, images and urls."
+msgstr ""
+
+msgid "Markup"
+msgstr ""
+
+msgid "Email"
+msgstr ""
+
+msgid ""
+"By default Gallery uses PHP's built in mail function to send email which requires no "
+"configuration.  To use a smtp/mail server enter the information below, including "
+"authentication information if required.  Optionally add :port after the server name to use a "
+"non-default port."
+msgstr ""
+
+#, fuzzy
+msgid "Server"
+msgstr "Caminho do Servidor"
+
+msgid "Username"
+msgstr "Nome de Utilizador"
+
+msgid "Password"
+msgstr "Password"
+
+#, fuzzy
+msgid "SMTP From Address"
+msgstr "Endereço de Email"
+
+#, fuzzy
+msgid "Invalid email address"
+msgstr "Endereço de email"
+
+msgid ""
+"Send a test email to verify your settings are correct (whether using PHP mail or SMTP "
+"settings above).  Below enter a recipient email address for a test message."
+msgstr ""
+
+msgid "Send Email"
+msgstr ""
+
+msgid "Email Test Error"
+msgstr ""
+
+msgid "Cookies"
+msgstr ""
+
+msgid ""
+"When Gallery is embedded in another application (portal, CMS, forum, etc.), then you have "
+"the choice between two options. Everyone else does not have to care about the cookie "
+"settings. Read on for more details."
+msgstr ""
+
+msgid ""
+"If your Gallery is embedded and you leave the following fields empty, then all DownloadItem "
+"links (the URLs of the images and other items) in the embedded Gallery have <b>an appended "
+"GALLERYSID string</b> in the URL which is <b>a minor security risk</b> when your Gallery "
+"users start copy'n'pasting image URLs in forums, guestbooks, etc. The alternative is to set "
+"the <b>cookie path</b>. Gallery will then <b>not append the GALLERYSID to the embedded "
+"DownloadItem URLs</b>. E.g. when Gallery is reachable at http://www.example.com/application/"
+"gallery2/ and the embedding application is at http://www.example.com/application/, then you "
+"have to compare the path /application/gallery2/ with /application/. The cookie path is the "
+"part of the paths that is equal, in this case it is '/application/'. Most often it is just "
+"'/'."
+msgstr ""
+
+msgid ""
+"The <b>cookie domain</b> is also only needed for embedded Gallery installs and only if you "
+"want to get rid of the GALLERYSID string in the embedded DownloadItem URLs. <b>In most "
+"cases, the cookie domain can be left blank.</b> Set it only, if Gallery and the embedding "
+"application are only reachable with <b>different subdomains</b>. E.g. when Gallery is at "
+"http://photos.example.com/ and the application is at http://www.example.com/, then you have "
+"to set the cookie domain example.com (the part of the host string that is common to both, "
+"Gallery and the embedding application)."
+msgstr ""
+
+msgid ""
+"Once you change the cookie settings, <b>all registered users</b> of your Gallery will "
+"<b>have to clear their browser cookie cache</b>. If they do not, they will experience "
+"login / logout / lost session problems."
+msgstr ""
+
+msgid "Invalid cookie path"
+msgstr ""
+
+msgid "Domain"
+msgstr ""
+
+msgid "Invalid cookie domain"
+msgstr ""
+
+msgid "Locking System"
+msgstr ""
+
+msgid ""
+"Gallery uses a system of locks to prevent simultaneous changes from interfering with each "
+"other.  There are two types of locking, each with its advantages and disadvantages.  "
+"<b>File</b> based locking is fast and efficient, but won't work on NFS filesystems and will "
+"be unreliable on Windows.  <b>Database</b> locking is slower but is more reliable.  If you "
+"are unsure which to choose, we recommend using file locking.  If you're getting many lock "
+"timeouts, you can try switching to database locking instead.  It's ok to switch back and "
+"forth."
+msgstr ""
+
+msgid "Lock system"
+msgstr ""
+
+msgid "Helper Processes"
+msgstr ""
+
+msgid ""
+"Some Gallery modules will use programs on your server to do image processing, archiving and "
+"other operations.  These programs can be very computationally intensive and can impact the "
+"overall performance of a shared web server.  You can make these programs run at a lower "
+"priority so that they play nice.  If you're in a shared hosting environment and your web "
+"host is complaining, try setting your priority low."
+msgstr ""
+
+msgid "Priority"
+msgstr ""
+
+msgid "Save"
+msgstr "Gravar"
+
+#, fuzzy
+msgid "Reset"
+msgstr "reset"
+
+msgid "Create A New Group"
+msgstr "Criar um Novo Grupo"
+
+msgid "Group Name"
+msgstr "Nome do Grupo"
+
+#, fuzzy
+msgid "(required)"
+msgstr "obrigatório"
+
+msgid "You must enter a group name"
+msgstr "Introduza um nome de grupo"
+
+#, c-format
+msgid "Group '%s' already exists"
+msgstr "O grupo '%s' já existe"
+
+msgid "Create Group"
+msgstr "Criar Grupo"
+
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgid "Create A New User"
+msgstr "Criar um novo utilizador"
+
+msgid "You must enter a username"
+msgstr "Introduza o seu nome de utilizador"
+
+#, c-format
+msgid "Username '%s' already exists"
+msgstr "O Nome de Utilizador '%s' já existe"
+
+msgid "Full Name"
+msgstr "Nome Completo"
+
+msgid "Email Address"
+msgstr "Endereço de Email"
+
+msgid "You must enter an email address"
+msgstr "Introduza um endereço de email"
+
+msgid "Language"
+msgstr "Linguagem"
+
+msgid "You must enter a password"
+msgstr "Introduza a password"
+
+msgid "Verify Password"
+msgstr "Verificar Password"
+
+msgid "You must enter the password a second time"
+msgstr "Introduza a sua password uma segunda vez"
+
+msgid "The passwords you entered did not match"
+msgstr "As passwords introduzidas são diferentes"
+
+msgid "Create User"
+msgstr "Criar Utilizador"
+
+#, fuzzy
+msgid "Delete A Group"
+msgstr "Apagar um Grupo"
+
+msgid "Are you sure?"
+msgstr "Tem a certeza?"
+
+#, fuzzy, c-format
+msgid "This will completely remove %s from Gallery.  There is no undo!"
+msgstr ""
+"Este item será completamente removido da Galeria. Não existe a possibilidade de Reverter!"
+
+msgid "Delete"
+msgstr "Apagar"
+
+#, fuzzy
+msgid "Delete a User"
+msgstr "Apagar Utilizador"
+
+#, fuzzy, c-format
+msgid "User %s is the owner of %s items."
+msgstr "Descrição longa do item."
+
+#, c-format
+msgid "Delete user <strong>%s</strong> and..."
+msgstr ""
+
+#, c-format
+msgid "Assign a new owner for all items of %s"
+msgstr ""
+
+#, c-format
+msgid ""
+"Delete all items of %s and assign a new owner for all remaining non empty albums. Items that "
+"%s doesn't have permission to delete will also be reassigned to a new owner."
+msgstr ""
+
+msgid "New owner (leaving blank means one of the Site Admins):"
+msgstr ""
+
+#, c-format
+msgid "User '%s' does not exist! Cannot assign items to a nonexistent user."
+msgstr ""
+
+msgid "The new owner must be a different user than the user we are deleting!"
+msgstr ""
+
+msgid "The new owner cannot be a Guest / Anonymous user!"
+msgstr ""
+
+#, fuzzy, c-format
+msgid "This will completely remove <strong>%s</strong> from Gallery.  There is no undo!"
+msgstr ""
+"<b>%s</b> será completamente removido da Galeria. Não existe a possibilidade de revereter"
+
+msgid "Edit a group"
+msgstr "Editar um Grupo"
+
+#, c-format
+msgid "Edit Members of Group '%s'"
+msgstr ""
+
+#, fuzzy, c-format
+msgid "Added user '%s' to group '%s'"
+msgstr "Utilizador '%s' adicionado ao grupo"
+
+#, fuzzy, c-format
+msgid "Removed user '%s' from group '%s'"
+msgid_plural "Removed %s users from group '%s'"
+msgstr[0] "Utilizador '%s' removido do grupo"
+msgstr[1] "Utilizador '%s' removido do grupo"
+
+#, c-format
+msgid "This group contains %d user"
+msgid_plural "This group contains %d users"
+msgstr[0] "Este grupo contém %d utilizador"
+msgstr[1] "Este grupo contém %d utilizadores"
+
+#, fuzzy
+msgid "Members"
+msgstr "Adicionar Membro"
+
+msgid "&laquo; first"
+msgstr "&laquo; primeiro"
+
+msgid "&laquo; back"
+msgstr "&laquo; retroceder"
+
+#, c-format
+msgid "Viewing page %d of %d"
+msgstr "Página %d de %d"
+
+msgid "next &raquo;"
+msgstr "próximo &raquo;"
+
+msgid "last &raquo;"
+msgstr "último"
+
+#, fuzzy
+msgid "Filter"
+msgstr "Filtro:"
+
+msgid "Clear"
+msgstr "Apagar"
+
+#, c-format
+msgid "%d user matches your filter"
+msgid_plural "%d users match your filter"
+msgstr[0] "%d utilizador condiz com o filtro"
+msgstr[1] "%d utilizadores condizem com o filtro"
+
+#, fuzzy
+msgid "Remove selected"
+msgstr "Remover membro"
+
+msgid "You must select a user to remove."
+msgstr "Deve seleccionar um utilizador para remover."
+
+#, fuzzy
+msgid "You can't remove yourself from this group."
+msgstr "Apagar um Grupo"
+
+msgid "Add Member"
+msgstr "Adicionar Membro"
+
+msgid "You must enter a username."
+msgstr "Introduza o seu nome de utilizador."
+
+#, c-format
+msgid "User '%s' does not exist."
+msgstr "O utilizador '%s' não existe."
+
+#, fuzzy
+msgid "This user already is in this group."
+msgstr "O nome do utilizador já está a ser usado"
+
+msgid "Done"
+msgstr "OK"
+
+msgid "Edit a user"
+msgstr "Editar um Utilizador"
+
+msgid "That username is already in use"
+msgstr "O nome do utilizador já está a ser usado"
+
+msgid "You must enter a new username"
+msgstr "Introduza um novo nome de utilizador"
+
+#, fuzzy
+msgid "E-mail Address"
+msgstr "Endereço de Email"
+
+msgid "(suggested)"
+msgstr ""
+
+msgid "Group Management"
+msgstr "Gestão de Grupos"
+
+#, c-format
+msgid "Removed group '%s'"
+msgstr "Grupo '%s' removido"
+
+#, c-format
+msgid "Created group '%s'"
+msgstr "Grupo '%s' criado"
+
+#, c-format
+msgid "Modified group '%s'"
+msgstr "Grupo '%s' alterado"
+
+#, c-format
+msgid "There is %d group in the system."
+msgid_plural "There are %d total groups in the system."
+msgstr[0] "Existem %d grupo no sistema."
+msgstr[1] "Existem %d grupos no sistema."
+
+msgid "Edit Group"
+msgstr "Editar Grupo"
+
+msgid "Edit"
+msgstr "Editar"
+
+msgid "Add/Remove Users"
+msgstr "Adicionar/Remover Utilizadores"
+
+#, c-format
+msgid "Group '%s' does not exist."
+msgstr "O grupo '%s' não existe."
+
+#, fuzzy
+msgid "You cannot delete that group"
+msgstr "Apagar um Grupo"
+
+msgid "You cannot edit that group's users"
+msgstr ""
+
+msgid "Edit Group (by list)"
+msgstr "Editar Grupo (por lista)"
+
+msgid "edit"
+msgstr "editar"
+
+msgid "delete"
+msgstr "apagar"
+
+#, fuzzy
+msgid "members"
+msgstr "Remover membro"
+
+#, c-format
+msgid "%d group matches your filter"
+msgid_plural "%d groups match your filter"
+msgstr[0] "%d grupo condiz com o filtro"
+msgstr[1] "%d grupos condizem com o filtro"
+
+msgid "System Maintenance"
+msgstr ""
+
+#, fuzzy, c-format
+msgid "Completed %s task successfully."
+msgstr "Imagens rodadas com sucesso"
+
+#, fuzzy, c-format
+msgid "The %s task failed to complete successfully."
+msgstr "O Album foi criado com sucesso"
+
+#, fuzzy
+msgid "Task name"
+msgstr "Nome do Utilizador"
+
+#, fuzzy
+msgid "Last run"
+msgstr "último"
+
+msgid "Success/Fail"
+msgstr ""
+
+#, fuzzy
+msgid "Not run yet"
+msgstr "Em construção"
+
+#, fuzzy
+msgid "Success"
+msgstr "Origem"
+
+#, fuzzy
+msgid "Failed"
+msgstr "Ficheiro"
+
+#, fuzzy
+msgid "run now"
+msgstr "Desconhecido"
+
+msgid "Last Run Details:"
+msgstr ""
+
+msgid "Gallery Modules"
+msgstr "Módulos da Galeria"
+
+#, fuzzy, c-format
+msgid "Successfully installed and auto-configured module %s"
+msgstr "Foi adicionado %d ficheiro com sucesso."
+
+#, fuzzy, c-format
+msgid "Successfully installed module %s"
+msgstr "Foi adicionado %d ficheiro com sucesso."
+
+#, fuzzy, c-format
+msgid "Successfully configured module %s"
+msgstr "Foi adicionado %d ficheiro com sucesso."
+
+#, fuzzy, c-format
+msgid "Successfully upgraded module %s"
+msgstr "Foi adicionado %d ficheiro com sucesso."
+
+#, fuzzy, c-format
+msgid "Successfully activated module %s"
+msgstr "Foi adicionado %d ficheiro com sucesso."
+
+#, fuzzy, c-format
+msgid "Successfully deactivated module %s"
+msgstr "Foi adicionado %d ficheiro com sucesso."
+
+#, fuzzy, c-format
+msgid "Successfully uninstalled module %s"
+msgstr "Foi adicionado %d ficheiro com sucesso."
+
+msgid ""
+"Gallery features come as separate modules.  You can download and install modules to add more "
+"features to your Gallery, or you can disable features if you don't want to use them.  In "
+"order to use a feature, you must install, configure (if necessary) and activate it.  If you "
+"don't wish to use a feature, you can deactivate it."
+msgstr ""
+"As funcionalidades da Galerias estão organizadas em módulos. É possiver fazer download "
+"destes módulos e instalar, de modo a aumentar as funcionalidade das Galeria. Estes módulos "
+"podem ser desactivados caso as funcionalidades por eles oferecidas não  sejam necessárias. "
+"De modo a usar uma das funcionalidades, é necessário instalar o módulo, configurar (se "
+"necessário) e activá-lo."
+
+msgid "Module Name"
+msgstr "Nome do Módulo"
+
+msgid "Version"
+msgstr "Versão"
+
+#, fuzzy
+msgid "Installed"
+msgstr "instalar"
+
+msgid "Actions"
+msgstr "Acções"
+
+#, fuzzy
+msgid "Status: Not Installed"
+msgstr "instalar"
+
+#, fuzzy
+msgid "Status: Active"
+msgstr "Activo"
+
+msgid "Status: Inactive"
+msgstr ""
+
+msgid "Status: Upgrade Required (Inactive)"
+msgstr ""
+
+msgid "Status: Incompatible Module (Inactive)"
+msgstr ""
+
+msgid "Incompatible module!"
+msgstr ""
+
+#, c-format
+msgid "Core API Required: %s (available: %s)"
+msgstr ""
+
+#, c-format
+msgid "Module API Required: %s (available: %s)"
+msgstr ""
+
+msgid "Confirm module uninstall"
+msgstr ""
+
+#, c-format
+msgid "Do you really want to uninstall the %s module?"
+msgstr ""
+
+msgid "This will also remove any permissions and clean up any data created by this module."
+msgstr ""
+
+#, fuzzy
+msgid "Uninstall"
+msgstr "instalar"
+
+msgid "Performance Tuning"
+msgstr ""
+
+#, fuzzy
+msgid "Updated performance settings successfully"
+msgstr "O Album foi criado com sucesso"
+
+#, fuzzy
+msgid "Deleted all saved pages"
+msgstr "Apagar Utilizador"
+
+msgid ""
+"Improve your Gallery performance by storing entire web pages in the database.  This can "
+"considerably reduce the amount of webserver and database resources required to display a web "
+"page.  The tradeoff is that the web page you see may be a little bit out of date, however "
+"you can always get the most recent version of the page by forcing a refresh in your browser "
+"(typically by holding down the shift key and clicking the reload button)."
+msgstr ""
+
+msgid "Partial Acceleration"
+msgstr ""
+
+#, no-c-format
+msgid ""
+"Partial acceleration gives you roughly 10-25% performance increase, but some forms of "
+"dynamic data (like view counts) will not get updated right away.  All content that appears "
+"in blocks (like the random image block, any sidebar blocks, etc) will always be updated."
+msgstr ""
+
+msgid "Full Acceleration"
+msgstr ""
+
+#, no-c-format
+msgid ""
+"Full acceleration gives roughly a 90% performance increase, but no dynamic data (random "
+"image block, other sidebar blocks, number of items in your shopping cart, view counts, etc) "
+"will get updated until the saved page expires."
+msgstr ""
+
+msgid ""
+"You can additionally specify when saved pages expire.  Setting a longer expiration time will "
+"reduce the load on your server, but will increase the interval before users see changes.  "
+"Lower expiration times mean that users will see more current data, but they will place a "
+"higher load on your server."
+msgstr ""
+
+msgid "Here are some standard acceleration profiles:"
+msgstr ""
+
+#, fuzzy
+msgid "Medium acceleration"
+msgstr "Opções de Administração"
+
+msgid "High acceleration"
+msgstr ""
+
+#, fuzzy
+msgid "Guest Users"
+msgstr "editar utilizadores"
+
+msgid "Expires after:"
+msgstr ""
+
+msgid "Clear Saved Pages"
+msgstr ""
+
+msgid "Please make sure that your internet connection is set up properly or try again later."
+msgstr ""
+
+msgid "The repository index has been successfully updated."
+msgstr ""
+
+msgid "All plugins are already up-to-date."
+msgstr ""
+
+msgid "Common Tasks"
+msgstr ""
+
+msgid "Warning: Experimental feature!"
+msgstr ""
+
+msgid ""
+"The repository features are currently experimental, and no actual repository has been set up "
+"yet, so none of these features will work at this time."
+msgstr ""
+
+msgid "Update Index"
+msgstr ""
+
+msgid ""
+"The Gallery repository contains the latest modules and themes extensively tested by the "
+"Gallery team. The repository index contains information about available plugins, such as the "
+"latest versions, available languages and compatibility. The index must be synchronized "
+"periodically with the Gallery server so you are informed about any available updates. No "
+"personal information is sent to the Gallery server during updating. On slower connections "
+"the process might take a minute or two."
+msgstr ""
+
+#, c-format
+msgid ""
+"As of the last update on %s, the repository contains %s modules and %s themes. Its contents "
+"can be viewed on the Modules and Themes tabs."
+msgstr ""
+
+msgid ""
+"The index has never been updated. Click on the Update button to see what updates are "
+"available."
+msgstr ""
+
+#, fuzzy
+msgid "Update"
+msgstr "depois"
+
+#, fuzzy
+msgid "Upgrade Gallery"
+msgstr "Galeria"
+
+msgid ""
+"A new version of Gallery is available, but it cannot be upgraded through this interface. "
+"Upgrading it might make some of your current plugins stop working, but others that rely on "
+"the features of the new version may become available. Here are the recommended steps for "
+"upgrading:"
+msgstr ""
+
+msgid "Review plugin compatibility (on the Themes and Modules tabs)"
+msgstr ""
+
+#, c-format
+msgid "%sDownload%s Gallery core"
+msgstr ""
+
+#, c-format
+msgid "Read the %supgrade instructions%s and perform the upgrade"
+msgstr ""
+
+#, fuzzy
+msgid "Gallery Up-To-Date"
+msgstr "'Core' da Galeria"
+
+msgid ""
+"Gallery cannot be upgraded through this interface. When a new version becomes available, "
+"upgrade instructions will be presented here."
+msgstr ""
+
+msgid "Upgrade All Plugins"
+msgstr ""
+
+msgid ""
+"Gallery can automatically upgrade your themes and modules to the latest available versions. "
+"No new plugins will be downloaded."
+msgstr ""
+
+msgid "Upgrade All"
+msgstr ""
+
+msgid ""
+"Once the repository index has been downloaded, a list of available plugins will be "
+"presented. It can be downloaded by clicking on the Update button on the Common Tasks tab."
+msgstr ""
+
+msgid ""
+"The following plugins are available. Click on the action beside the plugin you're interested "
+"in to see what's available in the repository."
+msgstr ""
+
+msgid "Incompatible plugins are marked with an exclamation icon."
+msgstr ""
+
+#, c-format
+msgid ""
+"A new core module version is available. There may be plugins that are incompatible with the "
+"installed core module, which are not shown here. You can view a %scomplete list%s of "
+"plugins, including incompatible ones, which are marked with a red icon."
+msgstr ""
+
+#, fuzzy
+msgid "Theme Name"
+msgstr "Tema"
+
+#, fuzzy
+msgid "Latest"
+msgstr "depois"
+
+msgid "Incompatible Plugin"
+msgstr ""
+
+msgid "Incompatible plugin!"
+msgstr ""
+
+#, c-format
+msgid "Plugin API Required: %s (available: %s)"
+msgstr ""
+
+msgid "No packages have been selected."
+msgstr ""
+
+#, fuzzy
+msgid "Base Files"
+msgstr "Nome do ficheiro"
+
+msgid ""
+"The base files required for the theme to work and the English (US) translation will be "
+"downloaded."
+msgstr ""
+
+msgid "Upgrade Base Files"
+msgstr ""
+
+msgid "You can upgrade the base module files."
+msgstr ""
+
+msgid "Upgrade base files"
+msgstr ""
+
+msgid "Base Files Up-To-Date"
+msgstr ""
+
+msgid "This plugin's base files are up-to-date."
+msgstr ""
+
+msgid "Updated Translations"
+msgstr ""
+
+msgid ""
+"Below is a list of translations that have been updated since they were last downloaded. "
+"Select the ones you want to download."
+msgstr ""
+
+msgid "Additional Languages"
+msgstr ""
+
+msgid ""
+"Below is a list of languages this plugin has been translated to. Select the ones you want "
+"included in addition to the ones already downloaded."
+msgstr ""
+
+msgid "Unit Tests"
+msgstr ""
+
+msgid ""
+"This plugin has unit tests available for download, which are useful for Gallery developers. "
+"All of the module's features are available without the tests."
+msgstr ""
+
+msgid "Download unit tests"
+msgstr ""
+
+#, fuzzy
+msgid "Gallery Repository Setup"
+msgstr "Galeria"
+
+msgid "Warning:"
+msgstr ""
+
+#, c-format
+msgid ""
+"In order to download plugins from the Gallery repository, a special directory needs to be "
+"created where Gallery will store the data. Under your Gallery base directory, create a "
+"directory called '%s' and allow the web server to write into it by appropriately setting the "
+"permissions."
+msgstr ""
+
+msgid "Instructions for Unix-type platforms:"
+msgstr ""
+
+msgid ""
+"Refreshing this page will take you to the Repository if the directory has been successfully "
+"created."
+msgstr ""
+
+#, fuzzy
+msgid "Gallery Themes"
+msgstr "Galeria"
+
+#, fuzzy, c-format
+msgid "Successfully activated theme %s"
+msgstr "Foi adicionado %d ficheiro com sucesso."
+
+#, fuzzy, c-format
+msgid "Successfully deactivated theme %s"
+msgstr "Foi adicionado %d ficheiro com sucesso."
+
+#, fuzzy, c-format
+msgid "Successfully installed theme %s"
+msgstr "Foi adicionado %d ficheiro com sucesso."
+
+#, fuzzy, c-format
+msgid "Successfully uninstalled theme %s"
+msgstr "Foi adicionado %d ficheiro com sucesso."
+
+#, fuzzy, c-format
+msgid "Successfully upgraded theme %s"
+msgstr "Foi adicionado %d ficheiro com sucesso."
+
+#, fuzzy
+msgid "Successfully saved default album settings"
+msgstr "Foi adicionado %d ficheiro com sucesso."
+
+#, fuzzy
+msgid "Restored theme settings"
+msgstr "Parâmetros da Conta"
+
+#, fuzzy
+msgid "All Themes"
+msgstr "Tema"
+
+msgid "Defaults"
+msgstr "Parâmetros de defeito"
+
+msgid "Status: Incompatible Theme (Inactive)"
+msgstr ""
+
+msgid "Incompatible theme!"
+msgstr ""
+
+#, c-format
+msgid "Theme API Required: %s (available: %s)"
+msgstr ""
+
+#, fuzzy
+msgid "(default)"
+msgstr "Parâmetros de defeito"
+
+#, fuzzy
+msgid ""
+"These are default display settings for albums in your gallery.  They can be overridden in "
+"each album."
+msgstr "Estes são valores de defeito. Podem ser sobrepostos em cada album."
+
+msgid "Default sort order"
+msgstr "Ordenação por defeito"
+
+#, fuzzy
+msgid "with"
+msgstr "Largura"
+
+#, fuzzy
+msgid "New albums"
+msgstr "mover album"
+
+#, fuzzy, c-format
+msgid "%s Theme Settings"
+msgstr "Parâmetros da Conta"
+
+#, fuzzy
+msgid ""
+"These are the global settings for the theme.  They can be overridden at the album level."
+msgstr "Estes são valores de defeito. Podem ser sobrepostos em cada album."
+
+msgid "Available"
+msgstr ""
+
+msgid "Choose a block"
+msgstr ""
+
+#, fuzzy
+msgid "Selected"
+msgstr "Apagar"
+
+msgid "Remove"
+msgstr "Remover"
+
+#, fuzzy
+msgid "Move Up"
+msgstr "Mover"
+
+#, fuzzy
+msgid "Move Down"
+msgstr "Mover"
+
+msgid "Parameter"
+msgstr ""
+
+#, fuzzy
+msgid "Value"
+msgstr "Alteração de tamanho"
+
+msgid "There are no settings for this theme"
+msgstr ""
+
+msgid ""
+"The toolkits shown below have some overlap in supported operations and mime types.  Rank the "
+"toolkits here to determine which will perform these operations."
+msgstr ""
+
+msgid "Toolkit"
+msgstr ""
+
+#, fuzzy
+msgid "Order"
+msgstr "Reordenar"
+
+msgid "up"
+msgstr ""
+
+msgid "down"
+msgstr ""
+
+msgid "User Management"
+msgstr "Gestão de Utilizadores"
+
+#, c-format
+msgid "Removed user '%s'"
+msgstr "Utilizador '%s' removido"
+
+#, c-format
+msgid "Created user '%s'"
+msgstr "Utilizador '%s' criado"
+
+#, c-format
+msgid "Modified user '%s'"
+msgstr "Utilizador '%s' alterado"
+
+#, c-format
+msgid "There is %d user in the system."
+msgid_plural "There are %d total users in the system."
+msgstr[0] "Existe %d utilizador no sistema."
+msgstr[1] "Existem %d utilizadores no sistema"
+
+msgid "Edit User"
+msgstr "Editar Utilizador"
+
+msgid "You cannot delete yourself!"
+msgstr ""
+
+msgid "You cannot delete the special guest user."
+msgstr ""
+
+msgid "Edit User (by list)"
+msgstr "Editar Utilizador (por lista)"
+
+msgid "Thumbnails"
+msgstr "Thumbnails"
+
+msgid ""
+"Gallery can create thumbnails at upload time, or create them the first time you want to see "
+"the thumbnail itself.  Either way, it will create the thumbnail once and save it, but if you "
+"create them at upload time it makes viewing albums for the first time go faster at the "
+"expense of a longer upload time."
+msgstr ""
+
+#, fuzzy
+msgid "Create thumbnails now"
+msgstr "Recriar thumbnails"
+
+#, fuzzy
+msgid "This is a test email from Gallery2"
+msgstr "Topo da galeria."
+
+msgid "Edit Conflict!"
+msgstr ""
+
+msgid "Security Violation"
+msgstr "Violação de Segurança"
+
+msgid "Database Error"
+msgstr ""
+
+msgid "Platform Error"
+msgstr ""
+
+msgid "Error"
+msgstr "Erro"
+
+msgid ""
+"Your change cannot be completed because somebody else has made a conflicting change to the "
+"same item.  Use the back button in your browser to go back to the page you were on, then "
+"<b>reload that page</b> and try your change again."
+msgstr ""
+
+msgid "Go back and try again"
+msgstr ""
+
+msgid "Alternatively, you can return to the main Gallery page and resume browsing."
+msgstr ""
+
+msgid "The action you attempted is not permitted."
+msgstr "Esta operação não é permitida."
+
+msgid "An error has occurred while interacting with the database."
+msgstr ""
+
+msgid ""
+"The exact nature of database errors is not captured unless Gallery debug mode is enabled in "
+"config.php.  Before seeking support for this error please enable buffered debug output and "
+"retry the operation.  Look near the bottom of the lengthy debug output to find error details."
+msgstr ""
+
+msgid "An error has occurred while interacting with the platform."
+msgstr ""
+
+msgid ""
+"The exact nature of the platform error is unknown. A common cause are insufficient file "
+"system permissions. This can happen if you or your webhost changed something in the file "
+"system, e.g. by restoring data from a backup."
+msgstr ""
+
+msgid "An error has occurred."
+msgstr ""
+
+#, fuzzy
+msgid "Back to the Gallery"
+msgstr "Voltar à vista de Item"
+
+msgid "Error Detail"
+msgstr ""
+
+#, fuzzy
+msgid "System Information"
+msgstr "editar animação"
+
+msgid ""
+"You don't have any Graphics Toolkit activated that can handle JPEG images.  If you add "
+"images, you will probably not have any thumbnails."
+msgstr ""
+
+#, c-format
+msgid "Visit the <a href=\"%s\">Modules</a> page to activate a Graphics Toolkit."
+msgstr ""
+
+msgid "Add Sub-Album"
+msgstr "Adicionar Sub-Album"
+
+msgid ""
+"The name of this album on your hard disk.  It must be unique in this album.  Only use "
+"alphanumeric characters, underscores or dashes.  You will be able to rename it later."
+msgstr ""
+"Nome do album no disco. Deve ser único neste album. Usar apenas caracteres alfanuméricos, "
+"'_' ou '-'. É possível alterar o nome posteriormente"
+
+msgid "Your name contains invalid characters.  Please enter another."
+msgstr "O nome contém caracteres inválidos. É necessário introduzir outro."
+
+msgid "You must enter a name for this album."
+msgstr "Introduzq um nome para este album"
+
+msgid "The name you entered is already in use.  Please enter another."
+msgstr "O nome introduzido já está a ser usado. Introduza outro."
+
+msgid "This is the album title."
+msgstr "Título do album."
+
+msgid "This is the album summary."
+msgstr "Sumário do album."
+
+msgid "Keywords are not visible, but are searchable."
+msgstr "As palavras chave não são visíveis, mas podem ser pesquisáveis"
+
+msgid "This is the long description of the album."
+msgstr "Descrição longa do album"
+
+msgid "Create"
+msgstr "Criar"
+
+msgid "Upload Complete"
+msgstr "Upload Completo"
+
+#, c-format
+msgid "Successfully added %d file."
+msgid_plural "Successfully added %d files."
+msgstr[0] "Foi adicionado %d ficheiro com sucesso."
+msgstr[1] "Foram adicionados %d ficheiros com sucesso."
+
+msgid "No files added."
+msgstr "Não foram adicionados ficheiros."
+
+#, c-format
+msgid "Added %s"
+msgstr "Adicionado %s"
+
+#, c-format
+msgid "Failed to add %s"
+msgstr ""
+
+msgid "Add more files"
+msgstr "Adicionar mais ficheiros"
+
+msgid ""
+"Your webserver is configured to disallow file uploads from your web browser at this time.  "
+"Please contact your system administrator for assistance."
+msgstr ""
+
+#, fuzzy
+msgid "Upload files directly from your computer."
+msgstr "Fazer o Upload de um ficheiro directamente do seu computador."
+
+msgid "Enter the full path to the file and an optional caption in the boxes below."
+msgstr ""
+"Introduzir o caminho completo para o ficheiro e uma descrição opcional nas caixas abaixo"
+
+#, c-format
+msgid ""
+"<b>Note:</b> You can upload up to %s at one time.  If you want to upload more than that, you "
+"must upload the files separately, use a different upload format, or ask your system "
+"administrator to allow larger uploads."
+msgstr ""
+
+#, c-format
+msgid ""
+"<b>Note:</b> You can upload up to %s at one time.  No individual file may be larger than %s. "
+"If you want to upload more than that, you must upload the files separately, use a different "
+"upload format, or ask your system administrator to allow larger uploads."
+msgstr ""
+
+#, fuzzy
+msgid "More.."
+msgstr "Mover"
+
+msgid "Set item titles from:"
+msgstr ""
+
+#, fuzzy
+msgid "Assign caption to:"
+msgstr "Editar Animação"
+
+#, fuzzy
+msgid ""
+"Transfer files that are already on your server into your Gallery.  The files must already "
+"have been uploaded to your server some other way (like FTP) and must be placed in a "
+"directory where they are accessibly by any element on the server.  If you're on Unix this "
+"means that the files and the directory the files are in should have modes of at least 755."
+msgstr ""
+"Transferir ficheiros que já se encontram no servidor para a Galeria. Os ficheiros já terão "
+"que estar no servidor, transferidos de outra forma exterior à Galeria (como FTP) e devem ser "
+"colocadas num directório em que possam ser acedidas a partir de qualquer elemento no "
+"servidor. Se o sistema é Unix significa que os ficheiros e o directório dos ficheiros devem "
+"ter como modo de acesso mínimo o valor 755."
+
+msgid ""
+"For security purposes, you can't use this feature until the Gallery Site Administrator "
+"configures a set of legal upload directories."
+msgstr ""
+"Por razões de segurança, não é possível usar esta funcionalidade enquanto o Administrador da "
+"Galleria não configurar um conjunto de directorias de upload."
+
+msgid "Server Path"
+msgstr "Caminho do Servidor"
+
+msgid "You must enter a directory."
+msgstr "Introduza um directório"
+
+msgid ""
+"The directory you entered is invalid.  Make sure that the directory is readable by all users."
+msgstr ""
+"A directoria introduzida é inválida. Esta directoria tem que ser poder ser lida por todos os "
+"utilizadores."
+
+msgid ""
+"The directory you entered is illegal.  It must be a sub directory of one of the directories "
+"listed below."
+msgstr ""
+"A directoria introduzida é inválida. Terá que ser uma sub directoria de uma das listadas "
+"abaixo."
+
+msgid "An item with the same name already exists."
+msgstr ""
+
+msgid "Legal Directories"
+msgstr "Directorias Válidas"
+
+msgid "modify"
+msgstr "modificar"
+
+#, fuzzy
+msgid "Recent Directories"
+msgstr "Directorias Válidas"
+
+msgid "Find Files"
+msgstr "Encontrar Ficheiros"
+
+#, c-format
+msgid "Directory: %s"
+msgstr "Directório: %s"
+
+msgid "File name"
+msgstr "Nome do ficheiro"
+
+msgid "Type"
+msgstr "Tipo"
+
+msgid "Size"
+msgstr "Tamanho"
+
+msgid "Use Symlink"
+msgstr ""
+
+#, c-format
+msgid "%d byte"
+msgid_plural "%d bytes"
+msgstr[0] "%d byte"
+msgstr[1] "%d bytes"
+
+#, fuzzy
+msgid "Parent Directory"
+msgstr "Directório: %s"
+
+#, fuzzy
+msgid "Directory"
+msgstr "Directório: %s"
+
+msgid "(Un)check all known types"
+msgstr ""
+
+msgid "(Un)check symlinks"
+msgstr ""
+
+#, fuzzy
+msgid "for selected items"
+msgstr "[core] Apagar item"
+
+msgid "Copy base filenames to:"
+msgstr ""
+
+msgid "Add Files"
+msgstr "Adicionar Ficheiros"
+
+#, fuzzy
+msgid "Start Over"
+msgstr "Ordenamento"
+
+msgid ""
+"Import files into Gallery from another website.  Enter a URL below to a web page anywhere on "
+"the net and Gallery will allow you to upload any media files that it finds on that page.  "
+"Note that if you're entering a URL to a directory, you should end the URL with a trailing "
+"slash (eg, http://example.com/directory/). "
+msgstr ""
+
+msgid "URL"
+msgstr ""
+
+#, fuzzy
+msgid "You must enter a URL to a web page"
+msgstr "Introduza o seu nome de utilizador"
+
+msgid "The URL entered must begin with http://"
+msgstr ""
+
+#, fuzzy
+msgid "The web page you specified is unavailable"
+msgstr "O nome do utilizador introduzido é inválido"
+
+msgid "Nothing to add found from this URL"
+msgstr ""
+
+msgid "Nothing added since no items were selected"
+msgstr ""
+
+msgid "Recent URLs"
+msgstr ""
+
+#, c-format
+msgid "URL: %s"
+msgstr ""
+
+msgid "change"
+msgstr "alterar"
+
+#, fuzzy, c-format
+msgid "%d url found"
+msgid_plural "%d urls found"
+msgstr[0] "foi encontrado %d ficheiro"
+msgstr[1] "foram encontrados %d ficheiros"
+
+msgid "(Un)check all"
+msgstr ""
+
+#, fuzzy
+msgid "Add URLs"
+msgstr "Adicionado %s"
+
+msgid "No Thumbnail"
+msgstr "Sem Thumbnail"
+
+msgid "Options"
+msgstr "Opções"
+
+#, fuzzy
+msgid "Link an Item"
+msgstr "Mover um Item"
+
+#, fuzzy, c-format
+msgid "Successfully linked %d item"
+msgid_plural "Successfully linked %d items"
+msgstr[0] "Foi adicionado %d ficheiro com sucesso."
+msgstr[1] "Foram adicionados %d ficheiros com sucesso."
+
+msgid "This album contains no items to link."
+msgstr ""
+
+msgid "Source"
+msgstr "Origem"
+
+#, fuzzy
+msgid "Choose the items you want to link"
+msgstr "Seleccionar os items que pretende mover"
+
+#, fuzzy, c-format
+msgid "(page %d of %d)"
+msgstr "Página %d de %d"
+
+#, fuzzy
+msgid "No sources chosen"
+msgstr "Não foi escolhido nenhum destino"
+
+msgid "Check All"
+msgstr ""
+
+msgid "Check None"
+msgstr ""
+
+msgid "Invert"
+msgstr ""
+
+msgid "Previous Page"
+msgstr ""
+
+#, fuzzy
+msgid "Next Page"
+msgstr "editar imagem"
+
+msgid "Destination"
+msgstr "Destino"
+
+#, fuzzy
+msgid "Choose a new album for the link"
+msgstr "Escolher um novo Album"
+
+msgid "No destination chosen"
+msgstr "Não foi escolhido nenhum destino"
+
+#, fuzzy
+msgid "Link"
+msgstr "Login"
+
+#, fuzzy
+msgid "Successfully linked"
+msgstr "Foi adicionado %d ficheiro com sucesso."
+
+#, fuzzy
+msgid "Choose a destination album"
+msgstr "Escolher um novo Album"
+
+#, fuzzy
+msgid "Delete Items"
+msgstr "Apagar Item"
+
+msgid "No items were selected for deletion"
+msgstr ""
+
+#, fuzzy, c-format
+msgid "Successfully deleted %d item"
+msgid_plural "Successfully deleted %d items"
+msgstr[0] "Foi adicionado %d ficheiro com sucesso."
+msgstr[1] "Foram adicionados %d ficheiros com sucesso."
+
+msgid "This album contains no items to delete"
+msgstr ""
+
+#, fuzzy
+msgid "Choose the items you want to delete"
+msgstr "Seleccionar os items que pretende mover"
+
+msgid "Items selected here will remain selected when moving between pages."
+msgstr ""
+
+#, c-format
+msgid "One item selected on other pages."
+msgid_plural "%d items selected on other pages."
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "(data)"
+msgstr "(dados)"
+
+#, c-format
+msgid "(album containing %d item)"
+msgid_plural "(album containing %d items)"
+msgstr[0] ""
+msgstr[1] ""
+
+#, fuzzy
+msgid "(empty album)"
+msgstr "(album)"
+
+#, fuzzy
+msgid "Deletion Complete"
+msgstr "Upload Completo"
+
+#, fuzzy
+msgid "Item successfully deleted"
+msgstr "Foi adicionado %d ficheiro com sucesso."
+
+#, fuzzy, c-format
+msgid "Are you sure you want to delete this %s?"
+msgstr "Seleccionar os items que pretende mover"
+
+#, c-format
+msgid "It contains %d item."
+msgid_plural "It contains %d items."
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "There is no undo!"
+msgstr ""
+
+msgid "There was a problem processing your request."
+msgstr ""
+
+msgid "Sort order"
+msgstr "Ordenamento"
+
+#, fuzzy
+msgid ""
+"This sets the sort order for the album.  This applies to all current items, and any newly "
+"added items."
+msgstr "Aplica a ordem de defieto do album. Aplica-se a todos os novos items."
+
+#, fuzzy
+msgid "Apply to all subalbums"
+msgstr "Aplicar aos sub-items"
+
+#, fuzzy
+msgid "Choose a theme for this album. (The way the album is arranged on the page)"
+msgstr "Escolher layout para este album. (A maneira como o album é organizado na página.)"
+
+msgid "Use this theme in all subalbums"
+msgstr ""
+
+#, fuzzy
+msgid " Every item requires a thumbnail. Set the default size in pixels here."
+msgstr "Todos os items requem um thumbnail. Introduzir aqui o valor de defeito em pixeis."
+
+msgid "You must enter a number (greater than zero)"
+msgstr "Introduza um número (maior que zero)"
+
+msgid "Use this thumbnail size in all subalbums"
+msgstr ""
+
+msgid "Resized Images"
+msgstr "Imagens com o tamanho alterado"
+
+msgid "Each item in your album can have multiple sizes. Define the default sizes here."
+msgstr "Cada item do album pode ter múltiplos tamanhos. Definir aqui os tamanos de defeito"
+
+msgid "Active"
+msgstr "Activo"
+
+msgid "Target Size (pixels)"
+msgstr "Tamanho final (pixeis)"
+
+msgid "You must enter a valid size"
+msgstr "Introduza um tamanho válido"
+
+msgid "Use these target sizes in all subalbums"
+msgstr ""
+
+msgid "Recreate thumbnails and resizes"
+msgstr "Recriar thumnails e tamanhos alterados"
+
+msgid ""
+"The thumbnail and resized image settings are for all new items. To apply these settings to "
+"all the items in your album, check the appropriate box."
+msgstr ""
+"O thumbnail e os parâmetros de tamanho de imagem são para todos os novos items. Para aplicar "
+"estes parâmetros a todos os novos items do album, deve seleccionar-se a caixa apropriada."
+
+msgid "Recreate thumbnails"
+msgstr "Recriar thumbnails"
+
+msgid "Recreate resized images"
+msgstr "Recriar imagens cujo tamanho foi alterado"
+
+#, fuzzy
+msgid ""
+"In order for Gallery to properly display this animation, it has to know the animation's "
+"width and height.  If you have installed a graphics toolkit that can handle animation types, "
+"then these values may already be set.  If not, they may be set to 0.  If you do not enter "
+"the correct values here, the animation may appear distorted when viewed in your web "
+"browser.  Note that changing these values does <b>not</b> change the animation itself so "
+"experimenting won't cause harm."
+msgstr ""
+"De modo a que a galeria mostre com sucesso esta animação, é necessário saber a sua altura e "
+"largura. Se está instalado no sistema um conjunto de ferramentas gráficas para tratar "
+"animações, então estes valores já deverão estar preenchidos. Caso contrário eles podem ser "
+"ser preenchidos com 0. Caso não sejam aqui inseridos os valores correctos, a animação poderá "
+"aparecer distorcida quando for vista no web browser. Ao alterar estes valores a animação "
+"<b>não</b> é alterada, portanto experiências com este valor não causam danos."
+
+msgid "Width"
+msgstr "Largura"
+
+msgid "You must enter a value greater than or equal to 0"
+msgstr "Introduza um n&uacute;mero maior ou igual a 0"
+
+msgid "Height"
+msgstr "Altura"
+
+msgid "There were errors saving some items"
+msgstr ""
+
+msgid "There were errors saving all items"
+msgstr ""
+
+#, fuzzy
+msgid "Successfully saved all items"
+msgstr "Foi adicionado %d ficheiro com sucesso."
+
+#, fuzzy
+msgid "This album contains no items"
+msgstr "Este grupo contém %d utilizador"
+
+#, fuzzy
+msgid "Saved successfully."
+msgstr "Parâmetros gravados com sucesso."
+
+msgid "This item was modified by somebody else at the same time.  Your changes were lost."
+msgstr ""
+
+#, fuzzy
+msgid "You do not have permissions to modify this item."
+msgstr "Não tem permissões para adicionar items a este album"
+
+msgid "Save and Done"
+msgstr ""
+
+#, c-format
+msgid "Save and Edit Previous %s"
+msgstr ""
+
+#, c-format
+msgid "Save and Edit Next %s"
+msgstr ""
+
+msgid ""
+"The name of this item on your hard disk.  It must be unique in this album.  Only use "
+"alphanumeric characters, underscores or dashes."
+msgstr ""
+"Nome do album no disco. Deve ser único neste album. Usar apenas caracteres alfanuméricos, "
+"'_' ou '-'."
+
+msgid "Your name contains invalid characters.  Please choose another."
+msgstr "O nome contém caracteres inválidos. É necessário escolher outro."
+
+msgid "You must enter a name for this item."
+msgstr "Introduza um nome para este item."
+
+msgid "The name you entered is already in use.  Please choose another."
+msgstr "O nome introduzido já está a ser usado. Escolha outro."
+
+msgid "The title of this item."
+msgstr "O título deste item."
+
+msgid "The root album must have a title."
+msgstr ""
+
+msgid "The summary of this item."
+msgstr "O Sumário deste item."
+
+msgid "This is the long description of the item."
+msgstr "Descrição longa do item."
+
+#, c-format
+msgid "%s Date and Time"
+msgstr ""
+
+msgid "Set the date and time when this image was captured."
+msgstr ""
+
+msgid "Set the date and time to be displayed for this item."
+msgstr ""
+
+#, c-format
+msgid "Set the date and time to be displayed for this %s."
+msgstr ""
+
+#, fuzzy
+msgid "Date:"
+msgstr "depois"
+
+#, fuzzy
+msgid "Time:"
+msgstr "mover imagem"
+
+msgid "Use the original capture date and time from file information (e.g. Exif tag):"
+msgstr ""
+
+#, fuzzy
+msgid "You must enter a valid date and time"
+msgstr "Introduza um tamanho válido"
+
+#, fuzzy
+msgid "Thumbnail"
+msgstr "Thumbnails"
+
+msgid ""
+"Set the size of the thumbnail.  The largest side of the thumbnail will be no larger than "
+"this value. Leave this field blank if you don't want a thumbnail."
+msgstr ""
+
+msgid ""
+"There are no graphics toolkits enabled that support this type of item, so we cannot create "
+"or modify a thumbnail."
+msgstr ""
+
+msgid ""
+"In order for Gallery to properly display this movie, it has to know the movie's width and "
+"height.  If you have installed a graphics toolkit that can handle movie types, then these "
+"values may already be set.  If not, they may be set to 0.  If you do not enter the correct "
+"values here, the movie may appear distorted when viewed in your web browser.  Note that "
+"changing these values do <b>not</b> change the movie itself so experimentation won't cause "
+"harm."
+msgstr ""
+"De modo a que a galeria mostre com sucesso este filme, é necessário saber a sua altura e "
+"largura. Se está instalado no sistema um conjunto de ferramentas gráficas para tratar "
+"filmes, então estes valores já deverão estar preenchidos. Caso contrário eles podem ser ser "
+"preenchidos com 0. Caso não sejam aqui inseridos os valores correctos, o filme poderá "
+"aparecer distorcido quando for visto no web browser. Ao alterar estes valores o filme "
+"<b>não</b> é alterado, portanto experiências com este valor não causam danos."
+
+#, fuzzy
+msgid "Resized Photos"
+msgstr "Imagens com o tamanho alterado"
+
+msgid ""
+"These sizes are alternate resized versions of the original you would like to have available "
+"for viewing."
+msgstr ""
+"Estes tamanhos são versões alternativas de tamanhos da imagem original que se pretendem ter "
+"disponíveis para vizualização."
+
+msgid ""
+"There are no graphics toolkits enabled that support this type of photo, so we cannot create "
+"or modify resized versions."
+msgstr ""
+
+msgid ""
+"You can select which part of the photo will be used for the thumbnail.  This will have no "
+"effect on the resized or original versions of the image."
+msgstr ""
+
+msgid "Aspect Ratio: "
+msgstr ""
+
+msgid "Crop"
+msgstr ""
+
+msgid "Reset to default"
+msgstr ""
+
+msgid ""
+"There are no graphics toolkits enabled that support this type of photo, so we cannot crop "
+"the thumbnail."
+msgstr ""
+
+msgid "Rotate"
+msgstr "Rodar"
+
+#, fuzzy
+msgid "You can only rotate the photo in 90 degree increments."
+msgstr "É apenas possível rodar a imagem em incrementos de 90 graus"
+
+msgid "CC 90&deg;"
+msgstr "CC 80&deg;"
+
+msgid "180&deg;"
+msgstr "180&deg"
+
+msgid "C 90&deg;"
+msgstr "C 90&deg;"
+
+msgid ""
+"There are no graphics toolkits enabled that support this type of photo, so we cannot rotate "
+"it."
+msgstr ""
+
+msgid "Scale"
+msgstr "Alteração de tamanho"
+
+#, fuzzy
+msgid ""
+"Shrink or enlarge the original photo.  When Gallery scales a photo, it maintains the same "
+"aspect ratio (height to width) of the original photo to avoid distortion.  Your photo will "
+"be scaled until it fits inside a bounding box with the size you enter here."
+msgstr ""
+"Diminuir ou aumentar a imagem original. Quando a Galeria altera o tamanho de uma imagem, "
+"mantém o mesmo aspecto (altura ou largura) da imagem original para evitar a distorção. O "
+"valor introduzido abaixo (em pixeis) forma uma caixa à volta da imagem. A Galeria alterará o "
+"tamanho da imagem até que o seu tamanho encaixe dentro desta caixa."
+
+msgid ""
+"There are no graphics toolkits enabled that support this type of photo, so we cannot scale "
+"it."
+msgstr ""
+
+msgid "You must enter a size"
+msgstr "Introduza o tamanho"
+
+msgid "Preserve Original"
+msgstr "Preservar Original"
+
+#, fuzzy
+msgid ""
+"Gallery does not modify your original photo when rotating and scaling. Instead, it "
+"duplicates your photo and works with copies.  This requires a little extra disk space but "
+"prevents your original from getting damaged.  Disabling this option will cause any actions "
+"(rotating, scaling, etc) to modify the original."
+msgstr ""
+"A Galeria não altera a imagem original quando roda ou altera o tamanho. A imagem é duplicada "
+"e as alterações são efectuadas nas cópias. Deste modo é necessário mais espaço em disco, mas "
+"assim previne-se que os ficheiros originais sejam danificados. Ao desactivar esta opção "
+"qualquer acção (rodar, alterar tamanho, etc)será efectuada sobre o ficheiro original."
+
+msgid "This is a link to another photo, so you cannot change the original"
+msgstr ""
+
+msgid "There are links to this photo, so you cannot change the original"
+msgstr ""
+
+#, fuzzy
+msgid "Preserve Original Photo"
+msgstr "Preservar Original"
+
+#, fuzzy
+msgid "Modified Photo"
+msgstr "Imagem alterada"
+
+#, fuzzy
+msgid ""
+"You are using a copy of the original photo that has been scaled or rotated.  The original "
+"photo is still available, but is no longer being used.  Any changes you make will be applied "
+"to the copy instead."
+msgstr ""
+"Está a ser usada uma copia de uma imagem original que foi rodada ou cujo tamanho foi "
+"alterado. A imagem original continua disponível"
+
+msgid "Restore original"
+msgstr "Restaurar original"
+
+#, c-format
+msgid ""
+"This album is configured to use the <b>%s</b> theme. These settings only apply to the theme "
+"for this album."
+msgstr ""
+
+#, fuzzy
+msgid "Setting"
+msgstr "Parâmetros da Imagem"
+
+msgid "Use Global"
+msgstr ""
+
+#, c-format
+msgid "Use these settings in all subalbums that use %s theme"
+msgstr ""
+
+msgid ""
+"Note: to set the same theme for all subalbums, check the appropriate box in <b>Album</b> tab"
+msgstr ""
+
+#, fuzzy
+msgid "Album Highlight"
+msgstr "Realçar"
+
+#, fuzzy
+msgid "You can make this item the thumbnail for its parent or any ancestor album."
+msgstr "É possível usar este item como thumbnail do album pai."
+
+#, fuzzy
+msgid "Highlight for:"
+msgstr "Realçar"
+
+#, fuzzy
+msgid "Highlight"
+msgstr "Realçar"
+
+msgid "Move an Item"
+msgstr "Mover um Item"
+
+#, fuzzy, c-format
+msgid "Successfully moved %d item"
+msgid_plural "Successfully moved %d items"
+msgstr[0] "Foi adicionado %d ficheiro com sucesso."
+msgstr[1] "Foram adicionados %d ficheiros com sucesso."
+
+msgid "This album contains no items to move."
+msgstr ""
+
+msgid "Choose the items you want to move"
+msgstr "Seleccionar os items que pretende mover"
+
+msgid ""
+"The destination you chose does not accept sub-albums, so all sub-albums have been deselected."
+msgstr ""
+"O destino escolhido não aceita sub-albums portanto, todos os sub-albuns foram des-"
+"seleccionados."
+
+msgid ""
+"The destination you chose only accepts sub-albums, so all non-albums have been deselected."
+msgstr ""
+"O destino escolhido apenas aceita sub-albums potanto, todos os objectos que não são sub-"
+"albums foram des-seleccionados."
+
+msgid "You are not allowed to move this item away from here."
+msgstr "Não é possível mover este item."
+
+msgid "You are not allowed to move an album to the chosen destination."
+msgstr "Não é permitido mover albums para o destino escolhido."
+
+msgid "You are not allowed to move an item to the chosen destination."
+msgstr "Não é permitido mover o item para o destino escolhido."
+
+msgid "You cannot move an album into its own subtree."
+msgstr "Não é possível mover um album para a sua própria sub-árvore"
+
+msgid "Choose a new album for them"
+msgstr "Escolher um novo Album"
+
+msgid "You don't have the permission to add items in this album"
+msgstr "Não tem permissões para adicionar items a este album"
+
+msgid "Move"
+msgstr "Mover"
+
+#, fuzzy
+msgid "Successfully moved"
+msgstr "Foi adicionado %d ficheiro com sucesso."
+
+msgid "Permissions"
+msgstr "Permissões"
+
+#, fuzzy
+msgid "Owner changed successfully"
+msgstr "Password alterada com sucesso"
+
+#, fuzzy
+msgid "Group permission added successfully"
+msgstr "Parâmetros da Conta gravados com sucesso"
+
+#, fuzzy
+msgid "User permission added successfully"
+msgstr "Parâmetros gravados com sucesso"
+
+#, fuzzy
+msgid "Group permission removed successfully"
+msgstr "Parâmetros da Conta gravados com sucesso"
+
+#, fuzzy
+msgid "User permission removed successfully"
+msgstr "O Album foi criado com sucesso"
+
+msgid ""
+"Each item has its own independent set of permissions.  Changing the parent's permissions has "
+"no effect on the permissions of the child.  This allows you to restrict access to the parent "
+"of this item, but still grant full access to this item, or vice versa.  The most efficient "
+"way to use this permission system is to create groups and assign permissions to them.  Then "
+"if you want to grant permissions to a specific user, you can add (or remove) the user from "
+"the appropriate group."
+msgstr ""
+"Cada item tem o seu próprio conjunto de permissões. Alterar as permissões do pai  não causa "
+"qualquer efeito nas permissões do filho. Isto permite restringir o acesso ao pai deste item, "
+"mas continua a ser garantido o acesso a este item, ou vice versa. A forma mais eficiente de "
+"usar este sistema de permissões é criar grupos e atribuir-lhes as permissões. Quando se "
+"pretender dar permissões para um utilizador específico, pode adicionar-se (ou remover) o "
+"utilizador ao grupo apropriado."
+
+#, c-format
+msgid "This item is owned by user: %s"
+msgstr "O proprietário deste item é o utilizador: %s"
+
+#, c-format
+msgid "This item is owned by user: %s (%s)"
+msgstr "O proprietário deste item é o utilizador: %s (%s)"
+
+msgid "New owner"
+msgstr "Novo proprietário"
+
+msgid "Change"
+msgstr "Alterar"
+
+#, fuzzy
+msgid "Apply new owner to sub-items"
+msgstr "Aplicar aos sub-items"
+
+msgid "You must enter a user name"
+msgstr "Introduza o seu nome de utilizador"
+
+msgid "The user name you entered is invalid"
+msgstr "O nome do utilizador introduzido é inválido"
+
+msgid "Apply changes"
+msgstr "Alterar"
+
+#, fuzzy
+msgid ""
+"This item has sub-items.  The changes you make here can be applied to just this item, or you "
+"can apply them to all sub-items.  Note that applying changes to sub-items will merge your "
+"change into the existing permissions of the sub-items and may be very time consuming if you "
+"have many sub-items.  It's more efficient to grant permissions to groups and then add and "
+"remove users from groups whenever possible. Changes are applied to sub-items by default."
+msgstr ""
+"Este item contém sub-items. As alterações que estão a ser efectuadas podem ser aplicadas "
+"apenas a este item, ou podem ser aplicadas a todos os sub-items. Ao aplicar as alterações "
+"aos sub-items, estas serão fundidas com o conjunto de permissões existentes nestes sub-"
+"items. Esta poderá ser uma operação demorada caso existam muitos sub-items. É mais eficiente "
+"atribuir permissões a grupos e adicionar e remover utilizadores desses grupos sempre que "
+"possível."
+
+msgid "Apply to sub-items"
+msgstr "Aplicar aos sub-items"
+
+msgid "Group Permissions"
+msgstr "Permissões do Grupo"
+
+msgid "Group name"
+msgstr "Nome do Grupo"
+
+msgid "Permission"
+msgstr "Permissão"
+
+msgid "New Group Permission"
+msgstr "Nova Permissão do Grupo"
+
+msgid "Add Permission"
+msgstr "Adicionar Permissão"
+
+msgid "The permission you chose is invalid"
+msgstr "A permissão escolhida é inválida"
+
+msgid "The group name you entered is invalid"
+msgstr "O nome do grupo introduzido é inválido"
+
+msgid "Group already has this permission (check sub-permissions)"
+msgstr "O grupo já tem esta permissão (verificar sub-permissões)"
+
+msgid "User Permissions"
+msgstr "Permissões do Utilizador"
+
+msgid "User name"
+msgstr "Nome do Utilizador"
+
+msgid "New User Permission"
+msgstr "Nova Permissão do Utilizador"
+
+msgid "The user already has this permission (check sub-permissions)"
+msgstr "O utilizador já tem esta permissão (verificar sub-permissões)"
+
+msgid "Reorder Album"
+msgstr "Reordenar Album"
+
+#, fuzzy
+msgid "Order saved successfully"
+msgstr "As alterações foram gravadas com sucesso"
+
+msgid ""
+"This album has an automatic sort order specified, so you cannot change the order of items "
+"manually.  You must remove the automatic sort order to continue."
+msgstr ""
+"Este album tem uma ordenação automática, portanto não é possível alterar a ordem dos items "
+"manualmente. É necessário remover a ordenação automática para continuar."
+
+msgid "Change the order of the items in this album."
+msgstr "Altera a ordem dos items neste Album."
+
+msgid "Move this item"
+msgstr "Mover este item"
+
+msgid "before"
+msgstr "antes"
+
+msgid "after"
+msgstr "depois"
+
+msgid "Reorder"
+msgstr "Reordenar"
+
+msgid "Continue..."
+msgstr ""
+
+msgid "Site is temporarily down for maintenance."
+msgstr ""
+
+#, fuzzy
+msgid "Admin Login"
+msgstr "Opções de Administração"
+
+msgid "Enter a URL"
+msgstr ""
+
+msgid "Enter some text describing the URL"
+msgstr ""
+
+msgid "Enter an image URL"
+msgstr ""
+
+msgid "B <!-- Button label for Bold -->"
+msgstr "B"
+
+msgid "i <!-- Button label for italic -->"
+msgstr "i"
+
+msgid "list"
+msgstr ""
+
+msgid "bullet"
+msgstr ""
+
+msgid "url"
+msgstr ""
+
+#, fuzzy
+msgid "image"
+msgstr "mover imagem"
+
+msgid "Configuration Error: Missing Theme"
+msgstr ""
+
+msgid "Missing Theme"
+msgstr ""
+
+#, c-format
+msgid ""
+"This page is configured to use the %s theme, but it is either inactive, not installed, or "
+"incompatible."
+msgstr ""
+
+#, c-format
+msgid ""
+"This album is configured to use the %s theme, but it is either inactive, not installed, or "
+"incompatible."
+msgstr ""
+
+#, c-format
+msgid ""
+"To fix this problem you can %sinstall or activate this theme%s or select another default "
+"theme."
+msgstr ""
+
+#, c-format
+msgid ""
+"To fix this problem you can %slogin as a site administrator%s and then %sinstall or activate "
+"this theme%s or select another default theme."
+msgstr ""
+
+#, c-format
+msgid ""
+"To fix this problem you can either %schoose a new theme for this album%s or %sinstall or "
+"activate this theme%s."
+msgstr ""
+
+#, c-format
+msgid ""
+"To fix this problem you can either %schoose a new theme for this album%s or %slogin as a "
+"site administrator%s and then %sinstall or activate this theme%s."
+msgstr ""
+
+#, c-format
+msgid ""
+"To fix this problem you can either %slogin%s and then %schoose a new theme for this album%s "
+"or %slogin as a site administrator%s and then %sinstall or activate this theme%s."
+msgstr ""
+
+msgid "Admin Options"
+msgstr "Opções de Administração"
+
+msgid "User Options"
+msgstr "Opções do Utilizador"
+
+msgid "Password changed successfully"
+msgstr "Password alterada com sucesso"
+
+msgid ""
+"You must enter your current password to prove that it's you, then enter your new password "
+"twice to make sure that you didn't make a mistake."
+msgstr ""
+
+#, fuzzy
+msgid "Current Password"
+msgstr "Alterar Password"
+
+#, fuzzy
+msgid "You must enter your current password"
+msgstr "Introduza de novo a sua password!"
+
+#, fuzzy
+msgid "Incorrect password"
+msgstr "Alterar Password"
+
+#, fuzzy
+msgid "New Password"
+msgstr "Password"
+
+#, fuzzy
+msgid "You must enter a new password"
+msgstr "Introduza a password"
+
+#, fuzzy
+msgid "Verify New Password"
+msgstr "Verificar Password"
+
+#, fuzzy
+msgid "You must enter your new password again!"
+msgstr "Introduza de novo a sua password!"
+
+#, fuzzy
+msgid "Login to your account"
+msgstr "Login na Conta"
+
+msgid "Your password has been recovered, please login."
+msgstr ""
+
+msgid "Your login information is incorrect.  Please try again."
+msgstr "Login incorrecto. Por favor tente novamente."
+
+#, c-format
+msgid ""
+"Lost or forgotten passwords can be retrieved using the <a href=\"%s\">recover password</a> "
+"page"
+msgstr ""
+
+#, c-format
+msgid "Welcome, %s!"
+msgstr ""
+
+msgid "Account settings saved successfully"
+msgstr "Parâmetros da Conta gravados com sucesso"
+
+msgid "(required, password required for change)"
+msgstr ""
+
+msgid "(suggested, password required for change)"
+msgstr ""
+
+#, fuzzy
+msgid "(required to change the e-mail address)"
+msgstr "Introduza um endereço de email"
+
+#, fuzzy
+msgid "You must enter your current password to change the e-mail address"
+msgstr "Introduza de novo a sua password!"
+
+msgid "Recover a lost or forgotten password"
+msgstr ""
+
+msgid ""
+"Recovering your password requires that your user account has an email address assigned, and "
+"that you have access to the listed email address.  A confirmation will be emailed to you "
+"containing a URL which you must visit to set a new password for your account.  To prevent "
+"abuse, password recovery requests can not be attempted more than once in a 20 minute "
+"period.  A recovery confirmation is valid for seven days.  If it is not used during that "
+"time, it will be purged from the system and a new request will have to be made."
+msgstr ""
+
+msgid "Your recovery request has been sent!"
+msgstr ""
+
+msgid ""
+"Note that if the account does not have an email address, you may not receive the email and "
+"you should contact your system administrator for help."
+msgstr ""
+
+#, c-format
+msgid ""
+"Administrators can use the %sEmergency Password Recovery%s page to recover the admin account "
+"if they fail to receive recovery email due to server problems, or lack of a working email "
+"address."
+msgstr ""
+
+#, fuzzy
+msgid "Recover"
+msgstr "Remover"
+
+#, c-format
+msgid ""
+"In order to proceed with the password reset, we have to verify that you are who you claim.  "
+"The best way to be sure is to ask you to make a tiny change in the Gallery directory which "
+"will prove that you have the right permissions.  So, we're going to ask that you create a "
+"new text file called %s in your gallery2 directory. It must contain the following randomly "
+"generated characters:"
+msgstr ""
+
+#, c-format
+msgid "%s"
+msgstr ""
+
+#, c-format
+msgid ""
+"As a convenience to you, we've prepared a %scorrect version of login.txt%s for you.  "
+"Download that and copy it into your install directory and you're all set."
+msgstr ""
+
+msgid "Once you've uploaded the file, click refresh to continue."
+msgstr ""
+
+msgid "Emergency Administrator Password Reset"
+msgstr ""
+
+msgid ""
+"This page can be used by a system administrator to securely reset the password on any "
+"account."
+msgstr ""
+
+msgid "Authorization Confirmed"
+msgstr ""
+
+msgid ""
+"Your authorization has been confirmed.  Please enter your new password below.  After setting "
+"your new password you will be taken to the login page."
+msgstr ""
+
+msgid "Recover Password for Username"
+msgstr ""
+
+#, fuzzy
+msgid "You must enter a username to recover the password for."
+msgstr "Introduza a nova password duas vezes para proceder à alteração"
+
+#, fuzzy
+msgid "The username you entered does not exist."
+msgstr "O nome do utilizador introduzido é inválido"
+
+msgid "Authorization Incorrect"
+msgstr ""
+
+msgid "Recovery Instructions"
+msgstr ""
+
+msgid "AuthFile Missing"
+msgstr ""
+
+msgid "AuthFile Unreadable"
+msgstr ""
+
+#, c-format
+msgid "Your %s file is not readable. Please give Gallery read permissions on the file."
+msgstr ""
+
+#, fuzzy
+msgid "Refresh"
+msgstr "antes"
+
+msgid "This page will allow you to reset the password on your account."
+msgstr ""
+
+#, c-format
+msgid ""
+"There is no request which matches the username and authorization provided. Request a new "
+"authorization from the <a href=\"%s\">lost password page</a>"
+msgstr ""
+
+#, c-format
+msgid ""
+"The request you are trying to access has expired.  Request a new authorization from the <a "
+"href=\"%s\">lost password page</a>."
+msgstr ""
+
+msgid "Authorization missing"
+msgstr ""
+
+#, fuzzy
+msgid "Username missing"
+msgstr "Permissões do Utilizador"
+
+msgid "Submit"
+msgstr ""
+
+#, c-format
+msgid "Hello %s,"
+msgstr ""
+
+#, c-format
+msgid "You receive this email because a password recovery for %s was requested by %s at %s"
+msgstr ""
+
+#, c-format
+msgid "Your username is: %s"
+msgstr ""
+
+msgid ""
+"To finish the password recovery process please click the following link and enter the "
+"required information:"
+msgstr ""
+
+msgid "If you did not request this recovery email, you may safely ignore it."
+msgstr ""
+
+msgid "Thank you!"
+msgstr ""
+
+msgid "guest"
+msgstr "convidado"
+
+#, c-format
+msgid "display mode: %s"
+msgstr ""
+
+#, fuzzy, c-format
+msgid "Date: %s"
+msgstr "depois"
+
+#, fuzzy, c-format
+msgid "Owner: %s"
+msgstr "Proprietário"
+
+#, fuzzy, c-format
+msgid "Size: %d item"
+msgid_plural "Size: %d items"
+msgstr[0] "%d minuto"
+msgstr[1] "%d minutos"
+
+#, fuzzy, c-format
+msgid "(%d item total)"
+msgid_plural "(%d items total)"
+msgstr[0] "%d minuto"
+msgstr[1] "%d minutos"
+
+#, c-format
+msgid "Views: %d"
+msgstr ""
+
+#, fuzzy
+msgid "&laquo; album actions &raquo;"
+msgstr "&laquo; Nenhum &raquo;"
+
+#, fuzzy
+msgid "&laquo; item actions &raquo;"
+msgstr "&laquo; Nenhum &raquo;"
+
+msgid "Go"
+msgstr ""
+
+msgid "Navigation"
+msgstr "Navegação"
+
+msgid "next"
+msgstr ""
+
+msgid "last"
+msgstr ""
+
+#, fuzzy, c-format
+msgid "Page %d of %d"
+msgstr "Página %d de %d"
+
+#, fuzzy, c-format
+msgid "%d of %d"
+msgstr "Página %d de %d"
+
+msgid "first"
+msgstr ""
+
+msgid "previous"
+msgstr ""
+
+msgid "Page:"
+msgstr ""
+
+#, fuzzy, c-format
+msgid "%d. %s"
+msgstr "Editar Utilizador"
+
+#, fuzzy
+msgid "Size: "
+msgstr "Tamanho"
+
+msgid "Full size: "
+msgstr ""
+
+#, fuzzy
+msgid "Language selector"
+msgstr "Parâmetros de Linguagem"
+
+#, fuzzy
+msgid "Item actions"
+msgstr "Opções de Administração"
+
+msgid "Use dropdown menu"
+msgstr ""
+
+#, fuzzy
+msgid "Login block"
+msgstr "Login"
+
+msgid "Links to album/photo peers"
+msgstr ""
+
+msgid "Unit test module"
+msgstr ""
+
+#, fuzzy
+msgid "[test] A permission"
+msgstr "permissões"
+
+#, fuzzy
+msgid "[test] A second permission"
+msgstr "permissões"
+
+msgid "Unit test theme"
+msgstr ""
+
+#, fuzzy
+#~ msgid "$ cd %s"
+#~ msgstr "Editar Utilizador"
+
+#~ msgid "&laquo; None &raquo;"
+#~ msgstr "&laquo; Nenhum &raquo;"
+
+#, fuzzy
+#~ msgid "add album"
+#~ msgstr "adicional sub-album"
+
+#, fuzzy
+#~ msgid "edit permissions"
+#~ msgstr "permissões"
+
+#, fuzzy
+#~ msgid "view permissions"
+#~ msgstr "permissões"
+
+#, fuzzy
+#~ msgid "Successfully deleted directory: /cache/entity"
+#~ msgstr "Foi adicionado %d ficheiro com sucesso."
+
+#, fuzzy
+#~ msgid "Unable to delete directory: /cache/theme"
+#~ msgstr "Foi adicionado %d ficheiro com sucesso."

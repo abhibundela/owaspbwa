@@ -1,0 +1,112 @@
+# File crc32 crc32(crlf) size size(crlf)  or  R File
+modules/randomhighlight/RandomHighlightOption.inc	2774001953	4103272018	3039	3131
+modules/randomhighlight/RandomHighlightSiteAdmin.inc	3322145122	186911270	3324	3427
+modules/randomhighlight/locale/af/LC_MESSAGES/modules_randomhighlight.mo	2241091815	2241091815	1394	1394
+modules/randomhighlight/locale/cs/LC_MESSAGES/modules_randomhighlight.mo	716755949	716755949	1450	1450
+modules/randomhighlight/locale/da/LC_MESSAGES/modules_randomhighlight.mo	668175832	668175832	1387	1387
+modules/randomhighlight/locale/de/LC_MESSAGES/modules_randomhighlight.mo	560758671	560758671	1371	1371
+modules/randomhighlight/locale/es/LC_MESSAGES/modules_randomhighlight.mo	2420020439	2420020439	1409	1409
+modules/randomhighlight/locale/eu/LC_MESSAGES/modules_randomhighlight.mo	1492322707	1492322707	1280	1280
+modules/randomhighlight/locale/fr/LC_MESSAGES/modules_randomhighlight.mo	4014171650	4014171650	1390	1390
+modules/randomhighlight/locale/is/LC_MESSAGES/modules_randomhighlight.mo	3884408026	3884408026	427	427
+modules/randomhighlight/locale/it/LC_MESSAGES/modules_randomhighlight.mo	2259161724	2259161724	1343	1343
+modules/randomhighlight/locale/ja/LC_MESSAGES/modules_randomhighlight.mo	2429325874	2429325874	1090	1090
+modules/randomhighlight/locale/nl/LC_MESSAGES/modules_randomhighlight.mo	2028738795	2028738795	1391	1391
+modules/randomhighlight/locale/no/LC_MESSAGES/modules_randomhighlight.mo	2453854621	2453854621	1366	1366
+modules/randomhighlight/locale/pl/LC_MESSAGES/modules_randomhighlight.mo	4101706464	4101706464	1423	1423
+modules/randomhighlight/locale/pt_BR/LC_MESSAGES/modules_randomhighlight.mo	4116424165	4116424165	1394	1394
+modules/randomhighlight/locale/ru/LC_MESSAGES/modules_randomhighlight.mo	4107793649	4107793649	1796	1796
+modules/randomhighlight/locale/sr/LC_MESSAGES/modules_randomhighlight.mo	848213106	848213106	1356	1356
+modules/randomhighlight/locale/sv/LC_MESSAGES/modules_randomhighlight.mo	393420161	393420161	1492	1492
+modules/randomhighlight/locale/tr/LC_MESSAGES/modules_randomhighlight.mo	3811146582	3811146582	1401	1401
+modules/randomhighlight/locale/zh_CN/LC_MESSAGES/modules_randomhighlight.mo	684246788	684246788	1264	1264
+modules/randomhighlight/locale/zh_TW/LC_MESSAGES/modules_randomhighlight.mo	1820601891	1820601891	1243	1243
+modules/randomhighlight/module.inc	3661527982	1787897973	10057	10364
+modules/randomhighlight/po/GNUmakefile	1866879166	2808215985	98	103
+modules/randomhighlight/po/af.po	1555834031	3530303052	2258	2326
+modules/randomhighlight/po/cs.po	1550767855	3105592082	2299	2368
+modules/randomhighlight/po/da.po	3655204809	2239252710	2219	2284
+modules/randomhighlight/po/de.po	2128296869	1628869288	2353	2424
+modules/randomhighlight/po/es.po	3376542434	2911661586	2237	2301
+modules/randomhighlight/po/eu.po	1294599633	2567287726	2119	2186
+modules/randomhighlight/po/fr.po	614648144	789447889	2230	2297
+modules/randomhighlight/po/is.po	2893865856	1765680271	1817	1882
+modules/randomhighlight/po/it.po	283300665	1630560468	2171	2235
+modules/randomhighlight/po/ja.po	297138532	1350664254	2136	2202
+modules/randomhighlight/po/nl.po	3350144875	1526821048	2350	2420
+modules/randomhighlight/po/no.po	739527237	421390280	2314	2381
+modules/randomhighlight/po/pl.po	916925609	3824009707	2257	2322
+modules/randomhighlight/po/pt_BR.po	2432946949	1183898031	2407	2478
+modules/randomhighlight/po/ru.po	2794918862	401645776	2749	2818
+modules/randomhighlight/po/sr.po	3592539060	3111957985	2194	2261
+modules/randomhighlight/po/strings.raw	3116730345	3049193575	653	671
+modules/randomhighlight/po/sv.po	4171868068	1617545688	2507	2583
+modules/randomhighlight/po/tr.po	1213046370	2370002507	2380	2450
+modules/randomhighlight/po/zh_CN.po	941884670	214015740	2104	2170
+modules/randomhighlight/po/zh_TW.po	3737806168	57069305	2086	2153
+modules/randomhighlight/templates/RandomHighlightOption.tpl	3857334048	851897711	665	681
+modules/randomhighlight/templates/RandomHighlightSiteAdmin.tpl	3933530121	3161114714	1335	1374
+R	modules/randomhighlight/ItemEditRandomHighlight.inc
+R	modules/randomhighlight/SiteAdminRandomHighlight.inc
+R	modules/randomhighlight/classes/GNUmakefile
+R	modules/randomhighlight/classes/RandomHighlightDerivativeImage.class
+R	modules/randomhighlight/classes/RandomHighlightHelper.class
+R	modules/randomhighlight/classes/interfaces/GNUmakefile
+R	modules/randomhighlight/classes/interfaces/RandomHighlightDerivativeImage.inc
+R	modules/randomhighlight/classes/interfaces
+R	modules/randomhighlight/locale/cs_CZ/LC_MESSAGES/modules_randomhighlight.mo
+R	modules/randomhighlight/locale/cs_CZ/LC_MESSAGES
+R	modules/randomhighlight/locale/cs_CZ
+R	modules/randomhighlight/locale/de_DE/LC_MESSAGES/modules_randomhighlight.mo
+R	modules/randomhighlight/locale/de_DE/LC_MESSAGES
+R	modules/randomhighlight/locale/de_DE
+R	modules/randomhighlight/locale/eu_ES/LC_MESSAGES/modules_randomhighlight.mo
+R	modules/randomhighlight/locale/eu_ES/LC_MESSAGES
+R	modules/randomhighlight/locale/eu_ES
+R	modules/randomhighlight/locale/fr_FR/LC_MESSAGES/modules_randomhighlight.mo
+R	modules/randomhighlight/locale/fr_FR/LC_MESSAGES
+R	modules/randomhighlight/locale/fr_FR
+R	modules/randomhighlight/locale/is_IS/LC_MESSAGES/modules_randomhighlight.mo
+R	modules/randomhighlight/locale/is_IS/LC_MESSAGES
+R	modules/randomhighlight/locale/is_IS
+R	modules/randomhighlight/locale/it_IT/LC_MESSAGES/modules_randomhighlight.mo
+R	modules/randomhighlight/locale/it_IT/LC_MESSAGES
+R	modules/randomhighlight/locale/it_IT
+R	modules/randomhighlight/locale/ja_JP/LC_MESSAGES/modules_randomhighlight.mo
+R	modules/randomhighlight/locale/ja_JP/LC_MESSAGES
+R	modules/randomhighlight/locale/ja_JP
+R	modules/randomhighlight/locale/nl_NL/LC_MESSAGES/modules_randomhighlight.mo
+R	modules/randomhighlight/locale/nl_NL/LC_MESSAGES
+R	modules/randomhighlight/locale/nl_NL
+R	modules/randomhighlight/locale/no_NO/LC_MESSAGES/modules_randomhighlight.mo
+R	modules/randomhighlight/locale/no_NO/LC_MESSAGES
+R	modules/randomhighlight/locale/no_NO
+R	modules/randomhighlight/locale/ru_RU/LC_MESSAGES/modules_randomhighlight.mo
+R	modules/randomhighlight/locale/ru_RU/LC_MESSAGES
+R	modules/randomhighlight/locale/ru_RU
+R	modules/randomhighlight/locale/sr_YU/LC_MESSAGES/modules_randomhighlight.mo
+R	modules/randomhighlight/locale/sr_YU/LC_MESSAGES
+R	modules/randomhighlight/locale/sr_YU
+R	modules/randomhighlight/locale/sv_SE/LC_MESSAGES/modules_randomhighlight.mo
+R	modules/randomhighlight/locale/sv_SE/LC_MESSAGES
+R	modules/randomhighlight/locale/sv_SE
+R	modules/randomhighlight/locale/tr_TR/LC_MESSAGES/modules_randomhighlight.mo
+R	modules/randomhighlight/locale/tr_TR/LC_MESSAGES
+R	modules/randomhighlight/locale/tr_TR
+R	modules/randomhighlight/po/cs_CZ.po
+R	modules/randomhighlight/po/de_DE.po
+R	modules/randomhighlight/po/eu_ES.po
+R	modules/randomhighlight/po/fr_FR.po
+R	modules/randomhighlight/po/is_IS.po
+R	modules/randomhighlight/po/it_IT.po
+R	modules/randomhighlight/po/ja_JP.po
+R	modules/randomhighlight/po/nl_NL.po
+R	modules/randomhighlight/po/no_NO.po
+R	modules/randomhighlight/po/ru_RU.po
+R	modules/randomhighlight/po/sr_YU.po
+R	modules/randomhighlight/po/sv_SE.po
+R	modules/randomhighlight/po/tr_TR.po
+R	modules/randomhighlight/templates/ItemEdit.tpl
+R	modules/randomhighlight/templates/SiteAdmin.tpl
+R	modules/randomhighlight/test/phpunit/RandomHighlightItemEditPluginTest.class
+R	modules/randomhighlight/test/phpunit/SiteAdminRandomHighlightControllerTest.class

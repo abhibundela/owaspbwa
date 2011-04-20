@@ -1,0 +1,80 @@
+# $Id: it.po,v 1.2 2006/03/22 04:20:53 mindless Exp $
+#
+# Gallery - a web based photo album viewer and editor
+# Copyright (C) 2000-2006 Bharat Mediratta
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery: Rating 1.0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-03-16 10:35+0100\n"
+"PO-Revision-Date: 2006-03-16 10:39+0100\n"
+"Last-Translator: Ermanno Baschiera <ebaschiera@gmail.com>\n"
+"Language-Team: Italian <gallery-devel@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Rating"
+msgstr "Valutazione/Votazione"
+
+msgid "Item Rating Interface"
+msgstr "Interfaccia Valutazione Oggetto"
+
+msgid "Extra Data"
+msgstr "Dati Extra"
+
+msgid "[rating] Add ratings"
+msgstr "[valutazione] Aggiungi valutazioni"
+
+msgid "[rating] View ratings"
+msgstr "[valutazione] Visualizza valutazioni"
+
+msgid "[rating] All access"
+msgstr "[valutazione] Accesso completo"
+
+#, c-format
+msgid "%s votes"
+msgstr "%s voti"
+
+msgid "This will enable or disable ratings for this album and, optionally, for its subalbums.  You can use permissions to allow viewing or adding ratings for specific users or groups."
+msgstr "Questo attiva o disattiva la valutazione per questo album e, eventualmente, per i suoi sotto album. Puoi usare i permessi per autorizzare la visualizzazione o l'aggiunta di valutazioni per utenti o gruppi specifici."
+
+msgid "Enable rating for this album"
+msgstr "Attiva la valutazione per questo album"
+
+msgid "... and for all subalbums"
+msgstr "... e per tutti i sottoalbum"
+
+msgid "Rating Settings"
+msgstr "Configurazione Valutazioni"
+
+msgid "Settings saved successfully"
+msgstr "Configurazione salvata con successo"
+
+msgid "Allow users to rate entire albums, in addition to individual items."
+msgstr "Permette agli utenti di dare una valutazione a interi album, oltre ai singoli oggetti."
+
+msgid "Save"
+msgstr "Salva"
+
+msgid "Reset"
+msgstr "Resetta"
+
+msgid "Rating interface"
+msgstr "Interfaccia valutazione"
+

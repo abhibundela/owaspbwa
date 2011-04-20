@@ -1,0 +1,160 @@
+# File crc32 crc32(crlf) size size(crlf)  or  R File
+modules/customfield/Callbacks.inc	1881590831	1406077296	1848	1903
+modules/customfield/CustomFieldItemAdmin.inc	978439355	2644787344	4592	4733
+modules/customfield/CustomFieldItemEdit.inc	3298143830	3174445279	5469	5642
+modules/customfield/CustomFieldSiteAdmin.inc	364666346	1391384693	2691	2780
+modules/customfield/classes/CustomFieldHelper.class	1189659916	4003937059	16747	17265
+modules/customfield/classes/CustomFieldInterface_1_0.class	2759430649	2714510912	2086	2147
+modules/customfield/classes/CustomFieldSearch.class	2320397635	3597975487	4144	4285
+modules/customfield/classes/GNUmakefile	1995366819	843025639	51	52
+modules/customfield/classes/GalleryStorage/GNUmakefile	1465776782	2009162633	61	62
+modules/customfield/classes/GalleryStorage/schema.tpl	3685746820	2569121618	3529	3639
+modules/customfield/classes/GalleryStorage/xml-src/A_CustomFieldMap_1.0.xml	1313334479	803029683	645	671
+modules/customfield/classes/Maps.inc	2471217098	1483669962	534	537
+modules/customfield/classes/Maps.xml	2655281086	1514795119	911	946
+modules/customfield/locale/af/LC_MESSAGES/modules_customfield.mo	2723227645	2723227645	6665	6665
+modules/customfield/locale/cs/LC_MESSAGES/modules_customfield.mo	280532849	280532849	6583	6583
+modules/customfield/locale/da/LC_MESSAGES/modules_customfield.mo	1223100120	1223100120	6299	6299
+modules/customfield/locale/de/LC_MESSAGES/modules_customfield.mo	4263087165	4263087165	7140	7140
+modules/customfield/locale/es/LC_MESSAGES/modules_customfield.mo	582518334	582518334	7050	7050
+modules/customfield/locale/eu/LC_MESSAGES/modules_customfield.mo	1605892594	1605892594	6547	6547
+modules/customfield/locale/fr/LC_MESSAGES/modules_customfield.mo	135224163	135224163	7157	7157
+modules/customfield/locale/hu/LC_MESSAGES/modules_customfield.mo	1499575447	1499575447	3938	3938
+modules/customfield/locale/is/LC_MESSAGES/modules_customfield.mo	329809983	329809983	424	424
+modules/customfield/locale/it/LC_MESSAGES/modules_customfield.mo	3912532981	3912532981	6987	6987
+modules/customfield/locale/ja/LC_MESSAGES/modules_customfield.mo	4077818546	4077818546	3306	3306
+modules/customfield/locale/nl/LC_MESSAGES/modules_customfield.mo	3796482554	3796482554	6683	6683
+modules/customfield/locale/no/LC_MESSAGES/modules_customfield.mo	4061257914	4061257914	6600	6600
+modules/customfield/locale/pl/LC_MESSAGES/modules_customfield.mo	949185167	949185167	7000	7000
+modules/customfield/locale/ru/LC_MESSAGES/modules_customfield.mo	1202527278	1202527278	9474	9474
+modules/customfield/locale/sr/LC_MESSAGES/modules_customfield.mo	199607944	199607944	6662	6662
+modules/customfield/locale/sv/LC_MESSAGES/modules_customfield.mo	2757891644	2757891644	6538	6538
+modules/customfield/locale/tr/LC_MESSAGES/modules_customfield.mo	2192986000	2192986000	6731	6731
+modules/customfield/locale/vi/LC_MESSAGES/modules_customfield.mo	3161163917	3161163917	7590	7590
+modules/customfield/locale/zh_CN/LC_MESSAGES/modules_customfield.mo	231148571	231148571	6185	6185
+modules/customfield/locale/zh_TW/LC_MESSAGES/modules_customfield.mo	3267196034	3267196034	6139	6139
+modules/customfield/module.inc	731648337	3826767078	4394	4534
+modules/customfield/po/GNUmakefile	1866879166	2808215985	98	103
+modules/customfield/po/af.po	2299738105	2682909484	7513	7748
+modules/customfield/po/cs.po	2255031289	3778196713	7398	7629
+modules/customfield/po/da.po	421267459	3903057230	7111	7341
+modules/customfield/po/de.po	1750017319	2502862181	8166	8412
+modules/customfield/po/es.po	2761933284	1463429161	7990	8227
+modules/customfield/po/eu.po	232008665	3609849687	7360	7591
+modules/customfield/po/fr.po	1169252550	2953898669	8013	8248
+modules/customfield/po/hu.po	3116541958	805108253	6295	6517
+modules/customfield/po/is.po	1965440440	3689752745	4700	4909
+modules/customfield/po/it.po	2517392186	121873855	7867	8104
+modules/customfield/po/ja.po	1526808785	3954627499	5985	6198
+modules/customfield/po/nl.po	2816527392	1717438899	7693	7928
+modules/customfield/po/no.po	4188333443	2621137828	7407	7600
+modules/customfield/po/pl.po	3507343011	3472197355	7698	7889
+modules/customfield/po/ru.po	1927597397	752353524	10415	10652
+modules/customfield/po/sr.po	1864736049	276999098	7488	7723
+modules/customfield/po/strings.raw	3738308495	297815035	4244	4314
+modules/customfield/po/sv.po	2367831327	3689492033	7554	7793
+modules/customfield/po/tr.po	2591551548	1803572435	7570	7766
+modules/customfield/po/vi.po	2870243698	4161499610	8433	8664
+modules/customfield/po/zh_CN.po	3975662029	1567718250	6881	7072
+modules/customfield/po/zh_TW.po	1501199483	766946698	6921	7140
+modules/customfield/templates/Admin.tpl	3886565572	855916367	8321	8541
+modules/customfield/templates/CustomFieldItemAdmin.tpl	2006409186	1230572535	1788	1822
+modules/customfield/templates/CustomFieldItemEdit.tpl	3796740666	3541922470	1742	1791
+modules/customfield/templates/CustomFieldSiteAdmin.tpl	3325455298	1333917436	1278	1303
+modules/customfield/templates/blocks/CustomFields.tpl	603082997	3772373344	673	691
+modules/customfield/templates/blocks/blocks.inc	3405463935	3210145025	108	113
+R	modules/customfield/classes/CustomFieldMap.class
+R	modules/customfield/classes/GalleryStorage/DatabaseStorage/schema/GNUmakefile
+R	modules/customfield/classes/GalleryStorage/DatabaseStorage/schema/platform/GNUmakefile
+R	modules/customfield/classes/GalleryStorage/DatabaseStorage/schema/platform/mysql/A_CustomFieldMap_1_0.sql
+R	modules/customfield/classes/GalleryStorage/DatabaseStorage/schema/platform/mysql/CustomFieldMap.sql
+R	modules/customfield/classes/GalleryStorage/DatabaseStorage/schema/platform/mysql/GNUmakefile
+R	modules/customfield/classes/GalleryStorage/DatabaseStorage/schema/platform/mysql
+R	modules/customfield/classes/GalleryStorage/DatabaseStorage/schema/platform/oracle/A_CustomFieldMap_1_0.sql
+R	modules/customfield/classes/GalleryStorage/DatabaseStorage/schema/platform/oracle/CustomFieldMap.sql
+R	modules/customfield/classes/GalleryStorage/DatabaseStorage/schema/platform/oracle/GNUmakefile
+R	modules/customfield/classes/GalleryStorage/DatabaseStorage/schema/platform/oracle
+R	modules/customfield/classes/GalleryStorage/DatabaseStorage/schema/platform/postgres/A_CustomFieldMap_1_0.sql
+R	modules/customfield/classes/GalleryStorage/DatabaseStorage/schema/platform/postgres/CustomFieldMap.sql
+R	modules/customfield/classes/GalleryStorage/DatabaseStorage/schema/platform/postgres/GNUmakefile
+R	modules/customfield/classes/GalleryStorage/DatabaseStorage/schema/platform/postgres
+R	modules/customfield/classes/GalleryStorage/DatabaseStorage/schema/platform
+R	modules/customfield/classes/GalleryStorage/DatabaseStorage/schema/schema.tpl
+R	modules/customfield/classes/GalleryStorage/DatabaseStorage/schema/xml-src/A_CustomFieldMap_1.0.xml
+R	modules/customfield/classes/GalleryStorage/DatabaseStorage/schema/xml-src/A_CustomFieldMap_1_0.xml
+R	modules/customfield/classes/GalleryStorage/DatabaseStorage/schema/xml-src/GNUmakefile
+R	modules/customfield/classes/GalleryStorage/DatabaseStorage/schema/xml-src
+R	modules/customfield/classes/GalleryStorage/DatabaseStorage/schema
+R	modules/customfield/classes/GalleryStorage/DatabaseStorage
+R	modules/customfield/classes/interfaces/CustomFieldMap.inc
+R	modules/customfield/classes/interfaces/GNUmakefile
+R	modules/customfield/classes/interfaces
+R	modules/customfield/locale/cs_CZ/LC_MESSAGES/modules_customfield.mo
+R	modules/customfield/locale/cs_CZ/LC_MESSAGES
+R	modules/customfield/locale/cs_CZ
+R	modules/customfield/locale/da_DK/LC_MESSAGES/modules_customfield.mo
+R	modules/customfield/locale/da_DK/LC_MESSAGES
+R	modules/customfield/locale/da_DK
+R	modules/customfield/locale/de_DE/LC_MESSAGES/modules_customfield.mo
+R	modules/customfield/locale/de_DE/LC_MESSAGES
+R	modules/customfield/locale/de_DE
+R	modules/customfield/locale/eu_ES/LC_MESSAGES/modules_customfield.mo
+R	modules/customfield/locale/eu_ES/LC_MESSAGES
+R	modules/customfield/locale/eu_ES
+R	modules/customfield/locale/fr_FR/LC_MESSAGES/modules_customfield.mo
+R	modules/customfield/locale/fr_FR/LC_MESSAGES
+R	modules/customfield/locale/fr_FR
+R	modules/customfield/locale/hu_HU/LC_MESSAGES/modules_customfield.mo
+R	modules/customfield/locale/hu_HU/LC_MESSAGES
+R	modules/customfield/locale/hu_HU
+R	modules/customfield/locale/is_IS/LC_MESSAGES/modules_customfield.mo
+R	modules/customfield/locale/is_IS/LC_MESSAGES
+R	modules/customfield/locale/is_IS
+R	modules/customfield/locale/it_IT/LC_MESSAGES/modules_customfield.mo
+R	modules/customfield/locale/it_IT/LC_MESSAGES
+R	modules/customfield/locale/it_IT
+R	modules/customfield/locale/ja_JP/LC_MESSAGES/modules_customfield.mo
+R	modules/customfield/locale/ja_JP/LC_MESSAGES
+R	modules/customfield/locale/ja_JP
+R	modules/customfield/locale/nl_NL/LC_MESSAGES/modules_customfield.mo
+R	modules/customfield/locale/nl_NL/LC_MESSAGES
+R	modules/customfield/locale/nl_NL
+R	modules/customfield/locale/no_NO/LC_MESSAGES/modules_customfield.mo
+R	modules/customfield/locale/no_NO/LC_MESSAGES
+R	modules/customfield/locale/no_NO
+R	modules/customfield/locale/ru_RU/LC_MESSAGES/modules_customfield.mo
+R	modules/customfield/locale/ru_RU/LC_MESSAGES
+R	modules/customfield/locale/ru_RU
+R	modules/customfield/locale/sr_YU/LC_MESSAGES/modules_customfield.mo
+R	modules/customfield/locale/sr_YU/LC_MESSAGES
+R	modules/customfield/locale/sr_YU
+R	modules/customfield/locale/sv_SE/LC_MESSAGES/modules_customfield.mo
+R	modules/customfield/locale/sv_SE/LC_MESSAGES
+R	modules/customfield/locale/sv_SE
+R	modules/customfield/locale/tr_TR/LC_MESSAGES/modules_customfield.mo
+R	modules/customfield/locale/tr_TR/LC_MESSAGES
+R	modules/customfield/locale/tr_TR
+R	modules/customfield/locale/vi_VN/LC_MESSAGES/modules_customfield.mo
+R	modules/customfield/locale/vi_VN/LC_MESSAGES
+R	modules/customfield/locale/vi_VN
+R	modules/customfield/po/cs_CZ.po
+R	modules/customfield/po/da_DK.po
+R	modules/customfield/po/de_DE.po
+R	modules/customfield/po/eu_ES.po
+R	modules/customfield/po/fr_FR.po
+R	modules/customfield/po/hu_HU.po
+R	modules/customfield/po/is_IS.po
+R	modules/customfield/po/it_IT.po
+R	modules/customfield/po/ja_JP.po
+R	modules/customfield/po/nl_NL.po
+R	modules/customfield/po/no_NO.po
+R	modules/customfield/po/ru_RU.po
+R	modules/customfield/po/sr_YU.po
+R	modules/customfield/po/sv_SE.po
+R	modules/customfield/po/tr_TR.po
+R	modules/customfield/po/vi_VN.po
+R	modules/customfield/templates/CustomFieldItemDetails.tpl
+R	modules/customfield/templates/ItemAdmin.tpl
+R	modules/customfield/templates/ItemDetails.tpl
+R	modules/customfield/templates/ItemEdit.tpl
+R	modules/customfield/templates/SiteAdmin.tpl

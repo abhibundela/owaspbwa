@@ -1,0 +1,254 @@
+# $Id: ja.po,v 1.7 2006/03/22 04:19:38 mindless Exp $
+#
+# Gallery - a web based photo album viewer and editor
+# Copyright (C) 2000-2006 Bharat Mediratta
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery: ImageMagick 1.0.6\n"
+"POT-Creation-Date: 2003-09-20 19:38+0900\n"
+"PO-Revision-Date: 2005-10-31 10:36+0900\n"
+"Last-Translator: Kennichi Uehara <ken.w3m+nospam@gmail.com>\n"
+"Language-Team: Japanese <gallery-devel@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "ImageMagick"
+msgstr "ImageMagick"
+
+msgid "ImageMagick / GraphicsMagick Graphics Toolkit"
+msgstr "ImageMagick / GraphicsMagick グラフィックツールキット"
+
+msgid "Graphics Toolkits"
+msgstr "グラフィックツールキット"
+
+msgid "Convert to"
+msgstr "変換"
+
+msgid "target width"
+msgstr "目標の幅"
+
+msgid "(optional) target height, defaults to same as width"
+msgstr ""
+
+msgid "Scale the image to the target size, maintain aspect ratio"
+msgstr ""
+
+msgid "target height"
+msgstr "目標の高さ"
+
+msgid "Resize the image to the target dimensions"
+msgstr ""
+
+msgid "rotation degrees"
+msgstr "回転角"
+
+msgid "Rotate the image"
+msgstr "画像の回転"
+
+msgid "left edge %"
+msgstr ""
+
+msgid "top edge %"
+msgstr ""
+
+msgid "width %"
+msgstr "幅 %"
+
+msgid "height %"
+msgstr "高さ %"
+
+msgid "Crop the image"
+msgstr ""
+
+msgid "overlay path"
+msgstr ""
+
+msgid "overlay mime type"
+msgstr ""
+
+msgid "overlay width"
+msgstr ""
+
+msgid "overlay height"
+msgstr ""
+
+msgid "alignment type"
+msgstr ""
+
+msgid "alignment x %"
+msgstr ""
+
+msgid "alignment y %"
+msgstr ""
+
+msgid "Overlay source image with a second one"
+msgstr ""
+
+msgid "page number"
+msgstr "ページ番号"
+
+msgid "Select a single page from a multi-page file"
+msgstr ""
+
+#, fuzzy
+msgid "target size in kb"
+msgstr "目標のサイズ"
+
+msgid "Reduce image quality to reach target file size"
+msgstr ""
+
+msgid "Get the width and height of the image"
+msgstr "画像の縦横の大きさを取得する"
+
+msgid "Get the number of pages"
+msgstr ""
+
+#, fuzzy
+msgid "Get the colorspace of the image"
+msgstr "画像の縦横の大きさを取得する"
+
+msgid "File does not exist"
+msgstr "ファイルが存在しません"
+
+msgid "Problem executing binary:"
+msgstr "バイナリ実行時の問題:"
+
+msgid "Binary output:"
+msgstr "バイナリ出力:"
+
+msgid "ImageMagick Settings"
+msgstr "ImageMagick設定"
+
+msgid "Settings saved successfully"
+msgstr "設定の保存に成功しました"
+
+msgid ""
+"ImageMagick is a graphics toolkit that can be used to process images that you upload to "
+"Gallery.  You must install the ImageMagick binaries on your server, then enter the path to "
+"them in the text box below.  If you're on a Unix machine, don't forget to make the binaries "
+"executable (<i>chmod 755 *</i> in the ImageMagick directory should do it)"
+msgstr ""
+"ImageMagickはGalleryに画像をアップロードする際に使われる、グラフィックツールキットです。"
+"ImageMagickバイナリをコンピュータにインストールし、パスを下のテキストボックスに入力してくださ"
+"い。Unixを使っているなら、バイナリを実行可能にすることを忘れないでください。(ImageMagicのディ"
+"レクトリで、 <i>chmod 755 *</i> を実行するとよいでしょう。)"
+
+msgid "Directory to ImageMagick/GraphicsMagick binaries:"
+msgstr "ImageMagick/GraphicsMagick バイナリのディレクトリ:"
+
+msgid "You must enter a path to your ImageMagick binaries"
+msgstr "ImageMagicバイナリのパスを入力しなくてはなりません"
+
+#, fuzzy
+msgid "The path you entered is not a valid directory or is not accessible."
+msgstr "入力したパス名は無効です。"
+
+msgid ""
+"The path you entered doesn't contain valid ImageMagick binaries. Use the 'test' button to "
+"check where the error is."
+msgstr ""
+"入力されたパスに有効なImageMagickバイナリが含まれていませんでした。'テスト'ボタンを使用して、"
+"どこでエラーが起こったのか確認してください。"
+
+msgid "The path you entered isn't a valid path."
+msgstr "入力したパス名は無効です。"
+
+msgid "JPEG Quality:"
+msgstr "JPEG画質:"
+
+msgid ""
+"ImageMagick can detect non-webviewable color spaces like CMYK and create a webviewable copy "
+"of such images. Only activate this option if you actually add CMYK based JPEG or TIFF images "
+"since the color space detection slows down the add item process a little bit."
+msgstr ""
+
+msgid "CMYK Support:"
+msgstr ""
+
+msgid "Save Settings"
+msgstr "設定を保存"
+
+msgid "Test Settings"
+msgstr "設定をテスト"
+
+msgid "Cancel"
+msgstr "キャンセル"
+
+msgid "Reset"
+msgstr "リセット"
+
+msgid "ImageMagick binary test results"
+msgstr "ImageMagickバイナリテスト結果"
+
+msgid "Binary Name"
+msgstr "バイナリネーム"
+
+msgid "Pass/Fail"
+msgstr "合格/失敗"
+
+msgid "Passed"
+msgstr "合格"
+
+msgid "Failed"
+msgstr "失敗"
+
+msgid "Error messages:"
+msgstr "エラーメッセージ:"
+
+msgid "Version"
+msgstr "バージョン"
+
+#, c-format
+msgid ""
+"Warning: This version of %s has a %sknown vulnerability%s that can be exploited to cause "
+"infinite loops. You may wish to upgrade. This determination may be inaccurate for %sDebian%s."
+msgstr ""
+
+msgid "Use this version anyway"
+msgstr ""
+
+msgid "Supported MIME Types"
+msgstr "対応済 MIME type"
+
+msgid "The ImageMagick module can support files with the following MIME types:"
+msgstr ""
+
+#, c-format
+msgid "Debug output (%d failed test)"
+msgid_plural "Debug output (%d failed tests)"
+msgstr[0] ""
+
+msgid ""
+"We gathered this debug output while testing your ImageMagick binaries.  If you read through "
+"this carefully you may discover the reason why your ImageMagick binaries failed the tests."
+msgstr ""
+
+#, fuzzy
+#~ msgid "Composite the image"
+#~ msgstr "画像の回転"
+
+#, fuzzy
+#~ msgid "ImageMagick Path"
+#~ msgstr "ImageMagick"
+
+#~ msgid "Path to ImageMagick:"
+#~ msgstr "ImageMagicのパス:"
+
+#~ msgid "Defaults"
+#~ msgstr "デフォルト"

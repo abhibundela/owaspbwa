@@ -1,0 +1,1 @@
+|a:6:{s:11:"affiliateId";s:4:"1927";s:15:"affiliateIdPass";s:32:"f12a65d90445f95b90e5fd30c75ee74e";s:10:"_callbacks";s:30:"getSiteAdminViews|getItemLinks";s:16:"_requiredCoreApi";s:3:"7,0";s:18:"_requiredModuleApi";s:3:"3,0";s:8:"_version";s:5:"1.0.4";}

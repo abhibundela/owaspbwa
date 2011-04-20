@@ -1,0 +1,3622 @@
+# $Id: fi.po,v 1.12 2006/03/23 19:59:35 mindless Exp $
+#
+# Gallery - a web based photo album viewer and editor
+# Copyright (C) 2000-2006 Bharat Mediratta
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+#
+# Previous translators:
+# - 2003 Jussi Karppanen <bitti@bitti.eu.org>
+# - 2005 Marko Kohtala <marko.kohtala@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery: Core 1.1.0\n"
+"POT-Creation-Date: 2003-05-16 09:41+0300\n"
+"PO-Revision-Date: 2005-12-11 14:35+0200\n"
+"Last-Translator: Marko Kohtala <marko.kohtala@gmail.com>\n"
+"Language-Team: Finnish <gallery-devel@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Gallery Email Test"
+msgstr "Gallerian Sähköpostitesti"
+
+msgid "forever"
+msgstr "ikuisesti"
+
+msgid "High Priority (Me first!)"
+msgstr ""
+
+msgid "Low Priority (I want to share!)"
+msgstr ""
+
+msgid "No Markup"
+msgstr "Vain teksti"
+
+msgid "BBCode"
+msgstr "BBCode"
+
+msgid "Raw HTML"
+msgstr "HTML"
+
+msgid "Database"
+msgstr "Tietokanta"
+
+msgid "File"
+msgstr "Tiedosto"
+
+#, c-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "yksi minuutti"
+msgstr[1] "%d minuuttia"
+
+#, c-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "yksi tunti"
+msgstr[1] "%d tuntia"
+
+#, c-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "yksi päivä"
+msgstr[1] "%d päivää"
+
+#, c-format
+msgid "%d week"
+msgid_plural "%d weeks"
+msgstr[0] "yksi viikko"
+msgstr[1] "%d viikkoa"
+
+msgid "<none>"
+msgstr "<ei valittu>"
+
+msgid "install"
+msgstr "asenna"
+
+msgid "upgrade"
+msgstr "päivitä"
+
+msgid "configure"
+msgstr "konfiguroi"
+
+msgid "activate"
+msgstr "ota käyttöön"
+
+msgid "uninstall"
+msgstr "poista"
+
+msgid "deactivate"
+msgstr "poista käytöstä"
+
+msgid "No acceleration"
+msgstr ""
+
+msgid "Partial acceleration"
+msgstr ""
+
+msgid "Full acceleration"
+msgstr ""
+
+#, fuzzy
+msgid "Performing Maintenance Tasks"
+msgstr "Järjestelmän Ylläpito"
+
+#, c-format
+msgid "Downloading %s"
+msgstr ""
+
+#, fuzzy
+msgid "Done."
+msgstr "Valmis"
+
+#, fuzzy
+msgid "Upgrade"
+msgstr "päivitä"
+
+msgid "Download"
+msgstr ""
+
+msgid "Inherit settings from parent album"
+msgstr "Peri asetukset ulommasta albumista"
+
+msgid "Use these settings"
+msgstr "Käytä näitä asetuksia"
+
+#, fuzzy
+msgid "Installing the core module"
+msgstr "Gallerian Ydinmoduuli"
+
+msgid "key"
+msgstr "avain"
+
+msgid "All access"
+msgstr "Täydet käyttöoikeudet"
+
+msgid "[core] View item"
+msgstr "[ydin] Näytä kohde"
+
+msgid "[core] View resized version(s)"
+msgstr "[ydin] Näytä muokatut versiot"
+
+msgid "[core] View original version"
+msgstr "[ydin] Näytä alkuperäinen versio"
+
+msgid "[core] View all versions"
+msgstr "[ydin] Näytä kaikki versiot"
+
+msgid "[core] Add sub-album"
+msgstr "[ydin] Lisää albumi"
+
+msgid "[core] Add sub-item"
+msgstr "[ydin] Lisää kuva"
+
+msgid "[core] Edit item"
+msgstr "[ydin] Muokkaa kohdetta"
+
+msgid "[core] Change item permissions"
+msgstr "[ydin] Muuta kohteen oikeuksia"
+
+msgid "[core] Delete item"
+msgstr "[ydin] Poista kohde"
+
+msgid "Upgrading permissions"
+msgstr "Päivittää oikeuksia"
+
+msgid "Deleting old permission tables"
+msgstr "Poistaa vanhoja oikeus tietoja"
+
+msgid "Registered Users"
+msgstr "Rekisteröityneet Käyttäjät"
+
+msgid "All Users"
+msgstr "Kaikki Käyttäjät"
+
+msgid "Detecting broken derivatives"
+msgstr "Etsii rikkoutuneita johdannaisia"
+
+msgid "Clearing fast-download cache"
+msgstr "Tyhjentää nopean latauksen välimuistia"
+
+#, fuzzy
+msgid "Deleting old fast-download cache"
+msgstr "Tyhjentää nopean latauksen välimuistia"
+
+msgid "Converting MySQL data to UTF8"
+msgstr ""
+
+msgid "Site Admins"
+msgstr "Gallerian Ylläpitäjät"
+
+msgid "Everybody"
+msgstr "Kaikki"
+
+msgid "Guest"
+msgstr "Vieras"
+
+msgid "Gallery"
+msgstr "Galleria"
+
+msgid "This is the main page of your Gallery"
+msgstr "Tämä on Gallerian etusivu"
+
+#, c-format
+msgid "Upgrading permissions (%d items complete, %d remaining)"
+msgstr ""
+
+msgid "Detecting broken derivatives, loading "
+msgstr "Etsii rikkoutuneita johdannaisia, lataa "
+
+msgid "Detecting broken derivatives "
+msgstr "Etsii rikkoutuneita johdannaisia"
+
+msgid "Detecting broken derivatives, "
+msgstr "Etsii rikkoutuneita johdannaisia, "
+
+msgid "Detecting broken derivatives, saving "
+msgstr "Etsii rikkoutuneita johdannaisia, tallentaa "
+
+#, fuzzy, c-format
+msgid "Deleting old session files (iteration %d)"
+msgstr "Poistaa vanhoja oikeus tietoja"
+
+msgid "add items"
+msgstr "lisää kuvia"
+
+msgid "Album created successfully."
+msgstr "Albumi luotu onnistuneesti."
+
+msgid "add sub-album"
+msgstr "lisää albumi"
+
+msgid "add items confirmation"
+msgstr "kuvien lisäämisen varmistus"
+
+msgid "Base filename"
+msgstr "Tiedostonimi"
+
+msgid "Caption"
+msgstr "Kuvateksti"
+
+msgid "Blank"
+msgstr "Tyhjä"
+
+msgid "From Web Browser"
+msgstr "Web-selaimesta"
+
+#, c-format
+msgid "%d megabyte"
+msgid_plural "%d megabytes"
+msgstr[0] "%d megatavu"
+msgstr[1] "%d megatavua"
+
+#, c-format
+msgid "%d kilobytes"
+msgid_plural "%d kilobytes"
+msgstr[0] "%d kilotavu"
+msgstr[1] "%d kilotavua"
+
+msgid "From Local Server"
+msgstr "Paikalliselta Palvelimelta"
+
+msgid "Photo"
+msgstr "Kuva"
+
+msgid "From Web Page"
+msgstr "Web-sivulta"
+
+msgid "Gallery Item Administration"
+msgstr "Gallerian Kohteen Ylläpito"
+
+msgid "create link"
+msgstr "luo linkki"
+
+msgid "link an item"
+msgstr "linkitä kohde"
+
+msgid "delete an item"
+msgstr "poista kohde"
+
+msgid "delete confirmation"
+msgstr "vahvista poisto"
+
+#, c-format
+msgid "delete %s"
+msgstr "poista %s"
+
+#, c-format
+msgid "edit %s"
+msgstr "muokkaa %s"
+
+msgid "Settings saved successfully."
+msgstr "Asetukset tallennettu."
+
+msgid "&laquo; default theme &raquo;"
+msgstr "&laquo; oletusteema &raquo;"
+
+#, fuzzy
+msgid "Recreating resized images"
+msgstr "Luo skaalatut kuvat uudelleen"
+
+#, fuzzy
+msgid "Rebuilding resized images..."
+msgstr "Luo skaalatut kuvat uudelleen"
+
+#, fuzzy
+msgid "Rebuilding thumbnails..."
+msgstr "Luo esikatselukuvat uudelleen"
+
+msgid "Album"
+msgstr "Albumi"
+
+#, c-format
+msgid "Processing image %d of %d"
+msgstr "Käsitellään kuvaa %d/%d"
+
+msgid "Changes saved successfully"
+msgstr "Muutokset tallennettu"
+
+msgid "Animation Size"
+msgstr "Animaation Koko"
+
+msgid "edit captions"
+msgstr "muuta kuvatekstiä"
+
+msgid "General"
+msgstr "Yleinen"
+
+msgid "Movie Size"
+msgstr "Elokuvan Koko"
+
+msgid "Thumbnail cropped successfully"
+msgstr "Esikatselukuva leikattu"
+
+msgid "Thumbnail reset successfully"
+msgstr "Esikatselukuva palautettu"
+
+msgid "Photo 5x3"
+msgstr "Kuva 5x3"
+
+msgid "Photo 6x4"
+msgstr "Kuva 6x4"
+
+msgid "Photo 7x5"
+msgstr "Kuva 7x5"
+
+msgid "Photo 10x8"
+msgstr "Kuva 10x8"
+
+msgid "Fullscreen 4x3"
+msgstr "Täysikuva 4x3"
+
+msgid "Widescreen 16x9"
+msgstr "Laajakuva 16x9"
+
+msgid "CinemaScope 2.35x1"
+msgstr "CinemaScope 2.35x1"
+
+msgid "Square 1x1"
+msgstr "Neliö 1x1"
+
+msgid "As Image"
+msgstr "Kuin Kuvassa"
+
+msgid "Landscape"
+msgstr "Vaaka"
+
+msgid "Portrait"
+msgstr "Pysty"
+
+msgid "Crop Thumbnail"
+msgstr "Leikkaa Esikatselukuvaa"
+
+msgid "Reverted rotate and scale changes successfully"
+msgstr "Kääntäminen ja koon muutos peruttu"
+
+msgid "Rotated photo successfully"
+msgstr "Valokuva käännetty"
+
+msgid "Scaled photo successfully"
+msgstr "Valokuvan koko muutettu"
+
+msgid "Modify Photo"
+msgstr "Muokkaa Kuvaa"
+
+msgid "Successfully saved theme settings"
+msgstr "Teeman asetukset tallennettu"
+
+msgid "Theme"
+msgstr "Teema"
+
+msgid "make highlight"
+msgstr "laita esimerkkikuvaksi"
+
+msgid "move item"
+msgstr "siirrä kohde"
+
+#, c-format
+msgid "move %s"
+msgstr "siirrä %s"
+
+#, c-format
+msgid "edit %s permissions"
+msgstr "muuta %s oikeuksia"
+
+msgid "reorder items"
+msgstr "järjestä kohteet"
+
+msgid "Maintenance"
+msgstr "Ylläpito"
+
+msgid "Gallery Site Administration"
+msgstr "Gallerian Sivuston Ylläpito"
+
+msgid "site admin"
+msgstr "sivuston ylläpito"
+
+msgid "Gallery User Administration"
+msgstr "Gallerian Käyttäjän Ylläpito"
+
+msgid "change password"
+msgstr "vaihda salasana"
+
+msgid "your account"
+msgstr "käyttäjätilisi"
+
+msgid "Password Recovery"
+msgstr "Salasanan Palautus"
+
+msgid "Core"
+msgstr "Ydin"
+
+msgid "Gallery 2 Core Module"
+msgstr "Galleria 2:n Ydinmoduuli"
+
+msgid "Add Items"
+msgstr "Lisää Kuvia"
+
+msgid "Edit Album"
+msgstr "Muokkaa Albumia"
+
+msgid "Edit Photo"
+msgstr "Muokkaa Kuvaa"
+
+msgid "Edit Movie"
+msgstr "Muokkaa Videota"
+
+msgid "Create Link"
+msgstr "Luo Linkki"
+
+msgid "Add Album"
+msgstr "Lisää Albumi"
+
+msgid "Edit Permissions"
+msgstr "Muuta Oikeuksia"
+
+msgid "View Permissions"
+msgstr "Katso Oikeuksia"
+
+msgid "Delete Album"
+msgstr "Poista Albumi"
+
+msgid "Delete Photo"
+msgstr "Poista Kuva"
+
+msgid "Delete Movie"
+msgstr "Poista Video"
+
+msgid "Move Album"
+msgstr "Siirrä Albumi"
+
+msgid "Move Photo"
+msgstr "Siirrä Kuva"
+
+msgid "Move Movie"
+msgstr "Siirrä Video"
+
+msgid "Edit Captions"
+msgstr "Muokkaa Kuvatekstejä"
+
+msgid "Make Highlight"
+msgstr "Laita Esimerkkikuvaksi"
+
+msgid "Reorder Items"
+msgstr "Järjestä Kohteet"
+
+msgid "Site Admin"
+msgstr "Gallerian Ylläpito"
+
+msgid "Login"
+msgstr "Kirjaudu Sisään"
+
+msgid "Your Account"
+msgstr "Oma Käyttäjätilisi"
+
+msgid "Logout"
+msgstr "Kirjaudu Ulos"
+
+msgid "Modules"
+msgstr "Moduulit"
+
+msgid "Repository"
+msgstr ""
+
+msgid "Themes"
+msgstr "Teema"
+
+msgid "Display"
+msgstr "Näyttö"
+
+msgid "Users"
+msgstr "Käyttäjät"
+
+msgid "Groups"
+msgstr "Ryhmät"
+
+msgid "Performance"
+msgstr ""
+
+msgid "Toolkit Priority"
+msgstr "Työkalujen Tärkeysjärjestys"
+
+msgid "Graphics Toolkits"
+msgstr "Grafiikkatyökalut"
+
+msgid "Account Settings"
+msgstr "Omat Asetukset"
+
+msgid "Change Password"
+msgstr "Vaihda Salasana"
+
+msgid "Link Album"
+msgstr "Linkitä Albumi"
+
+msgid "Link Photo"
+msgstr "Linkitä Kuva"
+
+msgid "Link Movie"
+msgstr "Linkitä Video"
+
+#, c-format
+msgid "Edit %s"
+msgstr "Muokkaa %s"
+
+#, c-format
+msgid "Delete %s"
+msgstr "Poista %s"
+
+#, c-format
+msgid "Move %s"
+msgstr "Siirrä %s"
+
+#, c-format
+msgid "Link %s"
+msgstr "Linkitä %s"
+
+msgid "Build all thumbnails/resizes"
+msgstr "Tee kaikki kuvakkeet/koon muutokset"
+
+msgid ""
+"Ensure data files for all derivatives (thumbnails, etc) have been built and rebuild broken "
+"ones."
+msgstr ""
+"Varmista että tiedostot kaikille versioille (kuvakkeet yms.) on tehty ja tee uudelleen "
+"rikkinäiset."
+
+msgid "Build All Thumbnails/Resizes"
+msgstr "Tee Kaikki Kuvakkeet/Koot"
+
+msgid "Debug output for failed items:"
+msgstr "Tulostus vianhakuun epäonnistuneille kohteille:"
+
+#, c-format
+msgid "Checked %d items"
+msgstr "%d kohdetta tarkistettu"
+
+#, c-format
+msgid "%d items built"
+msgstr "%d kohdetta tehty"
+
+#, c-format
+msgid "%d items failed"
+msgstr "%d kohdetta epäonnistui"
+
+#, fuzzy
+msgid "Delete user sessions"
+msgstr "Tiedostojen Oikeudet"
+
+msgid ""
+"Delete all persistent user sessions according to your current session expiration settings."
+msgstr ""
+
+msgid "Delete database cache"
+msgstr "Poista tietokannan välimuisti"
+
+#, fuzzy
+msgid ""
+"Gallery stores commonly used database information on disk for increased performance. If you "
+"modify the database directly, you should run this task to clean out the cache and force "
+"Gallery to reload the information from the database."
+msgstr ""
+"Galleria pitää usein käytettyä tietoa tietokannasta levyllä parantaakseen suorituskykyä. Jos "
+"muokkaan tietokantaa suoraan, sinun tulisi suorittaa tämä tehtävä siivotaksesi välimuistin "
+"ja pakottaakseni Gallerian hakemaan tiedot uudelleen tietokannasta."
+
+#, c-format
+msgid "Successfully deleted directory: %s"
+msgstr "Hakemisto poistettu: %s"
+
+#, c-format
+msgid "Unable to delete directory: %s"
+msgstr "Ei voi poistaa hakemistoa: %s"
+
+msgid "Delete template cache"
+msgstr "Poista template välimuisti"
+
+msgid ""
+"Gallery compiles template files and saves them for increased performance.  If you're "
+"experiencing problems that say <i>Smarty error</i> then you might try running this task.  "
+"Also run this if you remove a local/*.tpl file so Smarty will switch back to the default tpl "
+"file."
+msgstr ""
+"Galleria kääntää template-tiedostot ja tallentaa ne tarjotakseen paremman suorituskyvyn. Jos "
+"koet ongelmia joissa lukee <i>Smarty error</i>, voit kokeilla tämän toiminnon suorittamista. "
+"Suorita tämä toiminto myös jos poistat tiedoston local/*.tpl jotta Smarty vaihtaa takaisin "
+"oletus tpl tiedostoon."
+
+msgid "Template cache deleted successfully"
+msgstr "Template välimuisti poistettu"
+
+msgid "album"
+msgstr "albumi"
+
+msgid "Animation"
+msgstr "Animaatio"
+
+msgid "animation"
+msgstr "animaatio"
+
+msgid "Gallery Core"
+msgstr "Gallerian Ydin"
+
+msgid "Gallery Core Module"
+msgstr "Gallerian Ydinmoduuli"
+
+msgid "Search descriptions"
+msgstr "Haun kuvaus"
+
+msgid "Search keywords"
+msgstr "Hakusanat"
+
+msgid "Search summaries"
+msgstr "Haun yhteenveto"
+
+msgid "Search titles"
+msgstr "Etsi otsikoita"
+
+msgid "Description"
+msgstr "Kuvaus"
+
+msgid "Keywords"
+msgstr "Hakusanat"
+
+msgid "Summary"
+msgstr "Yhteenveto"
+
+msgid "Title"
+msgstr "Otsikko"
+
+msgid "Owner"
+msgstr "Omistaja"
+
+msgid "Group"
+msgstr "Ryhmä"
+
+msgid "group"
+msgstr "ryhmä"
+
+msgid "Other"
+msgstr "Muu"
+
+msgid "Movie"
+msgstr "Video"
+
+msgid "movie"
+msgstr "video"
+
+msgid "photo"
+msgstr "kuva"
+
+#, fuzzy
+msgid "download"
+msgstr "alas"
+
+#, fuzzy
+msgid "Plugins directory does not exist."
+msgstr "Käyttäjää '%s' ei ole olemassa."
+
+msgid ""
+"Couldn't create plugins subdirectory. Make sure the webserver has write permissions in it."
+msgstr ""
+
+msgid "Couldn't create repository cache path."
+msgstr ""
+
+msgid ""
+"Couldn't create cache subdirectory. Make sure the web server has write permissions in it."
+msgstr ""
+
+#, c-format
+msgid "Error downloading index from '%s'."
+msgstr ""
+
+#, c-format
+msgid "Error downloading index hash from '%s'."
+msgstr ""
+
+msgid "Index integrity check failed."
+msgstr ""
+
+msgid "&laquo; default sort order &raquo;"
+msgstr "&laquo; oletusjärjestys &raquo;"
+
+msgid "Manual sort order"
+msgstr "Käsin järjestetty"
+
+msgid "Origination Date"
+msgstr "Alkuperäisen Kuvan Päiväys"
+
+msgid "Creation Date"
+msgstr "Luontipäivä"
+
+msgid "Last Changed Date"
+msgstr "Viimeksi Muokattu"
+
+msgid "Name"
+msgstr "Nimi"
+
+msgid "View Count"
+msgstr "Katselukerrat"
+
+msgid "Random"
+msgstr "Satunnainen"
+
+msgid "&laquo; no presort &raquo;"
+msgstr "&laquo; ei esijärjestelyä &raquo;"
+
+msgid "Albums First"
+msgstr "Albumin Ensimmäinen"
+
+msgid "Most Viewed First"
+msgstr "Eniten Katsottu Ensin"
+
+msgid "Ascending"
+msgstr "Nouseva"
+
+msgid "Descending"
+msgstr "Laskeva"
+
+msgid "Validation disabled until you set allowSessionAccess in config.php"
+msgstr "Varmennus poistettu kunnes teet allowSessionAccess asetuksen config.php:ssa"
+
+msgid "This page is valid XHTML 1.0"
+msgstr "Tämä sivu on käypää XHTML 1.0 -koodia."
+
+msgid "Donate to the Gallery project"
+msgstr "Lahjoita Gallery projektille"
+
+msgid "G2.1: Blackjack"
+msgstr "G2.1: Blackjack"
+
+#, c-format
+msgid "Estimated time remaining: %d:%02d"
+msgstr "Arviolta aikaa jäljellä: %d:%02d"
+
+#, c-format
+msgid "Memory used: %s, total: %s"
+msgstr "Muistia käytetty: %s, yhteensä: %s"
+
+msgid "Rows per album page"
+msgstr "Rivejä albumin sivulla"
+
+msgid "Columns per album page"
+msgstr "Sarakkeita albumin sivulla"
+
+msgid "Number of items to show per page"
+msgstr "Kohteiden lukumäärä sivulla"
+
+msgid "Row height (pixels)"
+msgstr ""
+
+msgid "Column width (pixels)"
+msgstr ""
+
+msgid "Show image owners"
+msgstr "Näytä kuvien omistajat"
+
+msgid "Show album owners"
+msgstr "Näytä albumien omistajat"
+
+msgid "Show micro navigation thumbnails"
+msgstr "Näytä pienet esikatselukuvat navigointiin"
+
+msgid "Blocks to show in the sidebar"
+msgstr "Laidalla näytettävät lohkot"
+
+msgid "Blocks to show on album pages"
+msgstr "Albumilla näytettävät lohkot"
+
+msgid "Blocks to show on photo pages"
+msgstr "Kuvasivulla näytettävät lohkot"
+
+msgid "View Samples"
+msgstr "Katso Näytteet"
+
+msgid "Album Frame"
+msgstr "Albumin Kehys"
+
+msgid "Item Frame"
+msgstr "Kohteen Kehys"
+
+msgid "Photo Frame"
+msgstr "Kuvan Kehys"
+
+msgid "Color Pack"
+msgstr "Väripaketti"
+
+msgid "You must enter a number greater than 0"
+msgstr "Sinun on syötettävä numero, joka on suurempi kuin nolla"
+
+msgid "Format: [module.BlockName param=value] ..."
+msgstr "Muoto: [module.BlockName param=value] ..."
+
+#, c-format
+msgid "%dx%d"
+msgstr "%dx%d"
+
+msgid "Audio"
+msgstr "Ääni"
+
+msgid "audio"
+msgstr "ääni"
+
+msgid "Archive"
+msgstr "Arkistoi"
+
+msgid "archive"
+msgstr "arkistoi"
+
+msgid "Document"
+msgstr "Dokumentti"
+
+msgid "document"
+msgstr "dokumentti"
+
+msgid "Spreadsheet"
+msgstr "Taulukkolaskenta"
+
+msgid "spreadsheet"
+msgstr "taulukkolaskenta"
+
+msgid "Unknown"
+msgstr "Tuntematon"
+
+msgid "unknown"
+msgstr "tuntematon"
+
+#, c-format
+msgid ""
+"Invalid return URL! The requested URL %s tried to insert a redirection to %s which is not a "
+"part of this Gallery."
+msgstr ""
+
+msgid "Back"
+msgstr "Takaisin"
+
+#, c-format
+msgid "Back to %s"
+msgstr "Takaisin %s sivulle"
+
+msgid "User"
+msgstr "Käyttäjä"
+
+msgid "user"
+msgstr "käyttäjä"
+
+msgid "Optimize database"
+msgstr "Optimoi tietokanta"
+
+msgid ""
+"Improve the performance of your database.  Results will vary depending on which database "
+"you're using, but this routine maintenance will make your Gallery run faster.  Especially "
+"useful after adding or deleting many items."
+msgstr ""
+"Paranna tietokannan suorituskykyä. Tulokset vaihtelevat riippuen käyttämästäsi "
+"tietokannasta, mutta tämä rutiini huoltotoimenpide tekee Galleriastasi nopeamman. Erityisen "
+"hyödyllinen kun olet lisännyt tai poistanut suuren määrän kohteita."
+
+msgid "Database optimized successfully"
+msgstr "Tietokanta optimoitu"
+
+msgid "Reset view counts"
+msgstr "Nollaa katselukerrat"
+
+msgid ""
+"Reset number of views to zero for all albums and items.  This task flushes the database "
+"cache as well."
+msgstr ""
+"Nollaa katselukerrat kaikille albumeille ja tiedostoille. Tämä tehtävä tyhjentää myös "
+"tietokannan välimuistin."
+
+msgid "View counts reset successfully"
+msgstr "Katselukerrat nollattu"
+
+msgid "Refresh capture dates"
+msgstr "Virkistä talteenottopäiväykset"
+
+msgid ""
+"Update capture date stored in Gallery for all items with an available date in the original "
+"data file (usually from EXIF data)."
+msgstr ""
+"Päivitä kuvien ottoajat kaikille kohteille Galleriassa alkuperäisessä kuvassa olevan "
+"päiväyksenmukaan (yleensä EXIF tiedoista)."
+
+msgid "Processing..."
+msgstr "Työstää..."
+
+msgid "Refresh Capture Dates"
+msgstr "Virkistä Talteenottopäiväykset"
+
+#, c-format
+msgid "Processing item %d of %d"
+msgstr "Käsitellään kohde %d/%d"
+
+#, c-format
+msgid "Updated %d of %d items"
+msgstr "Kohteita päivitetty %d/%d"
+
+msgid "System information"
+msgstr "Systeemitiedot"
+
+msgid "Get system details; useful for copy/paste into G2 support forum."
+msgstr "Ota systeemin yksityiskohdat talteen; kopioitavaksi esimerkiksi G2 tukifoorumiin."
+
+msgid "core"
+msgstr "ydin"
+
+msgid "Gallery version"
+msgstr "Gallerian versio"
+
+msgid "PHP version"
+msgstr "PHP versio"
+
+msgid "Webserver"
+msgstr "Palvelin"
+
+msgid "Toolkits"
+msgstr "Työkalut"
+
+#, fuzzy
+msgid "Acceleration"
+msgstr "Toiminto"
+
+msgid "Operating system"
+msgstr "Käyttöjärjestelmä"
+
+msgid "Default theme"
+msgstr "Oletusteema"
+
+#, fuzzy
+msgid "Locale"
+msgstr "Muuta Kokoa"
+
+msgid "Browser"
+msgstr "Selain"
+
+msgid "General Settings"
+msgstr "Yleiset Asetukset"
+
+msgid "Settings saved successfully"
+msgstr "Asetukset tallennettu"
+
+msgid "Added local upload directory successfully"
+msgstr "Paikallinen kopiointihakemisto lisätty"
+
+msgid "Removed local upload directory successfully"
+msgstr "Paikallinen kopiointihakemisto poistettu"
+
+msgid "Test email sent successfully"
+msgstr "Kokeilusähköposti lähetetty"
+
+msgid "There was a problem processing your request, see below for details."
+msgstr "Pyyntösi toteutuksessa oli ongelma. Katso alta yksityiskohdat."
+
+msgid "Error sending test email, see below for details."
+msgstr "Virhe testisähköpostin lähetyksessä. Katso alta yksityiskohdat."
+
+msgid "Language Settings"
+msgstr "Kielen Asetukset"
+
+#, fuzzy
+msgid ""
+"Select language defaults for Gallery. Individual users can override this setting in their "
+"personal preferences or via the language selector block if available. Gallery will try to "
+"automatically detect the language preference of each user if the browser preference check is "
+"enabled."
+msgstr ""
+"Valitse kielen oletusasetukset Gallerialle. Yksittäiset käyttäjät voivat ohittaa asetukset "
+"henkilökohtaisilla asetuksillaan tai kielivalintalohkosta."
+
+msgid "Default language"
+msgstr "Oletuskieli"
+
+msgid "Check Browser Preference"
+msgstr ""
+
+msgid "gettext"
+msgstr "gettext"
+
+#, c-format
+msgid ""
+"Your webserver does not support localization.  Please instruct your system administrator to "
+"reconfigure PHP with the %s option enabled."
+msgstr ""
+
+msgid "Date Formats"
+msgstr "Päiväyksen Esitysmuodot"
+
+#, c-format
+msgid ""
+"Specify how dates and times are displayed by Gallery.  See %sphp.net%s for details of how to "
+"enter a format string.  Note that the display of some tokens varies according to the active "
+"language."
+msgstr ""
+"Määrittele miten päiväykset ja kellonajat näytetään Galleriassa. Katso %sphp.net%s "
+"saadaksesi tarkempia ohjeita formaatin määrittämiseksi. Huomaa, että jotkin formaattimerkit "
+"vaihtelevat sen mukaan mikä on aktiivinen kieli."
+
+msgid "Style"
+msgstr "Tyyli"
+
+msgid "Format"
+msgstr "Muoto"
+
+msgid "Sample"
+msgstr "Näyte"
+
+msgid "Date"
+msgstr "Päiväys"
+
+msgid "Time"
+msgstr "Aika"
+
+msgid "Date/Time"
+msgstr "Päiväys/Aika"
+
+msgid "Filesystem Permissions"
+msgstr "Tiedostojen Oikeudet"
+
+msgid ""
+"Specify the default permissions for files and directories that Gallery creates. This doesn't "
+"apply to files/directories that Gallery has already created."
+msgstr ""
+"Voit määritellä oletusoikeudet tiedostoille ja hakemistoille joita Galleria luo. Nämä "
+"oikeudet eivät siirry jo olemassaoleville tiedostoille tai hakemistoille."
+
+msgid "New directories"
+msgstr "Uudet hakemistot"
+
+msgid "New files"
+msgstr "Uudet tiedostot"
+
+msgid "Local Server Upload Paths"
+msgstr "Paikallisen Palvelimen Siirtohakemistot"
+
+msgid ""
+"Specify the legal directories on the local server where a user can store files and then "
+"upload them into Gallery using the <i>Upload from Local Server</i> feature.  The paths you "
+"enter here and all the files and directories under those paths will be available to any "
+"Gallery user who has upload privileges, so you should limit this to directories that won't "
+"contain sensitive data (eg. /tmp or /usr/ftp/incoming)"
+msgstr ""
+"Määritä hakemisto paikallisella palveimella, jonne käyttäjät voivat tallettaa tiedostojaan "
+"ja sitten lähettää ne Galleriaan käyttämällä <i>Lähetä paikalliselta palvelimelta</i> -"
+"ominaisuutta. Antamasi hakemisto ja tiedostot näkyvät kaikille Gallerian käyttäjille, joilla "
+"on lähetysoikeudet, joten älä laita tähän hakemistoja jotka sisältävät arkaluontoista "
+"materiaalia! (esim. /tmp tai /usr/ftp/incoming)"
+
+msgid "Path"
+msgstr "Polku"
+
+msgid "Action"
+msgstr "Toiminto"
+
+msgid "remove"
+msgstr "poista"
+
+msgid "Add"
+msgstr "Lisää"
+
+msgid "You must enter a directory to add."
+msgstr "Sinun on annettava hakemisto jonka haluat lisätä."
+
+msgid "open_basedir documentation"
+msgstr "open_basedir dokumentaatio"
+
+#, c-format
+msgid ""
+"Your webserver is configured to prevent you from accessing that directory.  Please refer to "
+"the %s and consult your webserver administrator."
+msgstr ""
+"Palvelin on asetettu estämään sinua käyttämästä kyseistä hakemistoa. Ole hyvä ja katso "
+"hakemistoon %s ja selvitä asia palvelimen ylläpitäjän kanssa."
+
+msgid "The webserver does not have permissions to read that directory."
+msgstr "Palvelimella ei ole oikeuksia lukea kyseistä hakemistoa."
+
+msgid "The path you specified is not a valid directory."
+msgstr "Polku jonka annoit ei ole hakemisto."
+
+msgid "Session Settings"
+msgstr "Istunnon Asetukset"
+
+msgid "Session Lifetime"
+msgstr "Istunnon Kesto"
+
+msgid "Inactivity Timeout"
+msgstr "Odotusajan Loppuminen"
+
+msgid "Embedded Markup"
+msgstr "Upotetut Ulkoasukoodit"
+
+msgid ""
+"What kind of markup should we allow in user-entered fields?  For security reasons we do not "
+"recommend that you allow raw HTML.  BBCode is a special kind of markup that is secure and "
+"allows for simple text formatting like bold, italics, lists, images and urls."
+msgstr ""
+"Millaista koodausta tulisi sallia käyttäjän antamissa kentissä? Tietoturvasyistä emme "
+"suosittele HTML:aa. BBCode on erityinen koodaus, joka on turvallinen ja sallii "
+"yksinkertaiset muotoilut kuten tummennukset, vinotekstis, listat, kuvat ja URL:t."
+
+msgid "Markup"
+msgstr "Ulkoasukoodaus"
+
+msgid "Email"
+msgstr "Sähköposti"
+
+msgid ""
+"By default Gallery uses PHP's built in mail function to send email which requires no "
+"configuration.  To use a smtp/mail server enter the information below, including "
+"authentication information if required.  Optionally add :port after the server name to use a "
+"non-default port."
+msgstr ""
+"Gallery käyttää oletusarvoisesti PHP:n sisäänrakennettua sähköpostinlähetystä, joka ei vaadi "
+"konfigurointia. Anna tarvittavat tiedot alle, mukaanlukien käyttäjätiedot, jos haluat "
+"käyttää SMTP sähköpostipalvelinta. Voit myös lisätä :portti palvelimen nimen perään "
+"käyttääksesi jotain muuta kuin oletusporttia."
+
+msgid "Server"
+msgstr "Palvelin"
+
+msgid "Username"
+msgstr "Käyttäjätunnus"
+
+msgid "Password"
+msgstr "Salasana"
+
+msgid "SMTP From Address"
+msgstr "SMTP \"From\" Osoite"
+
+msgid "Invalid email address"
+msgstr "Viallinen sähköpostiosoite"
+
+msgid ""
+"Send a test email to verify your settings are correct (whether using PHP mail or SMTP "
+"settings above).  Below enter a recipient email address for a test message."
+msgstr ""
+"Lähetä kokeiluviesti tarkistaaksesi että asetukset ovat oikein (riippumatta käytitkö PHP vai "
+"SMTP asetuksia yllä). Anna alla vastaanottajan sähköpostiosoite testiviestiä varten."
+
+msgid "Send Email"
+msgstr "Lähetä Sähköposti"
+
+msgid "Email Test Error"
+msgstr "Virhe Sähköpostin Kokeilussa"
+
+msgid "Cookies"
+msgstr "Evästeet"
+
+msgid ""
+"When Gallery is embedded in another application (portal, CMS, forum, etc.), then you have "
+"the choice between two options. Everyone else does not have to care about the cookie "
+"settings. Read on for more details."
+msgstr ""
+"Kun Galleria on sulautettu toiseen sovellukseen (portaaliin, sisällönhallintajärjestelmään, "
+"forumiin, tms.), sinulla on kaksi vaihtoehtoa. Muiden ei tarvitse välittää evästeiden "
+"asetuksista. Lue eteenpäin saadaksesi lisätietoja."
+
+msgid ""
+"If your Gallery is embedded and you leave the following fields empty, then all DownloadItem "
+"links (the URLs of the images and other items) in the embedded Gallery have <b>an appended "
+"GALLERYSID string</b> in the URL which is <b>a minor security risk</b> when your Gallery "
+"users start copy'n'pasting image URLs in forums, guestbooks, etc. The alternative is to set "
+"the <b>cookie path</b>. Gallery will then <b>not append the GALLERYSID to the embedded "
+"DownloadItem URLs</b>. E.g. when Gallery is reachable at http://www.example.com/application/"
+"gallery2/ and the embedding application is at http://www.example.com/application/, then you "
+"have to compare the path /application/gallery2/ with /application/. The cookie path is the "
+"part of the paths that is equal, in this case it is '/application/'. Most often it is just "
+"'/'."
+msgstr ""
+"Jos Galleria on sulautettu ja jätät seuraavat kentät tyhjiksi, kaikissa kuvien latauksen "
+"linkeissä (kuvien ja muiden kohteiden URL:eissa) sulautetussa galleriassa on <b>lisätty "
+"GALLERYSID merkkijono</b>, mikä muodostaa <b>pienen tietoturvariskin</b> kun Gallery "
+"käyttäjäsi alkavat kopioida kuvien URL:ia foorumeihin, vieraskirjoihin, yms. Vaihtoehto on "
+"asettaa <b>polku evästeisiin</b>. Galleria <b>ei silloin lisää GALLERYSID merkkijonoa URL:"
+"iin</b>. Esimerkiksi jos Galleria on osoitteessa http://www.example.com/sovellus/gallery2/ "
+"ja sovellus on osoitteessa http://www.example.com/sovellus/, sinun tulee verrata polkua /"
+"sovellus/gallery2/ polkuun /sovellus/. Polku evästeisiin on se osa polkua joka on sama, eli "
+"tässä tapauksessa '/sovellus/'. Usein se on vain '/'."
+
+msgid ""
+"The <b>cookie domain</b> is also only needed for embedded Gallery installs and only if you "
+"want to get rid of the GALLERYSID string in the embedded DownloadItem URLs. <b>In most "
+"cases, the cookie domain can be left blank.</b> Set it only, if Gallery and the embedding "
+"application are only reachable with <b>different subdomains</b>. E.g. when Gallery is at "
+"http://photos.example.com/ and the application is at http://www.example.com/, then you have "
+"to set the cookie domain example.com (the part of the host string that is common to both, "
+"Gallery and the embedding application)."
+msgstr ""
+
+msgid ""
+"Once you change the cookie settings, <b>all registered users</b> of your Gallery will "
+"<b>have to clear their browser cookie cache</b>. If they do not, they will experience "
+"login / logout / lost session problems."
+msgstr ""
+
+msgid "Invalid cookie path"
+msgstr "Virheellinen polku evästeisiin"
+
+msgid "Domain"
+msgstr "Verkkotunnus"
+
+msgid "Invalid cookie domain"
+msgstr "Virheellinen evästeen kohdealue"
+
+msgid "Locking System"
+msgstr "Lukitusjärjestelmä"
+
+msgid ""
+"Gallery uses a system of locks to prevent simultaneous changes from interfering with each "
+"other.  There are two types of locking, each with its advantages and disadvantages.  "
+"<b>File</b> based locking is fast and efficient, but won't work on NFS filesystems and will "
+"be unreliable on Windows.  <b>Database</b> locking is slower but is more reliable.  If you "
+"are unsure which to choose, we recommend using file locking.  If you're getting many lock "
+"timeouts, you can try switching to database locking instead.  It's ok to switch back and "
+"forth."
+msgstr ""
+"Galleria estää usean käyttäjän samanaikaiset muutokset käyttämällä lukkoja. On olemassa "
+"kahdenlaisia lukkoja, kumpikin omine etuineen ja haittoineen. <b>Tiedosto</b>-pohjainen "
+"lukitus on nopea ja tehokas, mutta ei toimi NFS tiedostojärjestelmällä ja on epäluotettava "
+"Windowsilla. <b>Tietokanta</b>-pohjainen lukitus on hitaampi, mutta luotettavampi. Jos et "
+"ole varma kumpaa sinun tulisi käyttää, suosittelemme tiedosto-lukkoja. Jos saat virheitä "
+"lukoista, voit vaihtaa tietokantalukitukseen. On ok vaihtaa lukosta toiseen."
+
+msgid "Lock system"
+msgstr "Lukkojärjestelmä"
+
+msgid "Helper Processes"
+msgstr ""
+
+msgid ""
+"Some Gallery modules will use programs on your server to do image processing, archiving and "
+"other operations.  These programs can be very computationally intensive and can impact the "
+"overall performance of a shared web server.  You can make these programs run at a lower "
+"priority so that they play nice.  If you're in a shared hosting environment and your web "
+"host is complaining, try setting your priority low."
+msgstr ""
+
+#, fuzzy
+msgid "Priority"
+msgstr "Työkalujen Tärkeysjärjestys"
+
+msgid "Save"
+msgstr "Tallenna"
+
+msgid "Reset"
+msgstr "Tyhjennä"
+
+msgid "Create A New Group"
+msgstr "Luo Uusi Ryhmä"
+
+msgid "Group Name"
+msgstr "Ryhmän Nimi"
+
+msgid "(required)"
+msgstr "(vaadittu)"
+
+msgid "You must enter a group name"
+msgstr "Ryhmän nimi on syötettävä"
+
+#, c-format
+msgid "Group '%s' already exists"
+msgstr "Ryhmä '%s' on jo olemassa"
+
+msgid "Create Group"
+msgstr "Luo ryhmä"
+
+msgid "Cancel"
+msgstr "Peruuta"
+
+msgid "Create A New User"
+msgstr "Luo Uusi Käyttäjä"
+
+msgid "You must enter a username"
+msgstr "Sinun tulee syöttää käyttäjätunnus"
+
+#, c-format
+msgid "Username '%s' already exists"
+msgstr "Käyttäjänimi '%s' on jo olemassa"
+
+msgid "Full Name"
+msgstr "Koko Nimi"
+
+msgid "Email Address"
+msgstr "Sähköpostiosoite"
+
+msgid "You must enter an email address"
+msgstr "Sinun tulee syöttää sähköpostiosoite"
+
+msgid "Language"
+msgstr "Kieli"
+
+msgid "You must enter a password"
+msgstr "Sinun on syötettävä salasana"
+
+msgid "Verify Password"
+msgstr "Vahvista Salasana"
+
+msgid "You must enter the password a second time"
+msgstr "Sinun tulee syöttää salasana toiseen kertaan"
+
+msgid "The passwords you entered did not match"
+msgstr "Syöttämäsi salasanat eivät vastaa toisiaan"
+
+msgid "Create User"
+msgstr "Luo Käyttäjä"
+
+msgid "Delete A Group"
+msgstr "Poista Ryhmä"
+
+msgid "Are you sure?"
+msgstr "Oletko varma?"
+
+#, c-format
+msgid "This will completely remove %s from Gallery.  There is no undo!"
+msgstr "Tämä poistaa kohteen %s <b>peruuttamattomasti</b> Galleriasta!"
+
+msgid "Delete"
+msgstr "Poista"
+
+msgid "Delete a User"
+msgstr "Poista Käyttäjä"
+
+#, c-format
+msgid "User %s is the owner of %s items."
+msgstr "Käyttäjä %s omistaa %s kohdetta."
+
+#, c-format
+msgid "Delete user <strong>%s</strong> and..."
+msgstr "Poista käyttäjä <strong>%s</strong> ja..."
+
+#, c-format
+msgid "Assign a new owner for all items of %s"
+msgstr "Kohdista uusi omistaja kaikille käyttäjän %s kohteille"
+
+#, fuzzy, c-format
+msgid ""
+"Delete all items of %s and assign a new owner for all remaining non empty albums. Items that "
+"%s doesn't have permission to delete will also be reassigned to a new owner."
+msgstr ""
+"Poista kaikki käyttäjän %s kohteet ja aseta uusi omistaja kaikille jäljelle jääneille "
+"albumeille joissa on sisältöä."
+
+msgid "New owner (leaving blank means one of the Site Admins):"
+msgstr "Uusi omistaja (tyhjäksi jättäminen tarkoittaa yhtä Gallerian ylläpidosta):"
+
+#, c-format
+msgid "User '%s' does not exist! Cannot assign items to a nonexistent user."
+msgstr "Käyttäjää '%s' ei ole! Ei voi siirtää kohteita olemattomalle käyttäjälle."
+
+msgid "The new owner must be a different user than the user we are deleting!"
+msgstr "Uuden omistajan on oltava eri käyttäjä kuin käyttäjä jota olemme poistamassa!"
+
+msgid "The new owner cannot be a Guest / Anonymous user!"
+msgstr "Uusi omistaja ei voi olla vierailija eli anonyymi käyttäjä!"
+
+#, c-format
+msgid "This will completely remove <strong>%s</strong> from Gallery.  There is no undo!"
+msgstr "Haluatko varmasta poistaa <b>%s</b> peruuttamattomasti Galleriasta?"
+
+msgid "Edit a group"
+msgstr "Muokkaa ryhmää"
+
+#, c-format
+msgid "Edit Members of Group '%s'"
+msgstr "Muokkaa Ryhmän '%s' Jäseniä"
+
+#, c-format
+msgid "Added user '%s' to group '%s'"
+msgstr "Käyttäjä '%s' lisätty ryhmään '%s'"
+
+#, c-format
+msgid "Removed user '%s' from group '%s'"
+msgid_plural "Removed %s users from group '%s'"
+msgstr[0] "Käyttäjä '%s' poistettu ryhmästä '%s'"
+msgstr[1] "%s käyttäjää poistettu ryhmästä '%s'"
+
+#, c-format
+msgid "This group contains %d user"
+msgid_plural "This group contains %d users"
+msgstr[0] "Ryhmässä on yksi käyttäjä"
+msgstr[1] "Ryhmässä on %d käyttäjää"
+
+msgid "Members"
+msgstr "Ryhmän Jäsenet"
+
+msgid "&laquo; first"
+msgstr "&laquo; ensimmäinen"
+
+msgid "&laquo; back"
+msgstr "&laquo; takaisin"
+
+#, c-format
+msgid "Viewing page %d of %d"
+msgstr "Näytetään sivu %d/%d"
+
+msgid "next &raquo;"
+msgstr "seuraava &raquo;"
+
+msgid "last &raquo;"
+msgstr "viimeinen &raquo;"
+
+msgid "Filter"
+msgstr "Suodatin"
+
+msgid "Clear"
+msgstr "Tyhjennä"
+
+#, c-format
+msgid "%d user matches your filter"
+msgid_plural "%d users match your filter"
+msgstr[0] "yksi käyttäjä vastaa suodinta"
+msgstr[1] "%d käyttäjää vastaa suotimeen"
+
+msgid "Remove selected"
+msgstr "Poista valitut"
+
+msgid "You must select a user to remove."
+msgstr "Sinun tulee valita poistettava käyttäjä."
+
+msgid "You can't remove yourself from this group."
+msgstr "Et voi lisätä tai poistaa itseäsi tästä ryhmästä"
+
+msgid "Add Member"
+msgstr "Lisää Jäsen"
+
+msgid "You must enter a username."
+msgstr "Sinun tulee syöttää käyttäjätunnus."
+
+#, c-format
+msgid "User '%s' does not exist."
+msgstr "Käyttäjää '%s' ei ole olemassa."
+
+msgid "This user already is in this group."
+msgstr "Käyttäjä on jo tässä ryhmässä."
+
+msgid "Done"
+msgstr "Valmis"
+
+msgid "Edit a user"
+msgstr "Muokkaa käyttäjää"
+
+msgid "That username is already in use"
+msgstr "Käyttäjätunnus on jo käytössä"
+
+msgid "You must enter a new username"
+msgstr "Sinun tulee syöttää uusi käyttäjätunnus"
+
+msgid "E-mail Address"
+msgstr "Sähköpostiosoite"
+
+msgid "(suggested)"
+msgstr "(suositeltava)"
+
+msgid "Group Management"
+msgstr "Ryhmien Hallinta"
+
+#, c-format
+msgid "Removed group '%s'"
+msgstr "Poistettu ryhmä '%s'"
+
+#, c-format
+msgid "Created group '%s'"
+msgstr "Luotu ryhmä '%s'"
+
+#, c-format
+msgid "Modified group '%s'"
+msgstr "Ryhmää '%s' muokattu"
+
+#, c-format
+msgid "There is %d group in the system."
+msgid_plural "There are %d total groups in the system."
+msgstr[0] "Järjestelmästä löytyy yksi ryhmä."
+msgstr[1] "Järjestelmästä löytyy %d ryhmää."
+
+msgid "Edit Group"
+msgstr "Muokkaa Ryhmää"
+
+msgid "Edit"
+msgstr "Muokkaa"
+
+msgid "Add/Remove Users"
+msgstr "Lisää/Poista Käyttäjiä"
+
+#, c-format
+msgid "Group '%s' does not exist."
+msgstr "Ryhmää '%s' ei ole olemassa."
+
+msgid "You cannot delete that group"
+msgstr "Et voi poistaa kyseistä ryhmää"
+
+msgid "You cannot edit that group's users"
+msgstr "Et voi muokata kyseisen ryhmän käyttäjiä"
+
+msgid "Edit Group (by list)"
+msgstr "Muokkaa Ryhmää (valitse listasta)"
+
+msgid "edit"
+msgstr "muokkaa"
+
+msgid "delete"
+msgstr "poista"
+
+msgid "members"
+msgstr "jäsenet"
+
+#, c-format
+msgid "%d group matches your filter"
+msgid_plural "%d groups match your filter"
+msgstr[0] "yksi ryhmä vastaa suodinta"
+msgstr[1] "%d ryhmää vastaa suotimeen"
+
+msgid "System Maintenance"
+msgstr "Järjestelmän Ylläpito"
+
+#, c-format
+msgid "Completed %s task successfully."
+msgstr "Tehtävä '%s' suoritettu"
+
+#, c-format
+msgid "The %s task failed to complete successfully."
+msgstr "Tehtävä %s epäonnistui"
+
+msgid "Task name"
+msgstr "Tehtävä"
+
+msgid "Last run"
+msgstr "Viimeinen ajo"
+
+msgid "Success/Fail"
+msgstr "Onnistui/Ei"
+
+msgid "Not run yet"
+msgstr "Ei vielä suoritettu"
+
+msgid "Success"
+msgstr "Onnistui"
+
+msgid "Failed"
+msgstr "Epäonnistui"
+
+msgid "run now"
+msgstr "suorita nyt"
+
+msgid "Last Run Details:"
+msgstr "Edellisen Ajon Tiedot:"
+
+msgid "Gallery Modules"
+msgstr "Gallerian Moduulit"
+
+#, c-format
+msgid "Successfully installed and auto-configured module %s"
+msgstr "Asennettu ja itse-konfiguroitu moduuli %s"
+
+#, c-format
+msgid "Successfully installed module %s"
+msgstr "Moduuli %s asennettu"
+
+#, c-format
+msgid "Successfully configured module %s"
+msgstr "Moduuli %s konfiguroitu"
+
+#, c-format
+msgid "Successfully upgraded module %s"
+msgstr "Moduuli %s päivitetty"
+
+#, c-format
+msgid "Successfully activated module %s"
+msgstr "Moduuli %s otettu käyttöön"
+
+#, c-format
+msgid "Successfully deactivated module %s"
+msgstr "Moduuli %s otettu pois käytöstä"
+
+#, c-format
+msgid "Successfully uninstalled module %s"
+msgstr "Moduuli %s poistettu"
+
+msgid ""
+"Gallery features come as separate modules.  You can download and install modules to add more "
+"features to your Gallery, or you can disable features if you don't want to use them.  In "
+"order to use a feature, you must install, configure (if necessary) and activate it.  If you "
+"don't wish to use a feature, you can deactivate it."
+msgstr ""
+"Gallerian ominaisuuksiin kuuluu erilliset moduulit. Voit ladata ja asentaa moduuleita, "
+"joilla saat lisää ominaisuuksia Galleriaasi, tai jos et halua käyttää jotain tiettyä "
+"moduulia, voit poistaa sen käytöstä. Käyttääksesi moduulia, sinun täytyy asentaa, "
+"konfiguroida ja otaa se käyttöön."
+
+msgid "Module Name"
+msgstr "Moduulin Nimi"
+
+msgid "Version"
+msgstr "Versio"
+
+msgid "Installed"
+msgstr "Asennettu"
+
+msgid "Actions"
+msgstr "Toiminnot"
+
+msgid "Status: Not Installed"
+msgstr "Tila: Ei Asennettu"
+
+msgid "Status: Active"
+msgstr "Tila: Käytössä"
+
+msgid "Status: Inactive"
+msgstr "Tila: Ei Käytössä"
+
+msgid "Status: Upgrade Required (Inactive)"
+msgstr "Tila: Tarvitsee Päivityksen (Ei Käytössä)"
+
+msgid "Status: Incompatible Module (Inactive)"
+msgstr "Tila: Epäyhteensopiva (Ei Käytössä)"
+
+msgid "Incompatible module!"
+msgstr "Epäyhteensopiva moduuli!"
+
+#, c-format
+msgid "Core API Required: %s (available: %s)"
+msgstr "Vaadittu Ytimen Rajapinta: %s (käytettävissä: %s)"
+
+#, c-format
+msgid "Module API Required: %s (available: %s)"
+msgstr "Tarvittava Moduulin Rajapinta: %s (käytettävissä: %s)"
+
+msgid "Confirm module uninstall"
+msgstr "Vahvista moduulin poisto"
+
+#, c-format
+msgid "Do you really want to uninstall the %s module?"
+msgstr "Haluatko varmasti poistaa moduulin %s?"
+
+#, fuzzy
+msgid "This will also remove any permissions and clean up any data created by this module."
+msgstr "Tämä poistaa myös kaikki oikeudet ja siivoaa moduulin luomat tilapäiset tiedot."
+
+msgid "Uninstall"
+msgstr "Poista"
+
+msgid "Performance Tuning"
+msgstr ""
+
+#, fuzzy
+msgid "Updated performance settings successfully"
+msgstr "Kokeilusähköposti lähetetty"
+
+#, fuzzy
+msgid "Deleted all saved pages"
+msgstr "Poista Käyttäjä"
+
+msgid ""
+"Improve your Gallery performance by storing entire web pages in the database.  This can "
+"considerably reduce the amount of webserver and database resources required to display a web "
+"page.  The tradeoff is that the web page you see may be a little bit out of date, however "
+"you can always get the most recent version of the page by forcing a refresh in your browser "
+"(typically by holding down the shift key and clicking the reload button)."
+msgstr ""
+
+msgid "Partial Acceleration"
+msgstr ""
+
+#, no-c-format
+msgid ""
+"Partial acceleration gives you roughly 10-25% performance increase, but some forms of "
+"dynamic data (like view counts) will not get updated right away.  All content that appears "
+"in blocks (like the random image block, any sidebar blocks, etc) will always be updated."
+msgstr ""
+
+msgid "Full Acceleration"
+msgstr ""
+
+#, no-c-format
+msgid ""
+"Full acceleration gives roughly a 90% performance increase, but no dynamic data (random "
+"image block, other sidebar blocks, number of items in your shopping cart, view counts, etc) "
+"will get updated until the saved page expires."
+msgstr ""
+
+msgid ""
+"You can additionally specify when saved pages expire.  Setting a longer expiration time will "
+"reduce the load on your server, but will increase the interval before users see changes.  "
+"Lower expiration times mean that users will see more current data, but they will place a "
+"higher load on your server."
+msgstr ""
+
+msgid "Here are some standard acceleration profiles:"
+msgstr ""
+
+#, fuzzy
+msgid "Medium acceleration"
+msgstr "muuta kuvatekstiä"
+
+msgid "High acceleration"
+msgstr ""
+
+#, fuzzy
+msgid "Guest Users"
+msgstr "Rekisteröityneet Käyttäjät"
+
+msgid "Expires after:"
+msgstr ""
+
+msgid "Clear Saved Pages"
+msgstr ""
+
+msgid "Please make sure that your internet connection is set up properly or try again later."
+msgstr ""
+
+msgid "The repository index has been successfully updated."
+msgstr ""
+
+msgid "All plugins are already up-to-date."
+msgstr ""
+
+msgid "Common Tasks"
+msgstr ""
+
+msgid "Warning: Experimental feature!"
+msgstr ""
+
+msgid ""
+"The repository features are currently experimental, and no actual repository has been set up "
+"yet, so none of these features will work at this time."
+msgstr ""
+
+msgid "Update Index"
+msgstr ""
+
+msgid ""
+"The Gallery repository contains the latest modules and themes extensively tested by the "
+"Gallery team. The repository index contains information about available plugins, such as the "
+"latest versions, available languages and compatibility. The index must be synchronized "
+"periodically with the Gallery server so you are informed about any available updates. No "
+"personal information is sent to the Gallery server during updating. On slower connections "
+"the process might take a minute or two."
+msgstr ""
+
+#, c-format
+msgid ""
+"As of the last update on %s, the repository contains %s modules and %s themes. Its contents "
+"can be viewed on the Modules and Themes tabs."
+msgstr ""
+
+msgid ""
+"The index has never been updated. Click on the Update button to see what updates are "
+"available."
+msgstr ""
+
+#, fuzzy
+msgid "Update"
+msgstr "Päiväys"
+
+#, fuzzy
+msgid "Upgrade Gallery"
+msgstr "Galleria"
+
+msgid ""
+"A new version of Gallery is available, but it cannot be upgraded through this interface. "
+"Upgrading it might make some of your current plugins stop working, but others that rely on "
+"the features of the new version may become available. Here are the recommended steps for "
+"upgrading:"
+msgstr ""
+
+msgid "Review plugin compatibility (on the Themes and Modules tabs)"
+msgstr ""
+
+#, c-format
+msgid "%sDownload%s Gallery core"
+msgstr ""
+
+#, c-format
+msgid "Read the %supgrade instructions%s and perform the upgrade"
+msgstr ""
+
+#, fuzzy
+msgid "Gallery Up-To-Date"
+msgstr "Gallerian Ydin"
+
+msgid ""
+"Gallery cannot be upgraded through this interface. When a new version becomes available, "
+"upgrade instructions will be presented here."
+msgstr ""
+
+msgid "Upgrade All Plugins"
+msgstr ""
+
+msgid ""
+"Gallery can automatically upgrade your themes and modules to the latest available versions. "
+"No new plugins will be downloaded."
+msgstr ""
+
+#, fuzzy
+msgid "Upgrade All"
+msgstr "päivitä"
+
+msgid ""
+"Once the repository index has been downloaded, a list of available plugins will be "
+"presented. It can be downloaded by clicking on the Update button on the Common Tasks tab."
+msgstr ""
+
+msgid ""
+"The following plugins are available. Click on the action beside the plugin you're interested "
+"in to see what's available in the repository."
+msgstr ""
+
+msgid "Incompatible plugins are marked with an exclamation icon."
+msgstr ""
+
+#, c-format
+msgid ""
+"A new core module version is available. There may be plugins that are incompatible with the "
+"installed core module, which are not shown here. You can view a %scomplete list%s of "
+"plugins, including incompatible ones, which are marked with a red icon."
+msgstr ""
+
+msgid "Theme Name"
+msgstr "Teeman Nimi"
+
+#, fuzzy
+msgid "Latest"
+msgstr "viimeinen"
+
+#, fuzzy
+msgid "Incompatible Plugin"
+msgstr "Epäyhteensopiva moduuli!"
+
+#, fuzzy
+msgid "Incompatible plugin!"
+msgstr "Epäyhteensopiva moduuli!"
+
+#, fuzzy, c-format
+msgid "Plugin API Required: %s (available: %s)"
+msgstr "Tarvittava Moduulin Rajapinta: %s (käytettävissä: %s)"
+
+msgid "No packages have been selected."
+msgstr ""
+
+#, fuzzy
+msgid "Base Files"
+msgstr "Tiedostonimi"
+
+msgid ""
+"The base files required for the theme to work and the English (US) translation will be "
+"downloaded."
+msgstr ""
+
+msgid "Upgrade Base Files"
+msgstr ""
+
+msgid "You can upgrade the base module files."
+msgstr ""
+
+msgid "Upgrade base files"
+msgstr ""
+
+msgid "Base Files Up-To-Date"
+msgstr ""
+
+msgid "This plugin's base files are up-to-date."
+msgstr ""
+
+msgid "Updated Translations"
+msgstr ""
+
+msgid ""
+"Below is a list of translations that have been updated since they were last downloaded. "
+"Select the ones you want to download."
+msgstr ""
+
+msgid "Additional Languages"
+msgstr ""
+
+msgid ""
+"Below is a list of languages this plugin has been translated to. Select the ones you want "
+"included in addition to the ones already downloaded."
+msgstr ""
+
+#, fuzzy
+msgid "Unit Tests"
+msgstr "Yksikkötestauksen teema"
+
+msgid ""
+"This plugin has unit tests available for download, which are useful for Gallery developers. "
+"All of the module's features are available without the tests."
+msgstr ""
+
+msgid "Download unit tests"
+msgstr ""
+
+#, fuzzy
+msgid "Gallery Repository Setup"
+msgstr "Gallerian versio"
+
+msgid "Warning:"
+msgstr ""
+
+#, c-format
+msgid ""
+"In order to download plugins from the Gallery repository, a special directory needs to be "
+"created where Gallery will store the data. Under your Gallery base directory, create a "
+"directory called '%s' and allow the web server to write into it by appropriately setting the "
+"permissions."
+msgstr ""
+
+msgid "Instructions for Unix-type platforms:"
+msgstr ""
+
+msgid ""
+"Refreshing this page will take you to the Repository if the directory has been successfully "
+"created."
+msgstr ""
+
+msgid "Gallery Themes"
+msgstr "Gallerian Teemat"
+
+#, c-format
+msgid "Successfully activated theme %s"
+msgstr "Teema %s otettu käyttöön"
+
+#, c-format
+msgid "Successfully deactivated theme %s"
+msgstr "Teema %s poistettu käytöstä"
+
+#, c-format
+msgid "Successfully installed theme %s"
+msgstr "Teema %s asennettu"
+
+#, c-format
+msgid "Successfully uninstalled theme %s"
+msgstr "Teema %s poistettu"
+
+#, c-format
+msgid "Successfully upgraded theme %s"
+msgstr "Teema %s päivitetty"
+
+msgid "Successfully saved default album settings"
+msgstr "Oletusasetukset albumeille tallennettu"
+
+msgid "Restored theme settings"
+msgstr "Teeman asetukset palautettu"
+
+msgid "All Themes"
+msgstr "Kaikki Teemat"
+
+msgid "Defaults"
+msgstr "Oletukset"
+
+msgid "Status: Incompatible Theme (Inactive)"
+msgstr "Tila: Epäyhteensopiva Teema (Ei Käytössä)"
+
+msgid "Incompatible theme!"
+msgstr "Epäyhteensopiva teema!"
+
+#, c-format
+msgid "Theme API Required: %s (available: %s)"
+msgstr "Vaadittu Teeman Rajapinta: %s (käytettävissä: %s)"
+
+msgid "(default)"
+msgstr "(oletusarvo)"
+
+msgid ""
+"These are default display settings for albums in your gallery.  They can be overridden in "
+"each album."
+msgstr "Nämä ovat oletusarvoja. Jokainen albumi voi ohittaa oletukset."
+
+msgid "Default sort order"
+msgstr "Lajittelujärjestys"
+
+msgid "with"
+msgstr "sekä"
+
+msgid "New albums"
+msgstr "Uusia albumeja"
+
+#, c-format
+msgid "%s Theme Settings"
+msgstr "Teeman %s Asetukset"
+
+msgid ""
+"These are the global settings for the theme.  They can be overridden at the album level."
+msgstr "Nämä ovat teeman oletusarvoja. Ne voi ohittaa jokaisessa albumissa."
+
+msgid "Available"
+msgstr "Käytettävissä"
+
+msgid "Choose a block"
+msgstr "Valitse lohko"
+
+msgid "Selected"
+msgstr "Valittu"
+
+msgid "Remove"
+msgstr "Poista"
+
+msgid "Move Up"
+msgstr "Siirrä Ylös"
+
+msgid "Move Down"
+msgstr "Siirrä Alas"
+
+msgid "Parameter"
+msgstr "Parametri"
+
+msgid "Value"
+msgstr "Arvo"
+
+msgid "There are no settings for this theme"
+msgstr "Tällä teemalla ei ole asetuksia"
+
+msgid ""
+"The toolkits shown below have some overlap in supported operations and mime types.  Rank the "
+"toolkits here to determine which will perform these operations."
+msgstr ""
+"Alla näytetyillä työkaluilla on joitain päällekkäisyyksiä toiminnoissa ja MIME-tyypeissä. "
+"Luokittele työkalut täällä määrittääksesi mikä niistä suorittaa nämä toiminnot."
+
+msgid "Toolkit"
+msgstr "Työkalut"
+
+msgid "Order"
+msgstr "Järjestä"
+
+msgid "up"
+msgstr "ylös"
+
+msgid "down"
+msgstr "alas"
+
+msgid "User Management"
+msgstr "Käyttäjien Hallinta"
+
+#, c-format
+msgid "Removed user '%s'"
+msgstr "Poistettu käyttäjä '%s'"
+
+#, c-format
+msgid "Created user '%s'"
+msgstr "Luotu käyttäjä '%s'"
+
+#, c-format
+msgid "Modified user '%s'"
+msgstr "Muokattu käyttäjä '%s'"
+
+#, c-format
+msgid "There is %d user in the system."
+msgid_plural "There are %d total users in the system."
+msgstr[0] "Järjestelmässä on yksi käyttäjä."
+msgstr[1] "Järjestelmässä on %d käyttäjää."
+
+msgid "Edit User"
+msgstr "Muokkaa Käyttäjää"
+
+msgid "You cannot delete yourself!"
+msgstr "Et voi poistaa itseäsi!"
+
+msgid "You cannot delete the special guest user."
+msgstr "Et voi poistaa vierailijoille varattua käyttäjää."
+
+msgid "Edit User (by list)"
+msgstr "Muokkaa Käyttäjää (valitse listasta)"
+
+msgid "Thumbnails"
+msgstr "Kuvakkeet"
+
+msgid ""
+"Gallery can create thumbnails at upload time, or create them the first time you want to see "
+"the thumbnail itself.  Either way, it will create the thumbnail once and save it, but if you "
+"create them at upload time it makes viewing albums for the first time go faster at the "
+"expense of a longer upload time."
+msgstr ""
+"Galleria voi luoda esikatselukuvat samalla kun kuvat siirretään galleriaan, tai luoda ne kun "
+"kuvia katsotaan ensimmäistä kertaa. Kummin vain, galleria luo esikatselukuvat kerran ja "
+"tallentaa ne, mutta jos teet kuvat siirron aikana on albumien katselu nopeampaa "
+"ensimmäisellä kerralla sen kustannuksella että kuvien siirto kestää pitempään."
+
+msgid "Create thumbnails now"
+msgstr "Luo kuvakkeet uudelleen"
+
+msgid "This is a test email from Gallery2"
+msgstr "Tämä on Galleria2:n kokeilusähköposti"
+
+msgid "Edit Conflict!"
+msgstr "Muokkauksen Ristiriitaa!"
+
+msgid "Security Violation"
+msgstr "Turvallisuusrike!"
+
+msgid "Database Error"
+msgstr "Tietokantavirhe"
+
+msgid "Platform Error"
+msgstr ""
+
+msgid "Error"
+msgstr "Virhe"
+
+msgid ""
+"Your change cannot be completed because somebody else has made a conflicting change to the "
+"same item.  Use the back button in your browser to go back to the page you were on, then "
+"<b>reload that page</b> and try your change again."
+msgstr ""
+"Muutostasi ei voida suorittaa koska joku muu on tehnyt ristiriitaisen muutokset samaan "
+"kohteeseen. Palaa selaimessasi edelliselle sivulle, <b>uudelleenlataa sivu</b> ja yritä "
+"tehdä muutos uudelleen."
+
+msgid "Go back and try again"
+msgstr "Mene takaisin ja yritä uudelleen"
+
+msgid "Alternatively, you can return to the main Gallery page and resume browsing."
+msgstr "Vaihtoehtoisesti voit palata Gallerian pääsivulle ja jatkaa selailua."
+
+msgid "The action you attempted is not permitted."
+msgstr "Yrittämääsi toimenpidettä ei sallittu."
+
+msgid "An error has occurred while interacting with the database."
+msgstr "Tapahtui virhe tietokannan kanssa."
+
+msgid ""
+"The exact nature of database errors is not captured unless Gallery debug mode is enabled in "
+"config.php.  Before seeking support for this error please enable buffered debug output and "
+"retry the operation.  Look near the bottom of the lengthy debug output to find error details."
+msgstr ""
+"Tietokantavirheiden tarkkoja tietoja ei oteta talteen ellei Galleria ole laitettu "
+"vianhakumoodiin config.php:ssa. Ennen kuin haet tukea tämän virheen selvittämiseksi, ole "
+"hyvä ja laita päälle puskuroitu vianhakutulostus ja kokeile uudelleen. Katso pitkähkön "
+"vianhakutulostuksen loppuun löytääksesi virheen yksityiskohdat."
+
+#, fuzzy
+msgid "An error has occurred while interacting with the platform."
+msgstr "Tapahtui virhe tietokannan kanssa."
+
+msgid ""
+"The exact nature of the platform error is unknown. A common cause are insufficient file "
+"system permissions. This can happen if you or your webhost changed something in the file "
+"system, e.g. by restoring data from a backup."
+msgstr ""
+
+msgid "An error has occurred."
+msgstr "Tapahtui virhe."
+
+msgid "Back to the Gallery"
+msgstr "Takaisin Galleriaan"
+
+msgid "Error Detail"
+msgstr "Virheen Yksityiskohdat"
+
+msgid "System Information"
+msgstr "Järjestelmätiedot"
+
+msgid ""
+"You don't have any Graphics Toolkit activated that can handle JPEG images.  If you add "
+"images, you will probably not have any thumbnails."
+msgstr ""
+"Sinulla ei ole yhtään sellaista Grafiikkatyökalusettiä käytössä, joka kykenisi käsittelemään "
+"JPEG kuvia. Jos lisäät kuvia, et todennäköisesti saa yhtään esikatselukuvia."
+
+#, c-format
+msgid "Visit the <a href=\"%s\">Modules</a> page to activate a Graphics Toolkit."
+msgstr "Käy <a href=\"%s\">Moduulit</a> -sivulla ottaaksesi Grafiikkatyökalut käyttöön."
+
+msgid "Add Sub-Album"
+msgstr "Lisää Albumi"
+
+msgid ""
+"The name of this album on your hard disk.  It must be unique in this album.  Only use "
+"alphanumeric characters, underscores or dashes.  You will be able to rename it later."
+msgstr ""
+"Albumin nimi kiintolevyllä. Nimen täytyy olla yksiselitteinen, ja se saa sisältää vain "
+"kirjaimia, numeroita, alleviivoja sekä tavuviivoja. Voit nimetä sen uudelleen myöhemmin."
+
+msgid "Your name contains invalid characters.  Please enter another."
+msgstr "Nimessä on merkkejä joita siihen ei hyväksytä. Anna toinen nimi."
+
+msgid "You must enter a name for this album."
+msgstr "Sinun tulee antaa nimi tälle albumille."
+
+msgid "The name you entered is already in use.  Please enter another."
+msgstr "Antamasi nimi on jo käytössä. Syötä uusi nimi."
+
+msgid "This is the album title."
+msgstr "Tämä on albumin otsikko."
+
+msgid "This is the album summary."
+msgstr "Tämä on albumin yhteenveto."
+
+msgid "Keywords are not visible, but are searchable."
+msgstr "Hakusanat eivät näy, mutta ovat silti etsittävissä."
+
+msgid "This is the long description of the album."
+msgstr "Albumin tarkka kuvaus."
+
+msgid "Create"
+msgstr "Luo"
+
+msgid "Upload Complete"
+msgstr "Lähetys Valmis"
+
+#, c-format
+msgid "Successfully added %d file."
+msgid_plural "Successfully added %d files."
+msgstr[0] "Yksi tiedosto lisätty."
+msgstr[1] "%d tiedostoa lisätty."
+
+msgid "No files added."
+msgstr "Tiedostoja ei lisätty."
+
+#, c-format
+msgid "Added %s"
+msgstr "Lisätty %s"
+
+#, c-format
+msgid "Failed to add %s"
+msgstr "Ei voinut lisätä tiedostoa %s"
+
+msgid "Add more files"
+msgstr "Lisää enemmän tiedostoja"
+
+msgid ""
+"Your webserver is configured to disallow file uploads from your web browser at this time.  "
+"Please contact your system administrator for assistance."
+msgstr ""
+"Palvelin on asetettu estämään tiedostojen siirron palvelimelle selaimestasi tällä hetkellä. "
+"Ole hyvä ja ota yhteyttä ylläpitoon avun saamiseksi."
+
+msgid "Upload files directly from your computer."
+msgstr "Lähetä tiedostoja suoraan tietokoneeltasi."
+
+msgid "Enter the full path to the file and an optional caption in the boxes below."
+msgstr "Syötä täydellinen polku tiedostoon ja valinnainen kuvateksti allaoleviin laatikoihin."
+
+#, c-format
+msgid ""
+"<b>Note:</b> You can upload up to %s at one time.  If you want to upload more than that, you "
+"must upload the files separately, use a different upload format, or ask your system "
+"administrator to allow larger uploads."
+msgstr ""
+"<b>Huom:</b> Voit lähettää jopa %s kerrallaan. Jos haluat lähettää enemmän, sinun täytyy "
+"lähettää tiedostot yksitellen, käyttää eri lähetystapaa, tai pyytää järjestelmän ylläpitäjää "
+"sallimaan isommat lähetykset."
+
+#, c-format
+msgid ""
+"<b>Note:</b> You can upload up to %s at one time.  No individual file may be larger than %s. "
+"If you want to upload more than that, you must upload the files separately, use a different "
+"upload format, or ask your system administrator to allow larger uploads."
+msgstr ""
+"<b>Huom:</b> Voit lähettää jopa %s kerrallaan. Yksittäinen tiedosto ei saa olla yli %s. Jos "
+"haluat lähettää enemmän, sinun täytyy lähettää tiedostot yksitellen, käyttää eri "
+"lähetystapaa, tai pyytää järjestelmän ylläpitäjää sallimaan isommat lähetykset."
+
+msgid "More.."
+msgstr "Lisää.."
+
+msgid "Set item titles from:"
+msgstr "Aseta kohteiden otsikot täältä:"
+
+msgid "Assign caption to:"
+msgstr "Aseta otsakke tähän:"
+
+msgid ""
+"Transfer files that are already on your server into your Gallery.  The files must already "
+"have been uploaded to your server some other way (like FTP) and must be placed in a "
+"directory where they are accessibly by any element on the server.  If you're on Unix this "
+"means that the files and the directory the files are in should have modes of at least 755."
+msgstr ""
+"Siirrä palvelimella jo sijaitsevat tiedostot Galleriaan. Tiedostojen pitää olla jo siirretty "
+"palvelimelle jollain tavalla (kuten FTP) ja ne täytyy sijaita jossain hakemistossa minne "
+"kaikilla palvelimella on lukuoikeudet. UNIX:issa tämä tarkoittaa yleensä sitä, että "
+"hakemistoilla ja tiedostoilla täytyy olla käyttöoikeudet 0755."
+
+msgid ""
+"For security purposes, you can't use this feature until the Gallery Site Administrator "
+"configures a set of legal upload directories."
+msgstr ""
+"Turvallisuussyistä et voi käyttää tätä ominaisuutta ennenkuin Gallerian ylläpitäjä "
+"määrittelee paikalliset kopiointihakemistot."
+
+msgid "Server Path"
+msgstr "Palvelimen Polku"
+
+msgid "You must enter a directory."
+msgstr "Sinun on annettava hakemisto."
+
+msgid ""
+"The directory you entered is invalid.  Make sure that the directory is readable by all users."
+msgstr ""
+"Antamasi hakemisto ei kelpaa. Tarkista, että hakemiston lukeminen onnistuu kaikilta "
+"käyttäjiltä."
+
+msgid ""
+"The directory you entered is illegal.  It must be a sub directory of one of the directories "
+"listed below."
+msgstr "Antamasi hakemisto ei käy. Sen täytyy olla allaolevien hakemistojen alahakemisto."
+
+msgid "An item with the same name already exists."
+msgstr "Kohde samalla nimellä on jo olemassa."
+
+msgid "Legal Directories"
+msgstr "Luvalliset Hakemistot"
+
+msgid "modify"
+msgstr "muokkaa"
+
+msgid "Recent Directories"
+msgstr "Viimeaikaiset Hakemistot"
+
+msgid "Find Files"
+msgstr "Etsi Tiedostoja"
+
+#, c-format
+msgid "Directory: %s"
+msgstr "Hakemisto: %s"
+
+msgid "File name"
+msgstr "Tiedostonnimi"
+
+msgid "Type"
+msgstr "Tyyppi"
+
+msgid "Size"
+msgstr "Koko"
+
+msgid "Use Symlink"
+msgstr "Käytä Symbolista Linkkiä"
+
+#, c-format
+msgid "%d byte"
+msgid_plural "%d bytes"
+msgstr[0] "%d tavu"
+msgstr[1] "%d tavua"
+
+msgid "Parent Directory"
+msgstr "Ylempi Hakemisto"
+
+msgid "Directory"
+msgstr "Hakemisto"
+
+msgid "(Un)check all known types"
+msgstr "Valitse/Poista kaikki tunnistetut tyypit"
+
+msgid "(Un)check symlinks"
+msgstr "Valitse/Poista symboliset linkit"
+
+msgid "for selected items"
+msgstr "valituille kohteille"
+
+msgid "Copy base filenames to:"
+msgstr "Kopioi tiedostonimet tänne:"
+
+msgid "Add Files"
+msgstr "Lisää tiedostoja"
+
+msgid "Start Over"
+msgstr "Aloita Alusta"
+
+msgid ""
+"Import files into Gallery from another website.  Enter a URL below to a web page anywhere on "
+"the net and Gallery will allow you to upload any media files that it finds on that page.  "
+"Note that if you're entering a URL to a directory, you should end the URL with a trailing "
+"slash (eg, http://example.com/directory/). "
+msgstr ""
+"Tuo tiedostoja Galleriaan toiselta web-sivustolta. Kirjoita sivun URL ja Galleria antaa "
+"sinun siirtää mitä hyvänsä mediatiedostoja jotka se löytää kyseiseltä sivulta. Huomaa että "
+"jos annat URL:n hakemistoon, sinun tulee päättää URL kauttaviivalla (esim. http://example."
+"com/hakemisto/)."
+
+msgid "URL"
+msgstr "URL"
+
+msgid "You must enter a URL to a web page"
+msgstr "Sinun tulee antaa URL web-sivulle"
+
+msgid "The URL entered must begin with http://"
+msgstr "URL täytyy alkaa http://"
+
+msgid "The web page you specified is unavailable"
+msgstr "Antamasi web-sivu ei ole saatavilla"
+
+msgid "Nothing to add found from this URL"
+msgstr "Sivulta ei löytynyt mitään lisättävää"
+
+msgid "Nothing added since no items were selected"
+msgstr "Mitään ei lisätty sillä yhtään kohdetta ei valittu"
+
+msgid "Recent URLs"
+msgstr "Viimeaikaiset URL:t"
+
+#, c-format
+msgid "URL: %s"
+msgstr "URL: %s"
+
+msgid "change"
+msgstr "muuta"
+
+#, c-format
+msgid "%d url found"
+msgid_plural "%d urls found"
+msgstr[0] "yksi url löytyi"
+msgstr[1] "%d url:aa löytyi"
+
+msgid "(Un)check all"
+msgstr "Valitse/Poista kaikki"
+
+msgid "Add URLs"
+msgstr "Lisää URL:ia"
+
+msgid "No Thumbnail"
+msgstr "Ei Esikatselukuvaa"
+
+msgid "Options"
+msgstr "Valinnat"
+
+msgid "Link an Item"
+msgstr "Linkitä Kohde"
+
+#, c-format
+msgid "Successfully linked %d item"
+msgid_plural "Successfully linked %d items"
+msgstr[0] "Onnistuneesti linkitetty yksi kohde."
+msgstr[1] "Onnistuneesti linkitetty %d kohdetta."
+
+msgid "This album contains no items to link."
+msgstr "Albumissa ei ole linkitettäviä kohteita."
+
+msgid "Source"
+msgstr "Lähde"
+
+msgid "Choose the items you want to link"
+msgstr "Valitse linkitettävät kohteet"
+
+#, c-format
+msgid "(page %d of %d)"
+msgstr "(sivu %d/%d)"
+
+msgid "No sources chosen"
+msgstr "Lähdettä ei ole valittu"
+
+msgid "Check All"
+msgstr "Valitse Kaikki"
+
+msgid "Check None"
+msgstr "Poista Valinnat"
+
+msgid "Invert"
+msgstr "Vaihda Valitut"
+
+msgid "Previous Page"
+msgstr "Edellinen Sivu"
+
+msgid "Next Page"
+msgstr "Seuraava Sivu"
+
+msgid "Destination"
+msgstr "Määränpää"
+
+msgid "Choose a new album for the link"
+msgstr "Valitse linkille uusi albumi"
+
+msgid "No destination chosen"
+msgstr "Määränpäätä ei ole valittu"
+
+msgid "Link"
+msgstr "Linkitä"
+
+msgid "Successfully linked"
+msgstr "Linkitetty"
+
+msgid "Choose a destination album"
+msgstr "Valitse albumi määränpääksi"
+
+msgid "Delete Items"
+msgstr "Poista Kohde"
+
+msgid "No items were selected for deletion"
+msgstr "Poistettavia kohteita ei oltu valittu"
+
+#, c-format
+msgid "Successfully deleted %d item"
+msgid_plural "Successfully deleted %d items"
+msgstr[0] "Yksi kohde poistettu"
+msgstr[1] "%d kohdetta poistettu"
+
+msgid "This album contains no items to delete"
+msgstr "Albumissa ei ole poistettavia kohteita"
+
+msgid "Choose the items you want to delete"
+msgstr "Valitse poistettavat kohteet"
+
+msgid "Items selected here will remain selected when moving between pages."
+msgstr "Täällä valitut kohteet pysyvät valittuina kun siirryt sivujen välillä."
+
+#, c-format
+msgid "One item selected on other pages."
+msgid_plural "%d items selected on other pages."
+msgstr[0] "Yksi kohde valittu muilla sivuilla."
+msgstr[1] "%d kohdetta valittu muilla sivuilla."
+
+msgid "(data)"
+msgstr "(tiedosto)"
+
+#, c-format
+msgid "(album containing %d item)"
+msgid_plural "(album containing %d items)"
+msgstr[0] "(albumi sisältäen yhden kohteen)"
+msgstr[1] "(albumi sisältäen %d kohdetta)"
+
+msgid "(empty album)"
+msgstr "(tyhjä albumi)"
+
+msgid "Deletion Complete"
+msgstr "Poistaminen Valimid"
+
+msgid "Item successfully deleted"
+msgstr "Kohde poistettu"
+
+#, c-format
+msgid "Are you sure you want to delete this %s?"
+msgstr "Haluatko varmasti poistaa kohteen %s?"
+
+#, c-format
+msgid "It contains %d item."
+msgid_plural "It contains %d items."
+msgstr[0] "Se sisältää yhden kohteen."
+msgstr[1] "Se sisältää %d kohdetta."
+
+msgid "There is no undo!"
+msgstr "Palautusta ei ole!"
+
+msgid "There was a problem processing your request."
+msgstr "Pyyntösi toteutuksessa oli ongelma."
+
+msgid "Sort order"
+msgstr "Lajittelujärjestys"
+
+msgid ""
+"This sets the sort order for the album.  This applies to all current items, and any newly "
+"added items."
+msgstr ""
+"Tämä asettaa oletusjärjestyksen albumille, joka koskee kaikkia nykyisiä kohteita sekä vasta "
+"lisättyjä kohteita."
+
+#, fuzzy
+msgid "Apply to all subalbums"
+msgstr "Muuta myös sisältyvät kohteet"
+
+msgid "Choose a theme for this album. (The way the album is arranged on the page)"
+msgstr "Valitse teema tälle albumille. (Tapa jolla albumi sommitellaan sivulle)"
+
+msgid "Use this theme in all subalbums"
+msgstr ""
+
+msgid " Every item requires a thumbnail. Set the default size in pixels here."
+msgstr ""
+" Jokainen kuva tarvitsee esikatselukuvan/kuvakkeen. Aseta oletuskoko pikseleissä tähän."
+
+msgid "You must enter a number (greater than zero)"
+msgstr "Sinun on syötettävä numero, joka on suurempi kuin nolla"
+
+msgid "Use this thumbnail size in all subalbums"
+msgstr ""
+
+msgid "Resized Images"
+msgstr "Skaalatut Kuvat"
+
+msgid "Each item in your album can have multiple sizes. Define the default sizes here."
+msgstr "Jokaisella kohteella voi olla monta eri kokoa albumissasi. Määritä oletuskoot tähän."
+
+msgid "Active"
+msgstr "Käytössä"
+
+msgid "Target Size (pixels)"
+msgstr "Kohdekoko (pikseleinä)"
+
+msgid "You must enter a valid size"
+msgstr "Sinun tulee syöttää käyttökelpoinen koko"
+
+msgid "Use these target sizes in all subalbums"
+msgstr ""
+
+msgid "Recreate thumbnails and resizes"
+msgstr "Luo esikatseluvat sekä skaalaukset uudelleen"
+
+msgid ""
+"The thumbnail and resized image settings are for all new items. To apply these settings to "
+"all the items in your album, check the appropriate box."
+msgstr ""
+"Esikatselukuvien sekä skaalattujen kuvien asetukset ovat vain kaikille uusille kohteille. "
+"Hyväksyäksesi nämä asetukset kaikkiin jo albumissa oleviin kohteisiin, valitse asianmukainen "
+"ruutu."
+
+msgid "Recreate thumbnails"
+msgstr "Luo esikatselukuvat uudelleen"
+
+msgid "Recreate resized images"
+msgstr "Luo skaalatut kuvat uudelleen"
+
+msgid ""
+"In order for Gallery to properly display this animation, it has to know the animation's "
+"width and height.  If you have installed a graphics toolkit that can handle animation types, "
+"then these values may already be set.  If not, they may be set to 0.  If you do not enter "
+"the correct values here, the animation may appear distorted when viewed in your web "
+"browser.  Note that changing these values does <b>not</b> change the animation itself so "
+"experimenting won't cause harm."
+msgstr ""
+"Voidakseen näyttää tämän animaation oikein, Gallerian täytyy tietää animaation leveys ja "
+"korkeus. Jos olet sinulla on asennettuna grafiikkatyökalut jotka ymmärtävät animaatioita, "
+"nämä arvot voivat olla jo asetettuina. Joe ei ole, arvot voivat olla nollia. Jos et laita "
+"oikeita arvoja tänne, animaatio voi näyttäytyä vääristyneenä selaimessasi. Huomaa, että "
+"arvojen muutos <b>ei</b> muuta itse animaatiota, joten voit turvallisesti kokeilla niihin "
+"eri arvoja ilman haittavaikutuksia."
+
+msgid "Width"
+msgstr "Leveys"
+
+msgid "You must enter a value greater than or equal to 0"
+msgstr "Sinun on syötettävä arvo, joka on suurempi tai nolla"
+
+msgid "Height"
+msgstr "Korkeus"
+
+msgid "There were errors saving some items"
+msgstr "Joidenkin kohteiden tallennuksesssa tapahtui virhe"
+
+msgid "There were errors saving all items"
+msgstr "Kaikkien kohteiden tallennuksessa tapahtui virhe"
+
+msgid "Successfully saved all items"
+msgstr "Kaikki kohteet tallennettu"
+
+msgid "This album contains no items"
+msgstr "Tässä albumissa ei ole kohteita"
+
+msgid "Saved successfully."
+msgstr "Tallennettu."
+
+msgid "This item was modified by somebody else at the same time.  Your changes were lost."
+msgstr "Joku muu ehti muokkaamaan tätä samaa kohdetta. Muutoksesi menetettiin."
+
+msgid "You do not have permissions to modify this item."
+msgstr "Sinulla ei ole oikeuksia muokata tätä kohdetta."
+
+msgid "Save and Done"
+msgstr "Tallenna ja Lopeta"
+
+#, c-format
+msgid "Save and Edit Previous %s"
+msgstr "Tallenna ja Muokkaa Edellistä %s"
+
+#, c-format
+msgid "Save and Edit Next %s"
+msgstr "Tallenna ja Muokkaa Seuraavaa %s"
+
+msgid ""
+"The name of this item on your hard disk.  It must be unique in this album.  Only use "
+"alphanumeric characters, underscores or dashes."
+msgstr ""
+"Kohteen nimi kiintolevyllä. Nimen täytyy olla yksiselitteinen, ja se saa sisältää vain "
+"kirjaimia, numeroita, alleviivoja sekä tavuviivoja."
+
+msgid "Your name contains invalid characters.  Please choose another."
+msgstr "Nimessä on merkkejä jotka eivät kelpaa. Valitse toinen nimi."
+
+msgid "You must enter a name for this item."
+msgstr "Sinun tulee antaa nimi tälle kohteelle."
+
+msgid "The name you entered is already in use.  Please choose another."
+msgstr "Antamasi nimi on jo käytössä. Valitse toinen nimi."
+
+msgid "The title of this item."
+msgstr "Kohteen otsikko."
+
+msgid "The root album must have a title."
+msgstr "Aloitusalbumilla on oltava otsikko."
+
+msgid "The summary of this item."
+msgstr "Tämän kohteen yhteenveto."
+
+msgid "This is the long description of the item."
+msgstr "Kohteen tarkka kuvaus."
+
+#, c-format
+msgid "%s Date and Time"
+msgstr "%s Päiväys ja Kellonaika"
+
+msgid "Set the date and time when this image was captured."
+msgstr "Aseta päiväys ja kellonaika jolloin kuva on otettu."
+
+msgid "Set the date and time to be displayed for this item."
+msgstr "Aseta päiväys ja kellonaika joka näytetään kohteelle."
+
+#, c-format
+msgid "Set the date and time to be displayed for this %s."
+msgstr "Aseta päiväys ja kellonaika jotka näytetään tälle %s."
+
+msgid "Date:"
+msgstr "Päiväys:"
+
+msgid "Time:"
+msgstr "Aika:"
+
+msgid "Use the original capture date and time from file information (e.g. Exif tag):"
+msgstr "Käytä alkuperäistä otoksen päiväystä ja aikaa tiedostosta (esim. Exif tiedot):"
+
+msgid "You must enter a valid date and time"
+msgstr "Sinun tulee syöttää oikea päiväys ja aika"
+
+msgid "Thumbnail"
+msgstr "Esikatselukuva"
+
+msgid ""
+"Set the size of the thumbnail.  The largest side of the thumbnail will be no larger than "
+"this value. Leave this field blank if you don't want a thumbnail."
+msgstr ""
+"Aseta esikatselukuvan koko. Esikatselukuvan pisin syrjä ei ole tätä arvoa pidempi. Jätä "
+"tyhjäksi jos et halua esikatselukuvaa."
+
+msgid ""
+"There are no graphics toolkits enabled that support this type of item, so we cannot create "
+"or modify a thumbnail."
+msgstr ""
+"Ei ole työkalua tämän tyyppiselle kohteelle, joten emme voi tehdä tai muokata "
+"esikatselukuvaa."
+
+msgid ""
+"In order for Gallery to properly display this movie, it has to know the movie's width and "
+"height.  If you have installed a graphics toolkit that can handle movie types, then these "
+"values may already be set.  If not, they may be set to 0.  If you do not enter the correct "
+"values here, the movie may appear distorted when viewed in your web browser.  Note that "
+"changing these values do <b>not</b> change the movie itself so experimentation won't cause "
+"harm."
+msgstr ""
+"Voidakseen näyttää tämän elokuvan oikein, Gallerian täytyy tietää elokuvan leveys ja "
+"korkeus. Jos olet sinulla on asennettuna grafiikkatyökalut jotka ymmärtävät elokuvia, nämä "
+"arvot voivat olla jo asetettuina. Joe ei ole, arvot voivat olla nollia. Jos et laita oikeita "
+"arvoja tänne, elokuva voi näyttäytyä vääristyneenä selaimessasi. Huomaa, että arvojen muutos "
+"<b>ei</b> muuta itse elokuvaa, joten voit turvallisesti kokeilla niihin eri arvoja ilman "
+"haittavaikutuksia."
+
+msgid "Resized Photos"
+msgstr "Skaalatut Kuvat"
+
+msgid ""
+"These sizes are alternate resized versions of the original you would like to have available "
+"for viewing."
+msgstr "Nämä koot ovat vaihtoehtoisia skaalauksia alkuperäisestä, jotka haluat näkyville."
+
+msgid ""
+"There are no graphics toolkits enabled that support this type of photo, so we cannot create "
+"or modify resized versions."
+msgstr ""
+"Ei ole työkaluja käytössä tämän tyyppisen valokuvan tukemiseksi, ojten emme voi luoda tai "
+"muokata eri kokoisia versioita."
+
+msgid ""
+"You can select which part of the photo will be used for the thumbnail.  This will have no "
+"effect on the resized or original versions of the image."
+msgstr ""
+"Voit valita mitä osaa kuvasta käytetään esikatselukuvassa. Tällä ei ole vaikutusta eri "
+"kokoisiin tai alkuperäiseen versioon kuvasta."
+
+msgid "Aspect Ratio: "
+msgstr "Mittasuhteet: "
+
+msgid "Crop"
+msgstr "Rajaa"
+
+msgid "Reset to default"
+msgstr "Palauta oletusarvo"
+
+msgid ""
+"There are no graphics toolkits enabled that support this type of photo, so we cannot crop "
+"the thumbnail."
+msgstr ""
+"Käytössä ei ole grafiikkatyökaluja jotka tukevat tätä kuvatyyppiä, joten emme voi leikata "
+"esikatselukuvaa."
+
+msgid "Rotate"
+msgstr "Käännä"
+
+msgid "You can only rotate the photo in 90 degree increments."
+msgstr "Voit kääntää kuvaa vain 90 asteen pykälissä."
+
+msgid "CC 90&deg;"
+msgstr "90&deg; vastapäivään"
+
+msgid "180&deg;"
+msgstr "180&deg;"
+
+msgid "C 90&deg;"
+msgstr "90&deg; myötäpäivään"
+
+msgid ""
+"There are no graphics toolkits enabled that support this type of photo, so we cannot rotate "
+"it."
+msgstr ""
+"Käytössä ei ole grafiikkatyökaluja jotka tukevat tätä kuvatyyppiä, joten emme voi kääntää "
+"sitä."
+
+msgid "Scale"
+msgstr "Muuta Kokoa"
+
+msgid ""
+"Shrink or enlarge the original photo.  When Gallery scales a photo, it maintains the same "
+"aspect ratio (height to width) of the original photo to avoid distortion.  Your photo will "
+"be scaled until it fits inside a bounding box with the size you enter here."
+msgstr ""
+"Kutista tai suurenna alkuperäistä kuvaa. Gallerian muuttaessa kuvan kokoa alkuperäinen suhde "
+"(korkeus suhteessa leveyteen) säilytetään. Kuvan kokoa muutetaan siten että se mahtuu "
+"antamiesi rajojen sisään."
+
+msgid ""
+"There are no graphics toolkits enabled that support this type of photo, so we cannot scale "
+"it."
+msgstr ""
+"Käytössä ei ole grafiikkatyökaluja jotka tukevat tätä kuvatyyppiä, joten emme voi muuttaa "
+"sen kokoa."
+
+msgid "You must enter a size"
+msgstr "Sinun on annettava koko"
+
+msgid "Preserve Original"
+msgstr "Säilytä Alkuperäinen"
+
+msgid ""
+"Gallery does not modify your original photo when rotating and scaling. Instead, it "
+"duplicates your photo and works with copies.  This requires a little extra disk space but "
+"prevents your original from getting damaged.  Disabling this option will cause any actions "
+"(rotating, scaling, etc) to modify the original."
+msgstr ""
+"Galleria ei muokkaa alkuperäistä kuvaa kun sitä käännetään ja kokoa muutetaan. Sen sijaan "
+"Galleria luo kuvasta kopion, josta se muokkaa. Tämä vaatii hiukan enemmän kiintolevytilaa, "
+"mutta estää alkuperäisen kuvan vahingoittumisen. Poista tämä toiminto, jos haluat että "
+"Galleria työskentelee vain alkuperäisessä kuvassa."
+
+msgid "This is a link to another photo, so you cannot change the original"
+msgstr "Tämä on linkki toiseen kuvaan, joten et voi muokata alkuperäistä"
+
+msgid "There are links to this photo, so you cannot change the original"
+msgstr "Tähän kuvaan on linkkejä, joten et voi muokata alkuperäistä"
+
+msgid "Preserve Original Photo"
+msgstr "Säilytä Alkuperäinen Kuva"
+
+msgid "Modified Photo"
+msgstr "Muokattu Kuva"
+
+msgid ""
+"You are using a copy of the original photo that has been scaled or rotated.  The original "
+"photo is still available, but is no longer being used.  Any changes you make will be applied "
+"to the copy instead."
+msgstr ""
+"Käytössäsi on kopio jonka kokoa on muutettu tai joka on käännetty. Alkuperäinen kuva on yhä "
+"saatavilla, mutta se ei ole käytössä. Tekemäsi muutokset kohdistetaan vain kopioon."
+
+msgid "Restore original"
+msgstr "Palauta alkuperäinen"
+
+#, c-format
+msgid ""
+"This album is configured to use the <b>%s</b> theme. These settings only apply to the theme "
+"for this album."
+msgstr ""
+"Tämä albumi käyttää teemaa <b>%s</b>. Nämä asetukset koskevat vain tämän albumin teemaa."
+
+msgid "Setting"
+msgstr "Asetus"
+
+msgid "Use Global"
+msgstr "Käytä Yleistä"
+
+#, c-format
+msgid "Use these settings in all subalbums that use %s theme"
+msgstr ""
+
+msgid ""
+"Note: to set the same theme for all subalbums, check the appropriate box in <b>Album</b> tab"
+msgstr ""
+
+msgid "Album Highlight"
+msgstr "Albumin Esimerkkikuva"
+
+msgid "You can make this item the thumbnail for its parent or any ancestor album."
+msgstr "Voit tehdä tästä kohteesta albumin esikatselukuvan."
+
+msgid "Highlight for:"
+msgstr "Esimerkkikuva albumille:"
+
+msgid "Highlight"
+msgstr "Esimerkkikuva"
+
+msgid "Move an Item"
+msgstr "Siirrä Kohdetta"
+
+#, c-format
+msgid "Successfully moved %d item"
+msgid_plural "Successfully moved %d items"
+msgstr[0] "Yksi kohde siirretty."
+msgstr[1] "%d kohdetta siirretty."
+
+msgid "This album contains no items to move."
+msgstr "Tässä albumissä ei ole siirrettäviä kohteita."
+
+msgid "Choose the items you want to move"
+msgstr "Valitse siirrettävät kohteet"
+
+msgid ""
+"The destination you chose does not accept sub-albums, so all sub-albums have been deselected."
+msgstr ""
+"Valitsemasi määränpää ei hyväksy kansioita, joten kaikki kansiot on poistettu valinnoista."
+
+msgid ""
+"The destination you chose only accepts sub-albums, so all non-albums have been deselected."
+msgstr ""
+"Valitsemasi määränpää hyväksyy vain kansioita, joten kaikki muut on poistettu valinnoista."
+
+msgid "You are not allowed to move this item away from here."
+msgstr "Et voi siirtää tätä kohdetta pois täältä."
+
+msgid "You are not allowed to move an album to the chosen destination."
+msgstr "Et voi siirtää albumia valitsemaasi määränpäähän."
+
+msgid "You are not allowed to move an item to the chosen destination."
+msgstr "Et voi siitää kuvaa valitsemaasi määränpäähän."
+
+msgid "You cannot move an album into its own subtree."
+msgstr "Et voi siirtää albumia albumin omaan alikansioon."
+
+msgid "Choose a new album for them"
+msgstr "Valitse niille uusi albumi"
+
+msgid "You don't have the permission to add items in this album"
+msgstr "Sinulla ei ole oikeuksia lisätä kohteita tähän albumiin"
+
+msgid "Move"
+msgstr "Siirrä"
+
+msgid "Successfully moved"
+msgstr "Siirretty"
+
+msgid "Permissions"
+msgstr "Oikeudet"
+
+msgid "Owner changed successfully"
+msgstr "Omistaja vaihdettu"
+
+msgid "Group permission added successfully"
+msgstr "Ryhmäoikeudet lisätty"
+
+msgid "User permission added successfully"
+msgstr "Käyttäjäoikeudet lisätty"
+
+msgid "Group permission removed successfully"
+msgstr "Ryhmäoikeudet poistettu"
+
+msgid "User permission removed successfully"
+msgstr "Käyttäjäoikeudet poistetu"
+
+msgid ""
+"Each item has its own independent set of permissions.  Changing the parent's permissions has "
+"no effect on the permissions of the child.  This allows you to restrict access to the parent "
+"of this item, but still grant full access to this item, or vice versa.  The most efficient "
+"way to use this permission system is to create groups and assign permissions to them.  Then "
+"if you want to grant permissions to a specific user, you can add (or remove) the user from "
+"the appropriate group."
+msgstr ""
+"Jokaisella kohteella on omat itsenäiset käyttöoikeudet. Kohteen oikeuksien muuttamisella ei "
+"ole vaikutuksia sen sisältämiin kuviin tai albumeihin. Tämä sallii oikeuksien ja käyttämisen "
+"rajoittamisen albumille, mutta täysien oikeuksien sallimisen sen sisältämiin albumeihin ja "
+"kuviin tai päinvastoin. Kaikkein tehokkain tapa oikeuksien hallintaan on luoda ryhmiä ja "
+"antaa oikeudet ryhmille. Halutessasi antaa tietylle käyttäjälle oikeudet voit lisätä (tai "
+"poistaa) käyttäjän kyseisestä ryhmästä."
+
+#, c-format
+msgid "This item is owned by user: %s"
+msgstr "Tämän kohteen omistaja on: %s"
+
+#, c-format
+msgid "This item is owned by user: %s (%s)"
+msgstr "Tämän kohteen omistaja on: %s (%s)"
+
+msgid "New owner"
+msgstr "Uusi omistaja"
+
+msgid "Change"
+msgstr "Muuta"
+
+msgid "Apply new owner to sub-items"
+msgstr "Laita uusi omistaja myös kansioiden kohteisiin"
+
+msgid "You must enter a user name"
+msgstr "Sinun tulee syöttää käyttäjän nimi"
+
+msgid "The user name you entered is invalid"
+msgstr "Syöttämäsi käyttäjänimi on virheellinen"
+
+msgid "Apply changes"
+msgstr "Vahvista muutokset"
+
+msgid ""
+"This item has sub-items.  The changes you make here can be applied to just this item, or you "
+"can apply them to all sub-items.  Note that applying changes to sub-items will merge your "
+"change into the existing permissions of the sub-items and may be very time consuming if you "
+"have many sub-items.  It's more efficient to grant permissions to groups and then add and "
+"remove users from groups whenever possible. Changes are applied to sub-items by default."
+msgstr ""
+"Albumi sisältää kohteita. Tekemäsi muutokset voidaan kohdistaa vain tähän albumiin tai "
+"kaikkiin sen sisältämiin kohteisiin. Huomaa että muutosten tekeminen sisällä oleviin "
+"kohteisiin liittää muutoksesi kohteissa jo oleviin oikeuksiin. Muutosten tekeminen voi viedä "
+"runsaasti aikaa, jos kohteita on runsaasti. On tehokkaampaa myöntää oikeuksia ryhmille ja "
+"lisätä tai poistaa käyttäjä ryhmästä. Muutokset tehdään myös sisältyviin kohteisiin "
+"oletusarvoisesti."
+
+msgid "Apply to sub-items"
+msgstr "Muuta myös sisältyvät kohteet"
+
+msgid "Group Permissions"
+msgstr "Ryhmän Oikeudet"
+
+msgid "Group name"
+msgstr "Ryhmän nimi"
+
+msgid "Permission"
+msgstr "Oikeus"
+
+msgid "New Group Permission"
+msgstr "Uudet Ryhmän Oikeudet"
+
+msgid "Add Permission"
+msgstr "Lisää Käyttöoikeus"
+
+msgid "The permission you chose is invalid"
+msgstr "Valitsemasi oikeus on virheellinen"
+
+msgid "The group name you entered is invalid"
+msgstr "Syöttämäsi ryhmän nimi on virheellinen"
+
+msgid "Group already has this permission (check sub-permissions)"
+msgstr "Ryhmällä on jo tämä oikeus (ehkä se oli sisällytetty ryhmän aikaisempiin oikeuksiin)"
+
+msgid "User Permissions"
+msgstr "Käyttäjän Oikeudet"
+
+msgid "User name"
+msgstr "Käyttäjätunnus"
+
+msgid "New User Permission"
+msgstr "Uudet Käyttäjän Oikeudet"
+
+msgid "The user already has this permission (check sub-permissions)"
+msgstr "Käyttäjällä on jo tämä oikeus (ehkä se oli sisälletty käyttäjän oikeuksiin)"
+
+msgid "Reorder Album"
+msgstr "Järjestä Albumin Sisältö"
+
+#, fuzzy
+msgid "Order saved successfully"
+msgstr "Muutokset tallennettu"
+
+msgid ""
+"This album has an automatic sort order specified, so you cannot change the order of items "
+"manually.  You must remove the automatic sort order to continue."
+msgstr ""
+"Tässä albumissa on automaattinen järjestely päällä, joten et voi vaihtaa järjestystä käsin "
+"ennen kuin otat automaattisen järjestelyn pois päältä."
+
+msgid "Change the order of the items in this album."
+msgstr "Muokkaa tämän albumin kohteiden järjestystä."
+
+msgid "Move this item"
+msgstr "Siirrä tämä kohde"
+
+msgid "before"
+msgstr "ennen"
+
+msgid "after"
+msgstr "jälkeen"
+
+msgid "Reorder"
+msgstr "Järjestä"
+
+msgid "Continue..."
+msgstr "Jatka..."
+
+msgid "Site is temporarily down for maintenance."
+msgstr ""
+
+#, fuzzy
+msgid "Admin Login"
+msgstr "Ylläpitäjän Valinnat"
+
+msgid "Enter a URL"
+msgstr "Kirjoita URL"
+
+msgid "Enter some text describing the URL"
+msgstr "Kirjoita jotain kuvaamaan URL"
+
+msgid "Enter an image URL"
+msgstr "Kirjoita kuvan URL"
+
+msgid "B <!-- Button label for Bold -->"
+msgstr "B"
+
+msgid "i <!-- Button label for italic -->"
+msgstr "i"
+
+msgid "list"
+msgstr "lista"
+
+msgid "bullet"
+msgstr "piste"
+
+msgid "url"
+msgstr "url"
+
+msgid "image"
+msgstr "kuva"
+
+msgid "Configuration Error: Missing Theme"
+msgstr "Konfigurointivirhe: Puuttuva Teema"
+
+msgid "Missing Theme"
+msgstr "Puuttuva Teema"
+
+#, fuzzy, c-format
+msgid ""
+"This page is configured to use the %s theme, but it is either inactive, not installed, or "
+"incompatible."
+msgstr ""
+"Tämä albumi on asetettu käyttämään teemaa %s, mutta se on joko poissa käytöstä tai sitä ei "
+"ole asennettu."
+
+#, fuzzy, c-format
+msgid ""
+"This album is configured to use the %s theme, but it is either inactive, not installed, or "
+"incompatible."
+msgstr ""
+"Tämä albumi on asetettu käyttämään teemaa %s, mutta se on joko poissa käytöstä tai sitä ei "
+"ole asennettu."
+
+#, c-format
+msgid ""
+"To fix this problem you can %sinstall or activate this theme%s or select another default "
+"theme."
+msgstr ""
+"Korjataksesi ongelman voit joko %sasentaa tai ottaa käyttöön tämän teeman%s tai valita "
+"toisen teeman."
+
+#, c-format
+msgid ""
+"To fix this problem you can %slogin as a site administrator%s and then %sinstall or activate "
+"this theme%s or select another default theme."
+msgstr ""
+"Korjataksesi ongelman voit %skirjautua sisään sivuston ylläpitäjänä%s ja %sasentaa tai ottaa "
+"käyttöön tämän teeman%s tai valita toisen teeman."
+
+#, c-format
+msgid ""
+"To fix this problem you can either %schoose a new theme for this album%s or %sinstall or "
+"activate this theme%s."
+msgstr ""
+"Korjataksesi ongelman voit joko %svalita uuden teeman tälle albumille%s tai %sasentaa tai "
+"ottaa käyttöön tämän teeman%s."
+
+#, c-format
+msgid ""
+"To fix this problem you can either %schoose a new theme for this album%s or %slogin as a "
+"site administrator%s and then %sinstall or activate this theme%s."
+msgstr ""
+"Korjataksesi tämän ongelman, voit joko %svalita albumille uuden teeman%s tai %skirjautua "
+"sisään sivuston ylläpitäjänä%s ja sitten %sasentaa tai ottaa käyttöön tämän teeman%s."
+
+#, c-format
+msgid ""
+"To fix this problem you can either %slogin%s and then %schoose a new theme for this album%s "
+"or %slogin as a site administrator%s and then %sinstall or activate this theme%s."
+msgstr ""
+"Korjataksesi tämän ongelman, voit joko %skirjautua sisään%s ja %svalita albumille uuden "
+"teeman%s tai %skirjautua sisään sivuston ylläpitäjänä%s ja sitten %sasentaa tai ottaa "
+"käyttöön tämän teeman%s."
+
+msgid "Admin Options"
+msgstr "Ylläpitäjän Valinnat"
+
+msgid "User Options"
+msgstr "Käyttäjän Valinnat"
+
+msgid "Password changed successfully"
+msgstr "Salasana vaihdettu"
+
+msgid ""
+"You must enter your current password to prove that it's you, then enter your new password "
+"twice to make sure that you didn't make a mistake."
+msgstr ""
+"Sinun on annettava nykyinen salasanasi todistaaksesi kuka olet, sekä uusi salasanasi kahteen "
+"kertaan varmistaaksesi ettet tehnyt virhettä."
+
+msgid "Current Password"
+msgstr "Nykyinen Salasana"
+
+msgid "You must enter your current password"
+msgstr "Sinun on syötettävä nykyinen salasana"
+
+msgid "Incorrect password"
+msgstr "Väärä salasana"
+
+msgid "New Password"
+msgstr "Uusi Salasana"
+
+msgid "You must enter a new password"
+msgstr "Sinun on syötettävä uusi salasana"
+
+msgid "Verify New Password"
+msgstr "Vahvista Uusi Salasana"
+
+msgid "You must enter your new password again!"
+msgstr "Sinun on syötettävä uusi salasana uudelleen!"
+
+msgid "Login to your account"
+msgstr "Kirjaudu sisään"
+
+msgid "Your password has been recovered, please login."
+msgstr "Salasanasi on palautettu, ole hyvä ja kirjaudu sisään."
+
+msgid "Your login information is incorrect.  Please try again."
+msgstr "Sisäänkirjautumistietosi ovat väärät. Yritä uudelleen."
+
+#, c-format
+msgid ""
+"Lost or forgotten passwords can be retrieved using the <a href=\"%s\">recover password</a> "
+"page"
+msgstr ""
+"Hukatut tai unohtuneet salasanat voi palauttaa käyttämällä <a href=\"%s\">palauta salasana</"
+"a> sivua"
+
+#, c-format
+msgid "Welcome, %s!"
+msgstr ""
+
+msgid "Account settings saved successfully"
+msgstr "Käyttäjätilin asetukset tallennettu"
+
+msgid "(required, password required for change)"
+msgstr ""
+
+msgid "(suggested, password required for change)"
+msgstr ""
+
+#, fuzzy
+msgid "(required to change the e-mail address)"
+msgstr "Sinun tulee syöttää sähköpostiosoite"
+
+#, fuzzy
+msgid "You must enter your current password to change the e-mail address"
+msgstr "Sinun on syötettävä nykyinen salasana"
+
+msgid "Recover a lost or forgotten password"
+msgstr "Palauta hukattu tai unohtunut salasana"
+
+msgid ""
+"Recovering your password requires that your user account has an email address assigned, and "
+"that you have access to the listed email address.  A confirmation will be emailed to you "
+"containing a URL which you must visit to set a new password for your account.  To prevent "
+"abuse, password recovery requests can not be attempted more than once in a 20 minute "
+"period.  A recovery confirmation is valid for seven days.  If it is not used during that "
+"time, it will be purged from the system and a new request will have to be made."
+msgstr ""
+"Salasanasi palauttaminen edellyttää että käyttäjätilillesi on määritelty sähköpostiosoite, "
+"ja että pääset lukemaan siihen tulleet sähköpostit. Sinulle lähetetään vahvistussähköposti, "
+"jossa on URL sivulle jolla sinun tulee vierailla asettaakseni tilillesi uuden salasanan. "
+"Väärinkäytön estämiseksi salasanan pyyntöä ei voi yrittää kuin kerran 20 minuutin aikana. "
+"Salasanan palauttamiseksi tehty pyyntö on voimassa seitsemän päivää. Jos sitä ei käytetä "
+"sinä aikana, se poistetaan järjestelmästä ja salasanan palauttamiseksi tarvitaan uusi pyyntö."
+
+msgid "Your recovery request has been sent!"
+msgstr "Palautuspyyntösi on lähetetty!"
+
+msgid ""
+"Note that if the account does not have an email address, you may not receive the email and "
+"you should contact your system administrator for help."
+msgstr ""
+"Huomaa että jos käyttäjätilisi ei sisällä sähköpostiosoitetta, et voi vastaanottaa "
+"sähköpostia ja sinun täytyy pyytää järjestelmän ylläpidolta apua."
+
+#, c-format
+msgid ""
+"Administrators can use the %sEmergency Password Recovery%s page to recover the admin account "
+"if they fail to receive recovery email due to server problems, or lack of a working email "
+"address."
+msgstr ""
+"Administraattorit voivat käyttää %sHätätilanteen Salasanan Palautus%s sivua palauttaakseen "
+"administraattorin tilin, jos he eivät saa sähköpostiviestiä palvelimen ongelmien takia, tai "
+"heillä ei ole toimivaa sähköpostiosoitetta."
+
+msgid "Recover"
+msgstr "Palauta"
+
+#, c-format
+msgid ""
+"In order to proceed with the password reset, we have to verify that you are who you claim.  "
+"The best way to be sure is to ask you to make a tiny change in the Gallery directory which "
+"will prove that you have the right permissions.  So, we're going to ask that you create a "
+"new text file called %s in your gallery2 directory. It must contain the following randomly "
+"generated characters:"
+msgstr ""
+
+#, c-format
+msgid "%s"
+msgstr "%s"
+
+#, c-format
+msgid ""
+"As a convenience to you, we've prepared a %scorrect version of login.txt%s for you.  "
+"Download that and copy it into your install directory and you're all set."
+msgstr ""
+
+msgid "Once you've uploaded the file, click refresh to continue."
+msgstr ""
+
+msgid "Emergency Administrator Password Reset"
+msgstr "Hätätilanteen Salasanan Palautus"
+
+msgid ""
+"This page can be used by a system administrator to securely reset the password on any "
+"account."
+msgstr ""
+"Tätä sivua voi käyttää vain järjestelmän ylläpitäjä vaihtaaksen kenen tahansa salasanan "
+"turvallisesti."
+
+msgid "Authorization Confirmed"
+msgstr "Autorisointi Vahvistettu"
+
+msgid ""
+"Your authorization has been confirmed.  Please enter your new password below.  After setting "
+"your new password you will be taken to the login page."
+msgstr ""
+"Autorisointisi on vahvistettu. Kirjoita uusi salasanasi alapuolelle. Kun olet asettanut "
+"salasanasi, pääset sisäänkirjautumissivulle."
+
+msgid "Recover Password for Username"
+msgstr "Palauta Salasana Käyttäjätunnukselle"
+
+msgid "You must enter a username to recover the password for."
+msgstr "Sinun täytyy antaa käyttäjätunnus jonka salasana palautetaan."
+
+msgid "The username you entered does not exist."
+msgstr "Antamaasi käyttäjää ei ole."
+
+msgid "Authorization Incorrect"
+msgstr "Autorisointi On Väärä"
+
+msgid "Recovery Instructions"
+msgstr "Palautusohjeet"
+
+msgid "AuthFile Missing"
+msgstr ""
+
+msgid "AuthFile Unreadable"
+msgstr ""
+
+#, c-format
+msgid "Your %s file is not readable. Please give Gallery read permissions on the file."
+msgstr "Tiedosto %s ei ole luettavissa. Ole hyvä ja anna Gallerialle lukuoikeudet tiedostoon."
+
+msgid "Refresh"
+msgstr "Uudista"
+
+msgid "This page will allow you to reset the password on your account."
+msgstr "Tämä sivu antaa sinun uudelleenasettaa käyttäjätilisi salasanan."
+
+#, c-format
+msgid ""
+"There is no request which matches the username and authorization provided. Request a new "
+"authorization from the <a href=\"%s\">lost password page</a>"
+msgstr ""
+"Pyyntöä joka vastaisi käyttäjätunnusta ja annettua autorisointitietoa ei löydy. Pyydä uutta "
+"salasanan palautusta <a href=\"%s\">hukattujen salasanojen sivulta</a>"
+
+#, c-format
+msgid ""
+"The request you are trying to access has expired.  Request a new authorization from the <a "
+"href=\"%s\">lost password page</a>."
+msgstr ""
+"Pyyntö jota käytit on mennyt vanhaksi. Pyydä uutta salasanan palautusta <a href=\"%s"
+"\">hukattujen salasanojen sivulta</a>"
+
+msgid "Authorization missing"
+msgstr "Autorisointi puuttuu"
+
+msgid "Username missing"
+msgstr "Käyttäjä puuttuu"
+
+msgid "Submit"
+msgstr "Lähetä"
+
+#, c-format
+msgid "Hello %s,"
+msgstr "Moi %s,"
+
+#, c-format
+msgid "You receive this email because a password recovery for %s was requested by %s at %s"
+msgstr ""
+"Saat tämän sähköpostin koska IP osoitteesta %2$s pyydettiin salasanan palautusta sivulle %1"
+"$s. Pyynnön ajankohta oli %3$s."
+
+#, c-format
+msgid "Your username is: %s"
+msgstr "Käyttäjätunnuksesi on: %s"
+
+msgid ""
+"To finish the password recovery process please click the following link and enter the "
+"required information:"
+msgstr "Saadaksesi uuden salasanan, valitse seuraava linkki ja täytä pyydetyt tiedot:"
+
+msgid "If you did not request this recovery email, you may safely ignore it."
+msgstr "Jos et pyytänyt tätä palautussähköpostia, voit huoleti olla välittämättä siitä."
+
+msgid "Thank you!"
+msgstr "Kiitos!"
+
+msgid "guest"
+msgstr "vieras"
+
+#, c-format
+msgid "display mode: %s"
+msgstr "näyttötapa: %s"
+
+#, c-format
+msgid "Date: %s"
+msgstr "Päiväys: %s"
+
+#, c-format
+msgid "Owner: %s"
+msgstr "Omistaja: %s"
+
+#, c-format
+msgid "Size: %d item"
+msgid_plural "Size: %d items"
+msgstr[0] "Koko: %d kohde"
+msgstr[1] "Koko: %d kohdetta"
+
+#, c-format
+msgid "(%d item total)"
+msgid_plural "(%d items total)"
+msgstr[0] "(yhteensä %d)"
+msgstr[1] "(yhteensä %d)"
+
+#, c-format
+msgid "Views: %d"
+msgstr "Katselukertoja: %d"
+
+msgid "&laquo; album actions &raquo;"
+msgstr "&laquo; albumin toiminnot &raquo;"
+
+msgid "&laquo; item actions &raquo;"
+msgstr "&laquo; kohteen toiminnot &raquo;"
+
+msgid "Go"
+msgstr "Siirry"
+
+msgid "Navigation"
+msgstr "Navigointi"
+
+msgid "next"
+msgstr "seuraava"
+
+msgid "last"
+msgstr "viimeinen"
+
+#, c-format
+msgid "Page %d of %d"
+msgstr "Sivu %d/%d"
+
+#, c-format
+msgid "%d of %d"
+msgstr "%d/%d"
+
+msgid "first"
+msgstr "ensimmäinen"
+
+msgid "previous"
+msgstr "edellinen"
+
+msgid "Page:"
+msgstr "Sivu:"
+
+#, c-format
+msgid "%d. %s"
+msgstr "%d. %s"
+
+msgid "Size: "
+msgstr "Koko: "
+
+msgid "Full size: "
+msgstr "Täysi koko: "
+
+msgid "Language selector"
+msgstr "Kielen valinta"
+
+msgid "Item actions"
+msgstr "Kohteen toiminnot"
+
+msgid "Use dropdown menu"
+msgstr "Käytä valikkoa"
+
+msgid "Login block"
+msgstr "Sisään kirjautumisen lohko"
+
+msgid "Links to album/photo peers"
+msgstr "Linkit albumin/kuvan vastapuoliin"
+
+msgid "Unit test module"
+msgstr "Unit test moduli"
+
+msgid "[test] A permission"
+msgstr "[test] Oikeus"
+
+msgid "[test] A second permission"
+msgstr "[test] Toinen oikeus"
+
+msgid "Unit test theme"
+msgstr "Yksikkötestauksen teema"
+
+#~ msgid "&laquo; None &raquo;"
+#~ msgstr "&laquo; Ei mitään &raquo;"
+
+#~ msgid "some text to be spit out in different languages"
+#~ msgstr "jotain tekstiä näytettäväksi eri kielillä"
+
+#~ msgid "You did it right!"
+#~ msgstr "Teit sen oikein!"
+
+#~ msgid "Unable to delete directory: /templates_c"
+#~ msgstr "Ei voi poistaa hakemistoa: /templates_c"
+
+#, fuzzy
+#~ msgid "add album"
+#~ msgstr "lisää albumi"
+
+#, fuzzy
+#~ msgid "edit permissions"
+#~ msgstr "oikeudet"
+
+#, fuzzy
+#~ msgid "view permissions"
+#~ msgstr "oikeudet"
+
+#~ msgid "login"
+#~ msgstr "sisäänkirjautuminen"
+
+#, fuzzy
+#~ msgid "Successfully deleted directory: /cache/entity"
+#~ msgstr "Onnistuneesti lisätty yksi tiedosto."
+
+#, fuzzy
+#~ msgid "Successfully deleted directory: /cache/theme"
+#~ msgstr "Onnistuneesti lisätty yksi tiedosto."
+
+#, fuzzy
+#~ msgid "Successfully deleted directory: /cache/module"
+#~ msgstr "Onnistuneesti lisätty yksi tiedosto."
+
+#, fuzzy
+#~ msgid "Unable to delete directory: /cache/theme"
+#~ msgstr "Onnistuneesti lisätty yksi tiedosto."
+

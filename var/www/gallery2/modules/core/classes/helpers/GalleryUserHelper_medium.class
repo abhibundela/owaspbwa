@@ -1,0 +1,355 @@
+<?php
+/*
+ * $RCSfile: GalleryUserHelper_medium.class,v $
+ *
+ * Gallery - a web based photo album viewer and editor
+ * Copyright (C) 2000-2006 Bharat Mediratta
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or (at
+ * your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+/**
+ * @version $Revision: 1.15 $ $Date: 2006/01/13 22:47:48 $
+ * @package GalleryCore
+ * @author Bharat Mediratta <bharat@menalto.com>
+ */
+
+/**
+ * A helper class for GalleryUsers
+ *
+ * Utility functions useful in managing GalleryUsers
+ *
+ * @package GalleryCore
+ * @subpackage Helpers
+ */
+class GalleryUserHelper_medium {
+
+    /*
+     * ****************************************
+     *                 Methods
+     * ****************************************
+     */
+
+    /**
+     * Return a map of userNames => userids
+     *
+     * You can specify how many usernames to list, and where the windows is in
+     * the list of all users.
+     *
+     * @param int [optional] the number of usernames desired
+     * @param int [optional] the start of the range
+     * @param string [optional] a substring to match
+     * @return array object GalleryStatus a status code
+     *               array (username, username, ...)
+     * @static
+     */
+    function fetchUsernames($count=null, $offset=null, $substring=null) {
+	global $gallery;
+
+	$data = array();
+	$query = '
+        SELECT
+          [GalleryUser::id],
+          [GalleryUser::userName]
+        FROM
+          [GalleryUser]
+        ';
+
+	if (!empty($substring)) {
+	    $query .= '
+        WHERE
+	  [GalleryUser::userName] LIKE ?
+            ';
+	    $data[] = "%$substring%";
+	}
+
+	$query .= '
+        ORDER BY
+          [GalleryUser::userName] ASC
+        ';
+
+	list ($ret, $searchResults) =
+	    $gallery->search($query,
+			     $data,
+			     array('limit' => array('count' => $count,
+						    'offset' => $offset)));
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	$usernames = array();
+	while ($result = $searchResults->nextResult()) {
+	    $usernames[$result[0]] = $result[1];
+	}
+
+	return array(null, $usernames);
+    }
+
+    /**
+     * Return the total number of users
+     *
+     * @param string an optional substring to match against the username
+     * @return array object GalleryStatus a status code
+     *               int number of users
+     * @static
+     */
+    function fetchUserCount($substring=null, $groupId=null) {
+	global $gallery;
+	if (empty($groupId)) {
+	    list($ret, $groupId) =
+		GalleryCoreApi::getPluginParameter('module', 'core', 'id.everybodyGroup');
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+	}
+	$data = array();
+
+	if (!empty($substring)) {
+            $query = '
+            SELECT
+              COUNT([GalleryUserGroupMap::userId])
+            FROM
+              [GalleryUserGroupMap],
+              [GalleryUser]
+            WHERE
+              [GalleryUser::id] = [GalleryUserGroupMap::userId]
+            AND
+              [GalleryUser::userName] LIKE ?
+            AND
+              [GalleryUserGroupMap::groupId] = ?
+            ';
+            $data[] = "%$substring%";
+        } else {
+            $query = '
+            SELECT
+              COUNT([GalleryUserGroupMap::userId])
+            FROM
+              [GalleryUserGroupMap]
+            WHERE
+              [GalleryUserGroupMap::groupId] = ?
+            ';
+        }
+        $data[] = (int)$groupId;
+
+        list ($ret, $searchResults) = $gallery->search($query, $data);
+        if ($ret) {
+            return array($ret->wrap(__FILE__, __LINE__), null);
+        }
+
+        $result = $searchResults->nextResult();
+        return array(null, (int)$result[0]);
+    }
+
+    /**
+     * Lookup a user by username
+     *
+     * @param string the username
+     * @return array object GalleryStatus a status code
+     *               object GalleryUser a user
+     * @static
+     */
+    function fetchUserByUserName($userName=null) {
+	global $gallery;
+
+        $query = '
+        SELECT
+          [GalleryUser::id]
+        FROM
+          [GalleryUser]
+        WHERE
+          [GalleryUser::userName] = ?
+        ';
+	list ($ret, $searchResults) = $gallery->search($query, array($userName));
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	if ($searchResults->resultCount() == 0) {
+	    return array(GalleryCoreApi::error(ERROR_MISSING_OBJECT, __FILE__, __LINE__), null);
+	} else {
+	    $result = $searchResults->nextResult();
+	    $id = $result[0];
+	    list ($ret, $user) = GalleryCoreApi::loadEntitiesById($id);
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+
+	    return array(null, $user);
+	}
+    }
+
+    /**
+     * Assert that the active user is a site administrator
+     *
+     * @return object GalleryStatus success if the user is an administrator
+     *                              ERROR_PERMISSION_DENIED if not.
+     * @static
+     */
+    function assertSiteAdministrator() {
+	global $gallery;
+
+	/* Make sure we have adequate permissions */
+	list ($ret, $inGroup) = GalleryCoreApi::isUserInSiteAdminGroup();
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	if (!$inGroup) {
+	    return GalleryCoreApi::error(ERROR_PERMISSION_DENIED, __FILE__, __LINE__);
+	}
+
+	return null;
+    }
+
+    /**
+     * Delete all non-album items of a user. Then delete all remaining
+     * albums that are empty.
+     * This function can only be called with activeUser = Site Admin
+     *
+     * @param int the id of the user
+     * @return array object GalleryStatus a status code
+     * @static
+     */
+     function deleteUserItems($userId) {
+	global $gallery;
+
+	if (empty($userId)) {
+	    return GalleryCoreApi::error(ERROR_BAD_PARAMETER, __FILE__, __LINE__);
+	}
+
+	$ret = GalleryCoreApi::assertUserIsSiteAdministrator();
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	/* First check if the User is a valid gallery user! */
+	list ($ret, $user) = GalleryCoreApi::loadEntitiesById($userId);
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	/* Get all items by the user */
+	list ($ret, $itemIds) = GalleryCoreApi::fetchAllItemIdsByOwnerId($user->getId());
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	if (empty($itemIds)) {
+	    return null;
+	}
+
+	/*
+	 * Get all the permissions the user has on the items,
+	 * need delete permission to delete an item
+	 */
+	list ($ret, $userItemPermissions) =
+	    GalleryCoreApi::fetchPermissionsForItems($itemIds, $user->getId());
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	/* First sort out the items that we can delete (permissions) */
+	$itemIdsWithPermission = array();
+	foreach ($itemIds as $itemId) {
+	    if (!in_array('core.delete', array_keys($userItemPermissions[$itemId]))) {
+		continue;
+	    }
+	    $itemIdsWithPermission[] = $itemId;
+	}
+	$itemIds = $itemIdsWithPermission;
+
+	if (empty($itemIds)) {
+	    return null;
+	}
+
+	/* Load all items */
+	list ($ret, $items) = GalleryCoreApi::loadEntitiesById($itemIds);
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	$albums = array();
+	$albumIds = array();
+	/* First delete all non AlbumItem items */
+	foreach ($items as $item) {
+	    /* don't delete albums */
+	    if ($item->getCanContainChildren()) {
+		$albums[$item->getId()] = $item;
+		$albumIds[] = $item->getId();
+		continue;
+	    }
+	    /* delete the item */
+	    $ret = GalleryCoreApi::deleteEntityById($item->getId());
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	}
+
+	/*
+	 * Delete all empty albums
+	 * One of the albums may be the subalbum of another
+	 * To make sure the "descendentCount" is right, we have to delete the albums
+	 * in the right order and recompute the descendent count
+	 */
+	$remainingAlbums = array();
+	$modifiedAlbumIds = $albumIds;
+	while(!empty($modifiedAlbumIds)) {
+	    /*
+	     * TODO: fetchDescendentCounts works only if the activeUser is a SiteAdmin
+	     * If we want to use it from user space (i.e. let users remove delete their
+	     * accounts) we need to fix this.
+	     */
+	    list ($ret, $descendentCounts) =
+		GalleryCoreApi::fetchDescendentCounts($modifiedAlbumIds);
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	    /* $descendentCounts has no entry for all albums with 0 descendents!! */
+	    $newModifiedAlbumIds = array();
+	    foreach ($modifiedAlbumIds as $albumId) {
+		if (!isset($descendentCounts[$albumId]) || $descendentCounts[$albumId] == 0) {
+		    if (in_array($albums[$albumId]->getParentId(), $albumIds)) {
+			/*
+			 * This album was the subalbum of another album of this user
+			 * -> update descendentCount for this parent album
+			 */
+			$newModifiedAlbumIds[$albums[$albumId]->getParentId()] = 1;
+		    }
+		    /* delete albumItem */
+		    $ret = GalleryCoreApi::deleteEntityById($albumId);
+		    if ($ret) {
+			return $ret->wrap(__FILE__, __LINE__);
+		    }
+		    $remainingAlbums[$albumId] = 0;
+		} else {
+		    $remainingAlbums[$albumId] = 1;
+		}
+	    }
+	    $modifiedAlbumIds = array_keys($newModifiedAlbumIds);
+	}
+
+	/* Make a new thumbnail if possible, if it doesn't succeed, we can't change it */
+	foreach ($remainingAlbums as $albumId => $remaining) {
+	    if ($remaining) {
+		list ($ret, $trueOrFalse) = GalleryCoreApi::guaranteeAlbumHasThumbnail($albumId);
+		if ($ret) {
+		    return $ret->wrap(__FILE__, __LINE__);
+		}
+	    }
+	}
+
+	return null;
+    }
+}
+?>

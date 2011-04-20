@@ -1,0 +1,1 @@
+|a:10:{s:4:"sort";s:6:"manual";s:18:"treeCloseSameLevel";s:1:"0";s:11:"treeCookies";s:1:"0";s:18:"treeExpandCollapse";s:1:"0";s:9:"treeIcons";s:1:"0";s:9:"treeLines";s:1:"1";s:10:"_callbacks";s:40:"getSiteAdminViews|registerEventListeners";s:16:"_requiredCoreApi";s:3:"7,0";s:18:"_requiredModuleApi";s:3:"3,0";s:8:"_version";s:5:"1.0.3";}

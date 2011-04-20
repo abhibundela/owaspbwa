@@ -1,0 +1,510 @@
+<?php
+/*
+ * $RCSfile: IsapiRewriteHelper.class,v $
+ *
+ * Gallery - a web based photo album viewer and editor
+ * Copyright (C) 2000-2006 Bharat Mediratta
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or (at
+ * your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+/**
+ * @package Rewrite
+ * @version $Revision: 1.3 $ $Date: 2006/01/31 16:47:57 $
+ * @author Douglas Cau <douglas@cau.se>
+ */
+
+ /**
+ * This is a helper for the ISAPI_Rewrite parser.
+ *
+ * @package Rewrite
+ * @subpackage Parsers
+ */
+class IsapiRewriteHelper {
+
+    /**
+     * @see RewriteParser::saveActiveRules
+     */
+    function saveActiveRules($parser, $activeRules=null, $rewriteModule=null) {
+	list ($ret, $code) = IsapiRewriteHelper::checkFile();
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null, null);
+	}
+	if ($code != REWRITE_STATUS_OK) {
+	    return array(null, $code, null);
+	}
+
+	/* By default we use the rules we've already got */
+	if (is_null($activeRules)) {
+	    list($ret, $activeRules) = GalleryCoreApi::getPluginParameter(
+		'module', 'rewrite', 'activeRules');
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null, null);
+	    }
+	    $activeRules = unserialize($activeRules);
+	}
+
+	$regexRules = array();
+	$shortUrls = array();
+	$flags = array('default' => array('N'), 'mandatory' => array());
+	if (!empty($activeRules)) {
+	    list ($ret, $code, $regexRules, $shortUrls, $errorId) = RewriteHelper::parseActiveRules(
+		$activeRules, $parser, $rewriteModule, $flags);
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null, null);
+	    }
+	    if ($code != REWRITE_STATUS_OK) {
+		return array(null, $code, $errorId);
+	    }
+	}
+
+	list ($ret, $code) = IsapiRewriteHelper::writeFile($regexRules);
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null, null);
+	}
+	if ($code != REWRITE_STATUS_OK) {
+	    return array(null, $code, null);
+	}
+
+	/* Finally, save the new rules */
+	$ret = GalleryCoreApi::setPluginParameter(
+	    'module', 'rewrite', 'shortUrls', serialize($shortUrls));
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null, null);
+	}
+
+	$ret = GalleryCoreApi::setPluginParameter(
+	    'module', 'rewrite', 'activeRules', serialize($activeRules));
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null, null);
+	}
+
+	return array(null, REWRITE_STATUS_OK, null);
+    }
+
+    /**
+     * @see RewriteParser::saveAccessList
+     */
+    function saveAccessList($accessList, $allowEmptyReferer) {
+	list ($ret, $code) = IsapiRewriteHelper::checkFile();
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+	if ($code != REWRITE_STATUS_OK) {
+	    return array(null, $code);
+	}
+
+	$ret = GalleryCoreApi::setPluginParameter(
+	    'module', 'rewrite', 'accessList', serialize($accessList));
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	$ret = GalleryCoreApi::setPluginParameter('module', 'rewrite', 'allowEmptyReferer',
+	    $allowEmptyReferer ? '1' : '0');
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	/* Save the new httpd.ini */
+	list ($ret, $code) = $this->saveActiveRules();
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+	if ($code != REWRITE_STATUS_OK) {
+	    return array(null, $code);
+	}
+
+	return array(null, REWRITE_STATUS_OK);
+    }
+
+    /**
+     * @see RewriteParser::needsConfiguration
+     */
+    function needsConfiguration($parser) {
+	global $gallery;
+	$urlGenerator =& $gallery->getUrlGenerator();
+
+	if (strpos($urlGenerator->getCurrentUrlDir(true), 'install/index.php') !== false &&
+		$gallery->getConfig('galleryBaseUrl')) {
+	    /*
+	     * We can't autoconfigure from installer in a multisite install because
+	     * the current url is for the primary site, not the site being installed.
+	     */
+	    return array(null, true);
+	}
+
+	$baseUrlComponents = parse_url(preg_replace('{(install|upgrade)/index\.php.*}', '',
+						    $urlGenerator->getCurrentUrlDir(true)));
+	$ret = GalleryCoreApi::setPluginParameter('module', 'rewrite',
+	    'isapirewrite.galleryLocation', $baseUrlComponents['path']);
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	list ($ret, $code) = IsapiRewriteHelper::checkIsapiRewrite();
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+	if ($code != REWRITE_STATUS_OK) {
+	    return array(null, true);
+	}
+
+	list ($ret, $code) = IsapiRewriteHelper::checkFile();
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+	if ($code != REWRITE_STATUS_OK) {
+	    return array(null, true);
+	}
+
+	if (GalleryUtilities::isEmbedded()) {
+	    list ($ret, $status) = $parser->needsEmbedConfig();
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+
+	    return array(null, $status);
+	}
+
+	return array(null, false);
+    }
+
+    /**
+     * Returns the httpd.ini content given a set of rewrite rules
+     *
+     * @param array regular expression rules with settings
+     * @param boolean (optional) true if embedded httpd.ini content is wanted
+     * @return array object GalleryStatus a status code
+     *               string the gallery .htaccess section
+     */
+    function getHttpdiniContent($regexRules, $embedded=false) {
+	GalleryCoreApi::requireOnce('modules/core/classes/GalleryTemplate.class');
+	global $gallery;
+	$urlGenerator =& $gallery->getUrlGenerator();
+
+	$Httpdini = array();
+	$Httpdini['g2Prefix'] = GALLERY_FORM_VARIABLE_PREFIX;
+	$Httpdini['mainPhp'] = GALLERY_MAIN_PHP;
+	$Httpdini['galleryId'] = GALLERY_CONFIG_DIR;
+
+	foreach (array_keys($regexRules) as $ruleId) {
+	    $count = preg_match_all('/\(([^\(\)]+)\)/', $regexRules[$ruleId]['pattern'], $tmp);
+	    $regexRules[$ruleId]['queryStringId'] = $count + 1;
+	    $regexRules[$ruleId]['queryString'] = str_replace('%', '$',
+		$regexRules[$ruleId]['queryString']);
+	}
+	$Httpdini['rules'] = $regexRules;
+
+	list ($ret, $Httpdini['galleryDirectory']) = GalleryCoreApi::getPluginParameter(
+	    'module', 'rewrite', 'isapirewrite.galleryLocation');
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	list ($ret, $Httpdini['allowEmptyReferer']) = GalleryCoreApi::getPluginParameter(
+	    'module', 'rewrite', 'allowEmptyReferer');
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	$Httpdini['rewriteBase'] = $Httpdini['galleryDirectory'];
+	$Httpdini['host'] = preg_quote(GalleryUtilities::getServerVar('SERVER_NAME'));
+	$Httpdini['baseFile'] = GALLERY_MAIN_PHP;
+	if ($embedded) {
+	    $Httpdini['baseFile'] = $urlGenerator->_file[0];
+	    list ($ret, $Httpdini['rewriteBase']) = GalleryCoreApi::getPluginParameter(
+		'module', 'rewrite', 'isapirewrite.embeddedLocation');
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+	}
+	$Httpdini['baseFile'] .= (strpos($Httpdini['baseFile'], '?') === false) ? '?' : '&';
+
+	$template = new GalleryTemplate(dirname(__FILE__) . '/../../../templates');
+	$template->setVariable('Httpdini', $Httpdini);
+	list ($ret, $content) = $template->fetch('Httpdini.tpl', 'modules_rewrite');
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	return array(null, $content);
+    }
+
+    /**
+     * Return the .htaccess absolute file name
+     *
+     * @return array object GalleryStatus a status code
+     *               string .htaccess file name
+     */
+    function getHttpdiniPath() {
+	list ($ret, $path) = GalleryCoreApi::getPluginParameter('module', 'rewrite',
+	    'isapirewrite.httpdini');
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	return array(null, $path . '\httpd.ini');
+    }
+
+    /**
+     * Checks if the httpd.ini file is writeable.
+     *
+     * @return array object GalleryStatus a status code
+     *               int rewrite status code (REWRITE_STATUS_OK on success)
+     */
+    function checkFile() {
+	global $gallery;
+	$platform =& $gallery->getPlatform();
+
+	list ($ret, $file) = IsapiRewriteHelper::getHttpdiniPath();
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+	if ($file == '\httpd.ini') {
+	    return array(null, REWRITE_STATUS_HTTPDINI_MISSING);
+	}
+
+	if ($platform->file_exists($file)) {
+	    if (!$platform->is_readable($file)) {
+		return array(null, REWRITE_STATUS_HTTPDINI_CANT_READ);
+	    }
+
+	    if (!$platform->is_writeable($file)) {
+		return array(null, REWRITE_STATUS_HTTPDINI_CANT_WRITE);
+	    }
+	} else {
+	    return array(null, REWRITE_STATUS_HTTPDINI_MISSING);
+	}
+	return array(null, REWRITE_STATUS_OK);
+    }
+
+    /**
+     * Returns one of the following codes:
+     *   REWRITE_STATUS_OK                              everything is fine
+     *   REWRITE_STATUS_NO_ISAPI_REWRITE                 no isapi rewrite support
+     *
+     * @return array object GalleryStatus a status code
+     *               int rewrite status code (REWRITE_STATUS_OK on success)
+     *               int true rewrite status code (REWRITE_STATUS_OK on success)
+     */
+    function checkIsapiRewrite() {
+	global $gallery;
+	$urlGenerator =& $gallery->getUrlGenerator();
+
+	list ($ret, $forced) = GalleryCoreApi::getPluginParameter('module', 'rewrite',
+	    'isapirewrite.forced');
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null, null);
+	}
+
+	$fetch = $urlGenerator->generateUrl(
+	    array('href' => 'modules/rewrite/data/isapi_rewrite/Rewrite.txt'),
+	    array('forceFullUrl' => true));
+	list ($success, $body) = GalleryCoreAPI::fetchWebPage($fetch);
+
+	if ($success && $body == 'PASS_ISAPI_REWRITE') {
+	    return array(null, REWRITE_STATUS_OK, REWRITE_STATUS_OK);
+	}
+
+	return array(null,
+		     ($forced) ? REWRITE_STATUS_OK : REWRITE_STATUS_NO_ISAPI_REWRITE,
+		     REWRITE_STATUS_NO_ISAPI_REWRITE);
+    }
+
+
+    /**
+     * Writes Gallery2 data to the httpd.ini file.
+     *
+     * @param array regular expression rules with settings
+     * @param boolean (optional) if true then the embedded .htaccess is writed
+     * @return array object GalleryStatus a status code
+     *               int rewrite status code
+     */
+    function writeFile($regexRules) {
+	global $gallery;
+	$platform =& $gallery->getPlatform();
+	$galleryId = preg_quote(GALLERY_CONFIG_DIR, '/');
+
+	list ($ret, $file) = IsapiRewriteHelper::getHttpdiniPath();
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	$htaccess = '#{gallerySection}';
+	if (!empty($regexRules)) {
+	    list ($ret, $htaccess) = IsapiRewriteHelper::getHttpdiniContent($regexRules);
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+
+	    if (GalleryUtilities::isEmbedded()) {
+		list ($ret, $embedded) = IsapiRewriteHelper::getHttpdiniContent($regexRules, true);
+		if ($ret) {
+		    return array($ret->wrap(__FILE__, __LINE__), null);
+		}
+
+		$htaccess .= "\r\n" . $embedded;
+	    }
+	}
+
+	if ($platform->file_exists($file)) {
+	    if (!$platform->is_readable($file)) {
+		return array(null, REWRITE_STATUS_HTTPDINI_CANT_READ);
+	    }
+
+	    $oldHtaccess = implode('', $platform->file($file));
+	    $newHtaccess = preg_replace(
+		'/\# BEGIN Gallery 2 Url Rewrite section \(GalleryID: ' . $galleryId .
+			'\)(.+)\# END Url Rewrite section(\r\n|\n|\r)/s',
+		'#{gallerySection}', $oldHtaccess);
+
+	    if (strpos($newHtaccess, '#{gallerySection}') !== false) {
+		$newHtaccess = str_replace('#{gallerySection}', $htaccess . "\r\n", $newHtaccess);
+	    } else {
+		if (strpos($oldHtaccess, '[ISAPI_Rewrite]') !== false) {
+		    $newHtaccess = str_replace('[ISAPI_Rewrite]', "[ISAPI_Rewrite]\r\n" .
+			$htaccess, $newHtaccess);
+		} else {
+		    $newHtaccess = $newHtaccess . "[ISAPI_Rewrite]\r\n" . $htaccess . "\r\n";
+		}
+	    }
+	} else {
+	    $newHtaccess = "[ISAPI_Rewrite]\r\n" . $htaccess . "\r\n";
+	}
+
+	/* Write the new file */
+	if ($fd = @$platform->fopen($file, 'w')) {
+	    $platform->fwrite($fd, $newHtaccess);
+	    $platform->fclose($fd);
+	} else {
+	    return array(null, REWRITE_STATUS_HTTPDINI_CANT_WRITE);
+	}
+
+	return array(null, REWRITE_STATUS_OK);
+    }
+
+    /**
+     * @see RewriteParser::loadTestResultsTemplate
+     */
+    function loadTestResultsTemplate(&$template, &$form) {
+	global $gallery;
+	$urlGenerator =& $gallery->getUrlGenerator();
+
+	list ($ret, $TestResults['isapiInfo'], $TestResults['trueIsapiInfo']) =
+	    IsapiRewriteHelper::checkIsapiRewrite();
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	list ($ret, $TestResults['httpdini']) = IsapiRewriteHelper::checkFile();
+	if ($ret) {
+    	    return $ret->wrap(__FILE__, __LINE__);
+    	}
+
+	if ($TestResults['isapiInfo'] != REWRITE_STATUS_OK) {
+	    $TestResults['hrefTest'] = $urlGenerator->generateUrl(array(
+		'href' => 'modules/rewrite/data/isapi_rewrite/Rewrite.txt'));
+
+	    list ($ret, $TestResults['contents']) = IsapiRewriteHelper::getHttpdiniContent(array());
+	    if ($ret) {
+    		return $ret->wrap(__FILE__, __LINE__);
+    	    }
+
+	    $TestResults['action'] = 1;
+	}
+
+	if ($TestResults['isapiInfo'] != REWRITE_STATUS_OK ||
+		$TestResults['httpdini'] != REWRITE_STATUS_OK) {
+	    $TestResults['refresh'] = 1;
+	}
+
+	$TestResults['template'] = 'modules/rewrite/templates/IsapiRewriteTestResults.tpl';
+	$template->setVariable('TestResults', $TestResults);
+
+	return null;
+    }
+
+    /**
+     * @see RewriteParser::loadAdminParserTemplate
+     */
+    function loadAdminRewriteTemplate(&$template, &$form) {
+	global $gallery;
+	$urlGenerator =& $gallery->getUrlGenerator();
+	$AdminParser = array();
+
+	if (empty($form['formName'])) {
+	    list ($ret, $form['httpdini']) =
+		GalleryCoreApi::getPluginParameter('module', 'rewrite',
+		    'isapirewrite.httpdini');
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+
+	    if (GalleryUtilities::isEmbedded()) {
+		$AdminParser['isEmbedded'] = 1;
+		$AdminParser['host'] = substr($urlGenerator->makeUrl('/'), 0, -1);
+		list ($ret, $form['embeddedLocation']) =
+		    GalleryCoreApi::getPluginParameter('module', 'rewrite',
+			'isapirewrite.embeddedLocation');
+		if ($ret) {
+		    return $ret->wrap(__FILE__, __LINE__);
+		}
+	    }
+	}
+
+	$AdminParser['action'] = 1;
+	$AdminParser['template'] = 'modules/rewrite/templates/IsapiRewriteAdminParser.tpl';
+
+	$template->setVariable('AdminParser', $AdminParser);
+	return null;
+    }
+
+    /**
+     * @param array config values
+     * @param object IsapiRewriteParser
+     * @param boolean true if we want to write the httpd.ini
+     */
+    function saveEmbedConfig($param, $parser, $saveActiveRules) {
+	$code = REWRITE_STATUS_OK;
+
+	if (empty($param['embeddedLocation'])) {
+	    $code = REWRITE_STATUS_EMPTY_VALUE;
+	}
+
+	if ($code == REWRITE_STATUS_OK) {
+	    $embeddedLocation = '/' . trim($param['embeddedLocation'], '/');
+	    if ($embeddedLocation{strlen($embeddedLocation)-1} != '/') {
+		$embeddedLocation .= '/';
+	    }
+			    
+	    $ret = GalleryCoreApi::setPluginParameter('module', 'rewrite',
+		'isapirewrite.embeddedLocation', $embeddedLocation);
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+
+	    if ($saveActiveRules) {
+		list($ret, $code) = $parser->saveActiveRules();
+		if ($ret) {
+		    return array($ret->wrap(__FILE__, __LINE__), null);
+		}
+	    }
+	}
+
+	return array(null, $code);
+    }
+}
+
+?>

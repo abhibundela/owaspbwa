@@ -1,0 +1,3610 @@
+# $Id: sr.po,v 1.12 2006/03/23 19:59:38 mindless Exp $
+#
+# Gallery - a web based photo album viewer and editor
+# Copyright (C) 2000-2006 Bharat Mediratta
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery: Core 1.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-08-14 16:52+0200\n"
+"PO-Revision-Date: 2005-09-06 17:10+0200\n"
+"Last-Translator: Jozef Selesi <selesi@gmail.com>\n"
+"Language-Team: Srpski <gallery-translations@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: KBabel 1.10\n"
+
+msgid "Gallery Email Test"
+msgstr "Email provera Galerije"
+
+msgid "forever"
+msgstr "zauvek"
+
+msgid "High Priority (Me first!)"
+msgstr ""
+
+msgid "Low Priority (I want to share!)"
+msgstr ""
+
+msgid "No Markup"
+msgstr "Bez označavanja"
+
+msgid "BBCode"
+msgstr "BBCode"
+
+msgid "Raw HTML"
+msgstr "Čist HTML"
+
+msgid "Database"
+msgstr "Baza podataka"
+
+msgid "File"
+msgstr "Datoteka"
+
+#, c-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d minut"
+msgstr[1] "%d minuta"
+
+#, c-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d sat"
+msgstr[1] "%d sati"
+
+#, c-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d dan"
+msgstr[1] "%d dana"
+
+#, c-format
+msgid "%d week"
+msgid_plural "%d weeks"
+msgstr[0] "%d nedelja"
+msgstr[1] "%d nedelje"
+
+msgid "<none>"
+msgstr "<ni jedan>"
+
+msgid "install"
+msgstr "instaliraj"
+
+msgid "upgrade"
+msgstr "nadogradi"
+
+msgid "configure"
+msgstr "konfiguriši"
+
+msgid "activate"
+msgstr "aktiviraj"
+
+msgid "uninstall"
+msgstr "deinstaliraj"
+
+msgid "deactivate"
+msgstr "deaktiviraj"
+
+msgid "No acceleration"
+msgstr ""
+
+msgid "Partial acceleration"
+msgstr ""
+
+msgid "Full acceleration"
+msgstr ""
+
+#, fuzzy
+msgid "Performing Maintenance Tasks"
+msgstr "Održavanje sistema"
+
+#, c-format
+msgid "Downloading %s"
+msgstr ""
+
+#, fuzzy
+msgid "Done."
+msgstr "Završeno"
+
+#, fuzzy
+msgid "Upgrade"
+msgstr "nadogradi"
+
+msgid "Download"
+msgstr ""
+
+msgid "Inherit settings from parent album"
+msgstr "Preuzmi podešavanja iz nadređenog albuma"
+
+msgid "Use these settings"
+msgstr "Koristi ova podešavanja"
+
+#, fuzzy
+msgid "Installing the core module"
+msgstr "Modul sa jezgrom Galerije"
+
+msgid "key"
+msgstr "slovo"
+
+msgid "All access"
+msgstr "Pun pristup"
+
+msgid "[core] View item"
+msgstr "[jezgro] Pregled objekata"
+
+msgid "[core] View resized version(s)"
+msgstr "[jezgro] Pregled verzija sa promenjenom veličinom"
+
+msgid "[core] View original version"
+msgstr "[jezgro] Pregled originalne verzije"
+
+msgid "[core] View all versions"
+msgstr "[jezgro] Pregled svih verzija"
+
+msgid "[core] Add sub-album"
+msgstr "[jezgro] Dodavanje podalbuma"
+
+msgid "[core] Add sub-item"
+msgstr "[jezgro] Dodavanja podobjekta"
+
+msgid "[core] Edit item"
+msgstr "[jezgro] Izmena objekta"
+
+msgid "[core] Change item permissions"
+msgstr "[jezgro] Promena prava objekata"
+
+msgid "[core] Delete item"
+msgstr "[jezgro] Brisanje objekata"
+
+msgid "Upgrading permissions"
+msgstr "Nadogradnja prava"
+
+msgid "Deleting old permission tables"
+msgstr "Brisanje starih tabela sa dozvolama"
+
+msgid "Registered Users"
+msgstr "Prijavljeni korisnici"
+
+msgid "All Users"
+msgstr "Svi korisnici"
+
+msgid "Detecting broken derivatives"
+msgstr "Otkrivanje oštećenih derivata"
+
+msgid "Clearing fast-download cache"
+msgstr "Brisanje fast-download keša"
+
+#, fuzzy
+msgid "Deleting old fast-download cache"
+msgstr "Brisanje fast-download keša"
+
+msgid "Converting MySQL data to UTF8"
+msgstr ""
+
+msgid "Site Admins"
+msgstr "Administratori"
+
+msgid "Everybody"
+msgstr "Svi"
+
+msgid "Guest"
+msgstr "Gosti"
+
+msgid "Gallery"
+msgstr "Galerija"
+
+msgid "This is the main page of your Gallery"
+msgstr "Ovo je glavna strana vaše Galerije"
+
+#, c-format
+msgid "Upgrading permissions (%d items complete, %d remaining)"
+msgstr ""
+
+msgid "Detecting broken derivatives, loading "
+msgstr "Otrivanje oštećenih derivata, učitavanje "
+
+msgid "Detecting broken derivatives "
+msgstr "Otkrivanje oštečenih derivata "
+
+msgid "Detecting broken derivatives, "
+msgstr "Otkrivanje oštećenih derivata, "
+
+msgid "Detecting broken derivatives, saving "
+msgstr "Otkrivanje oštećenih derivata, čuvanje "
+
+#, fuzzy, c-format
+msgid "Deleting old session files (iteration %d)"
+msgstr "Brisanje starih tabela sa dozvolama"
+
+msgid "add items"
+msgstr "dodaj objekat"
+
+msgid "Album created successfully."
+msgstr "Album uspešno napravljen."
+
+msgid "add sub-album"
+msgstr "dodavanje podalbuma"
+
+msgid "add items confirmation"
+msgstr "potvrda prilikom dodavanja objekata"
+
+msgid "Base filename"
+msgstr "Osnovni naziv datoteke"
+
+msgid "Caption"
+msgstr "Natpis"
+
+msgid "Blank"
+msgstr "Prazno"
+
+msgid "From Web Browser"
+msgstr "Iz web čitača"
+
+#, c-format
+msgid "%d megabyte"
+msgid_plural "%d megabytes"
+msgstr[0] "%d megabajt"
+msgstr[1] "%d megabajta"
+
+#, c-format
+msgid "%d kilobytes"
+msgid_plural "%d kilobytes"
+msgstr[0] "%d kilobajt"
+msgstr[1] "%d kilobajta"
+
+msgid "From Local Server"
+msgstr "Sa lokalnog servera"
+
+msgid "Photo"
+msgstr "Fotografija"
+
+msgid "From Web Page"
+msgstr "Sa web stranice"
+
+msgid "Gallery Item Administration"
+msgstr "Administracija objekta Galerije"
+
+msgid "create link"
+msgstr "napravi vezu"
+
+msgid "link an item"
+msgstr "poveži objekat"
+
+msgid "delete an item"
+msgstr "brisanje objekta"
+
+msgid "delete confirmation"
+msgstr "potvrda brisanja"
+
+#, c-format
+msgid "delete %s"
+msgstr "brisanje %s"
+
+#, c-format
+msgid "edit %s"
+msgstr "Izmeni %s"
+
+msgid "Settings saved successfully."
+msgstr "Podešavanja uspešno sačuvana."
+
+msgid "&laquo; default theme &raquo;"
+msgstr "&laquo; podrazumevan izgled &raquo;"
+
+#, fuzzy
+msgid "Recreating resized images"
+msgstr "Ponovo napravi promenjene veličine"
+
+#, fuzzy
+msgid "Rebuilding resized images..."
+msgstr "Ponovo napravi promenjene veličine"
+
+#, fuzzy
+msgid "Rebuilding thumbnails..."
+msgstr "Ponovo napravi umanjene prikaze"
+
+msgid "Album"
+msgstr "Album"
+
+#, c-format
+msgid "Processing image %d of %d"
+msgstr "Obrađivanje %d. slike od %d"
+
+msgid "Changes saved successfully"
+msgstr "Izmene uspešno sačuvane"
+
+msgid "Animation Size"
+msgstr "Veličina animacije"
+
+msgid "edit captions"
+msgstr "izmena natpisa"
+
+msgid "General"
+msgstr "Opšti parametri"
+
+msgid "Movie Size"
+msgstr "Veličina filma"
+
+msgid "Thumbnail cropped successfully"
+msgstr "Umanjen prikaz uspečno isečen"
+
+msgid "Thumbnail reset successfully"
+msgstr "Umanjen prikaz je uspešno vraćen u početno stanje"
+
+msgid "Photo 5x3"
+msgstr "Fotografija 5x3"
+
+msgid "Photo 6x4"
+msgstr "Fotografija 6x4"
+
+msgid "Photo 7x5"
+msgstr "Fotografija 7x5"
+
+msgid "Photo 10x8"
+msgstr "Fotografija 10x8"
+
+msgid "Fullscreen 4x3"
+msgstr "Ceo ekran 4x3"
+
+msgid "Widescreen 16x9"
+msgstr "Širok ekran 16x9"
+
+msgid "CinemaScope 2.35x1"
+msgstr "CinemaScope 2.35x1"
+
+msgid "Square 1x1"
+msgstr "Kvadrat 1x1"
+
+msgid "As Image"
+msgstr "Kao slika"
+
+msgid "Landscape"
+msgstr "Položeno"
+
+msgid "Portrait"
+msgstr "Portret"
+
+msgid "Crop Thumbnail"
+msgstr "Iseci umanjen prikaz"
+
+msgid "Reverted rotate and scale changes successfully"
+msgstr "Uspešno poništeno rotiranje i skaliranje"
+
+msgid "Rotated photo successfully"
+msgstr "Fotografija uspešno rotirana"
+
+msgid "Scaled photo successfully"
+msgstr "Fotografija uspešno skalirana"
+
+msgid "Modify Photo"
+msgstr "Izmeni fotografiju"
+
+msgid "Successfully saved theme settings"
+msgstr "Uspešno sačuvana podešavanja izgleda"
+
+msgid "Theme"
+msgstr "Izgled"
+
+msgid "make highlight"
+msgstr "postavi za naslovnu"
+
+msgid "move item"
+msgstr "premesti objekat"
+
+#, c-format
+msgid "move %s"
+msgstr "premesti %s"
+
+#, c-format
+msgid "edit %s permissions"
+msgstr "izmeni dozvole za %s"
+
+msgid "reorder items"
+msgstr "izmeni poredak"
+
+msgid "Maintenance"
+msgstr "Održavanje"
+
+msgid "Gallery Site Administration"
+msgstr "Administracija Galerije"
+
+msgid "site admin"
+msgstr "administracija"
+
+msgid "Gallery User Administration"
+msgstr "Administracija korisnika Galerije"
+
+msgid "change password"
+msgstr "izmena lozinke"
+
+msgid "your account"
+msgstr "vaš nalog"
+
+msgid "Password Recovery"
+msgstr "Oporavak lozinke"
+
+msgid "Core"
+msgstr "Jezgro"
+
+msgid "Gallery 2 Core Module"
+msgstr "Modul sa jezgrom Galerije 2"
+
+msgid "Add Items"
+msgstr "Dodavanje objekata"
+
+msgid "Edit Album"
+msgstr "Izmena albuma"
+
+msgid "Edit Photo"
+msgstr "Izmena fotografije"
+
+msgid "Edit Movie"
+msgstr "Izmena filma"
+
+msgid "Create Link"
+msgstr "Pravljenje veze"
+
+msgid "Add Album"
+msgstr "Dodavanje albuma"
+
+msgid "Edit Permissions"
+msgstr "Izmena prava"
+
+msgid "View Permissions"
+msgstr "Pregled dozvola"
+
+msgid "Delete Album"
+msgstr "Brisanje albuma"
+
+msgid "Delete Photo"
+msgstr "Brisanje fotografije"
+
+msgid "Delete Movie"
+msgstr "Brisanje filma"
+
+msgid "Move Album"
+msgstr "Premeštanje albuma"
+
+msgid "Move Photo"
+msgstr "Premeštanje fotografije"
+
+msgid "Move Movie"
+msgstr "Premeštanje filma"
+
+msgid "Edit Captions"
+msgstr "Izmena natpisa"
+
+msgid "Make Highlight"
+msgstr "Postavi za naslovnu"
+
+msgid "Reorder Items"
+msgstr "Promena redosleda objekata"
+
+msgid "Site Admin"
+msgstr "Administracija"
+
+msgid "Login"
+msgstr "Prijava"
+
+msgid "Your Account"
+msgstr "Vaš nalog"
+
+msgid "Logout"
+msgstr "Odjava"
+
+msgid "Modules"
+msgstr "Moduli"
+
+msgid "Repository"
+msgstr ""
+
+msgid "Themes"
+msgstr "Izgledi"
+
+msgid "Display"
+msgstr "Prikaz"
+
+msgid "Users"
+msgstr "Korisnici"
+
+msgid "Groups"
+msgstr "Grupe"
+
+msgid "Performance"
+msgstr ""
+
+msgid "Toolkit Priority"
+msgstr "Prioritet alatki"
+
+msgid "Graphics Toolkits"
+msgstr "Grafičke alatke"
+
+msgid "Account Settings"
+msgstr "Parametri naloga"
+
+msgid "Change Password"
+msgstr "Promena lozinke"
+
+msgid "Link Album"
+msgstr "Vezivanje albuma"
+
+msgid "Link Photo"
+msgstr "Vezivanje fotografije"
+
+msgid "Link Movie"
+msgstr "Vezivanje filma"
+
+#, c-format
+msgid "Edit %s"
+msgstr "Izmena %s"
+
+#, c-format
+msgid "Delete %s"
+msgstr "Brisanje %s"
+
+#, c-format
+msgid "Move %s"
+msgstr "Premeštanje %s"
+
+#, c-format
+msgid "Link %s"
+msgstr "Veži %s"
+
+msgid "Build all thumbnails/resizes"
+msgstr "Napravi sve umanjene prikaze i promenjene veličine"
+
+msgid ""
+"Ensure data files for all derivatives (thumbnails, etc) have been built and rebuild broken "
+"ones."
+msgstr ""
+"Proveri da li su napravljene datoteke za sve derivate (umanjene prikaze i sl.) i popravi "
+"oštećene."
+
+msgid "Build All Thumbnails/Resizes"
+msgstr "Napravi sve umanjene prikaze i promenjene veličine"
+
+msgid "Debug output for failed items:"
+msgstr "Izlat za otklanjanje grešaka za objekte sa greškom"
+
+#, c-format
+msgid "Checked %d items"
+msgstr "Provereno %d objekata"
+
+#, c-format
+msgid "%d items built"
+msgstr "%d objekata napravljeno"
+
+#, c-format
+msgid "%d items failed"
+msgstr "%d objekata sa greškom"
+
+#, fuzzy
+msgid "Delete user sessions"
+msgstr "Dozvole sistema datoteka"
+
+msgid ""
+"Delete all persistent user sessions according to your current session expiration settings."
+msgstr ""
+
+msgid "Delete database cache"
+msgstr "Izbriši keš baze podataka"
+
+#, fuzzy
+msgid ""
+"Gallery stores commonly used database information on disk for increased performance. If you "
+"modify the database directly, you should run this task to clean out the cache and force "
+"Gallery to reload the information from the database."
+msgstr ""
+"Galerija radi boljih performansi na disku čuva često korišćene informacije iz baze podataka. "
+"Ako direktno menjate bazu, treba da pokrenete ovaj zadatak da bi se obrisao keš i naterala "
+"Galerija da ponovo učita podatke iz baze."
+
+#, c-format
+msgid "Successfully deleted directory: %s"
+msgstr "Uspešno obrisan direktorijum: %s"
+
+#, c-format
+msgid "Unable to delete directory: %s"
+msgstr "Direktorijum nije moguće obrisati: %s"
+
+msgid "Delete template cache"
+msgstr "Prisanje keša šablona"
+
+msgid ""
+"Gallery compiles template files and saves them for increased performance.  If you're "
+"experiencing problems that say <i>Smarty error</i> then you might try running this task.  "
+"Also run this if you remove a local/*.tpl file so Smarty will switch back to the default tpl "
+"file."
+msgstr ""
+"Galerija prevodi i čuva šablonske datoteke radi boljih performansi. Ako se javljaju problemi "
+"sa porukom <i>Smarty error</i>, pokušajte da pokrenete ovaj zadatak. Takođe ga pokrenite ako "
+"uklonite .tpl datoteku iz local/ direktorijuma, da bi Smarty ponovo koristio podrazumevanu ."
+"tpl datoteku."
+
+msgid "Template cache deleted successfully"
+msgstr "Šablonski keš uspešno ispražnjen"
+
+msgid "album"
+msgstr "album"
+
+msgid "Animation"
+msgstr "Animacija"
+
+msgid "animation"
+msgstr "animacija"
+
+msgid "Gallery Core"
+msgstr "Jezgro Galerije"
+
+msgid "Gallery Core Module"
+msgstr "Modul sa jezgrom Galerije"
+
+msgid "Search descriptions"
+msgstr "Pretraga opisa"
+
+msgid "Search keywords"
+msgstr "Pretraga ključnih reči"
+
+msgid "Search summaries"
+msgstr "Pretraga sažetaka"
+
+msgid "Search titles"
+msgstr "Pretraga naslova"
+
+msgid "Description"
+msgstr "Opis"
+
+msgid "Keywords"
+msgstr "Ključne reči"
+
+msgid "Summary"
+msgstr "Sažetak"
+
+msgid "Title"
+msgstr "Naslov"
+
+msgid "Owner"
+msgstr "Vlasnik"
+
+msgid "Group"
+msgstr "Grupa"
+
+msgid "group"
+msgstr "grupa"
+
+msgid "Other"
+msgstr "Drugo"
+
+msgid "Movie"
+msgstr "Film"
+
+msgid "movie"
+msgstr "film"
+
+msgid "photo"
+msgstr "fotografija"
+
+#, fuzzy
+msgid "download"
+msgstr "dole"
+
+#, fuzzy
+msgid "Plugins directory does not exist."
+msgstr "Korisnik '%s' ne postoji."
+
+msgid ""
+"Couldn't create plugins subdirectory. Make sure the webserver has write permissions in it."
+msgstr ""
+
+msgid "Couldn't create repository cache path."
+msgstr ""
+
+msgid ""
+"Couldn't create cache subdirectory. Make sure the web server has write permissions in it."
+msgstr ""
+
+#, c-format
+msgid "Error downloading index from '%s'."
+msgstr ""
+
+#, c-format
+msgid "Error downloading index hash from '%s'."
+msgstr ""
+
+msgid "Index integrity check failed."
+msgstr ""
+
+msgid "&laquo; default sort order &raquo;"
+msgstr "&laquo; podrazumevan redosled sortiranja &raquo;"
+
+msgid "Manual sort order"
+msgstr "Ručni redosled sortiranja"
+
+msgid "Origination Date"
+msgstr "Datum slikanja"
+
+msgid "Creation Date"
+msgstr "Datum pravljenja"
+
+msgid "Last Changed Date"
+msgstr "Datum poslednje izmene"
+
+msgid "Name"
+msgstr "Naziv"
+
+msgid "View Count"
+msgstr "Broj pregleda"
+
+msgid "Random"
+msgstr "Slučajno"
+
+msgid "&laquo; no presort &raquo;"
+msgstr "&laquo; bez sortiranja &raquo;"
+
+msgid "Albums First"
+msgstr "Prvo albumi"
+
+msgid "Most Viewed First"
+msgstr "Prvo najgledaniji"
+
+msgid "Ascending"
+msgstr "Rastući"
+
+msgid "Descending"
+msgstr "Opadajući"
+
+msgid "Validation disabled until you set allowSessionAccess in config.php"
+msgstr "Provera ispravnosti je onemogućena dok ne podesite allowSessionAccess u config.php"
+
+msgid "This page is valid XHTML 1.0"
+msgstr "Ova stranica je ispravna XHTML 1.0"
+
+msgid "Donate to the Gallery project"
+msgstr "Donirajte projektu Galerija"
+
+msgid "G2.1: Blackjack"
+msgstr "G2.1: Blackjack"
+
+#, c-format
+msgid "Estimated time remaining: %d:%02d"
+msgstr "Procenjeno vreme završetka: %d:%d02d"
+
+#, c-format
+msgid "Memory used: %s, total: %s"
+msgstr "Utrošeno memorije: %s, ukupno: %s"
+
+msgid "Rows per album page"
+msgstr "Redova po stranici albuma"
+
+msgid "Columns per album page"
+msgstr "Kolona po stranici albuma"
+
+msgid "Number of items to show per page"
+msgstr "Broj objekata za prikaz po stranici"
+
+msgid "Row height (pixels)"
+msgstr ""
+
+msgid "Column width (pixels)"
+msgstr ""
+
+msgid "Show image owners"
+msgstr "Prikaz vlasnika slike"
+
+msgid "Show album owners"
+msgstr "Prikaz vlasnika albuma"
+
+msgid "Show micro navigation thumbnails"
+msgstr "Prikaz navigacionih sličica"
+
+msgid "Blocks to show in the sidebar"
+msgstr "Blokovi za prikaz u izdvojenom oknu"
+
+msgid "Blocks to show on album pages"
+msgstr "Blokovi za prikaz na stranicama albuma"
+
+msgid "Blocks to show on photo pages"
+msgstr "Blokovi za prikaz na stranicama fotografija"
+
+msgid "View Samples"
+msgstr "Pregled primera"
+
+msgid "Album Frame"
+msgstr "Okvir albuma"
+
+msgid "Item Frame"
+msgstr "Ovir objekta"
+
+msgid "Photo Frame"
+msgstr "Okvir fotografije"
+
+msgid "Color Pack"
+msgstr "Paket boja"
+
+msgid "You must enter a number greater than 0"
+msgstr "Morate uneti cifru veću od nule"
+
+msgid "Format: [module.BlockName param=value] ..."
+msgstr "Format: [module.BlockName param=value] ..."
+
+#, c-format
+msgid "%dx%d"
+msgstr "%dx%d"
+
+msgid "Audio"
+msgstr "Audio"
+
+msgid "audio"
+msgstr "audio"
+
+msgid "Archive"
+msgstr "Arhiva"
+
+msgid "archive"
+msgstr "arhiva"
+
+msgid "Document"
+msgstr "Dokument"
+
+msgid "document"
+msgstr "dokument"
+
+msgid "Spreadsheet"
+msgstr "Proračunska tabela"
+
+msgid "spreadsheet"
+msgstr "proračunska tabela"
+
+msgid "Unknown"
+msgstr "Nepoznato"
+
+msgid "unknown"
+msgstr "nepoznato"
+
+#, c-format
+msgid ""
+"Invalid return URL! The requested URL %s tried to insert a redirection to %s which is not a "
+"part of this Gallery."
+msgstr ""
+
+msgid "Back"
+msgstr "Nazad"
+
+#, c-format
+msgid "Back to %s"
+msgstr "Povratak na %s"
+
+msgid "User"
+msgstr "Korisnik"
+
+msgid "user"
+msgstr "korisnik"
+
+msgid "Optimize database"
+msgstr "Optimizacija baze podataka"
+
+msgid ""
+"Improve the performance of your database.  Results will vary depending on which database "
+"you're using, but this routine maintenance will make your Gallery run faster.  Especially "
+"useful after adding or deleting many items."
+msgstr ""
+"Poboljšajte performanse vaše baze podataka. Rezultati će varirati u zavisnosti od toga koju "
+"bazu podataka koristite, ali će ovaj proces za održavanje ubrzati vašu Galeriju. Naročito je "
+"korisno posle dodavanja ili brisanja velikog broja objekata."
+
+msgid "Database optimized successfully"
+msgstr "Baza podatak uspešno optimizovana"
+
+msgid "Reset view counts"
+msgstr "Anuliranje broja pregleda"
+
+msgid ""
+"Reset number of views to zero for all albums and items.  This task flushes the database "
+"cache as well."
+msgstr ""
+"Anulira broj pregleda svih albuma i objekata. Ovaj zadatak će isprazniti i keš baze podataka."
+
+msgid "View counts reset successfully"
+msgstr "Proj pregleda uspešno anuliran."
+
+msgid "Refresh capture dates"
+msgstr "Osvežavanje datuma slikanja"
+
+msgid ""
+"Update capture date stored in Gallery for all items with an available date in the original "
+"data file (usually from EXIF data)."
+msgstr ""
+"Ažurira datum slikanja svih objekata u Galeriji sa datumom slikanja iz originalne datoteke "
+"(obično iz EXIF podataka)."
+
+msgid "Processing..."
+msgstr "Obrada..."
+
+msgid "Refresh Capture Dates"
+msgstr "Osvežavanje datuma slikanja"
+
+#, c-format
+msgid "Processing item %d of %d"
+msgstr "Obrada %d. objekta od %d"
+
+#, c-format
+msgid "Updated %d of %d items"
+msgstr "Ažurirano %d od %d objekata"
+
+msgid "System information"
+msgstr "Informacije o sistemu"
+
+msgid "Get system details; useful for copy/paste into G2 support forum."
+msgstr "Prikaz detalja o sistemu; korisno za kopiranje i lepljenje u G2 forum za podršku."
+
+msgid "core"
+msgstr "jezgro"
+
+msgid "Gallery version"
+msgstr "Verzija Galerije"
+
+msgid "PHP version"
+msgstr "Verzija PHP-a"
+
+msgid "Webserver"
+msgstr "Webserver"
+
+msgid "Toolkits"
+msgstr "Alatke"
+
+#, fuzzy
+msgid "Acceleration"
+msgstr "Akcija"
+
+msgid "Operating system"
+msgstr "Operativni sistem"
+
+msgid "Default theme"
+msgstr "Podrazumevan izgled"
+
+#, fuzzy
+msgid "Locale"
+msgstr "Skaliranje"
+
+msgid "Browser"
+msgstr "Čitač"
+
+msgid "General Settings"
+msgstr "Opšti parametri"
+
+msgid "Settings saved successfully"
+msgstr "Parametri uspešno sačuvani"
+
+msgid "Added local upload directory successfully"
+msgstr "Direktorijum za lokalno slanje uspešno dodat"
+
+msgid "Removed local upload directory successfully"
+msgstr "Uspešno uklonjen lokalni direktorijum za slanje"
+
+msgid "Test email sent successfully"
+msgstr "Testni email uspešno poslat"
+
+msgid "There was a problem processing your request, see below for details."
+msgstr "Došlo je do problema prilikom obrade vašeg zahteva, pogledajte detalje ispod."
+
+msgid "Error sending test email, see below for details."
+msgstr "Greška prilikom slanja testnog emaila, pogledajte detalje ispod."
+
+msgid "Language Settings"
+msgstr "Jezički parametri"
+
+#, fuzzy
+msgid ""
+"Select language defaults for Gallery. Individual users can override this setting in their "
+"personal preferences or via the language selector block if available. Gallery will try to "
+"automatically detect the language preference of each user if the browser preference check is "
+"enabled."
+msgstr ""
+"Izaberite podrazumevan jezik za Galeriju. Korisnici mogu pojedinačno da izmene ovaj "
+"parametar u svojim ličnim parametrima ili preko bloka za biranje jezika ako je dostupan."
+
+msgid "Default language"
+msgstr "Podrazumevan jezik"
+
+msgid "Check Browser Preference"
+msgstr ""
+
+msgid "gettext"
+msgstr "gettext"
+
+#, c-format
+msgid ""
+"Your webserver does not support localization.  Please instruct your system administrator to "
+"reconfigure PHP with the %s option enabled."
+msgstr ""
+"Vaš web server ne podržava lokalizaciju. Prenesite vašem administratoru sistema da "
+"rekonfiguriše PHP sa uključenom %s opcijom."
+
+msgid "Date Formats"
+msgstr "Datumski formati"
+
+#, c-format
+msgid ""
+"Specify how dates and times are displayed by Gallery.  See %sphp.net%s for details of how to "
+"enter a format string.  Note that the display of some tokens varies according to the active "
+"language."
+msgstr ""
+"Navedite kako će Galerija da prikazuje datume i vremena. Pogledajte na %sphp.net%s detalje u "
+"vezi sa načinom unosa niza znakova za formatiranje. Obratite pažnju na to da prikaz nekih "
+"simbola varira u zavisnosti od aktivnog jezika."
+
+msgid "Style"
+msgstr "Stil"
+
+msgid "Format"
+msgstr "Format"
+
+msgid "Sample"
+msgstr "Primer"
+
+msgid "Date"
+msgstr "Datum"
+
+msgid "Time"
+msgstr "Vreme"
+
+msgid "Date/Time"
+msgstr "Datum/Vreme"
+
+msgid "Filesystem Permissions"
+msgstr "Dozvole sistema datoteka"
+
+msgid ""
+"Specify the default permissions for files and directories that Gallery creates. This doesn't "
+"apply to files/directories that Gallery has already created."
+msgstr ""
+"Navedite podrazumevane dozvole za datoteke i direktorijume koje Galerija pravi. Ovo se ne "
+"odnosi na postojeće fajlove i direktorijume."
+
+msgid "New directories"
+msgstr "Novi direktorijumi"
+
+msgid "New files"
+msgstr "Nove datoteke"
+
+msgid "Local Server Upload Paths"
+msgstr "Putanje za slanje sa lokalnog servera"
+
+msgid ""
+"Specify the legal directories on the local server where a user can store files and then "
+"upload them into Gallery using the <i>Upload from Local Server</i> feature.  The paths you "
+"enter here and all the files and directories under those paths will be available to any "
+"Gallery user who has upload privileges, so you should limit this to directories that won't "
+"contain sensitive data (eg. /tmp or /usr/ftp/incoming)"
+msgstr ""
+"Navedite dozvoljene direktorijuma na lokalnom serveru gde korisnik može da skladišti "
+"datoteke i posle ih prenese u Galeriju koristeći mogućnost <i>Prenosa sa lokalnog servera</"
+"i>. Putanje koje unesete ovde, kao i sve datoteke i direktorijume pod tim putanjama biće "
+"dostupne svakom korisniku Galerije koji ima dozvolu za slanje, tako da bi trebalo ovo da "
+"ograničite na direktorijume koji neće sadržati poverljive podatke (npr. /tmp ili /usr/ftp/"
+"incoming)."
+
+msgid "Path"
+msgstr "Putanja"
+
+msgid "Action"
+msgstr "Akcija"
+
+msgid "remove"
+msgstr "ukloni"
+
+msgid "Add"
+msgstr "Dodaj"
+
+msgid "You must enter a directory to add."
+msgstr "Morate uneti direktorijum koji će biti dodat."
+
+msgid "open_basedir documentation"
+msgstr "dokumentacija open_basedir"
+
+#, c-format
+msgid ""
+"Your webserver is configured to prevent you from accessing that directory.  Please refer to "
+"the %s and consult your webserver administrator."
+msgstr ""
+"Vaš webserver je konfigurisan da vas spreči da pristupite tom direktorijumu. Uputite se na %"
+"s i konsultujte se sa administratorom vašeg web servera."
+
+msgid "The webserver does not have permissions to read that directory."
+msgstr "Web server nema dozvolu za čitanje tog direktorijuma."
+
+msgid "The path you specified is not a valid directory."
+msgstr "Putanja koju ste naveli nije ispravna."
+
+msgid "Session Settings"
+msgstr "Parametri sesije"
+
+msgid "Session Lifetime"
+msgstr "Životni vek sesije"
+
+msgid "Inactivity Timeout"
+msgstr "Vreme neaktivnosti"
+
+msgid "Embedded Markup"
+msgstr "Ugrađeno označavanje"
+
+msgid ""
+"What kind of markup should we allow in user-entered fields?  For security reasons we do not "
+"recommend that you allow raw HTML.  BBCode is a special kind of markup that is secure and "
+"allows for simple text formatting like bold, italics, lists, images and urls."
+msgstr ""
+"Kakvu vrstu označavanja treba da dozvolimo u korisnički unetim poljima? Iz sigurnosnih "
+"razloga vam ne preporučujemo da dozvolite čist HTML. BBCode je posebna vrsta označavanja "
+"koja je bezbedna i omogućava osnovna formatiranja kao što su podebljanje, kurziv, liste, "
+"slike i URL-ovi."
+
+msgid "Markup"
+msgstr "Označavanje"
+
+msgid "Email"
+msgstr "Email"
+
+msgid ""
+"By default Gallery uses PHP's built in mail function to send email which requires no "
+"configuration.  To use a smtp/mail server enter the information below, including "
+"authentication information if required.  Optionally add :port after the server name to use a "
+"non-default port."
+msgstr ""
+"Podrazumevano je da Galerija koristi funkciju za slanje elektronske pošte koja je ugrađena u "
+"PHP i nije joj potrebno podešavanje. Da biste koristili smtp/mail server, unesite sledeće "
+"informacije, uključujući i informacije o proveri identiteta. Možete dodati i :port posle "
+"naziva servera da bi se koristio nepodrazumeni port."
+
+msgid "Server"
+msgstr "Server"
+
+msgid "Username"
+msgstr "Korisničko ime"
+
+msgid "Password"
+msgstr "Lozinka"
+
+msgid "SMTP From Address"
+msgstr "SMTP From adresa"
+
+msgid "Invalid email address"
+msgstr "Neispravna email adresa"
+
+msgid ""
+"Send a test email to verify your settings are correct (whether using PHP mail or SMTP "
+"settings above).  Below enter a recipient email address for a test message."
+msgstr ""
+"Slanje testnog email-a za proveru ispravnosti unetih parametara (bez obrira na to da li se "
+"koristi PHP pošta ili uneti SMTP parametri). Ispod unesite adresu primaoca testne email "
+"poruke."
+
+msgid "Send Email"
+msgstr "Pošalji email"
+
+msgid "Email Test Error"
+msgstr "Test email greška"
+
+msgid "Cookies"
+msgstr "Kolačići"
+
+msgid ""
+"When Gallery is embedded in another application (portal, CMS, forum, etc.), then you have "
+"the choice between two options. Everyone else does not have to care about the cookie "
+"settings. Read on for more details."
+msgstr ""
+"Kada je Galerija ugrađena u drugu aplikaciju (portal, CMS, forum, itd.), morate se odlučiti "
+"između dve mogućnosti. Niko drugi ne mora da brine o podešavanjima kolačića. Čitajte dalje "
+"za više detalja."
+
+msgid ""
+"If your Gallery is embedded and you leave the following fields empty, then all DownloadItem "
+"links (the URLs of the images and other items) in the embedded Gallery have <b>an appended "
+"GALLERYSID string</b> in the URL which is <b>a minor security risk</b> when your Gallery "
+"users start copy'n'pasting image URLs in forums, guestbooks, etc. The alternative is to set "
+"the <b>cookie path</b>. Gallery will then <b>not append the GALLERYSID to the embedded "
+"DownloadItem URLs</b>. E.g. when Gallery is reachable at http://www.example.com/application/"
+"gallery2/ and the embedding application is at http://www.example.com/application/, then you "
+"have to compare the path /application/gallery2/ with /application/. The cookie path is the "
+"part of the paths that is equal, in this case it is '/application/'. Most often it is just "
+"'/'."
+msgstr ""
+"Ako je vaša Galerija ugrađena i sledeća polja ostavite prazna, sve DownloadItem veze (adrese "
+"slika i drugih objekata) u ugrađenoj Galeriji imaće <b>dodat GALLERYSID znakovni niz</b> u "
+"adresu, što predstavlja <b>mali bezbednosni rizik</b> kada korisnici vaše Galerije počnu da "
+"kopiraju i lepe adrese slika u forume, knjige gostiju i sl. Alternativa je da se podesi "
+"<b>putanja kolačića</b>. Galerija tada <b>neće dodavati GALLERYSID u adrese ugrađenih "
+"DownloadItem veza</b>. Npr. kada je adresa Galerije http://www.primer.com/aplikacija/"
+"galerija2/, a spoljna aplikacija je na http://www.primer.com/aplikacija/, tada morate "
+"uporediti putanju /aplikacija/galerija2/ sa /aplikacija/. Puanja kolačića je deo putanja "
+"koje su jednake, u ovom slučaju to je /aplikacija/. Najčešće je samo '/'."
+
+msgid ""
+"The <b>cookie domain</b> is also only needed for embedded Gallery installs and only if you "
+"want to get rid of the GALLERYSID string in the embedded DownloadItem URLs. <b>In most "
+"cases, the cookie domain can be left blank.</b> Set it only, if Gallery and the embedding "
+"application are only reachable with <b>different subdomains</b>. E.g. when Gallery is at "
+"http://photos.example.com/ and the application is at http://www.example.com/, then you have "
+"to set the cookie domain example.com (the part of the host string that is common to both, "
+"Gallery and the embedding application)."
+msgstr ""
+"<b>Domen kolačića</b> je takođe neophodan samo za ugrađene galerije i to samo ako ne želite "
+"da imate GALLERYSID znakovni niz u ugrađenim DownloadItem adresama. </b>Najčešće, domen "
+"kolačića može da bude ostavljen prazan.</b> Podesite ga samo ako su Galerija i spoljna "
+"aplikacija dostupne pod <b>različitim poddomenima</b>. Npr. kada je Galerija na http://"
+"fotografije.primer.com/, a aplikacija je na http://www.primer.com/, tada morate podesiti "
+"domen kolačića na primer.com (deo matičnog niza znakova koji je zajednički za obe, i "
+"Galeriju i spoljašnju aplikaciju."
+
+msgid ""
+"Once you change the cookie settings, <b>all registered users</b> of your Gallery will "
+"<b>have to clear their browser cookie cache</b>. If they do not, they will experience "
+"login / logout / lost session problems."
+msgstr ""
+"Kada promenite parametre kolačića, <b>svi registrovani korisnici</b> vaše Galerije će morati "
+"da <b>isprazne keš kolačića svojih čitača</b>. Ako to ne urade, imaće problema sa prijavom, "
+"odjavom ili izgubljenim sesijama."
+
+msgid "Invalid cookie path"
+msgstr "Neispravna putanja kolačića"
+
+msgid "Domain"
+msgstr "Domen"
+
+msgid "Invalid cookie domain"
+msgstr "Neispravan domen kolačića"
+
+msgid "Locking System"
+msgstr "Sistem zaključavanja"
+
+msgid ""
+"Gallery uses a system of locks to prevent simultaneous changes from interfering with each "
+"other.  There are two types of locking, each with its advantages and disadvantages.  "
+"<b>File</b> based locking is fast and efficient, but won't work on NFS filesystems and will "
+"be unreliable on Windows.  <b>Database</b> locking is slower but is more reliable.  If you "
+"are unsure which to choose, we recommend using file locking.  If you're getting many lock "
+"timeouts, you can try switching to database locking instead.  It's ok to switch back and "
+"forth."
+msgstr ""
+"Galerija koristi sistem zaključavanja da spreči probleme prilikom istovremenih izmena. "
+"Postoje dve vrste zaključavanja, a svaka ima svoje prednosti i mane. <b>Datotečno</b> "
+"zaključavanje je brzo i efikasno, ali neće funkcionisati na NFS sistemima datoteka i neće "
+"biti pouzdano na Windows-u. Zaključavanje pomoću <b>baze podataka</b> je sporije, ali "
+"pouzdanije. Ako niste sigurno koji da izaberete, preporučujemo datotečno zaključavanje. Ako "
+"dobijate mnogo grešaka sa isticanjem zaključavanja, možete pokušati da pređete na "
+"zaključavanje pomoću baze podataka. Slobodno možete menjati sistem."
+
+msgid "Lock system"
+msgstr "Sistem zaključavanja"
+
+msgid "Helper Processes"
+msgstr ""
+
+msgid ""
+"Some Gallery modules will use programs on your server to do image processing, archiving and "
+"other operations.  These programs can be very computationally intensive and can impact the "
+"overall performance of a shared web server.  You can make these programs run at a lower "
+"priority so that they play nice.  If you're in a shared hosting environment and your web "
+"host is complaining, try setting your priority low."
+msgstr ""
+
+#, fuzzy
+msgid "Priority"
+msgstr "Prioritet alatki"
+
+msgid "Save"
+msgstr "Sačuvaj"
+
+msgid "Reset"
+msgstr "Poništi"
+
+msgid "Create A New Group"
+msgstr "Pravljenje nove grupe"
+
+msgid "Group Name"
+msgstr "Naziv grupe"
+
+msgid "(required)"
+msgstr "(obavezno)"
+
+msgid "You must enter a group name"
+msgstr "Morate uneti naziv grupe"
+
+#, c-format
+msgid "Group '%s' already exists"
+msgstr "Grupa '%s' već postoji."
+
+msgid "Create Group"
+msgstr "Napravi grupu"
+
+msgid "Cancel"
+msgstr "Otkaži"
+
+msgid "Create A New User"
+msgstr "Pravljenje novog korisnika"
+
+msgid "You must enter a username"
+msgstr "Morate uneti korisničko ime"
+
+#, c-format
+msgid "Username '%s' already exists"
+msgstr "Korisničko ime '%s' već postoji"
+
+msgid "Full Name"
+msgstr "Puno ime"
+
+msgid "Email Address"
+msgstr "Email adresa"
+
+msgid "You must enter an email address"
+msgstr "Morate uneti email adresu"
+
+msgid "Language"
+msgstr "Jezik"
+
+msgid "You must enter a password"
+msgstr "Morate uneti lozinku"
+
+msgid "Verify Password"
+msgstr "Potvrda lozinke"
+
+msgid "You must enter the password a second time"
+msgstr "Morete ponovo uneti lozinku"
+
+msgid "The passwords you entered did not match"
+msgstr "Lozinke koje ste uneli se ne poklapaju"
+
+msgid "Create User"
+msgstr "Napravi korisnika"
+
+msgid "Delete A Group"
+msgstr "Brisanje grupe"
+
+msgid "Are you sure?"
+msgstr "Da li ste sigurni?"
+
+#, c-format
+msgid "This will completely remove %s from Gallery.  There is no undo!"
+msgstr "Ovim ćete potpuno ukloniti %s iz Galerije. Ne može se poništiti!"
+
+msgid "Delete"
+msgstr "Izbriši"
+
+msgid "Delete a User"
+msgstr "Brisanje korisnika"
+
+#, c-format
+msgid "User %s is the owner of %s items."
+msgstr "Korinik %s je vlasnik %s objekata."
+
+#, c-format
+msgid "Delete user <strong>%s</strong> and..."
+msgstr "Brisanje korisnika <strong>%s</strong> i..."
+
+#, c-format
+msgid "Assign a new owner for all items of %s"
+msgstr "Postavljanje novog vlasnika za sve objekte u %s"
+
+#, fuzzy, c-format
+msgid ""
+"Delete all items of %s and assign a new owner for all remaining non empty albums. Items that "
+"%s doesn't have permission to delete will also be reassigned to a new owner."
+msgstr ""
+"Brisanje svih objekata u %s i postavljanje novog vlasnika svih ostalih nepraznih albuma"
+
+msgid "New owner (leaving blank means one of the Site Admins):"
+msgstr "Novi vlasnik (prazno podrazumeva jednog od administratora):"
+
+#, c-format
+msgid "User '%s' does not exist! Cannot assign items to a nonexistent user."
+msgstr "Korisnik '%s' ne postoji! Ne može se postaviti nepostojeći korisnik za vlasnika."
+
+msgid "The new owner must be a different user than the user we are deleting!"
+msgstr "Novi vlasnik ne sme biti isti korisnik kojeg brišemo!"
+
+msgid "The new owner cannot be a Guest / Anonymous user!"
+msgstr "Novi korisnik ne može biti Gost ili Anonimni korisnik!"
+
+#, c-format
+msgid "This will completely remove <strong>%s</strong> from Gallery.  There is no undo!"
+msgstr "Ovim će se potpuno ukoniti <strong>%s</strong> iz Galerije. Ne može se poništiti!"
+
+msgid "Edit a group"
+msgstr "Izmena grupe"
+
+#, c-format
+msgid "Edit Members of Group '%s'"
+msgstr "Izmena članova grupe '%s'"
+
+#, c-format
+msgid "Added user '%s' to group '%s'"
+msgstr "Korisnik '%s' dodat u grupu '%s'"
+
+#, c-format
+msgid "Removed user '%s' from group '%s'"
+msgid_plural "Removed %s users from group '%s'"
+msgstr[0] "Korisnik '%s' uklonjen iz grupe '%s'"
+msgstr[1] "Uklonjeno %s korisnika iz grupe '%s'"
+
+#, c-format
+msgid "This group contains %d user"
+msgid_plural "This group contains %d users"
+msgstr[0] "Ova grupa sadrži %d korisnika"
+msgstr[1] "Ova grupa sadrži %d korisnika"
+
+msgid "Members"
+msgstr "Članovi"
+
+msgid "&laquo; first"
+msgstr "&laquo; prva"
+
+msgid "&laquo; back"
+msgstr "&laquo; povratak"
+
+#, c-format
+msgid "Viewing page %d of %d"
+msgstr "Prikaz %d. strane od %d"
+
+msgid "next &raquo;"
+msgstr "sledeća &raquo;"
+
+msgid "last &raquo;"
+msgstr "poslednja &raquo;"
+
+msgid "Filter"
+msgstr "Filter"
+
+msgid "Clear"
+msgstr "Poništi?"
+
+#, c-format
+msgid "%d user matches your filter"
+msgid_plural "%d users match your filter"
+msgstr[0] "%d korisnik odgovara vašem filteru"
+msgstr[1] "%d korisnika odgovara vašem filteru"
+
+msgid "Remove selected"
+msgstr "Ukloni izabrane"
+
+msgid "You must select a user to remove."
+msgstr "Morate odabrati korisnika koji će biti uklonjen."
+
+msgid "You can't remove yourself from this group."
+msgstr "Ne možete ukloniti sebe iz ove grupe."
+
+msgid "Add Member"
+msgstr "Dodaj člana"
+
+msgid "You must enter a username."
+msgstr "Morate uneti korisničko ime."
+
+#, c-format
+msgid "User '%s' does not exist."
+msgstr "Korisnik '%s' ne postoji."
+
+msgid "This user already is in this group."
+msgstr "Ovaj korisnik se već nalazi u ovoj grupi."
+
+msgid "Done"
+msgstr "Završeno"
+
+msgid "Edit a user"
+msgstr "Ažuriranje korisnika"
+
+msgid "That username is already in use"
+msgstr "To korisničko ime je već upotrebljeno"
+
+msgid "You must enter a new username"
+msgstr "Morate uneti novo korisničko ime"
+
+msgid "E-mail Address"
+msgstr "Email adresa"
+
+msgid "(suggested)"
+msgstr "(predloženo)"
+
+msgid "Group Management"
+msgstr "Upravljanje grupama"
+
+#, c-format
+msgid "Removed group '%s'"
+msgstr "Uklonjena groupa '%s'"
+
+#, c-format
+msgid "Created group '%s'"
+msgstr "Napravljena grupa '%s'"
+
+#, c-format
+msgid "Modified group '%s'"
+msgstr "Izmenjena grupa '%s'"
+
+#, c-format
+msgid "There is %d group in the system."
+msgid_plural "There are %d total groups in the system."
+msgstr[0] "U sistemu postoji %d grupa."
+msgstr[1] "U sistemu postoji %d grupa."
+
+msgid "Edit Group"
+msgstr "Izmeni grupu"
+
+msgid "Edit"
+msgstr "Izmeni"
+
+msgid "Add/Remove Users"
+msgstr "Dodavanje/uklanjanje korisnika"
+
+#, c-format
+msgid "Group '%s' does not exist."
+msgstr "Grupa '%s' ne postoji."
+
+msgid "You cannot delete that group"
+msgstr "Ne možete izbrisati tu grupu"
+
+msgid "You cannot edit that group's users"
+msgstr "Ne možete ažurirati korisnike te grupe"
+
+msgid "Edit Group (by list)"
+msgstr "Izmena groupe (po spisku)"
+
+msgid "edit"
+msgstr "izmeni"
+
+msgid "delete"
+msgstr "izbriši"
+
+msgid "members"
+msgstr "članovi"
+
+#, c-format
+msgid "%d group matches your filter"
+msgid_plural "%d groups match your filter"
+msgstr[0] "%d grupa odgovara vašem filteru"
+msgstr[1] "%d grupa odgovara vašem filteru"
+
+msgid "System Maintenance"
+msgstr "Održavanje sistema"
+
+#, c-format
+msgid "Completed %s task successfully."
+msgstr "Zadatak %s uspešno završen."
+
+#, c-format
+msgid "The %s task failed to complete successfully."
+msgstr "Zadatak %s se neuspešno završio."
+
+msgid "Task name"
+msgstr "Naziv zadatka"
+
+msgid "Last run"
+msgstr "Poslednji put izvršen"
+
+msgid "Success/Fail"
+msgstr "Uspešno/Neuspešno"
+
+msgid "Not run yet"
+msgstr "Još nije izvršen"
+
+msgid "Success"
+msgstr "Uspešno"
+
+msgid "Failed"
+msgstr "Neuspešno"
+
+msgid "run now"
+msgstr "izvrši sada"
+
+msgid "Last Run Details:"
+msgstr "Detalji o poslednjem izvršavanju:"
+
+msgid "Gallery Modules"
+msgstr "Moduli Galerije"
+
+#, c-format
+msgid "Successfully installed and auto-configured module %s"
+msgstr "Modul %s uspešno instaliran i automatski konfigurisan"
+
+#, c-format
+msgid "Successfully installed module %s"
+msgstr "Modul %s uspešno instaliran"
+
+#, c-format
+msgid "Successfully configured module %s"
+msgstr "Modul %s uspešno konfigurisan"
+
+#, c-format
+msgid "Successfully upgraded module %s"
+msgstr "Modul %s uspešno nadograđen"
+
+#, c-format
+msgid "Successfully activated module %s"
+msgstr "Modul %s uspešno aktiviran"
+
+#, c-format
+msgid "Successfully deactivated module %s"
+msgstr "Modul %s uspešno deaktiviran"
+
+#, c-format
+msgid "Successfully uninstalled module %s"
+msgstr "Modul %s uspešno deinstaliran"
+
+msgid ""
+"Gallery features come as separate modules.  You can download and install modules to add more "
+"features to your Gallery, or you can disable features if you don't want to use them.  In "
+"order to use a feature, you must install, configure (if necessary) and activate it.  If you "
+"don't wish to use a feature, you can deactivate it."
+msgstr ""
+"Mogućnosti Galerije se nalaze u posebnim modulima. Možete preuzimati i instalirati module da "
+"biste dodali nove mogućnosti vašoj Galeriji, ili možete isključiti osnovne mogučnosti ako ne "
+"želite da ih koristite. Da biste koristili neku mogućnost, morate je instalirati, "
+"konfigurisati (ako je potrebno) i aktivirati. Ako neku od mogućnosti ne želite da koristite, "
+"možete je deaktivirati."
+
+msgid "Module Name"
+msgstr "Naziv modula"
+
+msgid "Version"
+msgstr "Verzija"
+
+msgid "Installed"
+msgstr "Instalirana"
+
+msgid "Actions"
+msgstr "Akcije"
+
+msgid "Status: Not Installed"
+msgstr "Stanje: Nije instaliran"
+
+msgid "Status: Active"
+msgstr "Stanje: Aktivan"
+
+msgid "Status: Inactive"
+msgstr "Stanje: Neaktivan"
+
+msgid "Status: Upgrade Required (Inactive)"
+msgstr "Stanje: Potrebna nadogradnja (neaktivan)"
+
+msgid "Status: Incompatible Module (Inactive)"
+msgstr "Stanje: Modul nekompatibilan (neaktivan)"
+
+msgid "Incompatible module!"
+msgstr "Nekompatibilan modul!"
+
+#, c-format
+msgid "Core API Required: %s (available: %s)"
+msgstr "Potreban jezgarni API: %s (raspoloživ: %s)"
+
+#, c-format
+msgid "Module API Required: %s (available: %s)"
+msgstr "Potreban modulski API: %s (raspoloživ: %s)"
+
+msgid "Confirm module uninstall"
+msgstr "Potvrda deinstalacije modula"
+
+#, c-format
+msgid "Do you really want to uninstall the %s module?"
+msgstr "Da li zaista želite da deinstalirate modul %s?"
+
+#, fuzzy
+msgid "This will also remove any permissions and clean up any data created by this module."
+msgstr ""
+"Ovim će se ukloniti sva prava i izbrisati privremeni podaci napravljeni od strane ovog "
+"modula."
+
+msgid "Uninstall"
+msgstr "Deinstaliraj"
+
+msgid "Performance Tuning"
+msgstr ""
+
+#, fuzzy
+msgid "Updated performance settings successfully"
+msgstr "Testni email uspešno poslat"
+
+#, fuzzy
+msgid "Deleted all saved pages"
+msgstr "Brisanje korisnika"
+
+msgid ""
+"Improve your Gallery performance by storing entire web pages in the database.  This can "
+"considerably reduce the amount of webserver and database resources required to display a web "
+"page.  The tradeoff is that the web page you see may be a little bit out of date, however "
+"you can always get the most recent version of the page by forcing a refresh in your browser "
+"(typically by holding down the shift key and clicking the reload button)."
+msgstr ""
+
+msgid "Partial Acceleration"
+msgstr ""
+
+#, no-c-format
+msgid ""
+"Partial acceleration gives you roughly 10-25% performance increase, but some forms of "
+"dynamic data (like view counts) will not get updated right away.  All content that appears "
+"in blocks (like the random image block, any sidebar blocks, etc) will always be updated."
+msgstr ""
+
+msgid "Full Acceleration"
+msgstr ""
+
+#, no-c-format
+msgid ""
+"Full acceleration gives roughly a 90% performance increase, but no dynamic data (random "
+"image block, other sidebar blocks, number of items in your shopping cart, view counts, etc) "
+"will get updated until the saved page expires."
+msgstr ""
+
+msgid ""
+"You can additionally specify when saved pages expire.  Setting a longer expiration time will "
+"reduce the load on your server, but will increase the interval before users see changes.  "
+"Lower expiration times mean that users will see more current data, but they will place a "
+"higher load on your server."
+msgstr ""
+
+msgid "Here are some standard acceleration profiles:"
+msgstr ""
+
+#, fuzzy
+msgid "Medium acceleration"
+msgstr "izmena natpisa"
+
+msgid "High acceleration"
+msgstr ""
+
+#, fuzzy
+msgid "Guest Users"
+msgstr "Prijavljeni korisnici"
+
+msgid "Expires after:"
+msgstr ""
+
+msgid "Clear Saved Pages"
+msgstr ""
+
+msgid "Please make sure that your internet connection is set up properly or try again later."
+msgstr ""
+
+msgid "The repository index has been successfully updated."
+msgstr ""
+
+msgid "All plugins are already up-to-date."
+msgstr ""
+
+msgid "Common Tasks"
+msgstr ""
+
+msgid "Warning: Experimental feature!"
+msgstr ""
+
+msgid ""
+"The repository features are currently experimental, and no actual repository has been set up "
+"yet, so none of these features will work at this time."
+msgstr ""
+
+msgid "Update Index"
+msgstr ""
+
+msgid ""
+"The Gallery repository contains the latest modules and themes extensively tested by the "
+"Gallery team. The repository index contains information about available plugins, such as the "
+"latest versions, available languages and compatibility. The index must be synchronized "
+"periodically with the Gallery server so you are informed about any available updates. No "
+"personal information is sent to the Gallery server during updating. On slower connections "
+"the process might take a minute or two."
+msgstr ""
+
+#, c-format
+msgid ""
+"As of the last update on %s, the repository contains %s modules and %s themes. Its contents "
+"can be viewed on the Modules and Themes tabs."
+msgstr ""
+
+msgid ""
+"The index has never been updated. Click on the Update button to see what updates are "
+"available."
+msgstr ""
+
+#, fuzzy
+msgid "Update"
+msgstr "Datum"
+
+#, fuzzy
+msgid "Upgrade Gallery"
+msgstr "Galerija"
+
+msgid ""
+"A new version of Gallery is available, but it cannot be upgraded through this interface. "
+"Upgrading it might make some of your current plugins stop working, but others that rely on "
+"the features of the new version may become available. Here are the recommended steps for "
+"upgrading:"
+msgstr ""
+
+msgid "Review plugin compatibility (on the Themes and Modules tabs)"
+msgstr ""
+
+#, c-format
+msgid "%sDownload%s Gallery core"
+msgstr ""
+
+#, c-format
+msgid "Read the %supgrade instructions%s and perform the upgrade"
+msgstr ""
+
+#, fuzzy
+msgid "Gallery Up-To-Date"
+msgstr "Jezgro Galerije"
+
+msgid ""
+"Gallery cannot be upgraded through this interface. When a new version becomes available, "
+"upgrade instructions will be presented here."
+msgstr ""
+
+msgid "Upgrade All Plugins"
+msgstr ""
+
+msgid ""
+"Gallery can automatically upgrade your themes and modules to the latest available versions. "
+"No new plugins will be downloaded."
+msgstr ""
+
+#, fuzzy
+msgid "Upgrade All"
+msgstr "nadogradi"
+
+msgid ""
+"Once the repository index has been downloaded, a list of available plugins will be "
+"presented. It can be downloaded by clicking on the Update button on the Common Tasks tab."
+msgstr ""
+
+msgid ""
+"The following plugins are available. Click on the action beside the plugin you're interested "
+"in to see what's available in the repository."
+msgstr ""
+
+msgid "Incompatible plugins are marked with an exclamation icon."
+msgstr ""
+
+#, c-format
+msgid ""
+"A new core module version is available. There may be plugins that are incompatible with the "
+"installed core module, which are not shown here. You can view a %scomplete list%s of "
+"plugins, including incompatible ones, which are marked with a red icon."
+msgstr ""
+
+msgid "Theme Name"
+msgstr "Naziv izgleda"
+
+#, fuzzy
+msgid "Latest"
+msgstr "poslednja"
+
+#, fuzzy
+msgid "Incompatible Plugin"
+msgstr "Nekompatibilan modul!"
+
+#, fuzzy
+msgid "Incompatible plugin!"
+msgstr "Nekompatibilan modul!"
+
+#, fuzzy, c-format
+msgid "Plugin API Required: %s (available: %s)"
+msgstr "Potreban modulski API: %s (raspoloživ: %s)"
+
+msgid "No packages have been selected."
+msgstr ""
+
+#, fuzzy
+msgid "Base Files"
+msgstr "Osnovni naziv datoteke"
+
+msgid ""
+"The base files required for the theme to work and the English (US) translation will be "
+"downloaded."
+msgstr ""
+
+msgid "Upgrade Base Files"
+msgstr ""
+
+msgid "You can upgrade the base module files."
+msgstr ""
+
+msgid "Upgrade base files"
+msgstr ""
+
+msgid "Base Files Up-To-Date"
+msgstr ""
+
+msgid "This plugin's base files are up-to-date."
+msgstr ""
+
+msgid "Updated Translations"
+msgstr ""
+
+msgid ""
+"Below is a list of translations that have been updated since they were last downloaded. "
+"Select the ones you want to download."
+msgstr ""
+
+msgid "Additional Languages"
+msgstr ""
+
+msgid ""
+"Below is a list of languages this plugin has been translated to. Select the ones you want "
+"included in addition to the ones already downloaded."
+msgstr ""
+
+#, fuzzy
+msgid "Unit Tests"
+msgstr "Testni izgled"
+
+msgid ""
+"This plugin has unit tests available for download, which are useful for Gallery developers. "
+"All of the module's features are available without the tests."
+msgstr ""
+
+msgid "Download unit tests"
+msgstr ""
+
+#, fuzzy
+msgid "Gallery Repository Setup"
+msgstr "Verzija Galerije"
+
+msgid "Warning:"
+msgstr ""
+
+#, c-format
+msgid ""
+"In order to download plugins from the Gallery repository, a special directory needs to be "
+"created where Gallery will store the data. Under your Gallery base directory, create a "
+"directory called '%s' and allow the web server to write into it by appropriately setting the "
+"permissions."
+msgstr ""
+
+msgid "Instructions for Unix-type platforms:"
+msgstr ""
+
+msgid ""
+"Refreshing this page will take you to the Repository if the directory has been successfully "
+"created."
+msgstr ""
+
+msgid "Gallery Themes"
+msgstr "Izgledi Galerije"
+
+#, c-format
+msgid "Successfully activated theme %s"
+msgstr "Izgled %s uspešno aktiviran."
+
+#, c-format
+msgid "Successfully deactivated theme %s"
+msgstr "Izgled %s uspešno deaktiviran."
+
+#, c-format
+msgid "Successfully installed theme %s"
+msgstr "Izgled %s uspešno instaliran."
+
+#, c-format
+msgid "Successfully uninstalled theme %s"
+msgstr "Izgled %s uspešno deinstaliran"
+
+#, c-format
+msgid "Successfully upgraded theme %s"
+msgstr "Izgled %s uspešno nadograđen"
+
+msgid "Successfully saved default album settings"
+msgstr "Podrazumevani parametri albuma uspešno sačuvani"
+
+msgid "Restored theme settings"
+msgstr "Vraćeni parametri izgleda"
+
+msgid "All Themes"
+msgstr "Svi izgledi"
+
+msgid "Defaults"
+msgstr "Podrazumevan"
+
+msgid "Status: Incompatible Theme (Inactive)"
+msgstr "Stanje: Nekompatibilan izgled (neaktivan)"
+
+msgid "Incompatible theme!"
+msgstr "Nekompatibilan izgled!"
+
+#, c-format
+msgid "Theme API Required: %s (available: %s)"
+msgstr "Potreban izgledski API: %s (raspoloživ: %s)"
+
+msgid "(default)"
+msgstr "(podrazumevani)"
+
+msgid ""
+"These are default display settings for albums in your gallery.  They can be overridden in "
+"each album."
+msgstr ""
+"Ovo su podrazumevana podešavanja za albume u vašoj Galeriji. Mogu se redefinisati u svakom "
+"albumu."
+
+msgid "Default sort order"
+msgstr "Podrazumen redosled sortiranja"
+
+msgid "with"
+msgstr "sa"
+
+msgid "New albums"
+msgstr "Novi albumi"
+
+#, c-format
+msgid "%s Theme Settings"
+msgstr "Parametri izgleda %s"
+
+msgid ""
+"These are the global settings for the theme.  They can be overridden at the album level."
+msgstr "Ovo su globalni parametri za izgled. Mogu se redefinisati na nivou albuma."
+
+msgid "Available"
+msgstr "Dostupni"
+
+msgid "Choose a block"
+msgstr "Izaberite blok"
+
+msgid "Selected"
+msgstr "Izabrani"
+
+msgid "Remove"
+msgstr "Ukloni"
+
+msgid "Move Up"
+msgstr "Pomeri na gore"
+
+msgid "Move Down"
+msgstr "Pomeri na dole"
+
+msgid "Parameter"
+msgstr "Parametar"
+
+msgid "Value"
+msgstr "Vrednost"
+
+msgid "There are no settings for this theme"
+msgstr "Ovaj izgled nema parametre"
+
+msgid ""
+"The toolkits shown below have some overlap in supported operations and mime types.  Rank the "
+"toolkits here to determine which will perform these operations."
+msgstr ""
+"Funkcionalnost prikazanih alatki se preklapa u podržanim operacijama i mime tipovima. "
+"Rangirajte ovde alatke da se odredi koja će izvršavati ove operacije."
+
+msgid "Toolkit"
+msgstr "Alatka"
+
+msgid "Order"
+msgstr "Redosled"
+
+msgid "up"
+msgstr "gore"
+
+msgid "down"
+msgstr "dole"
+
+msgid "User Management"
+msgstr "Upravljanje korisnicima"
+
+#, c-format
+msgid "Removed user '%s'"
+msgstr "Korisnik '%s' uklonjen"
+
+#, c-format
+msgid "Created user '%s'"
+msgstr "Korisnik '%s' napravljen"
+
+#, c-format
+msgid "Modified user '%s'"
+msgstr "Korisnik '%s' izmenjen"
+
+#, c-format
+msgid "There is %d user in the system."
+msgid_plural "There are %d total users in the system."
+msgstr[0] "U sistemu postoji %d korisnik."
+msgstr[1] "U sistemu postoji %d korisnika."
+
+msgid "Edit User"
+msgstr "Izmena korisnika"
+
+msgid "You cannot delete yourself!"
+msgstr "Ne možete izbrisati samog sebe!"
+
+msgid "You cannot delete the special guest user."
+msgstr "Ne možete izbrisati posebnog korisnika Gost."
+
+msgid "Edit User (by list)"
+msgstr "Izmena korisnika (pomoću liste)"
+
+msgid "Thumbnails"
+msgstr "Umanjeni prikazi"
+
+msgid ""
+"Gallery can create thumbnails at upload time, or create them the first time you want to see "
+"the thumbnail itself.  Either way, it will create the thumbnail once and save it, but if you "
+"create them at upload time it makes viewing albums for the first time go faster at the "
+"expense of a longer upload time."
+msgstr ""
+"Galerija može da napravi umanjene prikaze prilikom prenosa, ili prvi put kada umanjen prikaz "
+"treba da se prikaže. U svakom slučaju, umanjen prikaz će biti napravljen jednom i sačuvan, "
+"ali ako se prave prilikom prenosa, prvo prikazivanje albuma će biti brže, po cenu dužeg "
+"prenosa."
+
+msgid "Create thumbnails now"
+msgstr "Sada napravi umanjene prikaze"
+
+msgid "This is a test email from Gallery2"
+msgstr "Ovo je probni email of Galerije 2"
+
+msgid "Edit Conflict!"
+msgstr "Sukob prilikom izmene!"
+
+msgid "Security Violation"
+msgstr "Prekoračenje bezbednosti!"
+
+msgid "Database Error"
+msgstr "Greška u vezi sa bazom podataka"
+
+msgid "Platform Error"
+msgstr ""
+
+msgid "Error"
+msgstr "Greška"
+
+msgid ""
+"Your change cannot be completed because somebody else has made a conflicting change to the "
+"same item.  Use the back button in your browser to go back to the page you were on, then "
+"<b>reload that page</b> and try your change again."
+msgstr ""
+"Vaša izmena ne može biti sačuvana, jer je već neko drugi napravio promenu na ovom objektu. "
+"Iskoristite dugme vašeg čitača za povratak na prethodnu stranu, <b>ponovo je učitajte</b> i "
+"pokušajte ponovo da napravite željenu izmenu."
+
+msgid "Go back and try again"
+msgstr "Vratite se nazad i pokušajte ponovo"
+
+msgid "Alternatively, you can return to the main Gallery page and resume browsing."
+msgstr "Druga mogućnost je da se vratite na glavnu stranicu Galeriju i nastavite sa pregledom."
+
+msgid "The action you attempted is not permitted."
+msgstr "Akcija koju ste pokušali nije dozvoljena."
+
+msgid "An error has occurred while interacting with the database."
+msgstr "Desila se greška prilikom interakcije sa bazom podataka."
+
+msgid ""
+"The exact nature of database errors is not captured unless Gallery debug mode is enabled in "
+"config.php.  Before seeking support for this error please enable buffered debug output and "
+"retry the operation.  Look near the bottom of the lengthy debug output to find error details."
+msgstr ""
+"Tačna priroda greške nije poznata, osim ako je omogućen režim uklanjanja grešaka u config."
+"php datoteci. Pre nego što potražite pomoć u vezi sa ovom greškom, molimo vas da uključite "
+"baferovan izlaz za otklanjanje grešaka i pokušajte ponovo. Na dnu potražite podugačak izlaz "
+"za otklanjanje grešaka da biste našli detalje u vezi sa problemom."
+
+#, fuzzy
+msgid "An error has occurred while interacting with the platform."
+msgstr "Desila se greška prilikom interakcije sa bazom podataka."
+
+msgid ""
+"The exact nature of the platform error is unknown. A common cause are insufficient file "
+"system permissions. This can happen if you or your webhost changed something in the file "
+"system, e.g. by restoring data from a backup."
+msgstr ""
+
+msgid "An error has occurred."
+msgstr "Desila se greška."
+
+msgid "Back to the Gallery"
+msgstr "Povratak u Galeriju"
+
+msgid "Error Detail"
+msgstr "Detalji u grešci"
+
+msgid "System Information"
+msgstr "Informacije o sistemu"
+
+msgid ""
+"You don't have any Graphics Toolkit activated that can handle JPEG images.  If you add "
+"images, you will probably not have any thumbnails."
+msgstr ""
+"Niste aktivirali ni jednu grafičku alatku koja može da obrađuje JPEG slike. Ako dodate "
+"slike, verovatno nećete imati umanjene prikaze."
+
+#, c-format
+msgid "Visit the <a href=\"%s\">Modules</a> page to activate a Graphics Toolkit."
+msgstr ""
+"Posetite stranicu <a href=\"%s\">Moduli</a> da biste aktivirali jednu od grafičkih alatki."
+
+msgid "Add Sub-Album"
+msgstr "Dodavanje podalbuma"
+
+msgid ""
+"The name of this album on your hard disk.  It must be unique in this album.  Only use "
+"alphanumeric characters, underscores or dashes.  You will be able to rename it later."
+msgstr ""
+"Naziv ovog albuma na vašem hard disku. Mora biti jedinstven u ovom albumu. Koristite samo "
+"alfanumeričke znake, donje crte ili crte. Kasnije ćete moći da mu promenite ime."
+
+msgid "Your name contains invalid characters.  Please enter another."
+msgstr "Izabrano ime sadrži neispravne znake. Unesite neko drugo."
+
+msgid "You must enter a name for this album."
+msgstr "Morate uneti naziv ovog albuma."
+
+msgid "The name you entered is already in use.  Please enter another."
+msgstr "Naziv koji ste uneli je već iskorišćen. Unesite drugo ime."
+
+msgid "This is the album title."
+msgstr "Ovde unesite naslov albuma."
+
+msgid "This is the album summary."
+msgstr "Ovde unesite sažetak albuma."
+
+msgid "Keywords are not visible, but are searchable."
+msgstr "Ključne reči nisu vidljive, ali ih je moguće koristiti prilikom pretraživanja."
+
+msgid "This is the long description of the album."
+msgstr "Ovde unesite duži opis albuma."
+
+msgid "Create"
+msgstr "Napravi"
+
+msgid "Upload Complete"
+msgstr "Prenos završen"
+
+#, c-format
+msgid "Successfully added %d file."
+msgid_plural "Successfully added %d files."
+msgstr[0] "Uspešno dodata %d datoteka."
+msgstr[1] "Uspešno dodato %d datoteka."
+
+msgid "No files added."
+msgstr "Nije dodata ni jedna datoteka."
+
+#, c-format
+msgid "Added %s"
+msgstr "Dodato %s"
+
+#, c-format
+msgid "Failed to add %s"
+msgstr "Nije uspelo dodavanje %s"
+
+msgid "Add more files"
+msgstr "Dodavanje još datoteka"
+
+msgid ""
+"Your webserver is configured to disallow file uploads from your web browser at this time.  "
+"Please contact your system administrator for assistance."
+msgstr ""
+"Vaš web server je trenutno konfigurisan tako da ne dozvoli prenos datoteka iz vašeg web "
+"čitača. Molimo vas da kontaktirate svog administratora sistema za pomoć."
+
+msgid "Upload files directly from your computer."
+msgstr "Prenos datoteka direktno sa vašeg računara."
+
+msgid "Enter the full path to the file and an optional caption in the boxes below."
+msgstr "U sledeća polja unesite punu putanju do datoteke i, ako želite, natpis."
+
+#, c-format
+msgid ""
+"<b>Note:</b> You can upload up to %s at one time.  If you want to upload more than that, you "
+"must upload the files separately, use a different upload format, or ask your system "
+"administrator to allow larger uploads."
+msgstr ""
+"<b>Napomena:</b> Od jednom možete preneti do %s. Ako želite da prenesete više od toga, "
+"morate ih prenositi zasebno, koristiti drugi način prenosa ili zamoliti vašeg administratora "
+"sistema da omogući veće prenose."
+
+#, c-format
+msgid ""
+"<b>Note:</b> You can upload up to %s at one time.  No individual file may be larger than %s. "
+"If you want to upload more than that, you must upload the files separately, use a different "
+"upload format, or ask your system administrator to allow larger uploads."
+msgstr ""
+"<b>Napomena:</b> Od jednom možete preneti do %s. Ni jedna datoteka zasebno ne sme biti veća "
+"od %s. Ako želite da prenesete više, morate ih prenositi zasebno, koristiti drugi način "
+"prenosa ili zamoliti vašeg administratora sistema da omogući veće prenose."
+
+msgid "More.."
+msgstr "Još..."
+
+msgid "Set item titles from:"
+msgstr "Preuzmi naslove iz:"
+
+msgid "Assign caption to:"
+msgstr "Preuzmi natpise iz:"
+
+msgid ""
+"Transfer files that are already on your server into your Gallery.  The files must already "
+"have been uploaded to your server some other way (like FTP) and must be placed in a "
+"directory where they are accessibly by any element on the server.  If you're on Unix this "
+"means that the files and the directory the files are in should have modes of at least 755."
+msgstr ""
+"Prenos datoteka koje se već nalaze na vašem serveru u Galeriju. Datoteke na neki drugi način "
+"(kao što je FTP) već treba da su poslate na server i stavljene u direktorijum gde su "
+"dostupne bilo kom elementu na serveru. Ako koristite Unix, ovo znači da datoteke i "
+"direktorijum u kojem se nalaze moraju imati režime od bar 755."
+
+msgid ""
+"For security purposes, you can't use this feature until the Gallery Site Administrator "
+"configures a set of legal upload directories."
+msgstr ""
+"Iz bezbednosnih razloga, ovu mogućnost ne možete koristiti sve dok administrator Galerije ne "
+"podesi skup dozvoljenih direktorijuma za prenos."
+
+msgid "Server Path"
+msgstr "Putanja na serveru"
+
+msgid "You must enter a directory."
+msgstr "Morate uneti direktorijum."
+
+msgid ""
+"The directory you entered is invalid.  Make sure that the directory is readable by all users."
+msgstr ""
+"Direktorijum koji ste uneli je neispravan. Proverite da li je direktorijum moguće čitati od "
+"strane svih korisnika."
+
+msgid ""
+"The directory you entered is illegal.  It must be a sub directory of one of the directories "
+"listed below."
+msgstr ""
+"Direktorijum koji ste uneli je neipravan. Mora biti poddirektorijum jednog od ispod "
+"navedenih direktorijuma."
+
+msgid "An item with the same name already exists."
+msgstr "Objekat sa istim imenom več postoji."
+
+msgid "Legal Directories"
+msgstr "Dozvoljeni direktorijumi."
+
+msgid "modify"
+msgstr "izmeni"
+
+msgid "Recent Directories"
+msgstr "Nedavno korišćeni direktorijumi"
+
+msgid "Find Files"
+msgstr "Pronađi datoteke"
+
+#, c-format
+msgid "Directory: %s"
+msgstr "Direktorijum: %s"
+
+msgid "File name"
+msgstr "Naziv datoteke"
+
+msgid "Type"
+msgstr "Tip"
+
+msgid "Size"
+msgstr "Veličina"
+
+msgid "Use Symlink"
+msgstr "Koristi simvezu"
+
+#, c-format
+msgid "%d byte"
+msgid_plural "%d bytes"
+msgstr[0] "%d bajt"
+msgstr[1] "%d bajtova"
+
+msgid "Parent Directory"
+msgstr "Prethodni direktorijum"
+
+msgid "Directory"
+msgstr "Direktorijum"
+
+msgid "(Un)check all known types"
+msgstr "Obeleži/isključi sve poznate tipove"
+
+msgid "(Un)check symlinks"
+msgstr "Obeleži/isključi simveze"
+
+msgid "for selected items"
+msgstr "za izabrane objekte"
+
+msgid "Copy base filenames to:"
+msgstr "Kopiraj osnovne nazive datoteka u:"
+
+msgid "Add Files"
+msgstr "Dodaj datoteke"
+
+msgid "Start Over"
+msgstr "Počni ispočetka"
+
+msgid ""
+"Import files into Gallery from another website.  Enter a URL below to a web page anywhere on "
+"the net and Gallery will allow you to upload any media files that it finds on that page.  "
+"Note that if you're entering a URL to a directory, you should end the URL with a trailing "
+"slash (eg, http://example.com/directory/). "
+msgstr ""
+"Unos datoteka u Galeriju sa druge web stranice. Unesite ispod adresu bilo koje web stranice "
+"na internetu, i Galerija će vam dozvoliti da prenesete bilo koji multimedijalni sadržaj "
+"pronađen na toj stranici. Obratite pažnju na to da ako unosite adresu direktorijuma, na kraj "
+"treba da stavite kosu crtu (npr. http://primer.com/direktorijum/)."
+
+msgid "URL"
+msgstr "Adresa"
+
+msgid "You must enter a URL to a web page"
+msgstr "Morate uneti adresu web stranice"
+
+msgid "The URL entered must begin with http://"
+msgstr "Uneta adresa mora početi sa http://"
+
+msgid "The web page you specified is unavailable"
+msgstr "Web stranica koju ste naveli nije dostupna"
+
+msgid "Nothing to add found from this URL"
+msgstr "Na ovoj adresi nije pronađeno ništa što bi se moglo dodati"
+
+msgid "Nothing added since no items were selected"
+msgstr "Ništa nije dodato, pošto ni jedan objekat nije obeležen"
+
+msgid "Recent URLs"
+msgstr "Prethodno korišćene adrese"
+
+#, c-format
+msgid "URL: %s"
+msgstr "Adresa: %s"
+
+msgid "change"
+msgstr "promeni"
+
+#, c-format
+msgid "%d url found"
+msgid_plural "%d urls found"
+msgstr[0] "%d adresa nije pronađena"
+msgstr[1] "%d adresa nije pronađeno"
+
+msgid "(Un)check all"
+msgstr "Obeleži/isključi sve"
+
+msgid "Add URLs"
+msgstr "Dodaj adrese"
+
+msgid "No Thumbnail"
+msgstr "Nema umanjenih prikaza"
+
+msgid "Options"
+msgstr "Parametri"
+
+msgid "Link an Item"
+msgstr "Vezivanje objekta"
+
+#, c-format
+msgid "Successfully linked %d item"
+msgid_plural "Successfully linked %d items"
+msgstr[0] "Uspešno povezan %d objekat"
+msgstr[1] "Uspešno povezano %d objekata"
+
+msgid "This album contains no items to link."
+msgstr "Ovaj album ne sadrži objekte koji se mogu povezati."
+
+msgid "Source"
+msgstr "Izvor"
+
+msgid "Choose the items you want to link"
+msgstr "Izaberite objekte koje želite da vežete"
+
+#, c-format
+msgid "(page %d of %d)"
+msgstr "(%d. strana od %d) "
+
+msgid "No sources chosen"
+msgstr "Nije izabran izvor"
+
+msgid "Check All"
+msgstr "Obeleži sve"
+
+msgid "Check None"
+msgstr "Obriši sve"
+
+msgid "Invert"
+msgstr "Obrni"
+
+msgid "Previous Page"
+msgstr "Prethodna strana"
+
+msgid "Next Page"
+msgstr "Sledeća strana"
+
+msgid "Destination"
+msgstr "Odredište"
+
+msgid "Choose a new album for the link"
+msgstr "Izaberite novi album za vezu"
+
+msgid "No destination chosen"
+msgstr "Odredište nije izabrano"
+
+msgid "Link"
+msgstr "Veži"
+
+msgid "Successfully linked"
+msgstr "Uspešno vezano"
+
+msgid "Choose a destination album"
+msgstr "Izaberite odredišni album"
+
+msgid "Delete Items"
+msgstr "Brisanje objekata"
+
+msgid "No items were selected for deletion"
+msgstr "Ni jedan objekat nije izabran za brisanje"
+
+#, c-format
+msgid "Successfully deleted %d item"
+msgid_plural "Successfully deleted %d items"
+msgstr[0] "Uspešno izbrisan %d objekat"
+msgstr[1] "Uspešno izbrisano %d objekata"
+
+msgid "This album contains no items to delete"
+msgstr "Ovaj album ne sadrži ni jedan objekat koji se može brisati"
+
+msgid "Choose the items you want to delete"
+msgstr "Izaberite objekte koje želite da izbrišete"
+
+msgid "Items selected here will remain selected when moving between pages."
+msgstr "Ovde izabrani objekti će ostati obeleženi prilikom promene strane"
+
+#, c-format
+msgid "One item selected on other pages."
+msgid_plural "%d items selected on other pages."
+msgstr[0] "Jedan objekat obeležen na nekoj od drugih strana."
+msgstr[1] "%d objekata obeleženo na nekoj od drugih strana."
+
+msgid "(data)"
+msgstr "(podatak)"
+
+#, c-format
+msgid "(album containing %d item)"
+msgid_plural "(album containing %d items)"
+msgstr[0] "(album koji sadrži %d objekat)"
+msgstr[1] "(album koji sadrži %d objekata)"
+
+msgid "(empty album)"
+msgstr "(prazan album)"
+
+msgid "Deletion Complete"
+msgstr "Brisanje završeno"
+
+msgid "Item successfully deleted"
+msgstr "Objekat uspešno izbrisan"
+
+#, c-format
+msgid "Are you sure you want to delete this %s?"
+msgstr "Da li ste sigurni da želite da izbrišete ovaj %s?"
+
+#, c-format
+msgid "It contains %d item."
+msgid_plural "It contains %d items."
+msgstr[0] "Sadrži %d objekat."
+msgstr[1] "Sadrži %d objekata."
+
+msgid "There is no undo!"
+msgstr "Ne može se poništiti!"
+
+msgid "There was a problem processing your request."
+msgstr "Desila se greška prilikom obrade vašeg zahteva."
+
+msgid "Sort order"
+msgstr "Redosled sortiranja"
+
+msgid ""
+"This sets the sort order for the album.  This applies to all current items, and any newly "
+"added items."
+msgstr ""
+"Ovim se podešava redosled sortiranja albuma. Odnosi se na sve postojeće, kao i kasnije "
+"dodate, objekte."
+
+#, fuzzy
+msgid "Apply to all subalbums"
+msgstr "Primeni na podobjekte"
+
+msgid "Choose a theme for this album. (The way the album is arranged on the page)"
+msgstr "Izaberite izgled za ovaj album. (Način na koji je album raspoređen na strani.)"
+
+msgid "Use this theme in all subalbums"
+msgstr ""
+
+msgid " Every item requires a thumbnail. Set the default size in pixels here."
+msgstr ""
+"Svaki objekat mora imati umanjen prikaz. Ovde zadajte podrazumevanu veličinu u pikselima."
+
+msgid "You must enter a number (greater than zero)"
+msgstr "Morate uneti broj (veći od nule)"
+
+msgid "Use this thumbnail size in all subalbums"
+msgstr ""
+
+msgid "Resized Images"
+msgstr "Slike promenjene veličine"
+
+msgid "Each item in your album can have multiple sizes. Define the default sizes here."
+msgstr ""
+"Svaki objekat u vašem albumu može imati više veličina. Ovde definišite podrazumevane "
+"veličine."
+
+msgid "Active"
+msgstr "Aktivan"
+
+msgid "Target Size (pixels)"
+msgstr "Ciljna veličina (u pikselima)"
+
+msgid "You must enter a valid size"
+msgstr "Morate uneti ispravnu veličinu"
+
+msgid "Use these target sizes in all subalbums"
+msgstr ""
+
+msgid "Recreate thumbnails and resizes"
+msgstr "Ponovo napravi umanjene prikaze i promenjene veličine"
+
+msgid ""
+"The thumbnail and resized image settings are for all new items. To apply these settings to "
+"all the items in your album, check the appropriate box."
+msgstr ""
+"Parametri umanjenih prikaza i promenjenih veličina su za nove objekte. Da primenite ove "
+"parametre na sve objekte u vašem albumu, obeležite odgovarajuće polje za potvrdu."
+
+msgid "Recreate thumbnails"
+msgstr "Ponovo napravi umanjene prikaze"
+
+msgid "Recreate resized images"
+msgstr "Ponovo napravi promenjene veličine"
+
+msgid ""
+"In order for Gallery to properly display this animation, it has to know the animation's "
+"width and height.  If you have installed a graphics toolkit that can handle animation types, "
+"then these values may already be set.  If not, they may be set to 0.  If you do not enter "
+"the correct values here, the animation may appear distorted when viewed in your web "
+"browser.  Note that changing these values does <b>not</b> change the animation itself so "
+"experimenting won't cause harm."
+msgstr ""
+"Da bi Galerija pravilno prikazala ovu animaciju, mora znati njenu širinu i visinu. Ako "
+"koristite grafičku alatku koja može da radi sa animacijama, ove vrednosti će možda već biti "
+"postavljene. U suprotnom, mogu biti postavljene na nulu. Ako ne unesete tačne vrednosti, "
+"prilikom prikazivanja u vašem web čitaču, animacija može izgledati izobličeno. Obratite "
+"pažnju na to da se izmenom ovih vrednosti <b>ne</b> menja sama animacija, tako da "
+"eksperimentisanje ne može prouzrokovati štetu."
+
+msgid "Width"
+msgstr "Širina"
+
+msgid "You must enter a value greater than or equal to 0"
+msgstr "Morate uneti vrednost veću od ili jednaku 0"
+
+msgid "Height"
+msgstr "Visina"
+
+msgid "There were errors saving some items"
+msgstr "Bilo je problema prilikom čuvanja nekih objekata"
+
+msgid "There were errors saving all items"
+msgstr "Bilo je problema prilikom čuvanja svih objekata"
+
+msgid "Successfully saved all items"
+msgstr "Uspešno sačuvani svi objekti"
+
+msgid "This album contains no items"
+msgstr "Ovaj album ne sadrži ni jedan objekat"
+
+msgid "Saved successfully."
+msgstr "Uspešno sačuvano."
+
+msgid "This item was modified by somebody else at the same time.  Your changes were lost."
+msgstr "Ovaj objekat je neko drugi istovremeno izmenio. Vaše izmene su izgubljene."
+
+msgid "You do not have permissions to modify this item."
+msgstr "Nemate prava da menjate ovaj objekat."
+
+msgid "Save and Done"
+msgstr "Sačuvaj i završi"
+
+#, c-format
+msgid "Save and Edit Previous %s"
+msgstr "Sačuvaj i izmeni prethodni %s"
+
+#, c-format
+msgid "Save and Edit Next %s"
+msgstr "Sačuvaj i izmeni sledeći %s"
+
+msgid ""
+"The name of this item on your hard disk.  It must be unique in this album.  Only use "
+"alphanumeric characters, underscores or dashes."
+msgstr ""
+"Naziv ovog objekta na vašem hard disku. Mora biti jedinstven u ovom albumu. Koristite samo "
+"alfanumeričke znake, donje crte ili povlake."
+
+msgid "Your name contains invalid characters.  Please choose another."
+msgstr "Naziv sadrži neispravne znake. Izaberite drugi."
+
+msgid "You must enter a name for this item."
+msgstr "Morate uneti naziv za ovaj objekat."
+
+msgid "The name you entered is already in use.  Please choose another."
+msgstr "Naziv koji ste uneli je već iskorišćen. Izaberite drugi."
+
+msgid "The title of this item."
+msgstr "Naziv ovog objekta."
+
+msgid "The root album must have a title."
+msgstr "Osnovni album mora imati naslov."
+
+msgid "The summary of this item."
+msgstr "Sažetak ovog objekta."
+
+msgid "This is the long description of the item."
+msgstr "Ovo je dug opis objekta."
+
+#, c-format
+msgid "%s Date and Time"
+msgstr "%s Datum i vreme"
+
+msgid "Set the date and time when this image was captured."
+msgstr "Podešavanje datuma i vremena slikanja ove fotografije."
+
+msgid "Set the date and time to be displayed for this item."
+msgstr "Podešavanje datuma i vremena koji će biti prikazani za ovaj objekat."
+
+#, c-format
+msgid "Set the date and time to be displayed for this %s."
+msgstr "Podešavanje datuma i vremena koji će biti prikazani za ovaj %s."
+
+msgid "Date:"
+msgstr "Datum: "
+
+msgid "Time:"
+msgstr "Vreme: "
+
+msgid "Use the original capture date and time from file information (e.g. Exif tag):"
+msgstr "Koristi originalni datum i vreme slikanja iz informacija u datoteci (npr. EXIF):"
+
+msgid "You must enter a valid date and time"
+msgstr "Morate uneti ispravan datum i vreme"
+
+msgid "Thumbnail"
+msgstr "Umanjen prikaz"
+
+msgid ""
+"Set the size of the thumbnail.  The largest side of the thumbnail will be no larger than "
+"this value. Leave this field blank if you don't want a thumbnail."
+msgstr ""
+"Podešavanje veličine umanjenog prikaza. Duža stranica umanjenog prikaza neće biti duža od "
+"ove vrednosti. Ostavite ovo polje praznim ako ne želite umanjeni prikaz."
+
+msgid ""
+"There are no graphics toolkits enabled that support this type of item, so we cannot create "
+"or modify a thumbnail."
+msgstr ""
+"Nije aktivna ni jedna grafička alatka koja podržava ovaj tip objekta, tako da nije moguće "
+"napraviti ili izmeniti umanjen prikaz."
+
+msgid ""
+"In order for Gallery to properly display this movie, it has to know the movie's width and "
+"height.  If you have installed a graphics toolkit that can handle movie types, then these "
+"values may already be set.  If not, they may be set to 0.  If you do not enter the correct "
+"values here, the movie may appear distorted when viewed in your web browser.  Note that "
+"changing these values do <b>not</b> change the movie itself so experimentation won't cause "
+"harm."
+msgstr ""
+"Da bi Galerija pravilno prikazala ovaj film, mora znati njegovu širinu i visinu. Ako "
+"koristite grafičku alatku koja može da radi sa filmovima, ove vrednosti će možda već biti "
+"postavljene. U suprotnom, mogu biti postavljene na nulu. Ako ne unesete tačne vrednosti, "
+"prilikom prikazivanja u vašem web čitaču, film može izgledati izobličeno. Obratite pažnju na "
+"to da se izmenom ovih vrednosti <b>ne</b> menja sam film, tako da eksperimentisanje ne može "
+"prouzrokovati štetu."
+
+msgid "Resized Photos"
+msgstr "Fotografije promenjene veličine"
+
+msgid ""
+"These sizes are alternate resized versions of the original you would like to have available "
+"for viewing."
+msgstr ""
+"Ove veličine su alternativne verzije originala sa promenjenom veličinom koje želite da imate "
+"na raspolaganju za pregled."
+
+msgid ""
+"There are no graphics toolkits enabled that support this type of photo, so we cannot create "
+"or modify resized versions."
+msgstr ""
+"Nije aktivna ni jedna grafička alatka koja podržava ovaj tip fotografije, tako da nije "
+"moguće napraviti ili izmeniti fotografiju promenjene veličine."
+
+msgid ""
+"You can select which part of the photo will be used for the thumbnail.  This will have no "
+"effect on the resized or original versions of the image."
+msgstr ""
+"Možete izabrati koji deo fotografije će biti korišćen za umanjen prikaz. Ovo neće imati "
+"efekta na originalnu sliku ili verzije sa promenjenom veličinom."
+
+msgid "Aspect Ratio: "
+msgstr "Razmera:"
+
+msgid "Crop"
+msgstr "Sečenje"
+
+msgid "Reset to default"
+msgstr "Vraćanje na početnu vrednost"
+
+msgid ""
+"There are no graphics toolkits enabled that support this type of photo, so we cannot crop "
+"the thumbnail."
+msgstr ""
+"Nije aktivna ni jedna grafička alatka koja podržava ovaj tip fotografije, tako da nije "
+"moguće iseći umanjen prikaz."
+
+msgid "Rotate"
+msgstr "Rotiranje"
+
+msgid "You can only rotate the photo in 90 degree increments."
+msgstr "Fotografiju možete rotirati samo u koracima od 90 stepeni."
+
+msgid "CC 90&deg;"
+msgstr "Levo 90&deg;"
+
+msgid "180&deg;"
+msgstr "180&deg;"
+
+msgid "C 90&deg;"
+msgstr "Desno 90&deg;"
+
+msgid ""
+"There are no graphics toolkits enabled that support this type of photo, so we cannot rotate "
+"it."
+msgstr ""
+"Nije aktivna ni jedna grafička alatka koja podržava ovaj tip fotografije, tako da je nije "
+"moguće rotirati."
+
+msgid "Scale"
+msgstr "Skaliranje"
+
+msgid ""
+"Shrink or enlarge the original photo.  When Gallery scales a photo, it maintains the same "
+"aspect ratio (height to width) of the original photo to avoid distortion.  Your photo will "
+"be scaled until it fits inside a bounding box with the size you enter here."
+msgstr ""
+"Umanjenje ili povećanje originalne fotografije. Kada Galerija skalira fotografiju, čuva "
+"razmeru (odnos visine i širine) originalne fotografije da bi se izbeglo izobličenje. Vaša "
+"fotografija će biti skalirana tako da stane u okvir čiju veličinu ovde unosite."
+
+msgid ""
+"There are no graphics toolkits enabled that support this type of photo, so we cannot scale "
+"it."
+msgstr ""
+"Nije aktivna ni jedna grafička alatka koja podržava ovaj tip fotografije, tako da je nije "
+"moguće skalirati."
+
+msgid "You must enter a size"
+msgstr "Morate uneti veličinu"
+
+msgid "Preserve Original"
+msgstr "Očuvaj original"
+
+msgid ""
+"Gallery does not modify your original photo when rotating and scaling. Instead, it "
+"duplicates your photo and works with copies.  This requires a little extra disk space but "
+"prevents your original from getting damaged.  Disabling this option will cause any actions "
+"(rotating, scaling, etc) to modify the original."
+msgstr ""
+"Galerija prilikom rotiranja i skaliranja ne menja vašu originalnu fotografiju. Umesto toga, "
+"napravi duplikat i radi sa kopijama. Za ovo je neophodno malo više prostora na disku, ali "
+"sprečava oštećenje originala. Isključenje ove opcije će prouzrokovati da svaka akcija "
+"(rotiranje, skaliranje, itd.) menja original."
+
+msgid "This is a link to another photo, so you cannot change the original"
+msgstr "Ovo je veza prema drugoj fotografiji, tako da ne možete da promenite original"
+
+msgid "There are links to this photo, so you cannot change the original"
+msgstr "Postoje veze prema ovoj fotografiji, tako da ne možete da promenite original"
+
+msgid "Preserve Original Photo"
+msgstr "Očuvaj originalnu fotografiju"
+
+msgid "Modified Photo"
+msgstr "Izmenjena fotografija"
+
+msgid ""
+"You are using a copy of the original photo that has been scaled or rotated.  The original "
+"photo is still available, but is no longer being used.  Any changes you make will be applied "
+"to the copy instead."
+msgstr ""
+"Koristite kopiju originala fotografije koja je skalirana ili rotirana. Original je i dalje "
+"raspoloživ, ali se više ne koristi. Bilo koje izmene koje načinite, biće primenjene na "
+"kopiju."
+
+msgid "Restore original"
+msgstr "Vrati original"
+
+#, c-format
+msgid ""
+"This album is configured to use the <b>%s</b> theme. These settings only apply to the theme "
+"for this album."
+msgstr ""
+"Ovaj album je podešen da koristi <b>%s</b> izgled. Ovi parametri se odnose samo na izgled "
+"ovog albuma."
+
+msgid "Setting"
+msgstr "Parametar"
+
+msgid "Use Global"
+msgstr "Koristi globalni"
+
+#, c-format
+msgid "Use these settings in all subalbums that use %s theme"
+msgstr ""
+
+msgid ""
+"Note: to set the same theme for all subalbums, check the appropriate box in <b>Album</b> tab"
+msgstr ""
+
+msgid "Album Highlight"
+msgstr "Naslovna slika albuma"
+
+msgid "You can make this item the thumbnail for its parent or any ancestor album."
+msgstr "Možete postaviti ovaj objekat da bude umanjeni prikaz bilo kog nadređenog albuma."
+
+msgid "Highlight for:"
+msgstr "Naslovna slika za:"
+
+msgid "Highlight"
+msgstr "Postavi"
+
+msgid "Move an Item"
+msgstr "Premeštanje objekta"
+
+#, c-format
+msgid "Successfully moved %d item"
+msgid_plural "Successfully moved %d items"
+msgstr[0] "Uspešno premešten %d objekat"
+msgstr[1] "Uspešno premešteno %d objekata"
+
+msgid "This album contains no items to move."
+msgstr "Ovaj album ne sadrži objekte koji se mogu premestiti"
+
+msgid "Choose the items you want to move"
+msgstr "Izaberite objekte koje želite da premestite"
+
+msgid ""
+"The destination you chose does not accept sub-albums, so all sub-albums have been deselected."
+msgstr ""
+"Odredište koje ste izabrali ne može da sadrži podalbume, tako da su svi podalbumi isključeni."
+
+msgid ""
+"The destination you chose only accepts sub-albums, so all non-albums have been deselected."
+msgstr ""
+"Odredište koje ste izabrali može da sadrži samo podalbume, tako da su svi objekti koji nisu "
+"albumi isključeni."
+
+msgid "You are not allowed to move this item away from here."
+msgstr "Nemate dozvolu da ovaj objekat odavde premestite."
+
+msgid "You are not allowed to move an album to the chosen destination."
+msgstr "Nemate dozvolu da album premestite na izabrano odredište."
+
+msgid "You are not allowed to move an item to the chosen destination."
+msgstr "Nemate dozvolu da objekat premestite na izabrano odredište."
+
+msgid "You cannot move an album into its own subtree."
+msgstr "Ne možete premestiti album u svoje podstablo."
+
+msgid "Choose a new album for them"
+msgstr "Izaberite im novi album"
+
+msgid "You don't have the permission to add items in this album"
+msgstr "Nemate dozvolu da dodajete objekte u ovaj album"
+
+msgid "Move"
+msgstr "Premesti"
+
+msgid "Successfully moved"
+msgstr "Premeštanje uspešno"
+
+msgid "Permissions"
+msgstr "Prava"
+
+msgid "Owner changed successfully"
+msgstr "Vlasnik uspešno promenjen"
+
+msgid "Group permission added successfully"
+msgstr "Grupno pravo uspešno dodato"
+
+msgid "User permission added successfully"
+msgstr "Korisničko pravo uspešno dodato"
+
+msgid "Group permission removed successfully"
+msgstr "Grupno pravo uspešno uklonjeno"
+
+msgid "User permission removed successfully"
+msgstr "Korisničko pravo uspešno uklonjeno"
+
+msgid ""
+"Each item has its own independent set of permissions.  Changing the parent's permissions has "
+"no effect on the permissions of the child.  This allows you to restrict access to the parent "
+"of this item, but still grant full access to this item, or vice versa.  The most efficient "
+"way to use this permission system is to create groups and assign permissions to them.  Then "
+"if you want to grant permissions to a specific user, you can add (or remove) the user from "
+"the appropriate group."
+msgstr ""
+"Svaki objekat ima svoj nezavisni skup prava. Promena prava nadređenog nema efekta na prava "
+"podređenog. Ovo vam omogućava da ograničite pristup roditelju ovog objekta, a da i dalje "
+"date puno pravo pristupa ovom objektu, ili obrnuto. Najefikasniji način da se ovaj sistem "
+"prava koristi je da napravite grupe i njima dodeljujete prava. Tada, ako želite da dodelite "
+"prava određenom korisniku, možete ga dodati (ili ukloniti) iz odgovarajuće grupe."
+
+#, c-format
+msgid "This item is owned by user: %s"
+msgstr "Vlasnik ovog objekta je korisnik: %s"
+
+#, c-format
+msgid "This item is owned by user: %s (%s)"
+msgstr "Vlasnik ovog objekta je korisnik: %s (%s)"
+
+msgid "New owner"
+msgstr "Novi vlasnik"
+
+msgid "Change"
+msgstr "Promeni"
+
+msgid "Apply new owner to sub-items"
+msgstr "Promeni vlasnika i podređenih objekata"
+
+msgid "You must enter a user name"
+msgstr "Morate uneti korisničko ime"
+
+msgid "The user name you entered is invalid"
+msgstr "Korisničko ime koje ste uneli je neispravno"
+
+msgid "Apply changes"
+msgstr "Primeni izmene"
+
+msgid ""
+"This item has sub-items.  The changes you make here can be applied to just this item, or you "
+"can apply them to all sub-items.  Note that applying changes to sub-items will merge your "
+"change into the existing permissions of the sub-items and may be very time consuming if you "
+"have many sub-items.  It's more efficient to grant permissions to groups and then add and "
+"remove users from groups whenever possible. Changes are applied to sub-items by default."
+msgstr ""
+"Ovaj objekat sadrži podobjekte. Izmene koje ovde napravite mogu se primeniti samo na ovaj "
+"objekat, ili ih možete primeniti na sve podobjekte. Obratite pažnju na to da će "
+"primenjivanje izmena na podobjekte spojiti vaše izmene sa postojećim pravima podobjekata i "
+"može biti vremenski vrlo zahtevno ako imate mnogo podobjekata. Efikasnije je ga prava "
+"dodeljujete grupama i onda dodajete i uklanjate korisnike iz grupa kad god je to moguće. "
+"Promene se podrazumevano primenjuju na podobjekte."
+
+msgid "Apply to sub-items"
+msgstr "Primeni na podobjekte"
+
+msgid "Group Permissions"
+msgstr "Grupna prava"
+
+msgid "Group name"
+msgstr "Naziv grupe"
+
+msgid "Permission"
+msgstr "Pravo"
+
+msgid "New Group Permission"
+msgstr "Novo grupno pravo"
+
+msgid "Add Permission"
+msgstr "Dodaj pravo"
+
+msgid "The permission you chose is invalid"
+msgstr "Pravo koje ste izabrali je neispravno"
+
+msgid "The group name you entered is invalid"
+msgstr "Naziv grupe koji ste uneli je neispravan"
+
+msgid "Group already has this permission (check sub-permissions)"
+msgstr "Grupa već ima ovo pravo (proverite potprava) "
+
+msgid "User Permissions"
+msgstr "Korisnička prava"
+
+msgid "User name"
+msgstr "Korisničko ime"
+
+msgid "New User Permission"
+msgstr "Novo korisničko pravo"
+
+msgid "The user already has this permission (check sub-permissions)"
+msgstr "Korisnik već ima ovo pravo (proverite potprava)"
+
+msgid "Reorder Album"
+msgstr "Promena redosleda objekata u albumu"
+
+#, fuzzy
+msgid "Order saved successfully"
+msgstr "Izmene uspešno sačuvane"
+
+msgid ""
+"This album has an automatic sort order specified, so you cannot change the order of items "
+"manually.  You must remove the automatic sort order to continue."
+msgstr ""
+"Ovaj album ima uključeno automatsko određivanje redosleda, tako da ne možete ručno promeniti "
+"redosled objekata. Morate isključiti automatsko određivanje redosleda da biste nastavili."
+
+msgid "Change the order of the items in this album."
+msgstr "Promena redosleda objekata u ovom albumu."
+
+msgid "Move this item"
+msgstr "Premestite ovaj objekat"
+
+msgid "before"
+msgstr "ispred"
+
+msgid "after"
+msgstr "iza"
+
+msgid "Reorder"
+msgstr "Promeni redosled"
+
+msgid "Continue..."
+msgstr "Nastavi..."
+
+msgid "Site is temporarily down for maintenance."
+msgstr ""
+
+#, fuzzy
+msgid "Admin Login"
+msgstr "Administracija"
+
+msgid "Enter a URL"
+msgstr "Unesite adresu"
+
+msgid "Enter some text describing the URL"
+msgstr "Unesite tekst koji opisuje adresu"
+
+msgid "Enter an image URL"
+msgstr "Unesite adresu slike"
+
+msgid "B <!-- Button label for Bold -->"
+msgstr "P"
+
+msgid "i <!-- Button label for italic -->"
+msgstr "k"
+
+msgid "list"
+msgstr "lista"
+
+msgid "bullet"
+msgstr "znak za nabrajanje"
+
+msgid "url"
+msgstr "adresa"
+
+msgid "image"
+msgstr "slika"
+
+msgid "Configuration Error: Missing Theme"
+msgstr "Greška prilikom konfiguracije: Nedostaje izgled"
+
+msgid "Missing Theme"
+msgstr "Nedostaje izgled"
+
+#, fuzzy, c-format
+msgid ""
+"This page is configured to use the %s theme, but it is either inactive, not installed, or "
+"incompatible."
+msgstr "Ovaj album je podešen da koristi %s izgled, ali je ili neaktivan ili nije instaliran."
+
+#, fuzzy, c-format
+msgid ""
+"This album is configured to use the %s theme, but it is either inactive, not installed, or "
+"incompatible."
+msgstr "Ovaj album je podešen da koristi %s izgled, ali je ili neaktivan ili nije instaliran."
+
+#, c-format
+msgid ""
+"To fix this problem you can %sinstall or activate this theme%s or select another default "
+"theme."
+msgstr ""
+"Da biste rešili ovaj problem, možete %sinstalirati ili aktivirati ovaj izgled%s ili izabrati "
+"drugi podrazumevan izgled."
+
+#, c-format
+msgid ""
+"To fix this problem you can %slogin as a site administrator%s and then %sinstall or activate "
+"this theme%s or select another default theme."
+msgstr ""
+"Da biste rešili ovaj problem, možete da se %sprijavite kao administrator%s i onda %"
+"sinstalirate ili aktivirate ovaj izgled%s ili izabrati drugi podrazumevan izgled."
+
+#, c-format
+msgid ""
+"To fix this problem you can either %schoose a new theme for this album%s or %sinstall or "
+"activate this theme%s."
+msgstr ""
+"Da biste rešili ovaj problem, možete ili %sizabrati nov izgled za ovaj album%s ili %"
+"sinstalirati ili aktivirati ovaj izgled%s."
+
+#, c-format
+msgid ""
+"To fix this problem you can either %schoose a new theme for this album%s or %slogin as a "
+"site administrator%s and then %sinstall or activate this theme%s."
+msgstr ""
+"Da biste rešili ovaj problem, možete ili %sizabrati novi izgled za ovaj album%s ili se %"
+"sprijaviti kao administrator%s i onda %sinstalirati ili aktivirati ovaj izgled%s."
+
+#, c-format
+msgid ""
+"To fix this problem you can either %slogin%s and then %schoose a new theme for this album%s "
+"or %slogin as a site administrator%s and then %sinstall or activate this theme%s."
+msgstr ""
+"Da biste rešili ovaj problem, možete ili da se %sprijavite%s i onda %sizaberete nov izgled "
+"za ovaj album%s ili da se %sprijavite kao administrator%s i onda %sinstalirate ili "
+"aktivirate ovaj izgled%s."
+
+msgid "Admin Options"
+msgstr "Administracija"
+
+msgid "User Options"
+msgstr "Korisnički parametri"
+
+msgid "Password changed successfully"
+msgstr "Lozinka uspešno promenjena"
+
+msgid ""
+"You must enter your current password to prove that it's you, then enter your new password "
+"twice to make sure that you didn't make a mistake."
+msgstr ""
+"Morate uneti svoju sadašnju lozinku da dokažete da ste to vi, a onda dva puta unesite novu "
+"lozinku da ne bi došlo do greške."
+
+msgid "Current Password"
+msgstr "Sadašnja lozinka"
+
+msgid "You must enter your current password"
+msgstr "Morate uneti svoju sadašnju lozinku"
+
+msgid "Incorrect password"
+msgstr "Netačna lozinka"
+
+msgid "New Password"
+msgstr "Nova lozinka"
+
+msgid "You must enter a new password"
+msgstr "Morate uneti novu lozinku"
+
+msgid "Verify New Password"
+msgstr "Potvrda nove lozinke"
+
+msgid "You must enter your new password again!"
+msgstr "Morate ponovo uneti svoju novu lozinku!"
+
+msgid "Login to your account"
+msgstr "Prijavite se na vaš nalog"
+
+msgid "Your password has been recovered, please login."
+msgstr "Vaša lozinka je vraćena, molimo vas da se prijavite."
+
+msgid "Your login information is incorrect.  Please try again."
+msgstr "Vaši podaci za prijavu su netačni. Molimo da pokušate ponovo."
+
+#, c-format
+msgid ""
+"Lost or forgotten passwords can be retrieved using the <a href=\"%s\">recover password</a> "
+"page"
+msgstr ""
+"Izgubljene ili zaboravljene lozinke se mogu vratiti pomoću strane za <a href=\"%s\">vraćanje "
+"lozinke</a>"
+
+#, c-format
+msgid "Welcome, %s!"
+msgstr ""
+
+msgid "Account settings saved successfully"
+msgstr "Parametri naloga uspešno sačuvani"
+
+msgid "(required, password required for change)"
+msgstr ""
+
+msgid "(suggested, password required for change)"
+msgstr ""
+
+#, fuzzy
+msgid "(required to change the e-mail address)"
+msgstr "Morate uneti email adresu"
+
+#, fuzzy
+msgid "You must enter your current password to change the e-mail address"
+msgstr "Morate uneti svoju sadašnju lozinku"
+
+msgid "Recover a lost or forgotten password"
+msgstr "Vraćanje izgubljene ili zaborabljene lozinke"
+
+msgid ""
+"Recovering your password requires that your user account has an email address assigned, and "
+"that you have access to the listed email address.  A confirmation will be emailed to you "
+"containing a URL which you must visit to set a new password for your account.  To prevent "
+"abuse, password recovery requests can not be attempted more than once in a 20 minute "
+"period.  A recovery confirmation is valid for seven days.  If it is not used during that "
+"time, it will be purged from the system and a new request will have to be made."
+msgstr ""
+"Vraćanje vaše šifre zahteva da vaš korisnički nalog ima zadatu email adresu, kao i da imate "
+"pristup toj adresi. Biće vam poslata potvrda koja sadrži adresu koju morate posetiti da "
+"podesite novu lozinku za vaš nalog. Da bi se sprečila zloupotreba, vraćanje lozinke se može "
+"pokušati ne češće od jednom u periodu od 20 minuta. Potvrda za vraćanje važi sedam dana. Ako "
+"se u toku tog vremena ne iskoristi, biće izbrisana iz sistema i moraće da se se podnese novi "
+"zahtev."
+
+msgid "Your recovery request has been sent!"
+msgstr "Vaš zahtev za vraćanje je poslat!"
+
+msgid ""
+"Note that if the account does not have an email address, you may not receive the email and "
+"you should contact your system administrator for help."
+msgstr ""
+"Obratite pažnju na to da ako nalog nema email adresu, nećete dobiti potvrdu i treba da "
+"zatražite pomoć od vašeg administratora sistema."
+
+#, c-format
+msgid ""
+"Administrators can use the %sEmergency Password Recovery%s page to recover the admin account "
+"if they fail to receive recovery email due to server problems, or lack of a working email "
+"address."
+msgstr ""
+"Administratori mogu da koriste stranu za %shitno vraćanje lozinke%s da vrate "
+"administratorsku lozinku ako ne prime email sa potvrdom, zbog problema sa serverom ili "
+"nedostatka ispravne email adrese."
+
+msgid "Recover"
+msgstr "Pošalji"
+
+#, c-format
+msgid ""
+"In order to proceed with the password reset, we have to verify that you are who you claim.  "
+"The best way to be sure is to ask you to make a tiny change in the Gallery directory which "
+"will prove that you have the right permissions.  So, we're going to ask that you create a "
+"new text file called %s in your gallery2 directory. It must contain the following randomly "
+"generated characters:"
+msgstr ""
+"Da biste nastavili sa procedurom vraćanja lozinke, morate da potvrdite da ste onaj koji "
+"tvrdite da jeste. Najbolji način da se u to uverimo je da od vas tražimo da napravite malu "
+"izmenu u direktorijumu Galerije, što će dokazati da imate odgovarajuća prava. Prema tome, "
+"tražićemo da napravite novu tekstualnu datoteku sa nazivom %s u vašem direktorijumu u kojem "
+"se nalazi Galerija. Mora da sadrži sledeće slučajno izabrane znake:"
+
+#, c-format
+msgid "%s"
+msgstr "%s"
+
+#, c-format
+msgid ""
+"As a convenience to you, we've prepared a %scorrect version of login.txt%s for you.  "
+"Download that and copy it into your install directory and you're all set."
+msgstr ""
+"Radi vaše udobnosti, pripremili smo za vas %sispravnu verziju login.txt datoteteke%s. "
+"Preuzmite je i stavite u instalacioni direktorijum i sve će biti spremno."
+
+msgid "Once you've uploaded the file, click refresh to continue."
+msgstr "Kada ste postavili datoteku, učitajte ponovo ovu stranicu."
+
+msgid "Emergency Administrator Password Reset"
+msgstr "Hitno vraćanje administratorske lozinke"
+
+msgid ""
+"This page can be used by a system administrator to securely reset the password on any "
+"account."
+msgstr "Administrator može da koristi ovu stranu da bezbedno postavi šifru za bilo koji nalog."
+
+msgid "Authorization Confirmed"
+msgstr "Ovlašćenje potvrđeno"
+
+msgid ""
+"Your authorization has been confirmed.  Please enter your new password below.  After setting "
+"your new password you will be taken to the login page."
+msgstr ""
+"Vaše ovlašćenje je potvrđeno. Unesite novu lozinku ispod. Posle podešavanja nove lozinke, "
+"bićete premešteni na stranu za prijavu."
+
+msgid "Recover Password for Username"
+msgstr "Vraćanje lozinke za korisničko ime"
+
+msgid "You must enter a username to recover the password for."
+msgstr "Morate uneti korisničko ime kojem želite da vratite lozinku."
+
+msgid "The username you entered does not exist."
+msgstr "Uneto korisničko ime ne postoji."
+
+msgid "Authorization Incorrect"
+msgstr "Ovlašćenje neispravno"
+
+msgid "Recovery Instructions"
+msgstr "Uputstvo za vraćanje"
+
+msgid "AuthFile Missing"
+msgstr "AuthFile fali"
+
+msgid "AuthFile Unreadable"
+msgstr "AuthFile nečitljiv"
+
+#, c-format
+msgid "Your %s file is not readable. Please give Gallery read permissions on the file."
+msgstr "Vaš %s je nečitljiv. Molimo vas da Galeriji date pravo na čitanje datoteke."
+
+msgid "Refresh"
+msgstr "Osveži"
+
+msgid "This page will allow you to reset the password on your account."
+msgstr "Ova strana će vem omogućiti da vratite lozinku vašeg naloga."
+
+#, c-format
+msgid ""
+"There is no request which matches the username and authorization provided. Request a new "
+"authorization from the <a href=\"%s\">lost password page</a>"
+msgstr ""
+"Ne postoji zahtev koji odgovara navedenom korisničkom imenu i ovlašćenju. Zatražite novo "
+"ovlašćenje na strani za <a href=\"%s\">izgubljenu lozinku</a>."
+
+#, c-format
+msgid ""
+"The request you are trying to access has expired.  Request a new authorization from the <a "
+"href=\"%s\">lost password page</a>."
+msgstr ""
+"Zahtev kojem pokušavate da pristupite je istekao. Zatražite novo ovlašćenje na strani za <a "
+"href=\"%s\">izgubljenu lozinku</a>."
+
+msgid "Authorization missing"
+msgstr "Fali ovlašćenje"
+
+msgid "Username missing"
+msgstr "Fali korisničko ime"
+
+msgid "Submit"
+msgstr "Pošalji"
+
+#, c-format
+msgid "Hello %s,"
+msgstr "Zdravo %s,"
+
+#, c-format
+msgid "You receive this email because a password recovery for %s was requested by %s at %s"
+msgstr "Ovaj email ste dobili jer zahtev za vraćanje šifre za %s poslat od strane %s u %s."
+
+#, c-format
+msgid "Your username is: %s"
+msgstr "Vaše korisničko ime je: %s"
+
+msgid ""
+"To finish the password recovery process please click the following link and enter the "
+"required information:"
+msgstr ""
+"Da biste završili proceduru za vraćanje šifre, molimo vas da kliknete na sledeći link i "
+"unesete potrebne informacije."
+
+msgid "If you did not request this recovery email, you may safely ignore it."
+msgstr "Ako niste tražili ovaj email, slobodno ga možete ignorisati."
+
+msgid "Thank you!"
+msgstr "Hvala!"
+
+msgid "guest"
+msgstr "gost"
+
+#, c-format
+msgid "display mode: %s"
+msgstr "režim prikaza: %s"
+
+#, c-format
+msgid "Date: %s"
+msgstr "Datum: %s"
+
+#, c-format
+msgid "Owner: %s"
+msgstr "Vlasnik: %s"
+
+#, c-format
+msgid "Size: %d item"
+msgid_plural "Size: %d items"
+msgstr[0] "Veličina: %d objekat"
+msgstr[1] "Veličina: %d objekata"
+
+#, c-format
+msgid "(%d item total)"
+msgid_plural "(%d items total)"
+msgstr[0] "(ukupno %d objekat)"
+msgstr[1] "(ukupno %d objekata)"
+
+#, c-format
+msgid "Views: %d"
+msgstr "Pregleda: %d"
+
+msgid "&laquo; album actions &raquo;"
+msgstr "&laquo; radnje nad albumom &raquo;"
+
+msgid "&laquo; item actions &raquo;"
+msgstr "&laquo; radnje nad objektom &raquo;"
+
+msgid "Go"
+msgstr "Idi"
+
+msgid "Navigation"
+msgstr "Navigacija"
+
+msgid "next"
+msgstr "sledeća"
+
+msgid "last"
+msgstr "poslednja"
+
+#, c-format
+msgid "Page %d of %d"
+msgstr "%d. strana od %d"
+
+#, c-format
+msgid "%d of %d"
+msgstr "%d od %d"
+
+msgid "first"
+msgstr "prva"
+
+msgid "previous"
+msgstr "prethodna"
+
+msgid "Page:"
+msgstr "Strana:"
+
+#, c-format
+msgid "%d. %s"
+msgstr "%d. %s"
+
+msgid "Size: "
+msgstr "Veličina:"
+
+msgid "Full size: "
+msgstr "Puna veličina:"
+
+msgid "Language selector"
+msgstr "Birač jezika"
+
+msgid "Item actions"
+msgstr "Radnje nad objektom"
+
+msgid "Use dropdown menu"
+msgstr "Koristi padajući meni"
+
+msgid "Login block"
+msgstr "Prijavni blok"
+
+msgid "Links to album/photo peers"
+msgstr "Veze ka ravnopravnim albumima i fotografijama"
+
+msgid "Unit test module"
+msgstr "Testni modul"
+
+msgid "[test] A permission"
+msgstr "[test] Pravo"
+
+msgid "[test] A second permission"
+msgstr "[test] Drugo pravo"
+
+msgid "Unit test theme"
+msgstr "Testni izgled"
+
+#~ msgid "&laquo; None &raquo;"
+#~ msgstr "&laquo; Ni jedan &raquo;"
+
+#~ msgid "Unable to delete directory: /templates_c"
+#~ msgstr "Direktorijum nije moguće obrisati: /templates_c"
