@@ -1,0 +1,99 @@
+# File crc32 crc32(crlf) size size(crlf)  or  R File
+modules/thumbpage/CantActivate.inc	1079547072	2585536608	1419	1465
+modules/thumbpage/ItemEditThumbOffset.inc	3121899469	98473924	5617	5791
+modules/thumbpage/ItemEditThumbPage.inc	2634940867	511858704	5456	5626
+modules/thumbpage/locale/af/LC_MESSAGES/modules_thumbpage.mo	328102148	328102148	1983	1983
+modules/thumbpage/locale/cs/LC_MESSAGES/modules_thumbpage.mo	3831079754	3831079754	2133	2133
+modules/thumbpage/locale/da/LC_MESSAGES/modules_thumbpage.mo	3063772890	3063772890	2000	2000
+modules/thumbpage/locale/de/LC_MESSAGES/modules_thumbpage.mo	1179155259	1179155259	2240	2240
+modules/thumbpage/locale/eu/LC_MESSAGES/modules_thumbpage.mo	133231164	133231164	2067	2067
+modules/thumbpage/locale/fr/LC_MESSAGES/modules_thumbpage.mo	1488912707	1488912707	2087	2087
+modules/thumbpage/locale/is/LC_MESSAGES/modules_thumbpage.mo	770309009	770309009	425	425
+modules/thumbpage/locale/it/LC_MESSAGES/modules_thumbpage.mo	2549835415	2549835415	1994	1994
+modules/thumbpage/locale/ja/LC_MESSAGES/modules_thumbpage.mo	2666778167	2666778167	1316	1316
+modules/thumbpage/locale/nl/LC_MESSAGES/modules_thumbpage.mo	1575750768	1575750768	2002	2002
+modules/thumbpage/locale/no/LC_MESSAGES/modules_thumbpage.mo	3940781552	3940781552	2064	2064
+modules/thumbpage/locale/pl/LC_MESSAGES/modules_thumbpage.mo	972626811	972626811	2069	2069
+modules/thumbpage/locale/ru/LC_MESSAGES/modules_thumbpage.mo	544829675	544829675	2719	2719
+modules/thumbpage/locale/sr/LC_MESSAGES/modules_thumbpage.mo	2603511751	2603511751	2042	2042
+modules/thumbpage/locale/sv/LC_MESSAGES/modules_thumbpage.mo	3950323400	3950323400	2159	2159
+modules/thumbpage/locale/tr/LC_MESSAGES/modules_thumbpage.mo	2724898914	2724898914	2085	2085
+modules/thumbpage/locale/zh_CN/LC_MESSAGES/modules_thumbpage.mo	44129798	44129798	1950	1950
+modules/thumbpage/locale/zh_TW/LC_MESSAGES/modules_thumbpage.mo	4141799538	4141799538	1967	1967
+modules/thumbpage/module.inc	3702065657	4154955721	6719	6937
+modules/thumbpage/po/GNUmakefile	1866879166	2808215985	98	103
+modules/thumbpage/po/af.po	450705895	1345110516	2825	2913
+modules/thumbpage/po/cs.po	2562551139	1567306112	2966	3056
+modules/thumbpage/po/da.po	1882556546	4127466195	2931	3022
+modules/thumbpage/po/de.po	4845015	2767448823	3231	3330
+modules/thumbpage/po/eu.po	1092503007	3068393332	2889	2977
+modules/thumbpage/po/fr.po	195120782	3983264993	2949	3041
+modules/thumbpage/po/is.po	2068875124	3394588978	2221	2307
+modules/thumbpage/po/it.po	4020026888	3996633925	2838	2925
+modules/thumbpage/po/ja.po	4108183364	1526834780	2567	2653
+modules/thumbpage/po/nl.po	3322015056	3672027974	2941	3031
+modules/thumbpage/po/no.po	4000936640	2294948838	3001	3091
+modules/thumbpage/po/pl.po	1779742697	2532083781	2893	2981
+modules/thumbpage/po/ru.po	1453588679	3451143323	3666	3759
+modules/thumbpage/po/sr.po	1393398129	2129481832	2864	2952
+modules/thumbpage/po/strings.raw	3414451367	3811432330	1202	1231
+modules/thumbpage/po/sv.po	3398689915	1753819157	3176	3279
+modules/thumbpage/po/tr.po	2776346687	3781999580	3094	3188
+modules/thumbpage/po/zh_CN.po	331147467	1110978341	2774	2861
+modules/thumbpage/po/zh_TW.po	2956072663	3538368958	2793	2881
+modules/thumbpage/templates/CantActivate.tpl	1089181608	1942822533	854	879
+modules/thumbpage/templates/Offset.tpl	1618434337	764244766	1078	1108
+modules/thumbpage/templates/Page.tpl	259783612	2249575886	923	948
+R	modules/thumbpage/locale/cs_CZ/LC_MESSAGES/modules_thumbpage.mo
+R	modules/thumbpage/locale/cs_CZ/LC_MESSAGES
+R	modules/thumbpage/locale/cs_CZ
+R	modules/thumbpage/locale/de_DE/LC_MESSAGES/modules_thumbpage.mo
+R	modules/thumbpage/locale/de_DE/LC_MESSAGES
+R	modules/thumbpage/locale/de_DE
+R	modules/thumbpage/locale/eu_ES/LC_MESSAGES/modules_thumbpage.mo
+R	modules/thumbpage/locale/eu_ES/LC_MESSAGES
+R	modules/thumbpage/locale/eu_ES
+R	modules/thumbpage/locale/fr_FR/LC_MESSAGES/modules_thumbpage.mo
+R	modules/thumbpage/locale/fr_FR/LC_MESSAGES
+R	modules/thumbpage/locale/fr_FR
+R	modules/thumbpage/locale/is_IS/LC_MESSAGES/modules_thumbpage.mo
+R	modules/thumbpage/locale/is_IS/LC_MESSAGES
+R	modules/thumbpage/locale/is_IS
+R	modules/thumbpage/locale/it_IT/LC_MESSAGES/modules_thumbpage.mo
+R	modules/thumbpage/locale/it_IT/LC_MESSAGES
+R	modules/thumbpage/locale/it_IT
+R	modules/thumbpage/locale/ja_JP/LC_MESSAGES/modules_thumbpage.mo
+R	modules/thumbpage/locale/ja_JP/LC_MESSAGES
+R	modules/thumbpage/locale/ja_JP
+R	modules/thumbpage/locale/nl_NL/LC_MESSAGES/modules_thumbpage.mo
+R	modules/thumbpage/locale/nl_NL/LC_MESSAGES
+R	modules/thumbpage/locale/nl_NL
+R	modules/thumbpage/locale/no_NO/LC_MESSAGES/modules_thumbpage.mo
+R	modules/thumbpage/locale/no_NO/LC_MESSAGES
+R	modules/thumbpage/locale/no_NO
+R	modules/thumbpage/locale/ru_RU/LC_MESSAGES/modules_thumbpage.mo
+R	modules/thumbpage/locale/ru_RU/LC_MESSAGES
+R	modules/thumbpage/locale/ru_RU
+R	modules/thumbpage/locale/sr_YU/LC_MESSAGES/modules_thumbpage.mo
+R	modules/thumbpage/locale/sr_YU/LC_MESSAGES
+R	modules/thumbpage/locale/sr_YU
+R	modules/thumbpage/locale/sv_SE/LC_MESSAGES/modules_thumbpage.mo
+R	modules/thumbpage/locale/sv_SE/LC_MESSAGES
+R	modules/thumbpage/locale/sv_SE
+R	modules/thumbpage/locale/tr_TR/LC_MESSAGES/modules_thumbpage.mo
+R	modules/thumbpage/locale/tr_TR/LC_MESSAGES
+R	modules/thumbpage/locale/tr_TR
+R	modules/thumbpage/po/cs_CZ.po
+R	modules/thumbpage/po/de_DE.po
+R	modules/thumbpage/po/eu_ES.po
+R	modules/thumbpage/po/fr_FR.po
+R	modules/thumbpage/po/is_IS.po
+R	modules/thumbpage/po/it_IT.po
+R	modules/thumbpage/po/ja_JP.po
+R	modules/thumbpage/po/nl_NL.po
+R	modules/thumbpage/po/no_NO.po
+R	modules/thumbpage/po/ru_RU.po
+R	modules/thumbpage/po/sr_YU.po
+R	modules/thumbpage/po/sv_SE.po
+R	modules/thumbpage/po/tr_TR.po
+R	modules/thumbpage/templates/ItemEdit.tpl

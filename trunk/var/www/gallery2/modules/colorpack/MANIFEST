@@ -1,0 +1,109 @@
+# File crc32 crc32(crlf) size size(crlf)  or  R File
+modules/colorpack/classes/ColorPackImpl.class	1442790277	147738633	2682	2776
+modules/colorpack/classes/ColorPackInterface_1_0.class	662118979	3890719737	1795	1851
+modules/colorpack/locale/af/LC_MESSAGES/modules_colorpack.mo	1874957424	1874957424	877	877
+modules/colorpack/locale/bg/LC_MESSAGES/modules_colorpack.mo	3771845790	3771845790	973	973
+modules/colorpack/locale/cs/LC_MESSAGES/modules_colorpack.mo	2623467431	2623467431	896	896
+modules/colorpack/locale/da/LC_MESSAGES/modules_colorpack.mo	3219027846	3219027846	853	853
+modules/colorpack/locale/de/LC_MESSAGES/modules_colorpack.mo	554560464	554560464	881	881
+modules/colorpack/locale/en_GB/LC_MESSAGES/modules_colorpack.mo	3609535815	3609535815	547	547
+modules/colorpack/locale/es/LC_MESSAGES/modules_colorpack.mo	2339781999	2339781999	894	894
+modules/colorpack/locale/eu/LC_MESSAGES/modules_colorpack.mo	1309977437	1309977437	841	841
+modules/colorpack/locale/fr/LC_MESSAGES/modules_colorpack.mo	1317394003	1317394003	900	900
+modules/colorpack/locale/hu/LC_MESSAGES/modules_colorpack.mo	4198747860	4198747860	869	869
+modules/colorpack/locale/it/LC_MESSAGES/modules_colorpack.mo	2369566261	2369566261	856	856
+modules/colorpack/locale/ja/LC_MESSAGES/modules_colorpack.mo	3916899548	3916899548	762	762
+modules/colorpack/locale/lt/LC_MESSAGES/modules_colorpack.mo	413680731	413680731	968	968
+modules/colorpack/locale/nl/LC_MESSAGES/modules_colorpack.mo	2761754814	2761754814	839	839
+modules/colorpack/locale/no/LC_MESSAGES/modules_colorpack.mo	3401098773	3401098773	865	865
+modules/colorpack/locale/pl/LC_MESSAGES/modules_colorpack.mo	4189288362	4189288362	924	924
+modules/colorpack/locale/pt_BR/LC_MESSAGES/modules_colorpack.mo	938405023	938405023	870	870
+modules/colorpack/locale/ru/LC_MESSAGES/modules_colorpack.mo	12559104	12559104	1068	1068
+modules/colorpack/locale/sr/LC_MESSAGES/modules_colorpack.mo	3049731267	3049731267	852	852
+modules/colorpack/locale/sv/LC_MESSAGES/modules_colorpack.mo	276914243	276914243	945	945
+modules/colorpack/locale/tr/LC_MESSAGES/modules_colorpack.mo	1125048941	1125048941	908	908
+modules/colorpack/locale/zh_CN/LC_MESSAGES/modules_colorpack.mo	1638390689	1638390689	840	840
+modules/colorpack/locale/zh_TW/LC_MESSAGES/modules_colorpack.mo	2311095185	2311095185	847	847
+modules/colorpack/module.inc	199640225	263757639	1935	1996
+modules/colorpack/packs/black/color.css	2390881375	4135286709	1209	1246
+modules/colorpack/packs/blue/color.css	2280248699	2169039275	1100	1133
+modules/colorpack/packs/bluebottle/color.css	3629727904	4104294696	1262	1299
+modules/colorpack/packs/deepsea/color.css	1689029207	974541650	1335	1373
+modules/colorpack/packs/goldleaf/color.css	2734351566	298617770	1272	1307
+modules/colorpack/po/GNUmakefile	1866879166	1866879166	98	98
+modules/colorpack/po/af.po	1461612012	1553628866	1724	1783
+modules/colorpack/po/bg.po	3006634659	4042556236	1956	2020
+modules/colorpack/po/cs.po	1166500700	3420584433	1742	1801
+modules/colorpack/po/da.po	3084065865	194654705	1808	1869
+modules/colorpack/po/de.po	711220370	3400677361	1867	1929
+modules/colorpack/po/en_GB.po	2453614985	2530537232	1639	1695
+modules/colorpack/po/es.po	1547180734	337076121	1851	1911
+modules/colorpack/po/eu.po	1161317735	173154539	1680	1737
+modules/colorpack/po/fr.po	1794206512	1482948170	1743	1801
+modules/colorpack/po/hu.po	1585410173	3436362837	1758	1820
+modules/colorpack/po/it.po	2351139591	1923956244	1743	1802
+modules/colorpack/po/ja.po	2391278799	1256857833	1713	1772
+modules/colorpack/po/lt.po	1327657438	1821313924	1939	2002
+modules/colorpack/po/nl.po	4141538968	3388686129	1741	1799
+modules/colorpack/po/no.po	4198335969	2980640836	1824	1885
+modules/colorpack/po/pl.po	3045243927	991901420	1770	1829
+modules/colorpack/po/pt_BR.po	1591580152	2499755590	1716	1774
+modules/colorpack/po/ru.po	290096748	1033261264	2032	2094
+modules/colorpack/po/sr.po	2854698883	4086208081	1695	1753
+modules/colorpack/po/strings.raw	3257011681	3257011681	475	475
+modules/colorpack/po/sv.po	1872697945	3381999649	1960	2026
+modules/colorpack/po/tr.po	1702778483	2041994483	1830	1892
+modules/colorpack/po/zh_CN.po	2634528309	3579211436	1687	1746
+modules/colorpack/po/zh_TW.po	3786445216	329264910	1694	1752
+R	modules/colorpack/locale/bg_BG/LC_MESSAGES/modules_colorpack.mo
+R	modules/colorpack/locale/bg_BG/LC_MESSAGES
+R	modules/colorpack/locale/bg_BG
+R	modules/colorpack/locale/cs_CZ/LC_MESSAGES/modules_colorpack.mo
+R	modules/colorpack/locale/cs_CZ/LC_MESSAGES
+R	modules/colorpack/locale/cs_CZ
+R	modules/colorpack/locale/da_DK/LC_MESSAGES/modules_colorpack.mo
+R	modules/colorpack/locale/da_DK/LC_MESSAGES
+R	modules/colorpack/locale/da_DK
+R	modules/colorpack/locale/de_DE/LC_MESSAGES/modules_colorpack.mo
+R	modules/colorpack/locale/de_DE/LC_MESSAGES
+R	modules/colorpack/locale/de_DE
+R	modules/colorpack/locale/eu_ES/LC_MESSAGES/modules_colorpack.mo
+R	modules/colorpack/locale/eu_ES/LC_MESSAGES
+R	modules/colorpack/locale/eu_ES
+R	modules/colorpack/locale/fr_FR/LC_MESSAGES/modules_colorpack.mo
+R	modules/colorpack/locale/fr_FR/LC_MESSAGES
+R	modules/colorpack/locale/fr_FR
+R	modules/colorpack/locale/it_IT/LC_MESSAGES/modules_colorpack.mo
+R	modules/colorpack/locale/it_IT/LC_MESSAGES
+R	modules/colorpack/locale/it_IT
+R	modules/colorpack/locale/ja_JP/LC_MESSAGES/modules_colorpack.mo
+R	modules/colorpack/locale/ja_JP/LC_MESSAGES
+R	modules/colorpack/locale/ja_JP
+R	modules/colorpack/locale/nl_NL/LC_MESSAGES/modules_colorpack.mo
+R	modules/colorpack/locale/nl_NL/LC_MESSAGES
+R	modules/colorpack/locale/nl_NL
+R	modules/colorpack/locale/ru_RU/LC_MESSAGES/modules_colorpack.mo
+R	modules/colorpack/locale/ru_RU/LC_MESSAGES
+R	modules/colorpack/locale/ru_RU
+R	modules/colorpack/locale/sr_YU/LC_MESSAGES/modules_colorpack.mo
+R	modules/colorpack/locale/sr_YU/LC_MESSAGES
+R	modules/colorpack/locale/sr_YU
+R	modules/colorpack/locale/sv_SE/LC_MESSAGES/modules_colorpack.mo
+R	modules/colorpack/locale/sv_SE/LC_MESSAGES
+R	modules/colorpack/locale/sv_SE
+R	modules/colorpack/locale/tr_TR/LC_MESSAGES/modules_colorpack.mo
+R	modules/colorpack/locale/tr_TR/LC_MESSAGES
+R	modules/colorpack/locale/tr_TR
+R	modules/colorpack/po/bg_BG.po
+R	modules/colorpack/po/cs_CZ.po
+R	modules/colorpack/po/da_DK.po
+R	modules/colorpack/po/de_DE.po
+R	modules/colorpack/po/eu_ES.po
+R	modules/colorpack/po/fr_FR.po
+R	modules/colorpack/po/it_IT.po
+R	modules/colorpack/po/ja_JP.po
+R	modules/colorpack/po/nl_NL.po
+R	modules/colorpack/po/ru_RU.po
+R	modules/colorpack/po/sr_YU.po
+R	modules/colorpack/po/sv_SE.po
+R	modules/colorpack/po/tr_TR.po

@@ -1,0 +1,96 @@
+# File crc32 crc32(crlf) size size(crlf)  or  R File
+modules/mime/MimeAdmin.inc	3894266716	2558651123	3346	3450
+modules/mime/MimeEdit.inc	535931224	855458226	4760	4930
+modules/mime/classes/MimeHelper.class	2980218497	2418997915	2194	2263
+modules/mime/data/b_drop.png	1866751600	1866751600	311	311
+modules/mime/data/b_edit.png	3326881931	3326881931	451	451
+modules/mime/data/mime_viewable.gif	2811788519	2811788519	538	538
+modules/mime/locale/af/LC_MESSAGES/modules_mime.mo	2765761822	2765761822	1856	1856
+modules/mime/locale/cs/LC_MESSAGES/modules_mime.mo	1157286136	1157286136	2125	2125
+modules/mime/locale/da/LC_MESSAGES/modules_mime.mo	2357056162	2357056162	1729	1729
+modules/mime/locale/de/LC_MESSAGES/modules_mime.mo	2814139893	2814139893	2152	2152
+modules/mime/locale/eu/LC_MESSAGES/modules_mime.mo	599257008	599257008	1870	1870
+modules/mime/locale/fr/LC_MESSAGES/modules_mime.mo	1857132641	1857132641	2157	2157
+modules/mime/locale/it/LC_MESSAGES/modules_mime.mo	2650035095	2650035095	1835	1835
+modules/mime/locale/ja/LC_MESSAGES/modules_mime.mo	1593329819	1593329819	1340	1340
+modules/mime/locale/nl/LC_MESSAGES/modules_mime.mo	3061681166	3061681166	2007	2007
+modules/mime/locale/no/LC_MESSAGES/modules_mime.mo	446136602	446136602	2104	2104
+modules/mime/locale/pl/LC_MESSAGES/modules_mime.mo	4024960323	4024960323	2182	2182
+modules/mime/locale/pt_BR/LC_MESSAGES/modules_mime.mo	1453504329	1453504329	1956	1956
+modules/mime/locale/ru/LC_MESSAGES/modules_mime.mo	3218870251	3218870251	2769	2769
+modules/mime/locale/sr/LC_MESSAGES/modules_mime.mo	153871046	153871046	1795	1795
+modules/mime/locale/sv/LC_MESSAGES/modules_mime.mo	3473514128	3473514128	2201	2201
+modules/mime/locale/tr/LC_MESSAGES/modules_mime.mo	2819067228	2819067228	1865	1865
+modules/mime/locale/zh_CN/LC_MESSAGES/modules_mime.mo	1643869904	1643869904	1993	1993
+modules/mime/locale/zh_TW/LC_MESSAGES/modules_mime.mo	878485141	878485141	2007	2007
+modules/mime/module.inc	2646200837	1733332274	1825	1883
+modules/mime/po/GNUmakefile	1866879166	2808215985	98	103
+modules/mime/po/af.po	3800012458	3190062172	2807	2915
+modules/mime/po/cs.po	709770450	794216894	2941	3051
+modules/mime/po/da.po	3178731135	3168659975	2788	2897
+modules/mime/po/de.po	4239302276	3785819289	3078	3191
+modules/mime/po/eu.po	2430292905	2540855954	2863	2972
+modules/mime/po/fr.po	3985668620	75033278	3006	3114
+modules/mime/po/it.po	315392761	1617768112	2778	2884
+modules/mime/po/ja.po	92477553	3445506812	2651	2757
+modules/mime/po/nl.po	268544959	148587128	3048	3155
+modules/mime/po/no.po	3261176596	1505871630	3021	3129
+modules/mime/po/pl.po	1148505392	881547584	2986	3092
+modules/mime/po/pt_BR.po	426694126	498412907	2903	3009
+modules/mime/po/ru.po	1794723944	3835843338	3692	3802
+modules/mime/po/sr.po	388559505	2206349675	2742	2849
+modules/mime/po/strings.raw	211652071	913278698	1057	1088
+modules/mime/po/sv.po	1479005586	1262022814	3186	3303
+modules/mime/po/tr.po	3660284503	3589750976	2928	3039
+modules/mime/po/zh_CN.po	2945612183	543180689	2795	2900
+modules/mime/po/zh_TW.po	3474791800	101553470	2816	2922
+modules/mime/templates/MimeAdmin.tpl	2408827587	3760531568	2001	2063
+modules/mime/templates/MimeEdit.tpl	723985845	3324231073	2537	2611
+R	modules/mime/locale/cs_CZ/LC_MESSAGES/modules_mime.mo
+R	modules/mime/locale/cs_CZ/LC_MESSAGES
+R	modules/mime/locale/cs_CZ
+R	modules/mime/locale/da_DK/LC_MESSAGES/modules_mime.mo
+R	modules/mime/locale/da_DK/LC_MESSAGES
+R	modules/mime/locale/da_DK
+R	modules/mime/locale/de_DE/LC_MESSAGES/modules_mime.mo
+R	modules/mime/locale/de_DE/LC_MESSAGES
+R	modules/mime/locale/de_DE
+R	modules/mime/locale/eu_ES/LC_MESSAGES/modules_mime.mo
+R	modules/mime/locale/eu_ES/LC_MESSAGES
+R	modules/mime/locale/eu_ES
+R	modules/mime/locale/fr_FR/LC_MESSAGES/modules_mime.mo
+R	modules/mime/locale/fr_FR/LC_MESSAGES
+R	modules/mime/locale/fr_FR
+R	modules/mime/locale/it_IT/LC_MESSAGES/modules_mime.mo
+R	modules/mime/locale/it_IT/LC_MESSAGES
+R	modules/mime/locale/it_IT
+R	modules/mime/locale/ja_JP/LC_MESSAGES/modules_mime.mo
+R	modules/mime/locale/ja_JP/LC_MESSAGES
+R	modules/mime/locale/ja_JP
+R	modules/mime/locale/nl_NL/LC_MESSAGES/modules_mime.mo
+R	modules/mime/locale/nl_NL/LC_MESSAGES
+R	modules/mime/locale/nl_NL
+R	modules/mime/locale/ru_RU/LC_MESSAGES/modules_mime.mo
+R	modules/mime/locale/ru_RU/LC_MESSAGES
+R	modules/mime/locale/ru_RU
+R	modules/mime/locale/sr_YU/LC_MESSAGES/modules_mime.mo
+R	modules/mime/locale/sr_YU/LC_MESSAGES
+R	modules/mime/locale/sr_YU
+R	modules/mime/locale/sv_SE/LC_MESSAGES/modules_mime.mo
+R	modules/mime/locale/sv_SE/LC_MESSAGES
+R	modules/mime/locale/sv_SE
+R	modules/mime/locale/tr_TR/LC_MESSAGES/modules_mime.mo
+R	modules/mime/locale/tr_TR/LC_MESSAGES
+R	modules/mime/locale/tr_TR
+R	modules/mime/po/cs_CZ.po
+R	modules/mime/po/da_DK.po
+R	modules/mime/po/de_DE.po
+R	modules/mime/po/eu_ES.po
+R	modules/mime/po/fr_FR.po
+R	modules/mime/po/it_IT.po
+R	modules/mime/po/ja_JP.po
+R	modules/mime/po/nl_NL.po
+R	modules/mime/po/ru_RU.po
+R	modules/mime/po/sr_YU.po
+R	modules/mime/po/sv_SE.po
+R	modules/mime/po/tr_TR.po

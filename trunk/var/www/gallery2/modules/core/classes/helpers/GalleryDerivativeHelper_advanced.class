@@ -1,0 +1,807 @@
+<?php
+/*
+ * $RCSfile: GalleryDerivativeHelper_advanced.class,v $
+ *
+ * Gallery - a web based photo album viewer and editor
+ * Copyright (C) 2000-2006 Bharat Mediratta
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or (at
+ * your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+/**
+ * @version $Revision: 1.23 $ $Date: 2006/01/14 02:21:41 $
+ * @package GalleryCore
+ * @author Bharat Mediratta <bharat@menalto.com>
+ */
+
+/**
+ * A helper class for GalleryDerivatives
+ *
+ * Utility functions useful in managing GalleryDerivatives
+ *
+ * @package GalleryCore
+ * @subpackage Helpers
+ */
+class GalleryDerivativeHelper_advanced {
+
+    /**
+     * Load the derivative images that have the specified source id(s) with
+     * the type(s) specified
+     *
+     * @param array GalleryItem ids
+     * @param array derivative types (eg, 'DERIVATIVE_TYPE_IMAGE_THUMBNAIL')
+     * @return array object GalleryStatus a status code
+     *               array(GalleryItem id => GalleryDerivativeImage, ...)
+     * @static
+     */
+    function fetchDerivativesBySourceIds($ids, $types=array()) {
+	GalleryCoreApi::requireOnce(
+		'modules/core/classes/helpers/GalleryDerivativeHelper_medium.class');
+	list ($ret, $results) =
+		GalleryDerivativeHelper_medium::_loadDerivatives(null, $ids, $types);
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	return array(null, $results);
+    }
+
+    /**
+     * Convenience function to fetch all derivatives for a given item id
+     *
+     * @param array GalleryItem ids
+     * @return array object GalleryStatus a status code
+     *               array(GalleryItem id => GalleryDerivativeImage, ...)
+     * @static
+     */
+    function fetchDerivativesByItemIds($ids) {
+	GalleryCoreApi::requireOnce(
+		'modules/core/classes/helpers/GalleryDerivativeHelper_medium.class');
+	if (empty($ids)) {
+	    return array(null, array());
+	}
+
+	list ($ret, $results) = GalleryDerivativeHelper_medium::_loadDerivatives($ids, null);
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+	return array(null, $results);
+    }
+
+    /**
+     * Use the given operation as a transform for each derivative that depends on the target
+     * derivative.  This gives the dependent derivatives a chance to perform any necessary
+     * transformations required to adapt to an upstream derivative operation change.  For example,
+     * if you have a preferred which has a dependent thumbnail which has a crop operation in it,
+     * then you "rotate|90" the preferred you'd call adjustDependentDerivatives on the thumbnail
+     * with the "rotate|90" operation so that we can rotate the crop coordinates appropriately.
+     *
+     * @param array id the target derivative
+     * @param string the operation that was performed on the target derivative
+     * @param boolean true if we should apply the transform in reverse
+     * @return object GalleryStatus a status code
+     * @static
+     */
+    function adjustDependentDerivatives($id, $operation, $reverse=false) {
+	global $gallery;
+
+	$ids = array((int)$id => 1);
+	$lastCount = 0;
+
+	/* Discover the entire derivative dependency tree */
+	while (sizeof($ids) > $lastCount) {
+	    $lastCount = sizeof($ids);
+	    $idMarkers = GalleryUtilities::makeMarkers(sizeof($ids));
+	    $query = '
+	    SELECT
+	      [GalleryDerivative::id]
+	    FROM
+	      [GalleryDerivative]
+	    WHERE
+	      [GalleryDerivative::derivativeSourceId] IN (' . $idMarkers . ')
+	    ';
+
+	    list ($ret, $searchResults) = $gallery->search($query, array_keys($ids));
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+
+	    /* Get all derivative ids */
+	    while ($result = $searchResults->nextResult()) {
+		$ids[$result[0]] = 1;
+	    }
+	}
+	unset($ids[$id]);
+	$ids = array_keys($ids);
+
+	/* Now $ids contains all the derivative ids that depend on the target $id */
+	if (!empty($ids)) {
+	    list ($ret, $lockId) = GalleryCoreApi::acquireWriteLock($ids);
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+
+	    /* Turn ids into objects */
+	    list ($ret, $derivatives) = GalleryCoreApi::loadEntitiesById($ids);
+	    if ($ret) {
+		GalleryCoreApi::releaseLocks($lockId);
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+
+	    /* Get all toolkits */
+	    list ($ret, $toolkitIds) =
+		GalleryCoreApi::getAllFactoryImplementationIds('GalleryToolkit');
+	    if ($ret) {
+		GalleryCoreApi::releaseLocks($lockId);
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+
+	    $toolkits = array();
+	    foreach (array_keys($toolkitIds) as $toolkitId) {
+		list ($ret, $toolkits[$toolkitId]) =
+		    GalleryCoreApi::newFactoryInstanceById('GalleryToolkit', $toolkitId);
+		if ($ret) {
+		    GalleryCoreApi::releaseLocks($lockId);
+		    return $ret->wrap(__FILE__, __LINE__);
+		}
+	    }
+
+	    /* Apply the transform as necessary */
+	    $changed = array();
+	    $changedIds = array();
+	    foreach ($derivatives as $derivative) {
+		foreach ($toolkits as $toolkitId => $toolkit) {
+		    $currentOperations = $derivative->getDerivativeOperations();
+		    list ($success, $newOperations) =
+			$toolkit->applyTransform($operation, $currentOperations, $reverse);
+		    if ($success) {
+			/* It might not have changed, but setting it here won't hurt */
+			$derivative->setDerivativeOperations($newOperations);
+			$ret = $derivative->save();
+			if ($ret) {
+			    GalleryCoreApi::releaseLocks($lockId);
+			    return $ret->wrap(__FILE__, __LINE__);
+			}
+			break;
+		    }
+		}
+	    }
+
+	    $ret = GalleryCoreApi::releaseLocks($lockId);
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	}
+
+	return null;
+    }
+
+    /**
+     * Find all derivatives attached to one source and switch them to another one
+     *
+     * @param string the original source id
+     * @param string the new source id
+     * @return object GalleryStatus a status code
+     * @static
+     */
+    function remapSourceIds($originalSourceId, $newSourceId) {
+	global $gallery;
+
+	if ($originalSourceId == $newSourceId) {
+	    return null;
+	}
+	$originalSourceId = (int)$originalSourceId;
+	$newSourceId = (int)$newSourceId;
+
+	$query = '
+	SELECT
+	  [GalleryDerivative::id]
+	FROM
+	  [GalleryDerivative]
+	WHERE
+	  [GalleryDerivative::derivativeSourceId] = ?
+	  AND
+	  [GalleryDerivative::id] NOT IN (?, ?)
+	';
+
+	list ($ret, $searchResults) = $gallery->search(
+	    $query, array($originalSourceId, $originalSourceId, $newSourceId));
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	/* Get all derivative ids */
+	$derivativeIds = array();
+	while ($result = $searchResults->nextResult()) {
+	    $derivativeIds[] = $result[0];
+	}
+
+	if (!empty($derivativeIds)) {
+	    /* Lock them all */
+	    list ($ret, $lockId) = GalleryCoreApi::acquireWriteLock($derivativeIds);
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+
+	    /* Turn ids into objects */
+	    list ($ret, $derivatives) = GalleryCoreApi::loadEntitiesById($derivativeIds);
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+
+	    /* Remap each derivative */
+	    foreach ($derivatives as $derivative) {
+		$derivative->setDerivativeSourceId($newSourceId);
+		$ret = $derivative->expireCache();
+		if ($ret) {
+		    return $ret->wrap(__FILE__, __LINE__);
+		}
+
+		$ret = $derivative->save();
+		if ($ret) {
+		    return $ret->wrap(__FILE__, __LINE__);
+		}
+	    }
+
+	    /* Release locks */
+	    $ret = GalleryCoreApi::releaseLocks($lockId);
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	}
+
+	return null;
+    }
+
+    /**
+     * Copy the derivative preferences from one id to another
+     *
+     * Note that this doesn't modify pre-existing preferences already assigned
+     * to the target.
+     *
+     * @param int the source id
+     * @param int the target id
+     * @return object GalleryStatus a status code
+     * @static
+     */
+    function copyPreferences($sourceId, $targetId) {
+	list ($ret, $preferences) = GalleryCoreApi::fetchDerivativePreferencesForItem($sourceId);
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	foreach ($preferences as $preference) {
+	    $ret = GalleryCoreApi::addDerivativePreference(
+		$preference['order'], $targetId, $preference['derivativeType'],
+		$preference['derivativeOperations']);
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	}
+
+	return null;
+    }
+
+    /**
+     * Add a derivative preference to a given item
+     *
+     * @param int the position of this preference
+     * @param mixed int item id or array of item ids
+     * @param int the derivative type (eg, DERIVATIVE_TYPE_IMAGE_THUMBNAIL)
+     * @param string the derivative operations (eg, 'thumbnail|200')
+     * @return object GalleryStatus a status code
+     * @static
+     */
+    function addPreference($order, $itemId, $derivativeType, $derivativeOperations) {
+	if (is_array($itemId)) {
+	    /* Allow for adding same set of preferences to multiple items */
+	    $order = array($order);
+	    $derivativeType = array($derivativeType);
+	    $derivativeOperations = array($derivativeOperations);
+	    /* TODO: use array_fill when we require php 4.2+ */
+	    for ($i = 1; $i < count($itemId); $i++) {
+		$order[] = $order[0];
+		$derivativeType[] = $derivativeType[0];
+		$derivativeOperations[] = $derivativeOperations[0];
+	    }
+	}
+	$ret = GalleryCoreApi::addMapEntry(
+	    'GalleryDerivativePreferencesMap',
+	    array('order' => $order,
+		  'itemId' => $itemId,
+		  'derivativeType' => $derivativeType,
+		  'derivativeOperations' => $derivativeOperations));
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	return null;
+    }
+
+    /**
+     * Remove all derivative preferences for a given item
+     *
+     * @param int the item id
+     * @return object GalleryStatus a status code
+     * @static
+     */
+    function removePreferencesForItem($itemId) {
+	$ret = GalleryCoreApi::removeMapEntry(
+	    'GalleryDerivativePreferencesMap', array('itemId' => $itemId));
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	return null;
+    }
+
+    /**
+     * Remove derivative preference for a given item/type combination
+     *
+     * @param int the item id
+     * @param int derivative type id
+     * @return object GalleryStatus a status code
+     * @static
+     */
+    function removePreferenceForItemType($itemId, $derivativeType) {
+	$ret = GalleryCoreApi::removeMapEntry(
+	    'GalleryDerivativePreferencesMap',
+	    array('itemId' => $itemId, 'derivativeType' => $derivativeType));
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	return null;
+    }
+
+    /**
+     * Get the derivative preferences for the given item
+     *
+     * @param int the target id
+     * @return array object GalleryStatus a status code
+     *               array (derivativeType => ..., derivativeOperations => ...)
+     * @static
+     */
+    function fetchPreferencesForItem($targetId) {
+	global $gallery;
+
+	$query = '
+	SELECT
+	  [GalleryDerivativePreferencesMap::order],
+	  [GalleryDerivativePreferencesMap::derivativeType],
+	  [GalleryDerivativePreferencesMap::derivativeOperations]
+	FROM
+	  [GalleryDerivativePreferencesMap]
+	WHERE
+	  [GalleryDerivativePreferencesMap::itemId] = ?
+	ORDER BY
+	  [GalleryDerivativePreferencesMap::order] ASC
+	';
+
+	list ($ret, $searchResults) = $gallery->search($query, array((int)$targetId));
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	$data = array();
+	while ($result = $searchResults->nextResult()) {
+	    $data[] = array('order' => (int)$result[0],
+			    'derivativeType' => (int)$result[1],
+			    'derivativeOperations' => $result[2]);
+	}
+	return array(null, $data);
+    }
+
+    /**
+     * Merge together two sets of operations into one in the most sensible way.
+     * For example:
+     *
+     * OPERATION SET 1              OPERATION SET 2        RESULT
+     * crop|1,2,3,4;rotate|90       crop|2,3,4,5           crop|2,3,4,5,rotate|90
+     * scale|250;rotate|90          rotate|-90             scale|250
+     * scale|250;rotate|90          rotate|90              scale|250;rotate|180
+     * scale|250;rotate|90          thumbnail|125          thumbnail|125;rotate|180
+     *
+     * @param string the first set of operations
+     * @param string the second set of operations
+     * @param boolean true if the second set should be added at the beginning of the first set,
+     *                     if it can't be merged.
+     * @return array object GalleryStatus a status code
+     *               the merged operation set
+     * @static
+     */
+    function mergeOperations($operationSet1, $operationSet2, $highPriority=false) {
+	global $gallery;
+
+	/* Get all toolkits */
+	list ($ret, $toolkitIds) = GalleryCoreApi::getAllFactoryImplementationIds('GalleryToolkit');
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	$toolkits = array();
+	foreach (array_keys($toolkitIds) as $toolkitId) {
+	    list ($ret, $toolkits[$toolkitId]) =
+		GalleryCoreApi::newFactoryInstanceById('GalleryToolkit', $toolkitId);
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+	}
+
+	if (empty($operationSet1)) {
+	    $results = $operationSet2;
+	} else if (empty($operationSet2)) {
+	    $results = $operationSet1;
+	} else {
+	    foreach (split(';', $operationSet1) as $opString) {
+		if (strpos($opString, '|') === false) {
+		    $operations1[] = array('op' => $opString, 'args' => array());
+		} else {
+		    list ($op, $args) = split('\|', $opString);
+		    $operations1[] = array('op' => $op, 'args' => split(',', $args));
+		}
+	    }
+
+	    foreach (split(';', $operationSet2) as $opString) {
+		if (strpos($opString, '|') === false) {
+		    $operations2[] = array('op' => $opString, 'args' => array());
+		} else {
+		    list ($op, $args) = split('\|', $opString);
+		    $operations2[] = array('op' => $op, 'args' => split(',', $args));
+		}
+	    }
+
+	    /*
+	     * Merge operation set 2 into operation set 1, starting from the tail end of operation
+	     * set 1 and working our way back to the beginning, since operations are cumulative.
+	     */
+	    for ($i = 0; $i < sizeof($operations2); $i++) {
+		$success = false;
+		for ($j = sizeof($operations1)-1; $j >= 0; $j--) {
+		    foreach ($toolkits as $toolkitId => $toolkit) {
+			list ($success, $newOp, $newArgs) = $toolkit->mergeOperations(
+			    $operations1[$j]['op'], $operations1[$j]['args'],
+			    $operations2[$i]['op'], $operations2[$i]['args']);
+			if ($success) {
+			    if (isset($newOp)) {
+				$operations1[$j]['op'] = $newOp;
+				$operations1[$j]['args'] = $newArgs;
+			    } else {
+				/* Operations cancelled each other out */
+				array_splice($operations1, $j, 1);
+			    }
+			    break 2;
+			}
+		    }
+		}
+
+		if (!$success) {
+		    /* No merge was possible so add the new operation to the head or tail */
+		    if ($highPriority) {
+			array_unshift($operations1, $operations2[$i]);
+		    } else {
+			$operations1[] = $operations2[$i];
+		    }
+		}
+	    }
+
+	    /* Our merge is complete, so convert our operations back into a string */
+	    $results = '';
+	    for ($i = 0; $i < sizeof($operations1); $i++) {
+		$op = $operations1[$i]['op'];
+		if (!empty($operations1[$i]['args'])) {
+		    $op .= '|' . join(',', $operations1[$i]['args']);
+		}
+		$results[] = $op;
+	    }
+	    if (!empty($results)) {
+		$results = join(';', $results);
+	    }
+	}
+
+	return array(null, $results);
+    }
+
+    /**
+     * Remove the given operation from the operation set.
+     *
+     * @return string the new operation set
+     * @static
+     */
+    function removeOperation($operation, $operationSet) {
+	if (!empty($operationSet)) {
+	    $newOperations = array();
+	    $match = $operation . '|';
+	    $matchLength = strlen($match);
+	    foreach (split(';', $operationSet) as $opString) {
+		if (strncmp($opString, $match, $matchLength)) {
+		    $newOperations[] = $opString;
+		}
+	    }
+	    $operationSet = join(';', $newOperations);
+	}
+
+	return $operationSet;
+    }
+
+
+    /**
+     * Expire all derivatives that depend on the source ids specified
+     *
+     * @param array source ids
+     * @return object GalleryStatus a status code
+     * @static
+     */
+    function expireDerivativeTreeBySourceIds($ids) {
+	global $gallery;
+
+	if (!is_array($ids)) {
+	    $ids = array($ids);
+	}
+	foreach ($ids as $idx => $id) {
+	    $ids[$idx] = (int)$id;
+	}
+	$idMarkers = GalleryUtilities::makeMarkers($ids);
+
+	$query = '
+	SELECT
+	  [GalleryDerivative::id]
+	FROM
+	  [GalleryDerivative]
+	WHERE
+	  [GalleryDerivative::derivativeSourceId] IN (' . $idMarkers . ')
+	';
+
+	list ($ret, $searchResults) = $gallery->search($query, $ids);
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	/* Get all derivative ids */
+	$derivativeIds = array();
+	while ($result = $searchResults->nextResult()) {
+	    $derivativeIds[] = $result[0];
+	}
+
+	if (!empty($derivativeIds)) {
+	    /* Turn ids into objects */
+	    list ($ret, $derivatives) = GalleryCoreApi::loadEntitiesById($derivativeIds);
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+
+	    /* Expire each derivative */
+	    foreach ($derivatives as $derivative) {
+		$ret = $derivative->expireCache();
+		if ($ret) {
+		    return $ret->wrap(__FILE__, __LINE__);
+		}
+	    }
+
+	    /* Repeat the process on the next set of derivatives */
+	    $ret =
+		GalleryDerivativeHelper_advanced::expireDerivativeTreeBySourceIds($derivativeIds);
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	}
+
+	return null;
+    }
+
+    /**
+     * Zero out the dimensions for all derivatives that depend on the given source id so that
+     * they will be recalculated before the next view.
+     *
+     * @param array source ids
+     * @return object GalleryStatus a status code
+     * @static
+     */
+    function invalidateDerivativeDimensionsBySourceIds($ids) {
+	global $gallery;
+
+	if (!is_array($ids)) {
+	    return GalleryCoreApi::error(ERROR_BAD_PARAMETER, __FILE__, __LINE__);
+	}
+	foreach ($ids as $idx => $id) {
+	    $ids[$idx] = (int)$id;
+	}
+
+	$idMarkers = GalleryUtilities::makeMarkers($ids);
+
+	$query = '
+	SELECT
+	  [GalleryDerivativeImage::id]
+	FROM
+	  [GalleryDerivative], [GalleryDerivativeImage]
+	WHERE
+	  [GalleryDerivative::id] = [GalleryDerivativeImage::id]
+	  AND
+	  [GalleryDerivative::derivativeSourceId] IN (' . $idMarkers . ')
+	';
+
+	list ($ret, $searchResults) = $gallery->search($query, $ids);
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	/* Get all derivative ids */
+	$derivativeIds = array();
+	while ($result = $searchResults->nextResult()) {
+	    $derivativeIds[] = $result[0];
+	}
+
+	if (!empty($derivativeIds)) {
+	    /* Lock them all */
+	    list ($ret, $lockId) = GalleryCoreApi::acquireWriteLock($derivativeIds);
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+
+	    /* Turn ids into objects */
+	    list ($ret, $derivatives) = GalleryCoreApi::loadEntitiesById($derivativeIds);
+	    if ($ret) {
+		GalleryCoreApi::releaseLocks($lockId);
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+
+	    /* Null out the dimensions and save them */
+	    foreach ($derivatives as $derivative) {
+		$derivative->setWidth(0);
+		$derivative->setHeight(0);
+
+		$ret = $derivative->save();
+		if ($ret) {
+		    GalleryCoreApi::releaseLocks($lockId);
+		    return $ret->wrap(__FILE__, __LINE__);
+		}
+	    }
+
+	    $ret = GalleryCoreApi::releaseLocks($lockId);
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+
+	    /* Repeat the process on the next set of derivatives */
+	    $ret = GalleryDerivativeHelper_advanced::invalidateDerivativeDimensionsBySourceIds(
+		$derivativeIds);
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	}
+
+	return null;
+    }
+
+    /**
+     * Rebuild the cache for the given derivative
+     *
+     * @param the id of the derivative
+     * @return array object GalleryStatus a status code
+     *               object GalleryDerivative the rebuilt derivative
+     * @static
+     */
+    function rebuildCache($derivativeId) {
+	global $gallery;
+
+	$gallery->guaranteeTimeLimit(10);
+
+	list ($ret, $derivative) = GalleryCoreApi::loadEntitiesById($derivativeId);
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	/* Check to see if we're a broken derivative. */
+	$sourceId = $derivative->getDerivativeSourceId();
+	if (empty($sourceId)) {
+	    return array(GalleryCoreApi::error(ERROR_BROKEN_DERIVATIVE, __FILE__, __LINE__), null);
+	}
+
+	/* Load the source */
+	list ($ret, $source) = GalleryCoreApi::loadEntitiesById($sourceId);
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	/* If the source is a derivative, make sure it's current */
+	if (GalleryUtilities::isA($source, 'GalleryDerivative')) {
+	    list ($ret, $source) =
+		GalleryCoreApi::rebuildDerivativeCacheIfNotCurrent($source->getId(), true);
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+	}
+
+	/*
+	 * Rebuild the cache.  Lock it, then refresh it in case it was modified
+	 * before we acquired the lock, rebuild it, save it, then release the
+	 * lock.
+	 */
+	list ($ret, $lockId) = GalleryCoreApi::acquireWriteLock($derivativeId, 1);
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	list ($ret, $derivative) = $derivative->refresh();
+	if ($ret) {
+	    GalleryCoreApi::releaseLocks($lockId);
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	$ret = $derivative->rebuildCache();
+	if ($ret) {
+	    GalleryCoreApi::releaseLocks($lockId);
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	$ret = $derivative->save(false);
+	if ($ret) {
+	    GalleryCoreApi::releaseLocks($lockId);
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	$ret = GalleryCoreApi::releaseLocks($lockId);
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	return array(null, $derivative);
+    }
+
+    /**
+     * Return the preferred source for this item by returning the first occurrence of the following:
+     * 1. This item's preferred derivative
+     * 2. This item's linked item's preferred derivative (if applicable)
+     * 3. This item's linked item (if applicable)
+     * 4. This item itself
+     *
+     * @param object GalleryDataItem the target item
+     * @return array object GalleryObject a status code
+     *               object GalleryEntity (either a GalleryDataItem or a GalleryDerivative)
+     *                                    the preferred source
+     */
+    function fetchPreferredSource($item) {
+	$sourceIds = array();
+	$sourceIds[] = $item->getId();
+	if ($item->isLinked()) {
+	    $sourceIds[] = $item->getLinkId();
+	}
+
+	list ($ret, $preferredTable) = GalleryCoreApi::fetchPreferredsByItemIds($sourceIds);
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	$sourceId = null;
+	if (isset($preferredTable[$item->getId()])) {
+	    $source = $preferredTable[$item->getId()];
+	} else if ($item->isLinked() && isset($preferredTable[$item->getLinkId()])) {
+	    $source = $preferredTable[$item->getLinkId()];
+	} else if ($item->isLinked()) {
+	    $sourceId = $item->getLinkId();
+	} else {
+	    $source = $item;
+	}
+
+	if (!empty($sourceId)) {
+	    list ($ret, $source) = GalleryCoreApi::loadEntitiesById($sourceId);
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+	}
+
+	return array(null, $source);
+    }
+}
+?>

@@ -1,0 +1,161 @@
+# File crc32 crc32(crlf) size size(crlf)  or  R File
+modules/cart/AddToCart.inc	1469033510	2431157722	2348	2431
+modules/cart/Callbacks.inc	3677780057	1258737141	1801	1859
+modules/cart/ModifyCart.inc	3935630026	2931592536	4434	4597
+modules/cart/ViewCart.inc	3868010752	3114962926	5430	5607
+modules/cart/classes/CartHelper.class	237159044	4052630260	4581	4758
+modules/cart/classes/CartPluginInterface_1_0.class	43980190	3339892632	2306	2376
+modules/cart/locale/af/LC_MESSAGES/modules_cart.mo	787554078	787554078	2093	2093
+modules/cart/locale/bg/LC_MESSAGES/modules_cart.mo	1248683838	1248683838	2327	2327
+modules/cart/locale/cs/LC_MESSAGES/modules_cart.mo	2083540646	2083540646	2269	2269
+modules/cart/locale/da/LC_MESSAGES/modules_cart.mo	2650578685	2650578685	2173	2173
+modules/cart/locale/de/LC_MESSAGES/modules_cart.mo	2173309507	2173309507	2307	2307
+modules/cart/locale/es/LC_MESSAGES/modules_cart.mo	1915234425	1915234425	2194	2194
+modules/cart/locale/eu/LC_MESSAGES/modules_cart.mo	1461874550	1461874550	2206	2206
+modules/cart/locale/fr/LC_MESSAGES/modules_cart.mo	1460173629	1460173629	2171	2171
+modules/cart/locale/ga/LC_MESSAGES/modules_cart.mo	3346106636	3346106636	2178	2178
+modules/cart/locale/hu/LC_MESSAGES/modules_cart.mo	1139985432	1139985432	1802	1802
+modules/cart/locale/is/LC_MESSAGES/modules_cart.mo	740835076	740835076	456	456
+modules/cart/locale/it/LC_MESSAGES/modules_cart.mo	3301079010	3301079010	2300	2300
+modules/cart/locale/ja/LC_MESSAGES/modules_cart.mo	1231290117	1231290117	2331	2331
+modules/cart/locale/nl/LC_MESSAGES/modules_cart.mo	2934451695	2934451695	2112	2112
+modules/cart/locale/no/LC_MESSAGES/modules_cart.mo	2627599217	2627599217	2175	2175
+modules/cart/locale/pl/LC_MESSAGES/modules_cart.mo	3410598128	3410598128	2214	2214
+modules/cart/locale/pt_BR/LC_MESSAGES/modules_cart.mo	1179893976	1179893976	1564	1564
+modules/cart/locale/ru/LC_MESSAGES/modules_cart.mo	1529611516	1529611516	3224	3224
+modules/cart/locale/sr/LC_MESSAGES/modules_cart.mo	3528628309	3528628309	2126	2126
+modules/cart/locale/sv/LC_MESSAGES/modules_cart.mo	36448726	36448726	2279	2279
+modules/cart/locale/tr/LC_MESSAGES/modules_cart.mo	4149515018	4149515018	2145	2145
+modules/cart/locale/vi/LC_MESSAGES/modules_cart.mo	2932789120	2932789120	2254	2254
+modules/cart/locale/zh_CN/LC_MESSAGES/modules_cart.mo	2140203039	2140203039	2138	2138
+modules/cart/locale/zh_TW/LC_MESSAGES/modules_cart.mo	3073005369	3073005369	2121	2121
+modules/cart/module.inc	2781876179	3944166908	4523	4685
+modules/cart/po/GNUmakefile	1866879166	2808215985	98	103
+modules/cart/po/af.po	1648630782	3839443479	3032	3156
+modules/cart/po/bg.po	2513923310	2296270059	3349	3477
+modules/cart/po/cs.po	3960699540	2752760883	3114	3237
+modules/cart/po/da.po	558064729	2275682009	3039	3159
+modules/cart/po/de.po	3722250911	293876057	3319	3446
+modules/cart/po/es.po	2665054305	88814532	3193	3317
+modules/cart/po/eu.po	1983446793	2522701332	3046	3171
+modules/cart/po/fr.po	2780166107	3752772076	3101	3223
+modules/cart/po/ga.po	3833116287	4097672023	3992	4139
+modules/cart/po/hu.po	2449170730	164107401	3036	3162
+modules/cart/po/is.po	46690274	544783047	2417	2536
+modules/cart/po/it.po	1303407779	1735367456	3186	3311
+modules/cart/po/ja.po	339331645	1326575940	3198	3319
+modules/cart/po/nl.po	2497340328	4015405523	3103	3228
+modules/cart/po/no.po	3850671035	2836299521	3157	3279
+modules/cart/po/pl.po	3386498665	1611240644	3054	3175
+modules/cart/po/pt_BR.po	3194276753	2987031104	3012	3138
+modules/cart/po/ru.po	3618301566	565735000	4185	4311
+modules/cart/po/sr.po	924478343	3953150203	3011	3133
+modules/cart/po/strings.raw	3788827001	2323326843	1021	1060
+modules/cart/po/sv.po	1127536949	1773587302	3455	3587
+modules/cart/po/tr.po	465645425	570397083	3155	3281
+modules/cart/po/vi.po	3419132726	3291993237	3131	3251
+modules/cart/po/zh_CN.po	2668753271	2314862138	2962	3081
+modules/cart/po/zh_TW.po	1923026357	1190058671	2933	3050
+modules/cart/templates/ViewCart.tpl	1730453434	561157110	3233	3329
+modules/cart/templates/blocks/ShowCart.tpl	2800273143	2001763276	692	707
+modules/cart/templates/blocks/blocks.inc	3724706265	4029515079	109	114
+R	modules/cart/classes/CartMap.class
+R	modules/cart/classes/GNUmakefile
+R	modules/cart/classes/GalleryStorage/DatabaseStorage/schema/GNUmakefile
+R	modules/cart/classes/GalleryStorage/DatabaseStorage/schema/platform/GNUmakefile
+R	modules/cart/classes/GalleryStorage/DatabaseStorage/schema/platform/mysql/CartMap.sql
+R	modules/cart/classes/GalleryStorage/DatabaseStorage/schema/platform/mysql/GNUmakefile
+R	modules/cart/classes/GalleryStorage/DatabaseStorage/schema/platform/mysql
+R	modules/cart/classes/GalleryStorage/DatabaseStorage/schema/platform/oracle/CartMap.sql
+R	modules/cart/classes/GalleryStorage/DatabaseStorage/schema/platform/oracle/GNUmakefile
+R	modules/cart/classes/GalleryStorage/DatabaseStorage/schema/platform/oracle
+R	modules/cart/classes/GalleryStorage/DatabaseStorage/schema/platform/postgres/CartMap.sql
+R	modules/cart/classes/GalleryStorage/DatabaseStorage/schema/platform/postgres/GNUmakefile
+R	modules/cart/classes/GalleryStorage/DatabaseStorage/schema/platform/postgres
+R	modules/cart/classes/GalleryStorage/DatabaseStorage/schema/platform
+R	modules/cart/classes/GalleryStorage/DatabaseStorage/schema/xml-src/GNUmakefile
+R	modules/cart/classes/GalleryStorage/DatabaseStorage/schema/xml-src
+R	modules/cart/classes/GalleryStorage/DatabaseStorage/schema
+R	modules/cart/classes/GalleryStorage/DatabaseStorage
+R	modules/cart/classes/GalleryStorage
+R	modules/cart/classes/interfaces/CartMap.inc
+R	modules/cart/classes/interfaces/GNUmakefile
+R	modules/cart/classes/interfaces
+R	modules/cart/locale/bg_BG/LC_MESSAGES/modules_cart.mo
+R	modules/cart/locale/bg_BG/LC_MESSAGES
+R	modules/cart/locale/bg_BG
+R	modules/cart/locale/cs_CZ/LC_MESSAGES/modules_cart.mo
+R	modules/cart/locale/cs_CZ/LC_MESSAGES
+R	modules/cart/locale/cs_CZ
+R	modules/cart/locale/da_DK/LC_MESSAGES/modules_cart.mo
+R	modules/cart/locale/da_DK/LC_MESSAGES
+R	modules/cart/locale/da_DK
+R	modules/cart/locale/de_DE/LC_MESSAGES/modules_cart.mo
+R	modules/cart/locale/de_DE/LC_MESSAGES
+R	modules/cart/locale/de_DE
+R	modules/cart/locale/es_ES/LC_MESSAGES/modules_cart.mo
+R	modules/cart/locale/es_ES/LC_MESSAGES
+R	modules/cart/locale/es_ES
+R	modules/cart/locale/eu_ES/LC_MESSAGES/modules_cart.mo
+R	modules/cart/locale/eu_ES/LC_MESSAGES
+R	modules/cart/locale/eu_ES
+R	modules/cart/locale/fr_FR/LC_MESSAGES/modules_cart.mo
+R	modules/cart/locale/fr_FR/LC_MESSAGES
+R	modules/cart/locale/fr_FR
+R	modules/cart/locale/ga_IE/LC_MESSAGES/modules_cart.mo
+R	modules/cart/locale/ga_IE/LC_MESSAGES
+R	modules/cart/locale/ga_IE
+R	modules/cart/locale/hu_HU/LC_MESSAGES/modules_cart.mo
+R	modules/cart/locale/hu_HU/LC_MESSAGES
+R	modules/cart/locale/hu_HU
+R	modules/cart/locale/is_IS/LC_MESSAGES/modules_cart.mo
+R	modules/cart/locale/is_IS/LC_MESSAGES
+R	modules/cart/locale/is_IS
+R	modules/cart/locale/it_IT/LC_MESSAGES/modules_cart.mo
+R	modules/cart/locale/it_IT/LC_MESSAGES
+R	modules/cart/locale/it_IT
+R	modules/cart/locale/ja_JP/LC_MESSAGES/modules_cart.mo
+R	modules/cart/locale/ja_JP/LC_MESSAGES
+R	modules/cart/locale/ja_JP
+R	modules/cart/locale/nl_NL/LC_MESSAGES/modules_cart.mo
+R	modules/cart/locale/nl_NL/LC_MESSAGES
+R	modules/cart/locale/nl_NL
+R	modules/cart/locale/no_NO/LC_MESSAGES/modules_cart.mo
+R	modules/cart/locale/no_NO/LC_MESSAGES
+R	modules/cart/locale/no_NO
+R	modules/cart/locale/ru_RU/LC_MESSAGES/modules_cart.mo
+R	modules/cart/locale/ru_RU/LC_MESSAGES
+R	modules/cart/locale/ru_RU
+R	modules/cart/locale/sr_YU/LC_MESSAGES/modules_cart.mo
+R	modules/cart/locale/sr_YU/LC_MESSAGES
+R	modules/cart/locale/sr_YU
+R	modules/cart/locale/sv_SE/LC_MESSAGES/modules_cart.mo
+R	modules/cart/locale/sv_SE/LC_MESSAGES
+R	modules/cart/locale/sv_SE
+R	modules/cart/locale/tr_TR/LC_MESSAGES/modules_cart.mo
+R	modules/cart/locale/tr_TR/LC_MESSAGES
+R	modules/cart/locale/tr_TR
+R	modules/cart/locale/vi_VN/LC_MESSAGES/modules_cart.mo
+R	modules/cart/locale/vi_VN/LC_MESSAGES
+R	modules/cart/locale/vi_VN
+R	modules/cart/po/bg_BG.po
+R	modules/cart/po/cs_CZ.po
+R	modules/cart/po/da_DK.po
+R	modules/cart/po/de_DE.po
+R	modules/cart/po/es_ES.po
+R	modules/cart/po/eu_ES.po
+R	modules/cart/po/fr_FR.po
+R	modules/cart/po/ga_IE.po
+R	modules/cart/po/hu_HU.po
+R	modules/cart/po/is_IS.po
+R	modules/cart/po/it_IT.po
+R	modules/cart/po/ja_JP.po
+R	modules/cart/po/nl_NL.po
+R	modules/cart/po/no_NO.po
+R	modules/cart/po/ru_RU.po
+R	modules/cart/po/sr_YU.po
+R	modules/cart/po/sv_SE.po
+R	modules/cart/po/tr_TR.po
+R	modules/cart/po/vi_VN.po
+R	modules/cart/templates/CartSystemContent.tpl
+R	modules/cart/templates/ViewCartHead.tpl

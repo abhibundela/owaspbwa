@@ -1,0 +1,22 @@
+# $Id: strings.raw,v 1.12 2006/02/10 04:17:57 mindless Exp $
+
+/* theme.inc */
+gettext("Matrix")
+gettext("Standard Gallery2 look and feel")
+
+/* templates/album.tpl */
+gettext("This album is empty.")
+gettext("Add a photo!")
+gettext("no thumbnail")
+gettext("Album: %s")
+
+/* templates/error.tpl */
+gettext("Error!")
+
+/* templates/photo.tpl */
+gettext("Download %s")
+gettext("There is nothing to view for this item.")
+gettext("Download %s in original format")
+
+/* templates/progressbar.tpl */
+gettext("Continue...")

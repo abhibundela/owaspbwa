@@ -1,0 +1,1 @@
+|a:7:{s:13:"comments.show";s:2:"10";s:15:"comments.latest";s:1:"1";s:16:"validation.level";s:3:"OFF";s:8:"_version";s:5:"1.1.1";s:10:"_callbacks";s:88:"registerEventListeners|getItemLinks|getItemSummaries|getSiteAdminViews|getItemAdminViews";s:16:"_requiredCoreApi";s:3:"7,1";s:18:"_requiredModuleApi";s:3:"3,0";}

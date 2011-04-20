@@ -1,0 +1,69 @@
+# $Id: fr.po,v 1.6 2006/03/22 04:19:44 mindless Exp $
+#
+# Gallery - a web based photo album viewer and editor
+# Copyright (C) 2000-2006 Bharat Mediratta
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery: Link Items 1.0.4\n"
+"POT-Creation-Date: 2006-01-17 21:21+0100\n"
+"PO-Revision-Date: 2006-03-15 00:00+0100\n"
+"Last-Translator: Arnaud MOURONVAL <ArnaudMouronval@yahoo.com>\n"
+"Language-Team: French <gallery-devel@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Link"
+msgstr "Lier"
+
+msgid "Link Items"
+msgstr "Lier des éléments"
+
+msgid "Create links to other albums or external urls"
+msgstr "Créer des liens vers des albums ou des URL externes"
+
+msgid "Display"
+msgstr "Affichage"
+
+msgid "link"
+msgstr "lien"
+
+msgid "Link to Album:"
+msgstr "Lien vers l'abum&nbsp;:"
+
+msgid "You must enter an album id"
+msgstr "Vous devez saisir l'identifiant d'un album"
+
+msgid "Invalid album id"
+msgstr "Identifiant d'album invalide"
+
+msgid "Link to External URL:"
+msgstr "Lien vers une URL externe&nbsp;:"
+
+msgid "You must enter an URL"
+msgstr "Vous devez saisir une URL"
+
+msgid "Add Link"
+msgstr "Ajouter le lien"
+
+msgid "URL:"
+msgstr "URL&nbsp;:"
+
+msgid "Missing URL"
+msgstr "URL absente"

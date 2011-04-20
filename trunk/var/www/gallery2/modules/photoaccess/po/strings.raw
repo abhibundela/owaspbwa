@@ -1,0 +1,18 @@
+# $Id: strings.raw,v 1.16 2006/01/20 19:07:18 mindless Exp $
+
+/* FulfillmentError.inc */
+gettext("PhotoAccess Fulfillment Error") /* also in: templates/FulfillmentError.tpl */
+
+/* module.inc */
+gettext("PhotoWorks")
+gettext("PhotoWorks Photo Printing Module")
+gettext("Commerce")
+gettext("[photoaccess] Print")
+gettext("Print on PhotoWorks.com")
+
+/* classes/PhotoAccessCartPlugin.class */
+gettext("Print with PhotoAccess")
+
+/* templates/FulfillmentError.tpl */
+gettext("An error occurred while sending your photos over to PhotoWorks.com for printing.  If this failure occurs more than once, please contact your system administrator for assistance.")
+gettext("View your cart")

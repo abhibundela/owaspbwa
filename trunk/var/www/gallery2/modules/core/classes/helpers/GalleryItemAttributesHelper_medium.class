@@ -1,0 +1,169 @@
+<?php
+/*
+ * $RCSfile: GalleryItemAttributesHelper_medium.class,v $
+ *
+ * Gallery - a web based photo album viewer and editor
+ * Copyright (C) 2000-2006 Bharat Mediratta
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or (at
+ * your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+/**
+ * @version $Revision: 1.12 $ $Date: 2006/01/15 22:06:00 $
+ * @package GalleryCore
+ * @author Bharat Mediratta <bharat@menalto.com>
+ */
+
+/**
+ *
+ * @package GalleryCore
+ * @subpackage Helpers
+ */
+class GalleryItemAttributesHelper_medium {
+    /**
+     * Get the view counts for many item ids
+     * @param array the item ids
+     * @return array object GalleryStatus a status code
+     *               array (itemId => viewCount, ..)
+     * @static
+     */
+    function fetchViewCounts($itemIds) {
+	global $gallery;
+
+	foreach ($itemIds as $idx => $id) {
+	    $itemIds[$idx] = (int)$id;
+	}
+	$query = sprintf('
+        SELECT
+          [GalleryItemAttributesMap::itemId], [GalleryItemAttributesMap::viewCount]
+        FROM
+          [GalleryItemAttributesMap]
+        WHERE
+          [GalleryItemAttributesMap::itemId] IN (%s)
+        ', GalleryUtilities::makeMarkers($itemIds));
+	list ($ret, $searchResults) = $gallery->search($query, $itemIds);
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	if ($searchResults->resultCount() != sizeof($itemIds)) {
+	    return array(GalleryCoreApi::error(ERROR_MISSING_OBJECT, __FILE__, __LINE__), null);
+	}
+
+	$data = array();
+	while ($result = $searchResults->nextResult()) {
+	    $data[$result[0]] = (int)$result[1];
+	}
+
+	return array(null, $data);
+    }
+
+    /**
+     * Get the order weight for a given item id
+     * @param int the item id
+     * @return array object GalleryStatus a status code
+     *               int the order weight
+     * @static
+     */
+    function fetchOrderWeight($itemId) {
+	list ($ret, $orderWeights) =
+	    GalleryItemAttributesHelper_medium::fetchOrderWeights(array($itemId));
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	if (!isset($orderWeights[$itemId])) {
+	    return array(GalleryCoreApi::error(ERROR_MISSING_OBJECT, __FILE__, __LINE__), null);
+	}
+
+	return array(null, (int)$orderWeights[$itemId]);
+    }
+
+    /**
+     * Get the order weight for many item ids
+     * @param array the item ids
+     * @return array object GalleryStatus a status code
+     *               array(itemId1 => orderWeight1,
+     *                     itemId2 => orderWeight2, ...)
+     * @static
+     */
+    function fetchOrderWeights($itemIds) {
+	global $gallery;
+
+	foreach ($itemIds as $idx => $id) {
+	    $itemIds[$idx] = (int)$id;
+	}
+	$query = '
+        SELECT
+          [GalleryItemAttributesMap::itemId], [GalleryItemAttributesMap::orderWeight]
+        FROM
+          [GalleryItemAttributesMap]
+        WHERE
+          [GalleryItemAttributesMap::itemId] IN (' .
+	    GalleryUtilities::makeMarkers(sizeof($itemIds)) . ')
+        ';
+	list ($ret, $searchResults) = $gallery->search($query, $itemIds);
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	$data = array();
+	while ($result = $searchResults->nextResult()) {
+	    $data[(int)$result[0]] = $result[1];
+	}
+	return array(null, $data);
+    }
+
+    /**
+     * Get the parent sequence for this item id
+     * @param int the item id
+     * @return array object GalleryStatus a status code
+     *               array the parent id sequence
+     * @static
+     */
+    function fetchParentSequence($itemId) {
+	global $gallery;
+
+	$query = '
+        SELECT
+          [GalleryItemAttributesMap::parentSequence]
+        FROM
+          [GalleryItemAttributesMap]
+        WHERE
+          [GalleryItemAttributesMap::itemId] = ?
+        ';
+	list ($ret, $searchResults) = $gallery->search($query, array((int)$itemId));
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	if ($searchResults->resultCount() != 1) {
+	    return array(GalleryCoreApi::error(ERROR_MISSING_OBJECT, __FILE__, __LINE__,
+					      "ParentSequence for $itemId"), null);
+	}
+
+	$result = $searchResults->nextResult();
+	/* DB2 doesn't trim when storing data in a varchar column */
+	$parentSequence = preg_split('/\//', trim($result[0]), -1, PREG_SPLIT_NO_EMPTY);
+
+	if (is_array($parentSequence)) {
+	    foreach ($parentSequence as $idx => $id) {
+		$parentSequence[$idx] = (int)$id;
+	    }
+	}
+
+	return array(null, $parentSequence);
+    }
+}
+?>

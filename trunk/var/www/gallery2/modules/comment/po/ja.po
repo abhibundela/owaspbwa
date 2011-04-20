@@ -1,0 +1,333 @@
+# $Id: ja.po,v 1.8 2006/03/22 04:18:18 mindless Exp $
+#
+# Gallery - a web based photo album viewer and editor
+# Copyright (C) 2000-2006 Bharat Mediratta
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery: Comments 1.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-08-09 01:12+0900\n"
+"PO-Revision-Date: 2005-11-03 19:21+0900\n"
+"Last-Translator: Kennichi Uehara <ken.w3m+nospam@gmail.com>\n"
+"Language-Team: Japanese <gallery-devel@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Add Comment"
+msgstr "コメント追加"
+
+msgid "add comment"
+msgstr "コメント追加"
+
+msgid "show comments"
+msgstr "コメントを表示する"
+
+msgid "Comments"
+msgstr "コメント"
+
+msgid "User commenting system"
+msgstr "ユーザコメントシステム"
+
+msgid "Extra Data"
+msgstr "追加データ"
+
+msgid "[comment] Add comments"
+msgstr "[comment] コメント追加"
+
+msgid "[comment] Edit comments"
+msgstr "[comment] コメント編集"
+
+msgid "[comment] Delete comments"
+msgstr "[comment] コメント削除"
+
+msgid "[comment] View comments"
+msgstr "[comment] コメント閲覧"
+
+msgid "[comment] All access"
+msgstr "[comment] 全てのアクセス"
+
+#, fuzzy
+msgid "View Latest Comments"
+msgstr "コメント閲覧"
+
+msgid "View Comments"
+msgstr "コメント閲覧"
+
+#, c-format
+msgid "Comments: %d"
+msgstr "コメント: %d"
+
+#, fuzzy
+msgid "Guest Comments"
+msgstr "コメント閲覧"
+
+msgid "Comment Module"
+msgstr "コメントモジュール"
+
+msgid "Search comments"
+msgstr "コメントの検索"
+
+msgid "Subject"
+msgstr "件名"
+
+msgid "Comment"
+msgstr "コメント"
+
+msgid "Commenter"
+msgstr "コメント者"
+
+msgid "Comment Preview"
+msgstr "コメントのプレビュー"
+
+msgid "Posted by"
+msgstr "投稿者は"
+
+#, c-format
+msgid "%s (%s)"
+msgstr "%s (%s)"
+
+msgid "(required)"
+msgstr "(必須)"
+
+msgid "You must enter a subject!"
+msgstr "件名を入力しなくてはなりません"
+
+msgid "You must enter a comment!"
+msgstr "コメントを入力しなくてはなりません"
+
+msgid "Preview"
+msgstr "プレビュー"
+
+msgid "Save"
+msgstr "保存"
+
+msgid "Cancel"
+msgstr "キャンセル"
+
+msgid "edit"
+msgstr "編集"
+
+msgid "delete"
+msgstr "削除"
+
+msgid "show full"
+msgstr "全部を表示"
+
+msgid "show summary"
+msgstr "概要を表示"
+
+#, c-format
+msgid "Posted by %s on %s (%s)"
+msgstr "%s が %s に投稿しました (%s)"
+
+#, c-format
+msgid "Posted by %s on %s"
+msgstr "%s が %s に投稿しました"
+
+msgid "Comment change confirmation"
+msgstr "コメント変更の確認"
+
+msgid "Comment added successfully"
+msgstr "コメントの追加に成功しました"
+
+msgid "Comment deleted successfully"
+msgstr "コメントの削除に成功しました"
+
+msgid "Comment modified successfully"
+msgstr "コメントの変更に成功しました"
+
+msgid "Comments Settings"
+msgstr "コメント設定"
+
+#, fuzzy
+msgid "Settings saved successfully"
+msgstr "コメントの追加に成功しました"
+
+#, fuzzy
+msgid "Show link for Latest Comments:"
+msgstr "コメント閲覧"
+
+msgid "Number of comments on Latest Comments page:"
+msgstr ""
+
+msgid "Invalid value"
+msgstr ""
+
+msgid "Reset"
+msgstr ""
+
+msgid "Delete this comment?"
+msgstr "このコメントを削除しますか?"
+
+msgid "Are you sure?"
+msgstr "よろしいですか?"
+
+msgid "Delete this comment?  There is no undo!"
+msgstr "このコメントを削除しますか? やり直しはできません!"
+
+msgid "Delete"
+msgstr "削除"
+
+msgid "Edit comment"
+msgstr "コメントを編集"
+
+msgid "You must enter a username."
+msgstr "ユーザーネームを入力しなくてはなりません。"
+
+msgid "The username you entered is invalid."
+msgstr "入力したユーザーネームは無効です。"
+
+msgid "Host"
+msgstr "ホスト"
+
+msgid "Date"
+msgstr "日付:"
+
+msgid "The date you entered is invalid."
+msgstr "入力した日付は無効です。"
+
+msgid "You must enter a date"
+msgstr "日付を入力しなくてはなりません"
+
+msgid "You must enter a subject"
+msgstr "件名を入力しなくてはなりません"
+
+msgid "You must enter a comment"
+msgstr "コメントを入力しなくてはなりません"
+
+#, fuzzy
+msgid "Latest Comments"
+msgstr "コメント閲覧"
+
+msgid "Comment changed successfully"
+msgstr "コメントの変更に成功しました"
+
+msgid "There are no comments for this item"
+msgstr "このアイテムに対するコメントはありません"
+
+msgid "Recent comments"
+msgstr "最近のコメント"
+
+#, c-format
+msgid "(view all %d comments)"
+msgstr "(%d コメント 全てを読む)"
+
+msgid "Show comments"
+msgstr "コメントを表示する"
+
+msgid "Number of comments"
+msgstr "コメント数"
+
+msgid "1"
+msgstr "1"
+
+msgid "2"
+msgstr "2"
+
+msgid "3"
+msgstr "3"
+
+msgid "4"
+msgstr "4"
+
+msgid "5"
+msgstr "5"
+
+msgid "10"
+msgstr "10"
+
+msgid "20"
+msgstr "20"
+
+msgid "30"
+msgstr "30"
+
+msgid "50"
+msgstr "50"
+
+msgid "100"
+msgstr "100"
+
+msgid "999"
+msgstr "999"
+
+#~ msgid "Comment: "
+#~ msgstr "コメント: "
+
+#~ msgid "Date: "
+#~ msgstr "日付: "
+
+#~ msgid "Subject: "
+#~ msgstr "件名: "
+
+#~ msgid "[comment] Search comments"
+#~ msgstr "[comment] コメントの検索"
+
+#~ msgid "cancel"
+#~ msgstr "キャンセル"
+
+#~ msgid "preview"
+#~ msgstr "プレビュー"
+
+#~ msgid "save"
+#~ msgstr "保存"
+
+#~ msgid "view comment"
+#~ msgstr "コメント閲覧"
+
+#, fuzzy
+#~ msgid "No available settings for the Comments module."
+#~ msgstr "現在コメントモジュールの設定項目はありません。"
+
+#~ msgid "%d comment"
+#~ msgid_plural "%d comments"
+#~ msgstr[0] "%dコメント"
+
+#~ msgid "No settings available for this module."
+#~ msgstr "このモジュールの設定項目はありません。"
+
+#~ msgid "Add a comment for this item"
+#~ msgstr "このアイテムにコメントする"
+
+#~ msgid "Commenter: "
+#~ msgstr "コメント者: "
+
+#~ msgid "Comments for %s"
+#~ msgstr "%sに対するコメント"
+
+#~ msgid "Delete a comments for %s"
+#~ msgstr "%sに対するコメントを削除"
+
+#~ msgid "Edit a comments for %s"
+#~ msgstr "%sに対するコメントを編集"
+
+#~ msgid "No thumbnail"
+#~ msgstr "サムネイルなし"
+
+#~ msgid "Return to item view"
+#~ msgstr "アイテムビューに戻る"
+
+#~ msgid "There is no thumbnail for this item"
+#~ msgstr "このアイテムのサムネイルはありません"
+
+#~ msgid "[comment] View commenter's IP address"
+#~ msgstr "[comment] コメント者のIPアドレス表示"
+
+#~ msgid "s IP address"
+#~ msgstr "のIPアドレス"

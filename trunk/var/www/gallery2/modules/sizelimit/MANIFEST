@@ -1,0 +1,111 @@
+# File crc32 crc32(crlf) size size(crlf)  or  R File
+modules/sizelimit/SetSizeOption.inc	1570040636	631498951	3809	3924
+modules/sizelimit/SizeLimitOption.inc	3017213643	3767166245	11535	11875
+modules/sizelimit/classes/SizeLimitHelper.class	216264081	2964094174	7127	7364
+modules/sizelimit/locale/af/LC_MESSAGES/modules_sizelimit.mo	663164018	663164018	1585	1585
+modules/sizelimit/locale/cs/LC_MESSAGES/modules_sizelimit.mo	2365457863	2365457863	2374	2374
+modules/sizelimit/locale/da/LC_MESSAGES/modules_sizelimit.mo	98426950	98426950	2220	2220
+modules/sizelimit/locale/de/LC_MESSAGES/modules_sizelimit.mo	1645008252	1645008252	2358	2358
+modules/sizelimit/locale/es/LC_MESSAGES/modules_sizelimit.mo	4247920635	4247920635	1658	1658
+modules/sizelimit/locale/eu/LC_MESSAGES/modules_sizelimit.mo	3354419482	3354419482	2211	2211
+modules/sizelimit/locale/fr/LC_MESSAGES/modules_sizelimit.mo	1692059771	1692059771	2285	2285
+modules/sizelimit/locale/hu/LC_MESSAGES/modules_sizelimit.mo	3243241639	3243241639	1263	1263
+modules/sizelimit/locale/is/LC_MESSAGES/modules_sizelimit.mo	1974556010	1974556010	421	421
+modules/sizelimit/locale/it/LC_MESSAGES/modules_sizelimit.mo	2875486893	2875486893	2360	2360
+modules/sizelimit/locale/ja/LC_MESSAGES/modules_sizelimit.mo	217260479	217260479	1232	1232
+modules/sizelimit/locale/nl/LC_MESSAGES/modules_sizelimit.mo	1396321543	1396321543	2356	2356
+modules/sizelimit/locale/no/LC_MESSAGES/modules_sizelimit.mo	3108214897	3108214897	2269	2269
+modules/sizelimit/locale/pl/LC_MESSAGES/modules_sizelimit.mo	3955049956	3955049956	2340	2340
+modules/sizelimit/locale/pt_BR/LC_MESSAGES/modules_sizelimit.mo	1674947018	1674947018	2099	2099
+modules/sizelimit/locale/ru/LC_MESSAGES/modules_sizelimit.mo	2752705976	2752705976	3169	3169
+modules/sizelimit/locale/sr/LC_MESSAGES/modules_sizelimit.mo	647348695	647348695	1572	1572
+modules/sizelimit/locale/sv/LC_MESSAGES/modules_sizelimit.mo	2820808335	2820808335	2366	2366
+modules/sizelimit/locale/tr/LC_MESSAGES/modules_sizelimit.mo	3948925741	3948925741	2254	2254
+modules/sizelimit/locale/zh_CN/LC_MESSAGES/modules_sizelimit.mo	404152930	404152930	2119	2119
+modules/sizelimit/locale/zh_TW/LC_MESSAGES/modules_sizelimit.mo	2745388958	2745388958	2112	2112
+modules/sizelimit/module.inc	2639899259	263732193	3429	3536
+modules/sizelimit/po/GNUmakefile	1866879166	2808215985	98	103
+modules/sizelimit/po/af.po	3439682709	961375102	3032	3127
+modules/sizelimit/po/cs.po	2423483820	840957371	3210	3301
+modules/sizelimit/po/da.po	2085206077	2599735941	3353	3449
+modules/sizelimit/po/de.po	1307930970	4124613782	3368	3461
+modules/sizelimit/po/es.po	3588429031	2243385595	3103	3196
+modules/sizelimit/po/eu.po	1437601579	3891535158	3039	3129
+modules/sizelimit/po/fr.po	884160000	249455961	3110	3198
+modules/sizelimit/po/hu.po	2916696856	198463254	2648	2735
+modules/sizelimit/po/is.po	4117451820	2085781563	2294	2380
+modules/sizelimit/po/it.po	42503008	3893434304	3178	3265
+modules/sizelimit/po/ja.po	3934009316	2016970824	2622	2708
+modules/sizelimit/po/nl.po	1616624921	3250790890	3329	3419
+modules/sizelimit/po/no.po	2254023161	2645466	3206	3296
+modules/sizelimit/po/pl.po	1004186568	2767356392	3164	3252
+modules/sizelimit/po/pt_BR.po	4035504931	3793366586	3292	3388
+modules/sizelimit/po/ru.po	1387455302	3030929956	4116	4209
+modules/sizelimit/po/sr.po	3184135055	2260165863	3090	3186
+modules/sizelimit/po/strings.raw	1255025045	2680621732	1200	1227
+modules/sizelimit/po/sv.po	2811259887	1025270117	3406	3506
+modules/sizelimit/po/tr.po	2881222676	2933024903	3223	3316
+modules/sizelimit/po/zh_CN.po	2783961835	3459705513	2945	3033
+modules/sizelimit/po/zh_TW.po	3537266565	72904228	2938	3025
+modules/sizelimit/templates/SizeLimitOption.tpl	1796755747	442950398	4673	4777
+R	modules/sizelimit/locale/cs_CZ/LC_MESSAGES/modules_sizelimit.mo
+R	modules/sizelimit/locale/cs_CZ/LC_MESSAGES
+R	modules/sizelimit/locale/cs_CZ
+R	modules/sizelimit/locale/da_DK/LC_MESSAGES/modules_sizelimit.mo
+R	modules/sizelimit/locale/da_DK/LC_MESSAGES
+R	modules/sizelimit/locale/da_DK
+R	modules/sizelimit/locale/de_DE/LC_MESSAGES/modules_sizelimit.mo
+R	modules/sizelimit/locale/de_DE/LC_MESSAGES
+R	modules/sizelimit/locale/de_DE
+R	modules/sizelimit/locale/eu_ES/LC_MESSAGES/modules_sizelimit.mo
+R	modules/sizelimit/locale/eu_ES/LC_MESSAGES
+R	modules/sizelimit/locale/eu_ES
+R	modules/sizelimit/locale/fr_FR/LC_MESSAGES/modules_sizelimit.mo
+R	modules/sizelimit/locale/fr_FR/LC_MESSAGES
+R	modules/sizelimit/locale/fr_FR
+R	modules/sizelimit/locale/hu_HU/LC_MESSAGES/modules_sizelimit.mo
+R	modules/sizelimit/locale/hu_HU/LC_MESSAGES
+R	modules/sizelimit/locale/hu_HU
+R	modules/sizelimit/locale/is_IS/LC_MESSAGES/modules_sizelimit.mo
+R	modules/sizelimit/locale/is_IS/LC_MESSAGES
+R	modules/sizelimit/locale/is_IS
+R	modules/sizelimit/locale/it_IT/LC_MESSAGES/modules_sizelimit.mo
+R	modules/sizelimit/locale/it_IT/LC_MESSAGES
+R	modules/sizelimit/locale/it_IT
+R	modules/sizelimit/locale/ja_JP/LC_MESSAGES/modules_sizelimit.mo
+R	modules/sizelimit/locale/ja_JP/LC_MESSAGES
+R	modules/sizelimit/locale/ja_JP
+R	modules/sizelimit/locale/nl_NL/LC_MESSAGES/modules_sizelimit.mo
+R	modules/sizelimit/locale/nl_NL/LC_MESSAGES
+R	modules/sizelimit/locale/nl_NL
+R	modules/sizelimit/locale/no_NO/LC_MESSAGES/modules_sizelimit.mo
+R	modules/sizelimit/locale/no_NO/LC_MESSAGES
+R	modules/sizelimit/locale/no_NO
+R	modules/sizelimit/locale/ru_RU/LC_MESSAGES/modules_sizelimit.mo
+R	modules/sizelimit/locale/ru_RU/LC_MESSAGES
+R	modules/sizelimit/locale/ru_RU
+R	modules/sizelimit/locale/sr_YU/LC_MESSAGES/modules_sizelimit.mo
+R	modules/sizelimit/locale/sr_YU/LC_MESSAGES
+R	modules/sizelimit/locale/sr_YU
+R	modules/sizelimit/locale/sv_SE/LC_MESSAGES/modules_sizelimit.mo
+R	modules/sizelimit/locale/sv_SE/LC_MESSAGES
+R	modules/sizelimit/locale/sv_SE
+R	modules/sizelimit/locale/tr_TR/LC_MESSAGES/modules_sizelimit.mo
+R	modules/sizelimit/locale/tr_TR/LC_MESSAGES
+R	modules/sizelimit/locale/tr_TR
+R	modules/sizelimit/po/cs_CZ.po
+R	modules/sizelimit/po/da_DK.po
+R	modules/sizelimit/po/de_DE.po
+R	modules/sizelimit/po/eu_ES.po
+R	modules/sizelimit/po/fr_FR.po
+R	modules/sizelimit/po/hu_HU.po
+R	modules/sizelimit/po/is_IS.po
+R	modules/sizelimit/po/it_IT.po
+R	modules/sizelimit/po/ja_JP.po
+R	modules/sizelimit/po/nl_NL.po
+R	modules/sizelimit/po/no_NO.po
+R	modules/sizelimit/po/ru_RU.po
+R	modules/sizelimit/po/sr_YU.po
+R	modules/sizelimit/po/sv_SE.po
+R	modules/sizelimit/po/tr_TR.po
+R	modules/sizelimit/test/phpunit/AddPhotoOptionTest.class

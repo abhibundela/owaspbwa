@@ -1,0 +1,97 @@
+# File crc32 crc32(crlf) size size(crlf)  or  R File
+modules/nokiaupload/Configure.inc	2387027137	3623124249	4224	4367
+modules/nokiaupload/DirectoryListing.inc	2130607601	3040696977	3343	3455
+modules/nokiaupload/Login.inc	918023948	2087712324	3179	3291
+modules/nokiaupload/NewDirectory.inc	3763376975	3862809952	2930	3034
+modules/nokiaupload/README	1116796555	372925846	3576	3645
+modules/nokiaupload/RemoteStorageCapabilities.inc	1675024144	181168773	2351	2429
+modules/nokiaupload/Upload.inc	4084875175	3872940442	2733	2833
+modules/nokiaupload/classes/ImageUploadHelper.class	2919464703	2670833481	20203	20824
+modules/nokiaupload/locale/af/LC_MESSAGES/modules_nokiaupload.mo	2545971106	2545971106	3465	3465
+modules/nokiaupload/locale/cs/LC_MESSAGES/modules_nokiaupload.mo	3040075854	3040075854	3388	3388
+modules/nokiaupload/locale/da/LC_MESSAGES/modules_nokiaupload.mo	1601324227	1601324227	3284	3284
+modules/nokiaupload/locale/de/LC_MESSAGES/modules_nokiaupload.mo	1659507679	1659507679	3587	3587
+modules/nokiaupload/locale/eu/LC_MESSAGES/modules_nokiaupload.mo	4156082383	4156082383	3476	3476
+modules/nokiaupload/locale/fr/LC_MESSAGES/modules_nokiaupload.mo	2565908275	2565908275	3625	3625
+modules/nokiaupload/locale/is/LC_MESSAGES/modules_nokiaupload.mo	3182887459	3182887459	429	429
+modules/nokiaupload/locale/it/LC_MESSAGES/modules_nokiaupload.mo	835819794	835819794	3574	3574
+modules/nokiaupload/locale/ja/LC_MESSAGES/modules_nokiaupload.mo	1513560577	1513560577	1979	1979
+modules/nokiaupload/locale/nl/LC_MESSAGES/modules_nokiaupload.mo	4043855757	4043855757	3491	3491
+modules/nokiaupload/locale/no/LC_MESSAGES/modules_nokiaupload.mo	758337679	758337679	3456	3456
+modules/nokiaupload/locale/pl/LC_MESSAGES/modules_nokiaupload.mo	1373803747	1373803747	3562	3562
+modules/nokiaupload/locale/ru/LC_MESSAGES/modules_nokiaupload.mo	1094369180	1094369180	677	677
+modules/nokiaupload/locale/sr/LC_MESSAGES/modules_nokiaupload.mo	3543030350	3543030350	3476	3476
+modules/nokiaupload/locale/sv/LC_MESSAGES/modules_nokiaupload.mo	834697630	834697630	3550	3550
+modules/nokiaupload/locale/tr/LC_MESSAGES/modules_nokiaupload.mo	974817496	974817496	1788	1788
+modules/nokiaupload/locale/zh_CN/LC_MESSAGES/modules_nokiaupload.mo	2084828740	2084828740	3192	3192
+modules/nokiaupload/locale/zh_TW/LC_MESSAGES/modules_nokiaupload.mo	2016778621	2016778621	3209	3209
+modules/nokiaupload/module.inc	3621911988	2671360973	2661	2747
+modules/nokiaupload/po/GNUmakefile	1866879166	2808215985	98	103
+modules/nokiaupload/po/af.po	2535711116	3388308458	4324	4454
+modules/nokiaupload/po/cs.po	2712001995	239674024	4384	4514
+modules/nokiaupload/po/da.po	1549452344	984849766	4357	4489
+modules/nokiaupload/po/de.po	1602003574	1589933322	4638	4772
+modules/nokiaupload/po/eu.po	710515578	2193701526	4308	4437
+modules/nokiaupload/po/fr.po	2753512352	512726	4519	4646
+modules/nokiaupload/po/is.po	2229574668	373279147	2991	3110
+modules/nokiaupload/po/it.po	3039184933	1210651820	4466	4596
+modules/nokiaupload/po/ja.po	2047492676	2826424469	3676	3795
+modules/nokiaupload/po/nl.po	1434181033	676467199	4448	4577
+modules/nokiaupload/po/no.po	568483493	3215302107	4355	4470
+modules/nokiaupload/po/pl.po	1083724022	867577943	4432	4545
+modules/nokiaupload/po/ru.po	2865672506	3699076956	4434	4568
+modules/nokiaupload/po/sr.po	4198687608	3248877357	4307	4435
+modules/nokiaupload/po/strings.raw	2656755884	852289621	1754	1800
+modules/nokiaupload/po/sv.po	1504652211	3176960106	4386	4516
+modules/nokiaupload/po/tr.po	194716043	4052576774	3657	3782
+modules/nokiaupload/po/zh_CN.po	3000420503	2860707708	4160	4287
+modules/nokiaupload/po/zh_TW.po	2169035019	1261576544	4104	4230
+modules/nokiaupload/templates/Configure.tpl	1773000017	3388207334	2564	2639
+R	modules/nokiaupload/locale/cs_CZ/LC_MESSAGES/modules_nokiaupload.mo
+R	modules/nokiaupload/locale/cs_CZ/LC_MESSAGES
+R	modules/nokiaupload/locale/cs_CZ
+R	modules/nokiaupload/locale/de_DE/LC_MESSAGES/modules_nokiaupload.mo
+R	modules/nokiaupload/locale/de_DE/LC_MESSAGES
+R	modules/nokiaupload/locale/de_DE
+R	modules/nokiaupload/locale/eu_ES/LC_MESSAGES/modules_nokiaupload.mo
+R	modules/nokiaupload/locale/eu_ES/LC_MESSAGES
+R	modules/nokiaupload/locale/eu_ES
+R	modules/nokiaupload/locale/fr_FR/LC_MESSAGES/modules_nokiaupload.mo
+R	modules/nokiaupload/locale/fr_FR/LC_MESSAGES
+R	modules/nokiaupload/locale/fr_FR
+R	modules/nokiaupload/locale/is_IS/LC_MESSAGES/modules_nokiaupload.mo
+R	modules/nokiaupload/locale/is_IS/LC_MESSAGES
+R	modules/nokiaupload/locale/is_IS
+R	modules/nokiaupload/locale/it_IT/LC_MESSAGES/modules_nokiaupload.mo
+R	modules/nokiaupload/locale/it_IT/LC_MESSAGES
+R	modules/nokiaupload/locale/it_IT
+R	modules/nokiaupload/locale/ja_JP/LC_MESSAGES/modules_nokiaupload.mo
+R	modules/nokiaupload/locale/ja_JP/LC_MESSAGES
+R	modules/nokiaupload/locale/ja_JP
+R	modules/nokiaupload/locale/nl_NL/LC_MESSAGES/modules_nokiaupload.mo
+R	modules/nokiaupload/locale/nl_NL/LC_MESSAGES
+R	modules/nokiaupload/locale/nl_NL
+R	modules/nokiaupload/locale/no_NO/LC_MESSAGES/modules_nokiaupload.mo
+R	modules/nokiaupload/locale/no_NO/LC_MESSAGES
+R	modules/nokiaupload/locale/no_NO
+R	modules/nokiaupload/locale/ru_RU/LC_MESSAGES/modules_nokiaupload.mo
+R	modules/nokiaupload/locale/ru_RU/LC_MESSAGES
+R	modules/nokiaupload/locale/ru_RU
+R	modules/nokiaupload/locale/sr_YU/LC_MESSAGES/modules_nokiaupload.mo
+R	modules/nokiaupload/locale/sr_YU/LC_MESSAGES
+R	modules/nokiaupload/locale/sr_YU
+R	modules/nokiaupload/locale/tr_TR/LC_MESSAGES/modules_nokiaupload.mo
+R	modules/nokiaupload/locale/tr_TR/LC_MESSAGES
+R	modules/nokiaupload/locale/tr_TR
+R	modules/nokiaupload/po/cs_CZ.po
+R	modules/nokiaupload/po/de_DE.po
+R	modules/nokiaupload/po/eu_ES.po
+R	modules/nokiaupload/po/fr_FR.po
+R	modules/nokiaupload/po/is_IS.po
+R	modules/nokiaupload/po/it_IT.po
+R	modules/nokiaupload/po/ja_JP.po
+R	modules/nokiaupload/po/nl_NL.po
+R	modules/nokiaupload/po/no_NO.po
+R	modules/nokiaupload/po/ru_RU.po
+R	modules/nokiaupload/po/sr_YU.po
+R	modules/nokiaupload/po/tr_TR.po

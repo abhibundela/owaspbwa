@@ -1,0 +1,1 @@
+|a:6:{s:8:"days.new";s:1:"7";s:12:"days.updated";s:1:"7";s:10:"_callbacks";s:34:"getSiteAdminViews|getItemSummaries";s:16:"_requiredCoreApi";s:3:"7,0";s:18:"_requiredModuleApi";s:3:"3,0";s:8:"_version";s:5:"1.0.3";}

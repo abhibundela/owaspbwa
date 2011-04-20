@@ -1,0 +1,524 @@
+# $Id: ja.po,v 1.7 2006/03/22 04:21:07 mindless Exp $
+#
+# Gallery - a web based photo album viewer and editor
+# Copyright (C) 2000-2006 Bharat Mediratta
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery: URL Rewrite 1.1.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-08-15 19:27+0900\n"
+"PO-Revision-Date: 2005-11-20 22:05+0900\n"
+"Last-Translator: Kennichi Uehara <ken.w3m+nospam@gmail.com>\n"
+"Language-Team: Japanese <gallery-devel@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "404 File Not Found"
+msgstr "404 File Not Found"
+
+msgid "URL Rewrite"
+msgstr "URL書き換え"
+
+#, fuzzy
+msgid "Enables short URLs using Apache mod_rewrite, ISAPI Rewrite, or PathInfo."
+msgstr "mod_rewrite を使って短いURLを使えるようにする"
+
+msgid "Gallery"
+msgstr "Gallery"
+
+msgid "Show Item"
+msgstr "アイテムの表示"
+
+msgid "Path to an item (eg, /album/image.jpg.html)"
+msgstr "アイテムへのパス (例 /album/image.jpg.html)"
+
+msgid "Current language (eg, en or de)"
+msgstr ""
+
+msgid "The general URL for viewing items."
+msgstr ""
+
+msgid "Download Item"
+msgstr "アイテムのダウンロード"
+
+msgid "Ensures browsers do not use cached version when image has changed"
+msgstr ""
+"画像が変更された場合は、ブラウザがキャッシュされたものを表示していないか確認してください。"
+
+msgid "The item file name."
+msgstr ""
+
+msgid "The general URL for downloading items."
+msgstr ""
+
+msgid "Site Admin"
+msgstr "サイト管理"
+
+msgid "Quick and easy way to access Site Admin."
+msgstr ""
+
+#, fuzzy
+msgid "404 File not found"
+msgstr "404 File Not Found"
+
+msgid "Block hotlinked items"
+msgstr ""
+
+msgid "Check short style URLs for filesystem conflicts"
+msgstr "短いスタイルのURLとファイルシステムとの衝突をチェック"
+
+msgid ""
+"This will go through all your Gallery items and check if the short style URL links to an "
+"existing file or directory on your webserver."
+msgstr ""
+
+msgid "Processing..."
+msgstr "処理中..."
+
+msgid "Bad path:"
+msgstr "問題のあるパス:"
+
+#, c-format
+msgid "Checking item %d of %d"
+msgstr "アイテムのチェック %d / %d"
+
+#, c-format
+msgid "Checked %d items and found %d conflicts"
+msgstr "%d アイテムをチェックし、%d 個の衝突が見つかりました。"
+
+msgid "Bad keyword."
+msgstr "悪いキーワード"
+
+msgid "Duplicate short url rule."
+msgstr ""
+
+#, fuzzy
+msgid "Ivalid pattern."
+msgstr "無効なパス"
+
+msgid "Empty configuration value."
+msgstr ""
+
+msgid "Cannot read the httpd.ini file"
+msgstr ""
+
+#, fuzzy
+msgid "Cannot write to httpd.ini file"
+msgstr "組み込まれた.htaccessファイルに書き込めません"
+
+msgid "Cannot write to httpd.ini file, please create it."
+msgstr ""
+
+#, fuzzy
+msgid "Cannot read the .htaccess file"
+msgstr "Galleryの.htaccessファイルに書き込めません"
+
+#, fuzzy
+msgid "Cannot write to the .htaccess file"
+msgstr "Galleryの.htaccessファイルに書き込めません"
+
+#, fuzzy
+msgid "Cannot write to the .htaccess file, please create it."
+msgstr "Galleryの.htaccessファイルに書き込めません"
+
+#, fuzzy
+msgid "Cannot read the embedded .htaccess file"
+msgstr "組み込まれた.htaccessファイルに書き込めません"
+
+msgid "Cannot write to the embedded .htaccess file"
+msgstr "組み込まれた.htaccessファイルに書き込めません"
+
+#, fuzzy
+msgid "Cannot write to the embedded .htaccess file, please create it."
+msgstr "組み込まれた.htaccessファイルに書き込めません"
+
+msgid "URL Rewrite Administration"
+msgstr "URL書き換え の管理"
+
+#, fuzzy
+msgid "Successfully saved settings"
+msgstr "URLスタイルの保存に成功しました"
+
+#, fuzzy
+msgid "An error occured while trying to save your settings"
+msgstr "設定を保存しているときにエラーが発生しました:"
+
+msgid "Duplicate URL patterns."
+msgstr "URLパターンが重複しています"
+
+msgid "Empty URL pattern."
+msgstr "URLパターンが空です"
+
+msgid "Rules"
+msgstr "ルール"
+
+msgid "Setup"
+msgstr "セットアップ"
+
+msgid "Test"
+msgstr "テスト"
+
+msgid ""
+"Short URLs are compiled out of predefined keywords. Modules may provide additional keywords. "
+"Keywords are escaped with % (eg: %itemId%)."
+msgstr ""
+"短いURLはあらかじめ定義されたキーワードからコンパイルされます。おそらくモジュールはついかの"
+"キーワードを提供します。キーワードは%でエスケープしてください。(例: %itemID%)"
+
+msgid ""
+"It is recomended that you don't activate the 'Download Item' URL since it will slow down "
+"Gallery."
+msgstr ""
+
+msgid "A pattern may not begin with a keyword."
+msgstr ""
+
+msgid "Active"
+msgstr "アクティブ"
+
+msgid "Help"
+msgstr "ヘルプ"
+
+msgid "View"
+msgstr "目的"
+
+msgid "URL Pattern"
+msgstr "URLパターン"
+
+msgid "Additional Keywords"
+msgstr "追加キーワード"
+
+msgid "Status: Error"
+msgstr "ステータス: エラー"
+
+msgid "Status: Active"
+msgstr "ステータス: 有効"
+
+msgid "Status: Not Active"
+msgstr "ステータス: 無効"
+
+msgid "No help available"
+msgstr "ヘルプはありません"
+
+msgid "Keywords"
+msgstr "キーワード"
+
+msgid "No keyword help available"
+msgstr "キーワードのヘルプはありません"
+
+msgid "Save"
+msgstr "保存"
+
+msgid "Approved referers"
+msgstr "承認済みのリファラー"
+
+msgid ""
+"Some rules only apply if the referer (the site that linked to the item) is something other "
+"than Gallery itself. Hosts in the list below will be treated as friendly referers."
+msgstr ""
+"いくつかのルールはリファラー(アイテムにリンクしているサイト)がGallery以外の場合にのみ適用され"
+"ます。以下のリストにあるホストは友好的なリファラーとして扱います。"
+
+msgid ""
+"Warning: If you don't allow empty referer users won't be able to download nor play movies."
+msgstr ""
+
+msgid "Allow empty referer?"
+msgstr ""
+
+msgid "The parser you have selected does not support a referer check."
+msgstr ""
+
+msgid "Test the Rewrite Parser Configuration"
+msgstr ""
+
+#, fuzzy
+msgid "Test again"
+msgstr "もう一度ウェブサーバのテストをする"
+
+msgid "The selected URL Rewrite Parser does not provide any tests."
+msgstr ""
+
+msgid "Error: 404 File Not Found"
+msgstr "エラー: 404 File Not Found"
+
+msgid "Configuration"
+msgstr ""
+
+msgid "For ISAPI Rewrite to work Gallery needs write access to the httpd.ini file."
+msgstr ""
+
+msgid "Httpd.ini path:"
+msgstr ""
+
+msgid "Invalid directory."
+msgstr "無効なディレクトリ"
+
+msgid "Cant write to the httpd.ini file in that directory."
+msgstr ""
+
+msgid "Embedded Setup"
+msgstr ""
+
+#, fuzzy
+msgid "Public path:"
+msgstr "公共のパス:"
+
+msgid "Invalid path."
+msgstr "無効なパス"
+
+msgid "IIS ISAPI_Rewrite Support"
+msgstr ""
+
+msgid "Testing if the server supports IIS ISAPI_Rewrite."
+msgstr ""
+
+msgid "Success"
+msgstr "成功"
+
+msgid "Error"
+msgstr "エラー"
+
+msgid "The current status may not be accurate, you have forced the test to pass."
+msgstr ""
+
+msgid "How to setup ISAP Rewrite"
+msgstr ""
+
+msgid "In order to make the test pass you need to add the test rewrite rule in your httpd.ini:"
+msgstr ""
+
+msgid ""
+"If you add this at the bottom, please make sure that there's atleast one empty line below "
+"the section"
+msgstr ""
+
+#, fuzzy
+msgid "Test ISAPI Rewrite Manually"
+msgstr "mod_rewirteのテストを手動でする"
+
+msgid "Gallery did not detect ISAPI Rewrite, please run this test yourself to verify."
+msgstr ""
+
+msgid "Force"
+msgstr ""
+
+msgid "ISAPI Rewrite Test"
+msgstr ""
+
+msgid "If the test gives you a page that says PASS_ISAPI_REWRITE you are good to go."
+msgstr ""
+
+msgid "ISAPI_Rewrite httpd.ini file"
+msgstr ""
+
+#, fuzzy
+msgid "Testing if Gallery can write to the httpd.ini file."
+msgstr "Galleryが既に存在する.htaccessファイルに書き込めることを確認してください。"
+
+msgid "Please configure the correct location of ISAPI_Rewrite httpd.ini."
+msgstr ""
+
+#, fuzzy
+msgid "Please make sure Gallery can read the httpd.ini file"
+msgstr "Galleryが既に存在する.htaccessファイルを読めることを確認してください。"
+
+#, fuzzy
+msgid "Please make sure Gallery can write to the httpd.ini file"
+msgstr "Galleryが既に存在する.htaccessファイルに書き込めることを確認してください。"
+
+msgid ""
+"For URL Rewrite to work in an embedded environment you need to set up an extra htaccess file "
+"to hold the mod_rewrite rules."
+msgstr ""
+
+msgid "Htaccess path:"
+msgstr "htaccessのパス:"
+
+msgid "Apache mod_rewrite"
+msgstr "Apache mod_rewrite"
+
+#, c-format
+msgid "Testing if %s is supported by the server."
+msgstr ""
+
+msgid "Warning"
+msgstr "警告"
+
+msgid "Custom Gallery directory test setup"
+msgstr ""
+
+msgid ""
+"Gallery tries to test mod_rewrite in action. For this to work you need to edit each of these "
+"two files accordingly:"
+msgstr ""
+
+msgid "Line 6:"
+msgstr ""
+
+msgid "Test mod_rewrite manually"
+msgstr "mod_rewirteのテストを手動でする"
+
+msgid ""
+"For whatever reason, Gallery did not detect a working mod_rewrite setup. If you are "
+"confident that mod_rewrite does work you may override the automatic detection. Please, run "
+"these two tests to see for yourself."
+msgstr ""
+
+msgid "Works"
+msgstr ""
+
+msgid "mod_rewrite configuration 1 (with global Options +FollowSymlinks)"
+msgstr ""
+
+msgid "mod_rewrite configuration 2 (with local Options +FollowSymlinks)"
+msgstr ""
+
+msgid "If one of the two tests gives you a page with the text PASS_REWRITE you are good to go."
+msgstr ""
+
+#, fuzzy
+msgid "Apache mod_rewrite and Gallery multisite"
+msgstr "Apache mod_rewrite"
+
+msgid ""
+"Gallery tries to test mod_rewrite in action. This does not work with multisite since Gallery "
+"lacks the complete codebase."
+msgstr ""
+
+msgid "Gallery .htaccess file"
+msgstr "Gallery .htaccess ファイル"
+
+#, fuzzy
+msgid "Testing if Gallery can write to the .htaccess file."
+msgstr "Galleryが既に存在する.htaccessファイルに書き込めることを確認してください。"
+
+msgid "Please create a file in your Gallery directory named .htaccess"
+msgstr "Galleryディレクトリに.htaccessという名前のファイルを作成してください。"
+
+msgid "Please make sure Gallery can read the existing .htaccess file"
+msgstr "Galleryが既に存在する.htaccessファイルを読めることを確認してください。"
+
+msgid "Please make sure Gallery can write to the existing .htaccess file"
+msgstr "Galleryが既に存在する.htaccessファイルに書き込めることを確認してください。"
+
+msgid "Embedded .htaccess file"
+msgstr ""
+
+#, fuzzy
+msgid "Testing if Gallery can write to the embedded .htaccess file."
+msgstr "組み込まれた.htaccessファイルに書き込めません"
+
+#, fuzzy
+msgid "Please configure the embedded htaccess path."
+msgstr "組み込まれた.htaccessファイルに書き込めません"
+
+msgid "PHP Path Info Support"
+msgstr ""
+
+msgid "Testing if the server supports PHP Path Info."
+msgstr ""
+
+msgid "Test Path Info Manually"
+msgstr ""
+
+msgid "Gallery did not detect Path Info, please run this thest yourself to verify."
+msgstr ""
+
+msgid "PHP Path Info Test"
+msgstr ""
+
+msgid "If the test gives you a page that says PASS_PATH_INFO you are good to go."
+msgstr ""
+
+#, fuzzy
+msgid "URL Rewrite Setup"
+msgstr "URL書き換え"
+
+msgid ""
+"The Apache mod_rewrite module is installed on most Apache servers by default. If you are "
+"unsure of what method you should choose then select this. Gallery will try to detect if your "
+"server supports mod_rewrite."
+msgstr ""
+
+msgid "IIS ISAPI_Rewrite"
+msgstr ""
+
+msgid ""
+"This method allows for short URLs on IIS servers with ISAPI Rewrite installed. Gallery will "
+"try to detect if your server supports this method before activating the module."
+msgstr ""
+
+msgid "PHP Path Info"
+msgstr ""
+
+msgid ""
+"Using Path Info is supported by most systems. With this method Gallery parses the URL itself "
+"during the request."
+msgstr ""
+
+msgid "Block hotlinking is not supported."
+msgstr ""
+
+msgid "Back"
+msgstr ""
+
+msgid "Done"
+msgstr "完了"
+
+msgid "Unit test module"
+msgstr ""
+
+#~ msgid "Item file name (eg, image.jpg)"
+#~ msgstr "アイテムのファイル名 (例 image.jpg)"
+
+#~ msgid "Successfully saved the configuration"
+#~ msgstr "設定の保存に成功しました"
+
+#~ msgid ""
+#~ "In order for this Gallery module to work you need %s enabled with your Apache server."
+#~ msgstr ""
+#~ "このGalleryモジュールが動作するには、Apacheサーバで %s が有効になっている必要があります。"
+
+#~ msgid "Test .htaccess File Again"
+#~ msgstr ".htaccessファイルのテストをもう一度する。"
+
+#~ msgid "Test .htaccess Files Again"
+#~ msgstr "もう一度 .htaccess ファイルのテストを行う"
+
+#~ msgid "The page you requested does not exist"
+#~ msgstr "あなたが要求したページは存在しません。"
+
+#~ msgid "URL Rewrite System Checks"
+#~ msgstr "URL書き換えシステムのチェック"
+
+#~ msgid "Multisite setup"
+#~ msgstr "マルチサイトのセットアップ"
+
+#~ msgid "Test mod_rewrite"
+#~ msgstr "mod_rewriteのテスト"
+
+#~ msgid "Test mod_rewrite with Options directive"
+#~ msgstr "オプションディレクティブでmod_rewriteをテスト"
+
+#~ msgid "Troubleshooting"
+#~ msgstr "トラブルシューティング"
+
+#~ msgid "How can I check if mod_rewrite is loaded?"
+#~ msgstr "mod_rewirteがロードされているかをどのように確認すればいいですか?"
