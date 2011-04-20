@@ -18,3 +18,4 @@ Below are accounts for various applications in the OWASPBWA project VM.  Note, t
 || OrangeHRM (http://owaspbwa/orangehrm/) || admin - administrator<br>user1 - normal user<br>user2 - normal user ||
 || !GetBoo (http://owaspbwa/getboo/) || admin - administrator<br>user - normal user<br>demo - demonstration user ||
 || WebCal (http://www.k5n.us/webcalendar.php) || admin - administrator<br>user - normal user <br>assistant - assistant user ||
+|| Gallery2(http://http://gallery.menalto.com/) || admin - administrator<br>user - normal user ||
