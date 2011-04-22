@@ -17,5 +17,5 @@ Below are accounts for various applications in the OWASPBWA project VM.  Note, t
 || Mutillidae (http://owaspbwa/mutillidae/) || admin - administrator<br>user - normal user ||
 || OrangeHRM (http://owaspbwa/orangehrm/) || admin - administrator<br>user1 - normal user<br>user2 - normal user ||
 || !GetBoo (http://owaspbwa/getboo/) || admin - administrator<br>user - normal user<br>demo - demonstration user ||
-|| WebCal (http://owaspbwa/webcal) || admin - administrator<br>user - normal user <br>assistant - assistant user ||
-|| Gallery2(http://owaspbwa/gallery2) || admin - administrator<br>user - normal user ||
+|| WebCal (http://owaspbwa/webcal/) || admin - administrator<br>user - normal user <br>assistant - assistant user ||
+|| Gallery2(http://owaspbwa/gallery2/) || admin - administrator<br>user - normal user ||
