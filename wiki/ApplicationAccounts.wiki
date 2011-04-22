@@ -10,12 +10,12 @@ Below are accounts for various applications in the OWASPBWA project VM.  Note, t
 || Damn Vulnerable Web Application (DVWA, http://owaspbwa/dvwa/) || admin - administrator ||
 || phpBB (http://owaspbwa/phpBB2/) || admin - administrator<br>user - normal user<br>mod - forum moderator ||
 || !WordPress(http://owaspbwa/wordpress/) || admin - Administrator<br>user - normal user) ||
-|| Yazd (http://owaspbwa:8080/yazd10/) || admin - administrator<br>user - normal user<br>user2 - normal user<br>mod - forum moderator ||
-|| !WebGoat (http://owaspbwa:8080/WebGoat/attack) || guest - normal user<br>admin - tomcat administrator<br>webgoat - webgoat administrator ||
+|| Yazd (http://owaspbwa/yazd10/) || admin - administrator<br>user - normal user<br>user2 - normal user<br>mod - forum moderator ||
+|| !WebGoat (http://owaspbwa/WebGoat/attack) || guest - normal user<br>admin - tomcat administrator<br>webgoat - webgoat administrator ||
 || Peruggia (http://owaspbwa/peruggia/) || admin - administrator<br>user - normal user ||
 || Ghost (http://owaspbwa/ghost/) || admin - administrator<br>test - normal user <br>anonymous - normal user ||
 || Mutillidae (http://owaspbwa/mutillidae/) || admin - administrator<br>user - normal user ||
 || OrangeHRM (http://owaspbwa/orangehrm/) || admin - administrator<br>user1 - normal user<br>user2 - normal user ||
 || !GetBoo (http://owaspbwa/getboo/) || admin - administrator<br>user - normal user<br>demo - demonstration user ||
-|| WebCal (http://www.k5n.us/webcalendar.php) || admin - administrator<br>user - normal user <br>assistant - assistant user ||
-|| Gallery2(http://http://gallery.menalto.com/) || admin - administrator<br>user - normal user ||
+|| WebCal (http://owaspbwa/webcal) || admin - administrator<br>user - normal user <br>assistant - assistant user ||
+|| Gallery2(http://owaspbwa/gallery2) || admin - administrator<br>user - normal user ||
