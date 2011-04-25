@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2011-04-21 08:07:37
+<?php /* Smarty version 2.6.14, created on 2011-04-22 02:21:45
          compiled from tiki-top_bar.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'tiki_short_datetime', 'tiki-top_bar.tpl', 4, false),array('function', 'phplayers', 'tiki-top_bar.tpl', 12, false),)), $this); ?>
