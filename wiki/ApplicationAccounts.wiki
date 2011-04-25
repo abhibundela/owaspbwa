@@ -9,7 +9,7 @@ Below are accounts for various applications in the OWASPBWA project VM.  Note, t
 || Application || User Accounts ||
 || Damn Vulnerable Web Application (DVWA, http://owaspbwa/dvwa/) || admin - administrator ||
 || phpBB (http://owaspbwa/phpBB2/) || admin - administrator<br>user - normal user<br>mod - forum moderator ||
-|| !WordPress(http://owaspbwa/wordpress/) || admin - Administrator<br>user - normal user) ||
+|| !WordPress (http://owaspbwa/wordpress/) || admin - Administrator<br>user - normal user) ||
 || Yazd (http://owaspbwa/yazd10/) || admin - administrator<br>user - normal user<br>user2 - normal user<br>mod - forum moderator ||
 || !WebGoat (http://owaspbwa/WebGoat/attack) || guest - normal user<br>admin - tomcat administrator<br>webgoat - webgoat administrator ||
 || Peruggia (http://owaspbwa/peruggia/) || admin - administrator<br>user - normal user ||
@@ -18,6 +18,6 @@ Below are accounts for various applications in the OWASPBWA project VM.  Note, t
 || OrangeHRM (http://owaspbwa/orangehrm/) || admin - administrator<br>user1 - normal user<br>user2 - normal user ||
 || !GetBoo (http://owaspbwa/getboo/) || admin - administrator<br>user - normal user<br>demo - demonstration user ||
 || !WebCal (http://owaspbwa/webcal/) || admin - administrator<br>user - normal user <br>assistant - assistant user ||
-|| Gallery2(http://owaspbwa/gallery2/) || admin - administrator<br>user - normal user ||
+|| Gallery2 (http://owaspbwa/gallery2/) || admin - administrator<br>user - normal user ||
 || Tiki Wiki (http://http://info.tiki.org/tiki-index.php) || admin - administrator<br>user - normal user ||
 || Joomla (http://www.joomla.org/) || admin - administrator<br>author - author<br>editor - editor<br>publisher - publisher<br>registered - registered user ||
