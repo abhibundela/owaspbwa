@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2011-04-21 08:07:37
+<?php /* Smarty version 2.6.14, created on 2011-04-22 02:21:45
          compiled from footer.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'tiki_long_datetime', 'footer.tpl', 11, false),)), $this); ?>

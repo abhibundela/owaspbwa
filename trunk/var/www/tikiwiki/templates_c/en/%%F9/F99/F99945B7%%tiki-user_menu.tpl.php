@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2011-04-21 08:07:36
+<?php /* Smarty version 2.6.14, created on 2011-04-22 02:21:45
          compiled from tiki-user_menu.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'cat', 'tiki-user_menu.tpl', 8, false),array('modifier', 'escape', 'tiki-user_menu.tpl', 18, false),array('block', 'tr', 'tiki-user_menu.tpl', 18, false),)), $this); ?>
