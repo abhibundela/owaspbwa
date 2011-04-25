@@ -19,5 +19,5 @@ Below are accounts for various applications in the OWASPBWA project VM.  Note, t
 || !GetBoo (http://owaspbwa/getboo/) || admin - administrator<br>user - normal user<br>demo - demonstration user ||
 || !WebCal (http://owaspbwa/webcal/) || admin - administrator<br>user - normal user <br>assistant - assistant user ||
 || Gallery2(http://owaspbwa/gallery2/) || admin - administrator<br>user - normal user ||
-|| Tiki Wiki(http://http://info.tiki.org/tiki-index.php) || admin - administrator<br>user - normal user ||
-|| Joomla(http://www.joomla.org/) || admin - administrator<br>author - author<br>editor - editor<br>publisher - publisher<br>registered - registered user ||
+|| Tiki Wiki (http://http://info.tiki.org/tiki-index.php) || admin - administrator<br>user - normal user ||
+|| Joomla (http://www.joomla.org/) || admin - administrator<br>author - author<br>editor - editor<br>publisher - publisher<br>registered - registered user ||
