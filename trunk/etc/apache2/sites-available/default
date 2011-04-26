@@ -38,4 +38,23 @@
         Allow from 127.0.0.0/255.0.0.0 ::1/128
     </Directory>
 
+    # 
+    # Directives to add to your Apache conf file to allow use of AWStats as a CGI. 
+    # Note that path "/usr/local/awstats/" must reflect your AWStats install path. 
+    # 
+    Alias /awstatsclasses "/owaspbwa/owaspbwa-svn/usr/local/awstats/wwwroot/classes/" 
+    Alias /awstatscss "/owaspbwa/owaspbwa-svn/usr/local/awstats/wwwroot/css/" 
+    Alias /awstatsicons "/owaspbwa/owaspbwa-svn/usr/local/awstats/wwwroot/icon/" 
+    Alias /icon "/owaspbwa/owaspbwa-svn/usr/local/awstats/wwwroot/icon/" 
+    ScriptAlias /awstats/ "/owaspbwa/owaspbwa-svn/usr/local/awstats/wwwroot/cgi-bin/" 
+    # 
+    # This is to permit URL access to scripts/files in AWStats directory. 
+    # 
+    <Directory "/owaspbwa/owaspbwa-svn/usr/local/awstats/wwwroot"> 
+        Options None 
+        AllowOverride None 
+        Order allow,deny 
+        Allow from all 
+    </Directory> 
+
 </VirtualHost>
