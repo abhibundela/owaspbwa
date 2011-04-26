@@ -2,6 +2,7 @@
 owaspbwa-services-stop.sh
 echo ".: Fixing Web Permissions :."
 chown -R www-data:www-data /owaspbwa/owaspbwa-svn/var/www
+chown -R www-data:www-data /owaspbwa/owaspbwa-svn/var/lib/awstats
 echo ".: Fixing MySQL Permissions:."
 chown -R mysql:mysql /owaspbwa/owaspbwa-svn/var/lib/mysql
 echo ".: Fixing Tomcat Permissions :."
