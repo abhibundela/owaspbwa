@@ -26,9 +26,3 @@ The VM requires no installation.  Simply extract the files from the archive and 
 Note - The VM is entirely command line driven.  X-Windows or other GUI systems have not been installed.
 
 If you would like to access your VM from links off this site, the one configuration change you may need to make is to add an entry to your hosts file pointing to the name owaspbwa to the IP address of your VM.  It is recommended that you do this so that you can follow links on this web site to pages on your local OWASPBWA VM.
-
-= Known Bugs = 
-
-All known bugs (not the intentional security issues) in the VM are in the Google Code issue tracker (see "Issues" in the menu above).  Please report any additional bugs you discover.
-
-The known security vulnerabilities in the applications are tracked at http://sourceforge.net/apps/trac/owaspbwa/report/1.  Please submit any additional issues that you discover.
