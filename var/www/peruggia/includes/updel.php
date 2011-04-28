@@ -63,7 +63,7 @@ if(isset($_GET['upload'])){
   }
 }
 
-$images = array_diff(scandir("images"), array(".", ".."));
+$images = array_diff(scandir("images"), array(".", "..", ".svn"));
 
 ?>
 
