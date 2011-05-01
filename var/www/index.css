@@ -31,6 +31,13 @@ th {
 	background: #CAE8EA /*url(images/bg_header.jpg) no-repeat*/;
 }
 
+td#header{
+	background: #E6EAE9;
+	padding: none;
+	border: none;
+	color: #4f6b72;
+}
+
 td {
 	border-right: 1px solid #C1DAD7;
 	border-bottom: 1px solid #C1DAD7;
@@ -39,9 +46,4 @@ td {
 	color: #6D929B;
 	width: 420px;
 }
-td#header{
-	background: #E6EAE9;
-	padding: none;
-	border: none;
-	color: #4f6b72;
-}
+
