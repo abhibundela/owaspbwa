@@ -20,5 +20,6 @@ How to package a new version of the OWASPBWA VM.
 - Close VM in VMware Workstation
 - Shrink disk on Windows command line with 
 > "c:\Program Files\VMware\VMware Workstation\vmware-vdiskmanager.exe" -k "OWASP Broken Web Apps.vmdk"
+> "c:\Program Files (x86)\VMware\VMware Workstation\vmware-vdiskmanager.exe" -k -q "OWASP Broken Web Apps.vmdk"
 - Delete vmware*.log files from VM directory
 - Use 7-zip to compress directory with VM.  Follow the Windows "platform convention" of not including the directory in the .7z or .zip file.
