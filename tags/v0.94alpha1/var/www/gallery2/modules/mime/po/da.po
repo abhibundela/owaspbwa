@@ -1,0 +1,109 @@
+# $Id: da.po,v 1.9 2006/03/22 04:20:01 mindless Exp $
+#
+# Gallery - a web based photo album viewer and editor
+# Copyright (C) 2000-2006 Bharat Mediratta
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+# 
+# Allan Beaufour <allan@beaufour.dk>, 2005.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery: MIME Maintenance 1.0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-07-30 09:02+0200\n"
+"PO-Revision-Date: 2005-07-30 11:42+0200\n"
+"Last-Translator: Allan Beaufour <allan@beaufour.dk>\n"
+"Language-Team: Danish <gallery-devel@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "MIME Maintenance"
+msgstr "MIME Vedligeholdelse"
+
+msgid "Maintain MIME types and file extensions"
+msgstr "Vedligehold MIME typer og filendelser"
+
+msgid "Extra Data"
+msgstr "Ekstra Data"
+
+msgid "MIME Types"
+msgstr "MIME Typer"
+
+msgid "MIME entry saved successfully"
+msgstr "MIME indgang blev gemt"
+
+msgid "MIME entry deleted"
+msgstr "MIME indgang slettet"
+
+msgid "Extensions"
+msgstr "Udvidelser"
+
+msgid "Viewable"
+msgstr "Kan vises"
+
+msgid "Actions"
+msgstr "Handlinger"
+
+msgid "edit"
+msgstr "ret"
+
+msgid "delete"
+msgstr "slet"
+
+msgid "Add new MIME type"
+msgstr "Tilføj en ny MIME type"
+
+#, c-format
+msgid "Edit MIME type: %s"
+msgstr "Ret MIME type: %s"
+
+msgid "New MIME type"
+msgstr "Ny MIME type"
+
+msgid "Mime entry saved successfully"
+msgstr "MIME indgang blev gemt"
+
+msgid "MIME type: "
+msgstr "MIME type: "
+
+msgid "Viewable?"
+msgstr "Kan vises?"
+
+msgid "MIME type must be specified."
+msgstr "MIME typen skal specificeres."
+
+msgid "This extension is already in use and cannot be reused."
+msgstr "Denne udvidelse er allerede i brug og kan ikke genbruges."
+
+msgid "You must specify at least one extension."
+msgstr "Du skal specificere mindst en udvidelse."
+
+msgid "Save"
+msgstr "Gem"
+
+msgid "Apply"
+msgstr "Anvend"
+
+msgid "Cancel"
+msgstr "Fortryd"
+
+#, c-format
+msgid ""
+"Warning: Adding any of the following mime types could leave you open to %sCross Site "
+"Scripting%s security vulnerabilities."
+msgstr ""

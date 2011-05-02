@@ -1,0 +1,76 @@
+<?php
+/*
+ * $RCSfile: GalleryDerivativeHelper_simple.class,v $
+ *
+ * Gallery - a web based photo album viewer and editor
+ * Copyright (C) 2000-2006 Bharat Mediratta
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or (at
+ * your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+/**
+ * @version $Revision: 1.9 $ $Date: 2006/01/10 04:39:22 $
+ * @package GalleryCore
+ * @author Bharat Mediratta <bharat@menalto.com>
+ */
+
+/**
+ * A helper class for GalleryDerivatives
+ *
+ * Utility functions useful in managing GalleryDerivatives
+ *
+ * @package GalleryCore
+ * @subpackage Helpers
+ */
+class GalleryDerivativeHelper_simple {
+
+    /**
+     * Rebuild the cache if its not current
+     *
+     * If the cache is expired, it will be automatically rebuilt
+     *
+     * @access public
+     * @param the id of the derivative
+     * @param [optional boolean whether to try to fix the derivative if is broken]
+     * @return array object GalleryStatus a status code,
+     *               object GalleryDerivative the up-to-date derivative
+     *               boolean true if it had to be rebuilt, false if not
+     * @static
+     */
+    function rebuildCacheIfNotCurrent($derivativeId, $fixBroken=false) {
+	global $gallery;
+
+	list ($ret, $derivative) = GalleryCoreApi::loadEntitiesById($derivativeId);
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null, null);
+	}
+
+	list ($ret, $current) = $derivative->isCacheCurrent();
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null, null);
+	}
+	$isBroken = $derivative->getIsBroken();
+	if (!$current || ($fixBroken && !empty($isBroken))) {
+	    list ($ret, $derivative) =
+		GalleryCoreApi::rebuildDerivativeCache($derivativeId);
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null, null);
+	    }
+	}
+
+	return array(null, $derivative,
+		     (!$current || ($fixBroken && !empty($isBroken))));
+    }
+}
+?>

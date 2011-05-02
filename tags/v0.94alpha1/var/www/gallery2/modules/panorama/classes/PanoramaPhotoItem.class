@@ -1,0 +1,107 @@
+<?php
+/*
+ * $RCSfile: PanoramaPhotoItem.class,v $
+ *
+ * Gallery - a web based photo album viewer and editor
+ * Copyright (C) 2000-2006 Bharat Mediratta
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or (at
+ * your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+/**
+ * @version $Revision: 1.14 $ $Date: 2006/01/24 00:41:53 $
+ * @package Panorama
+ * @author Alan Harder <alan.harder@sun.com>
+ */
+
+GalleryCoreApi::requireOnce('modules/core/classes/GalleryPhotoItem.class');
+
+/**
+ * An extension of GalleryPhotoItem to render in panorama mode
+ *
+ * @g2 <class-name>PanoramaPhotoItem</class-name>
+ * @g2 <parent-class-name>GalleryPhotoItem</parent-class-name>
+ * @g2 <schema>
+ * @g2   <schema-major>1</schema-major>
+ * @g2   <schema-minor>0</schema-minor>
+ * @g2 </schema>
+ * @g2 <requires-id/>
+ *
+ * @package Panorama
+ * @subpackage Classes
+ */
+class PanoramaPhotoItem extends GalleryPhotoItem {
+
+    /**
+     * @see GalleryDataItem::render
+     */
+    function render($format, $params) {
+	global $gallery;
+
+	list ($ret, $viewWidth) = GalleryCoreApi::getPluginParameter('module', 'panorama', 'width');
+	if ($ret || !empty($params['forceRawImage']) || $this->getWidth() < $viewWidth) {
+	    return parent::render($format, $params);
+	}
+
+	switch($format) {
+	case 'HTML':
+	    $urlGenerator =& $gallery->getUrlGenerator();
+	    $src = $urlGenerator->generateUrl(
+		array('view' => 'core.DownloadItem', 'itemId' => $this->getId(),
+		      'serialNumber' => $this->getSerialNumber()),
+		array('forceFullUrl' => true, 'forceSessionId' => true));
+
+	    list ($width, $height) = array($this->getWidth(), $this->getHeight());
+	    $baseUrl = GalleryUtilities::convertPathToUrl(dirname(dirname(__FILE__)),
+							  array('forceFullUrl' => true));
+
+	    return sprintf('
+		    <object width="%d" height="%d"
+			    classid="clsid:8AD9C840-044E-11D1-B3E9-00805F499D93">
+		    <!--[if !IE]>-->
+		    <object width="%d" height="%d"
+			    archive="%s/java/Metamorphose.jar" classid="java:Metamorphose">
+		    <!--<![endif]-->
+			<param name="code" value="Metamorphose"/>
+			<param name="archive" value="%s/java/Metamorphose.jar"/>
+			<param name="BackgroundColor" value="#666666"/>
+			<param name="PanoramaRect" value="0,0,%d,%d"/>
+			<param name="ScrollerRect" value="0,%d,%d,17"/>
+			<param name="ScrollerThumb" value="%s/images/slider.png"/>
+			<param name="PanoramaTile" value="%s"/>
+			<param name="PanoramaSize" value="%d,%d"/>
+		    <!--[if !IE]>-->
+		    </object>
+		    <!--<![endif]-->
+		    </object>
+		    ',
+		    $viewWidth, $height + 17,
+		    $viewWidth, $height + 17, $baseUrl, $baseUrl,
+		    $viewWidth, $height,
+		    $height, $viewWidth,
+		    $baseUrl, $src, $width, $height);
+
+	default:
+	    return null;
+	}
+    }
+
+    /**
+     * @see GalleryEntity::getClassName()
+     */
+    function getClassName() {
+	return 'PanoramaPhotoItem';
+    }
+}
+?>

@@ -1,0 +1,253 @@
+# $Id: ja.po,v 1.7 2006/03/22 04:19:29 mindless Exp $
+#
+# Gallery - a web based photo album viewer and editor
+# Copyright (C) 2000-2006 Bharat Mediratta
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery: Image Block 1.0.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-09-16 17:44+0900\n"
+"PO-Revision-Date: 2005-11-10 12:14+0900\n"
+"Last-Translator: Kennichi Uehara <ken.w3m+nospam@gmail.com>\n"
+"Language-Team: Japanese <gallery-devel@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Image Block"
+msgstr "イメージブロック"
+
+msgid "Random, Most Recent or Most Viewed Photo or Album"
+msgstr "ランダム、最近の、あるいはもっとも閲覧数の多い画像やアルバム"
+
+msgid "Blocks"
+msgstr "ブロック"
+
+msgid "Random Image"
+msgstr "画像をランダムに"
+
+msgid "Newest Image"
+msgstr "新しい画像"
+
+msgid "Most Viewed Image"
+msgstr "もっとも見られた画像"
+
+msgid "Random Album"
+msgstr "アルバムをランダムに"
+
+msgid "Newest Album"
+msgstr "新しいアルバム"
+
+msgid "Most Viewed Album"
+msgstr "もっとも見られたアルバム"
+
+msgid "Picture of the Day"
+msgstr "今日の画像"
+
+msgid "Picture of the Week"
+msgstr "今週の画像"
+
+msgid "Picture of the Month"
+msgstr "今月の画像"
+
+msgid "Album of the Day"
+msgstr "今日のアルバム"
+
+msgid "Album of the Week"
+msgstr "今週のアルバム"
+
+msgid "Album of the Month"
+msgstr "今月のアルバム"
+
+msgid "Date:"
+msgstr "日付:"
+
+#, c-format
+msgid "Views: %d"
+msgstr "閲覧回数: %d"
+
+#, c-format
+msgid "Owner: %s"
+msgstr "所有者: %s"
+
+msgid "Prevent this album from being displayed in the Image Block"
+msgstr "このアルバムがイメージブロックに表示されることを防ぐ"
+
+msgid "Apply ImageBlock settings to sub-albums"
+msgstr "サブアルバムにもイメージブロックの設定を適用"
+
+msgid "Image Block Settings"
+msgstr "イメージブロックの設定"
+
+msgid "Settings saved successfully"
+msgstr "設定の保存に成功しました"
+
+msgid "Show"
+msgstr "表示"
+
+msgid "Heading"
+msgstr ""
+
+msgid "Title"
+msgstr "タイトル"
+
+msgid "Date"
+msgstr "日付"
+
+msgid "View Count"
+msgstr "閲覧回数"
+
+msgid "Owner"
+msgstr "所有者"
+
+msgid "Frames"
+msgstr "フレーム"
+
+msgid "View samples"
+msgstr "サンプルを表示"
+
+msgid "Album Frame"
+msgstr "アルバムフレーム"
+
+msgid "Photo Frame"
+msgstr "画像フレーム"
+
+msgid "Save"
+msgstr "保存"
+
+msgid "Reset"
+msgstr "リセット"
+
+msgid "External Image Block"
+msgstr "外部のイメージブロック"
+
+msgid ""
+"Use a PHP block like the one shown below to include an image block in a PHP page outside of "
+"Gallery."
+msgstr ""
+
+msgid ""
+"Pipe(|) separate list chosen from: randomImage, recentImage, viewedImage, randomAlbum, "
+"recentAlbum, viewedAlbum, dailyImage, weeklyImage, monthlyImage, dailyAlbum, weeklyAlbum, "
+"monthlyAlbum, specificItem; default is randomImage"
+msgstr ""
+
+msgid ""
+"Pipe(|) separated list chosen from: title, date, views, owner, heading, fullSize; the value "
+"can also be: none"
+msgstr ""
+
+msgid ""
+"Limit the item selection to the subtree of the gallery under the album with the given id; or "
+"the id of the item to display when used with specificItem block type"
+msgstr ""
+
+msgid ""
+"Scale images to this maximum size. If maxSize exceeds the thumbnail dimensions, you must "
+"also specify g2_show=fullSize"
+msgstr ""
+
+msgid "Add a link target (for example, to open links in a new browser window)"
+msgstr ""
+
+msgid "Image frame to use around images"
+msgstr ""
+
+msgid "Image frame to use around albums"
+msgstr ""
+
+msgid "If a parameter marked with * is omitted then the site default defined above is used."
+msgstr ""
+
+#, c-format
+msgid ""
+"Image frames require CSS to be displayed correctly. Include the following in the %s section "
+"to support image frames."
+msgstr ""
+
+#, c-format
+msgid ""
+"Specify the frame id (or pipe separated list of ids) in the frames parameter. Omit the "
+"parameter to support the image frames configured above. Frame ids are the directory names in "
+"the %s directory."
+msgstr ""
+
+msgid "Image type"
+msgstr ""
+
+msgid "Random image"
+msgstr "画像をランダムに"
+
+msgid "Recent image"
+msgstr "新しい画像"
+
+#, fuzzy
+msgid "Viewed image"
+msgstr "新しい画像"
+
+msgid "Random album"
+msgstr "ランダムアルバム"
+
+msgid "Recent album"
+msgstr "新しいアルバム"
+
+msgid "Viewed album"
+msgstr "閲覧数の多いアルバム"
+
+#, fuzzy
+msgid "Daily image"
+msgstr "毎日の画像"
+
+#, fuzzy
+msgid "Weekly image"
+msgstr "毎週の画像"
+
+msgid "Monthly image"
+msgstr "毎月の画像"
+
+#, fuzzy
+msgid "Daily album"
+msgstr "毎日のアルバム"
+
+#, fuzzy
+msgid "Weekly album"
+msgstr "毎週のアルバム"
+
+#, fuzzy
+msgid "Monthly album"
+msgstr "毎月のアルバム"
+
+#, fuzzy
+msgid "Use default settings"
+msgstr "デフォルト設定を使う"
+
+msgid "Show heading"
+msgstr ""
+
+#, fuzzy
+msgid "Show title"
+msgstr "タイトルを表示"
+
+msgid "Show date"
+msgstr "日付を表示"
+
+msgid "Show view count"
+msgstr "閲覧回数を表示"
+
+msgid "Show owner"
+msgstr "所有者を表示"

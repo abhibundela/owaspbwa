@@ -1,0 +1,295 @@
+<?php
+/*
+ * $RCSfile: GalleryUserGroupHelper_medium.class,v $
+ *
+ * Gallery - a web based photo album viewer and editor
+ * Copyright (C) 2000-2006 Bharat Mediratta
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or (at
+ * your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+/**
+ * @version $Revision: 1.19 $ $Date: 2006/01/13 03:39:31 $
+ * @package GalleryCore
+ * @author Bharat Mediratta <bharat@menalto.com>
+ */
+
+/**
+ *
+ *
+ * @package GalleryCore
+ * @subpackage Helpers
+ */
+class GalleryUserGroupHelper_medium {
+
+    /**
+     * Add the specified user to the specified group.
+     *
+     * @param int the id of the GalleryUser
+     * @param int the id of the GalleryGroup
+     * @return object GalleryStatus a status code
+     * @static
+     */
+    function addUserToGroup($userId, $groupId) {
+	global $gallery;
+	if (empty($userId) || empty($groupId)) {
+	    return GalleryCoreApi::error(ERROR_BAD_PARAMETER, __FILE__, __LINE__);
+	}
+
+	$userId = (int) $userId;
+	$groupId = (int) $groupId;
+
+	/* Is the user already in the group? */
+	list ($ret, $inGroup) = GalleryCoreApi::isUserInGroup($userId, $groupId);
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+	if ($inGroup) {
+	    return null;
+	}
+
+	/* Add a new entry in our groups table to represent this relationship. */
+	$ret = GalleryCoreApi::addMapEntry(
+	    'GalleryUserGroupMap', array('userId' => $userId, 'groupId' => $groupId));
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+	GalleryDataCache::remove("GalleryUserGroupHelper::isUserInGroup($userId,$groupId)");
+
+	$event = GalleryCoreApi::newEvent('Gallery::ViewableTreeChange');
+	$event->setData(array('userId' => $userId, 'itemId' => null));
+	list ($ret) = GalleryCoreApi::postEvent($event);
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	return null;
+    }
+
+    /**
+     * Remove the specified user from the specified group.
+     *
+     * @param int the id of the GalleryUser
+     * @return object GalleryStatus a status code
+     * @static
+     */
+    function removeUserFromGroup($userId, $groupId) {
+	global $gallery;
+	if (empty($userId) || empty($groupId)) {
+	    return GalleryCoreApi::error(ERROR_BAD_PARAMETER, __FILE__, __LINE__);
+	}
+
+	$userId = (int) $userId;
+	$groupId = (int) $groupId;
+
+	/* Remove this relationship from our groups table. */
+	$ret = GalleryCoreApi::removeMapEntry(
+	    'GalleryUserGroupMap', array('userId' => $userId, 'groupId' => $groupId));
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+	GalleryDataCache::remove("GalleryUserGroupHelper::isUserInGroup($userId,$groupId)");
+
+	$event = GalleryCoreApi::newEvent('Gallery::ViewableTreeChange');
+	$event->setData(array('userId' => $userId, 'itemId' => null));
+	list ($ret) = GalleryCoreApi::postEvent($event);
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	return null;
+    }
+
+    /**
+     * Remove the user from all groups
+     *
+     * @param int the id of the GalleryUser
+     * @return object GalleryStatus a status code
+     * @static
+     */
+    function removeUserFromAllGroups($userId) {
+	global $gallery;
+	if (empty($userId)) {
+	    return GalleryCoreApi::error(ERROR_BAD_PARAMETER, __FILE__, __LINE__);
+	}
+
+	$userId = (int) $userId;
+
+	/* Remove this relationship from our groups table. */
+	$ret = GalleryCoreApi::removeMapEntry('GalleryUserGroupMap', array('userId' => $userId));
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	$event = GalleryCoreApi::newEvent('Gallery::ViewableTreeChange');
+	$event->setData(array('userId' => $userId, 'itemId' => null));
+	list ($ret) = GalleryCoreApi::postEvent($event);
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	return null;
+    }
+
+    /**
+     * Remove any users in the group
+     *
+     * @param int the id of the GalleryGroup
+     * @return object GalleryStatus a status code
+     * @static
+     */
+    function removeAllUsersFromGroup($groupId) {
+	global $gallery;
+	if (empty($groupId)) {
+	    return GalleryCoreApi::error(ERROR_BAD_PARAMETER, __FILE__, __LINE__);
+	}
+
+	$groupId = (int) $groupId;
+
+	/* Remove this relationship from our groups table. */
+	$ret = GalleryCoreApi::removeMapEntry('GalleryUserGroupMap', array('groupId' => $groupId));
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	list ($ret, $group) = GalleryCoreApi::loadEntitiesById($groupId);
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+	if ($group->getGroupType() != GROUP_ALL_USERS &&
+	        $group->getGroupType() != GROUP_EVERYBODY) {
+	    list ($ret, $userData) = GalleryCoreApi::fetchUsersForGroup($groupId);
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	    $event = GalleryCoreApi::newEvent('Gallery::ViewableTreeChange');
+	    $event->setData(array('userId' => array_keys($userData), 'itemId' => null));
+	    list ($ret) = GalleryCoreApi::postEvent($event);
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	}
+
+	return null;
+    }
+
+    /**
+     * Return a list of user ids belonging to a group
+     *
+     * You can specify how many userids to list, and where the windows is in
+     * the list of all users.
+     *
+     * @param int the group id
+     * @param int the number of userids desired
+     * @param int the start of the range
+     * @param string substring to match against the username
+     * @return array object GalleryStatus a status code
+     *               array user id => user name
+     * @static
+     */
+    function fetchUsersForGroup($groupId, $count=null, $offset=null, $substring=null) {
+	global $gallery;
+
+	$data = array();
+	$query = '
+        SELECT
+          [GalleryUserGroupMap::userId],
+          [GalleryUser::userName]
+        FROM
+          [GalleryUserGroupMap], [GalleryUser]
+        WHERE
+          [GalleryUserGroupMap::groupId] = ?
+          AND
+          [GalleryUserGroupMap::userId] = [GalleryUser::id]
+	';
+	$data[] = (int) $groupId;
+	if (!empty($substring)) {
+	    $query .= '
+	      AND
+	      [GalleryUser::userName] LIKE ?
+	    ';
+	    $data[] = "%$substring%";
+	}
+	$query .= '
+        ORDER BY
+          [GalleryUser::userName]
+        ';
+
+	list ($ret, $searchResults) = $gallery->search(
+	    $query, $data, array('limit' => array('count' => $count, 'offset' => $offset)));
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	$data = array();
+	while ($result = $searchResults->nextResult()) {
+	    $data[$result[0]] = $result[1];
+	}
+	return array(null, $data);
+    }
+
+    /**
+     * Return a list of groups that a user belongs to
+     *
+     * You can specify how many userids to list, and where the windows is in
+     * the list of all users.
+     *
+     * @param int the user id
+     * @param int the number of group ids desired
+     * @param int the start of the range
+     * @return array object GalleryStatus a status code
+     *               array group id => group name
+     * @static
+     */
+    function fetchGroupsForUser($userId, $count=null, $offset=null) {
+	global $gallery;
+
+	$cacheKey = "GalleryUserGroupHelper::fetchGroupsForUser($userId,$count,$offset)";
+	if (GalleryDataCache::containsKey($cacheKey)) {
+	    $data = GalleryDataCache::get($cacheKey);
+	} else {
+	    $query = '
+            SELECT
+              [GalleryGroup::id],
+              [GalleryGroup::groupName]
+            FROM
+              [GalleryUserGroupMap], [GalleryGroup]
+            WHERE
+              [GalleryGroup::id] = [GalleryUserGroupMap::groupId]
+              AND
+              [GalleryUserGroupMap::userId] = ?
+            ORDER BY
+              [GalleryGroup::groupName]
+            ';
+	    list ($ret, $searchResults) =
+		$gallery->search($query,
+				  array((int) $userId),
+				  array('limit' => array('count' => $count,
+							 'offset' => $offset)));
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+
+	    $data = array();
+	    while ($result = $searchResults->nextResult()) {
+		$data[$result[0]] = $result[1];
+	    }
+
+	    GalleryDataCache::put($cacheKey, $data);
+	}
+
+	return array(null, $data);
+    }
+}
+?>

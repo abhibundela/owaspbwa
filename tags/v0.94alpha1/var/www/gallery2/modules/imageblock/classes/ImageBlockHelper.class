@@ -1,0 +1,775 @@
+<?php
+/*
+ * $RCSfile: ImageBlockHelper.class,v $
+ *
+ * Gallery - a web based photo album viewer and editor
+ * Copyright (C) 2000-2006 Bharat Mediratta
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or (at
+ * your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+/**
+ * @version $Revision: 1.53 $ $Date: 2006/01/21 09:33:34 $
+ * @package ImageBlock
+ * @author Alan Harder <alan.harder@sun.com>
+ */
+
+/**
+ * A helper class for the Image Block module.
+ *
+ * @package ImageBlock
+ * @subpackage Classes
+ */
+class ImageBlockHelper /* extends GalleryEventListener */ {
+
+    /**
+     * Load image block data into template.
+     *
+     * @param object GalleryTemplate template
+     * @param array (optional) image block parameters (to override module settings)
+     * @return GalleryStatus a status code
+     */
+    function loadImageBlocks(&$template, $params) {
+	global $gallery;
+	list ($ret, $moduleParams) =
+	    GalleryCoreApi::fetchAllPluginParameters('module', 'imageblock');
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+	if (!isset($params['blocks'])) {
+	    $params['blocks'] = 'randomImage';
+	}
+	$params = array_merge($moduleParams, $params);
+	$parentId = isset($params['itemId']) ? $params['itemId'] : null;
+	$show = array();
+	foreach (explode('|', $params['show']) as $key) {
+	    $show[$key] = 1;
+	}
+	$fullSize = isset($show['fullSize']);
+	$heading = isset($show['heading']);
+
+	list ($ret, $module) = GalleryCoreApi::loadPlugin('module', 'imageblock');
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+	$headings = array('randomImage' => $gallery->i18n('Random Image'),
+			  'recentImage' => $gallery->i18n('Newest Image'),
+			  'viewedImage' => $gallery->i18n('Most Viewed Image'),
+			  'randomAlbum' => $gallery->i18n('Random Album'),
+			  'recentAlbum' => $gallery->i18n('Newest Album'),
+			  'viewedAlbum' => $gallery->i18n('Most Viewed Album'),
+			  'dailyImage' => $gallery->i18n('Picture of the Day'),
+			  'weeklyImage' => $gallery->i18n('Picture of the Week'),
+			  'monthlyImage' => $gallery->i18n('Picture of the Month'),
+			  'dailyAlbum' => $gallery->i18n('Album of the Day'),
+			  'weeklyAlbum' => $gallery->i18n('Album of the Week'),
+			  'monthlyAlbum' => $gallery->i18n('Album of the Month'));
+
+	$blocks = array();
+	$blockCount = array();
+	$blockList = explode('|', $params['blocks']);
+	foreach ($blockList as $block) {
+	    if (!isset($blockCount[$block])) {
+		$blockCount[$block] = 0;
+	    }
+	    $blockCount[$block]++;
+	}
+	foreach ($blockCount as $block => $count) {
+	    if (!preg_match('{^(.*?)([A-Z].*)$}', $block, $matches)) {
+		continue;
+	    }
+	    list ($tmp, $order, $itemType) = $matches;
+	    list ($ret, $blockData[$block]) = ImageBlockHelper::_getBlockData(
+		($heading && isset($headings[$block])) ? $module->translate($headings[$block]) : '',
+		$itemType, $order, $count, $parentId, $fullSize,
+		isset($params['userId']) ? $params['userId'] : null);
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	}
+	foreach ($blockList as $block) {
+	    if (!empty($blockData[$block])) {
+		$blocks[] = array_shift($blockData[$block]);
+	    }
+	}
+
+	$ImageBlockData['show'] = $show;
+	if (array_key_exists('maxSize', $params)) {
+	    $ImageBlockData['maxSize'] = $params['maxSize'];
+	}
+	if (isset($params['linkTarget'])) {
+	    $ImageBlockData['linkTarget'] = $params['linkTarget'];
+	}
+
+	if (!empty($blocks)) {
+            /* Prepare image frames, if available */
+	    list ($ret, $imageframe) =
+		GalleryCoreApi::newFactoryInstance('ImageFrameInterface_1_1');
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	    if (isset($imageframe)) {
+		$frameIds = array();
+		foreach (array('albumFrame', 'itemFrame') as $key) {
+		    if (!empty($params[$key])) {
+			$frameIds[] = $ImageBlockData[$key] = $params[$key];
+		    }
+		}
+	    }
+	    if (!empty($frameIds)) {
+		$ret = $imageframe->init($template, $frameIds);
+		if ($ret) {
+		    return $ret->wrap(__FILE__, __LINE__);
+		}
+	    }
+
+	    $ImageBlockData['blocks'] = $blocks;
+	    $ImageBlockData['forceFullUrl'] = 0;
+	    $template->setVariable('ImageBlockData', $ImageBlockData);
+	}
+
+	return null;
+    }
+
+    /**
+     * @static
+     * @access private
+     */
+    function _getBlockData($title, $itemType, $order, $count,
+			   $parentId=null, $fullSize=false, $userId=null) {
+	$blocks = $data = array();
+	switch ($order) {
+	case 'specific':
+	    if (!isset($parentId)) {
+		return array(GalleryCoreApi::error(ERROR_BAD_PARAMETER, __FILE__, __LINE__), null);
+	    }
+	    list ($ret, $ok) = GalleryCoreApi::hasItemPermission($parentId, 'core.view', $userId);
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+	    if (!$ok) {
+		/* Ignore permission error.. just don't add a block */
+		return array(null, array());
+	    }
+	    list ($ret, $item) = GalleryCoreApi::loadEntitiesById($parentId);
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+	    break;
+
+	case 'daily':
+	case 'weekly':
+	case 'monthly':
+	    $key = $order . $itemType;
+	    $now = localtime();
+	    switch ($order) {
+	    case 'daily':
+		$now = $now[7]; /* tm_yday */
+		break;
+
+	    case 'weekly':
+		/* Week number; Sunday as first day of week */
+		$now = ((int)(($now[7] - $now[6] + ($now[7] < $now[6] ? 7 : 0)) / 7)) % 52;
+		break;
+
+	    case 'monthly':
+		$now = $now[4];
+		break;
+	    }
+	    list ($ret, $tmp) = GalleryCoreApi::getPluginParameter('module', 'imageblock', $key);
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+	    if (!empty($tmp)) {
+		list ($itemId, $then) = explode('|', $tmp);
+		if ($now != $then) {
+		    $itemId = null;
+		}
+	    }
+	    if (isset($itemId)) {
+		list ($ret, $ok) = GalleryCoreApi::hasItemPermission($itemId, 'core.view', $userId);
+		if ($ret || !$ok) {
+		    /* Just pick a new item if this one is inaccessible or missing */
+		} else {
+		    list ($ret, $item) = GalleryCoreApi::loadEntitiesById($itemId);
+		    if ($ret) {
+			return array($ret->wrap(__FILE__, __LINE__), null);
+		    }
+		    break;
+		}
+	    }
+	    /* Set random selection for anonymous user */
+	    $order = 'random';
+	    $count = 1;
+	    list ($ret, $userId) =
+		GalleryCoreApi::getPluginParameter('module', 'core', 'id.anonymousUser');
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+	    /* Fall through to pick new item */
+
+	default:
+	    list ($ret, $data) =
+		ImageBlockHelper::fetchViewableData($itemType, $order, $count, $parentId, $userId);
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+	}
+
+	if (isset($item)) {
+	    $id = $item->getId();
+	    $data = array('id' => $id);
+	    list ($ret, $data['viewCount']) = GalleryCoreApi::fetchItemViewCount($item->getId());
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+	    $data = array($data);
+	} else if (isset($key) && !empty($data)) {
+	    /* Record the id and time for selected item */
+	    $ret = GalleryCoreApi::setPluginParameter('module', 'imageblock',
+						      $key, $data[0]['id'] . '|' . $now);
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+	}
+
+	foreach ($data as $itemData) {
+	    $id = $itemData['id'];
+	    list ($ret, $item) = GalleryCoreApi::loadEntitiesById($id);
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+	    list ($ret, $owner) = GalleryCoreApi::loadEntitiesById($item->getOwnerId());
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+	    $image = null;
+	    if ($fullSize && GalleryUtilities::isA($item, 'GalleryDataItem')) {
+		$ret = GalleryCoreApi::assertHasItemPermission($item->getId(), 'core.viewSource');
+		if ($ret) {
+		    /* Ignore permission error.. just don't add a block */
+		    continue;
+		}
+		list ($ret, $preferred) = GalleryCoreApi::fetchPreferredsByItemIds(array($id));
+		if ($ret) {
+		    return array($ret->wrap(__FILE__, __LINE__), null);
+		}
+		$image = isset($preferred[$id]) ? $preferred[$id] : $item;
+	    } else {
+		list ($ret, $thumbnail) = GalleryCoreApi::fetchThumbnailsByItemIds(array($id));
+		if ($ret) {
+		    return array($ret->wrap(__FILE__, __LINE__), null);
+		}
+		if (isset($thumbnail[$id])) {
+		    $image = $thumbnail[$id];
+
+		    if ($fullSize && GalleryUtilities::isA($item, 'GalleryAlbumItem')) {
+			/* Fullsize for album highlight.. get preferred derivative source */
+			$source = $image;
+			while (GalleryUtilities::isA($source, 'GalleryDerivative') &&
+				 $source->getDerivativeType() != DERIVATIVE_TYPE_IMAGE_PREFERRED) {
+			    list ($ret, $source) =
+				GalleryCoreApi::loadEntitiesById($source->getDerivativeSourceId());
+			    if ($ret) {
+				return array($ret->wrap(__FILE__, __LINE__), null);
+			    }
+			}
+			$ret = GalleryCoreApi::assertHasItemPermission(
+			    GalleryUtilities::isA($source, 'GalleryDerivative') ?
+				$source->getParentId() : $source->getId(),
+			    'core.viewSource');
+			if ($ret) {
+			    /* Ignore permission error.. just don't add a block */
+			    continue;
+			}
+			$image = $source;
+			/* {g->image} won't work with item!=image and image not a derivative */
+			if (!GalleryUtilities::isA($source, 'GalleryDerivative')) {
+			    $forceItem = true;
+			}
+		    }
+		}
+	    }
+
+	    if (isset($image)) {
+		$itemData['title'] = $title;
+		$itemData['item'] = (array)$item;
+		$itemData['owner'] = (array)$owner;
+		$itemData['thumb'] = (array)$image;
+		if (isset($forceItem)) {
+		    $itemData['forceItem'] = true;
+		}
+		$blocks[] = $itemData;
+	    }
+	}
+	return array(null, $blocks);
+    }
+
+    /**
+     * Fetch item data for use in image block
+     *
+     * @param string the item type
+     * @param string the order type (random, recent, viewed, daily, weekly, monthly)
+     * @param int how many items to select
+     * @param int limit item selection to descendents of this item (optional)
+     * @param int user id for permissions check (optional; defaults to current user)
+     * @return array GalleryStatus a status code
+     *               array of arrays containing id, viewCount of items (empty array if none found)
+     * @static
+     */
+    function fetchViewableData($itemType, $order, $count, $parentId=null, $userId=null) {
+	global $gallery;
+	$storage =& $gallery->getStorage();
+	$typeMap = array('Image' => 1, 'Album' => 2);
+	if (!isset($userId)) {
+	    $userId = $gallery->getActiveUserId();
+	}
+
+	/* Prepare the query */
+	$select[] = '[ImageBlockCacheMap::itemId]';
+	$from[] = '[ImageBlockCacheMap] LEFT JOIN [ImageBlockDisabledMap] ON ' .
+	    '[ImageBlockCacheMap::itemId]=[ImageBlockDisabledMap::itemId]';
+	$where[] = '[ImageBlockCacheMap::userId] = ?';
+	$where[] = '[ImageBlockCacheMap::itemType] = ?';
+	$where[] = '[ImageBlockDisabledMap::itemId] IS NULL';
+	$data[] = (int)$userId;
+	$data[] = $typeMap[$itemType];
+
+	list ($ret, $orderBy) = ImageBlockHelper::_buildOrderBy($order);
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	if ($order == 'viewed' || isset($parentId)) {
+	    $select[] = '[GalleryItemAttributesMap::viewCount]';
+	    $from[] = '[GalleryItemAttributesMap]';
+	    $where[] = '[ImageBlockCacheMap::itemId] = [GalleryItemAttributesMap::itemId]';
+	}
+
+	if (isset($parentId)) {
+	    $where[] = '[GalleryItemAttributesMap::parentSequence] LIKE ?';
+	    list ($ret, $sequence) = GalleryCoreApi::fetchParentSequence($parentId);
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+	    if (!empty($sequence)) {
+		$sequence = implode('/', $sequence) . '/';
+	    } else {
+		$sequence = '';
+	    }
+	    $data[] = $sequence . $parentId . '/%';
+	}
+
+	/* Build the query */
+	$query = 'SELECT ' . implode(', ', $select) .
+		 ' FROM ' . implode(', ', $from) .
+		 ' WHERE ' . implode(' AND ', $where) .
+		 ' ORDER BY ' . $orderBy;
+
+	list ($ret, $query) = $storage->getFunctionSql('LIMIT', array($count, $query));
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	list ($ret, $isCached) = ImageBlockHelper::_isCached($userId);
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	if (!$isCached) {
+	    $ret = ImageBlockHelper::cacheViewableTree($userId);
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+	}
+
+	list ($ret, $results) = ImageBlockHelper::_runQuery($query, $data);
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	foreach ($results as $i => $result) {
+	    if (!isset($result['viewCount'])) {
+		list ($ret, $results[$i]['viewCount']) =
+		    GalleryCoreApi::fetchItemViewCount($result['id']);
+		if ($ret) {
+		    return array($ret->wrap(__FILE__, __LINE__), null);
+		}
+	    }
+	}
+
+	return array(null, $results);
+    }
+
+    /**
+     * Build the 'ORDER BY' section of the fetchViewableData query
+     *
+     * @param string the order type (random, recent, viewed)
+     * @return array GalleryStatus a status code
+     *               string containing SQL ORDER BY statement
+     * @static
+     */
+    function _buildOrderBy($order) {
+	global $gallery;
+	$orderBy = null;
+
+	switch ($order) {
+	case 'random':
+	    $storage =& $gallery->getStorage();
+	    list ($ret, $orderBy) = $storage->getFunctionSql('RAND', array());
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+	    break;
+	case 'recent':
+	    $orderBy = '[ImageBlockCacheMap::itemTimestamp] DESC';
+	    break;
+	case 'viewed':
+	    $orderBy = '[GalleryItemAttributesMap::viewCount] DESC';
+	    break;
+	default:
+	    return array(GalleryCoreApi::error(ERROR_UNIMPLEMENTED, __FILE__, __LINE__), null);
+	}
+	return array(null, $orderBy);
+    }
+
+    /**
+     * @static
+     * @access private
+     */
+    function _runQuery($query, $data) {
+	global $gallery;
+	list ($ret, $searchResults) = $gallery->search($query, $data);
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+	$results = array();
+	while ($rec = $searchResults->nextResult()) {
+	    $result = array('id' => (int)$rec[0]);
+	    if (isset($rec[1])) {
+		$result['viewCount'] = (int)$rec[1];
+	    }
+	    $results[] = $result;
+	}
+	return array(null, $results);
+    }
+
+    /**
+     * @static
+     * @access private
+     */
+    function _isCached($userId) {
+	global $gallery;
+	list ($ret, $searchResults) = $gallery->search(
+	    'SELECT COUNT(*) FROM [ImageBlockCacheMap] WHERE [ImageBlockCacheMap::userId] = ?',
+	    array((int)$userId));
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+	$isCached = ($rec = $searchResults->nextResult()) && ($rec[0] > 0);
+	return array(null, $isCached);
+    }
+
+    /**
+     * Cache viewable data for user
+     *
+     * @param int user id
+     * @return object GalleryStatus a status code
+     * @static
+     */
+    function cacheViewableTree($userId) {
+	global $gallery;
+	$storage =& $gallery->getStorage();
+
+	list ($ret, $aclIds) = GalleryCoreApi::fetchAccessListIds('core.view', $userId);
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+	if (empty($aclIds)) {
+	    return null;
+	}
+	$aclMarkers = GalleryUtilities::makeMarkers(count($aclIds));
+
+	$query = sprintf('
+	INSERT INTO
+	  [ImageBlockCacheMap]
+	SELECT DISTINCT
+	  ?, ?, [GalleryEntity::creationTimestamp], [GalleryEntity::id]
+	FROM
+	  [GalleryEntity], [GalleryAccessSubscriberMap], [GalleryChildEntity], [GalleryDerivative]
+	WHERE
+	  [GalleryEntity::entityType] = ?
+	  AND
+	  [GalleryAccessSubscriberMap::itemId] = [GalleryEntity::id]
+	  AND
+	  [GalleryAccessSubscriberMap::accessListId] IN (%s)
+	  AND
+	  [GalleryChildEntity::parentId] = [GalleryEntity::id]
+	  AND
+	  [GalleryDerivative::id] = [GalleryChildEntity::id]
+	  AND
+	  [GalleryDerivative::derivativeType] = ?
+	', $aclMarkers);
+
+	$data = array((int)$userId, 1, 'GalleryPhotoItem');
+	$data = array_merge($data, $aclIds);
+	$data[] = DERIVATIVE_TYPE_IMAGE_THUMBNAIL;
+
+	$ret = $storage->execute($query, $data);
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	$data[1] = 2;
+	$data[2] = 'GalleryAlbumItem';
+	$ret = $storage->execute($query, $data);
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	return null;
+    }
+
+    /**
+     * Event handler for Gallery::ViewableTreeChange, GalleryEntity::save, and GalleryEntity::delete
+     *
+     * @see GalleryEventListener::handleEvent
+     */
+    function handleEvent($event) {
+	switch ($event->getEventName()) {
+	case 'Gallery::ViewableTreeChange':
+	    /*
+	     * Invalidate image block cache for specified user, or entire cache if no user
+	     * Event sends array('userId'=>id or array of ids or null,
+	     *                   'itemId'=>id or array of ids or null)
+	     */
+	    $param = $event->getData();
+	    if (!empty($param['userId'])) {
+		$ret = GalleryCoreApi::removeMapEntry(
+		    'ImageBlockCacheMap', array('userId' => $param['userId']));
+		if ($ret) {
+		    return array($ret->wrap(__FILE__, __LINE__), null);
+		}
+	    } else {
+		$ret = GalleryCoreApi::removeAllMapEntries('ImageBlockCacheMap');
+		if ($ret) {
+		    return array($ret->wrap(__FILE__, __LINE__), null);
+		}
+	    }
+	    break;
+
+	case 'GalleryEntity::delete':
+	    /*
+	     * Determine if the item being deleted is listed in
+	     * the ImageBlockDisabledMap and if so, remove it
+	     */
+	    $entity = $event->getEntity();
+
+	    if (!GalleryUtilities::isA($entity, 'GalleryItem')) {
+		break;
+	    }
+
+	    list ($ret, $disabledFlag) = ImageBlockHelper::getDisabledFlag($entity->getId());
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+	    if (!empty($disabledFlag)) {
+		$ret = GalleryCoreApi::removeMapEntry(
+		    'ImageBlockDisabledMap', array('itemId' => $entity->getId()));
+		if ($ret) {
+		    return array($ret->wrap(__FILE__, __LINE__), null);
+		}
+	    }
+	    break;
+
+	case 'GalleryEntity::save':
+	    /*
+	     * Determines if the item being added has a parent that is listed in the
+	     * ImageBlockDisabledMap and if so, add it to the map, else remove it
+	     */
+	    $entity = $event->getEntity();
+
+	    
+	    /*
+	     * If the entity is a GalleryDataItem or GalleryAlbumItem and is
+	     * Newly Created or the parent has changed (item moved), continue
+	     * processing, otherwise break out.
+	     */
+	    if (!((GalleryUtilities::isA($entity, 'GalleryDataItem') ||
+		       GalleryUtilities::isA($entity, 'GalleryAlbumItem')) &&
+		  ($entity->testPersistentFlag(STORAGE_FLAG_NEWLY_CREATED) ||
+		       $entity->isModified('parentId')))) {
+		break;
+	    }
+
+	    $parentId = $entity->getParentId();
+
+	    list ($ret, $parentDisabledFlag) = ImageBlockHelper::getDisabledFlag($parentId);
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+
+	    list ($ret, $disabledFlag) = ImageBlockHelper::getDisabledFlag($entity->getId());
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+
+	    if (GalleryUtilities::isA($entity, 'GalleryDataItem')) {
+		$echo = !empty($parentDisabledFlag) ? "true" : "false";
+
+		/* Disable flag is managed (GUI) on album level, reflect this here */
+		if (!empty($parentDisabledFlag) && empty($disabledFlag)) {
+		    /* New parent has disabled flag, item hasn't. Change it. */
+		    $ret = GalleryCoreApi::addMapEntry(
+			'ImageBlockDisabledMap', array('itemId' => $entity->getId()));
+		    if ($ret) {
+			return array($ret->wrap(__FILE__, __LINE__), null);
+		    }
+		} else if (empty($parentDisabledFlag) && !empty($disabledFlag)) {
+		    /* New parent doesn't have disabled flag, remove it from the item */
+		    $ret = GalleryCoreApi::removeMapEntry(
+			'ImageBlockDisabledMap', array('itemId' => $entity->getId()));
+		    if ($ret) {
+			return array($ret->wrap(__FILE__, __LINE__), null);
+		    }
+		}
+	    } else if (GalleryUtilities::isA($entity, 'GalleryAlbumItem')
+		           && $entity->testPersistentFlag(STORAGE_FLAG_NEWLY_CREATED)
+		           && !empty($parentDisabledFlag) && empty($disabledFlag)
+		       ) {
+		/*
+		 * A new album cannot have sub items and setDisabledFlag doesn't work for items
+		 * that are not yet in the persistent store (database), thus use addMapEntry()
+		 */
+		$ret = GalleryCoreApi::addMapEntry(
+		    'ImageBlockDisabledMap', array('itemId' => $entity->getId()));
+		if ($ret) {
+		    return array($ret->wrap(__FILE__, __LINE__), null);
+		}
+	    }
+	    break;
+	}
+	return array(null, null);
+    }
+
+    /**
+     * Set the disabled flag for an album
+     *
+     * @param object GalleryAlbumItem AlbumItem which is to be flagged
+     * @param bool whether to set the disabledFlag recursively to all subalbums
+     * @param whether to set the disabledFlag to true or to false
+     * @return object GalleryStatus a status code
+     * @static
+     */
+    function setDisabledFlag($parentAlbum, $recursive, $disabled) {
+	global $gallery;
+
+	$parentAlbumId = $parentAlbum->getId();
+	$childIds = array();
+
+	if ($recursive) {
+	    $select[] = '[GalleryItemAttributesMap::itemId]';
+	    $from[] = '[GalleryItemAttributesMap]';
+	    $where[] = '[GalleryItemAttributesMap::parentSequence] LIKE ?' .
+		       ' OR [GalleryItemAttributesMap::itemId] = ?';
+
+	    /*
+	     * We don't care about ERROR_MISSING_OBJECT because it's generated if
+	     * the album is at the top-level
+	     */
+	    list ($ret, $sequence) = GalleryCoreApi::fetchParentSequence($parentAlbum->getId());
+	    if ($ret && !($ret->getErrorCode() & ERROR_MISSING_OBJECT)) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+
+	    /* Prevent issues with empty implode(), below */
+	    if (!empty($sequence)) {
+		$sequence = implode('/', $sequence) . '/';
+	    } else {
+		$sequence = '';
+	    }
+
+	    $data[] = $sequence . $parentAlbumId . '/%';
+	    $data[] = (int)$parentAlbum->getId();
+
+	    /* Build the query */
+	    $query = 'SELECT ' . implode(', ', $select) .
+		     ' FROM ' . implode(', ', $from) .
+		     ' WHERE ' . implode(' AND ', $where);
+
+	    list ($ret, $searchResult) = $gallery->search($query, $data);
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+
+	    while ($result = $searchResult->nextResult()) {
+		$childIds[] = (int)$result[0];
+	    }
+	} else {
+	    list($ret, $childIds) = GalleryCoreApi::fetchChildDataItemIds($parentAlbum);
+	    $childIds[] = (int)$parentAlbum->getId();
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	}
+
+	foreach ($childIds as $itemId) {
+	    if ($disabled) {
+		$ret = GalleryCoreApi::addMapEntry(
+		    'ImageBlockDisabledMap', array('itemId' => $itemId));
+		if ($ret) {
+		    return $ret->wrap(__FILE__, __LINE__);
+		}
+	    } else {
+		$ret = GalleryCoreApi::removeMapEntry(
+		    'ImageBlockDisabledMap', array('itemId' => $itemId));
+		if ($ret) {
+		    return $ret->wrap(__FILE__, __LINE__);
+		}
+	    }
+	}
+	return null;
+    }
+
+    /**
+     * Get the disabled flag for an item
+     *
+     * @param integer entityId of a GalleryItem for which the flag is to be retrieved
+     * @return array object GalleryStatus a status code
+     *               bool disabledFlag for the GalleryDataItem
+     * @static
+     */
+    function getDisabledFlag($itemId) {
+	global $gallery;
+	$query = '
+		SELECT
+		    [ImageBlockDisabledMap::itemId]
+		FROM
+		    [ImageBlockDisabledMap]
+		WHERE
+		    [ImageBlockDisabledMap::itemId] = ?
+		  ';
+	list ($ret, $searchResults) = $gallery->search($query, array((int)$itemId));
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	$result = false;
+	if ($rec = $searchResults->nextResult()) {
+	    $result = (bool)$rec[0];
+	}
+	return array(null, $result);
+    }
+}
+?>

@@ -1,0 +1,444 @@
+<?php
+/*
+ * $RCSfile: HiddenHelper.class,v $
+ *
+ * Gallery - a web based photo album viewer and editor
+ * Copyright (C) 2000-2006 Bharat Mediratta
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or (at
+ * your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+ */
+/**
+ * @version $Revision: 1.7 $ $Date: 2006/01/27 21:31:36 $
+ * @package Hidden
+ * @author Alan Harder <alan.harder@sun.com>
+ */
+
+GalleryCoreApi::requireOnce('modules/hidden/classes/HiddenInterface_1_0.class');
+
+/**
+ * Hidden Items Helper provides functions that assist the UI by changing permissions
+ * on items and other necessary things.
+ *
+ * @package Hidden
+ * @subpackage Classes
+ */
+class HiddenHelper extends HiddenInterface_1_0 {
+
+    /**
+     * Hides an item.
+     *
+     * Remove public view permission (core.view for anonymous user or everybody group)
+     * and add session based permission for core.view.  Add an onLoadHandler that will
+     * grant this permission to the session when core.ShowItem view is directly accessed
+     * for this item.
+     * If an album, cascades the effects to all contained items that aren't already hidden.
+     * Thus all contents of the album are hidden and become visible when the album is accessed.
+     *
+     * @param object GalleryItem the item to be hidden
+     * @param used in recursive calls
+     * @param used in recursive calls
+     * @param used in recursive calls
+     * @return object GalleryStatus a status code
+     * @static
+     */
+    function hideItem(&$item, $hideId=null, $hiddenAncestor=null, $passwordAncestor=null) {
+	/* If item is already hidden, we're done */
+	if ($item->hasOnLoadHandler('Hidden')) {
+	    return null;
+	}
+	$itemId = $item->getId();
+	if (!isset($hideId)) {
+	    $hideId = $itemId;
+	}
+
+	static $coreParams;
+	if (!isset($coreParams)) {
+	    list ($ret, $coreParams) = GalleryCoreApi::fetchAllPluginParameters('module', 'core');
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	}
+	static $passwordInterface;
+	if (!isset($passwordInterface)) {
+	    list ($ret, $passwordInterface) =
+		GalleryCoreApi::newFactoryInstance('PasswordInterface_1_0');
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	    if (!isset($passwordInterface)) {
+		$passwordInterface = false;
+	    }
+	}
+
+	/* Remove public view permission */
+	$ret = GalleryCoreApi::removeUserPermission(
+		$itemId, $coreParams['id.anonymousUser'], 'core.view');
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+	$ret = GalleryCoreApi::removeGroupPermission(
+		$itemId, $coreParams['id.everybodyGroup'], 'core.view');
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	/* Remove session based permission for a hidden ancestor */
+	if (!isset($hiddenAncestor)) {
+	    list ($ret, $hiddenAncestor, $passwordAncestor) =
+		HiddenHelper::_checkAncestors($item, $passwordInterface);
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	}
+	if ($hiddenAncestor) {
+	    $ret = GalleryCoreApi::removeEntityPermission($itemId, $hiddenAncestor, 'core.view');
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	}
+	if ($passwordAncestor) {
+	    $ret = GalleryCoreApi::removeEntityPermission($itemId, $passwordAncestor, 'core.view');
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	}
+
+	/* Add session based permission */
+	$ret = GalleryCoreApi::addEntityPermission($itemId, $hideId, 'core.view');
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	/* Set onLoadHandler */
+	if ($itemId == $hideId) {
+	    list ($ret, $lockId) = GalleryCoreApi::acquireWriteLock($itemId);
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	    list ($ret, $item) = $item->refresh();
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	    $item->addOnLoadHandler('Hidden');
+	    $ret = $item->save();
+	    if ($ret) {
+		GalleryCoreApi::releaseLocks($lockId);
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	    $ret = GalleryCoreApi::releaseLocks($lockId);
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	}
+
+	/* Now apply to children as well, but stop at password protected item */
+	$hasPassword = false;
+	if ($item->getCanContainChildren() && $passwordInterface) {
+	    list ($ret, $hasPassword) = $passwordInterface->hasPassword($item);
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	}
+	if ($item->getCanContainChildren() && !$hasPassword) {
+	    list ($ret, $childIds) = GalleryCoreApi::fetchChildItemIdsIgnorePermissions($item);
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	    if (!empty($childIds)) {
+		list ($ret, $childItems) = GalleryCoreApi::loadEntitiesById($childIds);
+		if ($ret) {
+		    return $ret->wrap(__FILE__, __LINE__);
+		}
+		foreach ($childItems as $child) {
+		    $ret = HiddenHelper::hideItem($child, $hideId,
+						  $hiddenAncestor, $passwordAncestor);
+		    if ($ret) {
+			return $ret->wrap(__FILE__, __LINE__);
+		    }
+		}
+	    }
+	}
+
+	if ($hideId == $itemId) {
+	    $ret = GalleryCoreApi::maybeCompactAccessLists();
+	    if ($ret && !($ret->getErrorCode() & ERROR_LOCK_TIMEOUT)) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	}
+
+	return null;
+    }
+
+    /**
+     * Remove the hiding of the item by adding back core.view permissions to either anonymous
+     * user or everybody group if they have either core.viewResizes or core.viewSource.
+     * If an album, cascade the effects to all child items that are not hidden themselves.
+     *
+     * @param object GalleryItem the item to unhide
+     * @param used in recursive calls
+     * @param used in recursive calls
+     * @param used in recursive calls
+     * @return object GalleryStatus a status code
+     * @static
+     */
+    function unHideItem(&$item, $hideId=null, $hiddenAncestor=null, $passwordAncestor=null) {
+	/* If given item is not hidden or subitem is hidden, we're done */
+	if ($item->hasOnLoadHandler('Hidden') == isset($hideId)) {
+	    return null;
+	}
+	$itemId = $item->getId();
+	if (!isset($hideId)) {
+	    $hideId = $itemId;
+	}
+	static $passwordInterface;
+	if (!isset($passwordInterface)) {
+	    list ($ret, $passwordInterface) =
+		GalleryCoreApi::newFactoryInstance('PasswordInterface_1_0');
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	    if (!isset($passwordInterface)) {
+		$passwordInterface = false;
+	    }
+	}
+	$hasPassword = false;
+	if ($item->getCanContainChildren() && $passwordInterface) {
+	    list ($ret, $hasPassword) = $passwordInterface->hasPassword($item);
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	}
+
+	/* Remove session based permission */
+	if ($item->getId() != $hideId || !$hasPassword) {
+	    $ret = GalleryCoreApi::removeEntityPermission($itemId, $hideId, 'core.view');
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	}
+
+	/* Check for a hidden ancestor */
+	if (!isset($hiddenAncestor)) {
+	    list ($ret, $hiddenAncestor, $passwordAncestor) =
+		HiddenHelper::_checkAncestors($item, $passwordInterface);
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	}
+	if ($hiddenAncestor) {
+	    /* Mark as hidden under a different id */
+	    $ret = GalleryCoreApi::addEntityPermission($itemId, $hiddenAncestor, 'core.view');
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	} else if ($passwordAncestor) {
+	    $ret = GalleryCoreApi::addEntityPermission($itemId, $passwordAncestor, 'core.view');
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	} else {
+	    /* Restore public view permission */
+	    static $coreParams;
+	    if (!isset($coreParams)) {
+		list ($ret, $coreParams) =
+		    GalleryCoreApi::fetchAllPluginParameters('module', 'core');
+		if ($ret) {
+		    return $ret->wrap(__FILE__, __LINE__);
+		}
+	    }
+	    list ($ret, $permissions) = GalleryCoreApi::fetchAllPermissionsForItem($itemId);
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	    $userSee = $groupSee = false;
+	    foreach ($permissions as $permission) {
+		if (!in_array($permission['permission'],
+			      array('core.viewResizes', 'core.viewSource'))) {
+		    continue;
+		}
+		if (!$userSee && isset($permission['userId'])
+			&& $permission['userId'] == $coreParams['id.anonymousUser']) {
+		    $ret = GalleryCoreApi::addUserPermission(
+			    $itemId, $coreParams['id.anonymousUser'], 'core.view');
+		    if ($ret) {
+			return $ret->wrap(__FILE__, __LINE__);
+		    }
+		    $userSee = true;
+		}
+		if (!$groupSee && isset($permission['groupId'])
+			&& $permission['groupId'] == $coreParams['id.everybodyGroup']) {
+		    $ret = GalleryCoreApi::addGroupPermission(
+			    $itemId, $coreParams['id.everybodyGroup'], 'core.view');
+		    if ($ret) {
+			return $ret->wrap(__FILE__, __LINE__);
+		    }
+		    $groupSee = true;
+		}
+	    }
+	    if (!$groupSee && $hasPassword) {
+		/* Add public core.view permission to password item */
+		$ret = GalleryCoreApi::addGroupPermission(
+			$itemId, $coreParams['id.everybodyGroup'], 'core.view');
+		if ($ret) {
+		    return $ret->wrap(__FILE__, __LINE__);
+		}
+	    }
+	}
+
+	/* Remove onLoadHandler */
+	if ($itemId == $hideId) {
+	    list ($ret, $lockId) = GalleryCoreApi::acquireWriteLock($itemId);
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	    list ($ret, $item) = $item->refresh();
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	    $item->removeOnLoadHandler('Hidden');
+	    $ret = $item->save();
+	    if ($ret) {
+		GalleryCoreApi::releaseLocks($lockId);
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	    $ret = GalleryCoreApi::releaseLocks($lockId);
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	}
+
+	/* Now apply to children as well, but stop at password protected item */
+	if ($item->getCanContainChildren() && !$hasPassword) {
+	    list ($ret, $childIds) = GalleryCoreApi::fetchChildItemIdsIgnorePermissions($item);
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	    if (!empty($childIds)) {
+		list ($ret, $childItems) = GalleryCoreApi::loadEntitiesById($childIds);
+		if ($ret) {
+		    return $ret->wrap(__FILE__, __LINE__);
+		}
+		foreach ($childItems as $child) {
+		    $ret = HiddenHelper::unHideItem($child, $hideId,
+						    $hiddenAncestor, $passwordAncestor);
+		    if ($ret) {
+			return $ret->wrap(__FILE__, __LINE__);
+		    }
+		}
+	    }
+	}
+
+	if ($hideId == $itemId) {
+	    $ret = GalleryCoreApi::maybeCompactAccessLists();
+	    if ($ret && !($ret->getErrorCode() & ERROR_LOCK_TIMEOUT)) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	}
+
+	return null;
+    }
+
+    /**
+     * Check for nearest hidden/password ancestor of given item
+     *
+     * @param object GalleryItem item
+     * @param mixed instance of PasswordInterface or false
+     * @return array object GalleryStatus a status code
+     *               mixed id of nearest hidden ancestor or false
+     *               mixed id of nearest password protected ancestor or false
+     * @access private
+     */
+    function _checkAncestors($item, $passwordInterface) {
+	list ($ret, $ancestors) = GalleryCoreApi::fetchParents($item);
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null, null);
+	}
+	$hiddenAncestor = $passwordAncestor = false;
+	foreach ($ancestors as $ancestor) {
+	    if ($ancestor->hasOnLoadHandler('Hidden')) {
+		$hiddenAncestor = $ancestor->getId();
+	    }
+	    if ($passwordInterface) {
+		list ($ret, $hasPassword) = $passwordInterface->hasPassword($ancestor);
+		if ($ret) {
+		    return array($ret->wrap(__FILE__, __LINE__), null, null);
+		}
+		if ($hasPassword) {
+		    $passwordAncestor = $ancestor->getId();
+		}
+	    }
+	}
+	return array(null, $hiddenAncestor, $passwordAncestor);
+    }
+
+    /**
+     * Update permissions as needed for appropriate hidden status when moving an item.
+     *
+     * @param object GalleryItem item that has moved
+     * @return object GalleryStatus a status code
+     */
+    function handleMoveItem($item) {
+	$oldParentId = $item->getOriginalValue('parentId');
+	$newParentId = $item->getParentId();
+	list ($ret, $parents) =
+	    GalleryCoreApi::loadEntitiesById(array($oldParentId, $newParentId));
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+	foreach ($parents as $parent) {
+	    list ($ret, $ancestors) = GalleryCoreApi::fetchParents($parent);
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	    $ancestors[] = $parent;
+	    $hiddenAncestor = false;
+	    foreach ($ancestors as $ancestor) {
+		if ($ancestor->hasOnLoadHandler('Hidden')) {
+		    $hiddenAncestor = $ancestor->getId();
+		}
+	    }
+	    $hiddenAncestors[] = $hiddenAncestor;
+	}
+	if ($hiddenAncestors[1]) {
+	    /* New location is hidden */
+	    $ret = HiddenHelper::hideItem($item, $hiddenAncestors[1], $hiddenAncestors[0]);
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	} else if ($hiddenAncestors[0]) {
+	    /* Old location was hidden, new location is not */
+	    $ret = HiddenHelper::unHideItem($item, $hiddenAncestors[0], false);
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	}
+	return null;
+    }
+
+    /**
+     * See HiddenInterface_1_0::isHidden
+     */
+    function isHidden($item) {
+	return array(null, $item->hasOnLoadHandler('Hidden'));
+    }
+
+    /**
+     * Constructor
+     */
+    function HiddenHelper() {
+	$this->_notEmpty = true;
+    }
+}
+?>

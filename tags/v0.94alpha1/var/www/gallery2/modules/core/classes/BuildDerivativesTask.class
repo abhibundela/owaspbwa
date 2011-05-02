@@ -1,0 +1,143 @@
+<?php
+/*
+ * $RCSfile: BuildDerivativesTask.class,v $
+ *
+ * Gallery - a web based photo album viewer and editor
+ * Copyright (C) 2000-2006 Bharat Mediratta
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or (at
+ * your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+
+/**
+ * @version $Revision: 1.12 $ $Date: 2006/03/14 17:58:58 $
+ * @package GalleryCore
+ * @subpackage Classes
+ * @author Alan Harder <alan.harder@sun.com>
+ */
+
+GalleryCoreApi::requireOnce('modules/core/AdminMaintenance.inc');
+
+/**
+ * This is a MaintenanceTask that will ensure the data files for all derivatives
+ * (thumbnails, etc) have been built.
+ *
+ * @package GalleryCore
+ * @subpackage Classes
+ *
+ */
+class BuildDerivativesTask extends MaintenanceTask {
+
+    /**
+     * @see MaintenanceTask::getInfo()
+     */
+    function getInfo() {
+	global $gallery;
+
+	return array('l10Domain' => 'modules_core',
+		     'title' => $gallery->i18n('Build all thumbnails/resizes'),
+		     'description' => $gallery->i18n(
+			 'Ensure data files for all derivatives (thumbnails, etc) have been ' .
+			 'built and rebuild broken ones.'));
+    }
+
+    /**
+     * @see MaintenanceTask::run()
+     */
+    function run() {
+	global $gallery;
+	$templateAdapter =& $gallery->getTemplateAdapter();
+	$storage =& $gallery->getStorage();
+
+	list ($ret, $module) = GalleryCoreApi::loadPlugin('module', 'core');
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null, null);
+	}
+
+	$ret = $templateAdapter->updateProgressBar(
+	    $module->translate('Build All Thumbnails/Resizes'),
+	    '',
+	    0);
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null, null);
+	}
+
+	$query = '
+	SELECT
+	  [DerivativeImage::id]
+	FROM
+	  [DerivativeImage]
+	ORDER BY [DerivativeImage::id]
+	';
+	list ($ret, $results) = $gallery->search($query);
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null, null);
+	}
+
+	$i = $broken = $built = 0;
+	$total = $results->resultCount();
+	$gallery->guaranteeTimeLimit(120);
+	while ($result = $results->nextResult()) {
+	    $gallery->startRecordingDebugSnippet();
+	    list ($ret, $derivative, $wasBuilt) =
+		GalleryCoreApi::rebuildDerivativeCacheIfNotCurrent($result[0], true);
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null, null);
+	    }
+	    $debug = $gallery->stopRecordingDebugSnippet();
+	    if ($wasBuilt) {
+		$built++;
+	    }
+	    if ($derivative->getIsBroken()) {
+		if (!$broken++) {
+		    print '<br/><h3>' . $module->translate('Debug output for failed items:') .
+			  '</h3>';
+		}
+		print '<pre class="gcBackground1 gcBorder2">' . $debug . '</pre>';
+	    }
+
+	    if (++$i % 5 == 0 || $i == $total) {
+		$message = $module->translate(
+		    array('text' => 'Processing image %d of %d', 'arg1' => $i, 'arg2' => $total));
+		$ret = $templateAdapter->updateProgressBar($message, '', $i / $total);
+		if ($ret) {
+		    return array($ret->wrap(__FILE__, __LINE__), null, null);
+		}
+		/* Close open locks (too many open files for flock based locking) */
+		$ret = $storage->checkPoint();
+		if ($ret) {
+		    return array($ret->wrap(__FILE__, __LINE__), null, null);
+		}
+		$gallery->guaranteeTimeLimit(120);
+	    }
+	}
+
+	$result = array($module->translate(array('text' => 'Checked %d items', 'arg1' => $total)));
+	if ($built) {
+	    $result[] = $module->translate(array('text' => '%d items built', 'arg1' => $built));
+	}
+	if ($broken) {
+	    $result[] = $module->translate(array('text' => '%d items failed', 'arg1' => $broken));
+	}
+	return array(null, true, $result);
+    }
+
+    /**
+     * @see MaintenanceTask::requiresProgressBar()
+     */
+    function requiresProgressBar() {
+	return true;
+    }
+}
+?>

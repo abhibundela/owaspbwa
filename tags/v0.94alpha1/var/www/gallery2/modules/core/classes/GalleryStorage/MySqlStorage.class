@@ -1,0 +1,230 @@
+<?php
+/*
+ * $RCSfile: MySqlStorage.class,v $
+ *
+ * Gallery - a web based photo album viewer and editor
+ * Copyright (C) 2000-2006 Bharat Mediratta
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or (at
+ * your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+/**
+ * @version $Revision: 1.4 $ $Date: 2006/02/20 19:13:09 $
+ * @package GalleryCore
+ * @author Bharat Mediratta <bharat@menalto.com>
+ */
+
+GalleryCoreApi::requireOnce('modules/core/classes/GalleryStorage.class', true);
+
+/**
+ * MySQL extension of the GalleryStorage class.
+ *
+ * This object implements the hooks for saving and restoring objects in a
+ * MySQL database.
+ *
+ * @package GalleryCore
+ * @subpackage Storage
+ */
+class MySqlStorage extends GalleryStorage {
+
+    /**
+     * The type of mysql database (mysql or mysqlt)
+     *
+     * @var string $_mysqlType
+     * @access private
+     */
+    var $_mysqlType;
+
+    /**
+     * Constructor
+     */
+    function MySqlStorage($config) {
+	$this->GalleryStorage($config);
+	$this->_mysqlType = $config['type'];
+	if ($this->_mysqlType == 'mysqlt') {
+	    $this->_isTransactional = true;
+	}
+    }
+
+    /**
+     * Return the type of this database
+     *
+     * @return string
+     */
+    function getAdoDbType() {
+	return $this->_mysqlType;
+    }
+
+    /**
+     * Return the type of this database
+     *
+     * @return string
+     */
+    function getType() {
+	return 'mysql';
+    }
+
+    /**
+     * @see GalleryStorage::_setConnectionSettings
+     */
+    function _setConnectionSettings(&$db) {
+    	/* MySQL 4.1.0+ support UTF-8, for details, see: http://drupal.org/node/40515 */
+    	$version = mysql_get_server_info();
+	if ($version && version_compare($version, '4.1.0', '>=')) {
+    	    $this->_traceStart();
+    	    $recordSet = $db->execute('SET NAMES "utf8"');
+    	    $this->_traceStop();
+    	
+    	    if (!$recordSet) {
+	        return GalleryCoreApi::error(ERROR_STORAGE_FAILURE, __FILE__, __LINE__);
+	    }
+	}
+    	
+    	return null;
+    }
+    
+    /**
+     * @see GalleryStorage::_getSqlReplacements
+     */
+    function _getSqlReplacements() {
+
+	/* Use InnoDB for transactional tables */
+	if ($this->_isTransactional) {
+	    $tableType = 'InnoDB';
+	} else {
+	    $tableType = 'MyISAM';
+	}
+
+	return array('DB_TABLE_TYPE' => $tableType);
+    }
+
+    /**
+     * @see GalleryStorage::getFunctionsSql
+     */
+    function getFunctionSql($functionName, $args) {
+	switch($functionName) {
+	case 'CONCAT':
+	    $sql = sprintf('CONCAT(%s)', implode(', ', $args));
+	    break;
+
+	case 'BITAND':
+	    $sql = $args[0] . ' & ' . $args[1];
+	    break;
+
+	case 'BIT_OR':
+	    $sql = 'BIT_OR(' . $args[0] . ')';
+            break;
+	    
+	case 'UNIX_TIMESTAMP':
+	    $sql = sprintf('UNIX_TIMESTAMP(%s)', $args[0]);
+	    break;
+
+	case 'AS':
+	    $sql = 'AS';
+	    break;
+
+	case 'SUBSTRING':
+	    $sql = sprintf('SUBSTRING(%s)', implode(', ', $args));
+	    break;
+
+	case 'RAND':
+	    $sql = sprintf('RAND(%s)', empty($args) ? '' : $args[0]);
+	    break;
+
+	case 'LIMIT':
+	    $sql = $args[1] . ' LIMIT ' . $args[0];
+	    break;
+
+	case 'CASE': // condition value (condition value)* else-value
+	    if (count($args) == 3) {
+		$sql = sprintf('IF(%s)', implode(', ', $args));
+	    } else {
+		$sql = array();
+		while (count($args) > 1) {
+		    $sql[] = 'WHEN ' . array_shift($args) . ' THEN ' . array_shift($args);
+		}
+		$sql = 'CASE ' . implode(' ', $sql) . ' ELSE ' . $args[0] . ' END';
+	    }
+	    break;
+
+	case 'LIKE':
+	    $sql = $args[0] . ' LIKE ' . $args[1];
+	    break;
+	    
+	case 'MULTI_INSERT':
+	    /* 
+	     * 0 - table name
+	     * 1 - array of column names
+	     * 2 - number of rows
+	     */
+	    $markers = GalleryUtilities::makeMarkers(sizeof($args[1]));
+	    $rowList = rtrim(str_repeat('(' . $markers . '), ', $args[2]), ', ');
+	    $sql = 'INSERT INTO ' . $args[0] . ' (';
+	    $sql .= join(', ', $args[1]);
+	    $sql .= ') VALUES ' . $rowList;
+	    break;
+
+	case 'AVG':
+	    $sql = sprintf('AVG(%s)', $args[0]);
+	    break;
+
+	default:
+	    return array(GalleryCoreApi::error(ERROR_UNIMPLEMENTED, __FILE__, __LINE__,
+					      $functionName . ' ' . implode(' ', $args)), null);
+	}
+
+	return array(null, $sql);
+    }
+
+    /**
+     * @see GalleryStorage::encodeBlob
+     */
+    function encodeBlob($blob) {
+	$version = mysql_get_server_info();
+	if ($version && version_compare($version, '4.1.0', '>=')) {
+	    /* See: http://www.postgresql.org/docs/8.1/interactive/datatype-binary.html */
+	    $blob = addcslashes($blob, "\000..\037\047\134\177..\377");
+	}
+
+	return $blob;
+    }
+
+    /**
+     * @see GalleryStorage::decodeBlob
+     */
+    function decodeBlob($blob) {
+	$version = mysql_get_server_info();
+	if ($version && version_compare($version, '4.1.0', '>=')) {
+	    $blob = stripcslashes($blob);
+	} 
+	    
+	return $blob;
+    }
+	
+    /**
+     * Get database version.
+     * @return string version
+     */
+    function getVersion() {
+	return mysql_get_server_info();
+    }
+
+    /**
+     * @see GalleryStorage::_getOptimizeStatement
+     */
+    function _getOptimizeStatement() {
+	return 'OPTIMIZE TABLE %s';
+    }
+}
+?>

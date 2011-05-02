@@ -1,0 +1,129 @@
+# File crc32 crc32(crlf) size size(crlf)  or  R File
+modules/newitems/NewItemsSiteAdmin.inc	1224006812	866424272	4450	4590
+modules/newitems/classes/NewItemsHelper.class	3641854258	1334464510	2876	2979
+modules/newitems/classes/NewItemsSortOrder.class	3435120715	3807863309	2337	2410
+modules/newitems/locale/af/LC_MESSAGES/modules_newitems.mo	1329221035	1329221035	3031	3031
+modules/newitems/locale/bg/LC_MESSAGES/modules_newitems.mo	1514680492	1514680492	3089	3089
+modules/newitems/locale/cs/LC_MESSAGES/modules_newitems.mo	696708029	696708029	3347	3347
+modules/newitems/locale/da/LC_MESSAGES/modules_newitems.mo	1500909481	1500909481	2847	2847
+modules/newitems/locale/de/LC_MESSAGES/modules_newitems.mo	1702292528	1702292528	3206	3206
+modules/newitems/locale/es/LC_MESSAGES/modules_newitems.mo	3826401269	3826401269	3198	3198
+modules/newitems/locale/eu/LC_MESSAGES/modules_newitems.mo	618109683	618109683	2957	2957
+modules/newitems/locale/fi/LC_MESSAGES/modules_newitems.mo	3897772387	3897772387	2981	2981
+modules/newitems/locale/fr/LC_MESSAGES/modules_newitems.mo	2519748306	2519748306	3167	3167
+modules/newitems/locale/hu/LC_MESSAGES/modules_newitems.mo	2311339224	2311339224	1140	1140
+modules/newitems/locale/is/LC_MESSAGES/modules_newitems.mo	2509649409	2509649409	461	461
+modules/newitems/locale/it/LC_MESSAGES/modules_newitems.mo	476369304	476369304	3153	3153
+modules/newitems/locale/ja/LC_MESSAGES/modules_newitems.mo	3315919218	3315919218	1747	1747
+modules/newitems/locale/lt/LC_MESSAGES/modules_newitems.mo	251540716	251540716	3533	3533
+modules/newitems/locale/nl/LC_MESSAGES/modules_newitems.mo	26661629	26661629	3055	3055
+modules/newitems/locale/no/LC_MESSAGES/modules_newitems.mo	677995970	677995970	2915	2915
+modules/newitems/locale/pl/LC_MESSAGES/modules_newitems.mo	2246812509	2246812509	3267	3267
+modules/newitems/locale/pt_BR/LC_MESSAGES/modules_newitems.mo	3840982893	3840982893	3224	3224
+modules/newitems/locale/ru/LC_MESSAGES/modules_newitems.mo	764646854	764646854	4198	4198
+modules/newitems/locale/sr/LC_MESSAGES/modules_newitems.mo	1215325809	1215325809	3102	3102
+modules/newitems/locale/sv/LC_MESSAGES/modules_newitems.mo	2235901866	2235901866	3033	3033
+modules/newitems/locale/tr/LC_MESSAGES/modules_newitems.mo	3022860873	3022860873	1382	1382
+modules/newitems/locale/vi/LC_MESSAGES/modules_newitems.mo	1765771212	1765771212	3469	3469
+modules/newitems/locale/zh_CN/LC_MESSAGES/modules_newitems.mo	811558426	811558426	2840	2840
+modules/newitems/locale/zh_TW/LC_MESSAGES/modules_newitems.mo	881143364	881143364	2565	2565
+modules/newitems/module.inc	3240195673	323996962	4563	4711
+modules/newitems/po/GNUmakefile	1866879166	2808215985	98	103
+modules/newitems/po/af.po	3682990545	614534429	3966	4083
+modules/newitems/po/bg.po	2920070303	3851141569	4134	4255
+modules/newitems/po/cs.po	2992855697	3615015912	4274	4392
+modules/newitems/po/da.po	3486319408	806115234	3855	3955
+modules/newitems/po/de.po	2062309998	28625896	4311	4432
+modules/newitems/po/es.po	684785950	443874772	4115	4233
+modules/newitems/po/eu.po	3795466670	4128437654	3901	4016
+modules/newitems/po/fi.po	2138731075	2250578381	3881	3994
+modules/newitems/po/fr.po	3370922249	1435075567	4070	4184
+modules/newitems/po/hu.po	2940662472	2822261229	3063	3170
+modules/newitems/po/is.po	2327450393	2987132129	2704	2806
+modules/newitems/po/it.po	451561044	1024867853	4067	4184
+modules/newitems/po/ja.po	2109383258	1140767840	3267	3371
+modules/newitems/po/lt.po	879804600	3167303685	4606	4736
+modules/newitems/po/nl.po	1993574146	1930166948	4076	4193
+modules/newitems/po/no.po	471119071	4040013565	3760	3855
+modules/newitems/po/pl.po	1233256341	4072268208	4128	4224
+modules/newitems/po/pt_BR.po	574718108	910969548	4164	4280
+modules/newitems/po/ru.po	1421480703	2433771122	5225	5344
+modules/newitems/po/sr.po	3253501425	2864039937	4012	4128
+modules/newitems/po/strings.raw	2235886366	3606825263	1311	1338
+modules/newitems/po/sv.po	4040138853	1128884516	4101	4221
+modules/newitems/po/tr.po	1639629310	2161815423	3222	3330
+modules/newitems/po/vi.po	1841534728	775775470	4394	4508
+modules/newitems/po/zh_CN.po	4225566577	1978806373	3747	3858
+modules/newitems/po/zh_TW.po	2246519576	82891252	3593	3700
+modules/newitems/templates/NewItemsSiteAdmin.tpl	720011490	3824477777	3034	3121
+R	modules/newitems/images/new.gif
+R	modules/newitems/images/updated.gif
+R	modules/newitems/locale/bg_BG/LC_MESSAGES/modules_newitems.mo
+R	modules/newitems/locale/bg_BG/LC_MESSAGES
+R	modules/newitems/locale/bg_BG
+R	modules/newitems/locale/cs_CZ/LC_MESSAGES/modules_newitems.mo
+R	modules/newitems/locale/cs_CZ/LC_MESSAGES
+R	modules/newitems/locale/cs_CZ
+R	modules/newitems/locale/de_DE/LC_MESSAGES/modules_newitems.mo
+R	modules/newitems/locale/de_DE/LC_MESSAGES
+R	modules/newitems/locale/de_DE
+R	modules/newitems/locale/eu_ES/LC_MESSAGES/modules_newitems.mo
+R	modules/newitems/locale/eu_ES/LC_MESSAGES
+R	modules/newitems/locale/eu_ES
+R	modules/newitems/locale/fr_FR/LC_MESSAGES/modules_newitems.mo
+R	modules/newitems/locale/fr_FR/LC_MESSAGES
+R	modules/newitems/locale/fr_FR
+R	modules/newitems/locale/hu_HU/LC_MESSAGES/modules_newitems.mo
+R	modules/newitems/locale/hu_HU/LC_MESSAGES
+R	modules/newitems/locale/hu_HU
+R	modules/newitems/locale/is_IS/LC_MESSAGES/modules_newitems.mo
+R	modules/newitems/locale/is_IS/LC_MESSAGES
+R	modules/newitems/locale/is_IS
+R	modules/newitems/locale/it_IT/LC_MESSAGES/modules_newitems.mo
+R	modules/newitems/locale/it_IT/LC_MESSAGES
+R	modules/newitems/locale/it_IT
+R	modules/newitems/locale/ja_JP/LC_MESSAGES/modules_newitems.mo
+R	modules/newitems/locale/ja_JP/LC_MESSAGES
+R	modules/newitems/locale/ja_JP
+R	modules/newitems/locale/nl_NL/LC_MESSAGES/modules_newitems.mo
+R	modules/newitems/locale/nl_NL/LC_MESSAGES
+R	modules/newitems/locale/nl_NL
+R	modules/newitems/locale/no_NO/LC_MESSAGES/modules_newitems.mo
+R	modules/newitems/locale/no_NO/LC_MESSAGES
+R	modules/newitems/locale/no_NO
+R	modules/newitems/locale/pl_PL/LC_MESSAGES/modules_newitems.mo
+R	modules/newitems/locale/pl_PL/LC_MESSAGES
+R	modules/newitems/locale/pl_PL
+R	modules/newitems/locale/ru_RU/LC_MESSAGES/modules_newitems.mo
+R	modules/newitems/locale/ru_RU/LC_MESSAGES
+R	modules/newitems/locale/ru_RU
+R	modules/newitems/locale/sr_YU/LC_MESSAGES/modules_newitems.mo
+R	modules/newitems/locale/sr_YU/LC_MESSAGES
+R	modules/newitems/locale/sr_YU
+R	modules/newitems/locale/sv_SE/LC_MESSAGES/modules_newitems.mo
+R	modules/newitems/locale/sv_SE/LC_MESSAGES
+R	modules/newitems/locale/sv_SE
+R	modules/newitems/locale/tr_TR/LC_MESSAGES/modules_newitems.mo
+R	modules/newitems/locale/tr_TR/LC_MESSAGES
+R	modules/newitems/locale/tr_TR
+R	modules/newitems/locale/vi_VN/LC_MESSAGES/modules_newitems.mo
+R	modules/newitems/locale/vi_VN/LC_MESSAGES
+R	modules/newitems/locale/vi_VN
+R	modules/newitems/po/bg_BG.po
+R	modules/newitems/po/cs_CZ.po
+R	modules/newitems/po/de_DE.po
+R	modules/newitems/po/eu_ES.po
+R	modules/newitems/po/fr_FR.po
+R	modules/newitems/po/hu_HU.po
+R	modules/newitems/po/is_IS.po
+R	modules/newitems/po/it_IT.po
+R	modules/newitems/po/ja_JP.po
+R	modules/newitems/po/nl_NL.po
+R	modules/newitems/po/no_NO.po
+R	modules/newitems/po/pl_PL.po
+R	modules/newitems/po/ru_RU.po
+R	modules/newitems/po/sr_YU.po
+R	modules/newitems/po/sv_SE.po
+R	modules/newitems/po/tr_TR.po
+R	modules/newitems/po/vi_VN.po
+R	modules/newitems/templates/SiteAdmin.tpl

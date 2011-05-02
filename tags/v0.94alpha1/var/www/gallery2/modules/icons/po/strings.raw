@@ -1,0 +1,20 @@
+# $Id: strings.raw,v 1.10 2006/01/20 19:06:59 mindless Exp $
+
+/* module.inc */
+gettext("Icons")
+gettext("Display icons for links")
+gettext("Display")
+
+/* classes/IconsImpl.class */
+gettext("None")
+
+/* iconpacks/paularmstrongdesigns/iconpack.inc */
+gettext("Paul Armstrong Designs")
+
+/* templates/IconsSiteAdmin.tpl */
+gettext("Icon Settings")
+gettext("Settings saved successfully")
+gettext("No icon packs are available.")
+gettext("Select an icon pack to use for this Gallery.")
+gettext("Save")
+gettext("Reset")

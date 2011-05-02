@@ -1,0 +1,1 @@
+<?php function GalleryFastDownload() { return $GLOBALS['gallery']->fastDownload('cache/derivative/0/2/25.dat', 'OWASPBWA.png', 'Sun, 17 Apr 2011 19:18:59 GMT', 'image/png', 4732);} ?>

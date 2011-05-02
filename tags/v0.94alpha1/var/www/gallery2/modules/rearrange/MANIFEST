@@ -1,0 +1,126 @@
+# File crc32 crc32(crlf) size size(crlf)  or  R File
+modules/rearrange/RearrangeItems.inc	911008642	2951203406	7014	7237
+modules/rearrange/locale/af/LC_MESSAGES/modules_rearrange.mo	339248202	339248202	1359	1359
+modules/rearrange/locale/bg/LC_MESSAGES/modules_rearrange.mo	541708609	541708609	1464	1464
+modules/rearrange/locale/cs/LC_MESSAGES/modules_rearrange.mo	7502296	7502296	1674	1674
+modules/rearrange/locale/da/LC_MESSAGES/modules_rearrange.mo	241597465	241597465	1633	1633
+modules/rearrange/locale/de/LC_MESSAGES/modules_rearrange.mo	2169659515	2169659515	1703	1703
+modules/rearrange/locale/es/LC_MESSAGES/modules_rearrange.mo	3044315704	3044315704	1378	1378
+modules/rearrange/locale/eu/LC_MESSAGES/modules_rearrange.mo	271986921	271986921	1557	1557
+modules/rearrange/locale/fi/LC_MESSAGES/modules_rearrange.mo	2519929978	2519929978	1312	1312
+modules/rearrange/locale/fr/LC_MESSAGES/modules_rearrange.mo	3968240446	3968240446	1608	1608
+modules/rearrange/locale/hu/LC_MESSAGES/modules_rearrange.mo	692518268	692518268	1569	1569
+modules/rearrange/locale/is/LC_MESSAGES/modules_rearrange.mo	2497118949	2497118949	420	420
+modules/rearrange/locale/it/LC_MESSAGES/modules_rearrange.mo	2062215352	2062215352	1572	1572
+modules/rearrange/locale/ja/LC_MESSAGES/modules_rearrange.mo	759819148	759819148	1670	1670
+modules/rearrange/locale/lt/LC_MESSAGES/modules_rearrange.mo	389572513	389572513	1709	1709
+modules/rearrange/locale/nl/LC_MESSAGES/modules_rearrange.mo	367622176	367622176	1503	1503
+modules/rearrange/locale/no/LC_MESSAGES/modules_rearrange.mo	3588546650	3588546650	1612	1612
+modules/rearrange/locale/pl/LC_MESSAGES/modules_rearrange.mo	1289419938	1289419938	1740	1740
+modules/rearrange/locale/pt_BR/LC_MESSAGES/modules_rearrange.mo	3513626270	3513626270	1344	1344
+modules/rearrange/locale/ru/LC_MESSAGES/modules_rearrange.mo	230448253	230448253	2174	2174
+modules/rearrange/locale/sr/LC_MESSAGES/modules_rearrange.mo	2176245705	2176245705	1390	1390
+modules/rearrange/locale/sv/LC_MESSAGES/modules_rearrange.mo	343943505	343943505	1646	1646
+modules/rearrange/locale/tr/LC_MESSAGES/modules_rearrange.mo	732816771	732816771	1666	1666
+modules/rearrange/locale/vi/LC_MESSAGES/modules_rearrange.mo	2414850047	2414850047	1372	1372
+modules/rearrange/locale/zh_CN/LC_MESSAGES/modules_rearrange.mo	67385838	67385838	1233	1233
+modules/rearrange/locale/zh_TW/LC_MESSAGES/modules_rearrange.mo	1742168130	1742168130	1469	1469
+modules/rearrange/module.inc	3884705346	2154866024	3561	3675
+modules/rearrange/po/GNUmakefile	1866879166	2808215985	98	103
+modules/rearrange/po/af.po	3998072293	1200285064	2457	2534
+modules/rearrange/po/bg.po	207261695	1117790868	2633	2713
+modules/rearrange/po/cs.po	2622577103	1234495774	2555	2634
+modules/rearrange/po/da.po	4172424077	1988259084	2560	2633
+modules/rearrange/po/de.po	2152641713	2531829534	2732	2816
+modules/rearrange/po/es.po	910576084	3832279477	2567	2644
+modules/rearrange/po/eu.po	2529732823	2530624363	2472	2550
+modules/rearrange/po/fi.po	2740120646	3932518722	2342	2415
+modules/rearrange/po/fr.po	3978941196	2986431521	2513	2590
+modules/rearrange/po/hu.po	987124368	1887420498	2411	2479
+modules/rearrange/po/is.po	3080717270	2266921079	1944	2015
+modules/rearrange/po/it.po	2747651124	3518877454	2454	2524
+modules/rearrange/po/ja.po	1552056503	3764154938	2567	2642
+modules/rearrange/po/lt.po	708282604	259796834	2712	2795
+modules/rearrange/po/nl.po	1132011358	2897502431	2522	2601
+modules/rearrange/po/no.po	3203550686	3483331671	2605	2676
+modules/rearrange/po/pl.po	3184977710	569036031	2588	2657
+modules/rearrange/po/pt_BR.po	2268103921	297658456	2366	2439
+modules/rearrange/po/ru.po	2229682125	3245125358	3145	3219
+modules/rearrange/po/sr.po	1272356103	1148422195	2417	2491
+modules/rearrange/po/strings.raw	625490523	34292875	683	702
+modules/rearrange/po/sv.po	231285397	2708657607	2719	2803
+modules/rearrange/po/tr.po	1295506772	2636782382	2632	2706
+modules/rearrange/po/vi.po	163707567	3603158774	2482	2554
+modules/rearrange/po/zh_CN.po	3265933054	631934500	2298	2371
+modules/rearrange/po/zh_TW.po	3876981288	1882625966	2365	2438
+modules/rearrange/templates/Header.tpl	546641536	762650241	825	853
+modules/rearrange/templates/RearrangeItems.tpl	1902013531	2853262301	4629	4772
+modules/rearrange/templates/RearrangeItemsCell.tpl	2895971160	3629242737	771	792
+R	modules/rearrange/locale/bg_BG/LC_MESSAGES/modules_rearrange.mo
+R	modules/rearrange/locale/bg_BG/LC_MESSAGES
+R	modules/rearrange/locale/bg_BG
+R	modules/rearrange/locale/cs_CZ/LC_MESSAGES/modules_rearrange.mo
+R	modules/rearrange/locale/cs_CZ/LC_MESSAGES
+R	modules/rearrange/locale/cs_CZ
+R	modules/rearrange/locale/de_DE/LC_MESSAGES/modules_rearrange.mo
+R	modules/rearrange/locale/de_DE/LC_MESSAGES
+R	modules/rearrange/locale/de_DE
+R	modules/rearrange/locale/es_ES/LC_MESSAGES/modules_rearrange.mo
+R	modules/rearrange/locale/es_ES/LC_MESSAGES
+R	modules/rearrange/locale/es_ES
+R	modules/rearrange/locale/eu_ES/LC_MESSAGES/modules_rearrange.mo
+R	modules/rearrange/locale/eu_ES/LC_MESSAGES
+R	modules/rearrange/locale/eu_ES
+R	modules/rearrange/locale/fr_FR/LC_MESSAGES/modules_rearrange.mo
+R	modules/rearrange/locale/fr_FR/LC_MESSAGES
+R	modules/rearrange/locale/fr_FR
+R	modules/rearrange/locale/hu_HU/LC_MESSAGES/modules_rearrange.mo
+R	modules/rearrange/locale/hu_HU/LC_MESSAGES
+R	modules/rearrange/locale/hu_HU
+R	modules/rearrange/locale/is_IS/LC_MESSAGES/modules_rearrange.mo
+R	modules/rearrange/locale/is_IS/LC_MESSAGES
+R	modules/rearrange/locale/is_IS
+R	modules/rearrange/locale/it_IT/LC_MESSAGES/modules_rearrange.mo
+R	modules/rearrange/locale/it_IT/LC_MESSAGES
+R	modules/rearrange/locale/it_IT
+R	modules/rearrange/locale/ja_JP/LC_MESSAGES/modules_rearrange.mo
+R	modules/rearrange/locale/ja_JP/LC_MESSAGES
+R	modules/rearrange/locale/ja_JP
+R	modules/rearrange/locale/nl_NL/LC_MESSAGES/modules_rearrange.mo
+R	modules/rearrange/locale/nl_NL/LC_MESSAGES
+R	modules/rearrange/locale/nl_NL
+R	modules/rearrange/locale/no_NO/LC_MESSAGES/modules_rearrange.mo
+R	modules/rearrange/locale/no_NO/LC_MESSAGES
+R	modules/rearrange/locale/no_NO
+R	modules/rearrange/locale/ru_RU/LC_MESSAGES/modules_rearrange.mo
+R	modules/rearrange/locale/ru_RU/LC_MESSAGES
+R	modules/rearrange/locale/ru_RU
+R	modules/rearrange/locale/sr_YU/LC_MESSAGES/modules_rearrange.mo
+R	modules/rearrange/locale/sr_YU/LC_MESSAGES
+R	modules/rearrange/locale/sr_YU
+R	modules/rearrange/locale/sv_SE/LC_MESSAGES/modules_rearrange.mo
+R	modules/rearrange/locale/sv_SE/LC_MESSAGES
+R	modules/rearrange/locale/sv_SE
+R	modules/rearrange/locale/tr_TR/LC_MESSAGES/modules_rearrange.mo
+R	modules/rearrange/locale/tr_TR/LC_MESSAGES
+R	modules/rearrange/locale/tr_TR
+R	modules/rearrange/locale/vi_VN/LC_MESSAGES/modules_rearrange.mo
+R	modules/rearrange/locale/vi_VN/LC_MESSAGES
+R	modules/rearrange/locale/vi_VN
+R	modules/rearrange/po/bg_BG.po
+R	modules/rearrange/po/cs_CZ.po
+R	modules/rearrange/po/de_DE.po
+R	modules/rearrange/po/es_ES.po
+R	modules/rearrange/po/eu_ES.po
+R	modules/rearrange/po/fr_FR.po
+R	modules/rearrange/po/hu_HU.po
+R	modules/rearrange/po/is_IS.po
+R	modules/rearrange/po/it_IT.po
+R	modules/rearrange/po/ja_JP.po
+R	modules/rearrange/po/nl_NL.po
+R	modules/rearrange/po/no_NO.po
+R	modules/rearrange/po/ru_RU.po
+R	modules/rearrange/po/sr_YU.po
+R	modules/rearrange/po/sv_SE.po
+R	modules/rearrange/po/tr_TR.po
+R	modules/rearrange/po/vi_VN.po

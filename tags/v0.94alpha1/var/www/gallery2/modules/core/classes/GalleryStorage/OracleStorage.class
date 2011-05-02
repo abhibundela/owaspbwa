@@ -1,0 +1,253 @@
+<?php
+/*
+ * $RCSfile: OracleStorage.class,v $
+ *
+ * Gallery - a web based photo album viewer and editor
+ * Copyright (C) 2000-2006 Bharat Mediratta
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or (at
+ * your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+/**
+ * @version $Revision: 1.10.2.1 $ $Date: 2006/04/10 15:36:16 $
+ * @package GalleryCore
+ * @author Alan Harder <alan.harder@sun.com>
+ */
+
+GalleryCoreApi::requireOnce('modules/core/classes/GalleryStorage.class', true);
+
+/**
+ * Oracle extension of the GalleryStorage class.
+ *
+ * This object implements the hooks for saving and restoring objects in an
+ * Oracle database.
+ *
+ * @package GalleryCore
+ * @subpackage Storage
+ */
+class OracleStorage extends GalleryStorage {
+
+    /**
+     * The type of Oracle database (oci8, oci8po, oci805 or oracle)
+     *
+     * @var string $_oracleDbType
+     * @access private
+     */
+    var $_oracleDbType;
+
+    /**
+     * Constructor
+     *
+     */
+    function OracleStorage($config) {
+	$this->GalleryStorage($config);
+	$this->_oracleDbType = $config['type'];
+	$this->_isTransactional = true;
+	$this->_isEmptyAllowedForNotNullColumn = false;
+    }
+
+    /**
+     * Return the type of this database
+     *
+     * @return string
+     */
+    function getAdoDbType() {
+	return $this->_oracleDbType;
+    }
+
+    /**
+     * Return the type of this database
+     *
+     * @return string
+     */
+    function getType() {
+	return 'oracle';
+    }
+
+    /**
+     * @see GalleryStorage::_setConnectionSettings
+     */
+    function _setConnectionSettings(&$db) {
+	/* May cause "ORA-12705: Cannot access NLS data files or invalid environment specified" */
+	/* @putenv("NLS_LANG=UTF8"); */
+    	
+    	return null;
+    }
+
+    /**
+     * @see GalleryStorage::getFunctionsSql
+     */
+    function getFunctionSql($functionName, $args) {
+	switch($functionName) {
+	case 'CONCAT':
+	    $sql = implode(' || ', $args);
+	    break;
+
+	case 'BITAND':
+	    $sql = 'BITAND(' . $args[0] . ',' . $args[1] . ')';
+	    break;
+
+	case 'BIT_OR':
+	    $sql = 'BIT_OR(' . $args[0] . ')';
+            break;
+	    
+	case 'AS':
+	    $sql = '';
+	    break;
+
+	case 'SUBSTRING':
+	    $sql = sprintf('SUBSTR(%s)', implode(', ', $args));
+	    break;
+
+	case 'RAND':
+	    if (!empty($args)) {
+		return array(GalleryCoreApi::error(ERROR_UNIMPLEMENTED, __FILE__, __LINE__,
+						  $functionName . ' ' . implode(' ', $args)), null);
+	    }
+	    $sql = 'DBMS_RANDOM.RANDOM';
+	    break;
+
+	case 'LIMIT':
+	    $sql = 'SELECT * FROM (' . $args[1] . ') WHERE ROWNUM <= ' . $args[0];
+	    break;
+
+	case 'CASE':
+	    $sql = array();
+	    while (count($args) > 1) {
+		$sql[] = 'WHEN ' . array_shift($args) . ' THEN ' . array_shift($args);
+	    }
+	    $sql = 'CASE ' . implode(' ', $sql) . ' ELSE ' . $args[0] . ' END';
+	    break;
+
+	case 'LIKE':
+	    $sql = $args[0] . ' LIKE ' . $args[1];
+	    break;
+
+	case 'MULTI_INSERT':
+	    /* 
+	     * 0 - table name
+	     * 1 - array of column names
+	     * 2 - number of rows
+	     */
+	    $markers = GalleryUtilities::makeMarkers(sizeof($args[1]));
+	    $rowList = array(); //php4.2: array-fill(1, $args[2], 'SELECT '.$markers.' FROM DUAL');
+	    for ($i = 0; $i < $args[2]; $i++) {
+		$rowList[] = 'SELECT ' . $markers . ' FROM DUAL';
+	    }
+	    $sql = 'INSERT INTO ' . $args[0] . ' (';
+	    $sql .= implode(', ', $args[1]);
+	    $sql .= ') ' . implode(' UNION ALL ', $rowList);
+	    break;
+
+	case 'AVG':
+	    $sql = sprintf('AVG(%s)', $args[0]);
+	    break;
+
+	default:
+	    return array(GalleryCoreApi::error(ERROR_UNIMPLEMENTED, __FILE__, __LINE__,
+					      $functionName . ' ' . implode(' ', $args)), null);
+	}
+
+	return array(null, $sql);
+    }
+
+    /**
+     * @see GalleryStorage::cleanStore
+     */
+    function cleanStore() {
+	$ret = parent::cleanStore();
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	/*
+	 * Create a temporary database connection and remove our custom
+	 * aggregate function.
+	 */
+	list ($ret, $tmpDb) = $this->_getConnection(true);
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	$this->_traceStart();
+	$recordSet1 = $tmpDb->Execute('DROP FUNCTION BIT_OR');
+	$recordSet2 = $tmpDb->Execute('DROP TYPE BIT_OR_IMPL');
+	$tmpDb->Close();
+	$this->_traceStop();
+
+	if (empty($recordSet1) || empty($recordSet2)) {
+	    return GalleryCoreApi::error(ERROR_STORAGE_FAILURE, __FILE__, __LINE__);
+	}
+
+	return null;
+    }
+
+    /**
+     * @see GalleryStorage::configureStore
+     */
+    function configureStore($moduleId, $upgradeInfo=array()) {
+	if ($moduleId == 'core') {
+	    /* Install our custom aggregate function */
+	    $ret = $this->_executeSqlFile(dirname(__FILE__) . '/OracleCreateBitOr.sql');
+
+	    /*
+	     * Ignore errors here, since we'll get them every time we try to
+	     * install the aggregate, which will happen every time we upgrade core
+	     * or install in a database with another Gallery already present.
+	     *
+	     * XXX: At some point figure out a way to detect if the aggregate is
+	     * already there before trying to install it again.
+	     */
+	}
+
+	$ret = parent::configureStore($moduleId, $upgradeInfo);
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	return null;
+     }
+
+    /**
+     * Get database version.
+     * @return string version
+     */
+    function getVersion() {
+	if (function_exists('oci_server_version')) {
+	    return oci_server_version();
+	}
+	return ociserverversion();
+    }
+
+    /**
+     * @see GalleryStorage::_getOptimizeStatement
+     */
+    function _getOptimizeStatement() {
+	/* Is this the right command to use? */
+	return 'ANALYZE TABLE %s COMPUTE STATISTICS';
+    }
+
+    /**
+     * @see GalleryStorage::_normalizeValue
+     */
+    function _normalizeValue($value, $memberData, $fromDb=false) {
+	if ($fromDb && is_null($value) && ($memberData['type'] == STORAGE_TYPE_STRING
+					|| $memberData['type'] == STORAGE_TYPE_TEXT)) {
+	    return '';
+	} else {
+	    return parent::_normalizeValue($value, $memberData, $fromDb);
+	}
+    }
+}
+?>

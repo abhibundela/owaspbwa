@@ -1,0 +1,115 @@
+<?php
+/*
+ * $RCSfile: GallerySmarty.class,v $
+ *
+ * Gallery - a web based photo album viewer and editor
+ * Copyright (C) 2000-2006 Bharat Mediratta
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or (at
+ * your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+/**
+ * @version $Revision: 1.15 $ $Date: 2006/01/13 03:39:31 $
+ * @package GalleryCore
+ * @author Ernesto Baschny <ernst@baschny.de>
+ */
+
+/**
+ * We extend the original Smarty class
+ * (if G2 is embedded in a CMS also using smarty it may be defined already)
+ */
+if (!class_exists('Smarty')) {
+    GalleryCoreApi::requireOnce('lib/smarty/Smarty.class.php', true);
+}
+
+/**
+ * A wrapper around Smarty that uses Gallery's error handling
+ *
+ * @package GalleryCore
+ * @subpackage Classes
+ */
+class GallerySmarty extends Smarty {
+
+    /*
+     * ****************************************
+     *                 Members
+     * ****************************************
+     */
+
+    /**
+     * A GalleryStatus object from the last called fetch
+     *
+     * @var object GalleryStatus
+     * @access private
+     */
+    var $_firstGalleryStatus;
+
+    /**
+     * The FILE and LINE of the last call to
+     *
+     * @var array file number, line number
+     * @access private
+     */
+    var $_firstFileLine;
+
+    /*
+     * ****************************************
+     *                 Methods
+     * ****************************************
+     */
+
+    /**
+     * Fetch should also return a GalleryStatus object
+     *
+     * @see Smarty::fetch
+     * @return array object GalleryStatus the return status
+     *               string the output from the template
+     */
+    function fetch($_smarty_tpl_file, $_smarty_cache_id = null,
+		   $_smarty_compile_id = null, $_smarty_display = false) {
+	global $gallery;
+
+	$this->_firstGalleryStatus = null;
+
+	$this->_firstFileLine = array(__FILE__, __LINE__);
+	/* This could change the value of _firstError: */
+	$result = parent::fetch($_smarty_tpl_file,
+				$_smarty_cache_id,
+				$_smarty_compile_id,
+				$_smarty_display);
+
+	return array($this->_firstGalleryStatus, $result);
+    }
+
+    /**
+     * Make trigger_error behave more Gallery-like
+     *
+     * @see Smarty::trigger_error
+     */
+    function trigger_error($error_msg, $error_type = E_USER_WARNING) {
+	global $gallery;
+
+	/* Store this error for later usage */
+	if (!$this->_firstGalleryStatus) {
+	    $this->_firstGalleryStatus = GalleryCoreApi::error(ERROR_BAD_PARAMETER,
+							      $this->_firstFileLine[0],
+							      $this->_firstFileLine[1],
+							      sprintf('Smarty error: %s',
+								      $error_msg, $error_type));
+	}
+    }
+
+
+}
+?>

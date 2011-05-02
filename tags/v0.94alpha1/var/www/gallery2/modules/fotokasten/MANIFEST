@@ -1,0 +1,83 @@
+# File crc32 crc32(crlf) size size(crlf)  or  R File
+modules/fotokasten/FotokastenSiteAdmin.inc	1995112255	3603303818	3113	3217
+modules/fotokasten/PrintPhotos.inc	1894250664	2540872641	11074	11397
+modules/fotokasten/classes/FotokastenCartPlugin.class	584654649	3792782295	2049	2115
+modules/fotokasten/lib/nusoap.inc	2740509982	821659249	124049	127858
+modules/fotokasten/locale/cs/LC_MESSAGES/modules_fotokasten.mo	2544592103	2544592103	1472	1472
+modules/fotokasten/locale/da/LC_MESSAGES/modules_fotokasten.mo	1645542549	1645542549	791	791
+modules/fotokasten/locale/de/LC_MESSAGES/modules_fotokasten.mo	2612353991	2612353991	1400	1400
+modules/fotokasten/locale/eu/LC_MESSAGES/modules_fotokasten.mo	159423944	159423944	1359	1359
+modules/fotokasten/locale/fr/LC_MESSAGES/modules_fotokasten.mo	777918455	777918455	1404	1404
+modules/fotokasten/locale/is/LC_MESSAGES/modules_fotokasten.mo	289505695	289505695	421	421
+modules/fotokasten/locale/it/LC_MESSAGES/modules_fotokasten.mo	3463836773	3463836773	1338	1338
+modules/fotokasten/locale/ja/LC_MESSAGES/modules_fotokasten.mo	313603876	313603876	749	749
+modules/fotokasten/locale/nl/LC_MESSAGES/modules_fotokasten.mo	2564310599	2564310599	1320	1320
+modules/fotokasten/locale/no/LC_MESSAGES/modules_fotokasten.mo	2945659522	2945659522	1375	1375
+modules/fotokasten/locale/pl/LC_MESSAGES/modules_fotokasten.mo	3904221868	3904221868	1386	1386
+modules/fotokasten/locale/ru/LC_MESSAGES/modules_fotokasten.mo	2974631769	2974631769	1581	1581
+modules/fotokasten/locale/sr/LC_MESSAGES/modules_fotokasten.mo	695010769	695010769	719	719
+modules/fotokasten/locale/sv/LC_MESSAGES/modules_fotokasten.mo	2196054249	2196054249	1426	1426
+modules/fotokasten/locale/tr/LC_MESSAGES/modules_fotokasten.mo	2671539873	2671539873	1335	1335
+modules/fotokasten/locale/zh_CN/LC_MESSAGES/modules_fotokasten.mo	3504932760	3504932760	1299	1299
+modules/fotokasten/locale/zh_TW/LC_MESSAGES/modules_fotokasten.mo	2566053635	2566053635	1304	1304
+modules/fotokasten/module.inc	1172575642	1563210772	4093	4231
+modules/fotokasten/po/GNUmakefile	1866879166	2808215985	98	103
+modules/fotokasten/po/cs.po	4100317135	908599611	2339	2421
+modules/fotokasten/po/da.po	950364968	3139484516	2166	2250
+modules/fotokasten/po/de.po	1741579334	1846383915	2368	2451
+modules/fotokasten/po/eu.po	3743096862	3547361204	2215	2295
+modules/fotokasten/po/fr.po	3444829623	1208386533	2294	2373
+modules/fotokasten/po/is.po	3951844268	2170396639	1869	1947
+modules/fotokasten/po/it.po	879392497	197999075	2190	2269
+modules/fotokasten/po/ja.po	2369174283	1370789881	2002	2081
+modules/fotokasten/po/nl.po	1703193344	560882900	2260	2341
+modules/fotokasten/po/no.po	4242419949	2532856749	2346	2428
+modules/fotokasten/po/pl.po	471113513	1091328352	2244	2324
+modules/fotokasten/po/ru.po	2768285302	122094744	2556	2639
+modules/fotokasten/po/sr.po	3518989226	3139929312	2028	2108
+modules/fotokasten/po/strings.raw	4259004638	4063646318	619	642
+modules/fotokasten/po/sv.po	2351573029	1638215648	2289	2370
+modules/fotokasten/po/tr.po	2441702286	1021284659	2195	2276
+modules/fotokasten/po/zh_CN.po	3340135291	3147722197	2158	2238
+modules/fotokasten/po/zh_TW.po	3977939426	1123765960	2163	2242
+modules/fotokasten/templates/FotokastenSiteAdmin.tpl	1597138048	1010483901	1964	2019
+R	modules/fotokasten/locale/cs_CZ/LC_MESSAGES/modules_fotokasten.mo
+R	modules/fotokasten/locale/cs_CZ/LC_MESSAGES
+R	modules/fotokasten/locale/cs_CZ
+R	modules/fotokasten/locale/de_DE/LC_MESSAGES/modules_fotokasten.mo
+R	modules/fotokasten/locale/de_DE/LC_MESSAGES
+R	modules/fotokasten/locale/de_DE
+R	modules/fotokasten/locale/fr_FR/LC_MESSAGES/modules_fotokasten.mo
+R	modules/fotokasten/locale/fr_FR/LC_MESSAGES
+R	modules/fotokasten/locale/fr_FR
+R	modules/fotokasten/locale/is_IS/LC_MESSAGES/modules_fotokasten.mo
+R	modules/fotokasten/locale/is_IS/LC_MESSAGES
+R	modules/fotokasten/locale/is_IS
+R	modules/fotokasten/locale/it_IT/LC_MESSAGES/modules_fotokasten.mo
+R	modules/fotokasten/locale/it_IT/LC_MESSAGES
+R	modules/fotokasten/locale/it_IT
+R	modules/fotokasten/locale/ja_JP/LC_MESSAGES/modules_fotokasten.mo
+R	modules/fotokasten/locale/ja_JP/LC_MESSAGES
+R	modules/fotokasten/locale/ja_JP
+R	modules/fotokasten/locale/nl_NL/LC_MESSAGES/modules_fotokasten.mo
+R	modules/fotokasten/locale/nl_NL/LC_MESSAGES
+R	modules/fotokasten/locale/nl_NL
+R	modules/fotokasten/locale/ru_RU/LC_MESSAGES/modules_fotokasten.mo
+R	modules/fotokasten/locale/ru_RU/LC_MESSAGES
+R	modules/fotokasten/locale/ru_RU
+R	modules/fotokasten/locale/sr_YU/LC_MESSAGES/modules_fotokasten.mo
+R	modules/fotokasten/locale/sr_YU/LC_MESSAGES
+R	modules/fotokasten/locale/sr_YU
+R	modules/fotokasten/locale/tr_TR/LC_MESSAGES/modules_fotokasten.mo
+R	modules/fotokasten/locale/tr_TR/LC_MESSAGES
+R	modules/fotokasten/locale/tr_TR
+R	modules/fotokasten/po/cs_CZ.po
+R	modules/fotokasten/po/de_DE.po
+R	modules/fotokasten/po/fr_FR.po
+R	modules/fotokasten/po/is_IS.po
+R	modules/fotokasten/po/it_IT.po
+R	modules/fotokasten/po/ja_JP.po
+R	modules/fotokasten/po/nl_NL.po
+R	modules/fotokasten/po/ru_RU.po
+R	modules/fotokasten/po/sr_YU.po
+R	modules/fotokasten/po/tr_TR.po

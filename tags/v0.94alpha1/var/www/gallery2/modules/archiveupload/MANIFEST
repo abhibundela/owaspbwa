@@ -1,0 +1,129 @@
+# File crc32 crc32(crlf) size size(crlf)  or  R File
+modules/archiveupload/ArchiveUploadSiteAdmin.inc	3259567672	3851309187	5485	5660
+modules/archiveupload/classes/ArchiveExtractToolkit.class	1293651532	307209627	2842	2931
+modules/archiveupload/classes/ArchiveUploadHelper.class	1621872868	3615659986	3985	4122
+modules/archiveupload/data/test.zip	2308014917	2308014917	153	153
+modules/archiveupload/locale/af/LC_MESSAGES/modules_archiveupload.mo	2084495042	2084495042	2733	2733
+modules/archiveupload/locale/bg/LC_MESSAGES/modules_archiveupload.mo	3028966510	3028966510	2098	2098
+modules/archiveupload/locale/cs/LC_MESSAGES/modules_archiveupload.mo	4202179186	4202179186	2578	2578
+modules/archiveupload/locale/da/LC_MESSAGES/modules_archiveupload.mo	1243276712	1243276712	2731	2731
+modules/archiveupload/locale/de/LC_MESSAGES/modules_archiveupload.mo	870707001	870707001	2828	2828
+modules/archiveupload/locale/es/LC_MESSAGES/modules_archiveupload.mo	3375230774	3375230774	2777	2777
+modules/archiveupload/locale/eu/LC_MESSAGES/modules_archiveupload.mo	88019283	88019283	2625	2625
+modules/archiveupload/locale/fi/LC_MESSAGES/modules_archiveupload.mo	3355750631	3355750631	2619	2619
+modules/archiveupload/locale/fr/LC_MESSAGES/modules_archiveupload.mo	3582207890	3582207890	2808	2808
+modules/archiveupload/locale/hu/LC_MESSAGES/modules_archiveupload.mo	970887231	970887231	1902	1902
+modules/archiveupload/locale/is/LC_MESSAGES/modules_archiveupload.mo	2490468182	2490468182	425	425
+modules/archiveupload/locale/it/LC_MESSAGES/modules_archiveupload.mo	2839514891	2839514891	2654	2654
+modules/archiveupload/locale/ja/LC_MESSAGES/modules_archiveupload.mo	1675934139	1675934139	2890	2890
+modules/archiveupload/locale/lt/LC_MESSAGES/modules_archiveupload.mo	2074083087	2074083087	2842	2842
+modules/archiveupload/locale/nl/LC_MESSAGES/modules_archiveupload.mo	3922191845	3922191845	2640	2640
+modules/archiveupload/locale/no/LC_MESSAGES/modules_archiveupload.mo	504070263	504070263	2653	2653
+modules/archiveupload/locale/pl/LC_MESSAGES/modules_archiveupload.mo	730839756	730839756	2719	2719
+modules/archiveupload/locale/pt_BR/LC_MESSAGES/modules_archiveupload.mo	3024493692	3024493692	2700	2700
+modules/archiveupload/locale/ru/LC_MESSAGES/modules_archiveupload.mo	1195622101	1195622101	3495	3495
+modules/archiveupload/locale/sr/LC_MESSAGES/modules_archiveupload.mo	4076893800	4076893800	2711	2711
+modules/archiveupload/locale/sv/LC_MESSAGES/modules_archiveupload.mo	564761184	564761184	2827	2827
+modules/archiveupload/locale/tr/LC_MESSAGES/modules_archiveupload.mo	1567822299	1567822299	2015	2015
+modules/archiveupload/locale/vi/LC_MESSAGES/modules_archiveupload.mo	452548579	452548579	2046	2046
+modules/archiveupload/locale/zh_CN/LC_MESSAGES/modules_archiveupload.mo	560109796	560109796	2523	2523
+modules/archiveupload/locale/zh_TW/LC_MESSAGES/modules_archiveupload.mo	1280967166	1280967166	2555	2555
+modules/archiveupload/module.inc	2715011593	2447296042	4994	5179
+modules/archiveupload/po/GNUmakefile	1866879166	2808215985	98	103
+modules/archiveupload/po/af.po	2580187529	781706761	3571	3672
+modules/archiveupload/po/bg.po	3491713893	3992206517	3873	3992
+modules/archiveupload/po/cs.po	1823575107	1312166929	3459	3568
+modules/archiveupload/po/da.po	3151296762	2989486104	3699	3804
+modules/archiveupload/po/de.po	3067838757	2462349387	3915	4035
+modules/archiveupload/po/es.po	625902713	1310826379	3730	3840
+modules/archiveupload/po/eu.po	1360839362	1867918456	3459	3566
+modules/archiveupload/po/fi.po	669111157	2092714396	3439	3541
+modules/archiveupload/po/fr.po	1483625728	157478436	3700	3812
+modules/archiveupload/po/hu.po	1512158679	2691717012	3267	3375
+modules/archiveupload/po/is.po	1198927689	142063325	2566	2668
+modules/archiveupload/po/it.po	772933020	2473950403	3468	3568
+modules/archiveupload/po/ja.po	1057860095	3064980585	3710	3812
+modules/archiveupload/po/lt.po	4172529968	371012010	3818	3934
+modules/archiveupload/po/nl.po	1788961028	3099881362	3638	3750
+modules/archiveupload/po/no.po	1667635460	2554012482	3579	3680
+modules/archiveupload/po/pl.po	3067186486	171733992	3569	3668
+modules/archiveupload/po/pt_BR.po	3781409504	36506441	3578	3686
+modules/archiveupload/po/ru.po	3869381902	1509489673	4430	4534
+modules/archiveupload/po/sr.po	3198035490	3094119067	3560	3672
+modules/archiveupload/po/strings.raw	1754549339	1389986048	1199	1226
+modules/archiveupload/po/sv.po	2352273508	1152592959	3847	3966
+modules/archiveupload/po/tr.po	3488734936	776020325	3393	3499
+modules/archiveupload/po/vi.po	552142125	1975129296	3783	3893
+modules/archiveupload/po/zh_CN.po	1892144472	110204356	3337	3436
+modules/archiveupload/po/zh_TW.po	3742689994	185067282	3393	3499
+modules/archiveupload/templates/ArchiveUploadSiteAdmin.tpl	4125876001	1882195827	3341	3439
+R	modules/archiveupload/locale/bg_BG/LC_MESSAGES/modules_archiveupload.mo
+R	modules/archiveupload/locale/bg_BG/LC_MESSAGES
+R	modules/archiveupload/locale/bg_BG
+R	modules/archiveupload/locale/cs_CZ/LC_MESSAGES/modules_archiveupload.mo
+R	modules/archiveupload/locale/cs_CZ/LC_MESSAGES
+R	modules/archiveupload/locale/cs_CZ
+R	modules/archiveupload/locale/da_DK/LC_MESSAGES/modules_archiveupload.mo
+R	modules/archiveupload/locale/da_DK/LC_MESSAGES
+R	modules/archiveupload/locale/da_DK
+R	modules/archiveupload/locale/de_DE/LC_MESSAGES/modules_archiveupload.mo
+R	modules/archiveupload/locale/de_DE/LC_MESSAGES
+R	modules/archiveupload/locale/de_DE
+R	modules/archiveupload/locale/eu_ES/LC_MESSAGES/modules_archiveupload.mo
+R	modules/archiveupload/locale/eu_ES/LC_MESSAGES
+R	modules/archiveupload/locale/eu_ES
+R	modules/archiveupload/locale/fr_FR/LC_MESSAGES/modules_archiveupload.mo
+R	modules/archiveupload/locale/fr_FR/LC_MESSAGES
+R	modules/archiveupload/locale/fr_FR
+R	modules/archiveupload/locale/hu_HU/LC_MESSAGES/modules_archiveupload.mo
+R	modules/archiveupload/locale/hu_HU/LC_MESSAGES
+R	modules/archiveupload/locale/hu_HU
+R	modules/archiveupload/locale/is_IS/LC_MESSAGES/modules_archiveupload.mo
+R	modules/archiveupload/locale/is_IS/LC_MESSAGES
+R	modules/archiveupload/locale/is_IS
+R	modules/archiveupload/locale/it_IT/LC_MESSAGES/modules_archiveupload.mo
+R	modules/archiveupload/locale/it_IT/LC_MESSAGES
+R	modules/archiveupload/locale/it_IT
+R	modules/archiveupload/locale/ja_JP/LC_MESSAGES/modules_archiveupload.mo
+R	modules/archiveupload/locale/ja_JP/LC_MESSAGES
+R	modules/archiveupload/locale/ja_JP
+R	modules/archiveupload/locale/nl_NL/LC_MESSAGES/modules_archiveupload.mo
+R	modules/archiveupload/locale/nl_NL/LC_MESSAGES
+R	modules/archiveupload/locale/nl_NL
+R	modules/archiveupload/locale/no_NO/LC_MESSAGES/modules_archiveupload.mo
+R	modules/archiveupload/locale/no_NO/LC_MESSAGES
+R	modules/archiveupload/locale/no_NO
+R	modules/archiveupload/locale/ru_RU/LC_MESSAGES/modules_archiveupload.mo
+R	modules/archiveupload/locale/ru_RU/LC_MESSAGES
+R	modules/archiveupload/locale/ru_RU
+R	modules/archiveupload/locale/sr_YU/LC_MESSAGES/modules_archiveupload.mo
+R	modules/archiveupload/locale/sr_YU/LC_MESSAGES
+R	modules/archiveupload/locale/sr_YU
+R	modules/archiveupload/locale/sv_SE/LC_MESSAGES/modules_archiveupload.mo
+R	modules/archiveupload/locale/sv_SE/LC_MESSAGES
+R	modules/archiveupload/locale/sv_SE
+R	modules/archiveupload/locale/tr_TR/LC_MESSAGES/modules_archiveupload.mo
+R	modules/archiveupload/locale/tr_TR/LC_MESSAGES
+R	modules/archiveupload/locale/tr_TR
+R	modules/archiveupload/locale/vi_VN/LC_MESSAGES/modules_archiveupload.mo
+R	modules/archiveupload/locale/vi_VN/LC_MESSAGES
+R	modules/archiveupload/locale/vi_VN
+R	modules/archiveupload/po/bg_BG.po
+R	modules/archiveupload/po/cs_CZ.po
+R	modules/archiveupload/po/da_DK.po
+R	modules/archiveupload/po/de_DE.po
+R	modules/archiveupload/po/eu_ES.po
+R	modules/archiveupload/po/fr_FR.po
+R	modules/archiveupload/po/hu_HU.po
+R	modules/archiveupload/po/is_IS.po
+R	modules/archiveupload/po/it_IT.po
+R	modules/archiveupload/po/ja_JP.po
+R	modules/archiveupload/po/nl_NL.po
+R	modules/archiveupload/po/no_NO.po
+R	modules/archiveupload/po/ru_RU.po
+R	modules/archiveupload/po/sr_YU.po
+R	modules/archiveupload/po/sv_SE.po
+R	modules/archiveupload/po/tr_TR.po
+R	modules/archiveupload/po/vi_VN.po
+R	modules/archiveupload/templates/SiteAdmin.tpl
+R	modules/archiveupload/test/data/test.zip

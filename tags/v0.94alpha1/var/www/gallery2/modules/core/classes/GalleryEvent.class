@@ -1,0 +1,137 @@
+<?php
+/*
+ * $RCSfile: GalleryEvent.class,v $
+ *
+ * Gallery - a web based photo album viewer and editor
+ * Copyright (C) 2000-2006 Bharat Mediratta
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or (at
+ * your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+/**
+ * @version $Revision: 1.12 $ $Date: 2006/01/10 04:39:21 $
+ * @package GalleryCore
+ * @author Bharat Mediratta <bharat@menalto.com>
+ */
+
+/**
+ * Storage for event information
+ *
+ * This is a container for information about a specific event
+ *
+ * @package GalleryCore
+ * @subpackage Classes
+ */
+class GalleryEvent {
+
+    /*
+     * ****************************************
+     *                 Members
+     * ****************************************
+     */
+
+    /**
+     * Event name
+     *
+     * @var string $_eventName
+     * @access private
+     */
+    var $_eventName;
+
+    /**
+     * Target entity
+     *
+     * @var string $_entity
+     * @access private
+     */
+    var $_entity;
+
+    /**
+     * Event specific data
+     *
+     * @var string $_data
+     * @access private
+     */
+    var $_data;
+
+    /*
+     * ****************************************
+     *                 Methods
+     * ****************************************
+     */
+
+    /**
+     * Constructor
+     */
+    function GalleryEvent() {
+	$this->setEventName(null);
+	$this->setEntity(null);
+	$this->setData(null);
+    }
+
+    /**
+     * Set this event's name
+     *
+     * @param object GalleryEntity the entity
+     */
+    function setEventName($eventName) {
+	$this->_eventName = $eventName;
+    }
+
+    /**
+     * Return the event name
+     *
+     * @return string the event name
+     */
+    function getEventName() {
+	return $this->_eventName;
+    }
+
+    /**
+     * Set this event's entity
+     *
+     * @param object GalleryEntity the entity
+     */
+    function setEntity($entity) {
+	$this->_entity = $entity;
+    }
+
+    /**
+     * Return the event's entity
+     *
+     * @return object GalleryEntity
+     */
+    function getEntity() {
+	return $this->_entity;
+    }
+
+    /**
+     * Set this event's data
+     *
+     * @param object GalleryData the data
+     */
+    function setData($data) {
+	$this->_data = $data;
+    }
+
+    /**
+     * Return the event's data
+     *
+     * @return object GalleryData
+     */
+    function getData() {
+	return $this->_data;
+    }
+}
+?>

@@ -1,0 +1,225 @@
+<?php
+/*
+ * $RCSfile: GalleryPermissionHelper_simple.class,v $
+ *
+ * Gallery - a web based photo album viewer and editor
+ * Copyright (C) 2000-2006 Bharat Mediratta
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or (at
+ * your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+/**
+ * @version $Revision: 1.14 $ $Date: 2006/01/14 02:21:41 $
+ * @package GalleryCore
+ * @author Bharat Mediratta <bharat@menalto.com>
+ */
+
+/**
+ * The central registry for all permissions in the system
+ *
+ * @package GalleryCore
+ * @subpackage Helpers
+ */
+class GalleryPermissionHelper_simple {
+
+    /**
+     * Fetch all the access list ids that grant the given permission to the
+     * given user (either directly or via a group).
+     *
+     * @param string the permission id (eg, 'core.view')
+     * @param int the user id
+     * @param boolean (optional) false to ignore session based permissions
+     * @return array object GalleryStatus a status code
+     *               array int access list ids
+     */
+    function fetchAccessListIds($permission, $userId, $sessionPermissions=true) {
+	global $gallery;
+
+	$cacheKey = 'GalleryPermissionHelper::fetchAccessListIds(' .
+	    "$permission, $userId, $sessionPermissions)";
+	if (!GalleryDataCache::containsKey($cacheKey)) {
+	    list ($ret, $groupIds) = GalleryCoreApi::fetchGroupsForUser($userId);
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+	    $groupIds = array_keys($groupIds);
+	    if ($sessionPermissions && $userId == $gallery->getActiveUserId()) {
+		/* Session based permissions */
+		$session =& $gallery->getSession();
+		$sessionEntityIds = $session->get(GALLERY_PERMISSION_SESSION_KEY);
+		if (!empty($sessionEntityIds)) {
+		    $groupIds = array_merge($groupIds, $sessionEntityIds);
+		}
+	    }
+	    $entityIdMarkers = GalleryUtilities::makeMarkers(count($groupIds) + 1);
+
+	    list ($ret, $bits) = GalleryCoreApi::convertPermissionIdsToBits($permission);
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+
+	    $storage =& $gallery->getStorage();
+	    list ($ret, $bitAndPermission) =
+		$storage->getFunctionSql('BITAND', array('[GalleryAccessMap::permission]', '?'));
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+
+	    $query = '
+	    SELECT DISTINCT
+	      [GalleryAccessMap::accessListId]
+	    FROM
+	      [GalleryAccessMap]
+	    WHERE
+	      [GalleryAccessMap::userOrGroupId] IN (' . $entityIdMarkers . ')
+	      AND
+	      ' . $bitAndPermission . ' = ?
+	    ';
+
+	    $storage =& $gallery->getStorage();
+
+	    $data = array((int)$userId);
+	    $data = array_merge($data, $groupIds);
+	    $data[] = $storage->convertIntToBits($bits);
+	    $data[] = $storage->convertIntToBits($bits);
+
+	    list ($ret, $results) = $gallery->search($query, $data);
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+
+	    $aclIds = array();
+	    while ($result = $results->nextResult()) {
+		$aclIds[] = (int)$result[0];
+	    }
+	    GalleryDataCache::put($cacheKey, $aclIds);
+	} else {
+	    $aclIds = GalleryDataCache::get($cacheKey);
+	}
+
+	return array(null, $aclIds);
+    }
+
+    /**
+     * Clear all cached access list ids
+     * @access private
+     * @static
+     */
+    function _clearCachedAccessListIds() {
+	GalleryDataCache::removeByPattern("GalleryPermissionHelper::fetchAccessListIds");
+    }
+
+    /**
+     * Return the permission bits for a set of permission ids
+     *
+     * @param array of string permission ids or single permission id
+     * @return array object GalleryStatus a status code
+     *               integer bits
+     * @static
+     */
+    function convertIdsToBits($permissionIds) {
+	global $gallery;
+	if (!is_array($permissionIds)) {
+	    $permissionIds = array($permissionIds);
+	}
+
+	list ($ret, $allPermissions) = GalleryPermissionHelper_simple::_fetchAllPermissions();
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	$results = 0;
+	foreach ($permissionIds as $id) {
+	    if (!isset($allPermissions[$id])) {
+		return array(GalleryCoreApi::error(ERROR_BAD_PARAMETER, __FILE__, __LINE__,
+						  "Unknown permission id: $id"),
+			     null);
+	    }
+	    $results |= $allPermissions[$id]['bits'];
+	}
+
+	return array(null, $results);
+    }
+
+    /**
+     * Return a list of all available permissions
+     *
+     * @return array object GalleryStatus a status code
+     *               array ('permission' => array('module' => ...,
+     *                                            'permission' => ...,
+     *                                            'description' => ...,
+     *                                            'bits' => ...,
+     *                                            'flags' => ...)
+     *                      ...)
+     * @static
+     */
+    function _fetchAllPermissions() {
+	global $gallery;
+
+	$cacheKey = 'GalleryPermissionHelper::_allPermissions';
+	if (!GalleryDataCache::containsKey($cacheKey)) {
+	    $permissions = array();
+
+	    $query = '
+	    SELECT
+	      [GalleryPermissionSetMap::module],
+	      [GalleryPermissionSetMap::permission],
+	      [GalleryPermissionSetMap::description],
+	      [GalleryPermissionSetMap::bits],
+	      [GalleryPermissionSetMap::flags]
+	    FROM
+	      [GalleryPermissionSetMap]
+	    ';
+
+	    list ($ret, $searchResults) = $gallery->search($query);
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+
+	    /*
+	     * Remember that the permission description stored in the database
+	     * is an internationalized value that must be localized before it
+	     * can be returned.
+	     */
+
+	    $translator =& $gallery->getTranslator();
+	    $storage =& $gallery->getStorage();
+	    while ($result = $searchResults->nextResult()) {
+		$bits = $storage->convertBitsToInt($result[3]);
+
+		if (!isset($translator)) {
+		    return array(GalleryCoreApi::error(ERROR_UNKNOWN, '', 0), null);
+		}
+
+		list ($ret, $description) =
+		    $translator->translateDomain('modules_' . $result[0],
+						 array('text' => $result[2]));
+		if ($ret) {
+		    return array($ret->wrap(__FILE__, __LINE__), null);
+		}
+
+		$permissions[$result[1]] = array('module' => $result[0],
+						 'permission' => $result[1],
+						 'description' => $description,
+						 'bits' => (int)$bits,
+						 'flags' => (int)$result[4]);
+	    }
+	    GalleryDataCache::put($cacheKey, $permissions);
+	} else {
+	    $permissions = GalleryDataCache::get($cacheKey);
+	}
+	return array(null, $permissions);
+    }
+}
+?>

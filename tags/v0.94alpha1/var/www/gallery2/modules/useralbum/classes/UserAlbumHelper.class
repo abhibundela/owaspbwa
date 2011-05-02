@@ -1,0 +1,138 @@
+<?php
+/*
+ * $RCSfile: UserAlbumHelper.class,v $
+ *
+ * Gallery - a web based photo album viewer and editor
+ * Copyright (C) 2000-2006 Bharat Mediratta
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or (at
+ * your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+/**
+ * @package UserAlbum
+ * @version $Revision: 1.9 $ $Date: 2006/01/10 04:43:20 $
+ * @author Alan Harder <alan.harder@sun.com>
+ */
+
+/**
+ * A helper class for user albums
+ *
+ * @package UserAlbum
+ * @subpackage Classes
+ */
+class UserAlbumHelper {
+
+    /**
+     * Create a new user album
+     *
+     * @param GalleryUser new user
+     * @return object GalleryStatus a status code
+     * @static
+     */
+    function createUserAlbum($user) {
+	list ($ret, $core) = GalleryCoreApi::fetchAllPluginParameters('module', 'core');
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+	list ($ret, $module) = GalleryCoreApi::fetchAllPluginParameters('module', 'useralbum');
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	/* Create album.. */
+	$albumTitle = trim($user->getFullName());
+	if (empty($albumTitle)) {
+	    $albumTitle = $user->getUserName();
+	}
+	$albumName = $user->getUserName();
+	while (true) {
+	    list ($ret, $album) = GalleryCoreApi::createAlbum(
+		$module['targetLocation'], $albumName, $albumTitle, '', '', '');
+	    if (!$ret) {
+		break;
+	    }
+	    if ($ret->getErrorCode() & ERROR_COLLISION) {
+		$albumName .= '_';
+	    } else {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	}
+
+	list ($ret, $lockId) = GalleryCoreApi::acquireWriteLock($album->getId());
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	/* Set owner.. */
+	$album->setOwnerId($user->getId());
+	$ret = $album->save();
+	if ($ret) {
+	    GalleryCoreApi::releaseLocks($lockId);
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+	$albumId = $album->getId();
+
+	/* Set permissions.. */
+	$ret = GalleryCoreApi::removeItemPermissions($albumId);
+	if ($ret) {
+	    GalleryCoreApi::releaseLocks($lockId);
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+	$ret = GalleryCoreApi::addGroupPermission($albumId, $core['id.adminGroup'], 'core.all');
+	if ($ret) {
+	    GalleryCoreApi::releaseLocks($lockId);
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+	$ret = GalleryCoreApi::addUserPermission($albumId, $user->getId(), 'core.all');
+	if ($ret) {
+	    GalleryCoreApi::releaseLocks($lockId);
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	$viewPermissions = $module['fullSize'] ? array('core.viewAll')
+					       : array('core.view', 'core.viewResizes');
+	switch ($module['view']) {
+	case 'everybody':
+	    $groupId = $core['id.everybodyGroup'];
+	    break;
+	case 'allusers':
+	    $groupId = $core['id.allUserGroup'];
+	    break;
+	}
+	if (isset($groupId)) {
+	    foreach ($viewPermissions as $permission) {
+		$ret = GalleryCoreApi::addGroupPermission($albumId, $groupId, $permission);
+		if ($ret) {
+		    GalleryCoreApi::releaseLocks($lockId);
+		    return $ret->wrap(__FILE__, __LINE__);
+		}
+	    }
+	}
+
+	$ret = GalleryCoreApi::releaseLocks($lockId);
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	/* Record id of album */
+	$ret = GalleryCoreApi::setPluginParameter(
+			       'module', 'useralbum', 'albumId', $albumId, $user->getId());
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	return null;
+    }
+}
+?>

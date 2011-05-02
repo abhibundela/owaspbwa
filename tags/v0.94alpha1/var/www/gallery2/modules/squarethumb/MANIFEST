@@ -1,0 +1,93 @@
+# File crc32 crc32(crlf) size size(crlf)  or  R File
+modules/squarethumb/CantActivate.inc	2107630146	4042152699	1438	1484
+modules/squarethumb/SquareThumbSiteAdmin.inc	3959099560	3963814886	3086	3188
+modules/squarethumb/classes/SquareThumbToolkit.class	1005952090	1222460847	10893	11189
+modules/squarethumb/locale/af/LC_MESSAGES/modules_squarethumb.mo	2880722108	2880722108	1991	1991
+modules/squarethumb/locale/cs/LC_MESSAGES/modules_squarethumb.mo	254912331	254912331	2072	2072
+modules/squarethumb/locale/de/LC_MESSAGES/modules_squarethumb.mo	364523253	364523253	1969	1969
+modules/squarethumb/locale/en_GB/LC_MESSAGES/modules_squarethumb.mo	2911262139	2911262139	840	840
+modules/squarethumb/locale/eu/LC_MESSAGES/modules_squarethumb.mo	3794545941	3794545941	1916	1916
+modules/squarethumb/locale/fr/LC_MESSAGES/modules_squarethumb.mo	28685919	28685919	2027	2027
+modules/squarethumb/locale/is/LC_MESSAGES/modules_squarethumb.mo	1839698618	1839698618	428	428
+modules/squarethumb/locale/it/LC_MESSAGES/modules_squarethumb.mo	601176862	601176862	2012	2012
+modules/squarethumb/locale/ja/LC_MESSAGES/modules_squarethumb.mo	3881312510	3881312510	1597	1597
+modules/squarethumb/locale/nl/LC_MESSAGES/modules_squarethumb.mo	214289566	214289566	1900	1900
+modules/squarethumb/locale/no/LC_MESSAGES/modules_squarethumb.mo	3332645818	3332645818	1988	1988
+modules/squarethumb/locale/pl/LC_MESSAGES/modules_squarethumb.mo	1875920760	1875920760	2071	2071
+modules/squarethumb/locale/ru/LC_MESSAGES/modules_squarethumb.mo	1315136760	1315136760	2586	2586
+modules/squarethumb/locale/sr/LC_MESSAGES/modules_squarethumb.mo	2839128905	2839128905	1987	1987
+modules/squarethumb/locale/sv/LC_MESSAGES/modules_squarethumb.mo	1030069676	1030069676	2075	2075
+modules/squarethumb/locale/tr/LC_MESSAGES/modules_squarethumb.mo	859914566	859914566	1970	1970
+modules/squarethumb/locale/zh_CN/LC_MESSAGES/modules_squarethumb.mo	864898568	864898568	1823	1823
+modules/squarethumb/locale/zh_TW/LC_MESSAGES/modules_squarethumb.mo	4284907234	4284907234	1845	1845
+modules/squarethumb/module.inc	3241249487	1196936122	7978	8239
+modules/squarethumb/po/GNUmakefile	1866879166	2808215985	98	103
+modules/squarethumb/po/af.po	2019069735	3022898523	2853	2936
+modules/squarethumb/po/cs.po	3680937852	3816664877	2941	3032
+modules/squarethumb/po/de.po	4025859633	1753354300	3052	3147
+modules/squarethumb/po/en_GB.po	3927193980	4272697686	2732	2819
+modules/squarethumb/po/eu.po	3207655074	1694495978	2762	2847
+modules/squarethumb/po/fr.po	2255624190	1194389306	2878	2964
+modules/squarethumb/po/is.po	1886903635	3470832331	2176	2259
+modules/squarethumb/po/it.po	1980749388	4188747759	2842	2922
+modules/squarethumb/po/ja.po	187424752	2444818469	2645	2728
+modules/squarethumb/po/nl.po	3329267497	3140074692	2869	2958
+modules/squarethumb/po/no.po	2232594614	4088565839	2937	3020
+modules/squarethumb/po/pl.po	965235912	835521278	2907	2988
+modules/squarethumb/po/ru.po	3899784400	3179950347	3541	3626
+modules/squarethumb/po/sr.po	2489774396	1101908875	2830	2914
+modules/squarethumb/po/strings.raw	2799001304	2894071438	939	962
+modules/squarethumb/po/sv.po	3002304246	3945213378	3099	3194
+modules/squarethumb/po/tr.po	1465193744	775915196	2951	3037
+modules/squarethumb/po/zh_CN.po	3080594863	4080404037	2661	2742
+modules/squarethumb/po/zh_TW.po	1640764858	3430666232	2701	2788
+modules/squarethumb/templates/CantActivate.tpl	1554370124	1297865727	776	792
+modules/squarethumb/templates/SquareThumbSiteAdmin.tpl	2761422534	3566289174	1948	2010
+R	modules/squarethumb/locale/cs_CZ/LC_MESSAGES/modules_squarethumb.mo
+R	modules/squarethumb/locale/cs_CZ/LC_MESSAGES
+R	modules/squarethumb/locale/cs_CZ
+R	modules/squarethumb/locale/de_DE/LC_MESSAGES/modules_squarethumb.mo
+R	modules/squarethumb/locale/de_DE/LC_MESSAGES
+R	modules/squarethumb/locale/de_DE
+R	modules/squarethumb/locale/fr_FR/LC_MESSAGES/modules_squarethumb.mo
+R	modules/squarethumb/locale/fr_FR/LC_MESSAGES
+R	modules/squarethumb/locale/fr_FR
+R	modules/squarethumb/locale/is_IS/LC_MESSAGES/modules_squarethumb.mo
+R	modules/squarethumb/locale/is_IS/LC_MESSAGES
+R	modules/squarethumb/locale/is_IS
+R	modules/squarethumb/locale/it_IT/LC_MESSAGES/modules_squarethumb.mo
+R	modules/squarethumb/locale/it_IT/LC_MESSAGES
+R	modules/squarethumb/locale/it_IT
+R	modules/squarethumb/locale/ja_JP/LC_MESSAGES/modules_squarethumb.mo
+R	modules/squarethumb/locale/ja_JP/LC_MESSAGES
+R	modules/squarethumb/locale/ja_JP
+R	modules/squarethumb/locale/nl_NL/LC_MESSAGES/modules_squarethumb.mo
+R	modules/squarethumb/locale/nl_NL/LC_MESSAGES
+R	modules/squarethumb/locale/nl_NL
+R	modules/squarethumb/locale/no_NO/LC_MESSAGES/modules_squarethumb.mo
+R	modules/squarethumb/locale/no_NO/LC_MESSAGES
+R	modules/squarethumb/locale/no_NO
+R	modules/squarethumb/locale/ru_RU/LC_MESSAGES/modules_squarethumb.mo
+R	modules/squarethumb/locale/ru_RU/LC_MESSAGES
+R	modules/squarethumb/locale/ru_RU
+R	modules/squarethumb/locale/sr_YU/LC_MESSAGES/modules_squarethumb.mo
+R	modules/squarethumb/locale/sr_YU/LC_MESSAGES
+R	modules/squarethumb/locale/sr_YU
+R	modules/squarethumb/locale/sv_SE/LC_MESSAGES/modules_squarethumb.mo
+R	modules/squarethumb/locale/sv_SE/LC_MESSAGES
+R	modules/squarethumb/locale/sv_SE
+R	modules/squarethumb/locale/tr_TR/LC_MESSAGES/modules_squarethumb.mo
+R	modules/squarethumb/locale/tr_TR/LC_MESSAGES
+R	modules/squarethumb/locale/tr_TR
+R	modules/squarethumb/po/cs_CZ.po
+R	modules/squarethumb/po/de_DE.po
+R	modules/squarethumb/po/fr_FR.po
+R	modules/squarethumb/po/is_IS.po
+R	modules/squarethumb/po/it_IT.po
+R	modules/squarethumb/po/ja_JP.po
+R	modules/squarethumb/po/nl_NL.po
+R	modules/squarethumb/po/no_NO.po
+R	modules/squarethumb/po/ru_RU.po
+R	modules/squarethumb/po/sr_YU.po
+R	modules/squarethumb/po/sv_SE.po
+R	modules/squarethumb/po/tr_TR.po
