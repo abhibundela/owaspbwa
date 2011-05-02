@@ -6,7 +6,7 @@ chown -R www-data:www-data /owaspbwa/owaspbwa-svn/var/lib/awstats
 echo ".: Fixing MySQL Permissions:."
 chown -R mysql:mysql /owaspbwa/owaspbwa-svn/var/lib/mysql
 echo ".: Fixing PostgreSQL Permissions:."
-chown -R postgres:postgres /owaspbwa/owaspbwa-svn/var/lib/postgres
+chown -R postgres:postgres /owaspbwa/owaspbwa-svn/var/lib/postgresql
 echo ".: Fixing Tomcat Permissions :."
 chown -R tomcat6:tomcat6 /owaspbwa/owaspbwa-svn/var/lib/tomcat6
 owaspbwa-services-start.sh
