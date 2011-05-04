@@ -11,6 +11,11 @@
 #
 # By default this script does nothing.
 
+# start gruyere (runs on port 8008)
+python /owaspbwa/gruyere/gruyere.py &
+
+# display some info to the user
+
 /usr/local/bin/rc.local-owaspbwa-info.sh > /dev/tty1 # output to first virtual console
 
 exit 0
