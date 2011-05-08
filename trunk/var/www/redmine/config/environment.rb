@@ -58,3 +58,6 @@ Rails::Initializer.run do |config|
     instance_eval File.read(File.join(File.dirname(__FILE__), 'additional_environment.rb'))
   end
 end
+
+#added this to work with owaspbwa from http://www.redmine.org/projects/redmine/wiki/HowTo_Install_Redmine_in_a_sub-URI
+Redmine::Utils::relative_url_root = "/redmine"
