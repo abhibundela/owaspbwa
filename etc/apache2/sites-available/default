@@ -58,13 +58,13 @@
     </Directory> 
 
     #Added for redmine
-    #PassengerRoot /usr/lib/ruby/gems/1.8/gems/passenger-2.1.3
-    PassengerDefaultUser www-data
-    PassengerRuby /usr/bin/ruby
+    RailsEnv production
     RailsBaseURI /redmine
-    PassengerAppRoot /redmine
-    <Directory "/var/www/redmine">
-      Options -MultiViews
-    </Directory> 
-
+    PassengerDefaultUser www-data
+    #PassengerRoot /usr/local/lib/ruby/gems/1.8/gems/passenger-3.0.2
+    PassengerRuby /usr/bin/ruby
+    PassengerAppRoot /var/www/redmine
+    <Directory /var/www/redmine>
+        Options -MultiViews
+    </Directory>
 </VirtualHost>
