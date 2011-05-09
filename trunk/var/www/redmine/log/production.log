@@ -2918,3 +2918,1763 @@ ActionController::RoutingError (No route matches "/stylesheets/jstoolbar.css" wi
   /usr/lib/phusion_passenger/passenger-spawn-server:61
 
 Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing WelcomeController#index (for 192.168.2.139 at 2011-05-08 20:16:01) [GET]
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering template within layouts/base
+Rendering welcome/index
+Completed in 473ms (View: 88, DB: 16) | 200 OK [http://192.168.2.144/redmine]
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:16:02) [GET]
+  Parameters: {"1276988575"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:16:03) [GET]
+  Parameters: {"1235214290"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:16:03) [GET]
+  Parameters: {"1221671885"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/jstoolbar.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:16:03) [GET]
+  Parameters: {"1235214290"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:16:03) [GET]
+  Parameters: {"1276988581"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/application.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:16:03) [GET]
+  Parameters: {"1235214290"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:16:03) [GET]
+  Parameters: {"1235214290"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:16:03) [GET]
+  Parameters: {"1235214290"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:16:04) [GET]
+  Parameters: {"1235214290"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:16:04) [GET]
+  Parameters: {"1276988581"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/application.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:16:04) [GET]
+  Parameters: {"1221671885"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/jstoolbar.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing NewsController#index to atom (for 192.168.2.139 at 2011-05-08 20:17:50) [GET]
+  Parameters: {"format"=>"atom", "action"=>"index", "controller"=>"news", "key"=>"81f8b7e9ae84cf3afdf7d1422187352710be9f8e"}
+Rendering common/feed.atom.rxml
+Completed in 94ms (View: 21, DB: 12) | 200 OK [http://192.168.2.144/redmine/news.atom?key=81f8b7e9ae84cf3afdf7d1422187352710be9f8e]
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:18:24) [GET]
+  Parameters: {"1221671885"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/jstoolbar.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:18:31) [GET]
+  Parameters: {"1221671885"=>nil}
+
+ActionController::RoutingError (No route matches "/redmine/stylesheets/jstoolbar.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:18:59) [GET]
+
+ActionController::RoutingError (No route matches "/redmine/stylesheets/jstoolbar.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:19:04) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jstoolbar.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing WelcomeController#index (for 192.168.2.139 at 2011-05-08 20:25:19) [GET]
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering template within layouts/base
+Rendering welcome/index
+Completed in 373ms (View: 265, DB: 15) | 200 OK [http://192.168.2.144/redmine]
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:25:20) [GET]
+  Parameters: {"1276988575"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:25:20) [GET]
+  Parameters: {"1235214290"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:25:21) [GET]
+  Parameters: {"1221671885"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/jstoolbar.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:25:20) [GET]
+  Parameters: {"1235214290"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:25:21) [GET]
+  Parameters: {"1276988581"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/application.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:25:21) [GET]
+  Parameters: {"1235214290"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:25:21) [GET]
+  Parameters: {"1235214290"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:25:21) [GET]
+  Parameters: {"1235214290"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:25:21) [GET]
+  Parameters: {"1235214290"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:25:21) [GET]
+  Parameters: {"1276988581"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/application.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:25:21) [GET]
+  Parameters: {"1221671885"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/jstoolbar.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing WelcomeController#index (for 192.168.2.139 at 2011-05-08 20:25:24) [GET]
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering template within layouts/base
+Rendering welcome/index
+Completed in 162ms (View: 83, DB: 13) | 200 OK [http://192.168.2.144/redmine]
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:25:25) [GET]
+  Parameters: {"1276988575"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:25:25) [GET]
+  Parameters: {"1235214290"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:25:25) [GET]
+  Parameters: {"1221671885"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/jstoolbar.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:25:25) [GET]
+  Parameters: {"1235214290"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:25:25) [GET]
+  Parameters: {"1276988581"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/application.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:25:25) [GET]
+  Parameters: {"1235214290"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:25:25) [GET]
+  Parameters: {"1235214290"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:25:26) [GET]
+  Parameters: {"1235214290"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:25:26) [GET]
+  Parameters: {"1235214290"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:25:26) [GET]
+  Parameters: {"1276988581"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/application.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:25:26) [GET]
+  Parameters: {"1221671885"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/jstoolbar.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing WelcomeController#index (for 192.168.2.139 at 2011-05-08 20:28:31) [GET]
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering template within layouts/base
+Rendering welcome/index
+Completed in 196ms (View: 112, DB: 14) | 200 OK [http://192.168.2.144/redmine]
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:28:32) [GET]
+  Parameters: {"1276988575"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:28:32) [GET]
+  Parameters: {"1235214290"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:28:32) [GET]
+  Parameters: {"1276988581"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/application.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:28:32) [GET]
+  Parameters: {"1235214290"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:28:32) [GET]
+  Parameters: {"1235214290"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:28:32) [GET]
+  Parameters: {"1235214290"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:28:32) [GET]
+  Parameters: {"1221671885"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/jstoolbar.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:28:32) [GET]
+  Parameters: {"1235214290"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:28:32) [GET]
+  Parameters: {"1235214290"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:28:32) [GET]
+  Parameters: {"1276988581"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/application.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 192.168.2.139 at 2011-05-08 20:28:32) [GET]
+  Parameters: {"1221671885"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/jstoolbar.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/utils.rb:184:in `safe_fork'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:163:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /usr/lib/ruby/1.8/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /usr/lib/phusion_passenger/passenger-spawn-server:61
+
+Rendering /owaspbwa/owaspbwa-svn/var/www/redmine/public/404.html (404 Not Found)
+
+
+Processing WelcomeController#index (for 192.168.2.139 at 2011-05-08 20:32:08) [GET]
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering template within layouts/base
+Rendering welcome/index
+Completed in 370ms (View: 262, DB: 15) | 200 OK [http://192.168.2.144/redmine]
+
+
+Processing AccountController#logout (for 192.168.2.139 at 2011-05-08 20:32:38) [GET]
+  Parameters: {"action"=>"logout", "controller"=>"account"}
+Redirected to http://192.168.2.144/redmine/
+Completed in 49ms (DB: 27) | 302 Found [http://192.168.2.144/redmine/logout]
+
+
+Processing WelcomeController#index (for 192.168.2.139 at 2011-05-08 20:32:38) [GET]
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering template within layouts/base
+Rendering welcome/index
+Completed in 111ms (View: 37, DB: 42) | 200 OK [http://192.168.2.144/redmine/]
+
+
+Processing ProjectsController#index (for 192.168.2.139 at 2011-05-08 20:32:41) [GET]
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/index
+Completed in 67ms (View: 43, DB: 5) | 200 OK [http://192.168.2.144/redmine/projects]
+
+
+Processing AccountController#login (for 192.168.2.139 at 2011-05-08 20:32:43) [GET]
+  Parameters: {"action"=>"login", "controller"=>"account"}
+Rendering template within layouts/base
+Rendering account/login
+Completed in 50ms (View: 40, DB: 3) | 200 OK [http://192.168.2.144/redmine/login]
+
+
+Processing AccountController#login (for 192.168.2.139 at 2011-05-08 20:32:47) [POST]
+  Parameters: {"back_url"=>"http%3A%2F%2F192.168.2.144%2Fredmine%2Fprojects", "action"=>"login", "authenticity_token"=>"GbUg9Pz6oaSzjoyx5HiveWHfyT36VfY4++xCtUMYMgw=", "username"=>"admin", "controller"=>"account", "password"=>"[FILTERED]", "login"=>"Login \302\273"}
+Redirected to http://192.168.2.144/redmine/projects
+Completed in 58ms (DB: 28) | 302 Found [http://192.168.2.144/redmine/login]
+
+
+Processing ProjectsController#index (for 192.168.2.139 at 2011-05-08 20:32:47) [GET]
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/index
+Completed in 50ms (View: 39, DB: 3) | 200 OK [http://192.168.2.144/redmine/projects]
+
+
+Processing AdminController#index (for 192.168.2.139 at 2011-05-08 20:32:50) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 108ms (View: 80, DB: 3) | 200 OK [http://192.168.2.144/redmine/admin]
+
+
+Processing MyController#page (for 192.168.2.139 at 2011-05-08 20:32:57) [GET]
+  Parameters: {"action"=>"page", "controller"=>"my"}
+Rendering template within layouts/base
+Rendering my/page
+Completed in 233ms (View: 159, DB: 55) | 200 OK [http://192.168.2.144/redmine/my/page]
+
+
+Processing ProjectsController#index (for 192.168.2.139 at 2011-05-08 20:33:00) [GET]
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/index
+Completed in 43ms (View: 31, DB: 3) | 200 OK [http://192.168.2.144/redmine/projects]
+
+
+Processing ProjectsController#add (for 192.168.2.139 at 2011-05-08 20:33:02) [GET]
+  Parameters: {"action"=>"add", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/add
+Completed in 198ms (View: 106, DB: 36) | 200 OK [http://192.168.2.144/redmine/projects/new]
+
+
+Processing ProjectsController#add (for 192.168.2.139 at 2011-05-08 20:33:54) [POST]
+  Parameters: {"enabled_modules"=>["issue_tracking", "time_tracking", "news", "documents", "files", "wiki", "repository", "boards"], "commit"=>"Save", "action"=>"add", "authenticity_token"=>"iDAbrm8DsgXpdrwwsPIZvnd/y7ZbRxF/4YozgFNB6h4=", "project"=>{"name"=>"OwaspBWA", "tracker_ids"=>["1", "2", "3", ""], "homepage"=>"https://www.owasp.org/index.php/OWASP_Broken_Web_Applications_Project", "is_public"=>"1", "description"=>"OWASP Broken Web Applications Project", "identifier"=>"OwaspBWA"}, "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/add
+Completed in 306ms (View: 180, DB: 72) | 200 OK [http://192.168.2.144/redmine/projects/new]
+
+
+Processing ProjectsController#add (for 192.168.2.139 at 2011-05-08 20:34:06) [POST]
+  Parameters: {"enabled_modules"=>["issue_tracking", "time_tracking", "news", "documents", "files", "wiki", "repository", "boards"], "commit"=>"Save", "action"=>"add", "authenticity_token"=>"iDAbrm8DsgXpdrwwsPIZvnd/y7ZbRxF/4YozgFNB6h4=", "project"=>{"name"=>"OwaspBWA", "tracker_ids"=>["1", "2", "3", ""], "homepage"=>"https://www.owasp.org/index.php/OWASP_Broken_Web_Applications_Project", "is_public"=>"1", "description"=>"OWASP Broken Web Applications Project", "identifier"=>"owasp-bwa"}, "controller"=>"projects"}
+Redirected to http://192.168.2.144/redmine/projects/owasp-bwa/settings
+Completed in 522ms (DB: 178) | 302 Found [http://192.168.2.144/redmine/projects/new]
+
+
+Processing ProjectsController#settings (for 192.168.2.139 at 2011-05-08 20:34:07) [GET]
+  Parameters: {"action"=>"settings", "id"=>"owasp-bwa", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/settings
+Completed in 421ms (View: 335, DB: 51) | 200 OK [http://192.168.2.144/redmine/projects/owasp-bwa/settings]
+
+
+Processing ProjectsController#show (for 192.168.2.139 at 2011-05-08 20:34:23) [GET]
+  Parameters: {"action"=>"show", "id"=>"owasp-bwa", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/show
+Completed in 338ms (View: 225, DB: 40) | 200 OK [http://192.168.2.144/redmine/projects/owasp-bwa]
+
+
+Processing AccountController#logout (for 192.168.2.139 at 2011-05-08 20:34:25) [GET]
+  Parameters: {"action"=>"logout", "controller"=>"account"}
+Redirected to http://192.168.2.144/redmine/
+Completed in 12ms (DB: 2) | 302 Found [http://192.168.2.144/redmine/logout]
+
+
+Processing WelcomeController#index (for 192.168.2.139 at 2011-05-08 20:34:25) [GET]
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering template within layouts/base
+Rendering welcome/index
+Completed in 60ms (View: 31, DB: 7) | 200 OK [http://192.168.2.144/redmine/]
+
+
+Processing AccountController#login (for 192.168.2.139 at 2011-05-08 20:34:29) [GET]
+  Parameters: {"action"=>"login", "controller"=>"account"}
+Rendering template within layouts/base
+Rendering account/login
+Completed in 35ms (View: 26, DB: 2) | 200 OK [http://192.168.2.144/redmine/login]
+
+
+Processing AccountController#login (for 192.168.2.139 at 2011-05-08 20:34:32) [POST]
+  Parameters: {"back_url"=>"http%3A%2F%2F192.168.2.144%2Fredmine%2F", "action"=>"login", "authenticity_token"=>"4cAQ9sR3BDzNY5ES334ctbmEQyOsTR7OoPIS9EuWupk=", "username"=>"admin", "controller"=>"account", "password"=>"[FILTERED]", "login"=>"Login \302\273"}
+Redirected to http://192.168.2.144/redmine/
+Completed in 19ms (DB: 4) | 302 Found [http://192.168.2.144/redmine/login]
+
+
+Processing WelcomeController#index (for 192.168.2.139 at 2011-05-08 20:34:32) [GET]
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering template within layouts/base
+Rendering welcome/index
+Completed in 58ms (View: 37, DB: 6) | 200 OK [http://192.168.2.144/redmine/]
+
+
+Processing AdminController#index (for 192.168.2.139 at 2011-05-08 20:34:35) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 46ms (View: 35, DB: 3) | 200 OK [http://192.168.2.144/redmine/admin]
+
+
+Processing AdminController#info (for 192.168.2.139 at 2011-05-08 20:34:42) [GET]
+  Parameters: {"action"=>"info", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/info
+Completed in 104ms (View: 92, DB: 3) | 200 OK [http://192.168.2.144/redmine/admin/info]
+
+
+Processing AdminController#index (for 192.168.2.139 at 2011-05-08 20:37:07) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 47ms (View: 35, DB: 4) | 200 OK [http://192.168.2.144/redmine/admin]
+
+
+Processing ProjectsController#index (for 192.168.2.139 at 2011-05-08 20:37:08) [GET]
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/index
+Completed in 57ms (View: 42, DB: 5) | 200 OK [http://192.168.2.144/redmine/projects]
+
+
+Processing WelcomeController#index (for 192.168.2.139 at 2011-05-08 20:37:11) [GET]
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering template within layouts/base
+Rendering welcome/index
+Completed in 57ms (View: 36, DB: 6) | 200 OK [http://192.168.2.144/redmine/]
+
+
+Processing MyController#page (for 192.168.2.139 at 2011-05-08 20:37:15) [GET]
+  Parameters: {"action"=>"page", "controller"=>"my"}
+Rendering template within layouts/base
+Rendering my/page
+Completed in 86ms (View: 64, DB: 14) | 200 OK [http://192.168.2.144/redmine/my/page]
+
+
+Processing ProjectsController#index (for 192.168.2.139 at 2011-05-08 20:37:16) [GET]
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/index
+Completed in 55ms (View: 41, DB: 5) | 200 OK [http://192.168.2.144/redmine/projects]
+
+
+Processing AdminController#index (for 192.168.2.139 at 2011-05-08 20:37:19) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 44ms (View: 34, DB: 3) | 200 OK [http://192.168.2.144/redmine/admin]
+
+
+Processing EnumerationsController#index (for 192.168.2.139 at 2011-05-08 20:37:24) [GET]
+  Parameters: {"action"=>"index", "controller"=>"enumerations"}
+Rendering template within layouts/admin
+Rendering enumerations/list
+Completed in 544ms (View: 509, DB: 22) | 200 OK [http://192.168.2.144/redmine/enumerations]
+
+
+Processing ProjectsController#index (for 192.168.2.139 at 2011-05-08 20:37:30) [GET]
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/index
+Completed in 59ms (View: 44, DB: 5) | 200 OK [http://192.168.2.144/redmine/projects]
+
+
+Processing AdminController#index (for 192.168.2.139 at 2011-05-08 20:37:32) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 46ms (View: 36, DB: 3) | 200 OK [http://192.168.2.144/redmine/admin]
+
+
+Processing SettingsController#index (for 192.168.2.139 at 2011-05-08 20:37:34) [GET]
+  Parameters: {"action"=>"index", "controller"=>"settings"}
+Rendering template within layouts/admin
+Rendering settings/edit
+Completed in 388ms (View: 339, DB: 35) | 200 OK [http://192.168.2.144/redmine/settings]
+
+
+Processing SettingsController#edit (for 192.168.2.139 at 2011-05-08 20:38:39) [POST]
+  Parameters: {"commit"=>"Save", "action"=>"edit", "authenticity_token"=>"3qraES03PjoXIDHmuvtoHM/4+V4H4Qk6NkPDUFCQVw4=", "settings"=>{"wiki_compression"=>"", "text_formatting"=>"textile", "host_name"=>"owaspbwa/redmine", "diff_max_lines_displayed"=>"1500", "protocol"=>"http", "file_max_size_displayed"=>"512", "per_page_options"=>"25,50,100", "feeds_limit"=>"15", "attachment_max_size"=>"5120", "app_title"=>"OwaspBWA - Redmine", "activity_days_default"=>"30", "welcome_text"=>"Welcome to the 0.9.6 install of Redmine (Via passenger and postgresql)"}, "controller"=>"settings"}
+Redirected to http://192.168.2.144/redmine/settings/edit
+Completed in 179ms (DB: 87) | 302 Found [http://192.168.2.144/redmine/settings/edit]
+
+
+Processing SettingsController#edit (for 192.168.2.139 at 2011-05-08 20:38:39) [GET]
+  Parameters: {"action"=>"edit", "controller"=>"settings"}
+Settings cache cleared.
+Rendering template within layouts/admin
+Rendering settings/edit
+Completed in 490ms (View: 432, DB: 51) | 200 OK [http://192.168.2.144/redmine/settings/edit]
+
+
+Processing WelcomeController#index (for 192.168.2.139 at 2011-05-08 20:39:09) [GET]
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering template within layouts/base
+Rendering welcome/index
+Completed in 59ms (View: 38, DB: 6) | 200 OK [http://192.168.2.144/redmine/]
