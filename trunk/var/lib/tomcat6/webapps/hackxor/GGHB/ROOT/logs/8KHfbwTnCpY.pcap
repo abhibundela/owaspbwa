@@ -1,0 +1,260 @@
+01:23:41.008274 IP xor.x.52193 > wraithmail.webcache: Flags [P.], seq 3187848448:3187848970, ack 3136342464, win 92, options [nop,nop,TS val 676072 ecr 290906], length 522
+E..>..@.@......f...g...............\IO.....
+.
+P...pZGET /htmlisland.jsp?messageid=5617985071009432495 HTTP/1.1
+Host: wraithbox:8080
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.2.13) Gecko/20110103 Fedora/3.6.13-1.fc14 Firefox/3.6.13
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Connection: keep-alive
+Referer: http://wraithmail:8080/mail.jsp
+Cookie: JSESSIONID=30F0AB173668E7BE2BE65D54C8107E68
+
+
+01:23:41.023156 IP wraithmail.webcache > xor.x.52193: Flags [P.], seq 1:1342, ack 522, win 215, options [nop,nop,TS val 290921 ecr 676072], length 1341
+E..q..@.@......g...f...........
+.....g.....
+..pi.
+P.HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Content-Type: text/html
+Content-Length: 1211
+Date: Tue, 01 Feb 2011 01:23:39 GMT
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+
+
+<title>Welcome to WRAITHMAIL</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="wraithmail.css" />
+</head>
+
+<body>
+<div id="wrapper">
+<div id="header">
+<a href="http://wraithmail:8080/mail.jsp"><img src="wraith.png" alt="Thursday" class="logo3" width="468" height="60" /> </a>
+</div>
+
+<div id="quote">
+
+<p class="floatmid alignmid">
+<br><br>
+The premier communications solution for discrete users.
+</p>
+<div id="linkbar">
+<ul class="linklist">
+<li><a href="http://wraithmail:8080/send.jsp">Compose</a><br></li>
+<li><a href="http://wraithmail:8080/mail.jsp">Inbox</a><br></li>
+</ul>
+</div>
+</div>
+<div id="mainmid">
+<center>
+<br><br><br><br></center><p><b>To</b> <a href='http://wraithbox:8080/profile.jsp?userID=thursday'>thursday@wraithmail.net</a><br><b>From</b> watchman@cloaknet<br><b>Subject</b> [Watchman] Activity alert on cloaknet<br><br>New activity logged to http://127.0.0.3:16729/6624817.pcap<br>Brought to you by Watchman. Every hacker's dream, every sysadmin's nightmare.<br>
+
+
+
+
+
+</center>
+</div>
+</body>
+</html>
+
+01:23:44.102296 IP xor.x.52193 > wraithmail.webcache: Flags [P.], seq 522:1057, ack 1342, win 137, options [nop,nop,TS val 679166 ecr 290921], length 535
+E..K..@.@..s...f...g.......
+........#......
+.
+\...piGET /favicon.ico HTTP/1.1
+Host: wraithbox:8080
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.2.13) Gecko/20110103 Fedora/3.6.13-1.fc14 Firefox/3.6.13
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Connection: keep-alive
+Cookie: JSESSIONID=30F0AB173668E7BE2BE65D54C8107E68
+If-Modified-Since: Tue, 01 Feb 2011 00:31:03 GMT
+If-None-Match: W/"318-1296520263000"
+
+
+01:23:44.105565 IP wraithmail.webcache > xor.x.52193: Flags [P.], seq 1342:1464, ack 1057, win 248, options [nop,nop,TS val 294004 ecr 679166], length 122
+E.....@.@......g...f...........!...........
+..|t.
+\.HTTP/1.1 304 Not Modified
+Server: Apache-Coyote/1.1
+ETag: W/"318-1296520263000"
+Date: Tue, 01 Feb 2011 01:23:43 GMT
+
+
+01:23:49.004381 IP xor.x.52194 > wraithmail.webcache: Flags [P.], seq 3314078924:3314079446, ack 3261511395, win 92, options [nop,nop,TS val 684068 ecr 298902], length 522
+E..>..@.@......f...g.........f.....\^h.....
+.
+p$....GET /send.jsp HTTP/1.1
+Host: wraithmail:8080
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.2.13) Gecko/20110103 Fedora/3.6.13-1.fc14 Firefox/3.6.13
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Connection: keep-alive
+Referer: http://wraithbox:8080/htmlisland.jsp?messageid=5617985071009432495
+Cookie: JSESSIONID=B0B2504BABB280EA754A2B26B0FCD681
+
+
+01:23:49.006649 IP wraithmail.webcache > xor.x.52194: Flags [.], seq 1:1449, ack 522, win 215, options [nop,nop,TS val 298905 ecr 684068], length 1448
+E...9v@.@.y....g...f.....f.................
+.....
+p$HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Content-Type: text/html
+Content-Length: 1527
+Date: Tue, 01 Feb 2011 01:23:47 GMT
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+
+
+<title>Welcome to WRAITHMAIL</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="wraithmail.css" />
+</head>
+
+<body>
+<div id="wrapper">
+<div id="header">
+<a href="index.jsp"><img src="wraith.png" alt="Thursday" class="logo3" width="468" height="60" /> </a>
+</div>
+
+<div id="quote">
+
+<p class="floatmid alignmid">
+<br><br>
+The premier communications solution for discrete users.
+</p>
+<div id="linkbar">
+<ul class="linklist">
+<li><a href="/send.jsp">Compose</a><br></li>
+<li><a href="/mail.jsp">Inbox</a><br></li>
+<li><a href="http://wraithbox:8080/history.jsp?id=thursday">Login history</a></li>
+</ul>
+</div>
+</div>
+<div id="mainmid">
+
+<FORM NAME="email" ID="email" METHOD=POST action="/send.jsp" >
+<p><br>
+<label for='fromAddress'>From: </label><INPUT id="fromAddress" NAME="fromAddress" TYPE='text' VALUE="thursday@wraithmail.net"> <br>
+<label for='toAddress'>To: </label><INPUT id="toAddress" NAME="toAddress" TYPE='text' VALUE="" > <br>
+<label for='subject'>Subject: </label><INPUT id="subject" NAME="subject" TYPE='text' VALUE="" > <br>
+<label for='body'>Body:</label><textarea rows="30" cols="120" id="body" name="body"></textarea> 
+01:23:49.008673 IP wraithmail.webcache > xor.x.52194: Flags [P.], seq 1449:1658, ack 522, win 215, options [nop,nop,TS val 298907 ecr 684068], length 209
+E...9w@.@.~^...g...f.....f..........M......
+.....
+p$<p>
+<center> <INPUT TYPE="submit" VALUE="Send">  </center><br>
+    </FORM>
+
+
+</tbody>
+</table>
+
+</div>
+<div id="footer">Copyright 1999-2011 Discrete Industries Ltd and related entities </div>
+
+</body>
+</html>
+
+01:24:51.543015 IP xor.x.52195 > wraithmail.webcache: Flags [P.], seq 4290852823:4290854031, ack 4248875506, win 92, options [nop,nop,TS val 746607 ecr 361441], length 1208
+E...S.@.@.`4...f...g......7..@.....\.g.....
+..do....POST /send.jsp HTTP/1.1
+Host: wraithmail:8080
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.2.13) Gecko/20110103 Fedora/3.6.13-1.fc14 Firefox/3.6.13
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Connection: keep-alive
+Referer: http://wraithmail:8080/send.jsp
+Cookie: JSESSIONID=B0B2504BABB280EA754A2B26B0FCD681
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 650
+
+fromAddress=thursday%40wraithmail.net&toAddress=66942%40wraithmail.net&subject=strange+stuff&body=Hey%2C+check+this+out.+Someone+used+the+proxy+after+me+to+take+a+potshot+at+an+unreleased+%3ca%2bhref%3d%22http%3a%2f%2futrack%3A8080%2Ftemp%2Ejsp%22%3Eutrack%3C%2Fa%3E+panel.+They+managed+to+get+the+source.+The+password+is+hard+coded+with+SHA1+to+a81b4d56b74eb9dfa8dbda18beeb5bd2a704b144%0D%0AHe+then+submitted+it+into+some+shady+hash+cracking+site%3B+http%3a%2f%2fhub71%3A8080.+Login%2FPass+ice%2Fcoupdetat+%28thanks+SSLStrip%29.+That+account%27s+botnet+clearly+isn%27t+large+enough+to+crack+it.+I+know+jacobson%40wraithmail.net+has+a+larger+botnet%2C+but+haven%27t+been+able+to+access+his+account+yet.%0D%0AWhat+do+you+think+is+going+on%3F
+01:24:54.225302 IP wraithmail.webcache > xor.x.52195: Flags [.], seq 1:1449, ack 1208, win 257, options [nop,nop,TS val 364123 ecr 746607], length 1448
+E...2.@.@......g...f.....@....<...../......
+...[..doHTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Content-Type: text/html
+Content-Length: 1644
+Date: Tue, 01 Feb 2011 01:24:53 GMT
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+
+
+<title>Welcome to WRAITHMAIL</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="wraithmail.css" />
+</head>
+
+<body>
+<div id="wrapper">
+<div id="header">
+<a href="index.jsp"><img src="wraith.png" alt="Thursday" class="logo3" width="468" height="60" /> </a>
+</div>
+
+<div id="quote">
+
+<p class="floatmid alignmid">
+<br><br>
+The premier communications solution for discrete users.
+</p>
+<div id="linkbar">
+<ul class="linklist">
+<li><a href="/send.jsp">Compose</a><br></li>
+<li><a href="/mail.jsp">Inbox</a><br></li>
+<li><a href="http://wraithbox:8080/history.jsp?id=thursday">Login history</a></li>
+</ul>
+</div>
+</div>
+<div id="mainmid">
+
+<FORM NAME="email" ID="email" METHOD=POST action="/send.jsp" >
+<p><br>
+<label for='fromAddress'>From: </label><INPUT id="fromAddress" NAME="fromAddress" TYPE='text' VALUE="thursday@wraithmail.net"> <br>
+<label for='toAddress'>To: </label><INPUT id="toAddress" NAME="toAddress" TYPE='text' VALUE="" > <br>
+<label for='subject'>Subject: </label><INPUT id="subject" NAME="subject" TYPE='text' VALUE="" > <br>
+<label for='body'>Body:</label><textarea rows="30" cols="120" id="body" name="body"></textarea> 
+01:24:54.233848 IP wraithmail.webcache > xor.x.52195: Flags [P.], seq 1449:1775, ack 1208, win 257, options [nop,nop,TS val 364132 ecr 746607], length 326
+E..z2.@.@..N...g...f.....@....<......J.....
+...d..do<p>
+<center> <INPUT TYPE="submit" VALUE="Send">  </center><br>
+    </FORM>
+
+Message succesfully sent
+<a href='http://wraithbox:8080/htmlisland.jsp?messageid=524424128-1680070471'>View here</a>
+
+</tbody>
+</table>
+
+</div>
+<div id="footer">Copyright 1999-2011 Discrete Industries Ltd and related entities </div>
+
+</body>
+</html>
+
+
