@@ -58,14 +58,14 @@
     </Directory> 
 
     #Added for redmine
-    RailsEnv production
-    RailsBaseURI /redmine
-    PassengerDefaultUser www-data
+#    RailsEnv production
+#    RailsBaseURI /redmine
+#    PassengerDefaultUser www-data
     #PassengerRoot /usr/local/lib/ruby/gems/1.8/gems/passenger-3.0.2
-    PassengerRuby /usr/bin/ruby
-    PassengerAppRoot /var/www/redmine
-    Alias /redmine /owaspbwa/owaspbwa-svn/var/www/redmine/public
-    <Directory /var/www/redmine>
-        Options -MultiViews
-    </Directory>
+#    PassengerRuby /usr/bin/ruby
+#    PassengerAppRoot /var/www/redmine
+#    Alias /redmine /owaspbwa/owaspbwa-svn/var/www/redmine/public
+#    <Directory /var/www/redmine>
+#        Options -MultiViews
+#    </Directory>
 </VirtualHost>
