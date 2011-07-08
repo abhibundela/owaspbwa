@@ -39,6 +39,7 @@ animatedcollapse.addDiv('awstats', 'fade=1,height=100px')
 animatedcollapse.addDiv('redmine', 'fade=1,height=140px')
 animatedcollapse.addDiv('gruyere', 'fade=1,height=140px')
 animatedcollapse.addDiv('hackxor', 'fade=1,height=140px')
+animatedcollapse.addDiv('WackoPicko', 'fade=1,height=270px')
 animatedcollapse.ontoggle=function($, divobj, state){ //fires each time a DIV is expanded/contracted
 	//$: Access to jQuery
 	//divobj: DOM reference to DIV being expanded/ collapsed. Use "divobj.id" to get its ID
@@ -133,8 +134,18 @@ The following vulnerable web applications are running on the VM (listed in no pa
 	<b>Language: </b>Java (jsp)<br />
 	<b>Link: </b><a href="http://hackxor.sourceforge.net/cgi-bin/index.pl">home page</a><br />
 	<b>Vulnerabilities: </b><a href="http://owaspbwa/vuln_list.html#Hackxor">Vulnerabilities</a></div></td></tr>
+	<tr><td ><a href="javascript:animatedcollapse.toggle('WackoPicko')"><img src="images/Knob_Add.png" width="20px" height="20px" border="0" /></a><a href="WackoPicko">WackoPicko</a>
+	<div id="WackoPicko" style="width: 400px; background: #D2FBFF; display:none">
+	<b>Language: </b>PHP<br />
+	<b>User Credentials (username/password): </b>scanner1/scanner1<br />
+	<b>User Credentials (username/password): </b>scanner2/scanner2<br />
+	<b>User Credentials (username/password): </b>bryce/bryce<br />
+	<b>Admin Credentials (username/password): </b>admin/admin<br />
+	<b>Admin Credentials (username/password): </b>adamd/adamd<br />
+	<b>Release Date: </b>May 17, 2011<br />
+	<b>Link: </b><a href="https://github.com/adamdoupe/WackoPicko">home page</a><br />
+	<b>Vulnerabilities: </b><a href="http://owaspbwa/vuln_list.html#wackopicko">Vulnerabilities</a></div></td></tr>
 </table>
-
 <p>
 <table>
 <tr><th><h4>Old (Vulnerable) Versions of Real Applications</h4></th></tr>
