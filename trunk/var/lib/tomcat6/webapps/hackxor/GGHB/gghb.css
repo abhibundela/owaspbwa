@@ -1,0 +1,125 @@
+body{
+    background-color: #2B2A2F;
+    color: black;
+}
+
+
+div#wrapper{
+    position: absolute;
+    background-color: #A3A3AD;
+    left: 10%;
+    right: 10%;
+    top: 0%;
+    width: 76%;
+    height: auto;
+    padding: 3%;
+    border: black solid thin;
+/*    text-align:center;*/
+}
+
+div#settings{
+    position: relative;
+    background-color: #BABABA;
+    left: 20%;
+    right: 20%;
+    top: 30%;
+    width: 50%;
+    height: auto;
+    padding: 3%; 
+}
+
+div#login2{
+    position: relative;
+    background-color: #BABABA;
+    left: 30%;
+    right: 30%;
+    top: 30%;
+    width: 30%;
+    height: 250px;
+    padding: 3%; 
+}
+
+div#gghb{
+    position: absolute;
+    background-color: #101010;
+    left: 1%;
+    top: 1%;
+    width: 15%;
+    height: 60%;
+    padding: 1%;
+    border: black solid thin;
+    color: #52A300;
+    font-size: 300%;
+    text-shadow: 3px 3px 3px #217240;
+    font-weight:bold;
+}
+
+div#adbar{
+    position: absolute;
+    float:right;
+    left:100%;
+ /*   left: 95%;*/
+    top: 0%;
+    width: auto;
+    height: 80%;
+    padding: 0%;
+}
+
+div#quote {
+    text-align:center;
+    position: relative;
+    color: black;
+    left: 0%;
+    right: 0%;
+    top: 1%;
+    width: 100%;
+    height: 10%;
+    font-size: 130%;
+}
+
+a:hover { 
+    color: #333333;
+    background-color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:link { 
+    color: #444444;
+}
+a:visited { 
+    color: #222222;
+}
+
+label
+{
+    width: 16em;
+    float: left;
+    text-align: right;
+    margin-right: 0.5em;
+    display: block;
+    
+}
+
+.submit input
+{
+    margin-left: 4.5em;
+} 
+
+div#footer{
+    position: absolute;
+    left:33%;
+    right:33%;
+    bottom:5%;
+    font-size:80%;
+    text-align:center;
+}
+
+
+input
+{
+    color: #C0C0C0;
+    background: #404040;
+    border-color: black;
+    border:thick;
+    margin:2px;
+}
