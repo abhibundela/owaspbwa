@@ -1,4 +1,4 @@
-This VM is the OWASP Broken Web Applications project, version 0.94alpha2.  More
+This VM is the OWASP Broken Web Applications project, version 0.94alpha3.  More
 information about the project can be found at http://www.owaspbwa.org/.
 
 !!! This VM has many serious security issues. We strongly recommend that you run
