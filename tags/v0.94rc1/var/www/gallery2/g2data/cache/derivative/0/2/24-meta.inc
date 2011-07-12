@@ -1,0 +1,1 @@
+|a:5:{s:14:"derivativePath";s:52:"/var/www/gallery2/g2data/cache/derivative/0/2/24.dat";s:14:"derivativeType";i:1;s:8:"mimeType";s:9:"image/png";s:8:"parentId";i:23;s:14:"pseudoFileName";s:9:"ologo.png";}

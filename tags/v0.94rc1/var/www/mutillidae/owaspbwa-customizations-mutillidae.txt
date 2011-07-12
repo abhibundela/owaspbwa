@@ -1,0 +1,8 @@
+
+- Edited .htaccess to allow remote access
+
+- Edited database connection information in config.inc
+
+- Edited database name in setupreset.php.
+
+- Edit logic in setupreset.php to drop tables instead of relying on dropping the database (which won't drop due to the .svn directory).

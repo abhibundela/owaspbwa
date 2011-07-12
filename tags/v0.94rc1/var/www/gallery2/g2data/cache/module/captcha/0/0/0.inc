@@ -1,0 +1,1 @@
+|a:6:{s:22:"failedAttemptThreshold";s:1:"3";s:8:"_version";s:5:"1.1.2";s:10:"_callbacks";s:17:"getSiteAdminViews";s:16:"_requiredCoreApi";s:3:"7,1";s:18:"_requiredModuleApi";s:3:"3,0";s:30:"failCount-core.UserLogin.guest";s:1:"1";}

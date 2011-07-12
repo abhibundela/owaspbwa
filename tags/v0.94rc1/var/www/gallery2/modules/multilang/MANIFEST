@@ -1,0 +1,140 @@
+# File crc32 crc32(crlf) size size(crlf)  or  R File
+modules/multilang/CantActivate.inc	1387893359	390591444	2160	2236
+modules/multilang/MultiLangItemEdit.inc	3257741994	585647917	5885	6066
+modules/multilang/MultiLangSiteAdmin.inc	2638290775	308994842	3923	4046
+modules/multilang/classes/GNUmakefile	1995366819	843025639	51	52
+modules/multilang/classes/GalleryStorage/GNUmakefile	1465776782	2009162633	61	62
+modules/multilang/classes/GalleryStorage/schema.tpl	2369472787	1423088752	2172	2246
+modules/multilang/classes/Maps.inc	2295184888	851213539	539	542
+modules/multilang/classes/Maps.xml	2509545159	1753304741	1097	1137
+modules/multilang/classes/MultiLangHelper.class	3720921338	2323390337	5735	5926
+modules/multilang/classes/MultiLangSearch.class	888622958	1940245137	6497	6710
+modules/multilang/locale/af/LC_MESSAGES/modules_multilang.mo	617899965	617899965	2938	2938
+modules/multilang/locale/cs/LC_MESSAGES/modules_multilang.mo	1481790632	1481790632	3057	3057
+modules/multilang/locale/da/LC_MESSAGES/modules_multilang.mo	4145781126	4145781126	2885	2885
+modules/multilang/locale/de/LC_MESSAGES/modules_multilang.mo	2345387754	2345387754	3210	3210
+modules/multilang/locale/es/LC_MESSAGES/modules_multilang.mo	3995435653	3995435653	3013	3013
+modules/multilang/locale/eu/LC_MESSAGES/modules_multilang.mo	3171593015	3171593015	2978	2978
+modules/multilang/locale/fr/LC_MESSAGES/modules_multilang.mo	2394065579	2394065579	3078	3078
+modules/multilang/locale/hu/LC_MESSAGES/modules_multilang.mo	3104573079	3104573079	2153	2153
+modules/multilang/locale/is/LC_MESSAGES/modules_multilang.mo	3160342138	3160342138	424	424
+modules/multilang/locale/it/LC_MESSAGES/modules_multilang.mo	2444460351	2444460351	2949	2949
+modules/multilang/locale/ja/LC_MESSAGES/modules_multilang.mo	1114824487	1114824487	2667	2667
+modules/multilang/locale/lt/LC_MESSAGES/modules_multilang.mo	3905495168	3905495168	3079	3079
+modules/multilang/locale/nl/LC_MESSAGES/modules_multilang.mo	1615977949	1615977949	2857	2857
+modules/multilang/locale/no/LC_MESSAGES/modules_multilang.mo	2059749520	2059749520	2896	2896
+modules/multilang/locale/pl/LC_MESSAGES/modules_multilang.mo	1856542060	1856542060	3089	3089
+modules/multilang/locale/ru/LC_MESSAGES/modules_multilang.mo	1372713411	1372713411	4033	4033
+modules/multilang/locale/sr/LC_MESSAGES/modules_multilang.mo	4239667525	4239667525	2933	2933
+modules/multilang/locale/sv/LC_MESSAGES/modules_multilang.mo	1855964721	1855964721	3106	3106
+modules/multilang/locale/tr/LC_MESSAGES/modules_multilang.mo	620371457	620371457	2921	2921
+modules/multilang/locale/zh_CN/LC_MESSAGES/modules_multilang.mo	3074624584	3074624584	2752	2752
+modules/multilang/locale/zh_TW/LC_MESSAGES/modules_multilang.mo	1676143541	1676143541	2834	2834
+modules/multilang/module.inc	3412745114	2411495135	5350	5530
+modules/multilang/po/GNUmakefile	1866879166	2808215985	98	103
+modules/multilang/po/af.po	3519368172	3208049042	3909	4044
+modules/multilang/po/cs.po	1517478187	1721625504	3976	4112
+modules/multilang/po/da.po	438482862	2877129711	3885	4020
+modules/multilang/po/de.po	4036120293	3337603947	4122	4256
+modules/multilang/po/es.po	2561982665	1773337153	3920	4053
+modules/multilang/po/eu.po	2664469741	2043145848	3931	4066
+modules/multilang/po/fr.po	675771009	502263540	4026	4159
+modules/multilang/po/hu.po	2779348288	2261131405	3727	3862
+modules/multilang/po/is.po	2182188829	1879960956	2835	2960
+modules/multilang/po/it.po	988563331	4088311558	3896	4028
+modules/multilang/po/ja.po	700984755	3296408170	4070	4203
+modules/multilang/po/lt.po	74473063	304976681	4117	4256
+modules/multilang/po/nl.po	2245078276	3324729907	3950	4084
+modules/multilang/po/no.po	2490940641	2207264357	3877	3999
+modules/multilang/po/pl.po	1380561413	2992275728	3909	4029
+modules/multilang/po/ru.po	3358421744	2284707415	5064	5202
+modules/multilang/po/sr.po	1074887564	4051078901	3840	3973
+modules/multilang/po/strings.raw	3759382640	3505833795	2289	2330
+modules/multilang/po/sv.po	588356959	4168900132	4185	4326
+modules/multilang/po/tr.po	4117817685	3837416243	3829	3962
+modules/multilang/po/zh_CN.po	1053430583	3053051443	3622	3742
+modules/multilang/po/zh_TW.po	3090259919	4077788430	3734	3863
+modules/multilang/templates/CantActivate.tpl	3607289891	2428088008	920	943
+modules/multilang/templates/MultiLangItemEdit.tpl	2652839219	1524725449	4026	4139
+modules/multilang/templates/MultiLangSiteAdmin.tpl	4255151843	2111358607	2435	2510
+R	modules/multilang/classes/GalleryStorage/DatabaseStorage/schema/GNUmakefile
+R	modules/multilang/classes/GalleryStorage/DatabaseStorage/schema/platform/GNUmakefile
+R	modules/multilang/classes/GalleryStorage/DatabaseStorage/schema/platform/mysql/GNUmakefile
+R	modules/multilang/classes/GalleryStorage/DatabaseStorage/schema/platform/mysql/MultiLangItemMap.sql
+R	modules/multilang/classes/GalleryStorage/DatabaseStorage/schema/platform/mysql
+R	modules/multilang/classes/GalleryStorage/DatabaseStorage/schema/platform/oracle/GNUmakefile
+R	modules/multilang/classes/GalleryStorage/DatabaseStorage/schema/platform/oracle/MultiLangItemMap.sql
+R	modules/multilang/classes/GalleryStorage/DatabaseStorage/schema/platform/oracle
+R	modules/multilang/classes/GalleryStorage/DatabaseStorage/schema/platform/postgres/GNUmakefile
+R	modules/multilang/classes/GalleryStorage/DatabaseStorage/schema/platform/postgres/MultiLangItemMap.sql
+R	modules/multilang/classes/GalleryStorage/DatabaseStorage/schema/platform/postgres
+R	modules/multilang/classes/GalleryStorage/DatabaseStorage/schema/platform
+R	modules/multilang/classes/GalleryStorage/DatabaseStorage/schema/schema.tpl
+R	modules/multilang/classes/GalleryStorage/DatabaseStorage/schema/xml-src/GNUmakefile
+R	modules/multilang/classes/GalleryStorage/DatabaseStorage/schema/xml-src
+R	modules/multilang/classes/GalleryStorage/DatabaseStorage/schema
+R	modules/multilang/classes/GalleryStorage/DatabaseStorage
+R	modules/multilang/classes/MultiLangItemMap.class
+R	modules/multilang/classes/interfaces/GNUmakefile
+R	modules/multilang/classes/interfaces/MultiLangItemMap.inc
+R	modules/multilang/classes/interfaces
+R	modules/multilang/locale/cs_CZ/LC_MESSAGES/modules_multilang.mo
+R	modules/multilang/locale/cs_CZ/LC_MESSAGES
+R	modules/multilang/locale/cs_CZ
+R	modules/multilang/locale/da_DK/LC_MESSAGES/modules_multilang.mo
+R	modules/multilang/locale/da_DK/LC_MESSAGES
+R	modules/multilang/locale/da_DK
+R	modules/multilang/locale/de_DE/LC_MESSAGES/modules_multilang.mo
+R	modules/multilang/locale/de_DE/LC_MESSAGES
+R	modules/multilang/locale/de_DE
+R	modules/multilang/locale/es_ES/LC_MESSAGES/modules_multilang.mo
+R	modules/multilang/locale/es_ES/LC_MESSAGES
+R	modules/multilang/locale/es_ES
+R	modules/multilang/locale/eu_ES/LC_MESSAGES/modules_multilang.mo
+R	modules/multilang/locale/eu_ES/LC_MESSAGES
+R	modules/multilang/locale/eu_ES
+R	modules/multilang/locale/fr_FR/LC_MESSAGES/modules_multilang.mo
+R	modules/multilang/locale/fr_FR/LC_MESSAGES
+R	modules/multilang/locale/fr_FR
+R	modules/multilang/locale/hu_HU/LC_MESSAGES/modules_multilang.mo
+R	modules/multilang/locale/hu_HU/LC_MESSAGES
+R	modules/multilang/locale/hu_HU
+R	modules/multilang/locale/is_IS/LC_MESSAGES/modules_multilang.mo
+R	modules/multilang/locale/is_IS/LC_MESSAGES
+R	modules/multilang/locale/is_IS
+R	modules/multilang/locale/it_IT/LC_MESSAGES/modules_multilang.mo
+R	modules/multilang/locale/it_IT/LC_MESSAGES
+R	modules/multilang/locale/it_IT
+R	modules/multilang/locale/ja_JP/LC_MESSAGES/modules_multilang.mo
+R	modules/multilang/locale/ja_JP/LC_MESSAGES
+R	modules/multilang/locale/ja_JP
+R	modules/multilang/locale/nl_NL/LC_MESSAGES/modules_multilang.mo
+R	modules/multilang/locale/nl_NL/LC_MESSAGES
+R	modules/multilang/locale/nl_NL
+R	modules/multilang/locale/ru_RU/LC_MESSAGES/modules_multilang.mo
+R	modules/multilang/locale/ru_RU/LC_MESSAGES
+R	modules/multilang/locale/ru_RU
+R	modules/multilang/locale/sr_YU/LC_MESSAGES/modules_multilang.mo
+R	modules/multilang/locale/sr_YU/LC_MESSAGES
+R	modules/multilang/locale/sr_YU
+R	modules/multilang/locale/sv_SE/LC_MESSAGES/modules_multilang.mo
+R	modules/multilang/locale/sv_SE/LC_MESSAGES
+R	modules/multilang/locale/sv_SE
+R	modules/multilang/locale/tr_TR/LC_MESSAGES/modules_multilang.mo
+R	modules/multilang/locale/tr_TR/LC_MESSAGES
+R	modules/multilang/locale/tr_TR
+R	modules/multilang/po/cs_CZ.po
+R	modules/multilang/po/da_DK.po
+R	modules/multilang/po/de_DE.po
+R	modules/multilang/po/es_ES.po
+R	modules/multilang/po/eu_ES.po
+R	modules/multilang/po/fr_FR.po
+R	modules/multilang/po/hu_HU.po
+R	modules/multilang/po/is_IS.po
+R	modules/multilang/po/it_IT.po
+R	modules/multilang/po/ja_JP.po
+R	modules/multilang/po/nl_NL.po
+R	modules/multilang/po/ru_RU.po
+R	modules/multilang/po/sr_YU.po
+R	modules/multilang/po/sv_SE.po
+R	modules/multilang/po/tr_TR.po

@@ -1,0 +1,315 @@
+<?php
+/*
+ * $RCSfile: RewriteHelper.class,v $
+ *
+ * Gallery - a web based photo album viewer and editor
+ * Copyright (C) 2000-2006 Bharat Mediratta
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or (at
+ * your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+/**
+ * @package Rewrite
+ * @version $Revision: 1.33 $ $Date: 2006/01/10 04:42:16 $
+ * @author Douglas Cau <douglas@cau.se>
+ */
+
+/* General status codes */
+define('REWRITE_STATUS_OK', 0);
+define('REWRITE_STATUS_BAD_KEYWORD', 1);
+define('REWRITE_STATUS_MULTISITE', 2);
+define('REWRITE_STATUS_DUPE_SHORT_URL', 3);
+define('REWRITE_STATUS_INVALID_PATTERN', 4);
+define('REWRITE_STATUS_EMPTY_VALUE', 5);
+
+/**
+ * A helper class for the URL Rewrite module
+ *
+ * @package Rewrite
+ * @subpackage Classes
+ */
+class RewriteHelper {
+
+    /**
+     * Load and initialize the rewrite plugin. If no plugin has been configured yet
+     * it returns a GalleryStatus ERROR_MISSING_VALUE.
+     *
+     * @param boolean true if we need a new instance
+     * @return array object GalleryStatus a status code
+     *               object RewritePlugin a loaded parser
+     * @static
+     */
+    function getRewriteParser($new=false) {
+	global $gallery;
+	static $rewriteParser;
+	$platform =& $gallery->getPlatform();
+
+	if (!isset($rewriteParser) || $new) {
+	    list ($ret, $rewriteParserId) = GalleryCoreApi::getPluginParameter(
+		'module', 'rewrite', 'parserId');
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+	    if (empty($rewriteParserId)) {
+		return array(GalleryCoreApi::error(ERROR_MISSING_VALUE, __FILE__, __LINE__), null);
+	    }
+
+	    $path = 'modules/rewrite/classes/parsers/' . $rewriteParserId . '/parser.inc';
+	    if ($platform->file_exists(GalleryCoreApi::getPluginBaseDir('module', 'rewrite') .
+		    $path)) {
+		GalleryCoreApi::requireOnce($path);
+	    }
+	    $class = $rewriteParserId . 'Parser';
+	    $rewriteParser = new $class();
+	}
+
+	return array(null, $rewriteParser);
+    }
+
+    /**
+     * Parse active rules into an array of regular expresions for parsing URLs during page
+     * requests and build an array for the url generator to use when generating short URLs.
+     *
+     * @param array active rules by reference
+     * @param object RewriteParser
+     * @param object RewriteModule (optional) passed in during activate/upgrade
+     * @param array optional defenition of default and mandator flags.
+     * @return array object GalleryStatus a status code
+     *               int rewrite status code (REWRITE_STATUS_OK on success)
+     *               array parsed patterns translated to regular expressions
+     *               array short urls which will used by to generate urls
+     *               array string module (on error)
+     *                     int rule id (on error)
+     */
+    function parseActiveRules(&$activeRules, $rewriteParser, $rewriteModule=null, $flags=null) {
+	global $gallery;
+	$urlGenerator =& $gallery->getUrlGenerator();
+
+    	/* Get access list information */
+	list ($ret, $accessList) = GalleryCoreApi::getPluginParameter(
+	    'module', 'rewrite', 'accessList');
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null, null, null, null);
+	}
+	$accessList = unserialize($accessList);
+	$ourHostNames[$urlGenerator->getHostName()] = true;
+	$ourHostNames[$urlGenerator->getHostName(true)] = true;
+	$accessList = array_merge($accessList, array_keys($ourHostNames));
+
+	$regexRules = array();
+	$shortUrls = array();
+	foreach (array_keys($activeRules) as $moduleId) {
+	    if ($moduleId == 'rewrite' && isset($rewriteModule)) {
+		/* Avoid PLUGIN_VERSION_MISMATCH during upgrade by passing in module */
+		$module = $rewriteModule;
+	    } else {
+		list($ret, $module) = GalleryCoreApi::loadPlugin('module', $moduleId);
+		if ($ret) {
+		    if ($ret->getErrorCode() & ERROR_PLUGIN_VERSION_MISMATCH) {
+			/*
+			 * Add CONFIGURATION_REQUIRED code to more gracefully abort upgrade
+			 * if a dependent module for one of our rules also needs upgrading.
+			 */
+			$ret->addErrorCode(ERROR_CONFIGURATION_REQUIRED);
+		    }
+		    return array($ret->wrap(__FILE__, __LINE__), null, null, null, null);
+		}
+	    }
+
+	    $rules = $module->getRewriteRules();
+	    foreach (array_keys($activeRules[$moduleId]) as $ruleId) {
+		/* Make sure this rule still exists, if not silently continue. */
+		if (!isset($rules[$ruleId])) {
+		    unset($activeRules[$moduleId][$ruleId]);
+		    continue;
+		}
+
+		/* Make sure this parser supports this kind of rule */
+		if (!$rewriteParser->isValidRule($rules[$ruleId],
+			$activeRules[$moduleId][$ruleId])) {
+		    return array(null, REWRITE_STATUS_INVALID_PATTERN,
+			null, null, array($moduleId, $ruleId));
+		}
+
+	    	/* Save the pattern for the URL generator to use */
+		if (isset($rules[$ruleId]['match'])) {
+		    $match = join('|', $rules[$ruleId]['match']);
+		    if (isset($shortUrls[$match])) {
+			return array(null, REWRITE_STATUS_DUPE_SHORT_URL,
+			    null, null, array($match));
+		    }
+
+		    $shortUrls[$match] = array(
+			'pattern' => $activeRules[$moduleId][$ruleId]);
+
+		    /* Get custom function information */
+		    if (isset($rules[$ruleId]['keywords'])) {
+			foreach ($rules[$ruleId]['keywords'] as $key => $info) {
+			    if (isset($info['function'])) {
+				$shortUrls[$match]['functions'][$key] = $info['function'];
+			    }
+			}
+		    }
+
+		    /* Save the onLoad handler for this rule */
+		    if (isset($rules[$ruleId]['onLoad'])) {
+			$shortUrls[$match]['onLoad'] = $rules[$ruleId]['onLoad'];
+		    }
+		}
+
+		/* Parse the pattern and create regular expressions with conditions */
+		$settings = array();
+		$keywords = array('itemId' => array('pattern' => '([0-9]+)'));
+
+		/* Add custom keywords to the list of allowed keywords */
+		if (isset($rules[$ruleId]['keywords'])) {
+		    $keywords = array_merge($keywords, $rules[$ruleId]['keywords']);
+		}
+
+		/* Restrict this rule to given query string conditions */
+		if (!empty($rules[$ruleId]['restrict'])) {
+		    foreach ($rules[$ruleId]['restrict'] as $key => $value) {
+			$settings['restrict'][] = $key . '=' . $value;
+		    }
+
+		    $settings['exempt'] = array();
+		    /* Exempt request from the following hosts */
+		    if  (isset($rules[$ruleId]['exemptReferer'])) {
+			$settings['exempt'] = $accessList;
+		    }
+		}
+
+		/* Build the list of flags to apply to this rule. */
+		$settings['flags'] = isset($flags) ? $flags['default'] : array();
+		if (isset($rules[$ruleId]['flags']) && isset($flags)) {
+		    $settings['flags'] = array_merge($rules[$ruleId]['flags'], $flags['mandatory']);
+		}
+
+		/* Make sure that there's no subrequest made when we match by the query string */
+		if (isset($settings['restrict']) && !in_array('L', $settings['flags'])) {
+		    $settings['flags'][] = 'L';
+		}
+		$settings['flags'] = join(',', $settings['flags']);
+
+		/* Build the query string to map the request on to */
+		$queryString = array();
+		if (isset($rules[$ruleId]['match'])) {
+		    $queryString = $rules[$ruleId]['match'];
+		}
+		if (!empty($rules[$ruleId]['queryString'])) {
+		    $queryString = array_merge($queryString, $rules[$ruleId]['queryString']);
+		}
+
+		/* Parse the rule */
+		list ($ret, $code) = RewriteHelper::_parseRule($activeRules[$moduleId][$ruleId],
+		    $keywords, $queryString, $regexRules, $settings);
+		if ($ret) {
+		    return array($ret->wrap(__FILE__, __LINE__), null, null, null, null);
+		}
+		if ($code != REWRITE_STATUS_OK) {
+		    return array(null, $code, null, null,
+			array($moduleId, $ruleId));
+		}
+	    }
+	}
+
+	usort($regexRules, array('RewriteHelper', '_sortRules'));
+	return array(null, REWRITE_STATUS_OK, $regexRules, $shortUrls, null);
+    }
+
+    /**
+     * Replaces all keywords with an appropriate pattern and append to $regexRules.
+     *
+     * @param string url pattern
+     * @param array of keywords => regular expresion for the htaccess file
+     * @param array of query string params (key => value)
+     * @param array of parsed rules
+     * @param array of settings
+     * @access private
+     */
+    function _parseRule($pattern, $keywords, $queryString, &$regexRules, $settings) {
+	$reference = 1;
+	preg_match_all('/\%([^\%]+)\%/', $pattern, $regs);
+
+	foreach ($regs[1] as $keyword) {
+	    if (!isset($keywords[$keyword]['pattern'])) {
+		return array(null, REWRITE_STATUS_BAD_KEYWORD);
+	    }
+
+	    $pattern = str_replace('%' . $keyword . '%',
+		$keywords[$keyword]['pattern'], $pattern);
+
+	    if (!isset($keywords[$keyword]['ignore'])) {
+		$queryString[$keyword] = '$' . $reference;
+	    }
+	    $reference++;
+	}
+
+	$args = array();
+	foreach ($queryString as $key => $value) {
+	    $args[] = GalleryUtilities::prefixFormVariable($key) . '=' . $value;
+	}
+
+	if (!empty($pattern)) {
+	    $regexRules[] = array(
+		    'pattern' => $pattern,
+		    'queryString' => join('&', $args),
+		    'settings' => $settings);
+	}
+
+	return array(null, REWRITE_STATUS_OK);
+    }
+
+    /**
+     * Comparison function used to order rewrite rules.
+     *
+     * @access private
+     */
+    function _sortRules($a, $b) {
+	if (isset($a['settings']['restrict']) || isset($b['settings']['restrict'])) {
+	    if (isset($a['settings']['restrict']) && isset($b['settings']['restrict'])) {
+		$diff = sizeof($a['settings']['restrict']) - sizeof($b['settings']['restrict']);
+		return $diff;
+	    }
+
+	    if (isset($a['settings']['restrict'])) {
+		return -1;
+	    }
+
+	    return 1;
+	}
+
+	/* Regular expression in both */
+	if (strpos($a['pattern'], '(') !== false && strpos($b['pattern'], '(') !== false) {
+	    if (strpos($a['pattern'], '(') == strpos($b['pattern'], '(')) {
+		if (strlen($a['pattern']) == strlen($b['pattern'])) {
+		    return 0;
+		}
+
+		return (strlen($a['pattern']) < strlen($b['pattern'])) ? 1 : -1;
+	    }
+
+	    return (strpos($a['pattern'], '(') < strpos($b['pattern'], '(')) ? 1 : -1;
+	}
+	if (strpos($a['pattern'], '(') !== false) {
+	    return 1;
+	}
+	if (strpos($b['pattern'], '(') !== false) {
+	    return -1;
+	}
+
+	return (strlen($a['pattern']) < strlen($b['pattern'])) ? 1 : -1;
+    }
+}
+?>

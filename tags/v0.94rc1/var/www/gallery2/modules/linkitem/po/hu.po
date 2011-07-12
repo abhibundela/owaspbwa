@@ -1,0 +1,69 @@
+# $Id: hu.po,v 1.4 2006/03/22 04:19:44 mindless Exp $
+#
+# Gallery - a web based photo album viewer and editor
+# Copyright (C) 2000-2006 Bharat Mediratta
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery: Link Items 1.0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-11-04 17:28+0100\n"
+"PO-Revision-Date: 2005-11-04 18:56+0100\n"
+"Last-Translator: Jozsef R.Nagy <joe7@site.hu>\n"
+"Language-Team: HungarianU <gallery-devel@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Link"
+msgstr "Link"
+
+msgid "Link Items"
+msgstr ""
+
+msgid "Create links to other albums or external urls"
+msgstr "Linkeket készít más albumokra, vagy külső webcímekre"
+
+msgid "Display"
+msgstr "Megjelenítés"
+
+msgid "link"
+msgstr "link"
+
+msgid "Link to Album:"
+msgstr "Link erre az Albumra:"
+
+msgid "You must enter an album id"
+msgstr "Meg kell adnod egy albumazonosítót"
+
+msgid "Invalid album id"
+msgstr "Érvénytelen albumazonosító"
+
+msgid "Link to External URL:"
+msgstr "Link egy külső webcímre:"
+
+msgid "You must enter an URL"
+msgstr "Meg kell adnod egy webcímet"
+
+msgid "Add Link"
+msgstr "Link Hozzáadása"
+
+msgid "URL:"
+msgstr "Webcím:"
+
+msgid "Missing URL"
+msgstr "Hiányzó webcím"

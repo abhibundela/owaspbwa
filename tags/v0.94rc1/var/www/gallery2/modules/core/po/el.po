@@ -1,0 +1,3640 @@
+# $Id: el.po,v 1.12 2006/03/23 19:59:33 mindless Exp $
+#
+# Gallery - a web based photo album viewer and editor
+# Copyright (C) 2000-2006 Bharat Mediratta
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery: Core 1.1.0\n"
+"POT-Creation-Date: 2003-03-06 16:30+0200\n"
+"PO-Revision-Date: 2003-03-06 16:30+0200\n"
+"Last-Translator: Nikos Batsis <nickthegreek@yahoo.com>\n"
+"Language-Team: Greek <gallery-devel@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#, fuzzy
+msgid "Gallery Email Test"
+msgstr "Γκαλλερύ"
+
+msgid "forever"
+msgstr ""
+
+msgid "High Priority (Me first!)"
+msgstr ""
+
+msgid "Low Priority (I want to share!)"
+msgstr ""
+
+msgid "No Markup"
+msgstr ""
+
+msgid "BBCode"
+msgstr ""
+
+msgid "Raw HTML"
+msgstr ""
+
+msgid "Database"
+msgstr ""
+
+#, fuzzy
+msgid "File"
+msgstr "Αρχείο: "
+
+#, fuzzy, c-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d Λεπτό"
+msgstr[1] "%d Λεπτό"
+
+#, fuzzy, c-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d Ώρα"
+msgstr[1] "%d Ώρα"
+
+#, fuzzy, c-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d Ημέρα"
+msgstr[1] "%d Ημέρα"
+
+#, fuzzy, c-format
+msgid "%d week"
+msgid_plural "%d weeks"
+msgstr[0] "%d Εβδομάδα"
+msgstr[1] "%d Εβδομάδα"
+
+msgid "<none>"
+msgstr ""
+
+msgid "install"
+msgstr ""
+
+msgid "upgrade"
+msgstr ""
+
+msgid "configure"
+msgstr ""
+
+msgid "activate"
+msgstr ""
+
+msgid "uninstall"
+msgstr ""
+
+msgid "deactivate"
+msgstr ""
+
+msgid "No acceleration"
+msgstr ""
+
+msgid "Partial acceleration"
+msgstr ""
+
+msgid "Full acceleration"
+msgstr ""
+
+msgid "Performing Maintenance Tasks"
+msgstr ""
+
+#, c-format
+msgid "Downloading %s"
+msgstr ""
+
+#, fuzzy
+msgid "Done."
+msgstr "Επιτυχία"
+
+msgid "Upgrade"
+msgstr ""
+
+msgid "Download"
+msgstr ""
+
+msgid "Inherit settings from parent album"
+msgstr ""
+
+#, fuzzy
+msgid "Use these settings"
+msgstr "Ρυθμίσεις Λευκόματος"
+
+#, fuzzy
+msgid "Installing the core module"
+msgstr "Γκαλλερύ"
+
+msgid "key"
+msgstr ""
+
+msgid "All access"
+msgstr "Πλήρες Πρόσβαση"
+
+msgid "[core] View item"
+msgstr ""
+
+msgid "[core] View resized version(s)"
+msgstr ""
+
+msgid "[core] View original version"
+msgstr ""
+
+msgid "[core] View all versions"
+msgstr ""
+
+msgid "[core] Add sub-album"
+msgstr ""
+
+msgid "[core] Add sub-item"
+msgstr ""
+
+msgid "[core] Edit item"
+msgstr ""
+
+msgid "[core] Change item permissions"
+msgstr ""
+
+msgid "[core] Delete item"
+msgstr ""
+
+#, fuzzy
+msgid "Upgrading permissions"
+msgstr "Δικαιώματα Αντικειμένου"
+
+#, fuzzy
+msgid "Deleting old permission tables"
+msgstr "Δικαιώματα Αντικειμένου"
+
+#, fuzzy
+msgid "Registered Users"
+msgstr "Επεξεργασία Χρήστη"
+
+#, fuzzy
+msgid "All Users"
+msgstr "Πλήρες Πρόσβαση"
+
+msgid "Detecting broken derivatives"
+msgstr ""
+
+msgid "Clearing fast-download cache"
+msgstr ""
+
+#, fuzzy
+msgid "Deleting old fast-download cache"
+msgstr "Δικαιώματα Αντικειμένου"
+
+msgid "Converting MySQL data to UTF8"
+msgstr ""
+
+#, fuzzy
+msgid "Site Admins"
+msgstr "Διαχείρηση της Γκαλλερύ"
+
+msgid "Everybody"
+msgstr ""
+
+msgid "Guest"
+msgstr ""
+
+msgid "Gallery"
+msgstr "Γκαλλερύ"
+
+msgid "This is the main page of your Gallery"
+msgstr ""
+
+#, c-format
+msgid "Upgrading permissions (%d items complete, %d remaining)"
+msgstr ""
+
+msgid "Detecting broken derivatives, loading "
+msgstr ""
+
+msgid "Detecting broken derivatives "
+msgstr ""
+
+msgid "Detecting broken derivatives, "
+msgstr ""
+
+msgid "Detecting broken derivatives, saving "
+msgstr ""
+
+#, fuzzy, c-format
+msgid "Deleting old session files (iteration %d)"
+msgstr "Δικαιώματα Αντικειμένου"
+
+#, fuzzy
+msgid "add items"
+msgstr "Προσθέστε Φωτογραφίες"
+
+#, fuzzy
+msgid "Album created successfully."
+msgstr "Η Ομάδα '%s' Δημιουργήθηκε με επιτυχία"
+
+#, fuzzy
+msgid "add sub-album"
+msgstr "Προσθήκη Λευκόματος"
+
+#, fuzzy
+msgid "add items confirmation"
+msgstr "Προορισμός"
+
+#, fuzzy
+msgid "Base filename"
+msgstr "Πλήρες Όνομα"
+
+#, fuzzy
+msgid "Caption"
+msgstr "Περιγραφή: "
+
+#, fuzzy
+msgid "Blank"
+msgstr "<< Πίσω"
+
+msgid "From Web Browser"
+msgstr ""
+
+#, fuzzy, c-format
+msgid "%d megabyte"
+msgid_plural "%d megabytes"
+msgstr[0] "%d Λεπτό"
+msgstr[1] "%d Λεπτό"
+
+#, fuzzy, c-format
+msgid "%d kilobytes"
+msgid_plural "%d kilobytes"
+msgstr[0] "%d Λεπτό"
+msgstr[1] "%d Λεπτό"
+
+#, fuzzy
+msgid "From Local Server"
+msgstr "Προσθέστε αρχεία που βρίσκονται στο Διακομιστή"
+
+msgid "Photo"
+msgstr ""
+
+msgid "From Web Page"
+msgstr ""
+
+msgid "Gallery Item Administration"
+msgstr "Διαχείρηση Αντκειμένου Γκαλλερύ"
+
+msgid "create link"
+msgstr ""
+
+#, fuzzy
+msgid "link an item"
+msgstr "Επεξεργασία Αντικειμένου"
+
+#, fuzzy
+msgid "delete an item"
+msgstr "Διαγραφή Χρήστη"
+
+#, fuzzy
+msgid "delete confirmation"
+msgstr "Διαγραφή Χρήστη"
+
+#, fuzzy, c-format
+msgid "delete %s"
+msgstr "Διαγραφή Χρήστη"
+
+#, fuzzy, c-format
+msgid "edit %s"
+msgstr "Επεξεργασία Χρήστη"
+
+#, fuzzy
+msgid "Settings saved successfully."
+msgstr "Η Ομάδα '%s' Δημιουργήθηκε με επιτυχία"
+
+#, fuzzy
+msgid "&laquo; default theme &raquo;"
+msgstr "* Χωρίς Ταξινόμιση *"
+
+msgid "Recreating resized images"
+msgstr ""
+
+msgid "Rebuilding resized images..."
+msgstr ""
+
+msgid "Rebuilding thumbnails..."
+msgstr ""
+
+#, fuzzy
+msgid "Album"
+msgstr "Προσθήκη Λευκόματος"
+
+#, c-format
+msgid "Processing image %d of %d"
+msgstr ""
+
+#, fuzzy
+msgid "Changes saved successfully"
+msgstr "Η Ομάδα '%s' Δημιουργήθηκε με επιτυχία"
+
+#, fuzzy
+msgid "Animation Size"
+msgstr "Ενέργεια"
+
+#, fuzzy
+msgid "edit captions"
+msgstr "Ενέργειες"
+
+msgid "General"
+msgstr "Γενικά"
+
+#, fuzzy
+msgid "Movie Size"
+msgstr "Ρυθμίσεις Λευκόματος"
+
+#, fuzzy
+msgid "Thumbnail cropped successfully"
+msgstr "Η Ομάδα '%s' Δημιουργήθηκε με επιτυχία"
+
+#, fuzzy
+msgid "Thumbnail reset successfully"
+msgstr "Η Ομάδα '%s' Δημιουργήθηκε με επιτυχία"
+
+msgid "Photo 5x3"
+msgstr ""
+
+msgid "Photo 6x4"
+msgstr ""
+
+msgid "Photo 7x5"
+msgstr ""
+
+msgid "Photo 10x8"
+msgstr ""
+
+msgid "Fullscreen 4x3"
+msgstr ""
+
+msgid "Widescreen 16x9"
+msgstr ""
+
+msgid "CinemaScope 2.35x1"
+msgstr ""
+
+msgid "Square 1x1"
+msgstr ""
+
+#, fuzzy
+msgid "As Image"
+msgstr "Επεξεργασία Εικόνας"
+
+msgid "Landscape"
+msgstr ""
+
+msgid "Portrait"
+msgstr ""
+
+msgid "Crop Thumbnail"
+msgstr ""
+
+#, fuzzy
+msgid "Reverted rotate and scale changes successfully"
+msgstr "Η Ομάδα '%s' Δημιουργήθηκε με επιτυχία"
+
+#, fuzzy
+msgid "Rotated photo successfully"
+msgstr "Η Ομάδα '%s' Δημιουργήθηκε με επιτυχία"
+
+#, fuzzy
+msgid "Scaled photo successfully"
+msgstr "Η Ομάδα '%s' Δημιουργήθηκε με επιτυχία"
+
+#, fuzzy
+msgid "Modify Photo"
+msgstr "Επεξεργασία Εικόνας"
+
+#, fuzzy
+msgid "Successfully saved theme settings"
+msgstr "Η Ομάδα '%s' Διαγράφηκε με επιτυχία"
+
+msgid "Theme"
+msgstr ""
+
+msgid "make highlight"
+msgstr ""
+
+#, fuzzy
+msgid "move item"
+msgstr "Προσθαφαίρεση  Χρηστών"
+
+#, fuzzy, c-format
+msgid "move %s"
+msgstr "Επεξεργασία Αντικειμένου"
+
+#, fuzzy, c-format
+msgid "edit %s permissions"
+msgstr "Δικαιώματα Αντικειμένου"
+
+msgid "reorder items"
+msgstr ""
+
+msgid "Maintenance"
+msgstr ""
+
+msgid "Gallery Site Administration"
+msgstr "Διαχείρηση της Γκαλλερύ"
+
+msgid "site admin"
+msgstr ""
+
+#, fuzzy
+msgid "Gallery User Administration"
+msgstr "Διαχείρηση Αντκειμένου Γκαλλερύ"
+
+msgid "change password"
+msgstr ""
+
+msgid "your account"
+msgstr ""
+
+msgid "Password Recovery"
+msgstr ""
+
+#, fuzzy
+msgid "Core"
+msgstr "Δημιουργία"
+
+#, fuzzy
+msgid "Gallery 2 Core Module"
+msgstr "Γκαλλερύ"
+
+msgid "Add Items"
+msgstr "Προσθέστε Φωτογραφίες"
+
+#, fuzzy
+msgid "Edit Album"
+msgstr "Προσθήκη Λευκόματος"
+
+#, fuzzy
+msgid "Edit Photo"
+msgstr "Επεξεργασία Εικόνας"
+
+#, fuzzy
+msgid "Edit Movie"
+msgstr "Επεξεργασία Χρήστη"
+
+#, fuzzy
+msgid "Create Link"
+msgstr "Δημιουργία"
+
+#, fuzzy
+msgid "Add Album"
+msgstr "Προσθήκη Λευκόματος"
+
+#, fuzzy
+msgid "Edit Permissions"
+msgstr "Δώστε δικαιώματα"
+
+#, fuzzy
+msgid "View Permissions"
+msgstr "Δώστε δικαιώματα"
+
+#, fuzzy
+msgid "Delete Album"
+msgstr "Διαγραφή Ομάδας"
+
+#, fuzzy
+msgid "Delete Photo"
+msgstr "Διαγραφή Χρήστη"
+
+#, fuzzy
+msgid "Delete Movie"
+msgstr "Διαγραφή Χρήστη"
+
+#, fuzzy
+msgid "Move Album"
+msgstr "Προσθήκη Λευκόματος"
+
+#, fuzzy
+msgid "Move Photo"
+msgstr "Επεξεργασία Εικόνας"
+
+#, fuzzy
+msgid "Move Movie"
+msgstr "Ρυθμίσεις Λευκόματος"
+
+#, fuzzy
+msgid "Edit Captions"
+msgstr "Διαχείρηση της Γκαλλερύ"
+
+msgid "Make Highlight"
+msgstr ""
+
+#, fuzzy
+msgid "Reorder Items"
+msgstr "Προσθήκη Λευκόματος"
+
+#, fuzzy
+msgid "Site Admin"
+msgstr "Διαχείρηση της Γκαλλερύ"
+
+msgid "Login"
+msgstr ""
+
+msgid "Your Account"
+msgstr ""
+
+msgid "Logout"
+msgstr ""
+
+msgid "Modules"
+msgstr ""
+
+msgid "Repository"
+msgstr ""
+
+#, fuzzy
+msgid "Themes"
+msgstr "Προσθέστε Φωτογραφίες"
+
+msgid "Display"
+msgstr ""
+
+msgid "Users"
+msgstr ""
+
+msgid "Groups"
+msgstr "Ομάδες"
+
+msgid "Performance"
+msgstr ""
+
+msgid "Toolkit Priority"
+msgstr ""
+
+#, fuzzy
+msgid "Graphics Toolkits"
+msgstr "Εργαλειοθήκη Γραφικών"
+
+#, fuzzy
+msgid "Account Settings"
+msgstr "Ρυθμίσεις Λευκόματος"
+
+msgid "Change Password"
+msgstr ""
+
+#, fuzzy
+msgid "Link Album"
+msgstr "Προσθήκη Λευκόματος"
+
+#, fuzzy
+msgid "Link Photo"
+msgstr "Επεξεργασία Εικόνας"
+
+msgid "Link Movie"
+msgstr ""
+
+#, fuzzy, c-format
+msgid "Edit %s"
+msgstr "Επεξεργασία Χρήστη"
+
+#, fuzzy, c-format
+msgid "Delete %s"
+msgstr "Διαγραφή Χρήστη"
+
+#, fuzzy, c-format
+msgid "Move %s"
+msgstr "Επεξεργασία Αντικειμένου"
+
+#, c-format
+msgid "Link %s"
+msgstr ""
+
+msgid "Build all thumbnails/resizes"
+msgstr ""
+
+msgid ""
+"Ensure data files for all derivatives (thumbnails, etc) have been built and rebuild broken "
+"ones."
+msgstr ""
+
+msgid "Build All Thumbnails/Resizes"
+msgstr ""
+
+msgid "Debug output for failed items:"
+msgstr ""
+
+#, fuzzy, c-format
+msgid "Checked %d items"
+msgstr "Προσθέστε Φωτογραφίες"
+
+#, fuzzy, c-format
+msgid "%d items built"
+msgstr "Προσθέστε Φωτογραφίες"
+
+#, c-format
+msgid "%d items failed"
+msgstr ""
+
+#, fuzzy
+msgid "Delete user sessions"
+msgstr "Δικαιώματα Αρχείου Συστήματος"
+
+msgid ""
+"Delete all persistent user sessions according to your current session expiration settings."
+msgstr ""
+
+msgid "Delete database cache"
+msgstr ""
+
+msgid ""
+"Gallery stores commonly used database information on disk for increased performance. If you "
+"modify the database directly, you should run this task to clean out the cache and force "
+"Gallery to reload the information from the database."
+msgstr ""
+
+#, fuzzy, c-format
+msgid "Successfully deleted directory: %s"
+msgstr "Η Ομάδα '%s' Διαγράφηκε με επιτυχία"
+
+#, c-format
+msgid "Unable to delete directory: %s"
+msgstr ""
+
+#, fuzzy
+msgid "Delete template cache"
+msgstr "Διαγραφή Αντικειμένου"
+
+msgid ""
+"Gallery compiles template files and saves them for increased performance.  If you're "
+"experiencing problems that say <i>Smarty error</i> then you might try running this task.  "
+"Also run this if you remove a local/*.tpl file so Smarty will switch back to the default tpl "
+"file."
+msgstr ""
+
+#, fuzzy
+msgid "Template cache deleted successfully"
+msgstr "Η Ομάδα '%s' Δημιουργήθηκε με επιτυχία"
+
+#, fuzzy
+msgid "album"
+msgstr "Λεύκομα"
+
+#, fuzzy
+msgid "Animation"
+msgstr "Ενέργεια"
+
+#, fuzzy
+msgid "animation"
+msgstr "Ενέργεια"
+
+#, fuzzy
+msgid "Gallery Core"
+msgstr "Γκαλλερύ"
+
+#, fuzzy
+msgid "Gallery Core Module"
+msgstr "Γκαλλερύ"
+
+#, fuzzy
+msgid "Search descriptions"
+msgstr "Περιγραφή"
+
+msgid "Search keywords"
+msgstr ""
+
+msgid "Search summaries"
+msgstr ""
+
+msgid "Search titles"
+msgstr ""
+
+msgid "Description"
+msgstr "Περιγραφή"
+
+msgid "Keywords"
+msgstr ""
+
+msgid "Summary"
+msgstr ""
+
+msgid "Title"
+msgstr ""
+
+msgid "Owner"
+msgstr ""
+
+#, fuzzy
+msgid "Group"
+msgstr "Ομάδες"
+
+#, fuzzy
+msgid "group"
+msgstr "Ομάδες"
+
+msgid "Other"
+msgstr ""
+
+msgid "Movie"
+msgstr ""
+
+#, fuzzy
+msgid "movie"
+msgstr "Προσθαφαίρεση  Χρηστών"
+
+msgid "photo"
+msgstr ""
+
+msgid "download"
+msgstr ""
+
+#, fuzzy
+msgid "Plugins directory does not exist."
+msgstr "Η Ομάδα '%s' δεν υπάρχει."
+
+msgid ""
+"Couldn't create plugins subdirectory. Make sure the webserver has write permissions in it."
+msgstr ""
+
+msgid "Couldn't create repository cache path."
+msgstr ""
+
+msgid ""
+"Couldn't create cache subdirectory. Make sure the web server has write permissions in it."
+msgstr ""
+
+#, c-format
+msgid "Error downloading index from '%s'."
+msgstr ""
+
+#, c-format
+msgid "Error downloading index hash from '%s'."
+msgstr ""
+
+msgid "Index integrity check failed."
+msgstr ""
+
+#, fuzzy
+msgid "&laquo; default sort order &raquo;"
+msgstr "* Χωρίς Ταξινόμιση *"
+
+#, fuzzy
+msgid "Manual sort order"
+msgstr "Ταξινόμιση Λευκόματος:"
+
+#, fuzzy
+msgid "Origination Date"
+msgstr "Ημερομηνία Δημιουργίας"
+
+msgid "Creation Date"
+msgstr "Ημερομηνία Δημιουργίας"
+
+msgid "Last Changed Date"
+msgstr ""
+
+#, fuzzy
+msgid "Name"
+msgstr "Πλήρες Όνομα"
+
+msgid "View Count"
+msgstr ""
+
+msgid "Random"
+msgstr ""
+
+#, fuzzy
+msgid "&laquo; no presort &raquo;"
+msgstr "* Χωρίς Ταξινόμιση *"
+
+#, fuzzy
+msgid "Albums First"
+msgstr "Ρυθμίσεις Λευκόματος"
+
+msgid "Most Viewed First"
+msgstr ""
+
+msgid "Ascending"
+msgstr "Αύξουσα"
+
+msgid "Descending"
+msgstr "Φθίνουσα"
+
+msgid "Validation disabled until you set allowSessionAccess in config.php"
+msgstr ""
+
+msgid "This page is valid XHTML 1.0"
+msgstr ""
+
+#, fuzzy
+msgid "Donate to the Gallery project"
+msgstr "Περιήγηση"
+
+msgid "G2.1: Blackjack"
+msgstr ""
+
+#, c-format
+msgid "Estimated time remaining: %d:%02d"
+msgstr ""
+
+#, c-format
+msgid "Memory used: %s, total: %s"
+msgstr ""
+
+msgid "Rows per album page"
+msgstr ""
+
+msgid "Columns per album page"
+msgstr ""
+
+msgid "Number of items to show per page"
+msgstr ""
+
+msgid "Row height (pixels)"
+msgstr ""
+
+msgid "Column width (pixels)"
+msgstr ""
+
+msgid "Show image owners"
+msgstr ""
+
+msgid "Show album owners"
+msgstr ""
+
+msgid "Show micro navigation thumbnails"
+msgstr ""
+
+msgid "Blocks to show in the sidebar"
+msgstr ""
+
+msgid "Blocks to show on album pages"
+msgstr ""
+
+msgid "Blocks to show on photo pages"
+msgstr ""
+
+msgid "View Samples"
+msgstr ""
+
+#, fuzzy
+msgid "Album Frame"
+msgstr "Ρυθμίσεις Λευκόματος"
+
+msgid "Item Frame"
+msgstr ""
+
+msgid "Photo Frame"
+msgstr ""
+
+msgid "Color Pack"
+msgstr ""
+
+#, fuzzy
+msgid "You must enter a number greater than 0"
+msgstr "Διαγραφή Χρήστη"
+
+msgid "Format: [module.BlockName param=value] ..."
+msgstr ""
+
+#, c-format
+msgid "%dx%d"
+msgstr ""
+
+msgid "Audio"
+msgstr ""
+
+msgid "audio"
+msgstr ""
+
+#, fuzzy
+msgid "Archive"
+msgstr "Ενεργό"
+
+#, fuzzy
+msgid "archive"
+msgstr "Ενεργό"
+
+msgid "Document"
+msgstr ""
+
+msgid "document"
+msgstr ""
+
+msgid "Spreadsheet"
+msgstr ""
+
+msgid "spreadsheet"
+msgstr ""
+
+msgid "Unknown"
+msgstr ""
+
+msgid "unknown"
+msgstr ""
+
+#, c-format
+msgid ""
+"Invalid return URL! The requested URL %s tried to insert a redirection to %s which is not a "
+"part of this Gallery."
+msgstr ""
+
+#, fuzzy
+msgid "Back"
+msgstr "<< Πίσω"
+
+#, c-format
+msgid "Back to %s"
+msgstr ""
+
+#, fuzzy
+msgid "User"
+msgstr "Πλήρες Πρόσβαση"
+
+#, fuzzy
+msgid "user"
+msgstr "Επεξεργασία Χρήστη"
+
+msgid "Optimize database"
+msgstr ""
+
+msgid ""
+"Improve the performance of your database.  Results will vary depending on which database "
+"you're using, but this routine maintenance will make your Gallery run faster.  Especially "
+"useful after adding or deleting many items."
+msgstr ""
+
+#, fuzzy
+msgid "Database optimized successfully"
+msgstr "Η Ομάδα '%s' Δημιουργήθηκε με επιτυχία"
+
+msgid "Reset view counts"
+msgstr ""
+
+msgid ""
+"Reset number of views to zero for all albums and items.  This task flushes the database "
+"cache as well."
+msgstr ""
+
+#, fuzzy
+msgid "View counts reset successfully"
+msgstr "Η Ομάδα '%s' Δημιουργήθηκε με επιτυχία"
+
+msgid "Refresh capture dates"
+msgstr ""
+
+msgid ""
+"Update capture date stored in Gallery for all items with an available date in the original "
+"data file (usually from EXIF data)."
+msgstr ""
+
+msgid "Processing..."
+msgstr ""
+
+msgid "Refresh Capture Dates"
+msgstr ""
+
+#, c-format
+msgid "Processing item %d of %d"
+msgstr ""
+
+#, c-format
+msgid "Updated %d of %d items"
+msgstr ""
+
+#, fuzzy
+msgid "System information"
+msgstr "Προορισμός"
+
+msgid "Get system details; useful for copy/paste into G2 support forum."
+msgstr ""
+
+msgid "core"
+msgstr ""
+
+#, fuzzy
+msgid "Gallery version"
+msgstr "Γκαλλερύ"
+
+#, fuzzy
+msgid "PHP version"
+msgstr "Δώστε δικαιώματα"
+
+#, fuzzy
+msgid "Webserver"
+msgstr "Προσθήκη Λευκόματος"
+
+#, fuzzy
+msgid "Toolkits"
+msgstr "Εργαλειοθήκη Γραφικών"
+
+#, fuzzy
+msgid "Acceleration"
+msgstr "Ενέργεια"
+
+msgid "Operating system"
+msgstr ""
+
+msgid "Default theme"
+msgstr "Προεπιλεγμένο Θέμα"
+
+msgid "Locale"
+msgstr ""
+
+#, fuzzy
+msgid "Browser"
+msgstr "Περιήγηση"
+
+msgid "General Settings"
+msgstr "Γενικές Ρυθμίσεις"
+
+#, fuzzy
+msgid "Settings saved successfully"
+msgstr "Η Ομάδα '%s' Δημιουργήθηκε με επιτυχία"
+
+#, fuzzy
+msgid "Added local upload directory successfully"
+msgstr "Η Ομάδα '%s' Δημιουργήθηκε με επιτυχία"
+
+#, fuzzy
+msgid "Removed local upload directory successfully"
+msgstr "Η Ομάδα '%s' Δημιουργήθηκε με επιτυχία"
+
+#, fuzzy
+msgid "Test email sent successfully"
+msgstr "Η Ομάδα '%s' Δημιουργήθηκε με επιτυχία"
+
+msgid "There was a problem processing your request, see below for details."
+msgstr ""
+
+msgid "Error sending test email, see below for details."
+msgstr ""
+
+#, fuzzy
+msgid "Language Settings"
+msgstr "Διαθέσιμες Επιλογές"
+
+msgid ""
+"Select language defaults for Gallery. Individual users can override this setting in their "
+"personal preferences or via the language selector block if available. Gallery will try to "
+"automatically detect the language preference of each user if the browser preference check is "
+"enabled."
+msgstr ""
+
+msgid "Default language"
+msgstr "Προεπιλεγμένη Γλώσσα"
+
+msgid "Check Browser Preference"
+msgstr ""
+
+msgid "gettext"
+msgstr ""
+
+#, c-format
+msgid ""
+"Your webserver does not support localization.  Please instruct your system administrator to "
+"reconfigure PHP with the %s option enabled."
+msgstr ""
+
+#, fuzzy
+msgid "Date Formats"
+msgstr "Διαγραφή Χρήστη"
+
+#, c-format
+msgid ""
+"Specify how dates and times are displayed by Gallery.  See %sphp.net%s for details of how to "
+"enter a format string.  Note that the display of some tokens varies according to the active "
+"language."
+msgstr ""
+
+msgid "Style"
+msgstr ""
+
+msgid "Format"
+msgstr ""
+
+#, fuzzy
+msgid "Sample"
+msgstr "Πλήρες Όνομα"
+
+#, fuzzy
+msgid "Date"
+msgstr "Διαγραφή Χρήστη"
+
+#, fuzzy
+msgid "Time"
+msgstr "Προσθαφαίρεση  Χρηστών"
+
+msgid "Date/Time"
+msgstr ""
+
+msgid "Filesystem Permissions"
+msgstr "Δικαιώματα Αρχείου Συστήματος"
+
+#, fuzzy
+msgid ""
+"Specify the default permissions for files and directories that Gallery creates. This doesn't "
+"apply to files/directories that Gallery has already created."
+msgstr ""
+"Here you can specify the default permissions for files and directories that Gallery creates. "
+"This doesn't apply to files/directories that Gallery has already created."
+
+msgid "New directories"
+msgstr ""
+
+#, fuzzy
+msgid "New files"
+msgstr "Προσθέστε Φωτογραφίες"
+
+msgid "Local Server Upload Paths"
+msgstr ""
+
+msgid ""
+"Specify the legal directories on the local server where a user can store files and then "
+"upload them into Gallery using the <i>Upload from Local Server</i> feature.  The paths you "
+"enter here and all the files and directories under those paths will be available to any "
+"Gallery user who has upload privileges, so you should limit this to directories that won't "
+"contain sensitive data (eg. /tmp or /usr/ftp/incoming)"
+msgstr ""
+
+msgid "Path"
+msgstr ""
+
+msgid "Action"
+msgstr "Ενέργεια"
+
+msgid "remove"
+msgstr ""
+
+msgid "Add"
+msgstr "Προσθήκη"
+
+#, fuzzy
+msgid "You must enter a directory to add."
+msgstr "Διαγραφή Χρήστη"
+
+msgid "open_basedir documentation"
+msgstr ""
+
+#, c-format
+msgid ""
+"Your webserver is configured to prevent you from accessing that directory.  Please refer to "
+"the %s and consult your webserver administrator."
+msgstr ""
+
+msgid "The webserver does not have permissions to read that directory."
+msgstr ""
+
+msgid "The path you specified is not a valid directory."
+msgstr ""
+
+#, fuzzy
+msgid "Session Settings"
+msgstr "Ρυθμίσεις Λευκόματος"
+
+#, fuzzy
+msgid "Session Lifetime"
+msgstr "Ρυθμίσεις Λευκόματος"
+
+msgid "Inactivity Timeout"
+msgstr "Τάιμ ’ουτ Αδράνειας"
+
+msgid "Embedded Markup"
+msgstr ""
+
+msgid ""
+"What kind of markup should we allow in user-entered fields?  For security reasons we do not "
+"recommend that you allow raw HTML.  BBCode is a special kind of markup that is secure and "
+"allows for simple text formatting like bold, italics, lists, images and urls."
+msgstr ""
+
+msgid "Markup"
+msgstr ""
+
+msgid "Email"
+msgstr ""
+
+msgid ""
+"By default Gallery uses PHP's built in mail function to send email which requires no "
+"configuration.  To use a smtp/mail server enter the information below, including "
+"authentication information if required.  Optionally add :port after the server name to use a "
+"non-default port."
+msgstr ""
+
+#, fuzzy
+msgid "Server"
+msgstr "Προσθήκη Λευκόματος"
+
+msgid "Username"
+msgstr ""
+
+msgid "Password"
+msgstr ""
+
+#, fuzzy
+msgid "SMTP From Address"
+msgstr "Email address"
+
+#, fuzzy
+msgid "Invalid email address"
+msgstr "Email address"
+
+msgid ""
+"Send a test email to verify your settings are correct (whether using PHP mail or SMTP "
+"settings above).  Below enter a recipient email address for a test message."
+msgstr ""
+
+msgid "Send Email"
+msgstr ""
+
+msgid "Email Test Error"
+msgstr ""
+
+#, fuzzy
+msgid "Cookies"
+msgstr "Εργαλειοθήκη Γραφικών"
+
+msgid ""
+"When Gallery is embedded in another application (portal, CMS, forum, etc.), then you have "
+"the choice between two options. Everyone else does not have to care about the cookie "
+"settings. Read on for more details."
+msgstr ""
+
+msgid ""
+"If your Gallery is embedded and you leave the following fields empty, then all DownloadItem "
+"links (the URLs of the images and other items) in the embedded Gallery have <b>an appended "
+"GALLERYSID string</b> in the URL which is <b>a minor security risk</b> when your Gallery "
+"users start copy'n'pasting image URLs in forums, guestbooks, etc. The alternative is to set "
+"the <b>cookie path</b>. Gallery will then <b>not append the GALLERYSID to the embedded "
+"DownloadItem URLs</b>. E.g. when Gallery is reachable at http://www.example.com/application/"
+"gallery2/ and the embedding application is at http://www.example.com/application/, then you "
+"have to compare the path /application/gallery2/ with /application/. The cookie path is the "
+"part of the paths that is equal, in this case it is '/application/'. Most often it is just "
+"'/'."
+msgstr ""
+
+msgid ""
+"The <b>cookie domain</b> is also only needed for embedded Gallery installs and only if you "
+"want to get rid of the GALLERYSID string in the embedded DownloadItem URLs. <b>In most "
+"cases, the cookie domain can be left blank.</b> Set it only, if Gallery and the embedding "
+"application are only reachable with <b>different subdomains</b>. E.g. when Gallery is at "
+"http://photos.example.com/ and the application is at http://www.example.com/, then you have "
+"to set the cookie domain example.com (the part of the host string that is common to both, "
+"Gallery and the embedding application)."
+msgstr ""
+
+msgid ""
+"Once you change the cookie settings, <b>all registered users</b> of your Gallery will "
+"<b>have to clear their browser cookie cache</b>. If they do not, they will experience "
+"login / logout / lost session problems."
+msgstr ""
+
+msgid "Invalid cookie path"
+msgstr ""
+
+msgid "Domain"
+msgstr ""
+
+msgid "Invalid cookie domain"
+msgstr ""
+
+msgid "Locking System"
+msgstr ""
+
+msgid ""
+"Gallery uses a system of locks to prevent simultaneous changes from interfering with each "
+"other.  There are two types of locking, each with its advantages and disadvantages.  "
+"<b>File</b> based locking is fast and efficient, but won't work on NFS filesystems and will "
+"be unreliable on Windows.  <b>Database</b> locking is slower but is more reliable.  If you "
+"are unsure which to choose, we recommend using file locking.  If you're getting many lock "
+"timeouts, you can try switching to database locking instead.  It's ok to switch back and "
+"forth."
+msgstr ""
+
+msgid "Lock system"
+msgstr ""
+
+msgid "Helper Processes"
+msgstr ""
+
+msgid ""
+"Some Gallery modules will use programs on your server to do image processing, archiving and "
+"other operations.  These programs can be very computationally intensive and can impact the "
+"overall performance of a shared web server.  You can make these programs run at a lower "
+"priority so that they play nice.  If you're in a shared hosting environment and your web "
+"host is complaining, try setting your priority low."
+msgstr ""
+
+msgid "Priority"
+msgstr ""
+
+msgid "Save"
+msgstr ""
+
+msgid "Reset"
+msgstr ""
+
+#, fuzzy
+msgid "Create A New Group"
+msgstr "Δημιουργία Νέας Ομάδας"
+
+msgid "Group Name"
+msgstr "Όνομα Ομάδας"
+
+msgid "(required)"
+msgstr ""
+
+#, fuzzy
+msgid "You must enter a group name"
+msgstr "Διαγραφή Χρήστη"
+
+#, c-format
+msgid "Group '%s' already exists"
+msgstr "Η ομάδα '%s' υπάρχει ήδη"
+
+msgid "Create Group"
+msgstr "Δημιουργία Ομάδας"
+
+msgid "Cancel"
+msgstr "Ακυρο"
+
+#, fuzzy
+msgid "Create A New User"
+msgstr "Δημιουργία Νέου Χρήστη"
+
+#, fuzzy
+msgid "You must enter a username"
+msgstr "Διαγραφή Χρήστη"
+
+#, fuzzy, c-format
+msgid "Username '%s' already exists"
+msgstr "Η ομάδα '%s' υπάρχει ήδη"
+
+#, fuzzy
+msgid "Full Name"
+msgstr "Πλήρες Όνομα"
+
+#, fuzzy
+msgid "Email Address"
+msgstr "Email address"
+
+#, fuzzy
+msgid "You must enter an email address"
+msgstr "Διαγραφή Χρήστη"
+
+msgid "Language"
+msgstr ""
+
+#, fuzzy
+msgid "You must enter a password"
+msgstr "Διαγραφή Χρήστη"
+
+msgid "Verify Password"
+msgstr ""
+
+#, fuzzy
+msgid "You must enter the password a second time"
+msgstr ""
+"Βάλτε δύο φορές τον νέο κωδικό για να γίνει αλλαγή κωδικού, ή αφήστε κενό  το πεδίο για να "
+"παραμείνει ο παλιός κωδικός"
+
+msgid "The passwords you entered did not match"
+msgstr ""
+
+msgid "Create User"
+msgstr "Δημιουργία Χρήστη"
+
+#, fuzzy
+msgid "Delete A Group"
+msgstr "Διαγραφή Ομάδας"
+
+msgid "Are you sure?"
+msgstr ""
+
+#, c-format
+msgid "This will completely remove %s from Gallery.  There is no undo!"
+msgstr ""
+
+msgid "Delete"
+msgstr "Διαγραφή"
+
+#, fuzzy
+msgid "Delete a User"
+msgstr "Διαγραφή Χρήστη"
+
+#, fuzzy, c-format
+msgid "User %s is the owner of %s items."
+msgstr "Μακροσκελής Περιγραφή Φωτογραφίας."
+
+#, c-format
+msgid "Delete user <strong>%s</strong> and..."
+msgstr ""
+
+#, c-format
+msgid "Assign a new owner for all items of %s"
+msgstr ""
+
+#, c-format
+msgid ""
+"Delete all items of %s and assign a new owner for all remaining non empty albums. Items that "
+"%s doesn't have permission to delete will also be reassigned to a new owner."
+msgstr ""
+
+msgid "New owner (leaving blank means one of the Site Admins):"
+msgstr ""
+
+#, c-format
+msgid "User '%s' does not exist! Cannot assign items to a nonexistent user."
+msgstr ""
+
+msgid "The new owner must be a different user than the user we are deleting!"
+msgstr ""
+
+msgid "The new owner cannot be a Guest / Anonymous user!"
+msgstr ""
+
+#, c-format
+msgid "This will completely remove <strong>%s</strong> from Gallery.  There is no undo!"
+msgstr ""
+
+msgid "Edit a group"
+msgstr "Επεξεργασία Ομάδας"
+
+#, c-format
+msgid "Edit Members of Group '%s'"
+msgstr ""
+
+#, fuzzy, c-format
+msgid "Added user '%s' to group '%s'"
+msgstr "Προσθαφαίρεση  Χρηστών"
+
+#, fuzzy, c-format
+msgid "Removed user '%s' from group '%s'"
+msgid_plural "Removed %s users from group '%s'"
+msgstr[0] "Προσθαφαίρεση  Χρηστών"
+msgstr[1] "Προσθαφαίρεση  Χρηστών"
+
+#, c-format
+msgid "This group contains %d user"
+msgid_plural "This group contains %d users"
+msgstr[0] ""
+msgstr[1] ""
+
+#, fuzzy
+msgid "Members"
+msgstr "Προσθέστε Φωτογραφίες"
+
+msgid "&laquo; first"
+msgstr ""
+
+msgid "&laquo; back"
+msgstr ""
+
+#, c-format
+msgid "Viewing page %d of %d"
+msgstr ""
+
+msgid "next &raquo;"
+msgstr ""
+
+msgid "last &raquo;"
+msgstr ""
+
+#, fuzzy
+msgid "Filter"
+msgstr "Φίλτρο:"
+
+msgid "Clear"
+msgstr "Καθαρισμός"
+
+#, c-format
+msgid "%d user matches your filter"
+msgid_plural "%d users match your filter"
+msgstr[0] ""
+msgstr[1] ""
+
+#, fuzzy
+msgid "Remove selected"
+msgstr "Προσθαφαίρεση  Χρηστών"
+
+#, fuzzy
+msgid "You must select a user to remove."
+msgstr "Διαγραφή Χρήστη"
+
+#, fuzzy
+msgid "You can't remove yourself from this group."
+msgstr "Διαγραφή Ομάδας"
+
+#, fuzzy
+msgid "Add Member"
+msgstr "Προσθέστε Φωτογραφίες"
+
+#, fuzzy
+msgid "You must enter a username."
+msgstr "Διαγραφή Χρήστη"
+
+#, fuzzy, c-format
+msgid "User '%s' does not exist."
+msgstr "Η Ομάδα '%s' δεν υπάρχει."
+
+#, fuzzy
+msgid "This user already is in this group."
+msgstr "Η ομάδα '%s' υπάρχει ήδη"
+
+msgid "Done"
+msgstr "Επιτυχία"
+
+msgid "Edit a user"
+msgstr "Επεξεργασία Χρήστη"
+
+#, fuzzy
+msgid "That username is already in use"
+msgstr "Η ομάδα '%s' υπάρχει ήδη"
+
+#, fuzzy
+msgid "You must enter a new username"
+msgstr "Διαγραφή Χρήστη"
+
+#, fuzzy
+msgid "E-mail Address"
+msgstr "Email address"
+
+msgid "(suggested)"
+msgstr ""
+
+msgid "Group Management"
+msgstr "Διαχείριση Ομάδων"
+
+#, fuzzy, c-format
+msgid "Removed group '%s'"
+msgstr "Προσθαφαίρεση  Χρηστών Ομάδας"
+
+#, fuzzy, c-format
+msgid "Created group '%s'"
+msgstr "Δημιουργία Ομάδας"
+
+#, fuzzy, c-format
+msgid "Modified group '%s'"
+msgstr "Επεξεργασία ομάδας '%s'"
+
+#, c-format
+msgid "There is %d group in the system."
+msgid_plural "There are %d total groups in the system."
+msgstr[0] ""
+msgstr[1] ""
+
+#, fuzzy
+msgid "Edit Group"
+msgstr "Επεξεργασία Ομάδας"
+
+msgid "Edit"
+msgstr "Επεξεργασία"
+
+msgid "Add/Remove Users"
+msgstr "Προσθαφαίρεση  Χρηστών"
+
+#, c-format
+msgid "Group '%s' does not exist."
+msgstr "Η Ομάδα '%s' δεν υπάρχει."
+
+#, fuzzy
+msgid "You cannot delete that group"
+msgstr "Διαγραφή Ομάδας"
+
+msgid "You cannot edit that group's users"
+msgstr ""
+
+#, fuzzy
+msgid "Edit Group (by list)"
+msgstr "Επεξεργασία ομάδας '%s'"
+
+#, fuzzy
+msgid "edit"
+msgstr "Επεξεργασία"
+
+#, fuzzy
+msgid "delete"
+msgstr "Διαγραφή"
+
+#, fuzzy
+msgid "members"
+msgstr "Προσθαφαίρεση  Χρηστών"
+
+#, c-format
+msgid "%d group matches your filter"
+msgid_plural "%d groups match your filter"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "System Maintenance"
+msgstr ""
+
+#, fuzzy, c-format
+msgid "Completed %s task successfully."
+msgstr "Η Ομάδα '%s' Δημιουργήθηκε με επιτυχία"
+
+#, fuzzy, c-format
+msgid "The %s task failed to complete successfully."
+msgstr "Η Ομάδα '%s' Δημιουργήθηκε με επιτυχία"
+
+#, fuzzy
+msgid "Task name"
+msgstr "Πλήρες Όνομα"
+
+msgid "Last run"
+msgstr ""
+
+msgid "Success/Fail"
+msgstr ""
+
+msgid "Not run yet"
+msgstr ""
+
+msgid "Success"
+msgstr ""
+
+#, fuzzy
+msgid "Failed"
+msgstr "Αρχείο: "
+
+msgid "run now"
+msgstr ""
+
+msgid "Last Run Details:"
+msgstr ""
+
+#, fuzzy
+msgid "Gallery Modules"
+msgstr "Γκαλλερύ"
+
+#, c-format
+msgid "Successfully installed and auto-configured module %s"
+msgstr ""
+
+#, c-format
+msgid "Successfully installed module %s"
+msgstr ""
+
+#, fuzzy, c-format
+msgid "Successfully configured module %s"
+msgstr "Η Ομάδα '%s' Διαγράφηκε με επιτυχία"
+
+#, c-format
+msgid "Successfully upgraded module %s"
+msgstr ""
+
+#, c-format
+msgid "Successfully activated module %s"
+msgstr ""
+
+#, c-format
+msgid "Successfully deactivated module %s"
+msgstr ""
+
+#, c-format
+msgid "Successfully uninstalled module %s"
+msgstr ""
+
+msgid ""
+"Gallery features come as separate modules.  You can download and install modules to add more "
+"features to your Gallery, or you can disable features if you don't want to use them.  In "
+"order to use a feature, you must install, configure (if necessary) and activate it.  If you "
+"don't wish to use a feature, you can deactivate it."
+msgstr ""
+
+#, fuzzy
+msgid "Module Name"
+msgstr "Πλήρες Όνομα"
+
+msgid "Version"
+msgstr ""
+
+msgid "Installed"
+msgstr ""
+
+msgid "Actions"
+msgstr "Ενέργειες"
+
+msgid "Status: Not Installed"
+msgstr ""
+
+#, fuzzy
+msgid "Status: Active"
+msgstr "Ενεργό"
+
+msgid "Status: Inactive"
+msgstr ""
+
+msgid "Status: Upgrade Required (Inactive)"
+msgstr ""
+
+msgid "Status: Incompatible Module (Inactive)"
+msgstr ""
+
+msgid "Incompatible module!"
+msgstr ""
+
+#, c-format
+msgid "Core API Required: %s (available: %s)"
+msgstr ""
+
+#, c-format
+msgid "Module API Required: %s (available: %s)"
+msgstr ""
+
+msgid "Confirm module uninstall"
+msgstr ""
+
+#, fuzzy, c-format
+msgid "Do you really want to uninstall the %s module?"
+msgstr "Θέλετε οπωσδήποτε να διαγράψετε τον χρήστη '%s'?"
+
+msgid "This will also remove any permissions and clean up any data created by this module."
+msgstr ""
+
+msgid "Uninstall"
+msgstr ""
+
+msgid "Performance Tuning"
+msgstr ""
+
+#, fuzzy
+msgid "Updated performance settings successfully"
+msgstr "Η Ομάδα '%s' Δημιουργήθηκε με επιτυχία"
+
+#, fuzzy
+msgid "Deleted all saved pages"
+msgstr "Διαγραφή Χρήστη"
+
+msgid ""
+"Improve your Gallery performance by storing entire web pages in the database.  This can "
+"considerably reduce the amount of webserver and database resources required to display a web "
+"page.  The tradeoff is that the web page you see may be a little bit out of date, however "
+"you can always get the most recent version of the page by forcing a refresh in your browser "
+"(typically by holding down the shift key and clicking the reload button)."
+msgstr ""
+
+msgid "Partial Acceleration"
+msgstr ""
+
+#, no-c-format
+msgid ""
+"Partial acceleration gives you roughly 10-25% performance increase, but some forms of "
+"dynamic data (like view counts) will not get updated right away.  All content that appears "
+"in blocks (like the random image block, any sidebar blocks, etc) will always be updated."
+msgstr ""
+
+msgid "Full Acceleration"
+msgstr ""
+
+#, no-c-format
+msgid ""
+"Full acceleration gives roughly a 90% performance increase, but no dynamic data (random "
+"image block, other sidebar blocks, number of items in your shopping cart, view counts, etc) "
+"will get updated until the saved page expires."
+msgstr ""
+
+msgid ""
+"You can additionally specify when saved pages expire.  Setting a longer expiration time will "
+"reduce the load on your server, but will increase the interval before users see changes.  "
+"Lower expiration times mean that users will see more current data, but they will place a "
+"higher load on your server."
+msgstr ""
+
+msgid "Here are some standard acceleration profiles:"
+msgstr ""
+
+#, fuzzy
+msgid "Medium acceleration"
+msgstr "Ενέργειες"
+
+msgid "High acceleration"
+msgstr ""
+
+#, fuzzy
+msgid "Guest Users"
+msgstr "Επεξεργασία Χρήστη"
+
+msgid "Expires after:"
+msgstr ""
+
+msgid "Clear Saved Pages"
+msgstr ""
+
+msgid "Please make sure that your internet connection is set up properly or try again later."
+msgstr ""
+
+msgid "The repository index has been successfully updated."
+msgstr ""
+
+msgid "All plugins are already up-to-date."
+msgstr ""
+
+msgid "Common Tasks"
+msgstr ""
+
+msgid "Warning: Experimental feature!"
+msgstr ""
+
+msgid ""
+"The repository features are currently experimental, and no actual repository has been set up "
+"yet, so none of these features will work at this time."
+msgstr ""
+
+msgid "Update Index"
+msgstr ""
+
+msgid ""
+"The Gallery repository contains the latest modules and themes extensively tested by the "
+"Gallery team. The repository index contains information about available plugins, such as the "
+"latest versions, available languages and compatibility. The index must be synchronized "
+"periodically with the Gallery server so you are informed about any available updates. No "
+"personal information is sent to the Gallery server during updating. On slower connections "
+"the process might take a minute or two."
+msgstr ""
+
+#, c-format
+msgid ""
+"As of the last update on %s, the repository contains %s modules and %s themes. Its contents "
+"can be viewed on the Modules and Themes tabs."
+msgstr ""
+
+msgid ""
+"The index has never been updated. Click on the Update button to see what updates are "
+"available."
+msgstr ""
+
+#, fuzzy
+msgid "Update"
+msgstr "Διαγραφή Χρήστη"
+
+#, fuzzy
+msgid "Upgrade Gallery"
+msgstr "Γκαλλερύ"
+
+msgid ""
+"A new version of Gallery is available, but it cannot be upgraded through this interface. "
+"Upgrading it might make some of your current plugins stop working, but others that rely on "
+"the features of the new version may become available. Here are the recommended steps for "
+"upgrading:"
+msgstr ""
+
+msgid "Review plugin compatibility (on the Themes and Modules tabs)"
+msgstr ""
+
+#, c-format
+msgid "%sDownload%s Gallery core"
+msgstr ""
+
+#, c-format
+msgid "Read the %supgrade instructions%s and perform the upgrade"
+msgstr ""
+
+#, fuzzy
+msgid "Gallery Up-To-Date"
+msgstr "Γκαλλερύ"
+
+msgid ""
+"Gallery cannot be upgraded through this interface. When a new version becomes available, "
+"upgrade instructions will be presented here."
+msgstr ""
+
+msgid "Upgrade All Plugins"
+msgstr ""
+
+msgid ""
+"Gallery can automatically upgrade your themes and modules to the latest available versions. "
+"No new plugins will be downloaded."
+msgstr ""
+
+msgid "Upgrade All"
+msgstr ""
+
+msgid ""
+"Once the repository index has been downloaded, a list of available plugins will be "
+"presented. It can be downloaded by clicking on the Update button on the Common Tasks tab."
+msgstr ""
+
+msgid ""
+"The following plugins are available. Click on the action beside the plugin you're interested "
+"in to see what's available in the repository."
+msgstr ""
+
+msgid "Incompatible plugins are marked with an exclamation icon."
+msgstr ""
+
+#, c-format
+msgid ""
+"A new core module version is available. There may be plugins that are incompatible with the "
+"installed core module, which are not shown here. You can view a %scomplete list%s of "
+"plugins, including incompatible ones, which are marked with a red icon."
+msgstr ""
+
+msgid "Theme Name"
+msgstr ""
+
+#, fuzzy
+msgid "Latest"
+msgstr "Διαγραφή Χρήστη"
+
+msgid "Incompatible Plugin"
+msgstr ""
+
+msgid "Incompatible plugin!"
+msgstr ""
+
+#, c-format
+msgid "Plugin API Required: %s (available: %s)"
+msgstr ""
+
+msgid "No packages have been selected."
+msgstr ""
+
+#, fuzzy
+msgid "Base Files"
+msgstr "Πλήρες Όνομα"
+
+msgid ""
+"The base files required for the theme to work and the English (US) translation will be "
+"downloaded."
+msgstr ""
+
+msgid "Upgrade Base Files"
+msgstr ""
+
+msgid "You can upgrade the base module files."
+msgstr ""
+
+msgid "Upgrade base files"
+msgstr ""
+
+msgid "Base Files Up-To-Date"
+msgstr ""
+
+msgid "This plugin's base files are up-to-date."
+msgstr ""
+
+msgid "Updated Translations"
+msgstr ""
+
+msgid ""
+"Below is a list of translations that have been updated since they were last downloaded. "
+"Select the ones you want to download."
+msgstr ""
+
+msgid "Additional Languages"
+msgstr ""
+
+msgid ""
+"Below is a list of languages this plugin has been translated to. Select the ones you want "
+"included in addition to the ones already downloaded."
+msgstr ""
+
+msgid "Unit Tests"
+msgstr ""
+
+msgid ""
+"This plugin has unit tests available for download, which are useful for Gallery developers. "
+"All of the module's features are available without the tests."
+msgstr ""
+
+msgid "Download unit tests"
+msgstr ""
+
+#, fuzzy
+msgid "Gallery Repository Setup"
+msgstr "Γκαλλερύ"
+
+msgid "Warning:"
+msgstr ""
+
+#, c-format
+msgid ""
+"In order to download plugins from the Gallery repository, a special directory needs to be "
+"created where Gallery will store the data. Under your Gallery base directory, create a "
+"directory called '%s' and allow the web server to write into it by appropriately setting the "
+"permissions."
+msgstr ""
+
+msgid "Instructions for Unix-type platforms:"
+msgstr ""
+
+msgid ""
+"Refreshing this page will take you to the Repository if the directory has been successfully "
+"created."
+msgstr ""
+
+#, fuzzy
+msgid "Gallery Themes"
+msgstr "Γκαλλερύ"
+
+#, fuzzy, c-format
+msgid "Successfully activated theme %s"
+msgstr "Η Ομάδα '%s' Διαγράφηκε με επιτυχία"
+
+#, fuzzy, c-format
+msgid "Successfully deactivated theme %s"
+msgstr "Η Ομάδα '%s' Διαγράφηκε με επιτυχία"
+
+#, fuzzy, c-format
+msgid "Successfully installed theme %s"
+msgstr "Η Ομάδα '%s' Διαγράφηκε με επιτυχία"
+
+#, fuzzy, c-format
+msgid "Successfully uninstalled theme %s"
+msgstr "Η Ομάδα '%s' Διαγράφηκε με επιτυχία"
+
+#, fuzzy, c-format
+msgid "Successfully upgraded theme %s"
+msgstr "Η Ομάδα '%s' Διαγράφηκε με επιτυχία"
+
+msgid "Successfully saved default album settings"
+msgstr ""
+
+#, fuzzy
+msgid "Restored theme settings"
+msgstr "Ρυθμίσεις Λευκόματος"
+
+#, fuzzy
+msgid "All Themes"
+msgstr "Πλήρες Πρόσβαση"
+
+msgid "Defaults"
+msgstr "Προεπιλογές"
+
+msgid "Status: Incompatible Theme (Inactive)"
+msgstr ""
+
+msgid "Incompatible theme!"
+msgstr ""
+
+#, c-format
+msgid "Theme API Required: %s (available: %s)"
+msgstr ""
+
+#, fuzzy
+msgid "(default)"
+msgstr "Προεπιλογές"
+
+msgid ""
+"These are default display settings for albums in your gallery.  They can be overridden in "
+"each album."
+msgstr ""
+
+#, fuzzy
+msgid "Default sort order"
+msgstr "Ταξινόμιση Λευκόματος:"
+
+msgid "with"
+msgstr ""
+
+#, fuzzy
+msgid "New albums"
+msgstr "Διαγραφή Χρήστη"
+
+#, fuzzy, c-format
+msgid "%s Theme Settings"
+msgstr "Ρυθμίσεις Λευκόματος"
+
+msgid ""
+"These are the global settings for the theme.  They can be overridden at the album level."
+msgstr ""
+
+msgid "Available"
+msgstr ""
+
+msgid "Choose a block"
+msgstr ""
+
+#, fuzzy
+msgid "Selected"
+msgstr "Διαγραφή"
+
+#, fuzzy
+msgid "Remove"
+msgstr "Προσθαφαίρεση  Χρηστών"
+
+#, fuzzy
+msgid "Move Up"
+msgstr "Επεξεργασία Αντικειμένου"
+
+#, fuzzy
+msgid "Move Down"
+msgstr "Επεξεργασία Αντικειμένου"
+
+msgid "Parameter"
+msgstr ""
+
+msgid "Value"
+msgstr ""
+
+msgid "There are no settings for this theme"
+msgstr ""
+
+msgid ""
+"The toolkits shown below have some overlap in supported operations and mime types.  Rank the "
+"toolkits here to determine which will perform these operations."
+msgstr ""
+
+#, fuzzy
+msgid "Toolkit"
+msgstr "Εργαλειοθήκη Γραφικών"
+
+#, fuzzy
+msgid "Order"
+msgstr "Προσθήκη Λευκόματος"
+
+msgid "up"
+msgstr ""
+
+msgid "down"
+msgstr ""
+
+#, fuzzy
+msgid "User Management"
+msgstr "Διαχείριση Ομάδων"
+
+#, fuzzy, c-format
+msgid "Removed user '%s'"
+msgstr "Προσθαφαίρεση  Χρηστών"
+
+#, fuzzy, c-format
+msgid "Created user '%s'"
+msgstr "Δημιουργία Χρήστη"
+
+#, fuzzy, c-format
+msgid "Modified user '%s'"
+msgstr "Επεξεργασία ομάδας '%s'"
+
+#, c-format
+msgid "There is %d user in the system."
+msgid_plural "There are %d total users in the system."
+msgstr[0] ""
+msgstr[1] ""
+
+#, fuzzy
+msgid "Edit User"
+msgstr "Επεξεργασία Χρήστη"
+
+msgid "You cannot delete yourself!"
+msgstr ""
+
+msgid "You cannot delete the special guest user."
+msgstr ""
+
+msgid "Edit User (by list)"
+msgstr ""
+
+msgid "Thumbnails"
+msgstr ""
+
+msgid ""
+"Gallery can create thumbnails at upload time, or create them the first time you want to see "
+"the thumbnail itself.  Either way, it will create the thumbnail once and save it, but if you "
+"create them at upload time it makes viewing albums for the first time go faster at the "
+"expense of a longer upload time."
+msgstr ""
+
+msgid "Create thumbnails now"
+msgstr ""
+
+msgid "This is a test email from Gallery2"
+msgstr ""
+
+msgid "Edit Conflict!"
+msgstr ""
+
+msgid "Security Violation"
+msgstr ""
+
+msgid "Database Error"
+msgstr ""
+
+msgid "Platform Error"
+msgstr ""
+
+msgid "Error"
+msgstr "Λάθος"
+
+msgid ""
+"Your change cannot be completed because somebody else has made a conflicting change to the "
+"same item.  Use the back button in your browser to go back to the page you were on, then "
+"<b>reload that page</b> and try your change again."
+msgstr ""
+
+msgid "Go back and try again"
+msgstr ""
+
+msgid "Alternatively, you can return to the main Gallery page and resume browsing."
+msgstr ""
+
+msgid "The action you attempted is not permitted."
+msgstr ""
+
+msgid "An error has occurred while interacting with the database."
+msgstr ""
+
+msgid ""
+"The exact nature of database errors is not captured unless Gallery debug mode is enabled in "
+"config.php.  Before seeking support for this error please enable buffered debug output and "
+"retry the operation.  Look near the bottom of the lengthy debug output to find error details."
+msgstr ""
+
+msgid "An error has occurred while interacting with the platform."
+msgstr ""
+
+msgid ""
+"The exact nature of the platform error is unknown. A common cause are insufficient file "
+"system permissions. This can happen if you or your webhost changed something in the file "
+"system, e.g. by restoring data from a backup."
+msgstr ""
+
+msgid "An error has occurred."
+msgstr ""
+
+#, fuzzy
+msgid "Back to the Gallery"
+msgstr "Περιήγηση"
+
+msgid "Error Detail"
+msgstr ""
+
+#, fuzzy
+msgid "System Information"
+msgstr "Προορισμός"
+
+msgid ""
+"You don't have any Graphics Toolkit activated that can handle JPEG images.  If you add "
+"images, you will probably not have any thumbnails."
+msgstr ""
+
+#, c-format
+msgid "Visit the <a href=\"%s\">Modules</a> page to activate a Graphics Toolkit."
+msgstr ""
+
+#, fuzzy
+msgid "Add Sub-Album"
+msgstr "Προσθήκη Λευκόματος"
+
+msgid ""
+"The name of this album on your hard disk.  It must be unique in this album.  Only use "
+"alphanumeric characters, underscores or dashes.  You will be able to rename it later."
+msgstr ""
+
+msgid "Your name contains invalid characters.  Please enter another."
+msgstr ""
+
+#, fuzzy
+msgid "You must enter a name for this album."
+msgstr "Διαγραφή Χρήστη"
+
+msgid "The name you entered is already in use.  Please enter another."
+msgstr ""
+
+msgid "This is the album title."
+msgstr ""
+
+msgid "This is the album summary."
+msgstr ""
+
+msgid "Keywords are not visible, but are searchable."
+msgstr ""
+
+#, fuzzy
+msgid "This is the long description of the album."
+msgstr "Μακροσκελής Περιγραφή Φωτογραφίας."
+
+msgid "Create"
+msgstr "Δημιουργία"
+
+msgid "Upload Complete"
+msgstr ""
+
+#, c-format
+msgid "Successfully added %d file."
+msgid_plural "Successfully added %d files."
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "No files added."
+msgstr ""
+
+#, c-format
+msgid "Added %s"
+msgstr ""
+
+#, c-format
+msgid "Failed to add %s"
+msgstr ""
+
+#, fuzzy
+msgid "Add more files"
+msgstr "Προσθέστε Φωτογραφίες"
+
+msgid ""
+"Your webserver is configured to disallow file uploads from your web browser at this time.  "
+"Please contact your system administrator for assistance."
+msgstr ""
+
+#, fuzzy
+msgid "Upload files directly from your computer."
+msgstr "Προσθέστε τοπικά αρχεία"
+
+msgid "Enter the full path to the file and an optional caption in the boxes below."
+msgstr "Enter the full path to the file and an optional caption in the boxes below."
+
+#, c-format
+msgid ""
+"<b>Note:</b> You can upload up to %s at one time.  If you want to upload more than that, you "
+"must upload the files separately, use a different upload format, or ask your system "
+"administrator to allow larger uploads."
+msgstr ""
+
+#, c-format
+msgid ""
+"<b>Note:</b> You can upload up to %s at one time.  No individual file may be larger than %s. "
+"If you want to upload more than that, you must upload the files separately, use a different "
+"upload format, or ask your system administrator to allow larger uploads."
+msgstr ""
+
+msgid "More.."
+msgstr ""
+
+msgid "Set item titles from:"
+msgstr ""
+
+#, fuzzy
+msgid "Assign caption to:"
+msgstr "Διαχείρηση της Γκαλλερύ"
+
+msgid ""
+"Transfer files that are already on your server into your Gallery.  The files must already "
+"have been uploaded to your server some other way (like FTP) and must be placed in a "
+"directory where they are accessibly by any element on the server.  If you're on Unix this "
+"means that the files and the directory the files are in should have modes of at least 755."
+msgstr ""
+
+msgid ""
+"For security purposes, you can't use this feature until the Gallery Site Administrator "
+"configures a set of legal upload directories."
+msgstr ""
+
+msgid "Server Path"
+msgstr ""
+
+#, fuzzy
+msgid "You must enter a directory."
+msgstr "Διαγραφή Χρήστη"
+
+msgid ""
+"The directory you entered is invalid.  Make sure that the directory is readable by all users."
+msgstr ""
+
+msgid ""
+"The directory you entered is illegal.  It must be a sub directory of one of the directories "
+"listed below."
+msgstr ""
+
+msgid "An item with the same name already exists."
+msgstr ""
+
+msgid "Legal Directories"
+msgstr ""
+
+msgid "modify"
+msgstr ""
+
+msgid "Recent Directories"
+msgstr ""
+
+#, fuzzy
+msgid "Find Files"
+msgstr "Προσθέστε Φωτογραφίες"
+
+#, fuzzy, c-format
+msgid "Directory: %s"
+msgstr "Λάθος"
+
+#, fuzzy
+msgid "File name"
+msgstr "Πλήρες Όνομα"
+
+msgid "Type"
+msgstr ""
+
+msgid "Size"
+msgstr ""
+
+msgid "Use Symlink"
+msgstr ""
+
+#, fuzzy, c-format
+msgid "%d byte"
+msgid_plural "%d bytes"
+msgstr[0] "%d Λεπτό"
+msgstr[1] "%d Λεπτό"
+
+#, fuzzy
+msgid "Parent Directory"
+msgstr "Λάθος"
+
+#, fuzzy
+msgid "Directory"
+msgstr "Λάθος"
+
+msgid "(Un)check all known types"
+msgstr ""
+
+msgid "(Un)check symlinks"
+msgstr ""
+
+#, fuzzy
+msgid "for selected items"
+msgstr "Διαγραφή Χρήστη"
+
+msgid "Copy base filenames to:"
+msgstr ""
+
+#, fuzzy
+msgid "Add Files"
+msgstr "Προσθέστε Φωτογραφίες"
+
+#, fuzzy
+msgid "Start Over"
+msgstr "* Χωρίς Ταξινόμιση *"
+
+msgid ""
+"Import files into Gallery from another website.  Enter a URL below to a web page anywhere on "
+"the net and Gallery will allow you to upload any media files that it finds on that page.  "
+"Note that if you're entering a URL to a directory, you should end the URL with a trailing "
+"slash (eg, http://example.com/directory/). "
+msgstr ""
+
+msgid "URL"
+msgstr ""
+
+#, fuzzy
+msgid "You must enter a URL to a web page"
+msgstr "Διαγραφή Χρήστη"
+
+msgid "The URL entered must begin with http://"
+msgstr ""
+
+msgid "The web page you specified is unavailable"
+msgstr ""
+
+msgid "Nothing to add found from this URL"
+msgstr ""
+
+msgid "Nothing added since no items were selected"
+msgstr ""
+
+msgid "Recent URLs"
+msgstr ""
+
+#, c-format
+msgid "URL: %s"
+msgstr ""
+
+#, fuzzy
+msgid "change"
+msgstr "Αλλαγή"
+
+#, c-format
+msgid "%d url found"
+msgid_plural "%d urls found"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "(Un)check all"
+msgstr ""
+
+msgid "Add URLs"
+msgstr ""
+
+msgid "No Thumbnail"
+msgstr ""
+
+#, fuzzy
+msgid "Options"
+msgstr "Ενέργειες"
+
+#, fuzzy
+msgid "Link an Item"
+msgstr "Επεξεργασία Αντικειμένου"
+
+#, c-format
+msgid "Successfully linked %d item"
+msgid_plural "Successfully linked %d items"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "This album contains no items to link."
+msgstr ""
+
+msgid "Source"
+msgstr ""
+
+#, fuzzy
+msgid "Choose the items you want to link"
+msgstr "Επιλέξτε τα αντικείμενα που θέλετε να μεταφέρετε"
+
+#, c-format
+msgid "(page %d of %d)"
+msgstr ""
+
+#, fuzzy
+msgid "No sources chosen"
+msgstr "Προορισμός"
+
+msgid "Check All"
+msgstr ""
+
+msgid "Check None"
+msgstr ""
+
+msgid "Invert"
+msgstr ""
+
+msgid "Previous Page"
+msgstr ""
+
+#, fuzzy
+msgid "Next Page"
+msgstr "Επεξεργασία Εικόνας"
+
+msgid "Destination"
+msgstr "Προορισμός"
+
+msgid "Choose a new album for the link"
+msgstr ""
+
+#, fuzzy
+msgid "No destination chosen"
+msgstr "Προορισμός"
+
+msgid "Link"
+msgstr ""
+
+msgid "Successfully linked"
+msgstr ""
+
+#, fuzzy
+msgid "Choose a destination album"
+msgstr "Επιλέξτε προορισμό των επιλεγμένων αντικειμένων"
+
+#, fuzzy
+msgid "Delete Items"
+msgstr "Διαγραφή Αντικειμένου"
+
+msgid "No items were selected for deletion"
+msgstr ""
+
+#, c-format
+msgid "Successfully deleted %d item"
+msgid_plural "Successfully deleted %d items"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "This album contains no items to delete"
+msgstr ""
+
+#, fuzzy
+msgid "Choose the items you want to delete"
+msgstr "Επιλέξτε τα αντικείμενα που θέλετε να μεταφέρετε"
+
+msgid "Items selected here will remain selected when moving between pages."
+msgstr ""
+
+#, c-format
+msgid "One item selected on other pages."
+msgid_plural "%d items selected on other pages."
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "(data)"
+msgstr ""
+
+#, c-format
+msgid "(album containing %d item)"
+msgid_plural "(album containing %d items)"
+msgstr[0] ""
+msgstr[1] ""
+
+#, fuzzy
+msgid "(empty album)"
+msgstr "Λεύκομα"
+
+msgid "Deletion Complete"
+msgstr ""
+
+#, fuzzy
+msgid "Item successfully deleted"
+msgstr "Η Ομάδα '%s' Διαγράφηκε με επιτυχία"
+
+#, fuzzy, c-format
+msgid "Are you sure you want to delete this %s?"
+msgstr "Θέλετε οπωσδήποτε να διαγράψετε αυτό το αντικείμενο;"
+
+#, c-format
+msgid "It contains %d item."
+msgid_plural "It contains %d items."
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "There is no undo!"
+msgstr ""
+
+msgid "There was a problem processing your request."
+msgstr ""
+
+#, fuzzy
+msgid "Sort order"
+msgstr "* Χωρίς Ταξινόμιση *"
+
+msgid ""
+"This sets the sort order for the album.  This applies to all current items, and any newly "
+"added items."
+msgstr ""
+
+#, fuzzy
+msgid "Apply to all subalbums"
+msgstr "Εφαρμογή σε όλα"
+
+msgid "Choose a theme for this album. (The way the album is arranged on the page)"
+msgstr ""
+
+msgid "Use this theme in all subalbums"
+msgstr ""
+
+msgid " Every item requires a thumbnail. Set the default size in pixels here."
+msgstr ""
+
+#, fuzzy
+msgid "You must enter a number (greater than zero)"
+msgstr "Διαγραφή Χρήστη"
+
+msgid "Use this thumbnail size in all subalbums"
+msgstr ""
+
+msgid "Resized Images"
+msgstr ""
+
+msgid "Each item in your album can have multiple sizes. Define the default sizes here."
+msgstr ""
+
+msgid "Active"
+msgstr "Ενεργό"
+
+msgid "Target Size (pixels)"
+msgstr ""
+
+#, fuzzy
+msgid "You must enter a valid size"
+msgstr "Διαγραφή Χρήστη"
+
+msgid "Use these target sizes in all subalbums"
+msgstr ""
+
+msgid "Recreate thumbnails and resizes"
+msgstr ""
+
+msgid ""
+"The thumbnail and resized image settings are for all new items. To apply these settings to "
+"all the items in your album, check the appropriate box."
+msgstr ""
+
+msgid "Recreate thumbnails"
+msgstr ""
+
+msgid "Recreate resized images"
+msgstr ""
+
+msgid ""
+"In order for Gallery to properly display this animation, it has to know the animation's "
+"width and height.  If you have installed a graphics toolkit that can handle animation types, "
+"then these values may already be set.  If not, they may be set to 0.  If you do not enter "
+"the correct values here, the animation may appear distorted when viewed in your web "
+"browser.  Note that changing these values does <b>not</b> change the animation itself so "
+"experimenting won't cause harm."
+msgstr ""
+
+msgid "Width"
+msgstr ""
+
+#, fuzzy
+msgid "You must enter a value greater than or equal to 0"
+msgstr "Διαγραφή Χρήστη"
+
+msgid "Height"
+msgstr ""
+
+msgid "There were errors saving some items"
+msgstr ""
+
+msgid "There were errors saving all items"
+msgstr ""
+
+#, fuzzy
+msgid "Successfully saved all items"
+msgstr "Η Ομάδα '%s' Διαγράφηκε με επιτυχία"
+
+msgid "This album contains no items"
+msgstr ""
+
+#, fuzzy
+msgid "Saved successfully."
+msgstr "Η Ομάδα '%s' Δημιουργήθηκε με επιτυχία"
+
+msgid "This item was modified by somebody else at the same time.  Your changes were lost."
+msgstr ""
+
+msgid "You do not have permissions to modify this item."
+msgstr ""
+
+msgid "Save and Done"
+msgstr ""
+
+#, c-format
+msgid "Save and Edit Previous %s"
+msgstr ""
+
+#, c-format
+msgid "Save and Edit Next %s"
+msgstr ""
+
+msgid ""
+"The name of this item on your hard disk.  It must be unique in this album.  Only use "
+"alphanumeric characters, underscores or dashes."
+msgstr ""
+
+msgid "Your name contains invalid characters.  Please choose another."
+msgstr ""
+
+#, fuzzy
+msgid "You must enter a name for this item."
+msgstr "Διαγραφή Χρήστη"
+
+msgid "The name you entered is already in use.  Please choose another."
+msgstr ""
+
+#, fuzzy
+msgid "The title of this item."
+msgstr "Επεξεργασία Αντικειμένου"
+
+msgid "The root album must have a title."
+msgstr ""
+
+#, fuzzy
+msgid "The summary of this item."
+msgstr "Επεξεργασία Αντικειμένου"
+
+#, fuzzy
+msgid "This is the long description of the item."
+msgstr "Μακροσκελής Περιγραφή Φωτογραφίας."
+
+#, c-format
+msgid "%s Date and Time"
+msgstr ""
+
+msgid "Set the date and time when this image was captured."
+msgstr ""
+
+msgid "Set the date and time to be displayed for this item."
+msgstr ""
+
+#, c-format
+msgid "Set the date and time to be displayed for this %s."
+msgstr ""
+
+msgid "Date:"
+msgstr ""
+
+#, fuzzy
+msgid "Time:"
+msgstr "Προσθαφαίρεση  Χρηστών"
+
+msgid "Use the original capture date and time from file information (e.g. Exif tag):"
+msgstr ""
+
+#, fuzzy
+msgid "You must enter a valid date and time"
+msgstr "Διαγραφή Χρήστη"
+
+msgid "Thumbnail"
+msgstr ""
+
+msgid ""
+"Set the size of the thumbnail.  The largest side of the thumbnail will be no larger than "
+"this value. Leave this field blank if you don't want a thumbnail."
+msgstr ""
+
+msgid ""
+"There are no graphics toolkits enabled that support this type of item, so we cannot create "
+"or modify a thumbnail."
+msgstr ""
+
+msgid ""
+"In order for Gallery to properly display this movie, it has to know the movie's width and "
+"height.  If you have installed a graphics toolkit that can handle movie types, then these "
+"values may already be set.  If not, they may be set to 0.  If you do not enter the correct "
+"values here, the movie may appear distorted when viewed in your web browser.  Note that "
+"changing these values do <b>not</b> change the movie itself so experimentation won't cause "
+"harm."
+msgstr ""
+
+msgid "Resized Photos"
+msgstr ""
+
+msgid ""
+"These sizes are alternate resized versions of the original you would like to have available "
+"for viewing."
+msgstr ""
+
+msgid ""
+"There are no graphics toolkits enabled that support this type of photo, so we cannot create "
+"or modify resized versions."
+msgstr ""
+
+msgid ""
+"You can select which part of the photo will be used for the thumbnail.  This will have no "
+"effect on the resized or original versions of the image."
+msgstr ""
+
+msgid "Aspect Ratio: "
+msgstr ""
+
+msgid "Crop"
+msgstr ""
+
+msgid "Reset to default"
+msgstr ""
+
+msgid ""
+"There are no graphics toolkits enabled that support this type of photo, so we cannot crop "
+"the thumbnail."
+msgstr ""
+
+msgid "Rotate"
+msgstr ""
+
+msgid "You can only rotate the photo in 90 degree increments."
+msgstr ""
+
+#, fuzzy
+msgid "CC 90&deg;"
+msgstr "90&deg Δεξιόστροφα;"
+
+#, fuzzy
+msgid "180&deg;"
+msgstr "Περιστροφή 180&deg;"
+
+#, fuzzy
+msgid "C 90&deg;"
+msgstr "90&deg Δεξιόστροφα;"
+
+msgid ""
+"There are no graphics toolkits enabled that support this type of photo, so we cannot rotate "
+"it."
+msgstr ""
+
+msgid "Scale"
+msgstr ""
+
+msgid ""
+"Shrink or enlarge the original photo.  When Gallery scales a photo, it maintains the same "
+"aspect ratio (height to width) of the original photo to avoid distortion.  Your photo will "
+"be scaled until it fits inside a bounding box with the size you enter here."
+msgstr ""
+
+msgid ""
+"There are no graphics toolkits enabled that support this type of photo, so we cannot scale "
+"it."
+msgstr ""
+
+#, fuzzy
+msgid "You must enter a size"
+msgstr "Διαγραφή Χρήστη"
+
+msgid "Preserve Original"
+msgstr ""
+
+msgid ""
+"Gallery does not modify your original photo when rotating and scaling. Instead, it "
+"duplicates your photo and works with copies.  This requires a little extra disk space but "
+"prevents your original from getting damaged.  Disabling this option will cause any actions "
+"(rotating, scaling, etc) to modify the original."
+msgstr ""
+
+msgid "This is a link to another photo, so you cannot change the original"
+msgstr ""
+
+msgid "There are links to this photo, so you cannot change the original"
+msgstr ""
+
+msgid "Preserve Original Photo"
+msgstr ""
+
+#, fuzzy
+msgid "Modified Photo"
+msgstr "Επεξεργασία Εικόνας"
+
+msgid ""
+"You are using a copy of the original photo that has been scaled or rotated.  The original "
+"photo is still available, but is no longer being used.  Any changes you make will be applied "
+"to the copy instead."
+msgstr ""
+
+msgid "Restore original"
+msgstr ""
+
+#, c-format
+msgid ""
+"This album is configured to use the <b>%s</b> theme. These settings only apply to the theme "
+"for this album."
+msgstr ""
+
+#, fuzzy
+msgid "Setting"
+msgstr "Ρυθμίσεις Γκαλλερύ"
+
+msgid "Use Global"
+msgstr ""
+
+#, c-format
+msgid "Use these settings in all subalbums that use %s theme"
+msgstr ""
+
+msgid ""
+"Note: to set the same theme for all subalbums, check the appropriate box in <b>Album</b> tab"
+msgstr ""
+
+msgid "Album Highlight"
+msgstr ""
+
+#, fuzzy
+msgid "You can make this item the thumbnail for its parent or any ancestor album."
+msgstr "Θέλετε αυτή η Φωτογραφία να γίνει το εικονίδιο αυτού του λευκόματος;"
+
+msgid "Highlight for:"
+msgstr ""
+
+msgid "Highlight"
+msgstr ""
+
+#, fuzzy
+msgid "Move an Item"
+msgstr "Επεξεργασία Αντικειμένου"
+
+#, c-format
+msgid "Successfully moved %d item"
+msgid_plural "Successfully moved %d items"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "This album contains no items to move."
+msgstr ""
+
+msgid "Choose the items you want to move"
+msgstr "Επιλέξτε τα αντικείμενα που θέλετε να μεταφέρετε"
+
+msgid ""
+"The destination you chose does not accept sub-albums, so all sub-albums have been deselected."
+msgstr ""
+
+msgid ""
+"The destination you chose only accepts sub-albums, so all non-albums have been deselected."
+msgstr ""
+
+msgid "You are not allowed to move this item away from here."
+msgstr ""
+
+msgid "You are not allowed to move an album to the chosen destination."
+msgstr ""
+
+msgid "You are not allowed to move an item to the chosen destination."
+msgstr ""
+
+msgid "You cannot move an album into its own subtree."
+msgstr ""
+
+msgid "Choose a new album for them"
+msgstr ""
+
+msgid "You don't have the permission to add items in this album"
+msgstr ""
+
+msgid "Move"
+msgstr ""
+
+msgid "Successfully moved"
+msgstr ""
+
+msgid "Permissions"
+msgstr ""
+
+#, fuzzy
+msgid "Owner changed successfully"
+msgstr "Η Ομάδα '%s' Δημιουργήθηκε με επιτυχία"
+
+#, fuzzy
+msgid "Group permission added successfully"
+msgstr "Οι αλλγές στην Ομάδα '%s' έγιναν με επιτυχία"
+
+#, fuzzy
+msgid "User permission added successfully"
+msgstr "Η Ομάδα '%s' Δημιουργήθηκε με επιτυχία"
+
+#, fuzzy
+msgid "Group permission removed successfully"
+msgstr "Οι αλλγές στην Ομάδα '%s' έγιναν με επιτυχία"
+
+#, fuzzy
+msgid "User permission removed successfully"
+msgstr "Η Ομάδα '%s' Δημιουργήθηκε με επιτυχία"
+
+msgid ""
+"Each item has its own independent set of permissions.  Changing the parent's permissions has "
+"no effect on the permissions of the child.  This allows you to restrict access to the parent "
+"of this item, but still grant full access to this item, or vice versa.  The most efficient "
+"way to use this permission system is to create groups and assign permissions to them.  Then "
+"if you want to grant permissions to a specific user, you can add (or remove) the user from "
+"the appropriate group."
+msgstr ""
+"Each item has its own independent set of permissions.  Changing the parent's permissions has "
+"no effect on the permissions of the child.  This allows you to restrict access to the parent "
+"of this item, but still grant full access to this item, or vice versa.  The most efficient "
+"way to use this permission system is to create groups and assign permissions to them.  Then "
+"if you want to grant permissions to a specific user, you can add (or remove) the user from "
+"the appropriate group."
+
+#, c-format
+msgid "This item is owned by user: %s"
+msgstr ""
+
+#, c-format
+msgid "This item is owned by user: %s (%s)"
+msgstr ""
+
+msgid "New owner"
+msgstr ""
+
+msgid "Change"
+msgstr "Αλλαγή"
+
+#, fuzzy
+msgid "Apply new owner to sub-items"
+msgstr "Εφαρμογή σε όλα"
+
+#, fuzzy
+msgid "You must enter a user name"
+msgstr "Διαγραφή Χρήστη"
+
+msgid "The user name you entered is invalid"
+msgstr ""
+
+msgid "Apply changes"
+msgstr "Αποθήκευση Αλλαγών"
+
+msgid ""
+"This item has sub-items.  The changes you make here can be applied to just this item, or you "
+"can apply them to all sub-items.  Note that applying changes to sub-items will merge your "
+"change into the existing permissions of the sub-items and may be very time consuming if you "
+"have many sub-items.  It's more efficient to grant permissions to groups and then add and "
+"remove users from groups whenever possible. Changes are applied to sub-items by default."
+msgstr ""
+
+msgid "Apply to sub-items"
+msgstr "Εφαρμογή σε όλα"
+
+msgid "Group Permissions"
+msgstr "Δικαιώματα Ομάδας"
+
+#, fuzzy
+msgid "Group name"
+msgstr "Όνομα Ομάδας: "
+
+#, fuzzy
+msgid "Permission"
+msgstr "Δώστε δικαιώματα"
+
+#, fuzzy
+msgid "New Group Permission"
+msgstr "Δικαιώματα Ομάδας"
+
+msgid "Add Permission"
+msgstr "Δώστε δικαιώματα"
+
+msgid "The permission you chose is invalid"
+msgstr ""
+
+msgid "The group name you entered is invalid"
+msgstr ""
+
+#, fuzzy
+msgid "Group already has this permission (check sub-permissions)"
+msgstr ""
+"Group already has this permission (maybe it's included in one of the permissions the group "
+"already has)"
+
+#, fuzzy
+msgid "User Permissions"
+msgstr "Δικαιώματα Αντικειμένου"
+
+#, fuzzy
+msgid "User name"
+msgstr "Πλήρες Όνομα"
+
+#, fuzzy
+msgid "New User Permission"
+msgstr "Δικαιώματα Αντικειμένου"
+
+msgid "The user already has this permission (check sub-permissions)"
+msgstr ""
+
+#, fuzzy
+msgid "Reorder Album"
+msgstr "Προσθήκη Λευκόματος"
+
+#, fuzzy
+msgid "Order saved successfully"
+msgstr "Η Ομάδα '%s' Δημιουργήθηκε με επιτυχία"
+
+msgid ""
+"This album has an automatic sort order specified, so you cannot change the order of items "
+"manually.  You must remove the automatic sort order to continue."
+msgstr ""
+
+msgid "Change the order of the items in this album."
+msgstr ""
+
+#, fuzzy
+msgid "Move this item"
+msgstr "Επεξεργασία Αντικειμένου"
+
+msgid "before"
+msgstr ""
+
+msgid "after"
+msgstr ""
+
+#, fuzzy
+msgid "Reorder"
+msgstr "Προσθήκη Λευκόματος"
+
+msgid "Continue..."
+msgstr ""
+
+msgid "Site is temporarily down for maintenance."
+msgstr ""
+
+#, fuzzy
+msgid "Admin Login"
+msgstr "Ενέργειες"
+
+msgid "Enter a URL"
+msgstr ""
+
+msgid "Enter some text describing the URL"
+msgstr ""
+
+msgid "Enter an image URL"
+msgstr ""
+
+msgid "B <!-- Button label for Bold -->"
+msgstr "B"
+
+msgid "i <!-- Button label for italic -->"
+msgstr "i"
+
+msgid "list"
+msgstr ""
+
+msgid "bullet"
+msgstr ""
+
+msgid "url"
+msgstr ""
+
+#, fuzzy
+msgid "image"
+msgstr "Προσθαφαίρεση  Χρηστών"
+
+msgid "Configuration Error: Missing Theme"
+msgstr ""
+
+msgid "Missing Theme"
+msgstr ""
+
+#, c-format
+msgid ""
+"This page is configured to use the %s theme, but it is either inactive, not installed, or "
+"incompatible."
+msgstr ""
+
+#, c-format
+msgid ""
+"This album is configured to use the %s theme, but it is either inactive, not installed, or "
+"incompatible."
+msgstr ""
+
+#, c-format
+msgid ""
+"To fix this problem you can %sinstall or activate this theme%s or select another default "
+"theme."
+msgstr ""
+
+#, c-format
+msgid ""
+"To fix this problem you can %slogin as a site administrator%s and then %sinstall or activate "
+"this theme%s or select another default theme."
+msgstr ""
+
+#, c-format
+msgid ""
+"To fix this problem you can either %schoose a new theme for this album%s or %sinstall or "
+"activate this theme%s."
+msgstr ""
+
+#, c-format
+msgid ""
+"To fix this problem you can either %schoose a new theme for this album%s or %slogin as a "
+"site administrator%s and then %sinstall or activate this theme%s."
+msgstr ""
+
+#, c-format
+msgid ""
+"To fix this problem you can either %slogin%s and then %schoose a new theme for this album%s "
+"or %slogin as a site administrator%s and then %sinstall or activate this theme%s."
+msgstr ""
+
+#, fuzzy
+msgid "Admin Options"
+msgstr "Ενέργειες"
+
+#, fuzzy
+msgid "User Options"
+msgstr "Περιγραφή"
+
+#, fuzzy
+msgid "Password changed successfully"
+msgstr "Η Ομάδα '%s' Δημιουργήθηκε με επιτυχία"
+
+msgid ""
+"You must enter your current password to prove that it's you, then enter your new password "
+"twice to make sure that you didn't make a mistake."
+msgstr ""
+
+msgid "Current Password"
+msgstr ""
+
+#, fuzzy
+msgid "You must enter your current password"
+msgstr ""
+"Βάλτε δύο φορές τον νέο κωδικό για να γίνει αλλαγή κωδικού, ή αφήστε κενό  το πεδίο για να "
+"παραμείνει ο παλιός κωδικός"
+
+msgid "Incorrect password"
+msgstr ""
+
+msgid "New Password"
+msgstr ""
+
+#, fuzzy
+msgid "You must enter a new password"
+msgstr "Διαγραφή Χρήστη"
+
+msgid "Verify New Password"
+msgstr ""
+
+#, fuzzy
+msgid "You must enter your new password again!"
+msgstr ""
+"Βάλτε δύο φορές τον νέο κωδικό για να γίνει αλλαγή κωδικού, ή αφήστε κενό  το πεδίο για να "
+"παραμείνει ο παλιός κωδικός"
+
+msgid "Login to your account"
+msgstr ""
+
+msgid "Your password has been recovered, please login."
+msgstr ""
+
+msgid "Your login information is incorrect.  Please try again."
+msgstr ""
+
+#, c-format
+msgid ""
+"Lost or forgotten passwords can be retrieved using the <a href=\"%s\">recover password</a> "
+"page"
+msgstr ""
+
+#, c-format
+msgid "Welcome, %s!"
+msgstr ""
+
+#, fuzzy
+msgid "Account settings saved successfully"
+msgstr "Η Ομάδα '%s' Δημιουργήθηκε με επιτυχία"
+
+msgid "(required, password required for change)"
+msgstr ""
+
+msgid "(suggested, password required for change)"
+msgstr ""
+
+#, fuzzy
+msgid "(required to change the e-mail address)"
+msgstr "Διαγραφή Χρήστη"
+
+#, fuzzy
+msgid "You must enter your current password to change the e-mail address"
+msgstr ""
+"Βάλτε δύο φορές τον νέο κωδικό για να γίνει αλλαγή κωδικού, ή αφήστε κενό  το πεδίο για να "
+"παραμείνει ο παλιός κωδικός"
+
+msgid "Recover a lost or forgotten password"
+msgstr ""
+
+msgid ""
+"Recovering your password requires that your user account has an email address assigned, and "
+"that you have access to the listed email address.  A confirmation will be emailed to you "
+"containing a URL which you must visit to set a new password for your account.  To prevent "
+"abuse, password recovery requests can not be attempted more than once in a 20 minute "
+"period.  A recovery confirmation is valid for seven days.  If it is not used during that "
+"time, it will be purged from the system and a new request will have to be made."
+msgstr ""
+
+msgid "Your recovery request has been sent!"
+msgstr ""
+
+msgid ""
+"Note that if the account does not have an email address, you may not receive the email and "
+"you should contact your system administrator for help."
+msgstr ""
+
+#, c-format
+msgid ""
+"Administrators can use the %sEmergency Password Recovery%s page to recover the admin account "
+"if they fail to receive recovery email due to server problems, or lack of a working email "
+"address."
+msgstr ""
+
+#, fuzzy
+msgid "Recover"
+msgstr "Προσθαφαίρεση  Χρηστών"
+
+#, c-format
+msgid ""
+"In order to proceed with the password reset, we have to verify that you are who you claim.  "
+"The best way to be sure is to ask you to make a tiny change in the Gallery directory which "
+"will prove that you have the right permissions.  So, we're going to ask that you create a "
+"new text file called %s in your gallery2 directory. It must contain the following randomly "
+"generated characters:"
+msgstr ""
+
+#, c-format
+msgid "%s"
+msgstr ""
+
+#, c-format
+msgid ""
+"As a convenience to you, we've prepared a %scorrect version of login.txt%s for you.  "
+"Download that and copy it into your install directory and you're all set."
+msgstr ""
+
+msgid "Once you've uploaded the file, click refresh to continue."
+msgstr ""
+
+msgid "Emergency Administrator Password Reset"
+msgstr ""
+
+msgid ""
+"This page can be used by a system administrator to securely reset the password on any "
+"account."
+msgstr ""
+
+msgid "Authorization Confirmed"
+msgstr ""
+
+msgid ""
+"Your authorization has been confirmed.  Please enter your new password below.  After setting "
+"your new password you will be taken to the login page."
+msgstr ""
+
+msgid "Recover Password for Username"
+msgstr ""
+
+#, fuzzy
+msgid "You must enter a username to recover the password for."
+msgstr ""
+"Βάλτε δύο φορές τον νέο κωδικό για να γίνει αλλαγή κωδικού, ή αφήστε κενό  το πεδίο για να "
+"παραμείνει ο παλιός κωδικός"
+
+#, fuzzy
+msgid "The username you entered does not exist."
+msgstr "Η Ομάδα '%s' δεν υπάρχει."
+
+msgid "Authorization Incorrect"
+msgstr ""
+
+msgid "Recovery Instructions"
+msgstr ""
+
+msgid "AuthFile Missing"
+msgstr ""
+
+msgid "AuthFile Unreadable"
+msgstr ""
+
+#, c-format
+msgid "Your %s file is not readable. Please give Gallery read permissions on the file."
+msgstr ""
+
+msgid "Refresh"
+msgstr ""
+
+msgid "This page will allow you to reset the password on your account."
+msgstr ""
+
+#, c-format
+msgid ""
+"There is no request which matches the username and authorization provided. Request a new "
+"authorization from the <a href=\"%s\">lost password page</a>"
+msgstr ""
+
+#, c-format
+msgid ""
+"The request you are trying to access has expired.  Request a new authorization from the <a "
+"href=\"%s\">lost password page</a>."
+msgstr ""
+
+msgid "Authorization missing"
+msgstr ""
+
+#, fuzzy
+msgid "Username missing"
+msgstr "Δικαιώματα Αντικειμένου"
+
+msgid "Submit"
+msgstr ""
+
+#, c-format
+msgid "Hello %s,"
+msgstr ""
+
+#, c-format
+msgid "You receive this email because a password recovery for %s was requested by %s at %s"
+msgstr ""
+
+#, c-format
+msgid "Your username is: %s"
+msgstr ""
+
+msgid ""
+"To finish the password recovery process please click the following link and enter the "
+"required information:"
+msgstr ""
+
+msgid "If you did not request this recovery email, you may safely ignore it."
+msgstr ""
+
+msgid "Thank you!"
+msgstr ""
+
+msgid "guest"
+msgstr ""
+
+#, c-format
+msgid "display mode: %s"
+msgstr ""
+
+#, fuzzy, c-format
+msgid "Date: %s"
+msgstr "Διαγραφή Χρήστη"
+
+#, c-format
+msgid "Owner: %s"
+msgstr ""
+
+#, fuzzy, c-format
+msgid "Size: %d item"
+msgid_plural "Size: %d items"
+msgstr[0] "%d Λεπτό"
+msgstr[1] "%d Λεπτό"
+
+#, fuzzy, c-format
+msgid "(%d item total)"
+msgid_plural "(%d items total)"
+msgstr[0] "%d Λεπτό"
+msgstr[1] "%d Λεπτό"
+
+#, c-format
+msgid "Views: %d"
+msgstr ""
+
+#, fuzzy
+msgid "&laquo; album actions &raquo;"
+msgstr "* Χωρίς Ταξινόμιση *"
+
+#, fuzzy
+msgid "&laquo; item actions &raquo;"
+msgstr "* Χωρίς Ταξινόμιση *"
+
+msgid "Go"
+msgstr ""
+
+msgid "Navigation"
+msgstr ""
+
+msgid "next"
+msgstr ""
+
+msgid "last"
+msgstr ""
+
+#, c-format
+msgid "Page %d of %d"
+msgstr ""
+
+#, c-format
+msgid "%d of %d"
+msgstr ""
+
+msgid "first"
+msgstr ""
+
+msgid "previous"
+msgstr ""
+
+msgid "Page:"
+msgstr ""
+
+#, fuzzy, c-format
+msgid "%d. %s"
+msgstr "Επεξεργασία Χρήστη"
+
+#, fuzzy
+msgid "Size: "
+msgstr "Επεξεργασία Μεγέθους"
+
+msgid "Full size: "
+msgstr ""
+
+#, fuzzy
+msgid "Language selector"
+msgstr "Διαθέσιμες Επιλογές"
+
+#, fuzzy
+msgid "Item actions"
+msgstr "Ενέργειες"
+
+msgid "Use dropdown menu"
+msgstr ""
+
+msgid "Login block"
+msgstr ""
+
+msgid "Links to album/photo peers"
+msgstr ""
+
+msgid "Unit test module"
+msgstr ""
+
+#, fuzzy
+msgid "[test] A permission"
+msgstr "Δικαιώματα Αντικειμένου"
+
+#, fuzzy
+msgid "[test] A second permission"
+msgstr "Δικαιώματα Αντικειμένου"
+
+msgid "Unit test theme"
+msgstr ""
+
+#, fuzzy
+#~ msgid "add album"
+#~ msgstr "Προσθήκη Λευκόματος"
+
+#, fuzzy
+#~ msgid "edit permissions"
+#~ msgstr "Δικαιώματα Αντικειμένου"
+
+#, fuzzy
+#~ msgid "view permissions"
+#~ msgstr "Δικαιώματα Αντικειμένου"
+
+#, fuzzy
+#~ msgid "Successfully deleted directory: /cache/theme"
+#~ msgstr "Η Ομάδα '%s' Διαγράφηκε με επιτυχία"
+
+#, fuzzy
+#~ msgid "Unable to delete directory: /cache/theme"
+#~ msgstr "Η Ομάδα '%s' Διαγράφηκε με επιτυχία"

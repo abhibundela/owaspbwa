@@ -1,0 +1,308 @@
+<?php
+/*
+ * $RCSfile: GalleryStatus.class,v $
+ *
+ * Gallery - a web based photo album viewer and editor
+ * Copyright (C) 2000-2006 Bharat Mediratta
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or (at
+ * your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+/**
+ * @version $Revision: 1.53 $ $Date: 2006/01/10 04:39:21 $
+ * @package GalleryCore
+ * @author Bharat Mediratta <bharat@menalto.com>
+ */
+
+/**
+ * Global storage container and utility class for Gallery
+ *
+ * This is a container for global information required for gallery
+ * operation, such as configuration, session, user, etc.
+ *
+ * @package GalleryCore
+ * @subpackage Classes
+ */
+class GalleryStatus {
+
+    /*
+     * ****************************************
+     *                 Members
+     * ****************************************
+     */
+
+    /**
+     * The stack trace, if possible.
+     */
+    var $_stack;
+
+    /**
+     * The actual error code
+     *
+     * @var string $_errorCode
+     * @access private
+     */
+    var $_errorCode;
+
+    /**
+     * The file name where the error occurred
+     *
+     * @var string $_fileName
+     * @access private
+     */
+    var $_fileName;
+
+    /**
+     * The line number where the error occurred
+     *
+     * @var string $_lineNumber
+     * @access private
+     */
+    var $_lineNumber;
+
+    /**
+     * A descriptive message of the error
+     *
+     * @var string $_errorMessage
+     * @access private
+     */
+    var $_errorMessage;
+
+    /*
+     * ****************************************
+     *                 Methods
+     * ****************************************
+     */
+
+    /**
+     * Constructor
+     * @param errorCode an error code
+     * @param fileName the path to the file where the error occurred
+     * @param lineNumber the line number in the file where the error occurred
+     * @param errorMessage descriptive message of the error
+     */
+    function GalleryStatus($errorCode, $fileName=null, $lineNumber=null, $errorMessage=null) {
+	$this->_errorCode = $errorCode;
+	$this->_fileName = array($fileName);
+	$this->_lineNumber = array($lineNumber);
+	$this->_errorMessage = $errorMessage;
+    }
+
+    /**
+     * Set the stack trace
+     *
+     * @param array (array, array)
+     */
+    function setStackTrace($trace) {
+	$this->_stackTrace = $trace;
+    }
+
+    /**
+     * Return the filename the error was found in.
+     *
+     * @return string
+     */
+    function getFileName() {
+	return $this->_fileName[0];
+    }
+
+    /**
+     * Return the line number the error was found at.
+     *
+     * @return int
+     */
+    function getLineNumber() {
+	return $this->_lineNumber[0];
+    }
+
+    /**
+     * Return the actual error code
+     *
+     * @return int
+     */
+    function getErrorCode() {
+	return $this->_errorCode;
+    }
+
+    /**
+     * Return the error message
+     *
+     * @return string
+     */
+    function getErrorMessage() {
+	return $this->_errorMessage;
+    }
+
+    /**
+     * Add a new code to our set of codes
+     *
+     * @param int an error code
+     */
+    function addErrorCode($code) {
+	$this->_errorCode |= $code;
+    }
+
+    /**
+     * Add a new file name and line number to our stack trace
+     *
+     * Don't add the value, unless it's an error.  As a debug measure, whine if
+     * somebody tries to add a trace to a success code, because the success
+     * code is supposed to be a singleton.
+     *
+     * @param string a file name
+     * @param int a line number
+     * @return object GalleryStatus the new status object
+     */
+    function wrap($fileName, $lineNumber) {
+	if (!empty($this->_errorCode)) {
+	    array_push($this->_fileName, $fileName);
+	    array_push($this->_lineNumber, $lineNumber);
+	}
+
+	return $this;
+    }
+
+    /**
+     * Return the error as an HTML string
+     *
+     * @param boolean (optional) false to omit errorMessage
+     * @return string
+     */
+    function getAsHtml($showMessage=true) {
+	list ($codes, $trace) = $this->_getAsArray();
+
+	$message = $showMessage ? $this->_errorMessage : '';
+	$buf = 'Error  (' . join(', ', $codes) . ')';
+	if (!is_null($message)) {
+	    $buf .= ' : ' . htmlentities($message);
+	}
+	$buf .= '<ul>';
+	foreach ($trace as $traceEntry) {
+	    $buf .= sprintf("<li><b>in</b> %s <b>at line</b> %d",
+			    $traceEntry['file'], $traceEntry['line']);
+	    if (isset($traceEntry['class']) && isset($traceEntry['function'])) {
+		$buf .= " ($traceEntry[class]::$traceEntry[function]) ";
+	    } else if (isset($traceEntry['class'])) {
+		$buf .= " ($traceEntry[function]) ";
+	    }
+	    $buf .= '</li>';
+	}
+	$buf .= '</ul>';
+
+	return $buf;
+    }
+
+    /**
+     * Return the error as a plain text string delimited by newlines
+     *
+     * @param boolean (optional) false to omit errorMessage
+     * @return string
+     */
+    function getAsText($showMessage=true) {
+	list ($codes, $trace) = $this->_getAsArray();
+
+	$message = $showMessage ? $this->_errorMessage : '';
+	$buf = 'Error (' . join(', ', $codes) . ')';
+	if (!is_null($message)) {
+	    $buf .= ' : ' . htmlentities($message);
+	}
+	foreach ($trace as $traceEntry) {
+	    $buf .= sprintf("<b>in</b> %s <b>at line</b> %d",
+			    $traceEntry['file'], $traceEntry['line']);
+	    if (isset($traceEntry['class']) && isset($traceEntry['function'])) {
+		$buf .= " ($traceEntry[class]::$traceEntry[function]) ";
+	    } else if (isset($traceEntry['class'])) {
+		$buf .= " ($traceEntry[function]) ";
+	    }
+	    $buf .= "\n";
+	}
+	return $buf;
+    }
+
+    /**
+     * Break down an error code into a list of constants
+     * @return array of strings
+     */
+    function getErrorCodeConstants($errorCode) {
+	if ($errorCode == 0) {
+	    $codes = array('GALLERY_SUCCESS');
+	} else {
+	    $codes = array();
+	    /* get_defined_constants() arrived in 4.1.0 */
+	    if (function_exists('get_defined_constants')) {
+		foreach (get_defined_constants() as $constantName => $constantValue) {
+		    if (strpos($constantName, 'ERROR_') === 0) {
+			if ($errorCode & $constantValue) {
+			    $codes[] = $constantName;
+			}
+		    }
+		}
+		if (empty($codes)) {
+		    /* No specific error specified */
+		    $codes = array('GALLERY_ERROR');
+		}
+	    } else {
+		$codes[] = 'UnknownErrorName';
+	    }
+	}
+
+	return $codes;
+    }
+
+    /**
+     * Internal function turn error code and stack trace into text
+     *
+     * @return string
+     * @access private
+     */
+    function _getAsArray() {
+	global $gallery;
+
+	$codes = $this->getErrorCodeConstants($this->_errorCode);
+	$trace = array();
+	if (!class_exists('GalleryTestCase')) {
+	    $platform =& $gallery->getPlatform();
+	    $base = $platform->realpath(dirname(__FILE__) . '/../../../') .
+		$platform->getDirectorySeparator();
+	} else {
+	    $base = '';
+	}
+	if (empty($this->_stackTrace)) {
+	    for ($i = 0; $i < count($this->_fileName); $i++) {
+		$trace[] = array('file' => str_replace($base, '', $this->_fileName[$i]),
+				 'line' => $this->_lineNumber[$i],
+				 'class' => null,
+				 'function' => null);
+	    }
+	} else {
+	    foreach ($this->_stackTrace as $traceEntry) {
+		if (empty($traceEntry['file'])) {
+		    $traceEntry['file'] = '???';
+		}
+		if (empty($traceEntry['line'])) {
+		    $traceEntry['line'] = '???';
+		}
+		$trace[] =
+		    array('file' => str_replace($base, '', $traceEntry['file']),
+			  'line' => $traceEntry['line'],
+			  'class' => empty($traceEntry['class']) ? null : $traceEntry['class'],
+			  'function' => empty($traceEntry['function']) ?
+			  null : $traceEntry['function']);
+	    }
+	}
+
+	return array($codes, $trace);
+    }
+}
+?>

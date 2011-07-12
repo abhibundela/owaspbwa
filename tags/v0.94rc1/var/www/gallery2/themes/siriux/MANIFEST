@@ -1,0 +1,170 @@
+# File crc32 crc32(crlf) size size(crlf)  or  R File
+themes/siriux/images/arrow-left.gif	1356648957	1356648957	365	365
+themes/siriux/images/arrow-right.gif	275318514	275318514	362	362
+themes/siriux/images/groupinfo.png	3454340450	3454340450	1212	1212
+themes/siriux/images/key7-16-bw.gif	835001704	835001704	977	977
+themes/siriux/images/userinfo.png	3326153604	3326153604	935	935
+themes/siriux/locale/af/LC_MESSAGES/themes_siriux.mo	2313757243	2313757243	1181	1181
+themes/siriux/locale/cs/LC_MESSAGES/themes_siriux.mo	1372837974	1372837974	1246	1246
+themes/siriux/locale/da/LC_MESSAGES/themes_siriux.mo	1450282797	1450282797	1183	1183
+themes/siriux/locale/de/LC_MESSAGES/themes_siriux.mo	10819933	10819933	1634	1634
+themes/siriux/locale/el/LC_MESSAGES/themes_siriux.mo	3694020335	3694020335	433	433
+themes/siriux/locale/en_GB/LC_MESSAGES/themes_siriux.mo	1783148097	1783148097	443	443
+themes/siriux/locale/es/LC_MESSAGES/themes_siriux.mo	2890991392	2890991392	1244	1244
+themes/siriux/locale/es_AR/LC_MESSAGES/themes_siriux.mo	2637977439	2637977439	543	543
+themes/siriux/locale/es_MX/LC_MESSAGES/themes_siriux.mo	1243056831	1243056831	715	715
+themes/siriux/locale/eu/LC_MESSAGES/themes_siriux.mo	579436296	579436296	1228	1228
+themes/siriux/locale/fi/LC_MESSAGES/themes_siriux.mo	4140693196	4140693196	1136	1136
+themes/siriux/locale/fr/LC_MESSAGES/themes_siriux.mo	1119636952	1119636952	1613	1613
+themes/siriux/locale/ga/LC_MESSAGES/themes_siriux.mo	2584967369	2584967369	824	824
+themes/siriux/locale/he/LC_MESSAGES/themes_siriux.mo	1635620674	1635620674	653	653
+themes/siriux/locale/hu/LC_MESSAGES/themes_siriux.mo	607113177	607113177	631	631
+themes/siriux/locale/is/LC_MESSAGES/themes_siriux.mo	1277740784	1277740784	464	464
+themes/siriux/locale/it/LC_MESSAGES/themes_siriux.mo	2334626181	2334626181	1293	1293
+themes/siriux/locale/ja/LC_MESSAGES/themes_siriux.mo	4237643136	4237643136	1207	1207
+themes/siriux/locale/nl/LC_MESSAGES/themes_siriux.mo	2989914867	2989914867	1167	1167
+themes/siriux/locale/no/LC_MESSAGES/themes_siriux.mo	3211195553	3211195553	1550	1550
+themes/siriux/locale/pl/LC_MESSAGES/themes_siriux.mo	2804199770	2804199770	1619	1619
+themes/siriux/locale/pt/LC_MESSAGES/themes_siriux.mo	2215494965	2215494965	510	510
+themes/siriux/locale/pt_BR/LC_MESSAGES/themes_siriux.mo	4171211302	4171211302	654	654
+themes/siriux/locale/ru/LC_MESSAGES/themes_siriux.mo	829220472	829220472	1530	1530
+themes/siriux/locale/sr/LC_MESSAGES/themes_siriux.mo	3727465450	3727465450	1208	1208
+themes/siriux/locale/sv/LC_MESSAGES/themes_siriux.mo	44316363	44316363	1304	1304
+themes/siriux/locale/tr/LC_MESSAGES/themes_siriux.mo	571796446	571796446	1199	1199
+themes/siriux/locale/vi/LC_MESSAGES/themes_siriux.mo	2635538451	2635538451	1094	1094
+themes/siriux/locale/zh_CN/LC_MESSAGES/themes_siriux.mo	1942664269	1942664269	1184	1184
+themes/siriux/locale/zh_TW/LC_MESSAGES/themes_siriux.mo	1892360919	1892360919	1538	1538
+themes/siriux/po/GNUmakefile	1866879166	2808215985	98	103
+themes/siriux/po/af.po	96768083	3954993026	2319	2402
+themes/siriux/po/cs.po	3378003052	3642630418	2368	2452
+themes/siriux/po/da.po	1819738747	581764421	2301	2384
+themes/siriux/po/de.po	2275347060	1021336925	2799	2891
+themes/siriux/po/el.po	238170342	320774329	2214	2298
+themes/siriux/po/en_GB.po	1474098992	1850505542	2046	2127
+themes/siriux/po/es.po	3723841216	3249822099	2476	2561
+themes/siriux/po/es_AR.po	2214359961	3429956493	2081	2163
+themes/siriux/po/es_MX.po	3345913196	937624452	2205	2289
+themes/siriux/po/eu.po	251702332	1353854140	2392	2477
+themes/siriux/po/fi.po	4150154833	2552570956	2412	2500
+themes/siriux/po/fr.po	3819523562	3589603915	2541	2624
+themes/siriux/po/ga.po	660135445	3763448848	3047	3156
+themes/siriux/po/he.po	2033502579	359937384	2297	2386
+themes/siriux/po/hu.po	1062223045	3314030854	2268	2359
+themes/siriux/po/is.po	1231103560	1399877939	2070	2153
+themes/siriux/po/it.po	1565214852	1671116043	2587	2681
+themes/siriux/po/ja.po	3858302059	3023962477	2528	2614
+themes/siriux/po/nl.po	805036096	3096431218	2408	2492
+themes/siriux/po/no.po	1229692384	2002386699	2591	2675
+themes/siriux/po/pl.po	1540749177	2632018865	2550	2634
+themes/siriux/po/pt.po	1933279269	746882871	2175	2261
+themes/siriux/po/pt_BR.po	271425102	3306284519	2292	2381
+themes/siriux/po/ru.po	1514308126	3596622547	2922	3016
+themes/siriux/po/sr.po	251357295	1037771831	2326	2409
+themes/siriux/po/strings.raw	1124475579	691175077	756	783
+themes/siriux/po/sv.po	979216568	2060727056	2764	2858
+themes/siriux/po/tr.po	1732541764	3580208208	2319	2402
+themes/siriux/po/vi.po	3413379998	3879896626	2291	2373
+themes/siriux/po/zh_CN.po	1849429941	3511386261	2427	2516
+themes/siriux/po/zh_TW.po	2980790097	1588736678	2433	2515
+themes/siriux/templates/admin.tpl	3190322252	133500779	392	401
+themes/siriux/templates/album.tpl	611169007	1649021791	3804	3930
+themes/siriux/templates/error.tpl	3554021641	3462397020	988	1017
+themes/siriux/templates/module.tpl	2441638232	1509985592	390	399
+themes/siriux/templates/photo.tpl	4011592563	1915247351	4654	4772
+themes/siriux/templates/progressbar.tpl	2363653142	2462138628	2711	2797
+themes/siriux/templates/theme.tpl	812405739	3995426321	2818	2897
+themes/siriux/theme.css	581110785	2517304773	5118	5464
+themes/siriux/theme.inc	2962760061	3162492497	6641	6861
+R	themes/siriux/images/background-content.png
+R	themes/siriux/images/background-footer.png
+R	themes/siriux/images/background-header.png
+R	themes/siriux/images/background.png
+R	themes/siriux/locale/cs_CZ/LC_MESSAGES/themes_siriux.mo
+R	themes/siriux/locale/cs_CZ/LC_MESSAGES
+R	themes/siriux/locale/cs_CZ
+R	themes/siriux/locale/da_DK/LC_MESSAGES/themes_siriux.mo
+R	themes/siriux/locale/da_DK/LC_MESSAGES
+R	themes/siriux/locale/da_DK
+R	themes/siriux/locale/de_DE/LC_MESSAGES/themes_siriux.mo
+R	themes/siriux/locale/de_DE/LC_MESSAGES
+R	themes/siriux/locale/de_DE
+R	themes/siriux/locale/el_GR/LC_MESSAGES/themes_siriux.mo
+R	themes/siriux/locale/el_GR/LC_MESSAGES
+R	themes/siriux/locale/el_GR
+R	themes/siriux/locale/eu_ES/LC_MESSAGES/themes_siriux.mo
+R	themes/siriux/locale/eu_ES/LC_MESSAGES
+R	themes/siriux/locale/eu_ES
+R	themes/siriux/locale/fi_FI/LC_MESSAGES/themes_siriux.mo
+R	themes/siriux/locale/fi_FI/LC_MESSAGES
+R	themes/siriux/locale/fi_FI
+R	themes/siriux/locale/fr_FR/LC_MESSAGES/themes_siriux.mo
+R	themes/siriux/locale/fr_FR/LC_MESSAGES
+R	themes/siriux/locale/fr_FR
+R	themes/siriux/locale/ga_IE/LC_MESSAGES/themes_siriux.mo
+R	themes/siriux/locale/ga_IE/LC_MESSAGES
+R	themes/siriux/locale/ga_IE
+R	themes/siriux/locale/he_IL/LC_MESSAGES/themes_siriux.mo
+R	themes/siriux/locale/he_IL/LC_MESSAGES
+R	themes/siriux/locale/he_IL
+R	themes/siriux/locale/hu_HU/LC_MESSAGES/themes_siriux.mo
+R	themes/siriux/locale/hu_HU/LC_MESSAGES
+R	themes/siriux/locale/hu_HU
+R	themes/siriux/locale/is_IS/LC_MESSAGES/themes_siriux.mo
+R	themes/siriux/locale/is_IS/LC_MESSAGES
+R	themes/siriux/locale/is_IS
+R	themes/siriux/locale/it_IT/LC_MESSAGES/themes_siriux.mo
+R	themes/siriux/locale/it_IT/LC_MESSAGES
+R	themes/siriux/locale/it_IT
+R	themes/siriux/locale/ja_JP/LC_MESSAGES/themes_siriux.mo
+R	themes/siriux/locale/ja_JP/LC_MESSAGES
+R	themes/siriux/locale/ja_JP
+R	themes/siriux/locale/nl_NL/LC_MESSAGES/themes_siriux.mo
+R	themes/siriux/locale/nl_NL/LC_MESSAGES
+R	themes/siriux/locale/nl_NL
+R	themes/siriux/locale/no_NO/LC_MESSAGES/themes_siriux.mo
+R	themes/siriux/locale/no_NO/LC_MESSAGES
+R	themes/siriux/locale/no_NO
+R	themes/siriux/locale/pl_PL/LC_MESSAGES/themes_siriux.mo
+R	themes/siriux/locale/pl_PL/LC_MESSAGES
+R	themes/siriux/locale/pl_PL
+R	themes/siriux/locale/pt_PT/LC_MESSAGES/themes_siriux.mo
+R	themes/siriux/locale/pt_PT/LC_MESSAGES
+R	themes/siriux/locale/pt_PT
+R	themes/siriux/locale/ru_RU/LC_MESSAGES/themes_siriux.mo
+R	themes/siriux/locale/ru_RU/LC_MESSAGES
+R	themes/siriux/locale/ru_RU
+R	themes/siriux/locale/sr_YU/LC_MESSAGES/themes_siriux.mo
+R	themes/siriux/locale/sr_YU/LC_MESSAGES
+R	themes/siriux/locale/sr_YU
+R	themes/siriux/locale/sv_SE/LC_MESSAGES/themes_siriux.mo
+R	themes/siriux/locale/sv_SE/LC_MESSAGES
+R	themes/siriux/locale/sv_SE
+R	themes/siriux/locale/tr_TR/LC_MESSAGES/themes_siriux.mo
+R	themes/siriux/locale/tr_TR/LC_MESSAGES
+R	themes/siriux/locale/tr_TR
+R	themes/siriux/locale/vi_VN/LC_MESSAGES/themes_siriux.mo
+R	themes/siriux/locale/vi_VN/LC_MESSAGES
+R	themes/siriux/locale/vi_VN
+R	themes/siriux/po/cs_CZ.po
+R	themes/siriux/po/da_DK.po
+R	themes/siriux/po/de_DE.po
+R	themes/siriux/po/el_GR.po
+R	themes/siriux/po/eu_ES.po
+R	themes/siriux/po/fi_FI.po
+R	themes/siriux/po/fr_FR.po
+R	themes/siriux/po/ga_IE.po
+R	themes/siriux/po/he_IL.po
+R	themes/siriux/po/hu_HU.po
+R	themes/siriux/po/is_IS.po
+R	themes/siriux/po/it_IT.po
+R	themes/siriux/po/ja_JP.po
+R	themes/siriux/po/nl_NL.po
+R	themes/siriux/po/no_NO.po
+R	themes/siriux/po/pl_PL.po
+R	themes/siriux/po/pt_PT.po
+R	themes/siriux/po/ru_RU.po
+R	themes/siriux/po/sr_YU.po
+R	themes/siriux/po/sv_SE.po
+R	themes/siriux/po/tr_TR.po
+R	themes/siriux/po/vi_VN.po
+R	themes/siriux/templates/sidebar.tpl

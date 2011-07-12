@@ -1,0 +1,293 @@
+# $Id: es_AR.po,v 1.29 2006/03/22 04:18:18 mindless Exp $
+#
+# Gallery - a web based photo album viewer and editor
+# Copyright (C) 2000-2006 Bharat Mediratta
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery: Comments 1.1.0\n"
+"POT-Creation-Date: 2003-06-05 16:56-0300\n"
+"PO-Revision-Date: 2003-06-05 17:20-0300\n"
+"Last-Translator: Alvaro Cortizo <alvaro@netpandora.com>\n"
+"Language-Team: Argentine Spanish <gallery-devel@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#, fuzzy
+msgid "Add Comment"
+msgstr "Agregar un comentario"
+
+msgid "add comment"
+msgstr "agregar comentario"
+
+#, fuzzy
+msgid "show comments"
+msgstr "Comentarios"
+
+msgid "Comments"
+msgstr "Comentarios"
+
+#, fuzzy
+msgid "User commenting system"
+msgstr "Comentarios"
+
+msgid "Extra Data"
+msgstr ""
+
+msgid "[comment] Add comments"
+msgstr "[comment] Agregar comentarios"
+
+msgid "[comment] Edit comments"
+msgstr "[comment] Editar comentarios"
+
+msgid "[comment] Delete comments"
+msgstr "[comment] Borrar comentarios"
+
+#, fuzzy
+msgid "[comment] View comments"
+msgstr "[comment] Editar comentarios"
+
+msgid "[comment] All access"
+msgstr "[comment] Acceso total"
+
+#, fuzzy
+msgid "View Latest Comments"
+msgstr "Comentarios"
+
+#, fuzzy
+msgid "View Comments"
+msgstr "Comentarios"
+
+#, fuzzy, c-format
+msgid "Comments: %d"
+msgstr "Comentario: "
+
+#, fuzzy
+msgid "Guest Comments"
+msgstr "Comentarios"
+
+#, fuzzy
+msgid "Comment Module"
+msgstr "Comentario: "
+
+#, fuzzy
+msgid "Search comments"
+msgstr "[comment] Agregar comentarios"
+
+msgid "Subject"
+msgstr ""
+
+#, fuzzy
+msgid "Comment"
+msgstr "Comentario:"
+
+#, fuzzy
+msgid "Commenter"
+msgstr "De:"
+
+#, fuzzy
+msgid "Comment Preview"
+msgstr "Comentario: "
+
+msgid "Posted by"
+msgstr ""
+
+#, c-format
+msgid "%s (%s)"
+msgstr ""
+
+msgid "(required)"
+msgstr ""
+
+#, fuzzy
+msgid "You must enter a subject!"
+msgstr "Tiene que ingresar una fecha"
+
+#, fuzzy
+msgid "You must enter a comment!"
+msgstr "Tiene que ingresar una fecha"
+
+#, fuzzy
+msgid "Preview"
+msgstr "Comentario: "
+
+msgid "Save"
+msgstr "Guardar"
+
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgid "edit"
+msgstr "editar"
+
+msgid "delete"
+msgstr "borrar"
+
+msgid "show full"
+msgstr ""
+
+msgid "show summary"
+msgstr ""
+
+#, c-format
+msgid "Posted by %s on %s (%s)"
+msgstr ""
+
+#, c-format
+msgid "Posted by %s on %s"
+msgstr ""
+
+msgid "Comment change confirmation"
+msgstr ""
+
+msgid "Comment added successfully"
+msgstr ""
+
+#, fuzzy
+msgid "Comment deleted successfully"
+msgstr "[comment] Borrar comentarios"
+
+msgid "Comment modified successfully"
+msgstr ""
+
+#, fuzzy
+msgid "Comments Settings"
+msgstr "Comentarios"
+
+#, fuzzy
+msgid "Settings saved successfully"
+msgstr "[comment] Borrar comentarios"
+
+msgid "Show link for Latest Comments:"
+msgstr ""
+
+msgid "Number of comments on Latest Comments page:"
+msgstr ""
+
+msgid "Invalid value"
+msgstr ""
+
+msgid "Reset"
+msgstr ""
+
+msgid "Delete this comment?"
+msgstr "Borrar este comentario?"
+
+msgid "Are you sure?"
+msgstr ""
+
+#, fuzzy
+msgid "Delete this comment?  There is no undo!"
+msgstr "Borrar este comentario?"
+
+msgid "Delete"
+msgstr "Borrar"
+
+msgid "Edit comment"
+msgstr "Editar comentario"
+
+msgid "You must enter a username."
+msgstr "Tiene que ingresar un nombre de usuario"
+
+msgid "The username you entered is invalid."
+msgstr "El nombre de usuario que ingres&oacute; es inv&aacute;lido"
+
+#, fuzzy
+msgid "Host"
+msgstr "Host: "
+
+#, fuzzy
+msgid "Date"
+msgstr "Fecha:"
+
+msgid "The date you entered is invalid."
+msgstr "La fecha que ingres&oacute; es inv&aacute;lida"
+
+msgid "You must enter a date"
+msgstr "Tiene que ingresar una fecha"
+
+#, fuzzy
+msgid "You must enter a subject"
+msgstr "Tiene que ingresar una fecha"
+
+#, fuzzy
+msgid "You must enter a comment"
+msgstr "Tiene que ingresar una fecha"
+
+#, fuzzy
+msgid "Latest Comments"
+msgstr "Comentarios"
+
+msgid "Comment changed successfully"
+msgstr ""
+
+msgid "There are no comments for this item"
+msgstr "No hay comentarios para este &iacute;m"
+
+msgid "Recent comments"
+msgstr "Comentarios recientes"
+
+#, c-format
+msgid "(view all %d comments)"
+msgstr "(ver los %d comentarios"
+
+#, fuzzy
+msgid "Show comments"
+msgstr "Comentarios"
+
+#, fuzzy
+msgid "Number of comments"
+msgstr "[comment] Agregar comentarios"
+
+msgid "1"
+msgstr ""
+
+msgid "2"
+msgstr ""
+
+msgid "3"
+msgstr ""
+
+msgid "4"
+msgstr ""
+
+msgid "5"
+msgstr ""
+
+msgid "10"
+msgstr ""
+
+msgid "20"
+msgstr ""
+
+msgid "30"
+msgstr ""
+
+msgid "50"
+msgstr ""
+
+msgid "100"
+msgstr ""
+
+msgid "999"
+msgstr ""
+
+#, fuzzy
+#~ msgid "[comment] Search comments"
+#~ msgstr "[comment] Agregar comentarios"

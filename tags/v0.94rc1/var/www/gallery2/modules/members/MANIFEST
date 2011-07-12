@@ -1,0 +1,138 @@
+# File crc32 crc32(crlf) size size(crlf)  or  R File
+modules/members/AdminMembers.inc	1016844747	990843181	3922	4048
+modules/members/Callbacks.inc	642902012	966138273	1854	1912
+modules/members/MembersItems.inc	3956983585	2658511295	4427	4567
+modules/members/MembersList.inc	3276383173	2630028674	4444	4580
+modules/members/MembersProfile.inc	1535074570	4019703971	3803	3924
+modules/members/classes/GalleryMembersHelper.class	2094593424	1714170269	8131	8411
+modules/members/data/directory.gif	1750964601	1750964601	615	615
+modules/members/data/file.gif	3887485054	3887485054	563	563
+modules/members/locale/af/LC_MESSAGES/modules_members.mo	145813524	145813524	2766	2766
+modules/members/locale/bg/LC_MESSAGES/modules_members.mo	3665226748	3665226748	3218	3218
+modules/members/locale/cs/LC_MESSAGES/modules_members.mo	2237948018	2237948018	3105	3105
+modules/members/locale/da/LC_MESSAGES/modules_members.mo	2140914251	2140914251	2906	2906
+modules/members/locale/de/LC_MESSAGES/modules_members.mo	1170596841	1170596841	3032	3032
+modules/members/locale/es/LC_MESSAGES/modules_members.mo	1994747392	1994747392	1936	1936
+modules/members/locale/eu/LC_MESSAGES/modules_members.mo	374636620	374636620	3102	3102
+modules/members/locale/fr/LC_MESSAGES/modules_members.mo	1552822480	1552822480	3034	3034
+modules/members/locale/ga/LC_MESSAGES/modules_members.mo	80411164	80411164	1347	1347
+modules/members/locale/hu/LC_MESSAGES/modules_members.mo	3547703193	3547703193	2682	2682
+modules/members/locale/is/LC_MESSAGES/modules_members.mo	650513984	650513984	459	459
+modules/members/locale/it/LC_MESSAGES/modules_members.mo	647113924	647113924	3084	3084
+modules/members/locale/ja/LC_MESSAGES/modules_members.mo	272662597	272662597	3263	3263
+modules/members/locale/lt/LC_MESSAGES/modules_members.mo	1363927262	1363927262	3279	3279
+modules/members/locale/nl/LC_MESSAGES/modules_members.mo	1787951717	1787951717	2679	2679
+modules/members/locale/no/LC_MESSAGES/modules_members.mo	4404297	4404297	2928	2928
+modules/members/locale/pl/LC_MESSAGES/modules_members.mo	982364044	982364044	3224	3224
+modules/members/locale/pt_BR/LC_MESSAGES/modules_members.mo	611536159	611536159	1202	1202
+modules/members/locale/ru/LC_MESSAGES/modules_members.mo	2899837910	2899837910	4154	4154
+modules/members/locale/sr/LC_MESSAGES/modules_members.mo	3794183788	3794183788	3072	3072
+modules/members/locale/sv/LC_MESSAGES/modules_members.mo	632596263	632596263	3084	3084
+modules/members/locale/tr/LC_MESSAGES/modules_members.mo	929603631	929603631	3041	3041
+modules/members/locale/zh_CN/LC_MESSAGES/modules_members.mo	730377541	730377541	2944	2944
+modules/members/locale/zh_TW/LC_MESSAGES/modules_members.mo	1759386159	1759386159	2934	2934
+modules/members/module.inc	2570052924	179295351	2328	2408
+modules/members/po/GNUmakefile	1866879166	2808215985	98	103
+modules/members/po/af.po	273821561	339781245	3967	4158
+modules/members/po/bg.po	1882859718	3719454113	4318	4512
+modules/members/po/cs.po	2404489528	568769817	4186	4379
+modules/members/po/da.po	3388409359	1166749003	3930	4118
+modules/members/po/de.po	3141574694	42399068	4385	4580
+modules/members/po/es.po	1491161027	968494144	3710	3898
+modules/members/po/eu.po	1609174262	1394136656	4109	4299
+modules/members/po/fr.po	2116165656	2481966257	4112	4299
+modules/members/po/ga.po	2226588262	679492944	4875	5101
+modules/members/po/hu.po	188608377	1977751369	3978	4170
+modules/members/po/is.po	2403667289	2406453190	3197	3383
+modules/members/po/it.po	2400719719	960263910	4124	4315
+modules/members/po/ja.po	1260640654	1716885120	4220	4407
+modules/members/po/lt.po	3033277412	1383381271	4372	4569
+modules/members/po/nl.po	3979428451	3319932105	4022	4212
+modules/members/po/no.po	451103372	1865411917	4086	4271
+modules/members/po/pl.po	1908944393	2828740354	4306	4499
+modules/members/po/pt_BR.po	3229104928	1338855242	3842	4040
+modules/members/po/ru.po	4142730379	1600584847	5387	5588
+modules/members/po/sr.po	680594473	661332042	4065	4254
+modules/members/po/strings.raw	4108846873	22182267	2085	2154
+modules/members/po/sv.po	1717559404	476406421	4245	4441
+modules/members/po/tr.po	3036112804	985062565	4230	4425
+modules/members/po/zh_CN.po	3835272597	3571711770	4090	4284
+modules/members/po/zh_TW.po	3006085299	1204003011	3877	4059
+modules/members/templates/AdminMembers.tpl	3751658066	2319237128	1496	1538
+modules/members/templates/MembersItems.tpl	3804557794	3208318655	3167	3264
+modules/members/templates/MembersList.tpl	1689408019	2308267381	2637	2719
+modules/members/templates/MembersProfile.tpl	3079511711	410140947	2537	2622
+modules/members/templates/blocks/MembersSummary.tpl	928705338	1581640850	914	940
+modules/members/templates/blocks/blocks.inc	3656415848	2500798587	110	115
+R	modules/members/locale/bg_BG/LC_MESSAGES/modules_members.mo
+R	modules/members/locale/bg_BG/LC_MESSAGES
+R	modules/members/locale/bg_BG
+R	modules/members/locale/cs_CZ/LC_MESSAGES/modules_members.mo
+R	modules/members/locale/cs_CZ/LC_MESSAGES
+R	modules/members/locale/cs_CZ
+R	modules/members/locale/da_DK/LC_MESSAGES/modules_members.mo
+R	modules/members/locale/da_DK/LC_MESSAGES
+R	modules/members/locale/da_DK
+R	modules/members/locale/de_DE/LC_MESSAGES/modules_members.mo
+R	modules/members/locale/de_DE/LC_MESSAGES
+R	modules/members/locale/de_DE
+R	modules/members/locale/eu_ES/LC_MESSAGES/modules_members.mo
+R	modules/members/locale/eu_ES/LC_MESSAGES
+R	modules/members/locale/eu_ES
+R	modules/members/locale/fr_FR/LC_MESSAGES/modules_members.mo
+R	modules/members/locale/fr_FR/LC_MESSAGES
+R	modules/members/locale/fr_FR
+R	modules/members/locale/ga_IE/LC_MESSAGES/modules_members.mo
+R	modules/members/locale/ga_IE/LC_MESSAGES
+R	modules/members/locale/ga_IE
+R	modules/members/locale/hu_HU/LC_MESSAGES/modules_members.mo
+R	modules/members/locale/hu_HU/LC_MESSAGES
+R	modules/members/locale/hu_HU
+R	modules/members/locale/is_IS/LC_MESSAGES/modules_members.mo
+R	modules/members/locale/is_IS/LC_MESSAGES
+R	modules/members/locale/is_IS
+R	modules/members/locale/it_IT/LC_MESSAGES/modules_members.mo
+R	modules/members/locale/it_IT/LC_MESSAGES
+R	modules/members/locale/it_IT
+R	modules/members/locale/ja_JP/LC_MESSAGES/modules_members.mo
+R	modules/members/locale/ja_JP/LC_MESSAGES
+R	modules/members/locale/ja_JP
+R	modules/members/locale/nl_NL/LC_MESSAGES/modules_members.mo
+R	modules/members/locale/nl_NL/LC_MESSAGES
+R	modules/members/locale/nl_NL
+R	modules/members/locale/no_NO/LC_MESSAGES/modules_members.mo
+R	modules/members/locale/no_NO/LC_MESSAGES
+R	modules/members/locale/no_NO
+R	modules/members/locale/ru_RU/LC_MESSAGES/modules_members.mo
+R	modules/members/locale/ru_RU/LC_MESSAGES
+R	modules/members/locale/ru_RU
+R	modules/members/locale/sr_YU/LC_MESSAGES/modules_members.mo
+R	modules/members/locale/sr_YU/LC_MESSAGES
+R	modules/members/locale/sr_YU
+R	modules/members/locale/sv_SE/LC_MESSAGES/modules_members.mo
+R	modules/members/locale/sv_SE/LC_MESSAGES
+R	modules/members/locale/sv_SE
+R	modules/members/locale/tr_TR/LC_MESSAGES/modules_members.mo
+R	modules/members/locale/tr_TR/LC_MESSAGES
+R	modules/members/locale/tr_TR
+R	modules/members/po/bg_BG.po
+R	modules/members/po/cs_CZ.po
+R	modules/members/po/da_DK.po
+R	modules/members/po/de_DE.po
+R	modules/members/po/eu_ES.po
+R	modules/members/po/fr_FR.po
+R	modules/members/po/ga_IE.po
+R	modules/members/po/hu_HU.po
+R	modules/members/po/is_IS.po
+R	modules/members/po/it_IT.po
+R	modules/members/po/ja_JP.po
+R	modules/members/po/nl_NL.po
+R	modules/members/po/no_NO.po
+R	modules/members/po/ru_RU.po
+R	modules/members/po/sr_YU.po
+R	modules/members/po/sv_SE.po
+R	modules/members/po/tr_TR.po
+R	modules/members/templates/MembersItemsHead.tpl
+R	modules/members/templates/MembersListHead.tpl
+R	modules/members/templates/MembersProfileHead.tpl
+R	modules/members/templates/MembersSystemContent.tpl

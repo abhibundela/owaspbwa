@@ -1,0 +1,207 @@
+<?php
+/*
+ * $RCSfile: PanoramaHelper.class,v $
+ *
+ * Gallery - a web based photo album viewer and editor
+ * Copyright (C) 2000-2006 Bharat Mediratta
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or (at
+ * your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+/**
+ * @version $Revision: 1.7 $ $Date: 2006/01/10 04:41:16 $
+ * @package Panorama
+ * @author Alan Harder <alan.harder@sun.com>
+ */
+
+/**
+ * A helper class for the Panorama module.
+ *
+ * @package Panorama
+ * @subpackage Classes
+ */
+class PanoramaHelper {
+
+    /**
+     * Set entity type for an item
+     *
+     * @param GalleryDataItem item
+     * @param boolean isPanorama true to set panorama type
+     * @return GalleryStatus a status code
+     * @static
+     */
+    function assignEntityType(&$item, $isPanorama) {
+	list ($ret, $lockId) = GalleryCoreApi::acquireWriteLock($item->getId());
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+	if (GalleryUtilities::isA($item, 'GalleryPhotoItem')) {
+	    $item->setEntityType(
+		$isPanorama ? 'PanoramaPhotoItem' : 'GalleryPhotoItem');
+	} else if (GalleryUtilities::isA($item, 'GalleryDerivativeImage')) {
+	    $item->setEntityType(
+		$isPanorama ? 'PanoramaDerivativeImage' : 'GalleryDerivativeImage');
+	}
+	$ret = $item->save();
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+	$ret = GalleryCoreApi::releaseLocks($lockId);
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+	return null;
+    }
+
+    /**
+     * Fetch largest viewable images for use in a panorama
+     *
+     * @param array of GalleryDataItem
+     * @return array GalleryStatus a status code
+     *               array of given-itemId=>GalleryDataItem-for-display
+     * @static
+     */
+    function fetchViewableImages($items) {
+	global $gallery;
+	foreach ($items as $item) {
+	    if (GalleryUtilities::isA($item, 'GalleryPhotoItem')) {
+		$ids[] = $item->getId();
+	    }
+	}
+	if (!isset($ids)) {
+	    return array(null, array());
+	}
+	list ($ret, $preferredFullImages) =
+	    GalleryCoreApi::fetchPreferredsByItemIds($ids);
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+	list ($ret, $resizedImages) =
+	    GalleryCoreApi::fetchResizesByItemIds($ids);
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+	$ret = GalleryCoreApi::studyPermissions($ids);
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	$data = array();
+	foreach ($items as $item) {
+	    $id = $item->getId();
+	    if (!in_array($id, $ids)) {
+		continue;
+	    }
+	    list ($ret, $permissions) = GalleryCoreApi::getPermissions($id);
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+
+	    if (isset($permissions['core.viewSource'])) {
+		/* Full size; check for preferred copy */
+		if (isset($preferredFullImages[$id])) {
+		    $data[$id] = $preferredFullImages[$id];
+		} else {
+		    $data[$id] = $item;
+		}
+	    } else if (isset($permissions['core.viewResizes']) &&
+		       isset($resizedImages[$id])) {
+		$max = -1;
+		foreach ($resizedImages[$id] as $resize) {
+		    $size = $resize->getWidth() + $resize->getHeight();
+		    if ($size > $max) {
+			$data[$id] = $resize;
+		    }
+		}
+	    }
+	}
+	return array(null, $data);
+    }
+
+    /**
+     * Count number of panorama entities
+     *
+     * @return array GalleryStatus a status code
+     *               int count
+     * @static
+     */
+    function fetchItemCount() {
+	global $gallery;
+
+	$query = '
+	SELECT
+	  COUNT([GalleryEntity::id])
+	FROM
+	  [GalleryEntity]
+	WHERE
+	  [GalleryEntity::entityType] = \'PanoramaPhotoItem\'
+	  OR
+	  [GalleryEntity::entityType] = \'PanoramaDerivativeImage\'
+	';
+
+	list ($ret, $searchResults) = $gallery->search($query, array(), array());
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	$count = 0;
+	if ($result = $searchResults->nextResult()) {
+	    $count = (int)$result[0];
+	}
+	return array(null, $count);
+    }
+
+    /**
+     * Reset all panorama entities back to their normal type
+     *
+     * @return GalleryStatus a status code
+     * @static
+     */
+    function resetPanoramaItems() {
+	global $gallery;
+
+	$query = '
+	SELECT
+	  [GalleryEntity::id]
+	FROM
+	  [GalleryEntity]
+	WHERE
+	  [GalleryEntity::entityType] = \'PanoramaPhotoItem\'
+	  OR
+	  [GalleryEntity::entityType] = \'PanoramaDerivativeImage\'
+	';
+
+	list ($ret, $searchResults) = $gallery->search($query, array(), array());
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	for ($i = 0; $result = $searchResults->nextResult();) {
+	    if ($i++ % 10 == 0) {
+		$gallery->guaranteeTimeLimit(5);
+	    }
+	    $id = (int)$result[0];
+	    list ($ret, $item) = GalleryCoreApi::loadEntitiesById($id);
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	    $ret = PanoramaHelper::assignEntityType($item, false);
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	}
+	return null;
+    }
+}
+?>

@@ -1,0 +1,86 @@
+# $Id: fr.po,v 1.6 2006/03/22 04:20:53 mindless Exp $
+#
+# Gallery - a web based photo album viewer and editor
+# Copyright (C) 2000-2006 Bharat Mediratta
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery: Rating 1.0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-01-17 21:21+0100\n"
+"PO-Revision-Date: 2006-02-20 00:00+0100\n"
+"Last-Translator: Arnaud MOURONVAL <ArnaudMouronval@yahoo.com>\n"
+"Language-Team: French <gallery-devel@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Rating"
+msgstr "Notation"
+
+msgid "Item Rating Interface"
+msgstr "Notation des éléments"
+
+msgid "Extra Data"
+msgstr "Données supplémentaires"
+
+msgid "[rating] Add ratings"
+msgstr "[notation] Ajouter une notation"
+
+msgid "[rating] View ratings"
+msgstr "[notation] Consulter les notations"
+
+msgid "[rating] All access"
+msgstr "[notation] Toutes les accès"
+
+#, c-format
+msgid "%s votes"
+msgstr "%s votes"
+
+msgid ""
+"This will enable or disable ratings for this album and, optionally, for its subalbums.  You "
+"can use permissions to allow viewing or adding ratings for specific users or groups."
+msgstr ""
+"Ceci va activer ou désactiver la notation pour cet album et éventuellement pour ses sous-"
+"albums. Vous pouvez utiliser les permissions pour autoriser la consultation ou la notation "
+"pour des utilisateurs ou des groupes spécifiques."
+
+msgid "Enable rating for this album"
+msgstr "Activer la notation pour cet album"
+
+msgid "... and for all subalbums"
+msgstr "et pour tous les sous-albums"
+
+msgid "Rating Settings"
+msgstr "Paramètres de notation"
+
+msgid "Settings saved successfully"
+msgstr "Paramètres sauvegardés avec succès"
+
+msgid "Allow users to rate entire albums, in addition to individual items."
+msgstr ""
+"Autoriser les utilisateurs à noter des albums entiers en plus des éléments individuels."
+
+msgid "Save"
+msgstr "Sauver"
+
+msgid "Reset"
+msgstr "Réinitialiser"
+
+msgid "Rating interface"
+msgstr "Interface de notation"

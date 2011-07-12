@@ -1,0 +1,77 @@
+# $Id: es.po,v 1.6 2006/03/22 04:20:56 mindless Exp $
+#
+# Gallery - a web based photo album viewer and editor
+# Copyright (C) 2000-2006 Bharat Mediratta
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+#
+# Previous translators (as far as known, add yourself here, please):
+# - Oscar Garcia Amor <oscar.garcia@moire.org>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery: Rearrange 1.0.3\n"
+"Report-Msgid-Bugs-To: <gallery-devel@lists.sourceforge.net>\n"
+"POT-Creation-Date: 2005-10-31 12:11+0100\n"
+"PO-Revision-Date: 2005-10-31 12:30+0100\n"
+"Last-Translator: Oscar Garcia Amor <oscar.garcia@moire.org>\n"
+"Language-Team: Spanish <gallery-devel@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "rearrange items"
+msgstr "recolocar elementos"
+
+msgid "Rearrange"
+msgstr "Recolocar"
+
+msgid "Rearrange the order of album items all at once"
+msgstr "Recoloca el orden de todos los elementos del &aacute;bum de una vez"
+
+msgid "Gallery"
+msgstr "Gallery"
+
+msgid "Rearrange Items"
+msgstr "Recolocar Elementos"
+
+msgid "Rearrange Album"
+msgstr "Recolocar &Aacute;lbum"
+
+msgid ""
+"This album has an automatic sort order specified, so you cannot change the order of items "
+"manually.  You must remove the automatic sort order to continue."
+msgstr ""
+"Este &aacute;lbum tiene especificado un orden de colocaci&oacute;n automatico, de modo que "
+"no puedes cambiar el orden de forma manual.  Debes quitar el orden de colocaci&oacute;n "
+"automatico para continuar"
+
+msgid "change"
+msgstr "cambiar"
+
+msgid "Order saved successfully"
+msgstr "Orden guardado con &eacute;xito"
+
+#, fuzzy, c-format
+msgid ""
+"Change the order of the items in this album.%s Click an item to move, then click the new "
+"location."
+msgstr "Cambia el orden de los elementos de este &aacute;lbum."
+
+msgid "Save"
+msgstr "Guardar"
+
+msgid "Reset"
+msgstr "Reiniciar"

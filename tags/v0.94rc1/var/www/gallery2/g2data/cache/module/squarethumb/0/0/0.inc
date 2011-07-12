@@ -1,0 +1,1 @@
+|a:6:{s:4:"mode";s:4:"crop";s:5:"color";s:6:"000000";s:8:"_version";s:5:"1.0.3";s:10:"_callbacks";s:40:"registerEventListeners|getSiteAdminViews";s:16:"_requiredCoreApi";s:3:"7,0";s:18:"_requiredModuleApi";s:3:"3,0";}

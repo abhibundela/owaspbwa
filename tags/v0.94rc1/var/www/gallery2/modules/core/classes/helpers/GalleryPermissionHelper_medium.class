@@ -1,0 +1,295 @@
+<?php
+/*
+ * $RCSfile: GalleryPermissionHelper_medium.class,v $
+ *
+ * Gallery - a web based photo album viewer and editor
+ * Copyright (C) 2000-2006 Bharat Mediratta
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or (at
+ * your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+/**
+ * @version $Revision: 1.20 $ $Date: 2006/02/08 22:03:13 $
+ * @package GalleryCore
+ * @author Bharat Mediratta <bharat@menalto.com>
+ */
+
+/**
+ * The central registry for all permissions in the system
+ *
+ * @package GalleryCore
+ * @subpackage Helpers
+ */
+class GalleryPermissionHelper_medium {
+
+    /**
+     * Return a list of permissions for the given items
+     *
+     * @param array int GalleryItem ids
+     * @param int [optional] id of the user whose permissions we search for
+     * @return array object GalleryStatus a status code
+     *               array (id => array(array(permission.id => 1, ...), ...)
+     * @static
+     */
+    function fetchPermissionsForItems($itemIds, $userId=null) {
+	global $gallery;
+
+	if (!is_array($itemIds) || empty($itemIds)) {
+	    return array(GalleryCoreApi::error(ERROR_BAD_PARAMETER, __FILE__, __LINE__), null);
+	}
+	foreach ($itemIds as $idx => $id) {
+	    $itemIds[$idx] = (int)$id;
+	}
+
+	if (is_null($userId)) {
+	    $userId = $gallery->getActiveUserId(); /* default user id */
+	}
+
+	$itemIdMarkers = GalleryUtilities::makeMarkers(count($itemIds));
+
+	list ($ret, $groupIds) = GalleryCoreApi::fetchGroupsForUser($userId);
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+	$groupIds = array_keys($groupIds);
+	if ($userId == $gallery->getActiveUserId()) {
+	    /* Session based permissions */
+	    $session =& $gallery->getSession();
+	    $sessionEntityIds = $session->get(GALLERY_PERMISSION_SESSION_KEY);
+	    if (!empty($sessionEntityIds)) {
+		$groupIds = array_merge($groupIds, $sessionEntityIds);
+	    }
+	}
+	$entityIdMarkers = GalleryUtilities::makeMarkers(count($groupIds) + 1);
+
+	$storage =& $gallery->getStorage();
+	list ($ret, $bitOr) = $storage->getFunctionSql(
+				'BIT_OR', array('[GalleryAccessMap::permission]',
+						'[GalleryAccessSubscriberMap::itemId]'));
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+	
+	$query = '
+	SELECT
+	    [GalleryAccessSubscriberMap::itemId],
+	    ' . $bitOr . '
+	FROM
+	    [GalleryAccessMap], [GalleryAccessSubscriberMap]
+	WHERE
+	    [GalleryAccessSubscriberMap::itemId] IN (' . $itemIdMarkers . ')
+	    AND
+	    [GalleryAccessSubscriberMap::accessListId] = [GalleryAccessMap::accessListId]
+	    AND
+	    [GalleryAccessMap::userOrGroupId] IN (' . $entityIdMarkers . ')
+	GROUP BY
+	    [GalleryAccessSubscriberMap::itemId]
+	';
+
+	$data = $itemIds;
+	$data[] = (int)$userId;
+	array_splice($data, count($data), 0, $groupIds);
+
+	list($ret, $searchResults) = $gallery->search($query, $data);
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	$storage =& $gallery->getStorage();
+
+	$permTable = array();
+	while ($result = $searchResults->nextResult()) {
+	    /* Temporary fix for defect 1244916 */
+	    $gallery->guaranteeTimeLimit(10);
+	    $bits = $storage->convertBitsToInt($result[1]);
+	    if (!empty($bits)) {
+		list ($ret, $permissions) = GalleryCoreApi::convertPermissionBitsToIds($bits);
+		if ($ret) {
+		    return array($ret->wrap(__FILE__, __LINE__), null);
+		}
+	    } else {
+		$permissions = array();
+	    }
+
+	    foreach ($permissions as $permission) {
+		/* $result[0] = itemId */
+		/* $permission['id'] = the permission name for that bit */
+		$permTable[$result[0]][$permission['id']] = 1;
+		/* Only cache permissions in the session for the activeUser */
+		if ($userId == $gallery->getActiveUserId()) {
+		    GalleryDataCache::cachePermissions($result[0], $permission['id']);
+		}
+	    }
+	}
+
+	return array(null, $permTable);
+    }
+
+    /**
+     * Return all the permission ids for a permission bit set
+     *
+     * @param int the bit mask
+     * @param boolean should we compress the permission list?
+     * @return array object GalleryStatus a status code
+     *               array (bits, bits, bits)
+     * @static
+     */
+    function convertBitsToIds($permissionBits, $compress=false) {
+	global $gallery;
+
+	if (empty($permissionBits)) {
+	    return array(null, array());
+	}
+
+	$cacheKey = "GalleryPermissionHelper::convertBitsToIds($permissionBits, $compress)";
+	if (GalleryDataCache::containsKey($cacheKey)) {
+	    $results = GalleryDataCache::get($cacheKey);
+	} else {
+	    GalleryCoreApi::requireOnce(
+		'modules/core/classes/helpers/GalleryPermissionHelper_simple.class');
+
+	    list ($ret, $allPermissions) = GalleryPermissionHelper_simple::_fetchAllPermissions();
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+
+	    $results = array();
+
+	    /* Make sure we've got an integer */
+	    $permissionBits = (int)$permissionBits;
+	    $leftoverBits = $permissionBits;
+	    $allAccess = null;
+	    if ($compress) {
+		/*
+		 * We want to return the least number of permissions, so first process
+		 * all composites, then process all individual permissions.  Remove the
+		 * bits we've processed as we go.
+		 */
+		foreach ($allPermissions as $id => $permission) {
+		    if (($permission['flags'] & GALLERY_PERMISSION_COMPOSITE) > 0) {
+			if (($permission['bits'] & $permissionBits) == $permission['bits']) {
+			    $entry = array('id' => $id,
+					   'module' => $permission['module'],
+					   'description' => $permission['description']);
+			    $results[] = $entry;
+			    if ($permission['flags'] & GALLERY_PERMISSION_ALL_ACCESS) {
+				$allAccess[] = $entry;
+			    }
+			    $leftoverBits &= ~$permission['bits'];
+			}
+		    }
+		}
+
+		/*
+		 * If they have an all access bit, then remove all other composites
+		 * for brevity.
+		 */
+		if (isset($allAccess)) {
+		    $results = $allAccess;
+		} else {
+		    if ($leftoverBits > 0) {
+			foreach ($allPermissions as $id => $permission) {
+			    if (($permission['flags'] & GALLERY_PERMISSION_COMPOSITE) == 0) {
+				if (($permission['bits'] & $leftoverBits) == $permission['bits']) {
+				    $results[] = array('id' => $id,
+						       'module' => $permission['module'],
+						       'description' => $permission['description']);
+				    $leftoverBits &= ~$permission['bits'];
+				    if ($leftoverBits == 0) {
+					break;
+				    }
+				}
+			    }
+			}
+		    }
+		}
+	    } else {
+		foreach ($allPermissions as $id => $permission) {
+		    if (($permission['bits'] & $permissionBits) == $permission['bits']) {
+			$results[] = array('id' => $id,
+					   'module' => $permission['module'],
+					   'description' => $permission['description']);
+		    }
+		}
+	    }
+
+	    GalleryDataCache::put($cacheKey, $results);
+	}
+
+	/*
+	 * We might have a left over value in $permissionBits here if it
+	 * contains some bits used by permissions that are no longer in the
+	 * system.  That shouldn't happen if modules clean up after themselves
+	 * properly.
+	 */
+	return array(null, $results);
+    }
+
+    /**
+     * Study the permissions for all items (for the given user)
+     *
+     * @param array GalleryItem ids
+     * @param int an optional user id (default is current user)
+     * @return object GalleryStatus a status code
+     * @static
+     */
+    function studyPermissions($itemIds, $userId=null) {
+
+	list ($ret, $permissionsTable) =
+	    GalleryCoreApi::fetchPermissionsForItems($itemIds, $userId);
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	/* Cache the permissions */
+	foreach ($permissionsTable as $itemId => $permissions) {
+	    $cacheKey = "GalleryPermissionHelper::getPermissions($itemId,$userId)";
+	    GalleryDataCache::put($cacheKey, $permissions);
+	}
+
+	return null;
+    }
+
+    /**
+     * Return all the permissions that the given user has for the given item.
+     *
+     * @param int item id
+     * @param int an optional user id (default is current user)
+     * @return array object GalleryStatus a status code
+     *               array (perm1, perm2)
+     * @static
+     */
+    function getPermissions($itemId, $userId=null) {
+	$cacheKey = "GalleryPermissionHelper::getPermissions($itemId,$userId)";
+	if (GalleryDataCache::containsKey($cacheKey)) {
+	    $permissions = GalleryDataCache::get($cacheKey);
+	} else {
+	    list ($ret, $permissionsTable) =
+		GalleryCoreApi::fetchPermissionsForItems(array($itemId), $userId);
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+
+	    if (isset($permissionsTable[$itemId])) {
+		$permissions = $permissionsTable[$itemId];
+	    } else {
+		$permissions = array();
+	    }
+	    GalleryDataCache::put($cacheKey, $permissions);
+	}
+
+	return array(null, $permissions);
+    }
+}
+?>

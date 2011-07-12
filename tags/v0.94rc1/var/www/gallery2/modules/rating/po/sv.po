@@ -1,0 +1,84 @@
+# $Id: sv.po,v 1.6 2006/03/22 04:20:53 mindless Exp $
+#
+# Gallery - a web based photo album viewer and editor
+# Copyright (C) 2000-2006 Bharat Mediratta
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery: Rating 1.0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-01-18 20:36+0100\n"
+"PO-Revision-Date: 2006-03-13 21:45+0100\n"
+"Last-Translator: Anders Lindquist <andersl@saaf.se>\n"
+"Language-Team: Swedish <gallery-devel@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Rating"
+msgstr "Poäng"
+
+msgid "Item Rating Interface"
+msgstr "Gränssnitt till Poängfunktionen"
+
+msgid "Extra Data"
+msgstr "Extra Data"
+
+msgid "[rating] Add ratings"
+msgstr "[poäng] Lägg till värdering"
+
+msgid "[rating] View ratings"
+msgstr "[poäng] Visa värdering"
+
+msgid "[rating] All access"
+msgstr "[poäng] Full access"
+
+#, c-format
+msgid "%s votes"
+msgstr "%s röster"
+
+msgid ""
+"This will enable or disable ratings for this album and, optionally, for its subalbums.  You "
+"can use permissions to allow viewing or adding ratings for specific users or groups."
+msgstr ""
+"Här kan du slå på eller stänga av poånggivning för det här albumet samt för underalbum. Du "
+"kan använda behörigheter för att tillåta visning av poäng eller för att tillåta att "
+"speciella användare eller grupper får poängsätta."
+
+msgid "Enable rating for this album"
+msgstr "Slå på poängsättning för det här albumet"
+
+msgid "... and for all subalbums"
+msgstr "... och för alla underalbum"
+
+msgid "Rating Settings"
+msgstr "Inställningar för poängsättning"
+
+msgid "Settings saved successfully"
+msgstr "Lyckades spara inställningarna"
+
+msgid "Allow users to rate entire albums, in addition to individual items."
+msgstr "Tillåt att användare får poängsätta hela albumet, och inte bara enstaka objekt."
+
+msgid "Save"
+msgstr "Spar"
+
+msgid "Reset"
+msgstr "Återställ"
+
+msgid "Rating interface"
+msgstr "Pongsättnings gränssnitt"

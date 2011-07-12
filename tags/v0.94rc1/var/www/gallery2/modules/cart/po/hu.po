@@ -1,0 +1,126 @@
+# $Id: hu.po,v 1.5 2006/03/22 04:18:05 mindless Exp $
+#
+# Gallery - a web based photo album viewer and editor
+# Copyright (C) 2000-2006 Bharat Mediratta
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+# , fuzzy
+# 
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery: Cart 1.0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-03-23 11:29+0100\n"
+"PO-Revision-Date: 2005-03-23 16:51+0100\n"
+"Last-Translator: Gergely Dömsödi <doome@uhulinux.hu>\n"
+"Language-Team: Hungarian <hu@gnome.hu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "View Your Cart"
+msgstr "Kosara megtekintése"
+
+msgid "view cart"
+msgstr "kosár megtekintése"
+
+#, fuzzy
+msgid "Cart"
+msgstr "Kosár megtekintése"
+
+msgid "Shopping Cart Module"
+msgstr "Bevásárlokosár modul"
+
+msgid "Commerce"
+msgstr "Kereskedelem"
+
+msgid "[cart] Add to cart"
+msgstr ""
+
+#, fuzzy
+msgid "Add Album To Cart"
+msgstr "%s hozzáadása a kosárhoz"
+
+#, fuzzy
+msgid "Add Photo To Cart"
+msgstr "%s hozzáadása a kosárhoz"
+
+#, fuzzy, c-format
+msgid "Add %s To Cart"
+msgstr "%s hozzáadása a kosárhoz"
+
+msgid "Items Currently in Your Cart"
+msgstr "Jelenleg a kosárban lévő elemek"
+
+msgid "&laquo; cart actions &raquo;"
+msgstr "&laquo;·kosár műveletek &raquo;"
+
+msgid "Update Quantities"
+msgstr "Mennyiség frissítése"
+
+msgid "Empty Cart"
+msgstr "Üres a kosár"
+
+msgid "Go"
+msgstr "Mehet"
+
+msgid "Cart updated successfully"
+msgstr "Kosár sikeresen frissítve"
+
+msgid "Your cart is empty."
+msgstr "A kosara üres"
+
+msgid "To add items, browse the gallery and select 'Add to cart' from the item's action menu."
+msgstr ""
+"Elemek hozzáadásához böngéssze a Galériát, és válassza ki a 'Beteszem a kosárba'-t, az "
+"elemműveletei közül"
+
+msgid "Quantity"
+msgstr "Mennyiség"
+
+msgid "Item"
+msgstr "Elem"
+
+msgid "Type"
+msgstr "Típus"
+
+msgid "Remove"
+msgstr "Eltávolítás"
+
+msgid "No thumbnail"
+msgstr "Nincs előnézet"
+
+msgid "Title:"
+msgstr "Cím:"
+
+msgid "Summary:"
+msgstr "Rövid leírás"
+
+msgid "Your Cart"
+msgstr "Az Ön kosara"
+
+#, c-format
+msgid "You have %d item in your cart"
+msgid_plural "You have %d items in your cart"
+msgstr[0] "Jelenleg %d elem van a kosárban"
+
+msgid "View Cart"
+msgstr "Kosár megtekintése"
+
+#, fuzzy
+msgid "Shopping Cart Info"
+msgstr "Bevásárlokosár modul"

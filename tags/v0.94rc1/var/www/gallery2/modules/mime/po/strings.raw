@@ -1,0 +1,31 @@
+# $Id: strings.raw,v 1.12 2006/03/07 17:06:45 mindless Exp $
+
+/* module.inc */
+gettext("MIME Maintenance") /* also in: templates/MimeAdmin.tpl */
+gettext("Maintain MIME types and file extensions")
+gettext("Extra Data")
+gettext("MIME Types") /* also in: templates/MimeAdmin.tpl */
+
+/* templates/MimeAdmin.tpl */
+gettext("MIME entry saved successfully")
+gettext("MIME entry deleted")
+gettext("Extensions") /* also in: templates/MimeEdit.tpl */
+gettext("Viewable")
+gettext("Actions")
+gettext("edit")
+gettext("delete")
+gettext("Add new MIME type")
+
+/* templates/MimeEdit.tpl */
+gettext("Edit MIME type: %s")
+gettext("New MIME type")
+gettext("Mime entry saved successfully")
+gettext("MIME type: ")
+gettext("Viewable?")
+gettext("MIME type must be specified.")
+gettext("This extension is already in use and cannot be reused.")
+gettext("You must specify at least one extension.")
+gettext("Save")
+gettext("Apply")
+gettext("Cancel")
+gettext("Warning: Adding any of the following mime types could leave you open to %sCross Site Scripting%s security vulnerabilities.")

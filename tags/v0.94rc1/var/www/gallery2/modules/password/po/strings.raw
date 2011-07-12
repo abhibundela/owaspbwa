@@ -1,0 +1,24 @@
+# $Id: strings.raw,v 1.2 2006/02/16 05:14:41 mindless Exp $
+
+/* PasswordEntry.inc */
+gettext("Password Entry")
+
+/* module.inc */
+gettext("Password Items") /* also in: classes/PasswordCaptchaAdminOption.class */
+gettext("Assign passwords for viewing particular albums or items")
+gettext("Display")
+
+/* templates/PasswordEntry.tpl */
+gettext("Password Protected Item")
+gettext("Enter the password!")
+gettext("Submit")
+
+/* templates/PasswordOption.tpl */
+gettext("Password Protection")
+gettext("Assign a password that is required for guests or other users without view permission. Ensure guests have permission to view resizes and/or original items before assigning a password.")
+gettext("This item is already password protected.")
+gettext("Remove Password")
+gettext("New Password:")
+gettext("Password:")
+gettext("Confirm Password:")
+gettext("The passwords you entered did not match")

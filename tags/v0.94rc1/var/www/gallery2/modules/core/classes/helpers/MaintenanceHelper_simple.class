@@ -1,0 +1,141 @@
+<?php
+/*
+ * $RCSfile: MaintenanceHelper_simple.class,v $
+ *
+ * Gallery - a web based photo album viewer and editor
+ * Copyright (C) 2000-2006 Bharat Mediratta
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or (at
+ * your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+/**
+ * @version $Revision: 1.6 $ $Date: 2006/01/13 03:39:31 $
+ * @package GalleryCore
+ * @author Bharat Mediratta <bharat@menalto.com>
+ */
+
+/**
+ * A collection of useful maintenance related methods
+ *
+ * @package GalleryCore
+ * @subpackage Helpers
+ * @static
+ */
+class MaintenanceHelper_simple {
+    /**
+     * Fetch all the available maintenance tasks
+     * @return array object GalleryStatus a status code
+     *               array(taskId => object MaintenanceTask, ...)
+     * @static
+     */
+    function fetchTasks() {
+	/* Get all the option plugins */
+	list ($ret, $allTaskIds) =
+	    GalleryCoreApi::getAllFactoryImplementationIds('MaintenanceTask');
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	$taskInstances = array();
+	foreach (array_keys($allTaskIds) as $taskId) {
+	    list ($ret, $task) = GalleryCoreApi::newFactoryInstanceById('MaintenanceTask', $taskId);
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+
+	    $taskInstances[$taskId] = $task;
+	}
+
+	return array(null, $taskInstances);
+    }
+
+    /**
+     * Return information about the last run of this task.
+     *
+     * @param string the task id
+     * @return array object GalleryStatus a status code
+     *               array(runId => int,
+     *                     timestamp => int,
+     *                     success => bool,
+     *                     details => string)
+     * @access private
+     */
+    function fetchLastRun($taskId) {
+	global $gallery;
+
+	$query = '
+        SELECT
+          [GalleryMaintenanceMap::runId],
+          [GalleryMaintenanceMap::timestamp],
+          [GalleryMaintenanceMap::success],
+          [GalleryMaintenanceMap::details]
+        FROM
+          [GalleryMaintenanceMap]
+        WHERE
+          [GalleryMaintenanceMap::taskId] = ?
+        ORDER BY
+          [GalleryMaintenanceMap::timestamp] DESC
+        ';
+
+	list ($ret, $searchResults) =
+	    $gallery->search($query, array($taskId), array('limit' => array('count' => 1)));
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	$result = $searchResults->nextResult();
+	$info = null;
+	if ($searchResults->resultCount() == 1) {
+	    $info = array('runId' => $result[0],
+			  'timestamp' => (int)$result[1],
+			  'success' => (bool)$result[2],
+			  'details' => unserialize($result[3]));
+	}
+
+	return array(null, $info);
+    }
+
+    /**
+     * Add a new task run to the maintenance map.
+     *
+     * @param int the task id
+     * @param int when the run happened
+     * @param bool task success/failure
+     * @param array string task details
+     * @return object GalleryStatus a status code
+     */
+    function addRun($taskId, $timestamp, $success, $details) {
+	global $gallery;
+
+	$storage =& $gallery->getStorage();
+	list ($ret, $runId) = $storage->getUniqueId();
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	$ret = GalleryCoreApi::addMapEntry(
+	    'GalleryMaintenanceMap',
+	    array('runId' => $runId,
+		  'taskId' => $taskId,
+		  'timestamp' => $timestamp,
+		  'success' => (int)$success,
+		  'details' => serialize($details)));
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	return null;
+    }
+}
+?>
