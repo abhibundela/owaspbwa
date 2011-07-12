@@ -15,6 +15,10 @@ download the .7z archive if possible to save bandwidth (and time).
 you run it only on the "host only" or "NAT" network in the virtual machine 
 settings !!! 
 
+Version 0.94rc1 - 2011-07-11
+- Added a number of new applications, including Gruyere, Hackxor, WackoPicko, BodgeIt, TikiWiki, Joomla, Gallery2, WebCalendar, AWStats, and ZAP-Wave (thanks to Mike Cyr for lots of work in this area).
+- New and improved "home" page in the VM (thanks again to Mike Cyr).
+
 Version 0.93rc1 - 2011-01-19
 - Rebuilt OrangeHRM database to fix login issue (thanks to Dave van Stein 
   for reporting this)
