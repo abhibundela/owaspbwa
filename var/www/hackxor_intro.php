@@ -37,7 +37,9 @@ Each website will be properly introduced through the plot.
 <li>Note the IP of this host (it will be displayed on the console when the VM boots).</li>
 <li>Configure your hosts file (/etc/hosts on Linux, C:\Windows\System32\drivers\etc\hosts on Windows) to redirect the following domains to the IP of hackxor: wraithmail, wraithbox, cloaknet, GGHB, hub71, utrack. 
 For example, the line in the hosts file will look like:<br><br>
-192.168.15.130	owaspbwa cloaknet gghb hub71 utrack wraithbox wraithmail<br><br>
+<?php
+echo $_SERVER['SERVER_ADDR'];
+?> owaspbwa cloaknet gghb hub71 utrack wraithbox wraithmail<br><br>
 <li>
 Browse to <a href="http://wraithmail">http://wraithmail</a> and login with username:algo password:smurf </ol>
 If you can't edit the hosts file for some reason, you could use the 'Override hostname resolution' option in <a href="http://portswigger.net/burp/proxy.html">Burp proxy</a><p>
