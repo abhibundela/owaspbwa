@@ -15,8 +15,8 @@ download the .7z archive if possible to save bandwidth (and time).
 you run it only on the "host only" or "NAT" network in the virtual machine 
 settings !!! 
 
-Version 0.94rc2 - 2011-07-11
-- Fixes to hackxor applications (thanks to Albino Wax for provided fixes).
+Version 0.94rc2 - 2011-07-13
+- Fixes to hackxor applications (thanks to Albino Wax for fixes).
 
 Version 0.94rc1 - 2011-07-11
 - Added a number of new applications, including Gruyere, Hackxor, 
