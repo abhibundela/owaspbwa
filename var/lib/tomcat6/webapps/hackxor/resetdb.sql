@@ -30,15 +30,15 @@ site varchar(255),
 username varchar(255),
 password varchar(255)
 );
-insert into logins values ("thursday@wraithmail.net", "wraithmail:8080/index.jsp", "thursday", "87lkUv13Y");
-insert into logins values ("thursday@wraithmail.net", "GGHB:8080/ISP.jsp", "gen8827", "9f3a81aK");
-insert into logins values ("thursday@wraithmail.net", "cloaknet:8080/index.jsp", "thursday", "hydrazine");
-insert into logins values ("kbloom@wraithmail.net", "GGHB:8080/ISP.jsp", "admin", "682az");
-insert into logins values ("jacobson@wraithmail.net", "hub71:8080/botlogin.jsp", "jacobson", "timed");
-insert into logins values ("jacobson@wraithmail.net", "hub71:8080/botlogin2.jsp", "jacobson", "timed");
-insert into logins values ("kruger@wraithmail.net", "wraithmail:8080/index.jsp", "kruger", "irrelevantBAT");
-insert into logins values ("blu@wraithmail.net", "wraithmail:8080/index.jsp", "blu", "rosebud");
-insert into logins values ("blu@wraithmail.net", "cloaknet:8080/index.jsp", "blu", "rosebud");
+insert into logins values ("thursday@wraithmail.net", "wraithmail:80/index.jsp", "thursday", "87lkUv13Y");
+insert into logins values ("thursday@wraithmail.net", "GGHB:80/ISP.jsp", "gen8827", "9f3a81aK");
+insert into logins values ("thursday@wraithmail.net", "cloaknet:80/index.jsp", "thursday", "hydrazine");
+insert into logins values ("kbloom@wraithmail.net", "GGHB:80/ISP.jsp", "admin", "682az");
+insert into logins values ("jacobson@wraithmail.net", "hub71:80/botlogin.jsp", "jacobson", "timed");
+insert into logins values ("jacobson@wraithmail.net", "hub71:80/botlogin2.jsp", "jacobson", "timed");
+insert into logins values ("kruger@wraithmail.net", "wraithmail:80/index.jsp", "kruger", "irrelevantBAT");
+insert into logins values ("blu@wraithmail.net", "wraithmail:80/index.jsp", "blu", "rosebud");
+insert into logins values ("blu@wraithmail.net", "cloaknet:80/index.jsp", "blu", "rosebud");
 
 
 use wraithlogin;
@@ -79,7 +79,7 @@ Accept-Encoding: gzip,deflate<br>
 Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7<br>
 Keep-Alive: 115<br>
 Proxy-Connection: keep-alive<br>
-Referer: http://wraithbox:8080/htmlisland.jsp?messageid=2849902671918618960<br><br>
+Referer: http://wraithbox:80/htmlisland.jsp?messageid=2849902671918618960<br><br>
 
 The perpetrators (and most people in this scene) use TOR so their IP won't be much use and they won't be loading images, flash, java applets etc.<br>
 If you aren't using one already, you'll probably need some kind of intercepting proxy. I'd recommend <a href='http://portswigger.net/burp/proxy.html'>BURP</a>, <a href='http://www.owasp.org/index.php/Category:OWASP_WebScarab_Project'>Webscarab</a> or <a href='http://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project'>ZAP</a>. You could use the firefox addon TamperData instead if you're a masochist. NoScript might be of use since if you get tracked you might find some attacks coming your way.
@@ -119,7 +119,7 @@ successful varchar(255),
 abuse varchar(255)
 );
 
-INSERT INTO loginhistory VALUES ("rwilson", "09/07/01", "70.86.70.33", "Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.13) Gecko/20101209 Fedora/3.6.13-1.fc13 Firefox/3.6.13", "Yes", "<a href='http://cloaknet:8080'>abuse@cloaknet</a>");
+INSERT INTO loginhistory VALUES ("rwilson", "09/07/01", "70.86.70.33", "Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.13) Gecko/20101209 Fedora/3.6.13-1.fc13 Firefox/3.6.13", "Yes", "<a href='http://cloaknet:80'>abuse@cloaknet</a>");
 INSERT INTO loginhistory VALUES ("7221", "13/07/01", "43.161.90.58", "Links (2.2; Linux 2.6.33.8-149.fc13.x86_64 x86_64; 236x57)", "Yes", "<a href='http://aol.com'>abuse@aol.com</a>");
 INSERT INTO loginhistory VALUES ("algo", "13/07/01", "43.161.90.58", "Links (2.2; Linux 2.6.33.8-149.fc13.x86_64 x86_64; 236x57)", "Yes", "<a href='http://virginmedia.com'>abuse@viginmedia.com</a>");
 
@@ -149,11 +149,11 @@ timestamp varchar(255)
 );
 
 insert into logs
-values ("72133", "<a href='http://gghb:8080'>86.5.223.129@GGHB</a>", "26.12.273.89", "13/6/01");
+values ("72133", "<a href='http://gghb:80'>86.5.223.129@GGHB</a>", "26.12.273.89", "13/6/01");
 insert into logs
-values ("13134", "<a href='http://gghb:8080'>86.5.223.42@GGHB</a>", "wraithmail:8080/send.jsp", "09/7/01");
+values ("13134", "<a href='http://gghb:80'>86.5.223.42@GGHB</a>", "wraithmail:80/send.jsp", "09/7/01");
 insert into logs
-values ("71934", "137.40.29.72", "wraithmail:8080", "13/7/01");
+values ("71934", "137.40.29.72", "wraithmail:80", "13/7/01");
 
 
 

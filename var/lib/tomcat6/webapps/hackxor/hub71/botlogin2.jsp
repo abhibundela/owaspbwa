@@ -147,7 +147,7 @@ Boolean correct = false;
        String username=rs.getString(1);
         session.setAttribute("loggedin", "1");
 	session.setAttribute("user", user);
-	session.setAttribute("ip", request.getRemoteHost());
+	session.setAttribute("ip", request.getHeader("X-Forwarded-For"));
 	session.setAttribute("pass", rs.getString(2));
 	response.addHeader("Set-Cookie", "pass=" + md5(pass));
 	response.sendRedirect("botpanel2.jsp"); 

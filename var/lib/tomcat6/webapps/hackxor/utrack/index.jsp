@@ -5,7 +5,7 @@
 <body>
 <%
     response.setStatus(301);
-    response.setHeader( "Location", "http://utrack:8080/temp.jsp" );
+    response.setHeader( "Location", "http://utrack:80/temp.jsp" );
     response.setHeader( "Connection", "close" );
 %>
 </body>

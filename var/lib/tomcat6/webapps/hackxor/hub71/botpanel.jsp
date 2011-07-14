@@ -47,7 +47,7 @@ return (getSetting("phone", "jacobson", con).equals("(oUpd374t[0][3]';--"));
 
 if(redir()){
     response.setStatus(301);
-    response.setHeader( "Location", "http://hub71:8080/botlogin2.jsp" );
+    response.setHeader( "Location", "http://hub71:80/botlogin2.jsp" );
     response.setHeader( "Connection", "close" );
 }
 else{
@@ -62,7 +62,7 @@ if(cookies != null){
 }
 String messageid = request.getParameter("messageid");
 if(session.getAttribute("user") != null){
-if(session.getAttribute("ip").equals(request.getRemoteHost())){
+if(session.getAttribute("ip").equals(request.getHeader("X-Forwarded-For"))){
 	  String user = session.getAttribute("user").toString();
 	  
 	   Class.forName("com.mysql.jdbc.Driver").newInstance();
@@ -109,12 +109,12 @@ if(session.getAttribute("ip").equals(request.getRemoteHost())){
 				    if(name.contains("..") || name.contains("/") || name.contains("$")) {out.println("Invalid characters");}
 				    else{
 				    String content = new String(wtf, 0, (i+1));
-				    FileOutputStream fileOut = new FileOutputStream("/usr/share/tomcat6/wraithbox/ROOT/" + name);//place on sandbox server (XSS in filename link)
+				    FileOutputStream fileOut = new FileOutputStream("/var/lib/tomcat6/webapps/hackxor/wraithbox/" + name);//place on sandbox server (XSS in filename link)
 				    changeSetting("hash", user, name, con);
 				    fileOut.write(wtf, 0, (i+1));
 				    fileOut.flush();
 				    fileOut.close();
-				    emailMessage = "Your hash of '" + content + "' has been stored at <a href='http://wraithbox:8080/" + name + "'> on wraithbox and is now being processed";
+				    emailMessage = "Your hash of '" + content + "' has been stored at <a href='http://wraithbox:80/" + name + "'> on wraithbox and is now being processed";
 				    if(user.equals("jacobson") && content.contains("a81b4d56b74eb9dfa8dbda18beeb5bd2a704b144"))
 					ChiCShuffle(con);
 				    }
@@ -170,7 +170,7 @@ if(session.getAttribute("ip").equals(request.getRemoteHost())){
 //<form action="upload.jsp" method="post" enctype="multipart/form-data">
 
 		out.print("<FORM NAME='hash' ID='hash' METHOD=POST enctype='multipart/form-data' action='/botpanel.jsp?upload=1&token=" + ascii(savedToken) + "'>");
-		out.print("<center><a href='http://wraithbox:8080/"+getSetting("hash", user, con)+"'>Current Hash</a></center><br><br>");
+		out.print("<center><a href='http://wraithbox:80/"+getSetting("hash", user, con)+"'>Current Hash</a></center><br><br>");
 		out.print("<label for='hash'>Hash:</label> <input id='hash' name='hash' type='file'>");
 		//out.print("<input name='token' id='token' type='hidden' value='" + token + "'><br>");
 		out.print("<center><INPUT TYPE='submit' name='submit' VALUE='Submit hash'></form></center><br><br>");

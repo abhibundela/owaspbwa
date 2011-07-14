@@ -1,1 +1,1 @@
-cp -R -u ./* /usr/share/tomcat6/
+cp -R -u ./* /var/lib/tomcat6/webapps/hackxor/

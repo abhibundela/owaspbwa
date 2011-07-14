@@ -63,7 +63,7 @@ if("1".equals(session.getAttribute("authed"))){
     logentry = request.getRequestURL() + "|" + request.getHeader("user-agent").toString().trim() + "|" + request.getRemoteAddr() + "\n";
     wtf = logentry.getBytes();
     int end = logentry.length();
-    fileOut = new FileOutputStream("/usr/share/tomcat6/utrack/ROOT/log");
+    fileOut = new FileOutputStream("/var/lib/tomcat6/webapps/hackxor/utrack/log");
     fileOut.write(wtf, 0, end);
     fileOut.flush();
     fileOut.close();

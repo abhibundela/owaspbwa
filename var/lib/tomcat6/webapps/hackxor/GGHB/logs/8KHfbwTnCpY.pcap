@@ -2,7 +2,7 @@
 E..>..@.@......f...g...............\IO.....
 .
 P...pZGET /htmlisland.jsp?messageid=5617985071009432495 HTTP/1.1
-Host: wraithbox:8080
+Host: wraithbox:80
 User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.2.13) Gecko/20110103 Fedora/3.6.13-1.fc14 Firefox/3.6.13
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
 Accept-Language: en-us,en;q=0.5
@@ -10,7 +10,7 @@ Accept-Encoding: gzip,deflate
 Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
 Keep-Alive: 115
 Connection: keep-alive
-Referer: http://wraithmail:8080/mail.jsp
+Referer: http://wraithmail:80/mail.jsp
 Cookie: JSESSIONID=30F0AB173668E7BE2BE65D54C8107E68
 
 
@@ -38,7 +38,7 @@ Date: Tue, 01 Feb 2011 01:23:39 GMT
 <body>
 <div id="wrapper">
 <div id="header">
-<a href="http://wraithmail:8080/mail.jsp"><img src="wraith.png" alt="Thursday" class="logo3" width="468" height="60" /> </a>
+<a href="http://wraithmail:80/mail.jsp"><img src="wraith.png" alt="Thursday" class="logo3" width="468" height="60" /> </a>
 </div>
 
 <div id="quote">
@@ -49,14 +49,14 @@ The premier communications solution for discrete users.
 </p>
 <div id="linkbar">
 <ul class="linklist">
-<li><a href="http://wraithmail:8080/send.jsp">Compose</a><br></li>
-<li><a href="http://wraithmail:8080/mail.jsp">Inbox</a><br></li>
+<li><a href="http://wraithmail:80/send.jsp">Compose</a><br></li>
+<li><a href="http://wraithmail:80/mail.jsp">Inbox</a><br></li>
 </ul>
 </div>
 </div>
 <div id="mainmid">
 <center>
-<br><br><br><br></center><p><b>To</b> <a href='http://wraithbox:8080/profile.jsp?userID=thursday'>thursday@wraithmail.net</a><br><b>From</b> watchman@cloaknet<br><b>Subject</b> [Watchman] Activity alert on cloaknet<br><br>New activity logged to http://127.0.0.3:16729/6624817.pcap<br>Brought to you by Watchman. Every hacker's dream, every sysadmin's nightmare.<br>
+<br><br><br><br></center><p><b>To</b> <a href='http://wraithbox:80/profile.jsp?userID=thursday'>thursday@wraithmail.net</a><br><b>From</b> watchman@cloaknet<br><b>Subject</b> [Watchman] Activity alert on cloaknet<br><br>New activity logged to http://127.0.0.3:16729/6624817.pcap<br>Brought to you by Watchman. Every hacker's dream, every sysadmin's nightmare.<br>
 
 
 
@@ -72,7 +72,7 @@ E..K..@.@..s...f...g.......
 ........#......
 .
 \...piGET /favicon.ico HTTP/1.1
-Host: wraithbox:8080
+Host: wraithbox:80
 User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.2.13) Gecko/20110103 Fedora/3.6.13-1.fc14 Firefox/3.6.13
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
 Accept-Language: en-us,en;q=0.5
@@ -98,7 +98,7 @@ Date: Tue, 01 Feb 2011 01:23:43 GMT
 E..>..@.@......f...g.........f.....\^h.....
 .
 p$....GET /send.jsp HTTP/1.1
-Host: wraithmail:8080
+Host: wraithmail:80
 User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.2.13) Gecko/20110103 Fedora/3.6.13-1.fc14 Firefox/3.6.13
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
 Accept-Language: en-us,en;q=0.5
@@ -106,7 +106,7 @@ Accept-Encoding: gzip,deflate
 Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
 Keep-Alive: 115
 Connection: keep-alive
-Referer: http://wraithbox:8080/htmlisland.jsp?messageid=5617985071009432495
+Referer: http://wraithbox:80/htmlisland.jsp?messageid=5617985071009432495
 Cookie: JSESSIONID=B0B2504BABB280EA754A2B26B0FCD681
 
 
@@ -146,7 +146,7 @@ The premier communications solution for discrete users.
 <ul class="linklist">
 <li><a href="/send.jsp">Compose</a><br></li>
 <li><a href="/mail.jsp">Inbox</a><br></li>
-<li><a href="http://wraithbox:8080/history.jsp?id=thursday">Login history</a></li>
+<li><a href="http://wraithbox:80/history.jsp?id=thursday">Login history</a></li>
 </ul>
 </div>
 </div>
@@ -178,7 +178,7 @@ p$<p>
 01:24:51.543015 IP xor.x.52195 > wraithmail.webcache: Flags [P.], seq 4290852823:4290854031, ack 4248875506, win 92, options [nop,nop,TS val 746607 ecr 361441], length 1208
 E...S.@.@.`4...f...g......7..@.....\.g.....
 ..do....POST /send.jsp HTTP/1.1
-Host: wraithmail:8080
+Host: wraithmail:80
 User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.2.13) Gecko/20110103 Fedora/3.6.13-1.fc14 Firefox/3.6.13
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
 Accept-Language: en-us,en;q=0.5
@@ -186,12 +186,12 @@ Accept-Encoding: gzip,deflate
 Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
 Keep-Alive: 115
 Connection: keep-alive
-Referer: http://wraithmail:8080/send.jsp
+Referer: http://wraithmail:80/send.jsp
 Cookie: JSESSIONID=B0B2504BABB280EA754A2B26B0FCD681
 Content-Type: application/x-www-form-urlencoded
 Content-Length: 650
 
-fromAddress=thursday%40wraithmail.net&toAddress=66942%40wraithmail.net&subject=strange+stuff&body=Hey%2C+check+this+out.+Someone+used+the+proxy+after+me+to+take+a+potshot+at+an+unreleased+%3ca%2bhref%3d%22http%3a%2f%2futrack%3A8080%2Ftemp%2Ejsp%22%3Eutrack%3C%2Fa%3E+panel.+They+managed+to+get+the+source.+The+password+is+hard+coded+with+SHA1+to+a81b4d56b74eb9dfa8dbda18beeb5bd2a704b144%0D%0AHe+then+submitted+it+into+some+shady+hash+cracking+site%3B+http%3a%2f%2fhub71%3A8080.+Login%2FPass+ice%2Fcoupdetat+%28thanks+SSLStrip%29.+That+account%27s+botnet+clearly+isn%27t+large+enough+to+crack+it.+I+know+jacobson%40wraithmail.net+has+a+larger+botnet%2C+but+haven%27t+been+able+to+access+his+account+yet.%0D%0AWhat+do+you+think+is+going+on%3F
+fromAddress=thursday%40wraithmail.net&toAddress=66942%40wraithmail.net&subject=strange+stuff&body=Hey%2C+check+this+out.+Someone+used+the+proxy+after+me+to+take+a+potshot+at+an+unreleased+%3ca%2bhref%3d%22http%3a%2f%2futrack%3A80%2Ftemp%2Ejsp%22%3Eutrack%3C%2Fa%3E+panel.+They+managed+to+get+the+source.+The+password+is+hard+coded+with+SHA1+to+a81b4d56b74eb9dfa8dbda18beeb5bd2a704b144%0D%0AHe+then+submitted+it+into+some+shady+hash+cracking+site%3B+http%3a%2f%2fhub71%3A80.+Login%2FPass+ice%2Fcoupdetat+%28thanks+SSLStrip%29.+That+account%27s+botnet+clearly+isn%27t+large+enough+to+crack+it.+I+know+jacobson%40wraithmail.net+has+a+larger+botnet%2C+but+haven%27t+been+able+to+access+his+account+yet.%0D%0AWhat+do+you+think+is+going+on%3F
 01:24:54.225302 IP wraithmail.webcache > xor.x.52195: Flags [.], seq 1:1449, ack 1208, win 257, options [nop,nop,TS val 364123 ecr 746607], length 1448
 E...2.@.@......g...f.....@....<...../......
 ...[..doHTTP/1.1 200 OK
@@ -227,7 +227,7 @@ The premier communications solution for discrete users.
 <ul class="linklist">
 <li><a href="/send.jsp">Compose</a><br></li>
 <li><a href="/mail.jsp">Inbox</a><br></li>
-<li><a href="http://wraithbox:8080/history.jsp?id=thursday">Login history</a></li>
+<li><a href="http://wraithbox:80/history.jsp?id=thursday">Login history</a></li>
 </ul>
 </div>
 </div>
@@ -246,7 +246,7 @@ E..z2.@.@..N...g...f.....@....<......J.....
     </FORM>
 
 Message succesfully sent
-<a href='http://wraithbox:8080/htmlisland.jsp?messageid=524424128-1680070471'>View here</a>
+<a href='http://wraithbox:80/htmlisland.jsp?messageid=524424128-1680070471'>View here</a>
 
 </tbody>
 </table>

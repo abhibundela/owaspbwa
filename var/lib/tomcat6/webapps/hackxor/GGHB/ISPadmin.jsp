@@ -22,7 +22,7 @@ The premier communications solution for discrete users.
 
 
 String messageid = request.getParameter("messageid");
-if(!request.getRemoteHost().equals("127.0.0.1"))
+if(!request.getHeader("X-Forwarded-For").equals("127.0.0.1"))
     out.print("Local logins only");
 else{
 if(session.getAttribute("user") != null && session.getAttribute("user").equals("admin"))

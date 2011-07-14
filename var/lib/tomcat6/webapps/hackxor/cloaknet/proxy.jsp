@@ -102,7 +102,7 @@ String token = createToken();
 session.setAttribute("token", token);
 out.print("<input name='token' id='token' type='hidden' value='" + token + "'>");
 %>
-   <center> <INPUT name="asd" TYPE="submit" VALUE="Login">  </center><br>
+   <center> <INPUT name="submit" TYPE="submit" VALUE="Login">  </center><br>
     </FORM>
 <br>
 
