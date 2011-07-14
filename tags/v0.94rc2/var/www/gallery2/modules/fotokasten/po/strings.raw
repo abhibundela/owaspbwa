@@ -1,0 +1,23 @@
+# $Id: strings.raw,v 1.3 2006/02/06 06:33:19 mindless Exp $
+
+/* module.inc */
+gettext("Fotokasten")
+gettext("Fotokasten Photo Printing Module")
+gettext("Commerce")
+gettext("[fotokasten] Print")
+gettext("Print on Fotokasten.de")
+
+/* classes/FotokastenCartPlugin.class */
+gettext("Print with Fotokasten")
+
+/* templates/FotokastenSiteAdmin.tpl */
+gettext("Fotokasten Settings")
+gettext("Settings saved successfully")
+gettext("Enter affiliate settings.")
+gettext("Affiliate Id:")
+gettext("Enter a numeric id")
+gettext("Affiliate Password:")
+gettext("Missing value")
+gettext("Save")
+gettext("Reset")
+gettext("Use Defaults")

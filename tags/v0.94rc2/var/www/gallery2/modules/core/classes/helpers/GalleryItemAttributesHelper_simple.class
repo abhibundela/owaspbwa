@@ -1,0 +1,102 @@
+<?php
+/*
+ * $RCSfile: GalleryItemAttributesHelper_simple.class,v $
+ *
+ * Gallery - a web based photo album viewer and editor
+ * Copyright (C) 2000-2006 Bharat Mediratta
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or (at
+ * your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+/**
+ * @version $Revision: 1.12 $ $Date: 2006/01/30 23:00:19 $
+ * @package GalleryCore
+ * @author Bharat Mediratta <bharat@menalto.com>
+ */
+
+/**
+ *
+ * @package GalleryCore
+ * @subpackage Helpers
+ */
+class GalleryItemAttributesHelper_simple {
+
+    /**
+     * Update the view count for this item id
+     * @param int the item id
+     * @param int the amount to increment
+     * @return object GalleryStatus a status code
+     * @static
+     */
+    function incrementViewCount($itemId, $step=1) {
+	global $gallery;
+	$session =& $gallery->getSession();
+
+	$elapsed = time() - $session->getCreationTime();
+	if (!$session->exists('core.lastViewed')) {
+	    if (!$session->isPersistent()) {
+		/*
+		 * For guests, we don't create a session. So the lastViewed data is not available 
+		 * for guests. Thus, rely on HTTP if-modified-since for guests which is admittedly
+		 * quite unreliable. Alternatively we could store this data on the client with a
+		 * non-session cookie but sending lastViewed data on each request could take a lot
+		 * of bandwidth.
+		 */
+		$phpVm = $gallery->getPhpVm();
+		if (GalleryUtilities::getServerVar('HTTP_IF_MODIFIED_SINCE') ||
+		        ($phpVm->function_exists('getallheaders') &&
+		         ($headers = $phpVm->getAllHeaders()) &&
+			 (isset($headers['If-Modified-Since']) ||
+			  isset($headers['If-modified-since'])))) {
+		    return null;
+		}
+		
+		/* Only increment in 50% of all cases since our check is very unreliable */
+		if ($phpVm->rand(0, 1) == 0) {
+		    return null;
+		}
+		if (!$phpVm->headers_sent()) {
+		    $phpVm->header('Last-Modified: ' .
+				   GalleryUtilities::getHttpDate($phpVm->time()));
+		}
+	    }
+		
+	    $lastViewed = array($itemId => $elapsed);
+	    $session->put('core.lastViewed', $lastViewed);
+	} else {
+	    $lastViewed =& $session->get('core.lastViewed');
+	    if (isset($lastViewed[$itemId])) {
+		if ($elapsed - $lastViewed[$itemId] < 86400) {
+		    /* They viewed it within the last day, so this doesn't count */
+		    return null;
+		}
+	    }
+	    $lastViewed[$itemId] = $elapsed;
+	}
+
+	GalleryCoreApi::requireOnce(
+	    'modules/core/classes/GalleryStorage/GallerySqlFragment.class');
+	$func = '= [GalleryItemAttributesMap::viewCount] + ?';
+	$ret = GalleryCoreApi::updateMapEntry(
+	    'GalleryItemAttributesMap',
+	    array('itemId' => $itemId),
+	    array('viewCount' => new GallerySqlFragment($func, $step)));
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	return null;
+    }
+}
+?>

@@ -1,0 +1,532 @@
+<?php
+/*
+ * $RCSfile: WatermarkHelper.class,v $
+ *
+ * Gallery - a web based photo album viewer and editor
+ * Copyright (C) 2000-2006 Bharat Mediratta
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or (at
+ * your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+/**
+ * @version $Revision: 1.19 $ $Date: 2006/01/27 10:08:25 $
+ * @package Watermark
+ * @author Alan Harder <alan.harder@sun.com>
+ */
+
+/**
+ * A helper class for the Watermark module.
+ *
+ * @package Watermark
+ * @subpackage Classes
+ */
+class WatermarkHelper {
+
+    /**
+     * Return a map of watermarks available to the active user
+     *
+     * You can specify how many items to list, and where the windows is in
+     * the list of all items.
+     *
+     * @param int [optional] the number of items desired
+     * @param int [optional] the start of the range
+     * @param string [optional] a substring to match
+     * @return array object GalleryStatus a status code
+     *               array of itemId=>watermark
+     * @static
+     */
+    function fetchWatermarks($count=null, $offset=null, $substring=null) {
+	global $gallery;
+
+	list ($ret, $aclIds) =
+	    GalleryCoreApi::fetchAccessListIds('core.viewSource', $gallery->getActiveUserId());
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+	if (empty($aclIds)) {
+	    return array(null, 0);
+	}
+	$aclMarkers = GalleryUtilities::makeMarkers($aclIds);
+
+	$data = array();
+	$query = sprintf('
+	SELECT
+	  [WatermarkImage::id]
+	FROM
+	  [WatermarkImage], [GalleryAccessSubscriberMap]
+	WHERE
+          [GalleryAccessSubscriberMap::itemId] = [WatermarkImage::id]
+          AND
+          [GalleryAccessSubscriberMap::accessListId] IN (%s)
+        ', $aclMarkers);
+	$data = $aclIds;
+
+	if (!empty($substring)) {
+	    $query .= '
+          AND
+	  [WatermarkImage::fileName] LIKE ?
+	    ';
+	    $data[] = "%$substring%";
+	}
+
+	$query .= '
+	ORDER BY
+	  [WatermarkImage::fileName] ASC
+	';
+
+	list ($ret, $searchResults) = $gallery->search(
+	    $query, $data, array('limit' => array('count' => (int)$count,
+						  'offset' => (int)$offset)));
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	/* Get all ids */
+	$ids = array();
+	while ($result = $searchResults->nextResult()) {
+	    $ids[] = (int)$result[0];
+	}
+
+	/* Convert them to entities */
+	$watermarks = array();
+	if (!empty($ids)) {
+	    list ($ret, $entities) = GalleryCoreApi::loadEntitiesById($ids);
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+
+	    /* Build an id => watermark map */
+	    foreach ($entities as $entity) {
+		$watermarks[$entity->getId()] = $entity;
+	    }
+	}
+
+	return array(null, $watermarks);
+    }
+
+    /**
+     * Return all watermark ids owned by a given user id
+     *
+     * @param int the owner id
+     * @return array object GalleryStatus a status code
+     *               array of itemIds
+     * @static
+     */
+    function fetchWatermarkIdsByOwnerId($ownerId) {
+	global $gallery;
+
+	$query = '
+	SELECT
+	  [WatermarkImage::id]
+	FROM
+	  [WatermarkImage]
+	WHERE
+	  [WatermarkImage::ownerId] = ?
+	';
+
+	list ($ret, $searchResults) = $gallery->search($query, array((int)$ownerId));
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	$ids = array();
+	while ($result = $searchResults->nextResult()) {
+	    $ids[] = (int)$result[0];
+	}
+
+	return array(null, $ids);
+    }
+
+    /**
+     * Find items watermarked with the given watermark image.
+     *
+     * @param object WatermarkImage the watermark
+     * @return array object GalleryStatus a status code
+     *               array (itemId => array of derivative ids, ..)
+     * @static
+     */
+    function fetchWatermarkedItemIds($watermark) {
+	global $gallery;
+
+	$query = '
+	SELECT DISTINCT
+          [GalleryChildEntity::parentId]
+	FROM
+	  [GalleryChildEntity], [GalleryDerivative]
+	WHERE
+	  [GalleryChildEntity::id] = [GalleryDerivative::id]
+	AND
+	  [GalleryDerivative::postFilterOperations] LIKE ?
+	';
+
+	list ($ret, $searchResults) = $gallery->search($query,
+	    array('%composite|plugins_data/modules/watermark/' . $watermark->getFileName() . ',%'));
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	$ids = array();
+	while ($result = $searchResults->nextResult()) {
+	    $ids[] = (int)$result[0];
+	}
+
+	return array(null, $ids);
+    }
+
+    /**
+     * Delete a watermark image.
+     *
+     * @param int id of watermark image
+     * @param boolean (optional) if true, delete even if watermark is used (and remove those uses)
+     * @return array object GalleryStatus a status object
+     *               boolean true if deleted
+     * @static
+     */
+    function deleteWatermarkImageById($itemId, $forceDelete=false) {
+	global $gallery;
+
+	list ($ret, $item) = GalleryCoreApi::loadEntitiesById($itemId);
+	if ($ret) {
+	    if ($ret->getErrorCode() & ERROR_MISSING_OBJECT) {
+		/* Remap it as permission denied so that we avoid object id fishing */
+		return array(GalleryCoreApi::error(ERROR_PERMISSION_DENIED, __FILE__, __LINE__),
+			     null);
+	    } else {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+	}
+	list ($ret, $isAdmin) = GalleryCoreApi::isUserInSiteAdminGroup();
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+	if (! (GalleryUtilities::isA($item, 'WatermarkImage') &&
+		($isAdmin || $item->getOwnerId() == $gallery->getActiveUserId()) )) {
+	    return array(GalleryCoreApi::error(ERROR_PERMISSION_DENIED, __FILE__, __LINE__), null);
+	}
+
+	/* Check if this watermark is used anywhere.. */
+	list ($ret, $watermarkedItemIds) = WatermarkHelper::fetchWatermarkedItemIds($item);
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+	if (!empty($watermarkedItemIds)) {
+	    if (!$forceDelete) {
+		return array(null, false);
+	    }
+	    /* Remove watermark from those items.. */
+	    list ($ret, $watermarkedItems) = GalleryCoreApi::loadEntitiesById($watermarkedItemIds);
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+	    foreach ($watermarkedItems as $watermarkedItem) {
+		/* Un-watermark this item.. */
+		$ret = WatermarkHelper::watermarkItem($item, $watermarkedItem, 0, 0,
+					array(DERIVATIVE_TYPE_IMAGE_PREFERRED => false,
+					      DERIVATIVE_TYPE_IMAGE_RESIZE => false,
+					      DERIVATIVE_TYPE_IMAGE_THUMBNAIL => false));
+		if ($ret) {
+		    return array($ret->wrap(__FILE__, __LINE__), null);
+		}
+	    }
+	}
+
+	$ret = GalleryCoreApi::deleteEntityById($itemId);
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	return array(null, true);
+    }
+
+    /**
+     * Apply the given watermark to the given item.  Expect the item to be locked already.
+     *
+     * @param object WatermarkImage the watermark
+     * @param object GalleryDataItem an image
+     * @param string the x overlay location (in percentage)
+     * @param string the y overlay location (in percentage)
+     * @param array an array of DERIVATIVE_TYPE_IMAGE_XXX => true/false
+     * @return object GalleryStatus a status code
+     * @static
+     */
+    function watermarkItem($watermark, $item, $xPercent, $yPercent, $whichDerivatives) {
+	list ($ret, $derivativeTable) =
+	    GalleryCoreApi::fetchDerivativesByItemIds(array($item->getId()));
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	/* Weed out derivatives that we don't want to modify */
+	$derivatives = array();
+	$add = array();
+	$remove = array();
+	$hasPreferred = false;
+	if (isset($derivativeTable[$item->getId()])) {
+	    $derivatives = $derivativeTable[$item->getId()];
+	    foreach ($derivatives as $derivative) {
+		if ($whichDerivatives[$derivative->getDerivativeType()]) {
+		    $add[] = $derivative->getId();
+		} else {
+		    $remove[] = $derivative->getId();
+		}
+		if ($derivative->getDerivativeType() == DERIVATIVE_TYPE_IMAGE_PREFERRED) {
+		    $hasPreferred = true;
+		}
+	    }
+	}
+
+	/* If they want to modify the original, and we don't have one -- create a preferred */
+	if ($whichDerivatives[DERIVATIVE_TYPE_IMAGE_PREFERRED] && !$hasPreferred) {
+	    list ($ret, $preferred) = GalleryCoreApi::newFactoryInstanceByHint(
+		'GalleryDerivative', $item->getEntityType());
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+
+	    if (!isset($preferred)) {
+		return GalleryCoreApi::error(ERROR_MISSING_OBJECT, __FILE__, __LINE__);
+	    }
+
+	    $ret = $preferred->create($item->getId(), DERIVATIVE_TYPE_IMAGE_PREFERRED);
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+
+	    $preferred->setDerivativeSourceId($item->getId());
+	    $preferred->setMimeType($item->getMimeType());
+
+	    $ret = GalleryCoreApi::remapSourceIds($item->getId(), $preferred->getId());
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+
+	    $ret = $preferred->save();
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+
+	    /*
+	     * Add it to the list to get a watermark.
+	     * TODO: just add the watermark here instead of modifying and re-saving the
+	     *       preferred below.
+	     */
+	    $derivatives[] = $preferred;
+	    $add[] = $preferred->getId();
+	}
+
+	if (!empty($derivatives)) {
+	    list ($ret, $lockId) = GalleryCoreApi::acquireWriteLock(array_merge($add, $remove));
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+
+	    foreach ($derivatives as $derivative) {
+		list ($ret, $derivative) = $derivative->refresh();
+		if ($ret) {
+		    return $ret->wrap(__FILE__, __LINE__);
+		}
+
+		if (in_array($derivative->getId(), $add)) {
+		    $filter = sprintf(
+			'composite|plugins_data/modules/watermark/%s,%s,%d,%d,manual,%s,%s',
+			$watermark->getFileName(),
+			$watermark->getMimeType(),
+			$watermark->getWidth(),
+			$watermark->getHeight(),
+			number_format($xPercent, 3, '.', ''),
+			number_format($yPercent, 3, '.', ''));
+		    list ($ret, $newPostFilters) = GalleryCoreApi::mergeDerivativeOperations(
+			$derivative->getPostFilterOperations(), $filter);
+		    if ($ret) {
+			return $ret->wrap(__FILE__, __LINE__);
+		    }
+		} else if (in_array($derivative->getId(), $remove)) {
+		    $newPostFilters = GalleryCoreApi::removeDerivativeOperation(
+			'composite', $derivative->getPostFilterOperations());
+		}
+		$derivative->setPostFilterOperations($newPostFilters);
+
+		if ($derivative->getDerivativeType() == DERIVATIVE_TYPE_IMAGE_PREFERRED) {
+		    $preferred = $derivative;
+		}
+
+		$ret = $derivative->save();
+		if ($ret) {
+		    return $ret->wrap(__FILE__, __LINE__);
+		}
+	    }
+
+	    $ret = GalleryCoreApi::releaseLocks($lockId);
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	}
+
+	if (isset($preferred)) {
+	    list ($ret, $preferred) = $preferred->refresh();
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+
+	    if ($preferred->hasNoOperations()) {
+		$ret = GalleryCoreApi::remapSourceIds(
+		    $preferred->getId(), $preferred->getDerivativeSourceId());
+		if ($ret) {
+		    return $ret->wrap(__FILE__, __LINE__);
+		}
+
+		$ret = GalleryCoreApi::deleteEntityById($preferred->getId());
+		if ($ret) {
+		    return $ret->wrap(__FILE__, __LINE__);
+		}
+	    }
+	}
+	return null;
+    }
+
+    /**
+     * handleRequest for WatermarkSiteAdminEdit and UserWatermarkEdit
+     *
+     * @param array form data
+     * @param string parent view
+     * @param string subView redirect on success
+     * @param string subView delegate on error
+     * @return array object GalleryStatus a status code
+     *               array controller results
+     * @static
+     */
+    function handleEditRequest($form, $view, $subViewSuccess, $subViewError) {
+	$status = array();
+	$error = array();
+	$itemId = GalleryUtilities::getRequestVariables('watermarkId');
+	if (empty($itemId)) {
+	    return array(GalleryCoreApi::error(ERROR_BAD_PARAMETER, __FILE__, __LINE__), null);
+	}
+
+	$ret = GalleryCoreApi::assertHasItemPermission($itemId, 'core.edit');
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	if (isset($form['action']['save'])) {
+	    if (empty($form['name'])) {
+		$error[] = 'form[error][name][missing]';
+	    }
+	    if (empty($form['whichDerivative'])) {
+		$error[] = 'form[error][whichDerivative][missing]';
+	    }
+
+	    if (empty($error)) {
+		list ($ret, $watermarks) = WatermarkHelper::fetchWatermarks();
+		if ($ret) {
+		    return array($ret->wrap(__FILE__, __LINE__), null);
+		}
+		foreach ($watermarks as $watermark) {
+		    if ($watermark->getName() == $form['name'] && $watermark->getId() != $itemId) {
+			$error[] = 'form[error][name][duplicate]';
+		    }
+		}
+	    }
+
+	    if (empty($error)) {
+		/* Clip our percentages */
+		$form['xPercentage'] = empty($form['xPercentage']) ? 0 : $form['xPercentage'];
+		$form['yPercentage'] = empty($form['yPercentage']) ? 0 : $form['yPercentage'];
+		$form['xPercentage'] = max(0, $form['xPercentage']);
+		$form['yPercentage'] = max(0, $form['yPercentage']);
+		$form['xPercentage'] = min(100, $form['xPercentage']);
+		$form['yPercentage'] = min(100, $form['yPercentage']);
+
+		list ($ret, $lockId) = GalleryCoreApi::acquireWriteLock($itemId);
+		if ($ret) {
+		    return array($ret->wrap(__FILE__, __LINE__), null);
+		}
+
+		list ($ret, $item) = GalleryCoreApi::loadEntitiesById($itemId);
+		if ($ret) {
+		    return array($ret->wrap(__FILE__, __LINE__), null);
+		}
+
+		$item->setApplyToPreferred(isset($form['whichDerivative']['preferred']));
+		$item->setApplyToResizes(isset($form['whichDerivative']['resizes']));
+		$item->setApplyToThumbnail(isset($form['whichDerivative']['thumbnail']));
+		$item->setName($form['name']);
+		$item->setXPercentage(number_format($form['xPercentage'], 3, '.', ''));
+		$item->setYPercentage(number_format($form['yPercentage'], 3, '.', ''));
+
+		$ret = $item->save();
+		if ($ret) {
+		    return array($ret->wrap(__FILE__, __LINE__), null);
+		}
+
+		$ret = GalleryCoreApi::releaseLocks($lockId);
+		if ($ret) {
+		    return array($ret->wrap(__FILE__, __LINE__), null);
+		}
+
+		$status['saved'] = 1;
+		$results['redirect']['view'] = $view;
+		$results['redirect']['subView'] = $subViewSuccess;
+	    } else {
+		$results['delegate']['view'] = $view;
+		$results['delegate']['subView'] = $subViewError;
+	    }
+	} else { /* $form['action']['cancel'] */
+	    $results['redirect']['view'] = $view;
+	    $results['redirect']['subView'] = $subViewSuccess;
+	}
+
+	$results['status'] = $status;
+	$results['error'] = $error;
+	return array(null, $results);
+    }
+
+    /**
+     * loadTemplate for WatermarkSiteAdminEdit and UserWatermarkEdit
+     *
+     * @param array template
+     * @param array form data
+     * @param string form name
+     * @static
+     */
+    function loadEditTemplate(&$template, &$form, $formName) {
+	$itemId = GalleryUtilities::getRequestVariables('watermarkId');
+
+	$ret = GalleryCoreApi::assertHasItemPermission($itemId, 'core.edit');
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	list ($ret, $watermark) = GalleryCoreApi::loadEntitiesById($itemId);
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	if ($form['formName'] != $formName) {
+	    $form['formName'] = $formName;
+
+	    $form['name'] = $watermark->getName();
+	    $form['xPercentage'] = $watermark->getXPercentage();
+	    $form['yPercentage'] = $watermark->getYPercentage();
+	    $form['whichDerivative']['preferred'] = $watermark->getApplyToPreferred() ? 1 : null;
+	    $form['whichDerivative']['thumbnail'] = $watermark->getApplyToThumbnail() ? 1 : null;
+	    $form['whichDerivative']['resizes'] = $watermark->getApplyToResizes() ? 1 : null;
+	}
+
+	$template->setVariable($formName, array('watermark' => (array)$watermark));
+	$template->setVariable('controller', "watermark.$formName");
+	return null;
+    }
+}
+?>

@@ -1,0 +1,31 @@
+<head><TITLE> Help on Customizing Vicnum  </TITLE>  <HEAD>
+
+<body>
+<H2> Customizing Vicnum  </h2>
+<hr size="3" color="#FF00FF"></h2>
+<H3> Some options to make it harder  (or easier)
+
+<ul>
+<li>    Modify or delete this file
+<li>    Modify or delete the backdoors
+<li>    Dont allow indexing of the help file,  dont call the help file help1.html
+<li>    Names with < > might be interesting but can trash the db, consider javascript to disable on the client, server side code to sanitize or code to check before writing to the database
+<li>    Change the names of cookies and hidden fields, extra cookies and/or hidden fields are ok too
+<li>    Remove encoding of a certain hidden field,  showing it in plain text will make it trivial. There are other ways to obfuscate, for example add or rotate integers
+<li>    Likewise cookies content can be obfuscated
+<li>    Remove the hidden field that announces admin,  maybe admin folder shouldn't be called admin
+<li>    Lock down the admin folder with basic authentication, optionally make some of the admin scripts available
+<li>    Let them find an htaccess user file
+<li>    Code to require a different guessed number can be commented out which enables the easy back button refresh
+<li>    Where and when to do the db write? if done with the perl code it is written at once,  otherwise pass it to the php program via cookies , However Perl code modules may be needed to do db queries (this is not yet done)
+<li> With magic quotes off sql injection should get the entire db
+</ul><p><p>
+<hr size="3" color="#FF00FF">
+<pre>
+
+
+<h4>The Vicnum project was developed for educational purposes to demonstrate common web vulnerabilities.
+
+For comments please visit the <a href="http://www.owasp.org/index.php/Category:OWASP_Vicnum_Project">OWASP project page.<A>
+<br></pre>
+</body>

@@ -1,0 +1,70 @@
+<?php
+/*
+ * $RCSfile: CartPluginInterface_1_0.class,v $
+ *
+ * Gallery - a web based photo album viewer and editor
+ * Copyright (C) 2000-2006 Bharat Mediratta
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or (at
+ * your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+/**
+ * @version $Revision: 1.6 $ $Date: 2006/01/10 04:38:59 $
+ * @package Search
+ * @author Bharat Mediratta <bharat@menalto.com>
+ */
+
+/**
+ * This is an interface for plugins to the Cart module.  Modules that wish to
+ * be able to do fulfilment on items in the cart (like eCommerce, photo printing,
+ * zip download, etc) must provide a class that implements this interface.
+ *
+ * @package Cart
+ * @subpackage Classes
+ * @abstract
+ */
+class CartPluginInterface_1_0 {
+
+    /**
+     * Return the item types that this cart plugin can fulfil, eg
+     * array('GalleryPhotoItem', 'GalleryMovieItem')
+     *
+     * @param array item types
+     */
+    function getSupportedItemTypes() {
+	return array();
+    }
+
+    /**
+     * Get the localized name of the action (eg "Print with PhotoAccess")
+     * to be displayed to the user.
+     *
+     * @return array object GalleryStatus a status code
+     *               string the action display name
+     */
+    function getActionDisplayName() {
+	return array(GalleryCoreApi::error(ERROR_UNIMPLEMENTED, __FILE__, __LINE__), null);
+    }
+
+    /**
+     * Do whatever magic this plugin wants to do with the cart
+     *
+     * @return array object GalleryStatus a status code
+     *               array url components that can be passed to the UrlGenerator
+     */
+    function fulfillCart($cartItemIds) {
+	return GalleryCoreApi::error(ERROR_UNIMPLEMENTED, __FILE__, __LINE__);
+    }
+}
+?>

@@ -1,0 +1,308 @@
+# $Id: es.po,v 1.4 2006/03/22 04:21:00 mindless Exp $
+#
+# Gallery - a web based photo album viewer and editor
+# Copyright (C) 2000-2006 Bharat Mediratta
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery: Registration 1.0.6\n"
+"POT-Creation-Date: 2004-11-27 20:32+0100\n"
+"PO-Revision-Date: 2006-01-17 18:37+0100\n"
+"Last-Translator: Roberto Seoane <soporte@betica-mudarra.com>\n"
+"Language-Team: Spanish <gallery-devel@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Activation by administrator"
+msgstr "Activaci&oacute;n por administrador"
+
+msgid "Use confirmation emails"
+msgstr "Usar e-mail de confirmaci&oacute;n"
+
+msgid "Accept without confirmation"
+msgstr "Aceptar sin confirmaci&oacute;n"
+
+msgid "Yes"
+msgstr "S&iacute;"
+
+msgid "No"
+msgstr "No"
+
+msgid "Registration"
+msgstr "Registro"
+
+msgid "New User Registration"
+msgstr "Registro de nuevo usuario"
+
+msgid "Gallery"
+msgstr "Gallery"
+
+msgid "Account activation"
+msgstr "Activaci&oacute;n de cuenta"
+
+msgid "New user registration"
+msgstr "Registro de nuevo usuario"
+
+msgid "Register"
+msgstr "Registrarse"
+
+#, fuzzy
+msgid "New user registration:"
+msgstr "Registro de nuevo usuario"
+
+#, fuzzy, c-format
+msgid "    Username: %s"
+msgstr "Usuario"
+
+#, fuzzy, c-format
+msgid "   Full name: %s"
+msgstr "Nombre completo"
+
+#, c-format
+msgid "       Email: %s"
+msgstr ""
+
+#, fuzzy
+msgid "Activate or delete this user here"
+msgstr "Activado el usuario %s"
+
+msgid "Registration Settings"
+msgstr "Par&aacute;metros de registro"
+
+msgid "Settings saved successfully"
+msgstr "Opciones guardadas."
+
+#, c-format
+msgid "Activated user %s"
+msgstr "Activado el usuario %s"
+
+#, c-format
+msgid "Deleted user %s"
+msgstr "Eliminado el usuario %s"
+
+msgid "Confirmation Policy"
+msgstr "Política de confirmación"
+
+msgid ""
+"The Registration module can accept new user registrations instantly, require the user to "
+"click a confirmation link in an email that is sent by the module, or require account "
+"activation by a site administrator."
+msgstr ""
+"El m&oacute;dulo de registro puede aceptar nuevos registros instant&aacute;neamente, "
+"requiriendo al usuario que haga click en un e-mail enviado por el m&oacute;dulo o  "
+"requiriendo una activaci&oacute;n por el administrador."
+
+msgid "Choose policy:"
+msgstr "Escoger política:"
+
+msgid "Email details"
+msgstr "Detalles del e-mail"
+
+msgid "Sender(From) Email Address:"
+msgstr "Remitente del correo:"
+
+msgid "Confirmation Email Subject:"
+msgstr "Asunto del correo de confirmación:"
+
+msgid "Admin Email Subject:"
+msgstr "Asunto del e-mail para el administrador:"
+
+msgid "Email Site Administrators for all new registrations"
+msgstr "e-mail para administrador con los nuevos registros"
+
+msgid "Save"
+msgstr "Guardar"
+
+msgid "Reset"
+msgstr ""
+
+msgid "Pending Registrations"
+msgstr "Registros pendientes"
+
+msgid "&laquo; first"
+msgstr "&laquo; primero"
+
+msgid "&laquo; back"
+msgstr "&laquo; anterior"
+
+#, c-format
+msgid "Viewing page %d of %d"
+msgstr "P&aacute;gina %d de %d"
+
+msgid "next &raquo;"
+msgstr "siguiente &raquo;"
+
+msgid "last &raquo;"
+msgstr "&uacute;ltimo &raquo;"
+
+msgid "Username"
+msgstr "Usuario"
+
+msgid "Full Name"
+msgstr "Nombre completo"
+
+msgid "Email"
+msgstr "E-mail"
+
+msgid "Date"
+msgstr "Fecha"
+
+msgid "Action"
+msgstr "Acci&oacute;n"
+
+msgid "activate"
+msgstr "activar"
+
+msgid "delete"
+msgstr "borrar"
+
+msgid "Account Activation"
+msgstr "Activaci&oacute;n de cuenta"
+
+msgid "This user cannot be activated."
+msgstr "Este usuario no puede ser activado."
+
+#, fuzzy
+msgid ""
+"This can happen if the URL you entered is not correct or you already activated this account. "
+"Please check if your mail client broke the link into several lines and append them without "
+"spaces."
+msgstr ""
+"&Eacute;sto puede ocurrir si la URL que introduce no es correcta o si ya est&aacute; "
+"activada la cuenta. Por favor, compruebe si su cliente de correo ha dividido el link en "
+"varias lineas y no ha introducido espacios."
+
+msgid "Your account has been activated."
+msgstr "Su cuenta ha sido activada."
+
+msgid "You can now login to your account with your username and password."
+msgstr "Puede entrar usando su nombre de usuario y contraseña."
+
+#, c-format
+msgid "Hello %s,"
+msgstr ""
+
+#, c-format
+msgid "You receive this email because you have registered at %s"
+msgstr ""
+
+#, c-format
+msgid "Your username is: %s"
+msgstr ""
+
+msgid "To finish the registration process please click the following link:"
+msgstr ""
+
+msgid ""
+"If you did not register at this site then please ignore this email.  The registration will "
+"not become valid and you will not receive any further emails.  Sorry for the inconvenience."
+msgstr ""
+
+msgid "Thank you!"
+msgstr ""
+
+msgid "Registration successful"
+msgstr "Registro completo"
+
+msgid "Your registration was successful."
+msgstr "Complet&oacute; su registro."
+
+#, fuzzy
+msgid ""
+"You will shortly receive an email containing a link. You have to click this link to confirm "
+"and activate your account.  This procedure is necessary to prevent account abuse."
+msgstr ""
+"Pronto recibirá un correo con un link. Debe hacer click en el link para confirmar y activar "
+"su cuenta."
+
+msgid "Your registration will be processed and your account activated soon."
+msgstr "Su registro ser&aacute; procesado y su cuenta se activar&aacute; pronto."
+
+msgid "Your registration was successful and your account has been activated."
+msgstr "Su registro tuvo &eacute;xito y su cuenta ha sido activada."
+
+#, fuzzy, c-format
+msgid "You can now %slogin%s to your account with your username and password."
+msgstr "Puede entrar usando su nombre de usuario y contraseña."
+
+msgid "Register As New User"
+msgstr "Registrar como nuevo usuario"
+
+msgid "(required)"
+msgstr "(requerido)"
+
+msgid "You must enter a username"
+msgstr "Introduzca un nombre de usuario"
+
+#, c-format
+msgid "Username '%s' already exists"
+msgstr "El usuario '%s' ya existe"
+
+msgid "You must enter your full name"
+msgstr "Introduzca su nombre completo"
+
+msgid "Email Address"
+msgstr "e-mail"
+
+msgid "You must enter an email address"
+msgstr "Debe introducir un e-mail"
+
+msgid "Invalid email address"
+msgstr "e-mail no valido"
+
+msgid "Password"
+msgstr "Contraseña"
+
+msgid "You must enter a password"
+msgstr "Debe introducir una contrase&ntilde;a"
+
+msgid "Verify Password"
+msgstr "Verificar contrase&ntilde;a"
+
+msgid "You must enter the password a second time"
+msgstr "Debe introducir la contrase&ntilde;a dos veces"
+
+msgid "The passwords you entered did not match"
+msgstr "Las contrase&ntilde;as no coinciden"
+
+msgid "Cancel"
+msgstr "Anular"
+
+#~ msgid "This procedure is necessary to prevent account abuse."
+#~ msgstr "Este procedimiento es necesario para prevenir registros abusivos."
+
+#~ msgid "You can now"
+#~ msgstr "Ahora puede"
+
+#~ msgid "login"
+#~ msgstr "entrar"
+
+#~ msgid "to your account with your username and password."
+#~ msgstr "a su cuenta con su nombre de usuario y contraseña."
+
+#~ msgid "This page can only be called once."
+#~ msgstr "Esta p&aacute;gina s&oacute;lo puede abrirse una vez."
+
+#~ msgid ""
+#~ "This page has been requested before and can only be called once. Probable you have hit "
+#~ "the Reload button. Please proceed to %s."
+#~ msgstr ""
+#~ "Esta p&aacute,gina ha sido abierta antes y s&oacute;lo se puede abrir una vez. "
+#~ "Probablemente ha pulsado el bot&oacute;n de actualizar en su navegador. Por favor, "
+#~ "proceda a %s."

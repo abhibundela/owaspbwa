@@ -1,0 +1,71 @@
+# $Id: cs.po,v 1.6 2006/03/22 04:19:44 mindless Exp $
+#
+# Gallery - a web based photo album viewer and editor
+# Copyright (C) 2000-2006 Bharat Mediratta
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery: Link Items 1.0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-02-12 17:34+0100\n"
+"PO-Revision-Date: 2006-03-11 22:37+0100\n"
+"Last-Translator: Jan Korbel <jackc@teptin.net>\n"
+"Language-Team: Czech <cs@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+
+msgid "Link"
+msgstr "Odkaz"
+
+msgid "Link Items"
+msgstr "Odkaz na položky"
+
+msgid "Create links to other albums or external urls"
+msgstr "Tvorba odkazů na jiná alba nebo externí URL adresy"
+
+msgid "Display"
+msgstr "Zobrazit"
+
+msgid "link"
+msgstr "odkaz"
+
+msgid "Link to Album:"
+msgstr "Odkaz na album:"
+
+msgid "You must enter an album id"
+msgstr "Musíte zadat ID alba"
+
+msgid "Invalid album id"
+msgstr "Neplatné ID alba"
+
+msgid "Link to External URL:"
+msgstr "Odkaz na externí URL adresu:"
+
+msgid "You must enter an URL"
+msgstr "Musíte zadat URL adresu"
+
+msgid "Add Link"
+msgstr "Přidat odkaz"
+
+msgid "URL:"
+msgstr "URL:"
+
+msgid "Missing URL"
+msgstr "Chybějící URL"

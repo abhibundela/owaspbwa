@@ -1,0 +1,111 @@
+# File crc32 crc32(crlf) size size(crlf)  or  R File
+modules/gd/AdminGd.inc	642322560	3374787852	4984	5152
+modules/gd/classes/GdFunctionality.class	3052147737	3549232835	15139	15706
+modules/gd/classes/GdToolkit.class	3259711503	2162842643	20090	20763
+modules/gd/classes/GdToolkitHelper.class	2429952132	1274235323	13617	14038
+modules/gd/locale/af/LC_MESSAGES/modules_gd.mo	2274937175	2274937175	3885	3885
+modules/gd/locale/cs/LC_MESSAGES/modules_gd.mo	2256497193	2256497193	3939	3939
+modules/gd/locale/da/LC_MESSAGES/modules_gd.mo	526340579	526340579	3751	3751
+modules/gd/locale/de/LC_MESSAGES/modules_gd.mo	2439894609	2439894609	4045	4045
+modules/gd/locale/es/LC_MESSAGES/modules_gd.mo	971088389	971088389	1380	1380
+modules/gd/locale/eu/LC_MESSAGES/modules_gd.mo	899718024	899718024	3738	3738
+modules/gd/locale/fr/LC_MESSAGES/modules_gd.mo	1412520457	1412520457	3988	3988
+modules/gd/locale/is/LC_MESSAGES/modules_gd.mo	4172084687	4172084687	413	413
+modules/gd/locale/it/LC_MESSAGES/modules_gd.mo	3712725408	3712725408	3883	3883
+modules/gd/locale/ja/LC_MESSAGES/modules_gd.mo	1740321109	1740321109	3355	3355
+modules/gd/locale/nl/LC_MESSAGES/modules_gd.mo	2700347268	2700347268	3811	3811
+modules/gd/locale/no/LC_MESSAGES/modules_gd.mo	2286944562	2286944562	3736	3736
+modules/gd/locale/pl/LC_MESSAGES/modules_gd.mo	781255567	781255567	3999	3999
+modules/gd/locale/pt_BR/LC_MESSAGES/modules_gd.mo	3187356367	3187356367	3881	3881
+modules/gd/locale/ru/LC_MESSAGES/modules_gd.mo	2792099044	2792099044	4790	4790
+modules/gd/locale/sr/LC_MESSAGES/modules_gd.mo	3979012785	3979012785	3803	3803
+modules/gd/locale/sv/LC_MESSAGES/modules_gd.mo	3071668662	3071668662	3683	3683
+modules/gd/locale/tr/LC_MESSAGES/modules_gd.mo	2713073857	2713073857	3746	3746
+modules/gd/locale/vi/LC_MESSAGES/modules_gd.mo	1686219679	1686219679	3996	3996
+modules/gd/locale/zh_CN/LC_MESSAGES/modules_gd.mo	386961204	386961204	3524	3524
+modules/gd/locale/zh_TW/LC_MESSAGES/modules_gd.mo	3358322040	3358322040	3550	3550
+modules/gd/module.inc	2910125186	679658332	6021	6240
+modules/gd/po/GNUmakefile	1866879166	2808215985	98	103
+modules/gd/po/af.po	4046854779	2854210367	4682	4858
+modules/gd/po/cs.po	3567024878	4226978829	4698	4875
+modules/gd/po/da.po	2070243038	4024939315	4568	4742
+modules/gd/po/de.po	3473583384	4252791634	5022	5203
+modules/gd/po/es.po	2093139839	310470583	3683	3854
+modules/gd/po/eu.po	1522895045	648715160	4499	4671
+modules/gd/po/fr.po	1492592674	2956705265	4735	4909
+modules/gd/po/is.po	587286856	3065062815	3298	3467
+modules/gd/po/it.po	3465172757	666885572	4691	4866
+modules/gd/po/ja.po	3042161515	799669381	4512	4684
+modules/gd/po/nl.po	3999691445	2244000444	4732	4908
+modules/gd/po/no.po	3338957276	3379508658	4593	4761
+modules/gd/po/pl.po	2515186936	428424722	4748	4915
+modules/gd/po/pt_BR.po	1748385436	3152629858	4656	4829
+modules/gd/po/ru.po	1360425091	1046260049	5888	6069
+modules/gd/po/sr.po	2367959503	925745314	4572	4746
+modules/gd/po/strings.raw	2737700135	3456816823	1796	1848
+modules/gd/po/sv.po	1488045951	139964500	4613	4788
+modules/gd/po/tr.po	3235109367	1071812599	4702	4882
+modules/gd/po/vi.po	3116528436	4272363875	4788	4960
+modules/gd/po/zh_CN.po	779741046	1417768591	4291	4462
+modules/gd/po/zh_TW.po	366322376	2421813517	4314	4485
+modules/gd/templates/AdminGd.tpl	3898266669	2098075582	2820	2913
+R	modules/gd/locale/cs_CZ/LC_MESSAGES/modules_gd.mo
+R	modules/gd/locale/cs_CZ/LC_MESSAGES
+R	modules/gd/locale/cs_CZ
+R	modules/gd/locale/da_DK/LC_MESSAGES/modules_gd.mo
+R	modules/gd/locale/da_DK/LC_MESSAGES
+R	modules/gd/locale/da_DK
+R	modules/gd/locale/de_DE/LC_MESSAGES/modules_gd.mo
+R	modules/gd/locale/de_DE/LC_MESSAGES
+R	modules/gd/locale/de_DE
+R	modules/gd/locale/fr_FR/LC_MESSAGES/modules_gd.mo
+R	modules/gd/locale/fr_FR/LC_MESSAGES
+R	modules/gd/locale/fr_FR
+R	modules/gd/locale/is_IS/LC_MESSAGES/modules_gd.mo
+R	modules/gd/locale/is_IS/LC_MESSAGES
+R	modules/gd/locale/is_IS
+R	modules/gd/locale/it_IT/LC_MESSAGES/modules_gd.mo
+R	modules/gd/locale/it_IT/LC_MESSAGES
+R	modules/gd/locale/it_IT
+R	modules/gd/locale/ja_JP/LC_MESSAGES/modules_gd.mo
+R	modules/gd/locale/ja_JP/LC_MESSAGES
+R	modules/gd/locale/ja_JP
+R	modules/gd/locale/nl_NL/LC_MESSAGES/modules_gd.mo
+R	modules/gd/locale/nl_NL/LC_MESSAGES
+R	modules/gd/locale/nl_NL
+R	modules/gd/locale/no_NO/LC_MESSAGES/modules_gd.mo
+R	modules/gd/locale/no_NO/LC_MESSAGES
+R	modules/gd/locale/no_NO
+R	modules/gd/locale/pl_PL/LC_MESSAGES/modules_gd.mo
+R	modules/gd/locale/pl_PL/LC_MESSAGES
+R	modules/gd/locale/pl_PL
+R	modules/gd/locale/ru_RU/LC_MESSAGES/modules_gd.mo
+R	modules/gd/locale/ru_RU/LC_MESSAGES
+R	modules/gd/locale/ru_RU
+R	modules/gd/locale/sr_YU/LC_MESSAGES/modules_gd.mo
+R	modules/gd/locale/sr_YU/LC_MESSAGES
+R	modules/gd/locale/sr_YU
+R	modules/gd/locale/sv_SE/LC_MESSAGES/modules_gd.mo
+R	modules/gd/locale/sv_SE/LC_MESSAGES
+R	modules/gd/locale/sv_SE
+R	modules/gd/locale/tr_TR/LC_MESSAGES/modules_gd.mo
+R	modules/gd/locale/tr_TR/LC_MESSAGES
+R	modules/gd/locale/tr_TR
+R	modules/gd/locale/vi_VN/LC_MESSAGES/modules_gd.mo
+R	modules/gd/locale/vi_VN/LC_MESSAGES
+R	modules/gd/locale/vi_VN
+R	modules/gd/po/cs_CZ.po
+R	modules/gd/po/da_DK.po
+R	modules/gd/po/de_DE.po
+R	modules/gd/po/fr_FR.po
+R	modules/gd/po/is_IS.po
+R	modules/gd/po/it_IT.po
+R	modules/gd/po/ja_JP.po
+R	modules/gd/po/nl_NL.po
+R	modules/gd/po/no_NO.po
+R	modules/gd/po/pl_PL.po
+R	modules/gd/po/ru_RU.po
+R	modules/gd/po/sr_YU.po
+R	modules/gd/po/sv_SE.po
+R	modules/gd/po/tr_TR.po
+R	modules/gd/po/vi_VN.po

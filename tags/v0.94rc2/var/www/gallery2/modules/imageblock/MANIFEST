@@ -1,0 +1,189 @@
+# File crc32 crc32(crlf) size size(crlf)  or  R File
+modules/imageblock/Callbacks.inc	1636076100	1008690552	2908	3001
+modules/imageblock/External.inc	4246508352	726758853	3413	3535
+modules/imageblock/ExternalCSS.inc	2357653244	2767776637	2745	2839
+modules/imageblock/ImageBlockOption.inc	3402300055	1801787835	3009	3107
+modules/imageblock/ImageBlockSiteAdmin.inc	1000444015	2951141626	4203	4336
+modules/imageblock/Preloads.inc	885104838	1261244096	2254	2330
+modules/imageblock/classes/GNUmakefile	1995366819	843025639	51	52
+modules/imageblock/classes/GalleryStorage/GNUmakefile	1465776782	2009162633	61	62
+modules/imageblock/classes/GalleryStorage/schema.tpl	2475640870	497671545	5254	5414
+modules/imageblock/classes/GalleryStorage/xml-src/A_ImageBlockCacheMap_1.0.xml	2220890733	582360795	733	761
+modules/imageblock/classes/ImageBlockHelper.class	1325076955	3731470369	23929	24704
+modules/imageblock/classes/Maps.inc	2792112560	1182676460	644	648
+modules/imageblock/classes/Maps.xml	2280571943	3846828138	1157	1203
+modules/imageblock/locale/af/LC_MESSAGES/modules_imageblock.mo	3548908003	3548908003	5879	5879
+modules/imageblock/locale/bg/LC_MESSAGES/modules_imageblock.mo	3051409024	3051409024	6076	6076
+modules/imageblock/locale/cs/LC_MESSAGES/modules_imageblock.mo	3395411365	3395411365	6318	6318
+modules/imageblock/locale/da/LC_MESSAGES/modules_imageblock.mo	3334096970	3334096970	6040	6040
+modules/imageblock/locale/de/LC_MESSAGES/modules_imageblock.mo	3714808515	3714808515	6403	6403
+modules/imageblock/locale/es/LC_MESSAGES/modules_imageblock.mo	1032292943	1032292943	5783	5783
+modules/imageblock/locale/eu/LC_MESSAGES/modules_imageblock.mo	2767346006	2767346006	6108	6108
+modules/imageblock/locale/fi/LC_MESSAGES/modules_imageblock.mo	1249797696	1249797696	5872	5872
+modules/imageblock/locale/fr/LC_MESSAGES/modules_imageblock.mo	3987913683	3987913683	6718	6718
+modules/imageblock/locale/ga/LC_MESSAGES/modules_imageblock.mo	3384373665	3384373665	1725	1725
+modules/imageblock/locale/hu/LC_MESSAGES/modules_imageblock.mo	2960006993	2960006993	3371	3371
+modules/imageblock/locale/is/LC_MESSAGES/modules_imageblock.mo	1577680148	1577680148	422	422
+modules/imageblock/locale/it/LC_MESSAGES/modules_imageblock.mo	4091454188	4091454188	6492	6492
+modules/imageblock/locale/ja/LC_MESSAGES/modules_imageblock.mo	901894586	901894586	3039	3039
+modules/imageblock/locale/nl/LC_MESSAGES/modules_imageblock.mo	1642274010	1642274010	6216	6216
+modules/imageblock/locale/no/LC_MESSAGES/modules_imageblock.mo	1465064198	1465064198	6064	6064
+modules/imageblock/locale/pl/LC_MESSAGES/modules_imageblock.mo	299327696	299327696	6334	6334
+modules/imageblock/locale/pt_BR/LC_MESSAGES/modules_imageblock.mo	1245286019	1245286019	6075	6075
+modules/imageblock/locale/ru/LC_MESSAGES/modules_imageblock.mo	3153168482	3153168482	8313	8313
+modules/imageblock/locale/sr/LC_MESSAGES/modules_imageblock.mo	1425732713	1425732713	6040	6040
+modules/imageblock/locale/sv/LC_MESSAGES/modules_imageblock.mo	3726053698	3726053698	6118	6118
+modules/imageblock/locale/tr/LC_MESSAGES/modules_imageblock.mo	331275057	331275057	3835	3835
+modules/imageblock/locale/vi/LC_MESSAGES/modules_imageblock.mo	371182931	371182931	6518	6518
+modules/imageblock/locale/zh_CN/LC_MESSAGES/modules_imageblock.mo	3866702565	3866702565	5906	5906
+modules/imageblock/locale/zh_TW/LC_MESSAGES/modules_imageblock.mo	1964376489	1964376489	5954	5954
+modules/imageblock/module.inc	1243301262	3371996827	3818	3938
+modules/imageblock/po/GNUmakefile	1866879166	2808215985	98	103
+modules/imageblock/po/af.po	2291108345	3126973043	6972	7240
+modules/imageblock/po/bg.po	4172052960	4180360284	7403	7679
+modules/imageblock/po/cs.po	3363909540	724791882	7241	7509
+modules/imageblock/po/da.po	3013974191	1712964413	6742	6973
+modules/imageblock/po/de.po	2334496668	1860965634	7402	7673
+modules/imageblock/po/es.po	2318961826	1929306061	7086	7350
+modules/imageblock/po/eu.po	3138060485	2819453891	6994	7257
+modules/imageblock/po/fi.po	4251369661	4051127257	6970	7237
+modules/imageblock/po/fr.po	22565925	3287154600	7559	7827
+modules/imageblock/po/ga.po	785786662	234825566	6248	6530
+modules/imageblock/po/hu.po	1265494883	2118846673	5811	6065
+modules/imageblock/po/is.po	1044833042	2351365538	4683	4928
+modules/imageblock/po/it.po	2777013362	1897665411	7329	7595
+modules/imageblock/po/ja.po	1026108910	2564178427	5905	6158
+modules/imageblock/po/nl.po	976404843	3170601453	7128	7393
+modules/imageblock/po/no.po	1427414561	2353960251	6877	7108
+modules/imageblock/po/pl.po	1917271854	263472283	7039	7270
+modules/imageblock/po/pt_BR.po	223763280	1769501730	7255	7527
+modules/imageblock/po/ru.po	4008968458	4170669563	9439	9681
+modules/imageblock/po/sr.po	447765479	1429143016	7070	7335
+modules/imageblock/po/strings.raw	2640102386	3590603859	3120	3198
+modules/imageblock/po/sv.po	3099792185	1729715612	7252	7524
+modules/imageblock/po/tr.po	3684072153	1175719552	6047	6301
+modules/imageblock/po/vi.po	1536043145	2745480339	7846	8117
+modules/imageblock/po/zh_CN.po	3107177820	887786357	6800	7038
+modules/imageblock/po/zh_TW.po	1641444364	305365164	6870	7130
+modules/imageblock/templates/ImageBlock.tpl	277058150	2874010780	2666	2743
+modules/imageblock/templates/ImageBlockOption.tpl	1656072467	1299882640	949	972
+modules/imageblock/templates/ImageBlockSiteAdmin.tpl	83776678	3801489078	5495	5634
+modules/imageblock/templates/blocks/ImageBlock.tpl	2676937512	1832227111	831	850
+modules/imageblock/templates/blocks/blocks.inc	2970449319	243658778	1771	1819
+R	modules/imageblock/classes/GalleryStorage/DatabaseStorage/schema/GNUmakefile
+R	modules/imageblock/classes/GalleryStorage/DatabaseStorage/schema/platform/GNUmakefile
+R	modules/imageblock/classes/GalleryStorage/DatabaseStorage/schema/platform/mysql/A_ImageBlockCacheMap.sql
+R	modules/imageblock/classes/GalleryStorage/DatabaseStorage/schema/platform/mysql/A_ImageBlockCacheMap_1_0.sql
+R	modules/imageblock/classes/GalleryStorage/DatabaseStorage/schema/platform/mysql/GNUmakefile
+R	modules/imageblock/classes/GalleryStorage/DatabaseStorage/schema/platform/mysql/ImageBlockCacheMap.sql
+R	modules/imageblock/classes/GalleryStorage/DatabaseStorage/schema/platform/mysql/ImageBlockDisabledMap.sql
+R	modules/imageblock/classes/GalleryStorage/DatabaseStorage/schema/platform/mysql
+R	modules/imageblock/classes/GalleryStorage/DatabaseStorage/schema/platform/oracle/A_ImageBlockCacheMap.sql
+R	modules/imageblock/classes/GalleryStorage/DatabaseStorage/schema/platform/oracle/A_ImageBlockCacheMap_1_0.sql
+R	modules/imageblock/classes/GalleryStorage/DatabaseStorage/schema/platform/oracle/GNUmakefile
+R	modules/imageblock/classes/GalleryStorage/DatabaseStorage/schema/platform/oracle/ImageBlockCacheMap.sql
+R	modules/imageblock/classes/GalleryStorage/DatabaseStorage/schema/platform/oracle/ImageBlockDisabledMap.sql
+R	modules/imageblock/classes/GalleryStorage/DatabaseStorage/schema/platform/oracle
+R	modules/imageblock/classes/GalleryStorage/DatabaseStorage/schema/platform/postgres/A_ImageBlockCacheMap.sql
+R	modules/imageblock/classes/GalleryStorage/DatabaseStorage/schema/platform/postgres/A_ImageBlockCacheMap_1_0.sql
+R	modules/imageblock/classes/GalleryStorage/DatabaseStorage/schema/platform/postgres/GNUmakefile
+R	modules/imageblock/classes/GalleryStorage/DatabaseStorage/schema/platform/postgres/ImageBlockCacheMap.sql
+R	modules/imageblock/classes/GalleryStorage/DatabaseStorage/schema/platform/postgres/ImageBlockDisabledMap.sql
+R	modules/imageblock/classes/GalleryStorage/DatabaseStorage/schema/platform/postgres
+R	modules/imageblock/classes/GalleryStorage/DatabaseStorage/schema/platform
+R	modules/imageblock/classes/GalleryStorage/DatabaseStorage/schema/schema.tpl
+R	modules/imageblock/classes/GalleryStorage/DatabaseStorage/schema/xml-src/A_ImageBlockCacheMap.xml
+R	modules/imageblock/classes/GalleryStorage/DatabaseStorage/schema/xml-src/A_ImageBlockCacheMap_1.0.xml
+R	modules/imageblock/classes/GalleryStorage/DatabaseStorage/schema/xml-src/A_ImageBlockCacheMap_1_0.xml
+R	modules/imageblock/classes/GalleryStorage/DatabaseStorage/schema/xml-src/GNUmakefile
+R	modules/imageblock/classes/GalleryStorage/DatabaseStorage/schema/xml-src
+R	modules/imageblock/classes/GalleryStorage/DatabaseStorage/schema
+R	modules/imageblock/classes/GalleryStorage/DatabaseStorage
+R	modules/imageblock/classes/ImageBlockCacheMap.class
+R	modules/imageblock/classes/ImageBlockDisabledMap.class
+R	modules/imageblock/classes/interfaces/GNUmakefile
+R	modules/imageblock/classes/interfaces/ImageBlockCacheMap.inc
+R	modules/imageblock/classes/interfaces/ImageBlockDisabledMap.inc
+R	modules/imageblock/classes/interfaces
+R	modules/imageblock/locale/bg_BG/LC_MESSAGES/modules_imageblock.mo
+R	modules/imageblock/locale/bg_BG/LC_MESSAGES
+R	modules/imageblock/locale/bg_BG
+R	modules/imageblock/locale/cs_CZ/LC_MESSAGES/modules_imageblock.mo
+R	modules/imageblock/locale/cs_CZ/LC_MESSAGES
+R	modules/imageblock/locale/cs_CZ
+R	modules/imageblock/locale/da_DK/LC_MESSAGES/modules_imageblock.mo
+R	modules/imageblock/locale/da_DK/LC_MESSAGES
+R	modules/imageblock/locale/da_DK
+R	modules/imageblock/locale/de_DE/LC_MESSAGES/modules_imageblock.mo
+R	modules/imageblock/locale/de_DE/LC_MESSAGES
+R	modules/imageblock/locale/de_DE
+R	modules/imageblock/locale/es_ES/LC_MESSAGES/modules_imageblock.mo
+R	modules/imageblock/locale/es_ES/LC_MESSAGES
+R	modules/imageblock/locale/es_ES
+R	modules/imageblock/locale/eu_ES/LC_MESSAGES/modules_imageblock.mo
+R	modules/imageblock/locale/eu_ES/LC_MESSAGES
+R	modules/imageblock/locale/eu_ES
+R	modules/imageblock/locale/fr_FR/LC_MESSAGES/modules_imageblock.mo
+R	modules/imageblock/locale/fr_FR/LC_MESSAGES
+R	modules/imageblock/locale/fr_FR
+R	modules/imageblock/locale/ga_IE/LC_MESSAGES/modules_imageblock.mo
+R	modules/imageblock/locale/ga_IE/LC_MESSAGES
+R	modules/imageblock/locale/ga_IE
+R	modules/imageblock/locale/hu_HU/LC_MESSAGES/modules_imageblock.mo
+R	modules/imageblock/locale/hu_HU/LC_MESSAGES
+R	modules/imageblock/locale/hu_HU
+R	modules/imageblock/locale/is_IS/LC_MESSAGES/modules_imageblock.mo
+R	modules/imageblock/locale/is_IS/LC_MESSAGES
+R	modules/imageblock/locale/is_IS
+R	modules/imageblock/locale/it_IT/LC_MESSAGES/modules_imageblock.mo
+R	modules/imageblock/locale/it_IT/LC_MESSAGES
+R	modules/imageblock/locale/it_IT
+R	modules/imageblock/locale/ja_JP/LC_MESSAGES/modules_imageblock.mo
+R	modules/imageblock/locale/ja_JP/LC_MESSAGES
+R	modules/imageblock/locale/ja_JP
+R	modules/imageblock/locale/nl_NL/LC_MESSAGES/modules_imageblock.mo
+R	modules/imageblock/locale/nl_NL/LC_MESSAGES
+R	modules/imageblock/locale/nl_NL
+R	modules/imageblock/locale/no_NO/LC_MESSAGES/modules_imageblock.mo
+R	modules/imageblock/locale/no_NO/LC_MESSAGES
+R	modules/imageblock/locale/no_NO
+R	modules/imageblock/locale/pl_PL/LC_MESSAGES/modules_imageblock.mo
+R	modules/imageblock/locale/pl_PL/LC_MESSAGES
+R	modules/imageblock/locale/pl_PL
+R	modules/imageblock/locale/ru_RU/LC_MESSAGES/modules_imageblock.mo
+R	modules/imageblock/locale/ru_RU/LC_MESSAGES
+R	modules/imageblock/locale/ru_RU
+R	modules/imageblock/locale/sr_YU/LC_MESSAGES/modules_imageblock.mo
+R	modules/imageblock/locale/sr_YU/LC_MESSAGES
+R	modules/imageblock/locale/sr_YU
+R	modules/imageblock/locale/sv_SE/LC_MESSAGES/modules_imageblock.mo
+R	modules/imageblock/locale/sv_SE/LC_MESSAGES
+R	modules/imageblock/locale/sv_SE
+R	modules/imageblock/locale/tr_TR/LC_MESSAGES/modules_imageblock.mo
+R	modules/imageblock/locale/tr_TR/LC_MESSAGES
+R	modules/imageblock/locale/tr_TR
+R	modules/imageblock/locale/vi_VN/LC_MESSAGES/modules_imageblock.mo
+R	modules/imageblock/locale/vi_VN/LC_MESSAGES
+R	modules/imageblock/locale/vi_VN
+R	modules/imageblock/po/bg_BG.po
+R	modules/imageblock/po/cs_CZ.po
+R	modules/imageblock/po/da_DK.po
+R	modules/imageblock/po/de_DE.po
+R	modules/imageblock/po/es_ES.po
+R	modules/imageblock/po/eu_ES.po
+R	modules/imageblock/po/fr_FR.po
+R	modules/imageblock/po/ga_IE.po
+R	modules/imageblock/po/hu_HU.po
+R	modules/imageblock/po/is_IS.po
+R	modules/imageblock/po/it_IT.po
+R	modules/imageblock/po/ja_JP.po
+R	modules/imageblock/po/nl_NL.po
+R	modules/imageblock/po/no_NO.po
+R	modules/imageblock/po/pl_PL.po
+R	modules/imageblock/po/ru_RU.po
+R	modules/imageblock/po/sr_YU.po
+R	modules/imageblock/po/sv_SE.po
+R	modules/imageblock/po/tr_TR.po
+R	modules/imageblock/po/vi_VN.po
+R	modules/imageblock/templates/NoCSS.tpl
+R	modules/imageblock/templates/SiteAdmin.tpl

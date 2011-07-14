@@ -1,0 +1,125 @@
+# File crc32 crc32(crlf) size size(crlf)  or  R File
+modules/ffmpeg/AdminFfmpeg.inc	484343980	3591909905	10027	10360
+modules/ffmpeg/MovieThumbnailOption.inc	4274893672	222454079	3390	3496
+modules/ffmpeg/classes/FfmpegToolkit.class	418205980	46805329	6733	6953
+modules/ffmpeg/classes/FfmpegToolkitHelper.class	4064328069	1912630765	7939	8194
+modules/ffmpeg/images/filmreel.png	600755255	600755255	2134	2134
+modules/ffmpeg/images/sample.jpg	2241663216	2241663216	3163	3163
+modules/ffmpeg/locale/af/LC_MESSAGES/modules_ffmpeg.mo	1453332099	1453332099	4013	4013
+modules/ffmpeg/locale/cs/LC_MESSAGES/modules_ffmpeg.mo	1874866239	1874866239	5029	5029
+modules/ffmpeg/locale/da/LC_MESSAGES/modules_ffmpeg.mo	1776116894	1776116894	4873	4873
+modules/ffmpeg/locale/de/LC_MESSAGES/modules_ffmpeg.mo	753433978	753433978	5305	5305
+modules/ffmpeg/locale/eu/LC_MESSAGES/modules_ffmpeg.mo	311182168	311182168	4841	4841
+modules/ffmpeg/locale/fi/LC_MESSAGES/modules_ffmpeg.mo	4079779266	4079779266	3713	3713
+modules/ffmpeg/locale/fr/LC_MESSAGES/modules_ffmpeg.mo	3106138965	3106138965	5194	5194
+modules/ffmpeg/locale/ga/LC_MESSAGES/modules_ffmpeg.mo	4011846237	4011846237	2463	2463
+modules/ffmpeg/locale/is/LC_MESSAGES/modules_ffmpeg.mo	3038858633	3038858633	458	458
+modules/ffmpeg/locale/it/LC_MESSAGES/modules_ffmpeg.mo	2184102090	2184102090	4990	4990
+modules/ffmpeg/locale/ja/LC_MESSAGES/modules_ffmpeg.mo	1644881554	1644881554	3824	3824
+modules/ffmpeg/locale/lt/LC_MESSAGES/modules_ffmpeg.mo	1639537635	1639537635	5065	5065
+modules/ffmpeg/locale/nl/LC_MESSAGES/modules_ffmpeg.mo	155892356	155892356	4966	4966
+modules/ffmpeg/locale/no/LC_MESSAGES/modules_ffmpeg.mo	2519142814	2519142814	4898	4898
+modules/ffmpeg/locale/pl/LC_MESSAGES/modules_ffmpeg.mo	4223341486	4223341486	5126	5126
+modules/ffmpeg/locale/pt/LC_MESSAGES/modules_ffmpeg.mo	950949150	950949150	2234	2234
+modules/ffmpeg/locale/ru/LC_MESSAGES/modules_ffmpeg.mo	1525869331	1525869331	7008	7008
+modules/ffmpeg/locale/sr/LC_MESSAGES/modules_ffmpeg.mo	194522626	194522626	4022	4022
+modules/ffmpeg/locale/sv/LC_MESSAGES/modules_ffmpeg.mo	3610069634	3610069634	5188	5188
+modules/ffmpeg/locale/tr/LC_MESSAGES/modules_ffmpeg.mo	765775720	765775720	2767	2767
+modules/ffmpeg/locale/vi/LC_MESSAGES/modules_ffmpeg.mo	799989081	799989081	3474	3474
+modules/ffmpeg/locale/zh_CN/LC_MESSAGES/modules_ffmpeg.mo	687734014	687734014	4555	4555
+modules/ffmpeg/locale/zh_TW/LC_MESSAGES/modules_ffmpeg.mo	4200378527	4200378527	4703	4703
+modules/ffmpeg/module.inc	1466298927	4286723165	8766	9079
+modules/ffmpeg/po/GNUmakefile	1866879166	2808215985	98	103
+modules/ffmpeg/po/af.po	2842336517	1713740598	5532	5705
+modules/ffmpeg/po/cs.po	4163150779	1603719597	5933	6109
+modules/ffmpeg/po/da.po	3367183823	395515540	5709	5857
+modules/ffmpeg/po/de.po	662395572	3580353835	6386	6567
+modules/ffmpeg/po/eu.po	3347826315	4205755166	5771	5937
+modules/ffmpeg/po/fi.po	3341125553	1198465965	5272	5444
+modules/ffmpeg/po/fr.po	2551996539	175533979	6080	6254
+modules/ffmpeg/po/ga.po	2510626922	2883551308	5862	6053
+modules/ffmpeg/po/is.po	1756603121	3168999478	3896	4055
+modules/ffmpeg/po/it.po	3083917570	3089773873	5943	6119
+modules/ffmpeg/po/ja.po	3674515733	3099640236	5466	5631
+modules/ffmpeg/po/lt.po	2251832459	106567889	6139	6325
+modules/ffmpeg/po/nl.po	3313698110	4018653431	6028	6204
+modules/ffmpeg/po/no.po	1937054915	581992381	5819	5969
+modules/ffmpeg/po/pl.po	4039680213	3576265154	5976	6125
+modules/ffmpeg/po/pt.po	3344259177	92771532	5026	5193
+modules/ffmpeg/po/ru.po	2155166685	1073514697	7983	8137
+modules/ffmpeg/po/sr.po	1212893161	3668241985	5516	5688
+modules/ffmpeg/po/strings.raw	927105566	691104896	2330	2374
+modules/ffmpeg/po/sv.po	3944595452	1690898792	6405	6590
+modules/ffmpeg/po/tr.po	560180146	1678237836	5016	5185
+modules/ffmpeg/po/vi.po	3833310265	1361041348	5741	5912
+modules/ffmpeg/po/zh_CN.po	2168778779	1746327934	5365	5513
+modules/ffmpeg/po/zh_TW.po	2733919131	3747104971	5588	5753
+modules/ffmpeg/templates/AdminFfmpeg.tpl	4190026680	1939652016	6407	6577
+R	modules/ffmpeg/locale/cs_CZ/LC_MESSAGES/modules_ffmpeg.mo
+R	modules/ffmpeg/locale/cs_CZ/LC_MESSAGES
+R	modules/ffmpeg/locale/cs_CZ
+R	modules/ffmpeg/locale/da_DK/LC_MESSAGES/modules_ffmpeg.mo
+R	modules/ffmpeg/locale/da_DK/LC_MESSAGES
+R	modules/ffmpeg/locale/da_DK
+R	modules/ffmpeg/locale/de_DE/LC_MESSAGES/modules_ffmpeg.mo
+R	modules/ffmpeg/locale/de_DE/LC_MESSAGES
+R	modules/ffmpeg/locale/de_DE
+R	modules/ffmpeg/locale/eu_ES/LC_MESSAGES/modules_ffmpeg.mo
+R	modules/ffmpeg/locale/eu_ES/LC_MESSAGES
+R	modules/ffmpeg/locale/eu_ES
+R	modules/ffmpeg/locale/fr_FR/LC_MESSAGES/modules_ffmpeg.mo
+R	modules/ffmpeg/locale/fr_FR/LC_MESSAGES
+R	modules/ffmpeg/locale/fr_FR
+R	modules/ffmpeg/locale/ga_IE/LC_MESSAGES/modules_ffmpeg.mo
+R	modules/ffmpeg/locale/ga_IE/LC_MESSAGES
+R	modules/ffmpeg/locale/ga_IE
+R	modules/ffmpeg/locale/is_IS/LC_MESSAGES/modules_ffmpeg.mo
+R	modules/ffmpeg/locale/is_IS/LC_MESSAGES
+R	modules/ffmpeg/locale/is_IS
+R	modules/ffmpeg/locale/it_IT/LC_MESSAGES/modules_ffmpeg.mo
+R	modules/ffmpeg/locale/it_IT/LC_MESSAGES
+R	modules/ffmpeg/locale/it_IT
+R	modules/ffmpeg/locale/ja_JP/LC_MESSAGES/modules_ffmpeg.mo
+R	modules/ffmpeg/locale/ja_JP/LC_MESSAGES
+R	modules/ffmpeg/locale/ja_JP
+R	modules/ffmpeg/locale/nl_NL/LC_MESSAGES/modules_ffmpeg.mo
+R	modules/ffmpeg/locale/nl_NL/LC_MESSAGES
+R	modules/ffmpeg/locale/nl_NL
+R	modules/ffmpeg/locale/no_NO/LC_MESSAGES/modules_ffmpeg.mo
+R	modules/ffmpeg/locale/no_NO/LC_MESSAGES
+R	modules/ffmpeg/locale/no_NO
+R	modules/ffmpeg/locale/pt_PT/LC_MESSAGES/modules_ffmpeg.mo
+R	modules/ffmpeg/locale/pt_PT/LC_MESSAGES
+R	modules/ffmpeg/locale/pt_PT
+R	modules/ffmpeg/locale/ru_RU/LC_MESSAGES/modules_ffmpeg.mo
+R	modules/ffmpeg/locale/ru_RU/LC_MESSAGES
+R	modules/ffmpeg/locale/ru_RU
+R	modules/ffmpeg/locale/sr_YU/LC_MESSAGES/modules_ffmpeg.mo
+R	modules/ffmpeg/locale/sr_YU/LC_MESSAGES
+R	modules/ffmpeg/locale/sr_YU
+R	modules/ffmpeg/locale/sv_SE/LC_MESSAGES/modules_ffmpeg.mo
+R	modules/ffmpeg/locale/sv_SE/LC_MESSAGES
+R	modules/ffmpeg/locale/sv_SE
+R	modules/ffmpeg/locale/tr_TR/LC_MESSAGES/modules_ffmpeg.mo
+R	modules/ffmpeg/locale/tr_TR/LC_MESSAGES
+R	modules/ffmpeg/locale/tr_TR
+R	modules/ffmpeg/locale/vi_VN/LC_MESSAGES/modules_ffmpeg.mo
+R	modules/ffmpeg/locale/vi_VN/LC_MESSAGES
+R	modules/ffmpeg/locale/vi_VN
+R	modules/ffmpeg/po/cs_CZ.po
+R	modules/ffmpeg/po/da_DK.po
+R	modules/ffmpeg/po/de_DE.po
+R	modules/ffmpeg/po/eu_ES.po
+R	modules/ffmpeg/po/fr_FR.po
+R	modules/ffmpeg/po/ga_IE.po
+R	modules/ffmpeg/po/is_IS.po
+R	modules/ffmpeg/po/it_IT.po
+R	modules/ffmpeg/po/ja_JP.po
+R	modules/ffmpeg/po/nl_NL.po
+R	modules/ffmpeg/po/no_NO.po
+R	modules/ffmpeg/po/pt_PT.po
+R	modules/ffmpeg/po/ru_RU.po
+R	modules/ffmpeg/po/sr_YU.po
+R	modules/ffmpeg/po/sv_SE.po
+R	modules/ffmpeg/po/tr_TR.po
+R	modules/ffmpeg/po/vi_VN.po

@@ -1,0 +1,201 @@
+<?php
+/*
+ * $RCSfile: GalleryFactoryHelper_medium.class,v $
+ *
+ * Gallery - a web based photo album viewer and editor
+ * Copyright (C) 2000-2006 Bharat Mediratta
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or (at
+ * your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+/**
+ * @version $Revision: 1.23 $ $Date: 2006/02/15 01:14:14 $
+ * @package GalleryCore
+ * @author Bharat Mediratta <bharat@menalto.com>
+ */
+GalleryCoreApi::requireOnce(
+    'modules/core/classes/helpers/GalleryFactoryHelper_simple.class');
+
+/**
+ * A factory for creating all different kinds of objects
+ *
+ * @package GalleryCore
+ * @subpackage Helpers
+ * @abstract
+ */
+class GalleryFactoryHelper_medium {
+
+    /**
+     * Create a new instance of the given type based on the id provided
+     *
+     * @param string the class type (eg. 'GalleryGraphics')
+     * @param string the class name (eg. 'NetPBM')
+     * @return array object GalleryStatus a status code,
+     *               object an instance
+     * @static
+     */
+    function newInstanceById($classType, $id) {
+	list ($ret, $registry) = GalleryFactoryHelper_simple::_getFactoryData();
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	if (empty($registry['ids'][$classType][$id])) {
+	    return array(null, null);
+	}
+
+	$className = $registry['ids'][$classType][$id];
+	list ($ret, $instance) = GalleryFactoryHelper_simple::newInstance($classType, $className);
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	return array(null, $instance);
+    }
+
+    /**
+     * Return the ids of all the available implementations for a class
+     *
+     * @return array object GalleryStatus a status code
+     *               array (id => className, ...)
+     * @static
+     */
+    function getAllImplementationIds($classType) {
+	list ($ret, $registry) = GalleryFactoryHelper_simple::_getFactoryData();
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	if (isset($registry['ids'][$classType])) {
+	    $result = $registry['ids'][$classType];
+	} else {
+	    $result = array();
+	}
+	return array(null, $result);
+    }
+
+    /**
+     * Return the ids of all the available implementations for a class
+     *
+     * @return array object GalleryStatus a status code
+     *               array (id => className, ...)
+     * @static
+     */
+    function getAllImplementationIdsWithHint($classType, $hint) {
+	list ($ret, $registry) = GalleryFactoryHelper_simple::_getFactoryData();
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	$hint = GalleryUtilities::strToLower($hint);
+	if (isset($registry['hints'][$classType][$hint])) {
+	    $result = $registry['hints'][$classType][$hint];
+	} else {
+	    $result = array();
+	}
+	return array(null, $result);
+    }
+
+    /**
+     * Unregister an implementation from the factory by id
+     *
+     * @param string an id (eg. 'netpbm')
+     * @return object GalleryStatus a status code
+     * @static
+     */
+    function unregisterImplementationsByModuleId($moduleId) {
+	$ret = GalleryCoreApi::removeMapEntry(
+	    'GalleryFactoryMap', array('implModuleId' => $moduleId));
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	GalleryFactoryHelper_simple::deleteCache();
+
+	return null;
+    }
+
+    /**
+     * Unregister an implementation from the factory by id
+     *
+     * @param string a class type (eg. 'GalleryToolkit')
+     * @param string an implementation id (eg. 'NetPBM')
+     * @return object GalleryStatus a status code
+     * @static
+     */
+    function unregisterImplementation($classType, $implId) {
+	$ret = GalleryCoreApi::removeMapEntry(
+	    'GalleryFactoryMap',
+	    array('classType' => $classType, 'implId' => $implId));
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	GalleryFactoryHelper_simple::deleteCache();
+
+	return null;
+    }
+
+    /**
+     * @param string the class type (eg. 'GalleryGraphics')
+     * @param string the class name (eg. 'NetPbmGraphics')
+     * @param string an implementation id (eg. 'NetPBM')
+     * @param string the relative path to the implementation file
+     *               (eg. 'modules/netpbm/classes/NetPbmGraphics.class')
+     * @param string the id of the module containing the implementation (eg. 'netpbm')
+     * @param array hints that can be used to locate this
+     *              implementation (eg. array('image/jpeg', 'image/gif'))
+     * @param int the priority of this implementation (lower number == higher priority)
+     * @return object GalleryStatus a status class
+     * @static
+     */
+    function registerImplementation($classType, $className, $implId, $implPath,
+				    $implModuleId, $hints, $orderWeight) {
+	global $gallery;
+	$platform =& $gallery->getPlatform();
+
+	$baseDir = GalleryCoreApi::getPluginBaseDir('module', $implModuleId);
+	if (!$platform->file_exists($baseDir . $implPath)) {
+	    return GalleryCoreApi::error(ERROR_BAD_PATH, __FILE__, __LINE__,
+					"Bad implementation path: $baseDir$implPath");
+	}
+
+	if (empty($hints)) {
+	    $hints = null;
+	} else {
+	    /* Lowercase hints for easier lookups */
+	    foreach ($hints as $i => $hint) {
+		$hints[$i] = GalleryUtilities::strToLower($hint);
+	    }
+	}
+
+	$ret = GalleryCoreApi::addMapEntry(
+	    'GalleryFactoryMap',
+	    array('classType' => $classType,
+		  'className' => $className,
+		  'implId' => $implId,
+		  'implPath' => $implPath,
+		  'implModuleId' => $implModuleId,
+		  'orderWeight' => (string)$orderWeight,
+		  'hints' => serialize($hints)));
+	if ($ret) {
+	    return $ret->wrap(__FILE__, __LINE__);
+	}
+
+	GalleryFactoryHelper_simple::deleteCache();
+
+	return null;
+    }
+}
+?>

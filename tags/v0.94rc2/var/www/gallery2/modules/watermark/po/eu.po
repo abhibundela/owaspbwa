@@ -1,0 +1,261 @@
+# $Id: eu.po,v 1.7 2006/03/22 04:21:53 mindless Exp $
+#
+# Gallery - a web based photo album viewer and editor
+# Copyright (C) 2000-2006 Bharat Mediratta
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery: Watermark 1.0.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-11-21 13:34+0100\n"
+"PO-Revision-Date: 2006-02-19 01:36+0100\n"
+"Last-Translator: Piarres Beobide <pi@beobide.net>\n"
+"Language-Team: Loibrezale.org <Librezale@librezale.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 0.6.3.20060126\n"
+
+msgid "Watermark applied successfully"
+msgstr "Ur-marka behar bezala ezarri da"
+
+msgid "Watermark removed successfully"
+msgstr "Ur-marka behar bezala ezabtu da"
+
+msgid "Watermark"
+msgstr "Ur-marka"
+
+msgid "user watermarks"
+msgstr "ur-markak erabili"
+
+msgid "Watermark your images"
+msgstr "Zure irudien ur-marka"
+
+msgid "Display"
+msgstr "Bistaratzea"
+
+msgid "Watermarks"
+msgstr "Ur-markak"
+
+msgid "Watermark hotlinked images"
+msgstr "Ur-markez loturiko irudiak"
+
+msgid ""
+"Apply watermark to images downloaded from outside your Gallery. Select which "
+"watermark to use in Watermark Site Admin."
+msgstr ""
+"Galeria kanpoko irudiei ur-marka ezarri. Hautatu UR-marka kudeaketa gunean "
+"zein ur-marka erabiliko den."
+
+msgid "Delete Watermark"
+msgstr "Ur-marka ezabatu"
+
+#, c-format
+msgid "This watermark is used on one item."
+msgid_plural "This watermark is used on %d items."
+msgstr[0] "Ur marka hau bein erabilia izan da."
+msgstr[1] "Ur marka hau %d elemetnuetan erabilia izan da."
+
+msgid ""
+"The watermark will be removed from all items if the watermark image is "
+"deleted."
+msgstr "Ur-marka elementu guztietatik ezabatua izango da ur-marka irudia ezabatu "
+"ezkero."
+
+msgid "Delete"
+msgstr "Ezabatu"
+
+msgid "Cancel"
+msgstr "Utzi"
+
+msgid ""
+"You can choose a watermark to apply to this image.  Watermarks do not affect "
+"the original image, so they they can be applied to resizes and thumbnails "
+"without damaging the original."
+msgstr "Irudi honi ezartzeko ur-marka aukera dezakezu.  Ur-markek ez dute jatorrizko "
+"irudietan eraginik izanfo, beraz tamaina aldaturiko irudi eta argazkitxoetan "
+"ezarri daiteke jatorrizkoa eraldatu gabe."
+
+msgid "You have no watermarks"
+msgstr "Ez duzu ur-markarik"
+
+msgid ""
+"You must first upload some watermark images so that you can apply them to "
+"your image."
+msgstr ""
+"Lehenik ur-marka batenbat igo behar duzu gero zure irudiari ezarri ahal "
+"izateko."
+
+msgid "Upload some watermarks now."
+msgstr "Zenbait ur-marka orain igo."
+
+msgid "Step 1.  Choose which watermark you want to use"
+msgstr "1 Urratsa.  Erabili nahi duzun ur-marka hautatu"
+
+msgid "Step 2.  Place the watermark on your image."
+msgstr "2 Urratsa.  Zure irudian ur-marka ipini."
+
+msgid "watermark"
+msgstr "ur-marka"
+
+msgid "Step 3.  Choose which versions of the image you'd like to watermark"
+msgstr "3 Urratsa.  Irudiaren zein bertsiori ur-marka ipiniko zaion hautatu"
+
+msgid "You must choose something to watermark!"
+msgstr "Ur-marka ipintzeko zerbait hautatu behar duzu!"
+
+msgid "Full size (won't damage the original file)"
+msgstr "Tamaiana osoa (ez da jatorrizko irudia erabiliko)"
+
+msgid "Resizes"
+msgstr "Tamainaz-aldatutakoa"
+
+msgid "Thumbnail"
+msgstr "Argazkitxoa"
+
+msgid "Apply Watermark"
+msgstr "Ur-marka ezarri"
+
+msgid "Remove Watermark"
+msgstr "Ur-marka ezabatu"
+
+msgid "My Watermarks"
+msgstr "Nire Ur-markak"
+
+msgid "Watermark added successfully"
+msgstr "Ur-marka behar bezala gehitu da"
+
+msgid "Watermark deleted successfully"
+msgstr "Ur-marka behar bezaka ezabatu da"
+
+msgid "Watermark saved successfully"
+msgstr "Ur-marka behar bezla gorde da"
+
+msgid "There was a problem processing your request."
+msgstr "Zure eskaera prozesatzerakoan arazo bat dago."
+
+msgid "Upload Watermarks"
+msgstr "Ur-markak eguneratu"
+
+msgid ""
+"Add your own personal watermarks here.  These watermarks can only be used by "
+"you."
+msgstr "Gehitu zure ur-marka pertsonalizatuak hemen.  UR-marka hauek zuk bakarrik erabili "
+"ditzakezu."
+
+msgid "Name"
+msgstr "Izena"
+
+msgid "Image"
+msgstr "Irudia"
+
+msgid "Action"
+msgstr "Ekintza"
+
+msgid "edit"
+msgstr "editatu"
+
+msgid "delete"
+msgstr "ezabatu"
+
+msgid "Add"
+msgstr "Gehitu"
+
+msgid "You must enter the path to a file to upload"
+msgstr "Igotzeko fitxategiaren bidea eman behar duzu"
+
+msgid "Edit A Watermark"
+msgstr "Ur-marka editatu"
+
+msgid "New image added successfully"
+msgstr "Irudi berria behar bezala gehitu da"
+
+msgid "Watermark Name"
+msgstr "Ur-marka Izena"
+
+msgid "Give this watermark a name so that you can identify it in a list."
+msgstr "Ur-marka honi izen bat ezarri zerrendan bereizi ahal izateko."
+
+msgid "You must provide a name"
+msgstr "Izen bat eman behar duzu"
+
+msgid "Name already used by another watermark"
+msgstr "Izena beste ur-marka batek du dagoeneko"
+
+msgid "Placement"
+msgstr "Kokalekua"
+
+msgid ""
+"Place your watermark on the canvas below in the location where you'd like it "
+"to appear when you watermark newly uploaded photos.  You'll be able to edit "
+"individual photos to move the watermark later on, if you choose."
+msgstr "Zure ur-marka igo berri diren argazkietan agertzea nahi duzun beheko ohalaren kokapen berdinean ipini ezazu.  Beranduago horrela nahi ezkero banakako argazkietako ur-marka kokapena aldatu ahal izango duzu."
+
+msgid "Choose which versions of the image you'd like to watermark"
+msgstr "Hautatu irudairen zein bertsiori ipininahi diozun ur-marka"
+
+msgid "Save"
+msgstr "Gorde"
+
+msgid "Choose a watermark to apply to the images you add."
+msgstr "Zuk gehitutako irudiari ezartzeko ur-marka aukeratu."
+
+msgid "Edit your watermarks"
+msgstr "Zure ur-markak editatu"
+
+msgid "none"
+msgstr "batez"
+
+msgid "Watermark Images"
+msgstr "Ur-marka Irudiak"
+
+msgid "Watermark updated successfully"
+msgstr "Ur-marka behar bezala eguneratu da"
+
+msgid "Image deleted successfully"
+msgstr "Irudia behar bezala ezabatu da"
+
+msgid "Missing image file"
+msgstr "Irudi fitxategia falta da"
+
+msgid "No watermark selected"
+msgstr "Ez da ur-markarik hautatu"
+
+msgid "Settings saved successfully"
+msgstr "Ezarpenak behar bezala gorde dira"
+
+msgid "File"
+msgstr "Fitxategia"
+
+msgid "Owner"
+msgstr "Jabea"
+
+msgid "Hotlink"
+msgstr "Loturak"
+
+msgid "Watermark Hotlinked Images"
+msgstr "Ur-markaz Loturiko Oriudiak"
+
+msgid ""
+"Gallery can automatically apply a watermark to images linked from sites "
+"outside your Gallery. Select a watermark above and then activate hotlink "
+"watermarks using the Rewrite module."
+msgstr "Gallery-k zure galeriatik kanpora loturiko irudiei automatiko ur-marka bat "
+"ezarri diezake. Ur-marka bat hautatu goian eta ordian gaitu ur-marka "
+"loturak berridazketa modulua erabiliaz."
+

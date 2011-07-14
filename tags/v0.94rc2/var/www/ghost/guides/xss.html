@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<link type='text/css' rel='stylesheet' href='../stylesheet/styles.css' />
+</head>
+<body style='background-color:#3a3d32'>
+<h2>Cross Site Scripting</h2>
+<p>Cross site scripting has been haunting the web for many years. Through the use of xss an attacker can inject code into a web page that can do many different things. A couple of examples are release malicious code, credential stealing, forgery, defacement, and many other things. The use of xss has no limits. Through the use of cookie poisoning, sql injection and any other web based languages combined with xss the web has made this type of attack very easy to perform. Here are some examples:<br /><br />
+	Basic:<br />
+	&lt;script&gt;alert('xss');&lt;/script&gt;<br />
+	&lt;script&gt;document.write(document.vulnerable="true");&lt;/script&gt;<br />
+	&lt;img src=javascript:alert('xss');&gt;<br /><br />
+	Filter Evasion and Encodeing:<br />
+	Many times obfuscation of the injection attack will need to be performed. I recommend grabbing Firefox add-on hack bar it comes with many built in tools, including an encoding tab.<br />
+	Here are the three examples from above that i have encoded with hackbar's urlencode feature:<br />
+	%3Cscript%3Ealert%28%27xss%27%29%3B%3C%2fscript%3E%0A<br />
+	%3Cscript%3Edocument.write%28document.vulnerable%3D%22true%22%29%3B%3C%2fscript%3E<br />
+	%3Cimg%20src%3Djavascript%3Aalert%28%27xss%27%29%3B%3E<br /><br />
+	These are just simple examples of xss and filter evasion, for further reading on evasion techniques the web is your friend.<br />
+	Here are a few references for further reading:<br />1) <a href="http://www.owasp.org">Owasp</a><br />2) <a href="http://www.xssed.com">Xssed.com</a><br />3) <a href="http://ha.ckers.org/xss.html">ha.ckers.org</a><br />4) <a href="http://www.irongeek.com">Iron Geek dot com</a></p>
+</body>
+</html>

@@ -1,0 +1,1 @@
+MySQL has issues if you delete this directory (something to do with the fact that we are storing the databases in SVN, I believe). 

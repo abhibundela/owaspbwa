@@ -1,0 +1,42 @@
+# $Id: strings.raw,v 1.14 2006/02/10 04:18:05 mindless Exp $
+
+/* module.inc */
+gettext("Thumbnail Manager") /* also in: templates/ThumbnailSiteAdmin.tpl */
+gettext("Set default thumbnails for non-image items")
+gettext("Display")
+gettext("Convert to a JPEG") /* also in: classes/ThumbnailHelper.class */
+gettext("Thumbnails")
+
+/* templates/CustomThumbnail.tpl */
+gettext("Custom Thumbnail")
+gettext("Remove custom thumbnail for this item")
+gettext("Upload a JPEG image to use as the thumbnail for this item.")
+gettext("Image does not need to be thumbnail size; it will be resized as needed.")
+gettext("No toolkit available for resizing so uploaded image must be thumbnail sized.")
+gettext("Missing image file") /* also in: templates/ThumbnailSiteAdmin.tpl */
+gettext("Thumbnail image must be a JPEG") /* also in: templates/ThumbnailSiteAdmin.tpl */
+
+/* templates/ThumbnailSiteAdmin.tpl */
+gettext("New image added successfully")
+gettext("New setting added successfully")
+gettext("Image deleted successfully")
+gettext("Setting deleted successfully")
+gettext("Mime type already assigned")
+gettext("Missing mime type")
+gettext("Warning: Other modules provide thumbnail support for some types.  Settings below for these mime types will not be used:")
+gettext("The thumbnail images shown below will be used for new items added to Gallery with the listed mime types.")
+gettext("Mime Types")
+gettext("File")
+gettext("Image")
+gettext("Action")
+gettext("delete")
+gettext("Delete this image?")
+gettext("(Will not remove thumbnails from existing items using this image, but those items will be unable to rebuild thumbs)")
+gettext("Thumbnail support provided by module:")
+gettext("New Setting")
+gettext("Images do not need to be thumbnail size; they will be resized as needed.")
+gettext("Default thumbnail for mime type:")
+gettext("&laquo; Choose type or enter above &raquo;")
+gettext("New jpeg file:")
+gettext("Existing image:")
+gettext("Save")

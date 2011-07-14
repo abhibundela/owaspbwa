@@ -1,0 +1,1 @@
+<?php function GalleryFastDownload() { return $GLOBALS['gallery']->fastDownload('albums/OWASPBWA/ologo.png', 'ologo.png', 'Sun, 17 Apr 2011 19:18:58 GMT', 'image/png', 27976);} ?>

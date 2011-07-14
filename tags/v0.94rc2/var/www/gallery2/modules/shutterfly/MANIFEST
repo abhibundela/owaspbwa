@@ -1,0 +1,79 @@
+# File crc32 crc32(crlf) size size(crlf)  or  R File
+modules/shutterfly/PrintPhotos.inc	3745511343	3833233094	7464	7683
+modules/shutterfly/classes/ShutterflyCartPlugin.class	2649124047	2151446811	2036	2102
+modules/shutterfly/locale/af/LC_MESSAGES/modules_shutterfly.mo	2383788603	2383788603	721	721
+modules/shutterfly/locale/cs/LC_MESSAGES/modules_shutterfly.mo	2131547669	2131547669	886	886
+modules/shutterfly/locale/de/LC_MESSAGES/modules_shutterfly.mo	2605339141	2605339141	793	793
+modules/shutterfly/locale/eu/LC_MESSAGES/modules_shutterfly.mo	1047055041	1047055041	796	796
+modules/shutterfly/locale/fr/LC_MESSAGES/modules_shutterfly.mo	4166551352	4166551352	742	742
+modules/shutterfly/locale/is/LC_MESSAGES/modules_shutterfly.mo	2334427078	2334427078	421	421
+modules/shutterfly/locale/it/LC_MESSAGES/modules_shutterfly.mo	927706580	927706580	750	750
+modules/shutterfly/locale/ja/LC_MESSAGES/modules_shutterfly.mo	972804286	972804286	763	763
+modules/shutterfly/locale/nl/LC_MESSAGES/modules_shutterfly.mo	227068154	227068154	763	763
+modules/shutterfly/locale/no/LC_MESSAGES/modules_shutterfly.mo	2142769856	2142769856	793	793
+modules/shutterfly/locale/pl/LC_MESSAGES/modules_shutterfly.mo	3883551132	3883551132	831	831
+modules/shutterfly/locale/ru/LC_MESSAGES/modules_shutterfly.mo	1702453844	1702453844	907	907
+modules/shutterfly/locale/sr/LC_MESSAGES/modules_shutterfly.mo	2000453296	2000453296	721	721
+modules/shutterfly/locale/tr/LC_MESSAGES/modules_shutterfly.mo	564572880	564572880	788	788
+modules/shutterfly/locale/zh_CN/LC_MESSAGES/modules_shutterfly.mo	1724567499	1724567499	649	649
+modules/shutterfly/locale/zh_TW/LC_MESSAGES/modules_shutterfly.mo	701866562	701866562	781	781
+modules/shutterfly/module.inc	2451509635	2932697192	4296	4440
+modules/shutterfly/po/GNUmakefile	1866879166	2808215985	98	103
+modules/shutterfly/po/af.po	2726757127	1732686105	1703	1755
+modules/shutterfly/po/cs.po	3790666845	340126338	1781	1833
+modules/shutterfly/po/de.po	4188495760	78644920	1789	1842
+modules/shutterfly/po/eu.po	283341797	1946232271	1680	1730
+modules/shutterfly/po/fr.po	818850728	2493695571	1676	1725
+modules/shutterfly/po/is.po	821193943	3224420143	1515	1563
+modules/shutterfly/po/it.po	1354768677	1281263859	1629	1677
+modules/shutterfly/po/ja.po	3344315361	990023722	1642	1690
+modules/shutterfly/po/nl.po	3013232535	269334303	1730	1780
+modules/shutterfly/po/no.po	873906979	2988298848	1792	1844
+modules/shutterfly/po/pl.po	1064547402	1678128382	1717	1767
+modules/shutterfly/po/ru.po	3333069317	1389261945	1983	2039
+modules/shutterfly/po/sr.po	3822996698	981254175	1675	1725
+modules/shutterfly/po/strings.raw	3183639163	3669998865	305	316
+modules/shutterfly/po/tr.po	591317569	225470959	1676	1727
+modules/shutterfly/po/zh_CN.po	1702552135	3654464119	1736	1788
+modules/shutterfly/po/zh_TW.po	2674941403	3920960392	1668	1717
+modules/shutterfly/templates/PrintPhotos.tpl	3591773419	3429951130	2257	2312
+R	modules/shutterfly/locale/cs_CZ/LC_MESSAGES/modules_shutterfly.mo
+R	modules/shutterfly/locale/cs_CZ/LC_MESSAGES
+R	modules/shutterfly/locale/cs_CZ
+R	modules/shutterfly/locale/de_DE/LC_MESSAGES/modules_shutterfly.mo
+R	modules/shutterfly/locale/de_DE/LC_MESSAGES
+R	modules/shutterfly/locale/de_DE
+R	modules/shutterfly/locale/fr_FR/LC_MESSAGES/modules_shutterfly.mo
+R	modules/shutterfly/locale/fr_FR/LC_MESSAGES
+R	modules/shutterfly/locale/fr_FR
+R	modules/shutterfly/locale/is_IS/LC_MESSAGES/modules_shutterfly.mo
+R	modules/shutterfly/locale/is_IS/LC_MESSAGES
+R	modules/shutterfly/locale/is_IS
+R	modules/shutterfly/locale/it_IT/LC_MESSAGES/modules_shutterfly.mo
+R	modules/shutterfly/locale/it_IT/LC_MESSAGES
+R	modules/shutterfly/locale/it_IT
+R	modules/shutterfly/locale/ja_JP/LC_MESSAGES/modules_shutterfly.mo
+R	modules/shutterfly/locale/ja_JP/LC_MESSAGES
+R	modules/shutterfly/locale/ja_JP
+R	modules/shutterfly/locale/nl_NL/LC_MESSAGES/modules_shutterfly.mo
+R	modules/shutterfly/locale/nl_NL/LC_MESSAGES
+R	modules/shutterfly/locale/nl_NL
+R	modules/shutterfly/locale/ru_RU/LC_MESSAGES/modules_shutterfly.mo
+R	modules/shutterfly/locale/ru_RU/LC_MESSAGES
+R	modules/shutterfly/locale/ru_RU
+R	modules/shutterfly/locale/sr_YU/LC_MESSAGES/modules_shutterfly.mo
+R	modules/shutterfly/locale/sr_YU/LC_MESSAGES
+R	modules/shutterfly/locale/sr_YU
+R	modules/shutterfly/locale/tr_TR/LC_MESSAGES/modules_shutterfly.mo
+R	modules/shutterfly/locale/tr_TR/LC_MESSAGES
+R	modules/shutterfly/locale/tr_TR
+R	modules/shutterfly/po/cs_CZ.po
+R	modules/shutterfly/po/de_DE.po
+R	modules/shutterfly/po/fr_FR.po
+R	modules/shutterfly/po/is_IS.po
+R	modules/shutterfly/po/it_IT.po
+R	modules/shutterfly/po/ja_JP.po
+R	modules/shutterfly/po/nl_NL.po
+R	modules/shutterfly/po/ru_RU.po
+R	modules/shutterfly/po/sr_YU.po
+R	modules/shutterfly/po/tr_TR.po

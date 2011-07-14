@@ -1,0 +1,93 @@
+# $Id: es.po,v 1.4 2006/03/22 04:21:29 mindless Exp $
+#
+# Gallery - a web based photo album viewer and editor
+# Copyright (C) 2000-2006 Bharat Mediratta
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery: Size Limit 1.0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-02-20 00:00+0100\n"
+"PO-Revision-Date: 2006-01-22 01:48+0100\n"
+"Last-Translator: Roberto Seoane <soporte@betica-mudarra.com>\n"
+"Language-Team: Spanish <gallery-devel@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#, c-format
+msgid "WARNING: Cannot resize mime type %s"
+msgstr "ATENCI&Oacute;N: Imposible reescalar mime type %s"
+
+#, c-format
+msgid "WARNING: Cannot compress mime type %s"
+msgstr "ATENCI&Oacute;N: imposible comprimir mime type %s"
+
+msgid "Resize complete"
+msgstr "Re-escalado completo"
+
+msgid "Resize Status"
+msgstr "Estado del re-escalado"
+
+msgid "Resizing photo"
+msgstr "Re-escalando imagen"
+
+msgid "Size Limit"
+msgstr "L&iacute;mite de tama&ntilde;o"
+
+msgid "Define picture size limit"
+msgstr "Definir l&iacute;mite de tama&ntilde;o"
+
+msgid "Display"
+msgstr "Mostrar"
+
+msgid "Maximum dimensions of full sized images"
+msgstr "M&aacute;ximas dimensiones de las im&aacute;genes a tama&ntilde;o completo"
+
+msgid "No Limits"
+msgstr "Sin l&iacute;mite"
+
+msgid "You must specify at least one of the dimensions"
+msgstr "Debe especificar al menos una de las dimensiones"
+
+msgid "Maximum file size of full sized images in kilobytes"
+msgstr "M&aacute;ximo tama&ntilde;o en kB de las imagenes"
+
+msgid "You must enter a number (greater than zero)"
+msgstr "Debe introducir un n&uacute;mero (mayor que cero)"
+
+msgid "Keep original image?"
+msgstr "Guardar la imagen original?"
+
+#, fuzzy
+msgid "Check here to apply size limits to the pictures in this album and all subalbums"
+msgstr ""
+"Marcar para aplicar este l&iacute;mite de tama&ntilde;o a las im&aacute;genes de este "
+"&aacute;lbum y sub-&aacute;lbums"
+
+msgid "Checking this option will rebuild pictures according to appropriate limits"
+msgstr ""
+
+msgid "Use these size limits in all subalbums"
+msgstr ""
+
+#, fuzzy
+msgid "Checking this option will set same picture size limits in all subalbums"
+msgstr ""
+"Marcar para aplicar este l&iacute;mite de tama&ntilde;o a las im&aacute;genes de este "
+"&aacute;lbum y sub-&aacute;lbums"

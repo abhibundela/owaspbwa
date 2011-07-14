@@ -1,0 +1,264 @@
+# $Id: es.po,v 1.6 2006/03/22 04:19:29 mindless Exp $
+#
+# Gallery - a web based photo album viewer and editor
+# Copyright (C) 2000-2006 Bharat Mediratta
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery: Image Block 1.0.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-09-21 10:00+0100\n"
+"PO-Revision-Date: 2005-09-21 10:00+0100\n"
+"Last-Translator: Iago González Rúa <iago.rua@bonaval.com>\n"
+"Language-Team: Spain <gallery-devel@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+msgid "Image Block"
+msgstr "Bloques de imagenes"
+
+msgid "Random, Most Recent or Most Viewed Photo or Album"
+msgstr "Aleatorio. Imagen o álbum más reciente o más visitado."
+
+msgid "Blocks"
+msgstr "Bloques"
+
+msgid "Random Image"
+msgstr "Imágen aleatoria"
+
+msgid "Newest Image"
+msgstr "La imagen más nueva"
+
+msgid "Most Viewed Image"
+msgstr "La imagen más vista"
+
+msgid "Random Album"
+msgstr "Álbum aleatorio"
+
+msgid "Newest Album"
+msgstr "El álbum mas nuevo"
+
+msgid "Most Viewed Album"
+msgstr "El álbum más visto"
+
+msgid "Picture of the Day"
+msgstr "La imagen del día"
+
+msgid "Picture of the Week"
+msgstr "La imagen de la semana"
+
+msgid "Picture of the Month"
+msgstr "La imagen del mes"
+
+msgid "Album of the Day"
+msgstr "El álbum del día"
+
+msgid "Album of the Week"
+msgstr "El álbum de la semana"
+
+msgid "Album of the Month"
+msgstr "El álbum del mes"
+
+msgid "Date:"
+msgstr "Fecha:"
+
+#, c-format
+msgid "Views: %d"
+msgstr "Visitas: %d"
+
+#, c-format
+msgid "Owner: %s"
+msgstr "Propietario: %s"
+
+msgid "Prevent this album from being displayed in the Image Block"
+msgstr "No mostrar este álbum en el bloque de imagenes"
+
+msgid "Apply ImageBlock settings to sub-albums"
+msgstr "Aplicar la configuración también en sub-álbumes"
+
+msgid "Image Block Settings"
+msgstr "Configuración del Bloque de imagenes"
+
+msgid "Settings saved successfully"
+msgstr "Configuración guardada correctamente"
+
+msgid "Show"
+msgstr "Ver"
+
+msgid "Heading"
+msgstr "Cabecera"
+
+msgid "Title"
+msgstr "Título"
+
+msgid "Date"
+msgstr "Fecha"
+
+msgid "View Count"
+msgstr "Ver contador"
+
+msgid "Owner"
+msgstr "Propietario"
+
+msgid "Frames"
+msgstr "Marcos"
+
+msgid "View samples"
+msgstr "Ver ejemplos"
+
+msgid "Album Frame"
+msgstr "Marco del álbum"
+
+msgid "Photo Frame"
+msgstr "Marco de la Foto"
+
+msgid "Save"
+msgstr "Guardar"
+
+msgid "Reset"
+msgstr "Cancelar"
+
+msgid "External Image Block"
+msgstr "Bloque de imagenes externas"
+
+msgid ""
+"Use a PHP block like the one shown below to include an image block in a PHP page outside of "
+"Gallery."
+msgstr ""
+"Utilizar un bloque de PHP como el siguiente a modo de bloque de imagenes para mostrar fuera "
+"de Gallery."
+
+msgid ""
+"Pipe(|) separate list chosen from: randomImage, recentImage, viewedImage, randomAlbum, "
+"recentAlbum, viewedAlbum, dailyImage, weeklyImage, monthlyImage, dailyAlbum, weeklyAlbum, "
+"monthlyAlbum, specificItem; default is randomImage"
+msgstr ""
+"Lista separada por pipelines (|) a elegir entre: randomImage, recentImage, viewedImage, "
+"randomAlbum, recentAlbum, viewedAlbum, dailyImage, weeklyImage, monthlyImage, dailyAlbum, "
+"weeklyAlbum, monthlyAlbum, specificItem; por defecto es  randomImage"
+
+#, fuzzy
+msgid ""
+"Pipe(|) separated list chosen from: title, date, views, owner, heading, fullSize; the value "
+"can also be: none"
+msgstr ""
+"Lista de opciones separada por pipelines (|) a elegir entre: title, date, views, owner, "
+"heading, fullSize. El valor también puede ser: none"
+
+msgid ""
+"Limit the item selection to the subtree of the gallery under the album with the given id; or "
+"the id of the item to display when used with specificItem block type"
+msgstr "Limitar la selección de elementos a los dependientes de un álbum o elemento dado."
+
+msgid ""
+"Scale images to this maximum size. If maxSize exceeds the thumbnail dimensions, you must "
+"also specify g2_show=fullSize"
+msgstr ""
+
+msgid "Add a link target (for example, to open links in a new browser window)"
+msgstr "Añadir un enlace (por ejemplo, para abrir enlaces en una ventana nueva del navegador)"
+
+msgid "Image frame to use around images"
+msgstr "Marco a utilizar alrrededor de las imagenes"
+
+msgid "Image frame to use around albums"
+msgstr "Marco a utilizar alrrededor de los álbumes"
+
+msgid "If a parameter marked with * is omitted then the site default defined above is used."
+msgstr ""
+"Si se omite un parámetro marcado con * se redirigirá al sitio por defecto definido arriba."
+
+#, c-format
+msgid ""
+"Image frames require CSS to be displayed correctly. Include the following in the %s section "
+"to support image frames."
+msgstr ""
+"Los marcos de las imagenes necesitan CSS para mostrarse correctamente. Incluir lo siguiente "
+"en la seccion %s para soportar marcos de imagenes."
+
+#, c-format
+msgid ""
+"Specify the frame id (or pipe separated list of ids) in the frames parameter. Omit the "
+"parameter to support the image frames configured above. Frame ids are the directory names in "
+"the %s directory."
+msgstr ""
+"Especificar el id del marco (o lista de ids separada por pipelines (|)) en el parámetro de "
+"marcos  Omitir el parámetro para para utilizar las imagenes de marcos indicadas a "
+"continuación  Los ids de los marcos son nombres de directorios que están dentro del "
+"directorio %s."
+
+msgid "Image type"
+msgstr "Tipo de imagen"
+
+msgid "Random image"
+msgstr "Imagen aleatoria"
+
+msgid "Recent image"
+msgstr "Imagen reciente"
+
+msgid "Viewed image"
+msgstr "Imagen vista"
+
+msgid "Random album"
+msgstr "Álbum aleatorio"
+
+msgid "Recent album"
+msgstr "Álbum reciente"
+
+msgid "Viewed album"
+msgstr "Álbum visto"
+
+msgid "Daily image"
+msgstr "Imagen diaria"
+
+msgid "Weekly image"
+msgstr "Imagen semanal"
+
+msgid "Monthly image"
+msgstr "Imagen mensual"
+
+msgid "Daily album"
+msgstr "Álbum diario"
+
+msgid "Weekly album"
+msgstr "Álbum semanal"
+
+msgid "Monthly album"
+msgstr "Álbum mensual"
+
+msgid "Use default settings"
+msgstr "Utilizar configuración por defecto"
+
+msgid "Show heading"
+msgstr "Mostrar cabecera"
+
+msgid "Show title"
+msgstr "Mostrar título"
+
+msgid "Show date"
+msgstr "Mostrar fecha"
+
+msgid "Show view count"
+msgstr "Mostrar contador de visitas"
+
+msgid "Show owner"
+msgstr "Mostrar propietario"
+
+#~ msgid "Scale images to this maximum size"
+#~ msgstr "Escalar imagenes al máximo tamaño posible"

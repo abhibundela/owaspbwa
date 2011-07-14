@@ -1,0 +1,17 @@
+<html> <head> <title> Example of DOM XSS </title> </head>
+<body> 
+Even though this page is static HTML on the server, it still contains a Reflected Cross Site Scripting vulnerability in JavaScript (though page is not vulnerable in all browsers).
+<p>
+This page has been confirmed VULNERABLE in Internet Explorer 7 and NOT VULNERABLE in Firefox 3.0.x.
+<p>
+<SCRIPT>
+var pos=document.URL.indexOf("name=")+5;
+if(pos > 5) {
+document.write("Hello, " + document.URL.substring(pos,document.URL.length)); } else {
+document.write('<FORM METHOD="GET" ACTION="'+location.href+'">Enter your name:<input name="name"><input type="submit" value="Submit"></form>');
+}
+</SCRIPT>
+<p>
+<center>This form was contributed by <a href="http://www.mandiant.com">MANDIANT</a> <a href="http://www.mandiant.com"><img src="images/mandiant.png"align="center" border=0></a></center>
+</body> </html>
+

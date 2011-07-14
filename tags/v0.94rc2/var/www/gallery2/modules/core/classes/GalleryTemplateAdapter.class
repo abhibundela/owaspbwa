@@ -1,0 +1,897 @@
+<?php
+/*
+ * $RCSfile: GalleryTemplateAdapter.class,v $
+ *
+ * Gallery - a web based photo album viewer and editor
+ * Copyright (C) 2000-2006 Bharat Mediratta
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or (at
+ * your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+/**
+ * @version $Revision: 1.106.2.1 $ $Date: 2006/03/23 21:31:38 $
+ * @package GalleryCore
+ * @author Bharat Mediratta <bharat@menalto.com>
+ */
+
+/**
+ * This class is a glue layer between the templating system and our various
+ * callbacks that generate URLs, localized text, dates, themed widgets, etc.
+ *
+ * @package GalleryCore
+ * @subpackage Classes
+ */
+class GalleryTemplateAdapter {
+
+    /**
+     * The number of times our block callbacks have been executed
+     * @var array _callCount
+     */
+    var $_callCount;
+
+    /**
+     * The active theme
+     *
+     * @var object GalleryTheme
+     * @access private
+     */
+    var $_theme;
+
+    /**
+     * Aggregation of text that we want to output at the bottom of the page,
+     * useful for when we need to put javascript at the bottom.
+     *
+     * @var string $_trailer
+     * @access private
+     */
+    var $_trailer;
+
+    /**
+     * Registered callbacks that will get executed during the trailer.
+     *
+     * @var array $_trailerCallbacks
+     * @access private
+     */
+    var $_trailerCallbacks = array();
+
+    /**
+     * Current state of the progress bar.
+     *
+     * @var array $_progressBarStats
+     * @access private
+     */
+    var $_progressBarStats;
+
+    /**
+     * Constructor
+     */
+    function GalleryTemplateAdapter() {
+	$this->_callCount = array();
+	$this->_theme = null;
+	$this->_trailer = null;
+	$this->_progressBarStats = null;
+    }
+
+    /**
+     * Set the theme
+     *
+     * @param object GalleryTheme
+     */
+    function setTheme($theme) {
+	$this->_theme = $theme;
+    }
+
+    /*************************************************************
+     * Special purpose template callback methods.
+     *************************************************************/
+
+    /**
+     * @see GalleryUrlGenerator::generateUrl()
+     *
+     * Return a valid Gallery URL, standalone or embedded.
+     *
+     * @param array data in key/value pairs
+     * @return string a URL
+     */
+    function url($params, &$smarty) {
+	global $gallery;
+
+	if (isset($params['params'])) {
+	    /* Allow the user to pass in bulk params */
+	    $hrefParams = $params['params'];
+	} else {
+	    /* Search for args and add them to the params */
+	    $hrefParams = array();
+	    for ($i = 1; ($arg = "arg$i") && isset($params[$arg]); $i++) {
+		list ($key, $value) = explode('=', $params[$arg], 2);
+		$hrefParams[$key] = $value;
+		unset($params[$arg]);
+	    }
+	}
+	if (isset($params['href'])) {
+	    $hrefParams['href'] = $params['href'];
+	}
+
+	$urlGenerator =& $gallery->getUrlGenerator();
+	return $urlGenerator->generateUrl($hrefParams, $params);
+    }
+
+    /**
+     * Return any hidden form variables that we want to embed in this form based on the
+     * current session and request context.  We use this to pass the special "return" variable
+     * forward, for example.
+     *
+     * @param array data in key/value pairs
+     * @return a series of XHTML 1.0 compliant <input> elements
+     */
+    function hiddenFormVars($params, &$smarty) {
+	global $gallery;
+	$urlGenerator =& $gallery->getUrlGenerator();
+	$vars = array();
+
+	/* The 'return' url */
+	if (GalleryUtilities::hasRequestVariable('return')) {
+	    $vars['return'] = GalleryUtilities::getRequestVariables('return');
+	}
+
+	/* Remember the current url for getting back to where we came from */
+	if (empty($vars['return'])) {
+	    $currentView = $gallery->getCurrentView();
+	    list ($ret, $view) = GalleryView::loadView($currentView);
+	    if ($ret) {
+		$viewDescription = '';
+	    } else {
+		list ($ret, $viewDescription) = $view->getViewDescription();
+		if ($ret) {
+		    $viewDescription = '';
+		}
+	    }
+	    $vars['returnName'] = $viewDescription;
+	    $vars['return'] = $urlGenerator->getNavigationReturnUrl();
+	}
+
+	/* Our navigation id */
+	$navigationId = $urlGenerator->getNavigationId();
+	if (!empty($navigationId)) {
+	    $vars['navId'] = $navigationId;
+	    unset($vars['return']);
+	}
+
+	/* Remember the original URL where this form was first shown */
+	$vars['formUrl'] = GalleryUtilities::getRequestVariables('formUrl');
+	if (empty($vars['formUrl'])) {
+	    /* First time we load this form */
+	    $vars['formUrl'] = $urlGenerator->getNavigationReturnUrl();
+	}
+
+	$out = '';
+	foreach ($vars as $key => $value) {
+	    $out .= sprintf('<input type="hidden" name="%s" value="%s"/>' . "\n",
+			   GalleryUtilities::prefixFormVariable($key),
+			   $value);
+	}
+	return $out;
+    }
+
+    /**
+     * Return a valid Gallery date.
+     *
+     * @todo This needs to be refactored.
+     *
+     * @param array data in key/value pairs
+     * @return string a URL
+     */
+    function date($params, &$smarty) {
+	global $gallery;
+	static $defaultFormat;
+	$platform =& $gallery->getPlatform();
+
+	if (empty($params['format'])) {
+	    if (!isset($defaultFormat)) {
+		$defaultFormat = array('date' => '%x', 'time' => '%X', 'datetime' => '%c');
+		list ($ret, $core) = GalleryCoreApi::fetchAllPluginParameters('module', 'core');
+		if (!$ret) {
+		    $defaultFormat = array('date' => $core['format.date'],
+					   'time' => $core['format.time'],
+					   'datetime' => $core['format.datetime']);
+		}
+	    }
+
+	    $params['format'] =
+		(!empty($params['style']) && isset($defaultFormat[$params['style']]))
+		? $defaultFormat[$params['style']] : $defaultFormat['date'];
+	}
+
+	return $platform->strftime($params['format'],
+	    !empty($params['timestamp']) ? $params['timestamp'] : null);
+    }
+
+    /**
+     * @see GalleryTranslator::translate()
+     */
+    function text($params, &$smarty) {
+	global $gallery;
+
+	if (isset($params['l10Domain'])) {
+	    $domain = $params['l10Domain'];
+	} else if (isset($smarty->_tpl_vars['viewL10domain'])) {
+	    $domain = $smarty->_tpl_vars['viewL10domain'];
+	} else {
+	    $domain = $smarty->_tpl_vars['l10Domain'];
+	}
+	$translator =& $gallery->getTranslator();
+	list ($ret, $text) = $translator->translateDomain($domain, $params);
+	if ($ret) {
+	    return $ret->getAsHtml();
+	    return "[Translation error]";
+	}
+
+	if (!empty($params['forJavascript'])) {
+	    $text = str_replace("'", "\\'", $text);
+	}
+
+	return $text;
+    }
+
+    /**
+     * Return a checkbox asking whether to chenge the value in descendents
+     * Useful when we are trying to change a value recursively
+     *
+     * @param array key => value attributes
+     * @return HTML content
+     */
+    function changeInDescendents($params, &$smarty) {
+	global $gallery;
+
+	if (isset($params['l10Domain'])) {
+	    $domain = $params['l10Domain'];
+	} else {
+	    $domain = $smarty->_tpl_vars['l10Domain'];
+	}
+	$translator =& $gallery->getTranslator();
+	list ($ret, $text) = $translator->translateDomain($domain, $params);
+	if ($ret) {
+	    return '[Translation error]';
+	}
+
+        return '<input type="checkbox" id="' . $params['module'] .
+            '_ChangeInDescendents"	name="' .
+            GalleryUtilities::prefixFormVariable(
+                'form[changeInDescendents][' . $params['module'] . ']' ) .
+            '"/>  <label for="' . $params['module'] . '_ChangeInDescendents"> ' .
+            $text . '</label>';
+    }
+
+    /**
+     * Return a transformed element name, useful when we're trying to use
+     * Javascript to access a form element.
+     *
+     * @param array key => value attributes
+     * @return HTML content
+     */
+    function formVar($params) {
+	return GalleryUtilities::prefixFormVariable($params['var']);
+    }
+
+    /**
+     * Delegate to the appropriate item class to render an image.
+     *
+     * @param array containing item, image, maxSize, fallback, and any img attributes
+     * @param object Smarty the smarty instance
+     * @return string HTML content
+     */
+    function image($params, &$smarty) {
+	/* Ask the entity to render itself in HTML */
+	list ($ret, $item) = GalleryCoreApi::loadEntitiesById($params['item']['id']);
+	if ($ret) {
+	    /* TODO: is there a more graceful way to handle this? */
+	    return '[Render error: missing item]';
+	}
+
+	list ($ret, $entity) = GalleryCoreApi::loadEntitiesById($params['image']['id']);
+	if ($ret) {
+	    /* TODO: is there a more graceful way to handle this? */
+	    return '[Render error: missing entity]';
+	}
+
+	unset($params['item']);
+	unset($params['image']);
+	if (isset($params['fallback'])) {
+	    $fallback = $params['fallback'];
+	} else {
+	    $fallback = $params['fallback'] = null;
+	}
+
+	if ($entity->getId() == $item->getId()) {
+	    $html = $item->render('HTML', $params);
+	} else {
+	    $html = $entity->render('HTML', $item, $params);
+	}
+
+	return !empty($html) ? $html : $fallback;
+    }
+
+    /**
+     * Render head content
+     *
+     * @param array
+     * @param object Smarty the smarty instance
+     * @return string HTML content
+     */
+    function head($params, &$smarty) {
+	global $gallery;
+	$urlGenerator =& $gallery->getUrlGenerator();
+	$templateVars =& $smarty->get_template_vars();
+	$head = $templateVars['head'];
+	$output = array("\n");
+
+	/* Title */
+	if (isset($head['title'])) {
+	    $output[] = '<title>' . $head['title'] . "</title>\n";
+	}
+
+	/* Style */
+	foreach ($head['style'] as $path) {
+	    $output[] = sprintf('<link rel="stylesheet" type="text/css" href="%s"/>' . "\n",
+				$urlGenerator->generateUrl(array('href' => $path)));
+	}
+
+	/* Javascript */
+	if (isset($head['javascript'])) {
+	    foreach ($head['javascript'] as $path) {
+		$output[] = sprintf('<script type="text/javascript" src="%s"></script>' . "\n",
+			$urlGenerator->generateUrl(array('href' => $path)));
+	    }
+	}
+
+	/* Tpl to include. */
+	foreach ($head['tpl'] as $path => $l10Domain) {
+	    /* Guard template vars so that the include doesn't pollute our namespace */
+	    $save = $smarty->_tpl_vars;
+	    $smarty->_smarty_include(
+		array('smarty_include_tpl_file' => "gallery:$path",
+		      'smarty_include_vars' => array('l10Domain' => $l10Domain)));
+	    $smarty->_tpl_vars = $save;
+	}
+
+	/* This should help out users whose browsers are confused about the character set */
+	$output[] = '<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>';
+
+	return implode('', $output);
+    }
+
+    /**
+     * Include our AutoCompletion template.
+     *
+     * @param array params
+     * @param string content
+     * @param object Smarty the smarty instance
+     */
+    function autoComplete($params, $content, &$smarty) {
+	if (!isset($content)) {
+	    if (!isset($this->_callCount['autoComplete'])) {
+		$this->_callCount['autoComplete'] = 0;
+	    }
+	    return;
+	}
+	$url = trim($content);
+
+	/* Guard template vars so that the include doesn't pollute our namespace */
+	$save = $smarty->_tpl_vars;
+	$smarty->_smarty_include(
+	    array('smarty_include_tpl_file' => 'gallery:modules/core/templates/AutoComplete.tpl',
+		  'smarty_include_vars' =>
+			array('element' => $params['element'],
+			      'url' => $url,
+			      'callCount' => ++$this->_callCount['autoComplete'])));
+	$smarty->_tpl_vars = $save;
+    }
+
+    /**
+     * Include form inputs for dimensions.
+     *
+     * @param array params
+     * @param object Smarty the smarty instance
+     */
+    function dimensions($params, &$smarty) {
+	if (!isset($this->_callCount['dimensions'])) {
+	    $this->_callCount['dimensions'] = 0;
+	}
+
+	/* Guard template vars so that the include doesn't pollute our namespace */
+	$save = $smarty->_tpl_vars;
+	$smarty->_smarty_include(
+	    array('smarty_include_tpl_file' => 'gallery:modules/core/templates/Dimensions.tpl',
+		  'smarty_include_vars' => array(
+		      'formVar' => $params['formVar'],
+		      'formVarId' => strtr($params['formVar'], '[]', '__'),
+		      'width' => isset($params['width']) ? $params['width'] : null,
+		      'height' => isset($params['height']) ? $params['height'] : null,
+		      'callCount' => ++$this->_callCount['dimensions'])));
+	$smarty->_tpl_vars = $save;
+    }
+
+    /**
+     * Add hidden form elements to select a default submit button
+     * that is used if enter is pressed in a text input.
+     * Include this before any submit buttons are added to the form.
+     *
+     * @param array params
+     * @param object Smarty the smarty instance
+     */
+    function defaultButton($params, &$smarty) {
+	if (!isset($this->_callCount['defaultButton'])) {
+	    $this->_callCount['defaultButton'] = 0;
+	}
+
+	/* Guard template vars so that the include doesn't pollute our namespace */
+	$save = $smarty->_tpl_vars;
+	$smarty->_smarty_include(
+	    array('smarty_include_tpl_file' => 'gallery:modules/core/templates/DefaultButton.tpl',
+		  'smarty_include_vars' => array(
+		      'name' => $params['name'],
+		      'callCount' => ++$this->_callCount['defaultButton'])));
+	$smarty->_tpl_vars = $save;
+    }
+
+    /**
+     * This takes an array and looks for view, subview, and controller to make
+     * a linkid (being used as a css classname)
+     *
+     * @param array the items to make a css class out of
+     * @return string the id of the css class
+     */
+    function linkId($params) {
+	$linkId = 'gbLink';
+	if (!empty($params['urlParams']['controller'])) {
+	    $linkId .= '-' . $params['urlParams']['controller'];
+	}
+	if (!empty($params['view'])) {
+	    $linkId .= '-' . $params['view'];
+	} elseif (!empty($params['urlParams']['view'])) {
+	    $linkId .= '-' . $params['urlParams']['view'];
+	}
+	if (!empty($params['urlParams']['subView'])) {
+	    $linkId .= '-' . ($subView = $params['urlParams']['subView']);
+	    if (preg_match('{^core\.Item(?:Edit|Move|Delete|CreateLink)(?:Single)?$}', $subView) &&
+		    !empty($params['urlParams']['itemId'])) {
+		/* Append item type for a few subViews, with fallback class without type */
+		list ($ret, $item) =
+		    GalleryCoreApi::loadEntitiesById($params['urlParams']['itemId']);
+		if (!$ret) {
+		    $type = $item->itemTypeName(false);
+		    $fallbackLinkId = $linkId;
+		    $linkId .= '-' . $type[1];
+		}
+	    }
+	}
+	return 'gbAdminLink ' . GalleryTemplateAdapter::_safeCssName($linkId) .
+	    (isset($fallbackLinkId) ?
+	     ' ' . GalleryTemplateAdapter::_safeCssName($fallbackLinkId) : '');
+    }
+
+    /**
+     * This removes unsafe characters from a string so they can be used as a class
+     * name or id in html and be addressed via css
+     *
+     * Purpose:  Removes characters from a string so that it can be used for an
+     * html class name or id and be addressed via css
+     *
+     * @param string the input string
+     * @return string
+     * @access private
+     */
+    function _safeCssName($string) {
+	$string = ereg_replace("[^-A-Za-z0-9_]", "_", $string);
+	$string = ereg_replace('__+', '_', $string);
+	$string = ereg_replace('[-_][-_]+', '-', $string);
+	return $string;
+    }
+
+    function mainDivAttributes($params, &$smarty) {
+	global $gallery;
+
+	$classes = array();
+	$userAgent =
+	    GalleryUtilities::strToLower(GalleryUtilities::getServerVar('HTTP_USER_AGENT'));
+	if (strpos($userAgent, 'safari') !== false) {
+	    $classes[] = 'safari';
+	} else if (strpos($userAgent, 'opera') !== false) {
+	    $classes[] = 'opera';
+	} else if (strpos($userAgent, 'msie') !== false) {
+	    $classes[] = 'IE';
+	} else if (strpos($userAgent, 'gecko/') !== false) {
+	    $classes[] = 'gecko';
+	}
+
+	$translator =& $gallery->getTranslator();
+	if ($translator->isRightToLeft()) {
+	    $classes[] = 'rtl';
+	}
+
+	$classes = empty($classes) ? '' : ' class="' . implode(' ', $classes) . '"';
+	return 'id="gallery"' . $classes;
+    }
+
+    function logoButton($params, &$smarty) {
+	global $gallery;
+	$urlGenerator =& $gallery->getUrlGenerator();
+	list ($ret, $core) = GalleryCoreApi::loadPlugin('module', 'core', true);
+	if ($ret) {
+	    return;
+	}
+
+	list ($ret, $isAdmin) =
+	    GalleryCoreApi::isUserInSiteAdminGroup($smarty->_tpl_vars['theme']['actingUserId']);
+	if ($ret) {
+	    return;
+	}
+	$linkTarget = empty($params['target']) ? '' : (' target="' . $params['target'] . '"');
+
+	switch($params['type']) {
+	case 'gallery2':
+	    $installedVersions = $core->getInstalledVersions();
+	    if (!$isAdmin) {
+		/* Don't show exact patch release to non-admins */
+		$installedVersions['gallery'] =
+		    preg_replace('/^(\d+\.\d+).*$/', '$1', $installedVersions['gallery']);
+	    }
+	    $version = $core->translate(
+		    array('text' => "Gallery %s", 'arg1' => $installedVersions['gallery']));
+	    return '<a href="http://gallery.sourceforge.net"' . $linkTarget . '><img src="' .
+		$urlGenerator->generateUrl(array('href' => 'images/gallery.gif')) .
+		'" alt="' . $version . '" '.
+		'title="' . $version . '" ' .
+		'style="border-style: none" width="80" height="15"/></a>';
+
+	case 'validation':
+	    if (!$isAdmin) {
+		return;
+	    }
+	    if ($gallery->getConfig('allowSessionAccess')) {
+		/* Calculate a URI that we can use for the validation link */
+		$validationUri = $urlGenerator->getCurrentUrl();
+		$session =& $gallery->getSession();
+		if ($session->isUsingCookies()) {
+		    $validationUri = $urlGenerator->appendParamsToUrl(
+			$validationUri, array($session->getKey() => $session->getId()));
+		}
+		$validationUri = sprintf(
+		    'http://validator.w3.org/check?uri=%s&amp;ss=1',
+		    urlencode(str_replace('&amp;', '&', $validationUri)));
+	    } else {
+		$validationUri = sprintf(
+		    'javascript:alert(\'%s\');',
+		    $core->translate(
+			'Validation disabled until you set allowSessionAccess in config.php'));
+	    }
+	    return '<a href="' . $validationUri . '"' . $linkTarget . '><img src="' .
+		$urlGenerator->generateUrl(array('href' => 'images/xhtml10.png')) .
+		'" alt="' . $core->translate('This page is valid XHTML 1.0') .
+		'" title="' . $core->translate('This page is valid XHTML 1.0') .
+		'" style="border-style: none" width="80" height="15"/></a>';
+
+	case 'donate':
+	    if (!$isAdmin) {
+		return;
+	    }
+	    $installedVersions = $core->getInstalledVersions();
+	    return sprintf(
+		    '<a href="%s"%s><img src="%s" alt="%s" title="%s" ' .
+		    'style="border-style: none" width="80" height="15"/></a>',
+		    $urlGenerator->generateUrl(
+			array('href' => 'http://gallery.sourceforge.net/donate.php?donate_tag=' .
+			      $installedVersions['gallery'])),
+		    $linkTarget,
+		    $urlGenerator->generateUrl(array('href' => 'modules/core/data/donate.png')),
+		    $core->translate('Donate to the Gallery project'),
+		    $core->translate('Donate to the Gallery project'));
+
+	case 'gallery2-version':
+	    if (!$isAdmin) {
+		return;
+	    }
+	    return sprintf(
+		'<img src="%s" alt="%s" title="%s" ' .
+		'style="border-style: none" width="80" height="15"/>',
+		$urlGenerator->generateUrl(
+		    array('href' => 'modules/core/data/g21-blackjack.png')),
+		$core->translate('G2.1: Blackjack'),
+		$core->translate('G2.1: Blackjack'));
+	}
+    }
+
+    function debug($params, &$smarty) {
+	global $gallery;
+	$debug = $gallery->getDebug();
+	$profiling = $gallery->isProfiling('sql');
+
+	$buf = '';
+	if ($debug == 'buffered' || $profiling) {
+	    /* don't worry about localizing this -- it's only debug output */
+	    $buf .= '<div id="gpDebug"> <h3> Debug Output </h3>';
+	    if ($debug == 'buffered') {
+		$buf .= $gallery->getDebugBuffer();
+	    }
+
+	    if ($profiling) {
+		$storage =& $gallery->getStorage();
+		$buf .= '<span>' . $storage->getProfilingHtml() . '</span>';
+	    }
+	    $buf .= '</div>';
+	}
+	if ($debug) {
+	    /* Smarty debug console */
+	    GalleryCoreApi::requireOnce('lib/smarty/plugins/function.debug.php');
+	    $buf .= smarty_function_debug($params, $smarty);
+	}
+	return $buf;
+    }
+
+    /**
+     * Perform a theme related function.  Possible parameters are
+     *   include => file to include inside the theme's templates/ dir
+     *   url  => url to a file inside the themes dir
+     *
+     * @params array('include' => ..., 'url' => ...)
+     * @param reference to Smarty
+     */
+    function theme($params, &$smarty) {
+	global $gallery;
+
+	if (isset($params['include'])) {
+	    /* Guard template vars so that the include doesn't pollute our namespace */
+	    $save = $smarty->_tpl_vars;
+	    $smarty->_smarty_include(array(
+		'smarty_include_tpl_file' =>
+		    'gallery:themes/' . $this->_theme->getId(). '/templates/' . $params['include'],
+		'smarty_include_vars' => $params));
+	    $smarty->_tpl_vars = $save;
+	} else if (isset($params['url'])) {
+	    /*
+	     * Use this combo of dirname and '..' in g2Dir to avoid creating paths in the unit
+	     * test that won't be Windows compatible.
+	     */
+	    $g2Dir = dirname(dirname(__FILE__)) . '/../../';
+	    $base = 'themes/' . $this->_theme->getId() . '/';
+	    if (($dirname = dirname($params['url'])) == '.') {
+		$localVersion = 'local/' . $params['url'];
+	    } else {
+		$localVersion = $dirname . '/local/' . basename($params['url']);
+	    }
+	    $platform =& $gallery->getPlatform();
+	    $urlGenerator =& $gallery->getUrlGenerator();
+	    if ($platform->file_exists($g2Dir . $base . $localVersion) &&
+		    $platform->is_readable($g2Dir . $base . $localVersion)) {
+		$target = $localVersion;
+	    } else {
+		$target = $params['url'];
+	    }
+	    return $urlGenerator->generateUrl(array('href' => $base . $target));
+	}
+    }
+
+    /**
+     * Include a module's block into the current smarty page.  The only
+     * required param is 'type' which should be of the form <module>.<blockname>
+     * eg: "core.LoginBlock".  Any other parameters get passed on to the block itself.
+     *
+     * @params array('type' => <block descriptor>, ...)
+     * @param reference to Smarty
+     */
+    function block($params, &$smarty) {
+	list ($module, $file) = explode('.', $params['type']);
+	$class = empty($params['class']) ? '' : ' ' . $params['class'];
+
+	list ($ret, $pluginStatus) = GalleryCoreApi::fetchPluginStatus('module');
+	if ($ret) {
+	    /* What can we do here? */
+	    return '[error fetching blocks]';
+	}
+
+	if (empty($pluginStatus[$module]['active'])) {
+	    return;
+	}
+
+	if (isset($params['params'])) {
+	    $params = $params['params'];
+	}
+
+	$params['class'] = "block-$module-$file$class";
+	$params['l10Domain'] = "modules_$module";
+
+	/* Guard template vars so that the include doesn't pollute our namespace */
+	$save = $smarty->_tpl_vars;
+	$smarty->_smarty_include(
+	    array('smarty_include_tpl_file' => "gallery:modules/$module/templates/blocks/$file.tpl",
+		  'smarty_include_vars' => $params));
+	$smarty->_tpl_vars = $save;
+    }
+
+    /**
+     * Include a module's container into the current smarty page.  The only
+     * required param is 'type' which should be of the form <module>.<blockname>
+     * eg: "core.LoginBlock".  Any other parameters get passed on to the block itself.
+     *
+     * This is like block() except it wraps actual content.
+     *
+     * @params array('type' => <block descriptor>, ...)
+     * @param reference to Smarty
+     */
+    function container($params, $content, &$smarty) {
+	if (!isset($content)) {
+	    return;
+	}
+
+	list ($module, $file) = explode('.', $params['type']);
+	/* Guard template vars so that the include doesn't pollute our namespace */
+	$save = $smarty->_tpl_vars;
+	$smarty->_smarty_include(
+	    array('smarty_include_tpl_file' =>
+		  "gallery:modules/$module/templates/containers/$file.tpl",
+		  'smarty_include_vars' => array_merge(array('content' => $content),
+						       $params)));
+	$smarty->_tpl_vars = $save;
+    }
+
+    /**
+     * Call back to a module to get it to preload some data for the template. The only required
+     * param is 'type' which should be of the form <module>.<blockname> eg: "core.LoginBlock".
+     * Any other parameters get passed on to the block itself.
+     *
+     * @params array('type' => <block descriptor>, ...)
+     * @param reference to Smarty
+     */
+    function callback($params, &$smarty) {
+	list ($module, $file) = explode('.', $params['type']);
+	GalleryCoreApi::requireOnce("modules/$module/Callbacks.inc");
+
+	$userId = $smarty->_tpl_vars['theme']['actingUserId'];
+	$className = "${module}Callbacks";
+	$class = new $className;
+	$ret = $class->callback($params, $smarty, $file, $userId);
+	if ($ret) {
+	    /* What can we do with this error? */
+	    global $gallery;
+	    $gallery->debug("Error performing $params[type] callback");
+	    $gallery->debug($ret->getAsHtml());
+	}
+    }
+
+    /**
+     * Add the content to our trailer block
+     *
+     * @param array
+     * @param string content
+     * @param object Smarty the smarty instance
+     * @return string HTML content
+     */
+    function addToTrailer($params, $content, &$smarty) {
+	if (!isset($content)) {
+	    return;
+	}
+	$this->_trailer .= $content;
+    }
+
+    /**
+     * Register a callback function to be executed when we run the trailer.
+     *
+     * @param array of arguments suitable to be used as an input for call_user_func()
+     */
+    function registerTrailerCallback($callback, $args) {
+	$this->_trailerCallbacks[] = array('function' => $callback, 'args' => $args);
+    }
+
+    function trailer($params, &$smarty) {
+	print $this->_trailer;
+
+	foreach ($this->_trailerCallbacks as $callback) {
+	    $ret = call_user_func_array($callback['function'], $callback['args']);
+	    if (is_array($ret)) {
+		$ret = $ret[0];
+	    }
+	}
+    }
+
+    /**
+     * Use GalleryUtilities::shrinkDimensionsToFit to scale template vars to new target size.
+     *
+     * @param array args; should contain widthVar, heightVar, maxSize keys
+     */
+    function shrinkDimensions($params, &$smarty) {
+	if (!isset($params['widthVar']) || !isset($params['heightVar']) ||
+		!isset($params['maxSize'])) {
+	    return;
+	}
+	$widthVar = $params['widthVar'];
+	$heightVar = $params['heightVar'];
+	if (!isset($smarty->_tpl_vars[$widthVar]) || !isset($smarty->_tpl_vars[$heightVar])) {
+	    return;
+	}
+	list ($smarty->_tpl_vars[$widthVar], $smarty->_tpl_vars[$heightVar]) =
+	    GalleryUtilities::shrinkDimensionsToFit(
+		$smarty->_tpl_vars[$widthVar], $smarty->_tpl_vars[$heightVar], $params['maxSize']);
+    }
+
+    function updateProgressBar($title, $description, $percentComplete) {
+	static $coreModule;
+	if (!isset($coreModule)) {
+	    list ($ret, $coreModule) = GalleryCoreApi::loadPlugin('module', 'core');
+	    if ($ret) {
+		return $ret->wrap(__FILE__, __LINE__);
+	    }
+	}
+
+	if (empty($this->_progressBarStats)) {
+	    $this->_progressBarStats['startTime'] = time();
+	}
+
+	/*
+	 * Calculate the time remaining
+	 *
+	 * TODO: Use a weighted measurement to provide a balanced estimate.  Consider the case
+	 * where the first 50% goes really quickly and the second 50% goes really slowly; the
+	 * estimate will be wildly inaccurate at the transition.
+	 */
+	if ($percentComplete > 0 &&
+		$percentComplete < 1 && time() > $this->_progressBarStats['startTime']) {
+	    $elapsed = (int)(time() - $this->_progressBarStats['startTime']);
+	    $timeRemaining = ($elapsed / $percentComplete) - $elapsed;
+	    $timeRemaining = $coreModule->translate(
+		array('text' => 'Estimated time remaining: %d:%02d',
+		      'arg1' => (int)($timeRemaining / 60),
+		      'arg2' => $timeRemaining % 60));
+	} else {
+	    $timeRemaining = '';
+	}
+
+	/* it is possible to not have this function compiled into php */
+	$memoryUsed = (function_exists('memory_get_usage')) ? memory_get_usage() : 0;
+
+	/* A disabled memory_limit is -1, 0 crashes php */
+	$memoryTotal = (0 < ini_get('memory_limit')) ? ini_get('memory_limit') : 0;
+
+	/*
+	 * Ensure that percentComplete is in a dotted-decimal format.  Since
+	 * the immediateView is dealing in percentages, anything beyond two decimal
+	 * places is unnecessary.
+	 */
+	$percentComplete = GalleryUtilities::roundToString($percentComplete, 2);
+
+	$memoryInfo = $coreModule->translate(
+	    array('text' => 'Memory used: %s, total: %s',
+		  'arg1' => $memoryUsed,
+		  'arg2' => $memoryTotal));
+	printf('<script type="text/javascript">' .
+	       'updateProgressBar("%s", "%s", "%s", "%s", "%s");</script>',
+	       $title, $description, $percentComplete, $timeRemaining, $memoryInfo);
+	flush();
+	return null;
+    }
+
+    function resetProgressBarStats() {
+	$this->_progressBarStats = array();
+    }
+
+    function errorProgressBar($status) {
+	printf('<script type="text/javascript">errorProgressBar("%s");</script>',
+	       $status->getAsHtml());
+    }
+
+    function completeProgressBar($continueUrl) {
+	$continueUrl = str_replace('&amp;', '&', $continueUrl);
+	printf('<script type="text/javascript">completeProgressBar("%s");</script>', $continueUrl);
+    }
+}
+?>

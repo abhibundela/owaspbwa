@@ -1,0 +1,700 @@
+<?php
+/*
+ * $RCSfile: GalleryChildEntityHelper_simple.class,v $
+ *
+ * Gallery - a web based photo album viewer and editor
+ * Copyright (C) 2000-2006 Bharat Mediratta
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or (at
+ * your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+/**
+ * @version $Revision: 1.41 $ $Date: 2006/01/13 03:39:31 $
+ * @package GalleryCore
+ * @author Ernesto Baschny <ernst@baschny.de>
+ */
+
+/**
+ * Helper class for GalleryChildEntities
+ *
+ * @package GalleryCore
+ * @subpackage Helpers
+ * @abstract
+ */
+class GalleryChildEntityHelper_simple {
+
+    /**
+     * Return the ids of all the child items of the given item that have the
+     * matching permission.  Useful for, example, for finding all the children
+     * where we (the active user) has the 'core.changePermissions' permission
+     * bit set.  This allows us to cascade permission updates.
+     *
+     * @param array item ids
+     * @param int permission id
+     * @return array object GalleryStatus a status code
+     *               array integer ids
+     * @access public
+     * @static
+     */
+    function fetchChildItemIdsWithPermission($itemId, $permissionId) {
+	list ($ret, $item) = GalleryCoreApi::loadEntitiesById($itemId);
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	if ($item->getCanContainChildren()) {
+	    list ($ret, $ids) = GalleryChildEntityHelper_simple::_fetchChildItemIds(
+		$item, null, null, 'GalleryItem', $permissionId, false, null);
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+	} else {
+	    $ids = array();
+	}
+
+	return array(null, $ids);
+    }
+
+    /**
+     * Return the ids of all the child items of the given item that have the
+     * matching permission and are linkable entities.  Useful for, example, for
+     * finding all the children where we (the active user) has the 'core.changePermissions'
+     * permission bit set.  This allows us to cascade permission updates.
+     *
+     * @param array item ids
+     * @param int permission id
+     * @return array object GalleryStatus a status code
+     *               array integer ids
+     * @access public
+     * @static
+     */
+    function fetchLinkableChildItemIdsWithPermission($itemId, $permissionId) {
+	list ($ret, $item) = GalleryCoreApi::loadEntitiesById($itemId);
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	if ($item->getCanContainChildren()) {
+	    list ($ret, $ids) = GalleryChildEntityHelper_simple::_fetchChildItemIds(
+		$item, null, null, 'GalleryItem', $permissionId, true, null);
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+	} else {
+	    $ids = array();
+	}
+
+	return array(null, $ids);
+    }
+
+    /**
+     * Return the ids of the children of this entity, in the order specified
+     * by the orderBy field and the direction specified by the orderDirection
+     * field, that are visible to the given user.
+     *
+     * @param object GalleryItem an item
+     * @param int where to start
+     * @param int how many to return
+     * @param int optional user id.  Defaults to current user id
+     * @return array object GalleryStatus a status code
+     *               array integer ids
+     * @access public
+     * @static
+     */
+    function fetchChildItemIds($item, $offset=null, $count=null, $userId=null) {
+	list ($ret, $ids) = GalleryChildEntityHelper_simple::_fetchChildItemIds(
+	    $item, $offset, $count, 'GalleryItem', null, false, $userId);
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+	return array(null, $ids);
+    }
+
+    /**
+     * Return the ids of the dataitem children of this entity, in the order specified
+     * by the orderBy field and the direction specified by the orderDirection
+     * field, that are visible to the given user.
+     *
+     * @param object GalleryItem an item
+     * @param int where to start
+     * @param int how many to return
+     * @param int optional user id.  Defaults to current user id
+     * @return array object GalleryStatus a status code
+     *               array integer ids
+     * @access public
+     * @static
+     */
+    function fetchChildDataItemIds($item, $offset=null, $count=null, $userId=null) {
+	list ($ret, $ids) = GalleryChildEntityHelper_simple::_fetchChildItemIds(
+	    $item, $offset, $count, 'GalleryDataItem', null, false, $userId);
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+	return array(null, $ids);
+    }
+
+    /**
+     * Return the ids of the subalbums of this entity, in the order specified
+     * by the orderBy field and the direction specified by the orderDirection
+     * field, that are visible to the given user.
+     *
+     * @param object GalleryItem an item
+     * @param int where to start
+     * @param int how many to return
+     * @param int optional user id.  Defaults to current user id
+     * @return array object GalleryStatus a status code
+     *               array integer ids
+     * @access public
+     * @static
+     */
+    function fetchChildAlbumItemIds($item, $offset=null, $count=null, $userId=null) {
+	list ($ret, $ids) = GalleryChildEntityHelper_simple::_fetchChildItemIds(
+	    $item, $offset, $count, 'GalleryAlbumItem', null, false, $userId);
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+	return array(null, $ids);
+    }
+
+    /**
+     * Return the ids of the children of this entity, in the order specified
+     * by the orderBy field and the direction specified by the orderDirection
+     * field, bypassing user permissions.
+     *
+     * @param object GalleryItem an item
+     * @param int where to start
+     * @param int how many to return
+     * @return array object GalleryStatus a status code
+     *               array integer ids
+     * @access public
+     * @static
+     */
+    function fetchChildItemIdsIgnorePermissions($item, $offset=null, $count=null) {
+	list ($ret, $ids) = GalleryChildEntityHelper_simple::_fetchChildItemIds(
+	    $item, $offset, $count, 'GalleryItem', null, false, null);
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+	return array(null, $ids);
+    }
+
+    /**
+     * Helper function for getting child ids.  This method has gotten a little
+     * bit out of control, but it's got reasonably good unit tests so it's ripe
+     * for a refactor.
+     *
+     * @param object GalleryItem an item
+     * @param int an offset into the child item list (null for no offset)
+     * @param int a count of how many child items to return (null for unlimited)
+     * @param string a class to restrict children to (eg 'GalleryAlbumItem')
+     * @param string a required permission (defaults to 'core.view')
+     * @param boolean whether to restrict to linkable items only
+     * @param int the userid we're doing this for (defaults to active user id)
+     *
+     * @access private
+     */
+    function _fetchChildItemIds($item, $offset, $count, $class,
+				$requiredPermission, $linkableOnly, $userId) {
+	global $gallery;
+	$storage =& $gallery->getStorage();
+	if (!isset($requiredPermission)) {
+	    $requiredPermission = 'core.view';
+	}
+	if (!isset($userId)) {
+	    $userId = $gallery->getActiveUserId();
+	}
+
+	if (!GalleryUtilities::isA($item, 'GalleryItem')) {
+	    return array(GalleryCoreApi::error(ERROR_BAD_PARAMETER, __FILE__, __LINE__), null);
+	}
+
+	/* List of classes that we will need */
+	$classes = array('[GalleryChildEntity]', "[$class]");
+
+	if ($requiredPermission) {
+	    list ($ret, $aclIds) =
+		GalleryCoreApi::fetchAccessListIds($requiredPermission, $userId);
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+	    $aclMarkers = GalleryUtilities::makeMarkers(count($aclIds));
+	    $classes[] = '[GalleryAccessSubscriberMap]';
+
+	    if (empty($aclIds)) {
+		return array(null, array());
+	    }
+	}
+
+	if ($linkableOnly) {
+	    $classes[] = '[GalleryEntity]';
+	}
+
+	list ($ret, $orderBy, $orderColumn, $extraWhere, $extraJoin) =
+	    GalleryChildEntityHelper_simple::_getOrderInfo(
+		$item->getOrderBy(), $item->getOrderDirection());
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+	$extraIds = 0;
+
+	if (!empty($extraWhere)) {
+	    $extraIds = substr_count($extraWhere, '?');
+	    $extraWhere = 'AND ' . $extraWhere;
+
+	    list ($ret, $orderClasses) = $storage->extractClasses($extraWhere);
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+	    $classes = array_unique(array_merge($classes, $orderClasses));
+	}
+
+	if (!empty($orderBy)) {
+	    $orderClause = $orderBy . ', ';
+
+	    /* Postgres requires the order by column to be in the select list.. */
+	    $selectExtra = !empty($orderColumn) ? (', ' . $orderColumn) : '';
+	} else {
+	    $orderClause = $selectExtra = '';
+	}
+
+
+	if (!empty($extraJoin)) {
+	    /*
+	     * $extraJoin can contain classes also.  If it does, we should
+	     * remove them from $classes so that they're not in the FROM
+	     * clause twice.
+	     */
+	    $classes = array_flip($classes);
+	    foreach ($classes as $key => $unused) {
+		if (strstr($extraJoin, $key) !== false) {
+		    unset($classes[$key]);
+		}
+	    }
+	    $classes = array_flip($classes);
+	    $classes[] = $extraJoin;
+	}
+
+	/* Prepare the query */
+	$query = '
+	SELECT
+	  [GalleryChildEntity::id] ' . $selectExtra . '
+	FROM
+	  ' . join(', ', $classes) . '
+	WHERE
+	  [GalleryChildEntity::parentId] = ?
+	  AND
+	  [GalleryChildEntity::id] = [' . $class . '::id]
+	';
+
+	if ($linkableOnly) {
+	    $query .= ' AND [GalleryChildEntity::id] = [GalleryEntity::id] ';
+	}
+
+	if ($requiredPermission) {
+	    if ($linkableOnly) {
+		$query .= ' AND [GalleryEntity::isLinkable] = 1 ';
+	    }
+
+	    $query .= '
+	     AND
+	     [GalleryAccessSubscriberMap::itemId] = [GalleryChildEntity::id]
+	     AND
+	     [GalleryAccessSubscriberMap::accessListId] IN (' . $aclMarkers . ')
+	    ';
+	}
+
+	/* Add additional sort by id to ensure a consistent order (if selected sort has ties) */
+	$query .= $extraWhere . ' ORDER BY ' . $orderClause . '[GalleryChildEntity::id]';
+
+	$data[] = $item->getId();
+	if ($requiredPermission) {
+	    $data = array_merge($data, $aclIds);
+	}
+	for ($i = 0; $i < $extraIds; $i++) {
+	    /* add the data for $orderWhere's extra ?'s */
+	    $data[] = $item->getId();
+	}
+	$options = array();
+	$options['limit'] = array('count' => $count, 'offset' => $offset);
+	if ($gallery->getDebug()) {
+	    $gallery->debug_r($options);
+	}
+
+	list ($ret, $searchResults) = $gallery->search($query, $data, $options);
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	$ids = array();
+	while ($result = $searchResults->nextResult()) {
+	    $ids[] = (int)$result[0];
+	}
+
+	return array(null, $ids);
+    }
+
+    /**
+     * Load all the ancestors of this item
+     *
+     * @param object GalleryItem an item
+     * @param string (optional) only return ancestors with this permission
+     * @return array object GalleryStatus a status code
+     *               array of GalleryItem, from top level to parent item
+     * @static
+     */
+    function fetchParents($item, $permission=null) {
+	global $gallery;
+
+	if (GalleryUtilities::isA($item, 'GalleryAlbumItem')) {
+	    list ($ret, $parentIds) = GalleryCoreApi::fetchParentSequence($item->getId());
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+	} else {
+	    list ($ret, $parentIds) = GalleryCoreApi::fetchParentSequence($item->getParentId());
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+	    array_push($parentIds, $item->getParentId());
+	}
+	if (empty($parentIds)) {
+	    return array(null, array());
+	}
+
+	if (isset($permission)) {
+	    $ret = GalleryCoreApi::studyPermissions($parentIds);
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+	    foreach ($parentIds as $i => $id) {
+		list ($ret, $hasPermission) = GalleryCoreApi::hasItemPermission($id, $permission);
+		if ($ret) {
+		    return array($ret->wrap(__FILE__, __LINE__), null);
+		}
+		if (!$hasPermission) {
+		    unset($parentIds[$i]);
+		}
+	    }
+	    if (empty($parentIds)) {
+		return array(null, array());
+	    }
+	}
+
+	list ($ret, $parents) = GalleryCoreApi::loadEntitiesById($parentIds);
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	return array(null, $parents);
+    }
+
+    /**
+     * Helper function for getting descendent ids.
+     *
+     * @param object GalleryItem an item
+     * @param int an offset into the child item list (null for no offset)
+     * @param int a count of how many child items to return (null for unlimited)
+     * @param string a class to restrict children to (eg 'GalleryAlbumItem')
+     * @param string a required permission (defaults to 'core.view')
+     *
+     * @access private
+     */
+    function _fetchDescendentItemIds($item, $offset, $count, $class, $requiredPermission) {
+	global $gallery;
+	$storage =& $gallery->getStorage();
+
+	if (!GalleryUtilities::isA($item, 'GalleryItem')) {
+	    return array(GalleryCoreApi::error(ERROR_BAD_PARAMETER, __FILE__, __LINE__), null);
+	}
+
+	list ($ret, $sequence) = GalleryCoreApi::fetchParentSequence($item->getId());
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+	$sequence = join('/', $sequence);
+	if (!empty($sequence)) {
+	    $sequence .= '/';
+	}
+	$sequence .= $item->getId() . '/%';
+
+	if ($requiredPermission) {
+	    list ($ret, $aclIds) = GalleryCoreApi::fetchAccessListIds($requiredPermission,
+								      $gallery->getActiveUserId());
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null);
+	    }
+	    $aclMarkers = GalleryUtilities::makeMarkers(count($aclIds));
+
+	    if (empty($aclIds)) {
+		return array(null, array());
+	    }
+	}
+
+	$data[] = $sequence;
+	/* Prepare the query */
+	if ($requiredPermission) {
+	    $query = '
+	    SELECT
+	      [GalleryItemAttributesMap::itemId]
+	    FROM
+	      [GalleryItemAttributesMap], [GalleryAccessSubscriberMap], [' . $class . ']
+	    WHERE
+	      [GalleryItemAttributesMap::parentSequence] LIKE ?
+	     AND
+              [GalleryItemAttributesMap::itemId] = [' . $class . '::id]
+	     AND
+	     [GalleryAccessSubscriberMap::itemId] = [GalleryItemAttributesMap::itemId]
+	     AND
+	     [GalleryAccessSubscriberMap::accessListId] IN (' . $aclMarkers . ')
+	    ';
+	    $data = array_merge($data, $aclIds);
+	} else {
+	    $query = '
+	    SELECT
+	      [GalleryItemAttributesMap::itemId]
+	    FROM
+	      [GalleryItemAttributesMap], [' . $class . ']
+	    WHERE
+	      [GalleryItemAttributesMap::parentSequence] LIKE ?
+             AND
+              [GalleryItemAttributesMap::itemId] = [' . $class . '::id]
+	    ';
+	}
+
+	$options = array();
+	$options['limit'] = array('count' => $count, 'offset' => $offset);
+
+	list ($ret, $searchResults) = $gallery->search($query, $data, $options);
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+
+	$ids = array();
+	while ($result = $searchResults->nextResult()) {
+	    $ids[] = (int)$result[0];
+	}
+
+	return array(null, $ids);
+    }
+
+    /**
+     * Return the ids of the descendents of this entity that are visible to the given user.
+     *
+     * @param object GalleryItem an item
+     * @param int where to start
+     * @param int how many to return
+     * @param string what permission is required for the item
+     * @return array object GalleryStatus a status code
+     *               array integer ids
+     * @access public
+     * @static
+     */
+    function fetchDescendentItemIds($item, $offset, $count, $requiredPermission) {
+	list ($ret, $ids) = GalleryChildEntityHelper_simple::_fetchDescendentItemIds(
+	    $item, $offset, $count, 'GalleryItem', $requiredPermission);
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+	return array(null, $ids);
+    }
+
+    /**
+     * Return the ids of the album descendents of this entity that are visible to the given user.
+     *
+     * @param object GalleryItem an item
+     * @param int where to start
+     * @param int how many to return
+     * @param string what permission is required for the item
+     * @return array object GalleryStatus a status code
+     *               array integer ids
+     * @access public
+     * @static
+     */
+    function fetchDescendentAlbumItemIds($item, $offset, $count, $requiredPermission) {
+	list ($ret, $ids) = GalleryChildEntityHelper_simple::_fetchDescendentItemIds(
+	    $item, $offset, $count, 'GalleryAlbumItem', $requiredPermission);
+	if ($ret) {
+	    return array($ret->wrap(__FILE__, __LINE__), null);
+	}
+	return array(null, $ids);
+    }
+    
+    /**
+     * If we want to sort, which storage info we need?
+     *
+     * This will return the ORDER BY clause to sort the items and a
+     * condition that we need to add to the fetching query. To join with
+     * a new table, the [GalleryChildEntity::id] will contain the current
+     * ID. Eventually another table mentioned in the condition will have to
+     * be included too, the calling function has to decide that (using
+     * GalleryStorage::extractClasses())
+     *
+     * @param string orderBy (null/empty to use site default for both parameters)
+     * @param string orderDirection
+     * @return array object GalleryStatus a status code
+     *               string order by clause, string select clause,
+     *               string a row matching condition,
+     *               string optional join clause
+     * @access private
+     * @static
+     */
+    function _getOrderInfo($orderBy, $orderDirection) {
+	global $gallery;
+	$storage =& $gallery->getStorage();
+
+	/*
+	 * Don't simply plug getOrderBy into the SQL clause, or we could open
+	 * the door for SQL injection.
+	 */
+	if (empty($orderBy)) {
+	    list ($ret, $orderBy) =
+		GalleryCoreApi::getPluginParameter('module', 'core', 'default.orderBy');
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null, null, null, null);
+	    }
+	    list ($ret, $orderDirection) =
+		GalleryCoreApi::getPluginParameter('module', 'core', 'default.orderDirection');
+	    if ($ret) {
+		return array($ret->wrap(__FILE__, __LINE__), null, null, null, null);
+	    }
+	}
+
+	$directionList = explode('|', $orderDirection);
+	$direction = '';
+	$order = $select = $condition = $join = array();
+	foreach (explode('|', $orderBy) as $orderType) {
+	    if (!empty($directionList)) {
+		$direction = (array_shift($directionList) == ORDER_DESCENDING) ? ' DESC' : '';
+	    }
+
+	    $column = null;
+	    switch ($orderType) {
+	    case 'id':
+		/* We always add a sort by id, see _fetchChildItemIds */
+		break;
+
+	    case 'title':
+		$column = '[GalleryItem::title]';
+		$condition[] = '[GalleryItem::id] = [GalleryChildEntity::id]';
+		break;
+
+	    case 'summary':
+		$column = '[GalleryItem::summary]';
+		$condition[] = '[GalleryItem::id] = [GalleryChildEntity::id]';
+		break;
+
+	    case 'creationTimestamp':
+		$column = '[GalleryEntity::creationTimestamp]';
+		$condition[] = '[GalleryEntity::id] = [GalleryChildEntity::id]';
+		break;
+
+	    case 'modificationTimestamp':
+		$column = '[GalleryEntity::modificationTimestamp]';
+		$condition[] = '[GalleryEntity::id] = [GalleryChildEntity::id]';
+		break;
+
+	    case 'description':
+		$column = '[GalleryItem::description]';
+		$condition[] = '[GalleryItem::id] = [GalleryChildEntity::id]';
+		break;
+
+	    case 'keywords':
+		$column = '[GalleryItem::keywords]';
+		$condition[] = '[GalleryItem::id] = [GalleryChildEntity::id]';
+		break;
+
+	    case 'pathComponent':
+		$column = '[GalleryFileSystemEntity::pathComponent]';
+		$condition[] = '[GalleryFileSystemEntity::id] = [GalleryChildEntity::id]';
+		break;
+
+	    case 'viewCount':
+		$column = '[GalleryItemAttributesMap::viewCount]';
+		$condition[] = '[GalleryItemAttributesMap::itemId] = [GalleryChildEntity::id]';
+		break;
+
+	    case 'viewedFirst':
+		$order[] = '[GalleryItemAttributesMap::viewCount] DESC';
+		$select[] = '[GalleryItemAttributesMap::viewCount]';
+		$condition[] = '[GalleryItemAttributesMap::itemId] = [GalleryChildEntity::id]';
+		break;
+
+	    case 'orderWeight':
+		$order[] = '[GalleryItemAttributesMap::orderWeight]';
+		$select[] = '[GalleryItemAttributesMap::orderWeight]';
+		$condition[] = '[GalleryItemAttributesMap::itemId] = [GalleryChildEntity::id]';
+		break;
+
+	    case 'originationTimestamp':
+		$column = '[GalleryItem::originationTimestamp]';
+		$condition[] = '[GalleryItem::id] = [GalleryChildEntity::id]';
+		break;
+
+	    case 'random':
+		list($ret, $order[]) = $storage->getFunctionSql('RAND', array());
+		if ($ret) {
+		    return array($ret->wrap(__FILE__, __LINE__), null, null, null, null);
+		}
+		break;
+
+	    case 'albumsFirst':
+		list ($ret, $case) = $storage->getFunctionSql('CASE',
+		    array('[GalleryAlbumItem::id] IS NULL', '1', '0'));
+		if ($ret) {
+		    return array($ret->wrap(__FILE__, __LINE__), null, null, null, null);
+		}
+		$join[] = '[GalleryChildEntity] LEFT JOIN [GalleryAlbumItem] ON ' .
+		    '[GalleryChildEntity::id] = [GalleryAlbumItem::id]';
+		$select[] = $case;
+		$order[] = 2 + count($order);
+		break;
+
+	    default:
+		list ($ret, $sort) =
+		    GalleryCoreApi::newFactoryInstanceById('GallerySortInterface_1_1', $orderType);
+		if ($ret) {
+		    return array($ret->wrap(__FILE__, __LINE__), null, null, null, null);
+		}
+		if (!isset($sort)) {
+		    return array(GalleryCoreApi::error(ERROR_MISSING_OBJECT, __FILE__, __LINE__,
+						      $orderType), null, null, null, null);
+		}
+		list ($ret, $orderClause, $select[], $conditionClause, $joinClause) =
+		    $sort->getSortOrder($direction);
+		if ($ret) {
+		    return array($ret->wrap(__FILE__, __LINE__), null, null, null, null);
+		}
+
+		for ($i = 1; $i <= 3; $i++) {
+		    $orderClause = preg_replace("{%$i%}", $i + 1 + count($order), $orderClause);
+		}
+		$order[] = $orderClause;
+		if (!empty($conditionClause)) {
+		    $condition[] = $conditionClause;
+		}
+		if (!empty($joinClause)) {
+		    $join[] = $joinClause;
+		}
+	    }
+	    if (isset($column)) {
+		$order[] = $column . $direction;
+		$select[] = $column;
+	    }
+	}
+
+	return array(null, implode(', ', $order),
+		     implode(', ', $select), implode(' AND ', $condition), implode(' ', $join));
+    }
+}
+?>

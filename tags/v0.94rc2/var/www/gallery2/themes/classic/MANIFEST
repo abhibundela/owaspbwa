@@ -1,0 +1,174 @@
+# File crc32 crc32(crlf) size size(crlf)  or  R File
+themes/classic/images/groupinfo.png	3454340450	3454340450	1212	1212
+themes/classic/images/icon_path_separator.gif	2372364410	2372364410	106	106
+themes/classic/images/key7-16-bw.gif	835001704	835001704	977	977
+themes/classic/images/nav_first.gif	4217739406	4217739406	89	89
+themes/classic/images/nav_last.gif	724208	724208	92	92
+themes/classic/images/nav_next.gif	4159809014	4159809014	133	133
+themes/classic/images/nav_prev.gif	535899905	535899905	133	133
+themes/classic/images/tab_bg.gif	1149837965	1149837965	99	99
+themes/classic/images/tab_left.jpg	2309735622	2309735622	504	504
+themes/classic/images/tab_left_on.jpg	169003488	169003488	518	518
+themes/classic/images/tab_right.jpg	1387992763	1387992763	1810	1810
+themes/classic/images/tab_right_on.jpg	1154125539	1154125539	1741	1741
+themes/classic/images/userinfo.png	3326153604	3326153604	935	935
+themes/classic/locale/af/LC_MESSAGES/themes_classic.mo	4181853017	4181853017	1445	1445
+themes/classic/locale/cs/LC_MESSAGES/themes_classic.mo	2797538604	2797538604	1577	1577
+themes/classic/locale/da/LC_MESSAGES/themes_classic.mo	2673217272	2673217272	1512	1512
+themes/classic/locale/de/LC_MESSAGES/themes_classic.mo	1277735291	1277735291	1670	1670
+themes/classic/locale/el/LC_MESSAGES/themes_classic.mo	1590833208	1590833208	434	434
+themes/classic/locale/en_GB/LC_MESSAGES/themes_classic.mo	1579924950	1579924950	444	444
+themes/classic/locale/es/LC_MESSAGES/themes_classic.mo	1854047354	1854047354	1635	1635
+themes/classic/locale/es_AR/LC_MESSAGES/themes_classic.mo	63936062	63936062	544	544
+themes/classic/locale/es_MX/LC_MESSAGES/themes_classic.mo	1469932196	1469932196	876	876
+themes/classic/locale/eu/LC_MESSAGES/themes_classic.mo	3943899019	3943899019	1614	1614
+themes/classic/locale/fi/LC_MESSAGES/themes_classic.mo	3030155914	3030155914	1525	1525
+themes/classic/locale/fr/LC_MESSAGES/themes_classic.mo	388196300	388196300	1700	1700
+themes/classic/locale/ga/LC_MESSAGES/themes_classic.mo	2723817994	2723817994	869	869
+themes/classic/locale/he/LC_MESSAGES/themes_classic.mo	4177327056	4177327056	703	703
+themes/classic/locale/hu/LC_MESSAGES/themes_classic.mo	326590303	326590303	632	632
+themes/classic/locale/is/LC_MESSAGES/themes_classic.mo	762185873	762185873	465	465
+themes/classic/locale/it/LC_MESSAGES/themes_classic.mo	4099249217	4099249217	1600	1600
+themes/classic/locale/ja/LC_MESSAGES/themes_classic.mo	1348920754	1348920754	1685	1685
+themes/classic/locale/nl/LC_MESSAGES/themes_classic.mo	248236277	248236277	1416	1416
+themes/classic/locale/no/LC_MESSAGES/themes_classic.mo	2420363789	2420363789	1519	1519
+themes/classic/locale/pl/LC_MESSAGES/themes_classic.mo	2439612645	2439612645	1554	1554
+themes/classic/locale/pt/LC_MESSAGES/themes_classic.mo	3852269811	3852269811	511	511
+themes/classic/locale/pt_BR/LC_MESSAGES/themes_classic.mo	1282356116	1282356116	700	700
+themes/classic/locale/ru/LC_MESSAGES/themes_classic.mo	2463883282	2463883282	2132	2132
+themes/classic/locale/sr/LC_MESSAGES/themes_classic.mo	3743430324	3743430324	1556	1556
+themes/classic/locale/sv/LC_MESSAGES/themes_classic.mo	2689343795	2689343795	1617	1617
+themes/classic/locale/tr/LC_MESSAGES/themes_classic.mo	3660394497	3660394497	1560	1560
+themes/classic/locale/vi/LC_MESSAGES/themes_classic.mo	767396425	767396425	1655	1655
+themes/classic/locale/zh_CN/LC_MESSAGES/themes_classic.mo	4009480097	4009480097	1517	1517
+themes/classic/locale/zh_TW/LC_MESSAGES/themes_classic.mo	856796825	856796825	1515	1515
+themes/classic/po/GNUmakefile	1866879166	2808215985	98	103
+themes/classic/po/af.po	1634084879	4049714567	2392	2474
+themes/classic/po/cs.po	520773246	1252285023	2470	2553
+themes/classic/po/da.po	3547184768	1957892777	2402	2484
+themes/classic/po/de.po	1914604845	3424263846	2797	2888
+themes/classic/po/el.po	3574585	145397784	2182	2265
+themes/classic/po/en_GB.po	2649864573	1417691928	2014	2094
+themes/classic/po/es.po	3544647450	2181849645	2604	2688
+themes/classic/po/es_AR.po	2671370012	118890029	2049	2130
+themes/classic/po/es_MX.po	3465073380	3469784167	2223	2306
+themes/classic/po/eu.po	2341956778	2133359721	2513	2597
+themes/classic/po/fi.po	474929230	3112883863	2491	2575
+themes/classic/po/fr.po	3166153742	1807755162	2557	2640
+themes/classic/po/ga.po	1951641284	2469851496	2932	3035
+themes/classic/po/he.po	82078976	1088656976	2173	2255
+themes/classic/po/hu.po	2005612964	3283801643	2153	2238
+themes/classic/po/is.po	242767171	3890398703	2038	2120
+themes/classic/po/it.po	3096664541	3060298888	2530	2614
+themes/classic/po/ja.po	481047675	1270290770	2595	2676
+themes/classic/po/nl.po	2939136293	3952312570	2507	2591
+themes/classic/po/no.po	45330306	3530751014	2556	2641
+themes/classic/po/pl.po	63829313	700907236	2478	2561
+themes/classic/po/pt.po	40164098	2797001029	2108	2190
+themes/classic/po/pt_BR.po	1549067692	4000466536	2168	2250
+themes/classic/po/ru.po	1740364211	2788825130	3112	3200
+themes/classic/po/sr.po	3605352866	3123729223	2445	2527
+themes/classic/po/strings.raw	391589228	2684009803	735	762
+themes/classic/po/sv.po	3189514912	2699824974	2880	2973
+themes/classic/po/tr.po	1802979098	41172456	2415	2497
+themes/classic/po/vi.po	1409145519	1872356233	2540	2621
+themes/classic/po/zh_CN.po	3111835428	512800123	2375	2458
+themes/classic/po/zh_TW.po	2398890069	725891217	2404	2486
+themes/classic/templates/admin.tpl	4288823331	324839163	357	364
+themes/classic/templates/album.tpl	3549308913	1316674509	6780	6976
+themes/classic/templates/error.tpl	1345384283	2769574142	988	1017
+themes/classic/templates/module.tpl	3730582525	968869947	606	625
+themes/classic/templates/photo.tpl	3684761813	3965521683	3766	3872
+themes/classic/templates/progressbar.tpl	1915159928	4220802442	2712	2798
+themes/classic/templates/sidebar.tpl	3808140074	3451126228	564	577
+themes/classic/templates/theme.tpl	3139755363	1879859359	2705	2784
+themes/classic/theme.css	2864580335	3979454779	13405	14061
+themes/classic/theme.inc	3523854510	1906592657	8712	8993
+R	themes/classic/locale/cs_CZ/LC_MESSAGES/themes_classic.mo
+R	themes/classic/locale/cs_CZ/LC_MESSAGES
+R	themes/classic/locale/cs_CZ
+R	themes/classic/locale/da_DK/LC_MESSAGES/themes_classic.mo
+R	themes/classic/locale/da_DK/LC_MESSAGES
+R	themes/classic/locale/da_DK
+R	themes/classic/locale/de_DE/LC_MESSAGES/themes_classic.mo
+R	themes/classic/locale/de_DE/LC_MESSAGES
+R	themes/classic/locale/de_DE
+R	themes/classic/locale/el_GR/LC_MESSAGES/themes_classic.mo
+R	themes/classic/locale/el_GR/LC_MESSAGES
+R	themes/classic/locale/el_GR
+R	themes/classic/locale/eu_ES/LC_MESSAGES/themes_classic.mo
+R	themes/classic/locale/eu_ES/LC_MESSAGES
+R	themes/classic/locale/eu_ES
+R	themes/classic/locale/fi_FI/LC_MESSAGES/themes_classic.mo
+R	themes/classic/locale/fi_FI/LC_MESSAGES
+R	themes/classic/locale/fi_FI
+R	themes/classic/locale/fr_FR/LC_MESSAGES/themes_classic.mo
+R	themes/classic/locale/fr_FR/LC_MESSAGES
+R	themes/classic/locale/fr_FR
+R	themes/classic/locale/ga_IE/LC_MESSAGES/themes_classic.mo
+R	themes/classic/locale/ga_IE/LC_MESSAGES
+R	themes/classic/locale/ga_IE
+R	themes/classic/locale/he_IL/LC_MESSAGES/themes_classic.mo
+R	themes/classic/locale/he_IL/LC_MESSAGES
+R	themes/classic/locale/he_IL
+R	themes/classic/locale/hu_HU/LC_MESSAGES/themes_classic.mo
+R	themes/classic/locale/hu_HU/LC_MESSAGES
+R	themes/classic/locale/hu_HU
+R	themes/classic/locale/is_IS/LC_MESSAGES/themes_classic.mo
+R	themes/classic/locale/is_IS/LC_MESSAGES
+R	themes/classic/locale/is_IS
+R	themes/classic/locale/it_IT/LC_MESSAGES/themes_classic.mo
+R	themes/classic/locale/it_IT/LC_MESSAGES
+R	themes/classic/locale/it_IT
+R	themes/classic/locale/ja_JP/LC_MESSAGES/themes_classic.mo
+R	themes/classic/locale/ja_JP/LC_MESSAGES
+R	themes/classic/locale/ja_JP
+R	themes/classic/locale/nl_NL/LC_MESSAGES/themes_classic.mo
+R	themes/classic/locale/nl_NL/LC_MESSAGES
+R	themes/classic/locale/nl_NL
+R	themes/classic/locale/no_NO/LC_MESSAGES/themes_classic.mo
+R	themes/classic/locale/no_NO/LC_MESSAGES
+R	themes/classic/locale/no_NO
+R	themes/classic/locale/pl_PL/LC_MESSAGES/themes_classic.mo
+R	themes/classic/locale/pl_PL/LC_MESSAGES
+R	themes/classic/locale/pl_PL
+R	themes/classic/locale/pt_PT/LC_MESSAGES/themes_classic.mo
+R	themes/classic/locale/pt_PT/LC_MESSAGES
+R	themes/classic/locale/pt_PT
+R	themes/classic/locale/ru_RU/LC_MESSAGES/themes_classic.mo
+R	themes/classic/locale/ru_RU/LC_MESSAGES
+R	themes/classic/locale/ru_RU
+R	themes/classic/locale/sr_YU/LC_MESSAGES/themes_classic.mo
+R	themes/classic/locale/sr_YU/LC_MESSAGES
+R	themes/classic/locale/sr_YU
+R	themes/classic/locale/sv_SE/LC_MESSAGES/themes_classic.mo
+R	themes/classic/locale/sv_SE/LC_MESSAGES
+R	themes/classic/locale/sv_SE
+R	themes/classic/locale/tr_TR/LC_MESSAGES/themes_classic.mo
+R	themes/classic/locale/tr_TR/LC_MESSAGES
+R	themes/classic/locale/tr_TR
+R	themes/classic/locale/vi_VN/LC_MESSAGES/themes_classic.mo
+R	themes/classic/locale/vi_VN/LC_MESSAGES
+R	themes/classic/locale/vi_VN
+R	themes/classic/po/cs_CZ.po
+R	themes/classic/po/da_DK.po
+R	themes/classic/po/de_DE.po
+R	themes/classic/po/el_GR.po
+R	themes/classic/po/eu_ES.po
+R	themes/classic/po/fi_FI.po
+R	themes/classic/po/fr_FR.po
+R	themes/classic/po/ga_IE.po
+R	themes/classic/po/he_IL.po
+R	themes/classic/po/hu_HU.po
+R	themes/classic/po/is_IS.po
+R	themes/classic/po/it_IT.po
+R	themes/classic/po/ja_JP.po
+R	themes/classic/po/nl_NL.po
+R	themes/classic/po/no_NO.po
+R	themes/classic/po/pl_PL.po
+R	themes/classic/po/pt_PT.po
+R	themes/classic/po/ru_RU.po
+R	themes/classic/po/sr_YU.po
+R	themes/classic/po/sv_SE.po
+R	themes/classic/po/tr_TR.po
+R	themes/classic/po/vi_VN.po

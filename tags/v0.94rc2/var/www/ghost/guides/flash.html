@@ -1,0 +1,15 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<link type='text/css' rel='stylesheet' href='../stylesheet/styles.css' />
+</head>
+<body style='background-color:#3a3d32'>
+<h2>Flash Parameter Injection</h2>
+<p>
+Flash is found all over the web. There are many different ways to inject code into flash parameters, and many different ways to use each of them. I will not go into all of the different injection types but here are a few.<br />
+<b>Injection through Html with Xss -</b>mymovie.swf?vulnerableVariable=javascript: alert('Xss Test')<br />
+<b>Injection through swf loading as parameter through DOM -</b> http://vulnerableFlash.com#&glVar=javascript: alert('xss')<br /><br />
+For other references about FPI please do further research there are many good examples on the OWASP website <a href="http://www.owasp.org/index.php/Category:OWASP_Flash_Security_Project">Here</a>, along with what the vulnerable code looks like. 
+</p>
+</body>
+</html>
