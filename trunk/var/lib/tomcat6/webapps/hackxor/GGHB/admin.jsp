@@ -5,7 +5,7 @@
 <body>
 <%
     response.setStatus(301);
-    response.setHeader( "Location", "http://GGHB:8080/ISPadmin.jsp" );
+    response.setHeader( "Location", "http://GGHB:80/ISPadmin.jsp" );
     response.setHeader( "Connection", "close" );
 %>
 </body>

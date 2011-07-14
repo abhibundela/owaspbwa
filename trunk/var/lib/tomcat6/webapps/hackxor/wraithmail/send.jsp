@@ -25,7 +25,7 @@ The premier communications solution for discrete users.
 <ul class="linklist">
 <li><a href="/send.jsp">Compose</a><br></li>
 <li><a href="/mail.jsp">Inbox</a><br></li>
-<li><a href="http://wraithbox:8080/history.jsp?id=<%out.print(session.getAttribute("user"));%>">Login history</a></li>
+<li><a href="http://wraithbox:80/history.jsp?id=<%out.print(session.getAttribute("user"));%>">Login history</a></li>
 </ul>
 </div>
 </div>
@@ -83,7 +83,7 @@ try{
     hackthis.setString(5, body);
     hackthis.execute();
     out.println("Message succesfully sent");
-    out.println("<a href='http://wraithbox:8080/htmlisland.jsp?messageid=" + mID+"'>View here</a>");
+    out.println("<a href='http://wraithbox:80/htmlisland.jsp?messageid=" + mID+"'>View here</a>");
 
 
 
@@ -107,7 +107,7 @@ try{
 	form.getInputByName("submit").click();
     }
 
-    HtmlPage wtf = browser.getPage("http://wraithbox:8080/htmlisland.jsp?messageid=" + mID);
+    HtmlPage wtf = browser.getPage("http://wraithbox:80/htmlisland.jsp?messageid=" + mID);
 }catch(Exception e1)
 {out.println(e1);}
 }

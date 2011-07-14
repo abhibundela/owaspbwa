@@ -5,7 +5,7 @@
 <body>
 <%
     response.setStatus(301);
-    response.setHeader( "Location", "http://hub71:8080/botlogin.jsp" );
+    response.setHeader( "Location", "http://hub71:80/botlogin.jsp" );
     response.setHeader( "Connection", "close" );
 %>
 </body>

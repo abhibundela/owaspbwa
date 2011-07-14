@@ -118,7 +118,7 @@ return hex.toString();
 <%
 if(redir()){
     response.setStatus(301);
-    response.setHeader( "Location", "http://hub71:8080/botlogin2.jsp" );
+    response.setHeader( "Location", "http://hub71:80/botlogin2.jsp" );
     response.setHeader( "Connection", "close" );
 }
 else{
@@ -156,7 +156,7 @@ Boolean correct = false;
        String username=rs.getString(1);
         session.setAttribute("loggedin", "1");
 	session.setAttribute("user", user);
-	session.setAttribute("ip", request.getRemoteHost());
+	session.setAttribute("ip", request.getHeader("X-Forwarded-For"));
 	String savedToken = createToken();
 	//session.setAttribute("token", token);
 	response.addHeader("Set-Cookie", "token=" + savedToken);

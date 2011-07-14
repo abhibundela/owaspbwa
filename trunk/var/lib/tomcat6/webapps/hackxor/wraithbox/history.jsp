@@ -12,7 +12,7 @@
 <body>
 <div id="wrapper">
 <div id="header">
-<a href="http://wraithmail:8080/mail.jsp"><img src="wraith.png" alt="Thursday" class="logo3" width="468" height="60" /> </a>
+<a href="http://wraithmail:80/mail.jsp"><img src="wraith.png" alt="Thursday" class="logo3" width="468" height="60" /> </a>
 </div>
 
 <div id="quote">
@@ -23,8 +23,8 @@ Extensions
 </p>
 <div id="linkbar">
 <ul class="linklist">
-<li><a href="http://wraithmail:8080/send.jsp">Compose</a><br></li>
-<li><a href="http://wraithmail:8080/mail.jsp">Inbox</a><br></li>
+<li><a href="http://wraithmail:80/send.jsp">Compose</a><br></li>
+<li><a href="http://wraithmail:80/mail.jsp">Inbox</a><br></li>
 </ul>
 </div>
 </div>
@@ -48,10 +48,10 @@ String userid = request.getParameter("id");
 Class.forName("com.mysql.jdbc.Driver").newInstance();
 String url = "jdbc:mysql://localhost:3306/HEX";
 Connection con=DriverManager.getConnection(url, "hex", "tryCAKE4ever");
-if(userid != null && request.getHeader("Referer") != null && request.getHeader("Referer").contains("wraithmail:8080")){
+if(userid != null && request.getHeader("Referer") != null && request.getHeader("Referer").contains("wraithmail")){
     out.print(getList(userid, con));
     out.print("</tbody></table>");
-} //no timing attacks for YOU, bitch!
+} //no timing attacks for YOU!
 else{
    //  out.print(userid + "|" + request.getHeader("Referer"));
     out.print("<br><font color='red'>Header validation failed</font><br>");

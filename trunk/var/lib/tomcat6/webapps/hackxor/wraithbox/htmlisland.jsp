@@ -12,7 +12,7 @@
 <body>
 <div id="wrapper">
 <div id="header">
-<a href="http://wraithmail:8080/mail.jsp"><img src="wraith.png" alt="Thursday" class="logo3" width="468" height="60" /> </a>
+<a href="http://wraithmail:80/mail.jsp"><img src="wraith.png" alt="Thursday" class="logo3" width="468" height="60" /> </a>
 </div>
 
 <div id="quote">
@@ -23,8 +23,8 @@ The premier communications solution for discrete users.
 </p>
 <div id="linkbar">
 <ul class="linklist">
-<li><a href="http://wraithmail:8080/send.jsp">Compose</a><br></li>
-<li><a href="http://wraithmail:8080/mail.jsp">Inbox</a><br></li>
+<li><a href="http://wraithmail:80/send.jsp">Compose</a><br></li>
+<li><a href="http://wraithmail:80/mail.jsp">Inbox</a><br></li>
 </ul>
 </div>
 </div>
@@ -79,11 +79,11 @@ public String getMessage(String messageid, Connection con) throws Exception{
 	while(rs.next()){
 	    tourl = rs.getString(1);
 	    if(tourl.contains("@wraithmail"))
-		tourl = "<a href='http://wraithbox:8080/profile.jsp?userID="+tourl.substring(0, tourl.indexOf("@"))+"'>"+tourl+"</a>";
+		tourl = "<a href='http://wraithbox:80/profile.jsp?userID="+tourl.substring(0, tourl.indexOf("@"))+"'>"+tourl+"</a>";
 	    message = message + "<p><b>To</b> " + tourl + "<br>";
 	    fromurl = rs.getString(2);
 	    if(fromurl.contains("@wraithmail"))
-		fromurl = "<a href='http://wraithbox:8080/profile.jsp?userID="+fromurl.substring(0, fromurl.indexOf("@"))+"'>"+fromurl+"</a>";
+		fromurl = "<a href='http://wraithbox:80/profile.jsp?userID="+fromurl.substring(0, fromurl.indexOf("@"))+"'>"+fromurl+"</a>";
 	    message = message +"<b>From</b> " + fromurl + "<br>";
 	    message = message +"<b>Subject</b> " + rs.getString(3) + "<br><br>";
 	    message = message +"" + rs.getString(4) + "<br>";

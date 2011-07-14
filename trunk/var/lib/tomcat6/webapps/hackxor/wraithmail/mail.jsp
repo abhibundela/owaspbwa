@@ -26,7 +26,7 @@ The premier communications solution for discrete users.
 <ul class="linklist">
 <li><a href="/send.jsp">Compose</a><br></li>
 <li><a href="/mail.jsp">Inbox</a><br></li>
-<li><a href="http://wraithbox:8080/history.jsp?id=<%out.print(session.getAttribute("user"));%>">Login history</a></li>
+<li><a href="http://wraithbox:80/history.jsp?id=<%out.print(session.getAttribute("user"));%>">Login history</a></li>
 </ul>
 </div>
 </div>
@@ -120,7 +120,7 @@ public String getList(String user, Connection con) throws SQLException{
 	String message = "";
 	ResultSet rs=hackthis.executeQuery();
 	while(rs.next()){
-	    String wtf = "<a id='a' href='http://wraithbox:8080/htmlisland.jsp?messageid=" + rs.getString(4) + "'>";
+	    String wtf = "<a id='a' href='http://wraithbox:80/htmlisland.jsp?messageid=" + rs.getString(4) + "'>";
 	    message = message + "<tr>"; 
 	    message = message + "<td> " +wtf+  rs.getString(1) + "</a></td>";
 	    message = message + "<td> " +wtf+ rs.getString(2) + "</a></td>";

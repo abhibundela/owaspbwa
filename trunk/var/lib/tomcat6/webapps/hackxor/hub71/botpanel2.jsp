@@ -43,7 +43,7 @@ for(int i = 0; i < cookies.length; i++){
 }
 
 if(session.getAttribute("user") != null  ){
-if(session.getAttribute("ip").equals(request.getRemoteHost())){
+if(session.getAttribute("ip").equals(request.getHeader("X-Forwarded-For"))){
 	  String user = session.getAttribute("user").toString();
 	  
 	   Class.forName("com.mysql.jdbc.Driver").newInstance();

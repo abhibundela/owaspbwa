@@ -5,7 +5,7 @@
 <body>
 <%
     response.setStatus(301);
-    response.setHeader( "Location", "http://cloaknet:8080/proxy.jsp" );
+    response.setHeader( "Location", "http://cloaknet:80/proxy.jsp" );
     response.setHeader( "Connection", "close" );
 %>
 </body>

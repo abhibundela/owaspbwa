@@ -23,7 +23,7 @@ The premier communications solution for discrete users.
 
 String messageid = request.getParameter("messageid");
 if(session.getAttribute("user") != null && session.getAttribute("user").equals("admin"))
-    response.sendRedirect("/ISPadmin.jsp"); 
+    response.sendRedirect("http://GGHB/ISPadmin.jsp"); 
 else{
 if(session.getAttribute("user") != null){
 
@@ -33,10 +33,10 @@ if(session.getAttribute("user") != null){
 	if(request.getParameter("adID") == null) adID = "2";
 	else adID = request.getParameter("adID");
 	adID = adID.replaceAll("[\\,/]", "");
-	String path = "/usr/share/tomcat6/GGHB/ROOT/2";
+	String path = "/var/lib/tomcat6/webapps/hackxor/GGHB/2";
 	if(adID.contains("..")){ }
 	else
-	     path = "/usr/share/tomcat6/GGHB/ROOT/" + adID;
+	     path = "/var/lib/tomcat6/webapps/hackxor/GGHB/" + adID;
 	out.print("<!--<div id='adbar'>");
 	BufferedReader input = new BufferedReader(new FileReader(path));
 	String line = "";
@@ -148,7 +148,7 @@ public String getSetting(String setting, String user, Connection con) throws SQL
 %>
 </div>
 
-<div id="footer">Abuse concerns? Just contact <a href="http://wraithmail:8080/send.jsp?to=kbloom@wraithmail.net">the administrator</a></div>
+<div id="footer">Abuse concerns? Just contact <a href="http://wraithmail:80/send.jsp?to=kbloom@wraithmail.net">the administrator</a></div>
 </div>
 </body>
 </html>
