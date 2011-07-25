@@ -5,31 +5,49 @@
 
 The Open Web Application Security Project (OWASP) Broken Web Applications Project is distributed as a Virtual Machine in [http://www.vmware.com VMware] format compatible with their no-cost [http://www.vmware.com/products/player/ VMware Player] and [http://www.vmware.com/products/server/ VMware Server] products (along with their commercial products).
 
-= Applications included (as of the 0.92rc1 release) =
+= Applications included (as of the 0.94 release) =
 
 This project includes applications from various sources (listed in no particular order).
 
-Intentionally Vulnerable Applications:
+Training Applications:
   * [http://www.owasp.org/index.php/Category:OWASP_WebGoat_Project OWASP WebGoat] version 5.3.x(Java)
-  * [http://www.owasp.org/index.php/Category:OWASP_Vicnum_Project OWASP Vicnum] version 1.4 (PHP/Perl)
   * [http://www.irongeek.com/i.php?page=security/mutillidae-deliberately-vulnerable-php-owasp-top-10 Mutillidae version 1.5] (PHP)
   * [http://www.dvwa.co.uk/ Damn Vulnerable Web Application] version 1.07.x (PHP)
-  * [http://webdevelopmentsolutions.org/ Ghost] (PHP)
+  * [http://www.gh0s7.net/ Ghost]
+  * [http://code.google.com/p/zaproxy/ ZAP-WAVE]
+  
+Realistic, Intentionally Vulnerable Applications:
+  * [http://www.owasp.org/index.php/Category:OWASP_Vicnum_Project OWASP Vicnum] version 1.4 (PHP/Perl)
   * [http://peruggia.sourceforge.net/ Peruggia] version 1.2 (PHP)
-  * [http://www.owasp.org/index.php/Category:OWASP_CSRFGuard_Project OWASP CSRFGuard] Test Application version 2.2 (Java)
-  * [http://www.owasp.org/index.php/Category:OWASP_AppSensor_Project OWASP AppSensor Demo Application] (Java)
-  * [http://www.mandiant.com/ Mandiant] Struts Forms (Java/Struts)
-  * Simple ASP.NET Forms (ASP.NET/C#)
-  * Simple Form with DOM Cross Site Scripting (HTML/!JavaScript)
+  * [http://google-gruyere.appspot.com/ Google Gruyere] version 2010-07-15 (Python)
+  * [http://hackxor.sourceforge.net/cgi-bin/index.pl Hackxor] (Java JSP)
+  * [https://github.com/adamdoupe/WackoPicko WackoPicko] (PHP)
+  * [http://code.google.com/p/bodgeit/ BodgeIt]
+  
+  
+
 
 Old Versions of Real Applications:
   * [http://wordpress.org/ WordPress] 2.0.0 (PHP, released December 31, 2005, downloaded from [http://www.oldapps.com/Wordpress.php www.oldapps.com])
-  * [http://www.phpbb.com/ phpBB] 2.0.0 (PHP, released April 4, 2002, downloaded from [http://www.oldapps.com/phpbb.php www.oldapps.com]) 
-  * [http://www.forumsoftware.ca/ Yazd] version 1.0 (Java, released February 20, 2002)
-  * [http://www.gtd-php/.com gtd-php] version 0.7 (PHP, released September 30, 2006)
-  * [http://www.orangehrm.com/ OrangeHRM] version 2.4.2 (PHP, released May 7, 2009)
   * [http://sourceforge.net/projects/getboo/ GetBoo] version 1.04 (PHP, released April 7, 2008)
+  * [http://www.forumsoftware.ca/ Yazd] version 1.0 (Java, released February 20, 2002)
+  * [http://www.k5n.us/webcalendar.php WebCalendar] version 1.03 (PHP, released April 11, 2006)
+  * [http://owaspbwa/tikiwiki TikiWiki] version 1.9.5 (PHP, released September 5, 2006)
+  * [http://awstats.sourceforge.net/ AWStats] version 6.4 (build 1.814, Perl, released February 25,2005)
+  * [http://www.orangehrm.com/ OrangeHRM] version 2.4.2 (PHP, released May 7, 2009)
+  * [http://www.gtd-php/.com gtd-php] version 0.7 (PHP, released September 30, 2006)
+  * [http://gallery.menalto.com/ Gallery2] version 2.1 (PHP, released March 23, 2006)
+  * [http://www.joomla.org/ Joomla] version 1.5.15 (PHP, released November 4, 2009)
 
+Demonstration Pages / Small Applications:
+  * [http://www.owasp.org/index.php/Category:OWASP_CSRFGuard_Project OWASP CSRFGuard] Test Application version 2.2 (Java)
+  * [http://www.mandiant.com/ Mandiant] Struts Forms (Java/Struts)
+  * Simple ASP.NET Forms (ASP.NET/C#)
+  * Simple Form with DOM Cross Site Scripting (HTML/!JavaScript)
+  
+OWASP Demonstration Applications  
+  * [http://www.owasp.org/index.php/Category:OWASP_AppSensor_Project OWASP AppSensor Demo Application] (Java)  
+  
 = Download = 
 
 See the [Downloads downloads page] for information about where to get the VM.
