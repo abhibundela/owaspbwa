@@ -1,0 +1,14 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<link type='text/css' rel='stylesheet' href='../stylesheet/styles.css' />
+</head>
+<body style='background-color:#3a3d32'>
+<h2>Cross Site Request Forgery</h2>
+<p>
+CSRF is a way that an attacker can cause the victim to exploit an xss vulnerability on a different website through a link or possibly an email without the victim knowing. Posting a link or a picture in a blog that the victim opens which then executes a command to inject code into another web site is a basic form of CSRF. Here is an example:<br />
+&lt;img src="http://vulnWebSite.com/index.php?command to execute"&gt;<br /><br />
+This can be very a very good way to spread malware without detection by embedding the code into a XSS vulnerable site such as the one contained in this site. Once a user logs in the command will be executed the server logs will reflect that the last user that was logged in is the one that is spreading the malware. More information can be found on the OWASP web site.
+</p>
+</body>
+</html>

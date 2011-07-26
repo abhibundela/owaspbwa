@@ -1,0 +1,3 @@
+php_value magic_quotes_gpc 1
+php_value error_reporting 2
+php_value register_globals 1

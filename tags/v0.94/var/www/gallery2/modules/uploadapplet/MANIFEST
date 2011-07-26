@@ -1,0 +1,104 @@
+# File crc32 crc32(crlf) size size(crlf)  or  R File
+modules/uploadapplet/ItemAddUploadApplet.inc	3441878206	2128543466	4153	4269
+modules/uploadapplet/UploadAppletSiteAdmin.inc	2168074239	331238580	5248	5429
+modules/uploadapplet/applets/GalleryRemoteAppletMini.jar	2114593380	2114593380	302938	302938
+modules/uploadapplet/applets/GalleryRemoteHTTPClient.jar	3199006743	3199006743	216405	216405
+modules/uploadapplet/applets/applet_img.jar	3756955998	3756955998	9914	9914
+modules/uploadapplet/locale/af/LC_MESSAGES/modules_uploadapplet.mo	3557239185	3557239185	1284	1284
+modules/uploadapplet/locale/cs/LC_MESSAGES/modules_uploadapplet.mo	898798204	898798204	5575	5575
+modules/uploadapplet/locale/da/LC_MESSAGES/modules_uploadapplet.mo	2943909918	2943909918	4822	4822
+modules/uploadapplet/locale/de/LC_MESSAGES/modules_uploadapplet.mo	2681166366	2681166366	5713	5713
+modules/uploadapplet/locale/eu/LC_MESSAGES/modules_uploadapplet.mo	1787065599	1787065599	4747	4747
+modules/uploadapplet/locale/fi/LC_MESSAGES/modules_uploadapplet.mo	2094266399	2094266399	1196	1196
+modules/uploadapplet/locale/fr/LC_MESSAGES/modules_uploadapplet.mo	3063512044	3063512044	5779	5779
+modules/uploadapplet/locale/hu/LC_MESSAGES/modules_uploadapplet.mo	1795373050	1795373050	1169	1169
+modules/uploadapplet/locale/is/LC_MESSAGES/modules_uploadapplet.mo	2255351976	2255351976	424	424
+modules/uploadapplet/locale/it/LC_MESSAGES/modules_uploadapplet.mo	3023865792	3023865792	5516	5516
+modules/uploadapplet/locale/ja/LC_MESSAGES/modules_uploadapplet.mo	3730469213	3730469213	1173	1173
+modules/uploadapplet/locale/lt/LC_MESSAGES/modules_uploadapplet.mo	2402628819	2402628819	5573	5573
+modules/uploadapplet/locale/nl/LC_MESSAGES/modules_uploadapplet.mo	1448078826	1448078826	5399	5399
+modules/uploadapplet/locale/no/LC_MESSAGES/modules_uploadapplet.mo	486204931	486204931	5369	5369
+modules/uploadapplet/locale/pl/LC_MESSAGES/modules_uploadapplet.mo	1678798714	1678798714	5502	5502
+modules/uploadapplet/locale/pt_BR/LC_MESSAGES/modules_uploadapplet.mo	3903203016	3903203016	1217	1217
+modules/uploadapplet/locale/ru/LC_MESSAGES/modules_uploadapplet.mo	95375184	95375184	7570	7570
+modules/uploadapplet/locale/sr/LC_MESSAGES/modules_uploadapplet.mo	762435104	762435104	1225	1225
+modules/uploadapplet/locale/sv/LC_MESSAGES/modules_uploadapplet.mo	3770494039	3770494039	5497	5497
+modules/uploadapplet/locale/tr/LC_MESSAGES/modules_uploadapplet.mo	2270216423	2270216423	1776	1776
+modules/uploadapplet/locale/zh_CN/LC_MESSAGES/modules_uploadapplet.mo	1825024237	1825024237	4795	4795
+modules/uploadapplet/locale/zh_TW/LC_MESSAGES/modules_uploadapplet.mo	3142831483	3142831483	4932	4932
+modules/uploadapplet/module.inc	4034218617	22392220	2847	2942
+modules/uploadapplet/po/GNUmakefile	1866879166	2808215985	98	103
+modules/uploadapplet/po/af.po	952531869	1010224465	4515	4691
+modules/uploadapplet/po/cs.po	685833232	3108032743	6432	6619
+modules/uploadapplet/po/da.po	3058482797	80471900	6285	6474
+modules/uploadapplet/po/de.po	3286578597	547020069	6770	6963
+modules/uploadapplet/po/eu.po	751515069	1357389496	6065	6250
+modules/uploadapplet/po/fi.po	3970544621	2211219483	4475	4650
+modules/uploadapplet/po/fr.po	4004505410	1607321237	6732	6922
+modules/uploadapplet/po/hu.po	4042653296	2550272198	4529	4704
+modules/uploadapplet/po/is.po	1693745809	1718784370	4017	4185
+modules/uploadapplet/po/it.po	1439033164	1416700036	6288	6444
+modules/uploadapplet/po/ja.po	177825527	134229172	4440	4609
+modules/uploadapplet/po/lt.po	3129501885	2814640072	6442	6629
+modules/uploadapplet/po/nl.po	186900196	1266594268	6327	6483
+modules/uploadapplet/po/no.po	343666633	1683065467	6208	6365
+modules/uploadapplet/po/pl.po	4157667397	1789773982	6436	6591
+modules/uploadapplet/po/pt_BR.po	1593185945	1814266093	4423	4595
+modules/uploadapplet/po/ru.po	590284803	1730141073	8415	8574
+modules/uploadapplet/po/sr.po	3259871276	1890471290	4431	4604
+modules/uploadapplet/po/strings.raw	2631331437	254305193	2578	2628
+modules/uploadapplet/po/sv.po	3231130364	2332419175	6319	6506
+modules/uploadapplet/po/tr.po	2214701552	2802186350	4707	4884
+modules/uploadapplet/po/zh_CN.po	3763192732	1998078738	5522	5677
+modules/uploadapplet/po/zh_TW.po	2763105310	2619446297	5714	5886
+modules/uploadapplet/templates/ItemAddUploadApplet.tpl	167134436	861178970	5978	6127
+modules/uploadapplet/templates/UploadAppletSiteAdmin.tpl	2550057160	2636172619	6249	6389
+R	modules/uploadapplet/applets/GalleryRemoteApplet.jar
+R	modules/uploadapplet/locale/cs_CZ/LC_MESSAGES/modules_uploadapplet.mo
+R	modules/uploadapplet/locale/cs_CZ/LC_MESSAGES
+R	modules/uploadapplet/locale/cs_CZ
+R	modules/uploadapplet/locale/de_DE/LC_MESSAGES/modules_uploadapplet.mo
+R	modules/uploadapplet/locale/de_DE/LC_MESSAGES
+R	modules/uploadapplet/locale/de_DE
+R	modules/uploadapplet/locale/eu_ES/LC_MESSAGES/modules_uploadapplet.mo
+R	modules/uploadapplet/locale/eu_ES/LC_MESSAGES
+R	modules/uploadapplet/locale/eu_ES
+R	modules/uploadapplet/locale/fr_FR/LC_MESSAGES/modules_uploadapplet.mo
+R	modules/uploadapplet/locale/fr_FR/LC_MESSAGES
+R	modules/uploadapplet/locale/fr_FR
+R	modules/uploadapplet/locale/is_IS/LC_MESSAGES/modules_uploadapplet.mo
+R	modules/uploadapplet/locale/is_IS/LC_MESSAGES
+R	modules/uploadapplet/locale/is_IS
+R	modules/uploadapplet/locale/it_IT/LC_MESSAGES/modules_uploadapplet.mo
+R	modules/uploadapplet/locale/it_IT/LC_MESSAGES
+R	modules/uploadapplet/locale/it_IT
+R	modules/uploadapplet/locale/ja_JP/LC_MESSAGES/modules_uploadapplet.mo
+R	modules/uploadapplet/locale/ja_JP/LC_MESSAGES
+R	modules/uploadapplet/locale/ja_JP
+R	modules/uploadapplet/locale/nl_NL/LC_MESSAGES/modules_uploadapplet.mo
+R	modules/uploadapplet/locale/nl_NL/LC_MESSAGES
+R	modules/uploadapplet/locale/nl_NL
+R	modules/uploadapplet/locale/no_NO/LC_MESSAGES/modules_uploadapplet.mo
+R	modules/uploadapplet/locale/no_NO/LC_MESSAGES
+R	modules/uploadapplet/locale/no_NO
+R	modules/uploadapplet/locale/ru_RU/LC_MESSAGES/modules_uploadapplet.mo
+R	modules/uploadapplet/locale/ru_RU/LC_MESSAGES
+R	modules/uploadapplet/locale/ru_RU
+R	modules/uploadapplet/locale/sr_YU/LC_MESSAGES/modules_uploadapplet.mo
+R	modules/uploadapplet/locale/sr_YU/LC_MESSAGES
+R	modules/uploadapplet/locale/sr_YU
+R	modules/uploadapplet/locale/tr_TR/LC_MESSAGES/modules_uploadapplet.mo
+R	modules/uploadapplet/locale/tr_TR/LC_MESSAGES
+R	modules/uploadapplet/locale/tr_TR
+R	modules/uploadapplet/po/cs_CZ.po
+R	modules/uploadapplet/po/de_DE.po
+R	modules/uploadapplet/po/eu_ES.po
+R	modules/uploadapplet/po/fr_FR.po
+R	modules/uploadapplet/po/is_IS.po
+R	modules/uploadapplet/po/it_IT.po
+R	modules/uploadapplet/po/ja_JP.po
+R	modules/uploadapplet/po/nl_NL.po
+R	modules/uploadapplet/po/no_NO.po
+R	modules/uploadapplet/po/ru_RU.po
+R	modules/uploadapplet/po/sr_YU.po
+R	modules/uploadapplet/po/tr_TR.po

@@ -1,0 +1,110 @@
+<?php
+/*
+ * $RCSfile: GalleryCapabilities.class,v $
+ *
+ * Gallery - a web based photo album viewer and editor
+ * Copyright (C) 2000-2006 Bharat Mediratta
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or (at
+ * your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+/**
+ * @version $Revision: 1.12 $ $Date: 2006/01/10 04:39:21 $
+ * @package GalleryCore
+ * @author Alan Harder <alan.harder@sun.com>
+ */
+
+/**
+ * Switches and configuration for some core functionality.
+ * This gives modules or an embedded environment an access point to modify core behavior.
+ *
+ * @package GalleryCore
+ * @subpackage Classes
+ */
+class GalleryCapabilities {
+
+    /*
+     * ****************************************
+     *                 Methods
+     * ****************************************
+     */
+
+    /**
+     * Return reference to array of configuration values.
+     * @access private
+     * @static
+     */
+    function &_getConfig() {
+	static $config;
+	if (!isset($config)) {
+	    $config = array(
+
+		/* Offer UserAdmin links on sidebar (Login/Logout/Your Account) */
+		'login' => true,
+
+		/* UrlGenerator parameters for redirect when ShowItem target is inaccessible */
+		'loginRedirect' => array('view' => 'core.UserAdmin',
+					 'subView' => 'core.UserLogin', 'return' => true),
+
+		/* Allow item linking */
+		'link' => true,
+
+		/* Can we allow themes to show the sidebar? */
+		'showSidebarBlocks' => true,
+	    );
+	}
+	return $config;
+    }
+
+    /**
+     * Get a configuration value.
+     *
+     * @param string key name
+     * @return string the configuration value or null if not found
+     * @static
+     */
+    function get($key) {
+	$config =& GalleryCapabilities::_getConfig();
+	return isset($config[$key]) ? $config[$key] : null;
+    }
+
+    /**
+     * Get a boolean configuration flag.
+     *
+     * @param string key name
+     * @return boolean the configuration value or null if not found
+     * @static
+     */
+    function can($key) {
+	$config =& GalleryCapabilities::_getConfig();
+	return isset($config[$key]) ? (boolean)$config[$key] : null;
+    }
+
+    /**
+     * Set a configuration value.
+     *
+     * @param string key name
+     * @param mixed value (null to remove the value)
+     * @static
+     */
+    function set($key, $value) {
+	$config =& GalleryCapabilities::_getConfig();
+	if (!isset($value)) {
+	    unset($config[$key]);
+	} else {
+	    $config[$key] = $value;
+	}
+    }
+}
+?>

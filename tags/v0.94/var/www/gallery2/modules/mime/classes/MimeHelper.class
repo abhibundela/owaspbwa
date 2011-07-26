@@ -1,0 +1,69 @@
+<?php
+/*
+ * $RCSfile: MimeHelper.class,v $
+ *
+ * Gallery - a web based photo album viewer and editor
+ * Copyright (C) 2000-2006 Bharat Mediratta
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or (at
+ * your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+
+/**
+ * @package Mime
+ * @version $Revision: 1.4 $ $Date: 2006/01/10 04:40:47 $
+ * @author Felix Rabinovich <Felix@Rabinovich.org>
+ */
+
+/**
+ * A helper class for Mime
+ *
+ * Utility functions useful in managing MIME types
+ *
+ * @package Mime
+ * @subpackage Classes
+ */
+class MimeHelper {
+    /**
+     * Return mime types and applicable file extensions
+     *
+     * @return array object GalleryStatus a status code
+     *               array array string mime type,
+     *                           array of string extensions
+     *                     boolean is viewable
+     * @static
+     */
+    function getMimeTypeMap() {
+        global $gallery;
+
+        $query = '
+            SELECT [GalleryMimeTypeMap::mimeType],
+                [GalleryMimeTypeMap::extension],
+                [GalleryMimeTypeMap::viewable]
+            FROM [GalleryMimeTypeMap]
+            ORDER BY [GalleryMimeTypeMap::mimeType]
+        ';
+        list ($ret, $searchResults) = $gallery->search($query);
+        if ($ret) {
+            return array($ret->wrap(__FILE__, __LINE__), null);
+        }
+        while ($result = $searchResults->nextResult()) {
+            $MimeTypeMap['ext'][$result[0]][] = $result[1];
+            $MimeTypeMap['viewable'][$result[0]] = $result[2];
+        }
+        return array(null, $MimeTypeMap);
+    }
+}
+
+?>

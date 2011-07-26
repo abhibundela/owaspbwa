@@ -1,0 +1,71 @@
+<VirtualHost *:80>
+	ServerAdmin webmaster@localhost
+
+	DocumentRoot /var/www
+	<Directory />
+		Options FollowSymLinks +ExecCGI
+		AllowOverride None
+	</Directory>
+	<Directory /var/www/>
+		Options Indexes FollowSymLinks MultiViews +ExecCGI
+		AllowOverride All
+		Order allow,deny
+		allow from all
+	</Directory>
+
+#	ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
+#	<Directory "/usr/lib/cgi-bin">
+#		AllowOverride None
+#		Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+#		Order allow,deny
+#		Allow from all
+#	</Directory>
+
+	ErrorLog /var/log/apache2/error.log
+
+	# Possible values include: debug, info, notice, warn, error, crit,
+	# alert, emerg.
+	LogLevel warn
+
+	CustomLog /var/log/apache2/access.log combined
+
+    Alias /doc/ "/usr/share/doc/"
+    <Directory "/usr/share/doc/">
+        Options Indexes MultiViews FollowSymLinks
+        AllowOverride None
+        Order deny,allow
+        Deny from all
+        Allow from 127.0.0.0/255.0.0.0 ::1/128
+    </Directory>
+
+    # 
+    # Directives to add to your Apache conf file to allow use of AWStats as a CGI. 
+    # Note that path "/usr/local/awstats/" must reflect your AWStats install path. 
+    # 
+    Alias /awstatsclasses "/owaspbwa/owaspbwa-svn/usr/local/awstats/wwwroot/classes/" 
+    Alias /awstatscss "/owaspbwa/owaspbwa-svn/usr/local/awstats/wwwroot/css/" 
+    Alias /awstatsicons "/owaspbwa/owaspbwa-svn/usr/local/awstats/wwwroot/icon/" 
+    Alias /icon "/owaspbwa/owaspbwa-svn/usr/local/awstats/wwwroot/icon/" 
+    ScriptAlias /awstats/ "/owaspbwa/owaspbwa-svn/usr/local/awstats/wwwroot/cgi-bin/" 
+    # 
+    # This is to permit URL access to scripts/files in AWStats directory. 
+    # 
+    <Directory "/owaspbwa/owaspbwa-svn/usr/local/awstats/wwwroot"> 
+        Options None 
+        AllowOverride None 
+        Order allow,deny 
+        Allow from all 
+    </Directory> 
+
+    #Added for redmine
+#    RailsEnv production
+#    RailsBaseURI /redmine
+#    PassengerDefaultUser www-data
+    #PassengerRoot /usr/local/lib/ruby/gems/1.8/gems/passenger-3.0.2
+#    PassengerRuby /usr/bin/ruby
+#    PassengerAppRoot /var/www/redmine
+#    Alias /redmine /owaspbwa/owaspbwa-svn/var/www/redmine/public
+#    <Directory /var/www/redmine>
+#        Options -MultiViews
+#    </Directory>
+</VirtualHost>

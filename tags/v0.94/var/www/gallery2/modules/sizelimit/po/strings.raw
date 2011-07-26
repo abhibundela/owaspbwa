@@ -1,0 +1,27 @@
+# $Id: strings.raw,v 1.15 2006/01/22 17:38:21 mindless Exp $
+
+/* SetSizeOption.inc */
+gettext("WARNING: Cannot resize mime type %s") /* also in: SizeLimitOption.inc test/phpunit/SetSizeOptionTest.class */
+gettext("WARNING: Cannot compress mime type %s") /* also in: SizeLimitOption.inc test/phpunit/SetSizeOptionTest.class */
+
+/* SizeLimitOption.inc */
+gettext("Resize complete")
+gettext("Resize Status")
+gettext("Resizing photo")
+
+/* module.inc */
+gettext("Size Limit")
+gettext("Define picture size limit") /* also in: templates/SizeLimitOption.tpl */
+gettext("Display")
+
+/* templates/SizeLimitOption.tpl */
+gettext("Maximum dimensions of full sized images")
+gettext("No Limits")
+gettext("You must specify at least one of the dimensions")
+gettext("Maximum file size of full sized images in kilobytes")
+gettext("You must enter a number (greater than zero)")
+gettext("Keep original image?")
+gettext("Check here to apply size limits to the pictures in this album and all subalbums")
+gettext("Checking this option will rebuild pictures according to appropriate limits")
+gettext("Use these size limits in all subalbums")
+gettext("Checking this option will set same picture size limits in all subalbums")

@@ -1,0 +1,15 @@
+# $Id: strings.raw,v 1.3 2006/01/20 19:07:29 mindless Exp $
+
+/* module.inc */
+gettext("Sitemap")
+gettext("Generate a Google Sitemap for your Gallery")
+gettext("Export")
+gettext("Google Sitemap")
+gettext("Download Sitemap")
+
+/* templates/AdminSitemap.tpl */
+gettext("Sitemap settings")
+gettext("Google Sitemaps")
+gettext("To use the Google Sitemap, you must now go to the %s page and submit this url: %s")
+gettext("URL Rewrite Module")
+gettext("You can change the Sitemap url using the %s.")

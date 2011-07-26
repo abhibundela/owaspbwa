@@ -1,0 +1,1 @@
+|a:9:{s:8:"bmptopnm";s:8:"bmptopnm";s:11:"jpegQuality";s:2:"75";s:4:"path";s:0:"";s:7:"pnmcomp";s:7:"pnmcomp";s:9:"pnmtojpeg";s:9:"pnmtojpeg";s:10:"_callbacks";s:17:"getSiteAdminViews";s:16:"_requiredCoreApi";s:3:"7,0";s:18:"_requiredModuleApi";s:3:"3,0";s:8:"_version";s:5:"1.0.4";}

@@ -1,0 +1,17 @@
+# $Id: strings.raw,v 1.24 2006/01/20 19:06:53 mindless Exp $
+
+/* ShowTree.inc */
+gettext("Gallery Debug")
+
+/* module.inc */
+gettext("Debugging")
+gettext("Debugging and Developer Tools")
+gettext("Gallery")
+gettext("Show Debug Tree")
+
+/* templates/ShowTree.tpl */
+gettext("Debug Tree")
+
+/* templates/ShowTreeEntityLink.tpl */
+gettext("%d: (%s)")
+gettext("[browse]")

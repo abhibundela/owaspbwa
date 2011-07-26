@@ -1,0 +1,1 @@
+|a:10:{s:6:"create";s:6:"access";s:8:"fullSize";s:1:"1";s:8:"homeLink";s:1:"0";s:13:"loginRedirect";s:1:"0";s:14:"targetLocation";s:1:"7";s:4:"view";s:9:"everybody";s:10:"_callbacks";s:55:"registerEventListeners|getSiteAdminViews|getSystemLinks";s:16:"_requiredCoreApi";s:3:"7,0";s:18:"_requiredModuleApi";s:3:"3,0";s:8:"_version";s:5:"1.0.3";}

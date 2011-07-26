@@ -1,0 +1,22 @@
+# $Id: strings.raw,v 1.2 2006/02/27 21:44:22 mindless Exp $
+
+/* ReuploadPhotoOption.inc */
+gettext("Reuploaded file successfully.") /* also in: test/phpunit/ReuploadOptionTest.class */
+ngettext("%d megabyte", "%d megabytes")
+ngettext("%d kilobytes", "%d kilobytes")
+
+/* module.inc */
+gettext("Reupload")
+gettext("Allows reupload of pictures.")
+gettext("Extra Data")
+
+/* templates/ReuploadPhotoOption.tpl */
+gettext("Reupload Photo")
+gettext("Your webserver is configured to disallow file uploads from your web browser at this time.  Please contact your system administrator for assistance.")
+gettext("Upload a new revision of this picture instead of the old one.")
+gettext("<b>Note:</b> The new file cannot be larger than %s. If you want to upload a larger file you must ask your system administrator to allow larger uploads.")
+gettext("File")
+gettext("Reupload File")
+gettext("Unable to reupload file.")
+gettext("Please check the size and try again. The new file cannot be larger than %s.")
+gettext("Unable to reupload file. Are you sure the file is of the same type (image, movie) as the original?")

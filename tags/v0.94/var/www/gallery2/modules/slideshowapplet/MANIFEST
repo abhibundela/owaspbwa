@@ -1,0 +1,122 @@
+# File crc32 crc32(crlf) size size(crlf)  or  R File
+modules/slideshowapplet/SlideshowApplet.inc	3832308779	2968455536	4844	4985
+modules/slideshowapplet/SlideshowAppletSiteAdmin.inc	1019126552	4104804211	5270	5449
+modules/slideshowapplet/applets/GalleryRemoteAppletMini.jar	2114593380	2114593380	302938	302938
+modules/slideshowapplet/applets/GalleryRemoteHTTPClient.jar	3199006743	3199006743	216405	216405
+modules/slideshowapplet/applets/applet_img.jar	3756955998	3756955998	9914	9914
+modules/slideshowapplet/locale/af/LC_MESSAGES/modules_slideshowapplet.mo	3597919929	3597919929	1486	1486
+modules/slideshowapplet/locale/bg/LC_MESSAGES/modules_slideshowapplet.mo	285845000	285845000	1330	1330
+modules/slideshowapplet/locale/cs/LC_MESSAGES/modules_slideshowapplet.mo	1594816054	1594816054	5029	5029
+modules/slideshowapplet/locale/da/LC_MESSAGES/modules_slideshowapplet.mo	370905679	370905679	4596	4596
+modules/slideshowapplet/locale/de/LC_MESSAGES/modules_slideshowapplet.mo	2225308003	2225308003	5042	5042
+modules/slideshowapplet/locale/en_GB/LC_MESSAGES/modules_slideshowapplet.mo	3793290607	3793290607	493	493
+modules/slideshowapplet/locale/eu/LC_MESSAGES/modules_slideshowapplet.mo	2837910494	2837910494	4491	4491
+modules/slideshowapplet/locale/fi/LC_MESSAGES/modules_slideshowapplet.mo	1260885965	1260885965	1383	1383
+modules/slideshowapplet/locale/fr/LC_MESSAGES/modules_slideshowapplet.mo	4023886071	4023886071	4893	4893
+modules/slideshowapplet/locale/hu/LC_MESSAGES/modules_slideshowapplet.mo	2664459991	2664459991	1356	1356
+modules/slideshowapplet/locale/it/LC_MESSAGES/modules_slideshowapplet.mo	4218460444	4218460444	4613	4613
+modules/slideshowapplet/locale/ja/LC_MESSAGES/modules_slideshowapplet.mo	2624157113	2624157113	1599	1599
+modules/slideshowapplet/locale/lt/LC_MESSAGES/modules_slideshowapplet.mo	1852420736	1852420736	5091	5091
+modules/slideshowapplet/locale/nl/LC_MESSAGES/modules_slideshowapplet.mo	336090168	336090168	4996	4996
+modules/slideshowapplet/locale/no/LC_MESSAGES/modules_slideshowapplet.mo	1214100694	1214100694	4792	4792
+modules/slideshowapplet/locale/pl/LC_MESSAGES/modules_slideshowapplet.mo	1745782832	1745782832	4940	4940
+modules/slideshowapplet/locale/ru/LC_MESSAGES/modules_slideshowapplet.mo	4099588932	4099588932	6597	6597
+modules/slideshowapplet/locale/sr/LC_MESSAGES/modules_slideshowapplet.mo	2833950478	2833950478	1423	1423
+modules/slideshowapplet/locale/sv/LC_MESSAGES/modules_slideshowapplet.mo	2498037076	2498037076	4907	4907
+modules/slideshowapplet/locale/tr/LC_MESSAGES/modules_slideshowapplet.mo	2290737065	2290737065	2069	2069
+modules/slideshowapplet/locale/vi/LC_MESSAGES/modules_slideshowapplet.mo	21340552	21340552	1494	1494
+modules/slideshowapplet/locale/zh_CN/LC_MESSAGES/modules_slideshowapplet.mo	2897511277	2897511277	4304	4304
+modules/slideshowapplet/locale/zh_TW/LC_MESSAGES/modules_slideshowapplet.mo	3353389833	3353389833	4515	4515
+modules/slideshowapplet/module.inc	1938695843	4100107617	4321	4460
+modules/slideshowapplet/po/GNUmakefile	1866879166	2808215985	98	103
+modules/slideshowapplet/po/af.po	2683440055	207963358	4757	4942
+modules/slideshowapplet/po/bg.po	1557473011	2840324308	4537	4713
+modules/slideshowapplet/po/cs.po	3653593797	488951979	6158	6349
+modules/slideshowapplet/po/da.po	3359030352	4245688401	5845	6022
+modules/slideshowapplet/po/de.po	3784401525	3197460600	5978	6158
+modules/slideshowapplet/po/en_GB.po	2958012591	2877931237	5364	5536
+modules/slideshowapplet/po/eu.po	3974422261	1098022073	5964	6156
+modules/slideshowapplet/po/fi.po	956954374	4131140375	4663	4847
+modules/slideshowapplet/po/fr.po	3613247602	3410176532	5801	5976
+modules/slideshowapplet/po/hu.po	2811862328	2194988548	4457	4629
+modules/slideshowapplet/po/it.po	3266166245	3982677281	6135	6326
+modules/slideshowapplet/po/ja.po	4067001754	1854218244	4910	5092
+modules/slideshowapplet/po/lt.po	2223358818	3337790695	5927	6103
+modules/slideshowapplet/po/nl.po	3663186729	4251800565	5954	6111
+modules/slideshowapplet/po/no.po	590283694	925233967	5631	5788
+modules/slideshowapplet/po/pl.po	4004028643	296535915	5771	5926
+modules/slideshowapplet/po/ru.po	3877646645	1572190848	8046	8219
+modules/slideshowapplet/po/sr.po	725645941	3079544962	4628	4810
+modules/slideshowapplet/po/strings.raw	458279395	458279395	2283	2283
+modules/slideshowapplet/po/sv.po	1699019652	1835894563	5687	5860
+modules/slideshowapplet/po/tr.po	4227201729	2819836850	5006	5192
+modules/slideshowapplet/po/vi.po	2782059510	275402993	4738	4917
+modules/slideshowapplet/po/zh_CN.po	1068362691	3420988625	5032	5187
+modules/slideshowapplet/po/zh_TW.po	2889264002	643427398	5276	5441
+modules/slideshowapplet/templates/SlideshowApplet.tpl	725012797	4189359037	4193	4276
+modules/slideshowapplet/templates/SlideshowAppletSiteAdmin.tpl	143108531	895001859	5854	5992
+R	modules/slideshowapplet/locale/bg_BG/LC_MESSAGES/modules_slideshowapplet.mo
+R	modules/slideshowapplet/locale/bg_BG/LC_MESSAGES
+R	modules/slideshowapplet/locale/bg_BG
+R	modules/slideshowapplet/locale/cs_CZ/LC_MESSAGES/modules_slideshowapplet.mo
+R	modules/slideshowapplet/locale/cs_CZ/LC_MESSAGES/modules_uploadapplet.mo
+R	modules/slideshowapplet/locale/cs_CZ/LC_MESSAGES
+R	modules/slideshowapplet/locale/cs_CZ
+R	modules/slideshowapplet/locale/da_DK/LC_MESSAGES/modules_slideshowapplet.mo
+R	modules/slideshowapplet/locale/da_DK/LC_MESSAGES
+R	modules/slideshowapplet/locale/da_DK
+R	modules/slideshowapplet/locale/de_DE/LC_MESSAGES/modules_slideshowapplet.mo
+R	modules/slideshowapplet/locale/de_DE/LC_MESSAGES/modules_uploadapplet.mo
+R	modules/slideshowapplet/locale/de_DE/LC_MESSAGES
+R	modules/slideshowapplet/locale/de_DE
+R	modules/slideshowapplet/locale/eu_ES/LC_MESSAGES/modules_slideshowapplet.mo
+R	modules/slideshowapplet/locale/eu_ES/LC_MESSAGES
+R	modules/slideshowapplet/locale/eu_ES
+R	modules/slideshowapplet/locale/fr_FR/LC_MESSAGES/modules_slideshowapplet.mo
+R	modules/slideshowapplet/locale/fr_FR/LC_MESSAGES/modules_uploadapplet.mo
+R	modules/slideshowapplet/locale/fr_FR/LC_MESSAGES
+R	modules/slideshowapplet/locale/fr_FR
+R	modules/slideshowapplet/locale/it_IT/LC_MESSAGES/modules_slideshowapplet.mo
+R	modules/slideshowapplet/locale/it_IT/LC_MESSAGES
+R	modules/slideshowapplet/locale/it_IT
+R	modules/slideshowapplet/locale/ja_JP/LC_MESSAGES/modules_slideshowapplet.mo
+R	modules/slideshowapplet/locale/ja_JP/LC_MESSAGES
+R	modules/slideshowapplet/locale/ja_JP
+R	modules/slideshowapplet/locale/nl_NL/LC_MESSAGES/modules_slideshowapplet.mo
+R	modules/slideshowapplet/locale/nl_NL/LC_MESSAGES/modules_uploadapplet.mo
+R	modules/slideshowapplet/locale/nl_NL/LC_MESSAGES
+R	modules/slideshowapplet/locale/nl_NL
+R	modules/slideshowapplet/locale/no_NO/LC_MESSAGES/modules_slideshowapplet.mo
+R	modules/slideshowapplet/locale/no_NO/LC_MESSAGES/modules_uploadapplet.mo
+R	modules/slideshowapplet/locale/no_NO/LC_MESSAGES
+R	modules/slideshowapplet/locale/no_NO
+R	modules/slideshowapplet/locale/pl_PL/LC_MESSAGES/modules_slideshowapplet.mo
+R	modules/slideshowapplet/locale/pl_PL/LC_MESSAGES
+R	modules/slideshowapplet/locale/pl_PL
+R	modules/slideshowapplet/locale/ru_RU/LC_MESSAGES/modules_slideshowapplet.mo
+R	modules/slideshowapplet/locale/ru_RU/LC_MESSAGES
+R	modules/slideshowapplet/locale/ru_RU
+R	modules/slideshowapplet/locale/sr_YU/LC_MESSAGES/modules_slideshowapplet.mo
+R	modules/slideshowapplet/locale/sr_YU/LC_MESSAGES
+R	modules/slideshowapplet/locale/sr_YU
+R	modules/slideshowapplet/locale/tr_TR/LC_MESSAGES/modules_slideshowapplet.mo
+R	modules/slideshowapplet/locale/tr_TR/LC_MESSAGES
+R	modules/slideshowapplet/locale/tr_TR
+R	modules/slideshowapplet/locale/vi_VN/LC_MESSAGES/modules_slideshowapplet.mo
+R	modules/slideshowapplet/locale/vi_VN/LC_MESSAGES
+R	modules/slideshowapplet/locale/vi_VN
+R	modules/slideshowapplet/po/bg_BG.po
+R	modules/slideshowapplet/po/cs_CZ.po
+R	modules/slideshowapplet/po/da_DK.po
+R	modules/slideshowapplet/po/de_DE.po
+R	modules/slideshowapplet/po/eu_ES.po
+R	modules/slideshowapplet/po/fr_FR.po
+R	modules/slideshowapplet/po/it_IT.po
+R	modules/slideshowapplet/po/ja_JP.po
+R	modules/slideshowapplet/po/nl_NL.po
+R	modules/slideshowapplet/po/no_NO.po
+R	modules/slideshowapplet/po/pl_PL.po
+R	modules/slideshowapplet/po/ru_RU.po
+R	modules/slideshowapplet/po/sr_YU.po
+R	modules/slideshowapplet/po/tr_TR.po
+R	modules/slideshowapplet/po/vi_VN.po

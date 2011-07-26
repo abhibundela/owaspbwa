@@ -1,0 +1,1 @@
+|a:7:{s:10:"albumFrame";s:0:"";s:9:"itemFrame";s:0:"";s:4:"show";s:24:"heading|title|date|views";s:10:"_callbacks";s:40:"registerEventListeners|getSiteAdminViews";s:16:"_requiredCoreApi";s:3:"7,0";s:18:"_requiredModuleApi";s:3:"3,0";s:8:"_version";s:5:"1.0.8";}

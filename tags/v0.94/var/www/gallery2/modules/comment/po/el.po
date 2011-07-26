@@ -1,0 +1,292 @@
+# $Id: el.po,v 1.7 2006/03/22 04:18:18 mindless Exp $
+#
+# Gallery - a web based photo album viewer and editor
+# Copyright (C) 2000-2006 Bharat Mediratta
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery: Comments 1.1.0\n"
+"POT-Creation-Date: 2003-03-06 16:30+0200\n"
+"PO-Revision-Date: 2003-03-06 16:30+0200\n"
+"Last-Translator: Nikos Batsis <nickthegreek@yahoo.com>\n"
+"Language-Team: Greek <gallery-devel@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Add Comment"
+msgstr "Προσθέστε σχόλιο"
+
+msgid "add comment"
+msgstr "Προσθέστε Σχόλιο"
+
+#, fuzzy
+msgid "show comments"
+msgstr "Σχόλια"
+
+msgid "Comments"
+msgstr "Σχόλια"
+
+#, fuzzy
+msgid "User commenting system"
+msgstr "Σχόλια"
+
+msgid "Extra Data"
+msgstr ""
+
+msgid "[comment] Add comments"
+msgstr "[comment] Προσθέστε σχόλια"
+
+msgid "[comment] Edit comments"
+msgstr "[comment] Edit comments"
+
+msgid "[comment] Delete comments"
+msgstr "[comment] Διαγραφή σχολίων"
+
+#, fuzzy
+msgid "[comment] View comments"
+msgstr "[comment] Edit comments"
+
+msgid "[comment] All access"
+msgstr "[comment] All access"
+
+#, fuzzy
+msgid "View Latest Comments"
+msgstr "Σχόλια"
+
+#, fuzzy
+msgid "View Comments"
+msgstr "Σχόλια"
+
+#, fuzzy, c-format
+msgid "Comments: %d"
+msgstr "Σχόλιο: "
+
+#, fuzzy
+msgid "Guest Comments"
+msgstr "Σχόλια"
+
+#, fuzzy
+msgid "Comment Module"
+msgstr "Σχόλιο: "
+
+#, fuzzy
+msgid "Search comments"
+msgstr "[comment] Προσθέστε σχόλια"
+
+msgid "Subject"
+msgstr ""
+
+#, fuzzy
+msgid "Comment"
+msgstr "Σχόλιο:"
+
+#, fuzzy
+msgid "Commenter"
+msgstr "Σχολιαστής:"
+
+#, fuzzy
+msgid "Comment Preview"
+msgstr "Σχόλιο: "
+
+msgid "Posted by"
+msgstr ""
+
+#, c-format
+msgid "%s (%s)"
+msgstr ""
+
+msgid "(required)"
+msgstr ""
+
+#, fuzzy
+msgid "You must enter a subject!"
+msgstr "Πρέπει να βάλετε μια ημερομηνία"
+
+#, fuzzy
+msgid "You must enter a comment!"
+msgstr "Πρέπει να βάλετε μια ημερομηνία"
+
+#, fuzzy
+msgid "Preview"
+msgstr "Σχόλιο: "
+
+msgid "Save"
+msgstr "Αποθήκευση"
+
+msgid "Cancel"
+msgstr "Ακυρο"
+
+msgid "edit"
+msgstr "Επεξεργασία"
+
+msgid "delete"
+msgstr "Διαγραφή"
+
+msgid "show full"
+msgstr ""
+
+msgid "show summary"
+msgstr ""
+
+#, c-format
+msgid "Posted by %s on %s (%s)"
+msgstr ""
+
+#, c-format
+msgid "Posted by %s on %s"
+msgstr ""
+
+msgid "Comment change confirmation"
+msgstr ""
+
+msgid "Comment added successfully"
+msgstr ""
+
+#, fuzzy
+msgid "Comment deleted successfully"
+msgstr "[comment] Διαγραφή σχολίων"
+
+msgid "Comment modified successfully"
+msgstr ""
+
+#, fuzzy
+msgid "Comments Settings"
+msgstr "Σχόλια"
+
+#, fuzzy
+msgid "Settings saved successfully"
+msgstr "[comment] Διαγραφή σχολίων"
+
+msgid "Show link for Latest Comments:"
+msgstr ""
+
+msgid "Number of comments on Latest Comments page:"
+msgstr ""
+
+msgid "Invalid value"
+msgstr ""
+
+msgid "Reset"
+msgstr ""
+
+msgid "Delete this comment?"
+msgstr "Διαγραφή αυτού του σχολίου;"
+
+msgid "Are you sure?"
+msgstr ""
+
+#, fuzzy
+msgid "Delete this comment?  There is no undo!"
+msgstr "Διαγραφή αυτού του σχολίου;"
+
+msgid "Delete"
+msgstr "Διαγραφή"
+
+msgid "Edit comment"
+msgstr "Επεξεργασία σχολίου"
+
+msgid "You must enter a username."
+msgstr "Πρέπει να βάλετε όνομα χρήστη."
+
+msgid "The username you entered is invalid."
+msgstr "Το όνομα χρήστη που βάλατε είναι άκυρο."
+
+#, fuzzy
+msgid "Host"
+msgstr "Host: "
+
+#, fuzzy
+msgid "Date"
+msgstr "Ημερομηνία:"
+
+msgid "The date you entered is invalid."
+msgstr "Η υπερομηνία που βάλατε είναι άκυρη."
+
+msgid "You must enter a date"
+msgstr "Πρέπει να βάλετε μια ημερομηνία"
+
+#, fuzzy
+msgid "You must enter a subject"
+msgstr "Πρέπει να βάλετε μια ημερομηνία"
+
+#, fuzzy
+msgid "You must enter a comment"
+msgstr "Πρέπει να βάλετε μια ημερομηνία"
+
+#, fuzzy
+msgid "Latest Comments"
+msgstr "Σχόλια"
+
+msgid "Comment changed successfully"
+msgstr ""
+
+msgid "There are no comments for this item"
+msgstr "Δεν υπάρχουν σχόλια για τη φωτογραφία"
+
+msgid "Recent comments"
+msgstr "Πρόσφατα Σχόλια"
+
+#, c-format
+msgid "(view all %d comments)"
+msgstr "Δείτε και τα %d σχόλια"
+
+#, fuzzy
+msgid "Show comments"
+msgstr "Σχόλια"
+
+#, fuzzy
+msgid "Number of comments"
+msgstr "[comment] Προσθέστε σχόλια"
+
+msgid "1"
+msgstr ""
+
+msgid "2"
+msgstr ""
+
+msgid "3"
+msgstr ""
+
+msgid "4"
+msgstr ""
+
+msgid "5"
+msgstr ""
+
+msgid "10"
+msgstr ""
+
+msgid "20"
+msgstr ""
+
+msgid "30"
+msgstr ""
+
+msgid "50"
+msgstr ""
+
+msgid "100"
+msgstr ""
+
+msgid "999"
+msgstr ""
+
+#, fuzzy
+#~ msgid "[comment] Search comments"
+#~ msgstr "[comment] Προσθέστε σχόλια"

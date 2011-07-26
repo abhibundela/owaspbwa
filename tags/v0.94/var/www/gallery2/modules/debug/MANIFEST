@@ -1,0 +1,130 @@
+# File crc32 crc32(crlf) size size(crlf)  or  R File
+modules/debug/ShowTree.inc	3158526601	2148504986	3662	3782
+modules/debug/classes/DebugHelper.class	929747556	3384637903	1700	1761
+modules/debug/locale/af/LC_MESSAGES/modules_debug.mo	643455220	643455220	794	794
+modules/debug/locale/cs/LC_MESSAGES/modules_debug.mo	916868417	916868417	913	913
+modules/debug/locale/da/LC_MESSAGES/modules_debug.mo	1657431129	1657431129	799	799
+modules/debug/locale/de/LC_MESSAGES/modules_debug.mo	3185876792	3185876792	738	738
+modules/debug/locale/en_GB/LC_MESSAGES/modules_debug.mo	347097322	347097322	440	440
+modules/debug/locale/es/LC_MESSAGES/modules_debug.mo	2406257942	2406257942	563	563
+modules/debug/locale/es_AR/LC_MESSAGES/modules_debug.mo	3970561578	3970561578	701	701
+modules/debug/locale/eu/LC_MESSAGES/modules_debug.mo	330399424	330399424	768	768
+modules/debug/locale/fi/LC_MESSAGES/modules_debug.mo	231990214	231990214	840	840
+modules/debug/locale/fr/LC_MESSAGES/modules_debug.mo	524476291	524476291	804	804
+modules/debug/locale/ga/LC_MESSAGES/modules_debug.mo	3669972966	3669972966	840	840
+modules/debug/locale/is/LC_MESSAGES/modules_debug.mo	2598998896	2598998896	420	420
+modules/debug/locale/it/LC_MESSAGES/modules_debug.mo	3354898380	3354898380	756	756
+modules/debug/locale/ja/LC_MESSAGES/modules_debug.mo	3491359668	3491359668	794	794
+modules/debug/locale/nl/LC_MESSAGES/modules_debug.mo	2316427719	2316427719	641	641
+modules/debug/locale/no/LC_MESSAGES/modules_debug.mo	2713207772	2713207772	801	801
+modules/debug/locale/pl/LC_MESSAGES/modules_debug.mo	3398732313	3398732313	894	894
+modules/debug/locale/ru/LC_MESSAGES/modules_debug.mo	441505859	441505859	907	907
+modules/debug/locale/sr/LC_MESSAGES/modules_debug.mo	179559639	179559639	866	866
+modules/debug/locale/sv/LC_MESSAGES/modules_debug.mo	500321698	500321698	883	883
+modules/debug/locale/tr/LC_MESSAGES/modules_debug.mo	638922121	638922121	811	811
+modules/debug/locale/zh_CN/LC_MESSAGES/modules_debug.mo	3735974128	3735974128	779	779
+modules/debug/locale/zh_TW/LC_MESSAGES/modules_debug.mo	2399188261	2399188261	813	813
+modules/debug/module.inc	2604381301	3277037995	2265	2342
+modules/debug/po/GNUmakefile	1866879166	2808215985	98	103
+modules/debug/po/af.po	3943568672	1324892408	1750	1809
+modules/debug/po/cs.po	701191320	3206415150	1820	1879
+modules/debug/po/da.po	1995495755	750146021	1728	1784
+modules/debug/po/de.po	2533297151	3902963065	1805	1865
+modules/debug/po/en_GB.po	1676055440	594008640	1574	1628
+modules/debug/po/es.po	1276032395	383329228	1655	1711
+modules/debug/po/es_AR.po	2736461232	4193093573	1707	1763
+modules/debug/po/eu.po	2032422186	2490619946	1659	1714
+modules/debug/po/fi.po	4136721573	2522984114	1852	1911
+modules/debug/po/fr.po	3047254260	2022014871	1728	1783
+modules/debug/po/ga.po	3535595924	2477802062	2512	2590
+modules/debug/po/is.po	3682182526	3141953466	1553	1608
+modules/debug/po/it.po	3469567420	3714942059	1725	1783
+modules/debug/po/ja.po	1899298491	2583561503	2657	2754
+modules/debug/po/nl.po	2256790498	228410749	1746	1803
+modules/debug/po/no.po	239638351	3341398453	1844	1903
+modules/debug/po/pl.po	4016452076	832914706	1792	1849
+modules/debug/po/ru.po	1621438718	3205018480	1920	1980
+modules/debug/po/sr.po	230585643	233977655	1762	1819
+modules/debug/po/strings.raw	511003793	4035308269	364	381
+modules/debug/po/sv.po	3806648411	4103413011	2127	2194
+modules/debug/po/tr.po	1133335868	3735028374	1851	1912
+modules/debug/po/zh_CN.po	1775150426	1932271786	1679	1736
+modules/debug/po/zh_TW.po	1635848806	301767282	1711	1768
+modules/debug/templates/ShowTree.tpl	2640212471	2902434129	534	549
+modules/debug/templates/ShowTreeEntity.tpl	3197903921	1907169803	1362	1409
+modules/debug/templates/ShowTreeEntityLink.tpl	3389456786	3998085632	586	602
+R	modules/debug/FileViewer.inc
+R	modules/debug/classes/DebugStatusFormatter.class
+R	modules/debug/locale/cs_CZ/LC_MESSAGES/modules_debug.mo
+R	modules/debug/locale/cs_CZ/LC_MESSAGES
+R	modules/debug/locale/cs_CZ
+R	modules/debug/locale/da_DK/LC_MESSAGES/modules_debug.mo
+R	modules/debug/locale/da_DK/LC_MESSAGES
+R	modules/debug/locale/da_DK
+R	modules/debug/locale/de_DE/LC_MESSAGES/modules_debug.mo
+R	modules/debug/locale/de_DE/LC_MESSAGES
+R	modules/debug/locale/de_DE
+R	modules/debug/locale/eu_ES/LC_MESSAGES/modules_debug.mo
+R	modules/debug/locale/eu_ES/LC_MESSAGES
+R	modules/debug/locale/eu_ES
+R	modules/debug/locale/fi_FI/LC_MESSAGES/modules_debug.mo
+R	modules/debug/locale/fi_FI/LC_MESSAGES
+R	modules/debug/locale/fi_FI
+R	modules/debug/locale/fr_FR/LC_MESSAGES/modules_debug.mo
+R	modules/debug/locale/fr_FR/LC_MESSAGES
+R	modules/debug/locale/fr_FR
+R	modules/debug/locale/ga_IE/LC_MESSAGES/modules_debug.mo
+R	modules/debug/locale/ga_IE/LC_MESSAGES
+R	modules/debug/locale/ga_IE
+R	modules/debug/locale/is_IS/LC_MESSAGES/modules_debug.mo
+R	modules/debug/locale/is_IS/LC_MESSAGES
+R	modules/debug/locale/is_IS
+R	modules/debug/locale/it_IT/LC_MESSAGES/modules_debug.mo
+R	modules/debug/locale/it_IT/LC_MESSAGES
+R	modules/debug/locale/it_IT
+R	modules/debug/locale/ja_JP/LC_MESSAGES/modules_debug.mo
+R	modules/debug/locale/ja_JP/LC_MESSAGES
+R	modules/debug/locale/ja_JP
+R	modules/debug/locale/nl_NL/LC_MESSAGES/modules_debug.mo
+R	modules/debug/locale/nl_NL/LC_MESSAGES
+R	modules/debug/locale/nl_NL
+R	modules/debug/locale/no_NO/LC_MESSAGES/modules_debug.mo
+R	modules/debug/locale/no_NO/LC_MESSAGES
+R	modules/debug/locale/no_NO
+R	modules/debug/locale/pl_PL/LC_MESSAGES/modules_debug.mo
+R	modules/debug/locale/pl_PL/LC_MESSAGES
+R	modules/debug/locale/pl_PL
+R	modules/debug/locale/ru_RU/LC_MESSAGES/modules_debug.mo
+R	modules/debug/locale/ru_RU/LC_MESSAGES
+R	modules/debug/locale/ru_RU
+R	modules/debug/locale/sr_YU/LC_MESSAGES/modules_debug.mo
+R	modules/debug/locale/sr_YU/LC_MESSAGES
+R	modules/debug/locale/sr_YU
+R	modules/debug/locale/sv_SE/LC_MESSAGES/modules_debug.mo
+R	modules/debug/locale/sv_SE/LC_MESSAGES
+R	modules/debug/locale/sv_SE
+R	modules/debug/locale/tr_TR/LC_MESSAGES/modules_debug.mo
+R	modules/debug/locale/tr_TR/LC_MESSAGES
+R	modules/debug/locale/tr_TR
+R	modules/debug/po/cs_CZ.po
+R	modules/debug/po/da_DK.po
+R	modules/debug/po/de_DE.po
+R	modules/debug/po/eu_ES.po
+R	modules/debug/po/fi_FI.po
+R	modules/debug/po/fr_FR.po
+R	modules/debug/po/ga_IE.po
+R	modules/debug/po/is_IS.po
+R	modules/debug/po/it_IT.po
+R	modules/debug/po/ja_JP.po
+R	modules/debug/po/nl_NL.po
+R	modules/debug/po/no_NO.po
+R	modules/debug/po/pl_PL.po
+R	modules/debug/po/ru_RU.po
+R	modules/debug/po/sr_YU.po
+R	modules/debug/po/sv_SE.po
+R	modules/debug/po/tr_TR.po
+R	modules/debug/templates/DebugHead.tpl
+R	modules/debug/templates/DebugStatusFormatter.tpl
+R	modules/debug/templates/FileViewerHead.tpl
+R	modules/debug/templates/FileViewerIllegalFile.tpl
+R	modules/debug/templates/FileViewerLegalFile.tpl

@@ -1,0 +1,274 @@
+# $Id: sv.po,v 1.5 2006/03/22 04:21:53 mindless Exp $
+#
+# Gallery - a web based photo album viewer and editor
+# Copyright (C) 2000-2006 Bharat Mediratta
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+#
+# Swedish translation
+# Hampus Nygren <hampus@friendlyfire.net>, 2005.
+# 
+# Changed the translation from html to UTF-8
+# Anders Lindquist <andersl@saaf.se>, 2005
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery: Watermark 1.0.5\n"
+"Report-Msgid-Bugs-To: gallery-translations@lists.sourceforge.net\n"
+"POT-Creation-Date: 2003-09-29 21:00+0100\n"
+"PO-Revision-Date: 2005-10-29 13:00+0200\n"
+"Last-Translator: Anders Lindquist <andersl@saaf.se>\n"
+"Language-Team: Swedish <gallery-devel@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Swedish\n"
+"X-Poedit-Country: SWEDEN\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Watermark applied successfully"
+msgstr "Vattenstämpel applicerad framgångsrikt"
+
+msgid "Watermark removed successfully"
+msgstr "Vattenstämpel borttagen framgåsrikt"
+
+msgid "Watermark"
+msgstr "Vattenstämpel"
+
+msgid "user watermarks"
+msgstr "användarvattenstämplar"
+
+msgid "Watermark your images"
+msgstr "Vattenstämpla dina bilder"
+
+msgid "Display"
+msgstr "Visa"
+
+msgid "Watermarks"
+msgstr "Vattenstämplar"
+
+msgid "Watermark hotlinked images"
+msgstr "Vattenstämpla länkade bilder"
+
+msgid ""
+"Apply watermark to images downloaded from outside your Gallery. Select which "
+"watermark to use in Watermark Site Admin."
+msgstr "Applicera vattenstämpel på bilder nerladdade utifrå "
+"ditt Gallery. Välj vilka vattenstämplar som skall användas i "
+"Vattenstämpel Siteadministratör"
+
+msgid "Delete Watermark"
+msgstr "Ta Bort Vattenstämpel"
+
+#, c-format
+msgid "This watermark is used on one item."
+msgid_plural "This watermark is used on %d items."
+msgstr[0] "Denna vattenstämpel är använd på ett objekt."
+msgstr[1] "Denna vattenstämpel är använd på %d objekt."
+
+msgid ""
+"The watermark will be removed from all items if the watermark image is "
+"deleted."
+msgstr "Vattenstämpeln kommer att bli borttagen från alla objekt "
+"om vattenstämpelbilden blir raderad."
+
+msgid "Delete"
+msgstr "Ta bort"
+
+msgid "Cancel"
+msgstr "Ångra"
+
+msgid ""
+"You can choose a watermark to apply to this image.  Watermarks do not affect "
+"the original image, so they they can be applied to resizes and thumbnails "
+"without damaging the original."
+msgstr "Du kan välja en vattenstämpel att applicera till denna bild. "
+"Vattenstämplar påverkar inte orginalbilden, så de kan bli "
+"applicerade till storleksförändrade bilder eller miniatyrbilder utan "
+"att förstöra orginalet."
+
+msgid "You have no watermarks"
+msgstr "Du har inga vattenstämplar"
+
+msgid ""
+"You must first upload some watermark images so that you can apply them to "
+"your image."
+msgstr "Du måste först ladda upp vattenstämplingsbilder "
+"så att du sedan kan applicera dem på dina bilder"
+
+msgid "Upload some watermarks now."
+msgstr "Ladda upp några vattenstämplar nu."
+
+msgid "Step 1.  Choose which watermark you want to use"
+msgstr "Steg 1. Välj vilken vattenstämpel du vill använda"
+
+msgid "Step 2.  Place the watermark on your image."
+msgstr "Steg 2. Placera vattenstämpeln på din bild."
+
+msgid "watermark"
+msgstr "vattenstämpel"
+
+msgid "Step 3.  Choose which versions of the image you'd like to watermark"
+msgstr "Steg 3. Välj vilken version av bilder som du vill vattenstämpla"
+
+msgid "You must choose something to watermark!"
+msgstr "Du måste välja något att vattenstäpla!"
+
+msgid "Full size (won't damage the original file)"
+msgstr "Full storlek (förstör inte orginalfilen)"
+
+msgid "Resizes"
+msgstr "Storleksförändra"
+
+msgid "Thumbnail"
+msgstr "Miniatyrbild"
+
+msgid "Apply Watermark"
+msgstr "Applicera Vattenstämpel"
+
+msgid "Remove Watermark"
+msgstr "Ta Bort Vattenstämpel"
+
+msgid "My Watermarks"
+msgstr "Mina vattenstämplar"
+
+msgid "Watermark added successfully"
+msgstr "Vattenstämpel tillagd framgångsrikt"
+
+msgid "Watermark deleted successfully"
+msgstr "Vattenstämpel borttagen framgångsrikt"
+
+msgid "Watermark saved successfully"
+msgstr "Vattenstämpel sparad framgångsrikt"
+
+msgid "There was a problem processing your request."
+msgstr "Det var ett problem vid bearbetningen av din förfrågan."
+
+msgid "Upload Watermarks"
+msgstr "Ladda Upp Vattenstämplar"
+
+msgid ""
+"Add your own personal watermarks here.  These watermarks can only be used by "
+"you."
+msgstr "Lägg till dina personliga vattenstämplar här. Dessa "
+"vattenstämplar kan endast bli använda av dig."
+
+msgid "Name"
+msgstr "Namn"
+
+msgid "Image"
+msgstr "Bild"
+
+msgid "Action"
+msgstr "Funktion"
+
+msgid "edit"
+msgstr "redigera"
+
+msgid "delete"
+msgstr "ta bort"
+
+msgid "Add"
+msgstr "Lägg till"
+
+msgid "You must enter the path to a file to upload"
+msgstr "Du måste fylla i en sökväg till en fil som skall "
+"laddas upp"
+
+msgid "Edit A Watermark"
+msgstr "Redigera en Vattenstämpel"
+
+msgid "New image added successfully"
+msgstr "Ny bild tillagd framgåsrikt"
+
+msgid "Watermark Name"
+msgstr "Vattenstämpelnamn"
+
+msgid "Give this watermark a name so that you can identify it in a list."
+msgstr "Ge denna vattenstämpel ett namn så att du kan identifiera "
+"den i en lista."
+
+msgid "You must provide a name"
+msgstr "Du måste tillhandahålla ett namn"
+
+msgid "Name already used by another watermark"
+msgstr "Namnet är redan använt av annan vattenstämpel"
+
+msgid "Placement"
+msgstr "Placering"
+
+msgid ""
+"Place your watermark on the canvas below in the location where you'd like it "
+"to appear when you watermark newly uploaded photos.  You'll be able to edit "
+"individual photos to move the watermark later on, if you choose."
+msgstr "Placera din vattenstämpel pä duken nedan i positionen du vill "
+"att den skall framträda när du vattenstämplar nyligen uppladdade "
+"foton. Du kommer att kunna redigera individuella foton och flytta "
+"vattenstämpeln senare, om du vill"
+
+msgid "Choose which versions of the image you'd like to watermark"
+msgstr "Välj vilken version av bilder som du vill vattenstämpla"
+
+msgid "Save"
+msgstr "Spara"
+
+msgid "Choose a watermark to apply to the images you add."
+msgstr "Välj en vattenstämpel som skall appliceras på bilder som du "
+"lägger till"
+
+msgid "Edit your watermarks"
+msgstr "Redigera dina vattenstämplar"
+
+msgid "none"
+msgstr "inga"
+
+msgid "Watermark Images"
+msgstr "Vattenstämpla Bilder"
+
+msgid "Watermark updated successfully"
+msgstr "Vattenstämpel uppdaterad framgångsrikt"
+
+msgid "Image deleted successfully"
+msgstr "Bild borttagen framgångsrikt"
+
+msgid "Missing image file"
+msgstr "Bildfil saknas"
+
+msgid "No watermark selected"
+msgstr "Ingen vattenstämpel vald"
+
+msgid "Settings saved successfully"
+msgstr "Inställningarna sparade framgångsrikt"
+
+msgid "File"
+msgstr "Fil"
+
+msgid "Owner"
+msgstr "Ägare"
+
+msgid "Hotlink"
+msgstr "Länk"
+
+msgid "Watermark Hotlinked Images"
+msgstr "Vattenstämpla Länkade Bilder"
+
+msgid ""
+"Gallery can automatically apply a watermark to images linked from sites "
+"outside your Gallery. Select a watermark above and then activate hotlink "
+"watermarks using the Rewrite module."
+msgstr "Gallery kan automatiskt applicera en vattenstämpel till bilder "
+"som är länkade utifrån Gallery. Välj en vattenstämpel "
+"ovan och aktivera sedan länkvattenstämpel genom användning av "
+"Rewritemodulen."

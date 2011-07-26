@@ -1,0 +1,94 @@
+# File crc32 crc32(crlf) size size(crlf)  or  R File
+modules/dcraw/AdminDcraw.inc	1601451447	2352374671	5896	6109
+modules/dcraw/classes/DcrawToolkit.class	318021268	575164154	5285	5450
+modules/dcraw/classes/DcrawToolkitHelper.class	3105650275	1246753920	3811	3928
+modules/dcraw/locale/af/LC_MESSAGES/modules_dcraw.mo	3272431836	3272431836	3647	3647
+modules/dcraw/locale/cs/LC_MESSAGES/modules_dcraw.mo	2469325651	2469325651	3587	3587
+modules/dcraw/locale/da/LC_MESSAGES/modules_dcraw.mo	1865213227	1865213227	3480	3480
+modules/dcraw/locale/de/LC_MESSAGES/modules_dcraw.mo	3907061760	3907061760	3758	3758
+modules/dcraw/locale/es/LC_MESSAGES/modules_dcraw.mo	1912574573	1912574573	3679	3679
+modules/dcraw/locale/eu/LC_MESSAGES/modules_dcraw.mo	3256207287	3256207287	2869	2869
+modules/dcraw/locale/fr/LC_MESSAGES/modules_dcraw.mo	7833257	7833257	3759	3759
+modules/dcraw/locale/it/LC_MESSAGES/modules_dcraw.mo	1909256984	1909256984	3601	3601
+modules/dcraw/locale/ja/LC_MESSAGES/modules_dcraw.mo	103355188	103355188	1801	1801
+modules/dcraw/locale/nl/LC_MESSAGES/modules_dcraw.mo	3517548814	3517548814	3567	3567
+modules/dcraw/locale/no/LC_MESSAGES/modules_dcraw.mo	3061358591	3061358591	3532	3532
+modules/dcraw/locale/pl/LC_MESSAGES/modules_dcraw.mo	625698427	625698427	3738	3738
+modules/dcraw/locale/ru/LC_MESSAGES/modules_dcraw.mo	3559178350	3559178350	4847	4847
+modules/dcraw/locale/sr/LC_MESSAGES/modules_dcraw.mo	2856123217	2856123217	3579	3579
+modules/dcraw/locale/sv/LC_MESSAGES/modules_dcraw.mo	1231847530	1231847530	3643	3643
+modules/dcraw/locale/tr/LC_MESSAGES/modules_dcraw.mo	426523843	426523843	3273	3273
+modules/dcraw/locale/vi/LC_MESSAGES/modules_dcraw.mo	797043653	797043653	3896	3896
+modules/dcraw/locale/zh_CN/LC_MESSAGES/modules_dcraw.mo	3341680123	3341680123	3387	3387
+modules/dcraw/locale/zh_TW/LC_MESSAGES/modules_dcraw.mo	662842849	662842849	3399	3399
+modules/dcraw/module.inc	2752431128	2652544419	8180	8468
+modules/dcraw/po/GNUmakefile	1866879166	2808215985	98	103
+modules/dcraw/po/af.po	1738880027	3237655082	4656	4797
+modules/dcraw/po/cs.po	2535305387	1493931244	4505	4641
+modules/dcraw/po/da.po	1972416571	3069117653	4421	4543
+modules/dcraw/po/de.po	4102565861	254380752	4818	4958
+modules/dcraw/po/es.po	2477201213	1628722940	4703	4841
+modules/dcraw/po/eu.po	4204022104	2310035098	4097	4228
+modules/dcraw/po/fr.po	3660846784	1840766397	4620	4755
+modules/dcraw/po/it.po	1591850071	1493778764	4620	4760
+modules/dcraw/po/ja.po	3846971487	1691558461	3634	3760
+modules/dcraw/po/nl.po	3371483423	1970851607	4620	4758
+modules/dcraw/po/no.po	258683874	2980727443	4503	4624
+modules/dcraw/po/pl.po	2384518993	2801652525	4608	4728
+modules/dcraw/po/ru.po	3991538957	1917607830	5987	6130
+modules/dcraw/po/sr.po	4053604749	3667103875	4486	4621
+modules/dcraw/po/strings.raw	1201410731	1515310677	1775	1810
+modules/dcraw/po/sv.po	589652377	3417803311	4613	4750
+modules/dcraw/po/tr.po	3237194284	4212481851	4433	4556
+modules/dcraw/po/vi.po	163941687	1337191185	4824	4959
+modules/dcraw/po/zh_CN.po	1265623718	877470726	4296	4416
+modules/dcraw/po/zh_TW.po	3813743278	1105325636	4348	4480
+modules/dcraw/templates/AdminDcraw.tpl	3040785824	3570268168	4398	4531
+R	modules/dcraw/locale/cs_CZ/LC_MESSAGES/modules_dcraw.mo
+R	modules/dcraw/locale/cs_CZ/LC_MESSAGES
+R	modules/dcraw/locale/cs_CZ
+R	modules/dcraw/locale/da_DK/LC_MESSAGES/modules_dcraw.mo
+R	modules/dcraw/locale/da_DK/LC_MESSAGES
+R	modules/dcraw/locale/da_DK
+R	modules/dcraw/locale/de_DE/LC_MESSAGES/modules_dcraw.mo
+R	modules/dcraw/locale/de_DE/LC_MESSAGES
+R	modules/dcraw/locale/de_DE
+R	modules/dcraw/locale/fr_FR/LC_MESSAGES/modules_dcraw.mo
+R	modules/dcraw/locale/fr_FR/LC_MESSAGES
+R	modules/dcraw/locale/fr_FR
+R	modules/dcraw/locale/it_IT/LC_MESSAGES/modules_dcraw.mo
+R	modules/dcraw/locale/it_IT/LC_MESSAGES
+R	modules/dcraw/locale/it_IT
+R	modules/dcraw/locale/ja_JP/LC_MESSAGES/modules_dcraw.mo
+R	modules/dcraw/locale/ja_JP/LC_MESSAGES
+R	modules/dcraw/locale/ja_JP
+R	modules/dcraw/locale/nl_NL/LC_MESSAGES/modules_dcraw.mo
+R	modules/dcraw/locale/nl_NL/LC_MESSAGES
+R	modules/dcraw/locale/nl_NL
+R	modules/dcraw/locale/ru_RU/LC_MESSAGES/modules_dcraw.mo
+R	modules/dcraw/locale/ru_RU/LC_MESSAGES
+R	modules/dcraw/locale/ru_RU
+R	modules/dcraw/locale/sr_YU/LC_MESSAGES/modules_dcraw.mo
+R	modules/dcraw/locale/sr_YU/LC_MESSAGES
+R	modules/dcraw/locale/sr_YU
+R	modules/dcraw/locale/sv_SE/LC_MESSAGES/modules_dcraw.mo
+R	modules/dcraw/locale/sv_SE/LC_MESSAGES
+R	modules/dcraw/locale/sv_SE
+R	modules/dcraw/locale/tr_TR/LC_MESSAGES/modules_dcraw.mo
+R	modules/dcraw/locale/tr_TR/LC_MESSAGES
+R	modules/dcraw/locale/tr_TR
+R	modules/dcraw/locale/vi_VN/LC_MESSAGES/modules_dcraw.mo
+R	modules/dcraw/locale/vi_VN/LC_MESSAGES
+R	modules/dcraw/locale/vi_VN
+R	modules/dcraw/po/cs_CZ.po
+R	modules/dcraw/po/da_DK.po
+R	modules/dcraw/po/de_DE.po
+R	modules/dcraw/po/fr_FR.po
+R	modules/dcraw/po/it_IT.po
+R	modules/dcraw/po/ja_JP.po
+R	modules/dcraw/po/nl_NL.po
+R	modules/dcraw/po/ru_RU.po
+R	modules/dcraw/po/sr_YU.po
+R	modules/dcraw/po/sv_SE.po
+R	modules/dcraw/po/tr_TR.po
+R	modules/dcraw/po/vi_VN.po

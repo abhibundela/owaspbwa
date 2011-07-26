@@ -1,0 +1,14 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<link type='text/css' rel='stylesheet' href='../stylesheet/styles.css' />
+</head>
+<body style='background-color:#3a3d32'>
+<h2>Iframe Injection</h2>
+<p>
+Realistically Iframe Injection is a form of Xss, well xss and rfi. The uses of this type of attack can vary, a while ago it was one of the main types of attackes on facebook. An attacker would add a friend, add a few comments to the page, and then inject a hidden iframe that could be used for a few things. Credential stealing, malware injection, defacement, adding friends from that persons friends list, etc. In this site I give basic examples of how to inject an iframe that displayed milw0rm.com. To elaborate there are a few ways to make an iframe invisible to the browser, here are some other examples.<br />
+&lt;iframe src="http://www.milw0rm.com" height="0" width="0"&gt;&lt;/iframe&gt<br />
+&lt;iframe src="http://www.milw0rm.com" style="visibility: hidden"&gt;&lt;/iframe&gt<br /><br />
+The use of iframes is limited to the users imagination, and there are many tutorials online that will help aid this documentation.
+</body>
+</html>

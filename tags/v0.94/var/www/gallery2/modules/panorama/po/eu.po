@@ -1,0 +1,99 @@
+# $Id: eu.po,v 1.6 2006/03/22 04:20:27 mindless Exp $
+#
+# Gallery - a web based photo album viewer and editor
+# Copyright (C) 2000-2006 Bharat Mediratta
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+# Piarres Beobide <pi@beobide.net>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery: Panorama 1.0.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-11-03 23:12+0100\n"
+"PO-Revision-Date: 2006-02-10 12:17+0100\n"
+"Last-Translator: Piarres Beobide <pi@beobide.net>\n"
+"Language-Team: librezale.org <librezale@librezale.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Pootle 0.6.3.20060126\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Panorama"
+msgstr "Panorama"
+
+msgid "View wide jpeg/gif images in a java applet viewer"
+msgstr "Bistarazi jpeg/gif irudi handiak java applet ikustatzailea"
+
+msgid "Display"
+msgstr "Bistaratu"
+
+msgid "View Panorama"
+msgstr "Panorama Ikusi"
+
+msgid "Note that panorama view only applies to full size photo, not resizes."
+msgstr "Kontutan izan panirama ikuspegia tamaina osoko argazkietan erabil daitekeela ez tamaina aldatutakoetan."
+
+msgid "Activate panorama viewer applet for this photo"
+msgstr "Aktibatu panorama ikuspegia argazki honetan"
+
+msgid "Panorama Settings"
+msgstr "Panorama Ezarpenak"
+
+msgid "Settings saved successfully"
+msgstr "Ezarpenak behar bezala gorde dira"
+
+msgid "Items reset successfully"
+msgstr "Elementuak behar bezala berezarri dira"
+
+msgid "Reset panorama items to enable deactivation (see below)"
+msgstr "Panorama elementuak berezarri ezgaitzea ezartzeko (ikusi behean)"
+
+msgid ""
+"The panorama viewer can be activated in two ways: the first allows album "
+"administrators to select individual images for panorama display (Panorama "
+"section in \"edit photo\"), overriding the normal display of the entire "
+"image.  The second method retains the normal image display but gives users "
+"an option in the \"item actions\" to view the image in the panorama viewer."
+msgstr "Panorama ikustatzailea bi modutara gaitu daiteke: Alde batetik album kudeatzaileari banakako irudetan panorama bistaratzea (Panorama  \"argazkiak editatu\" atalean) gaitzea da. Bigarren modua irdui bistartze normala mantentzen du baina erabiltzeari \"elementu ekintza\" aukeretan irudia panorama ikustatzailean ikusteko aukera ematen die."
+
+msgid "Use applet to display wide images"
+msgstr "Argazki handiak ikusteko applet-a erabili"
+
+msgid "Add \"view panorama\" option in item actions for wide images"
+msgstr "\"panorama ikuspegia\" aukera gehitu elementu ekintza menuari argazki handientzat,"
+
+msgid "Width of panorama viewer: "
+msgstr "Panorama ikuspegiaren zabalera: "
+
+msgid "Invalid width value"
+msgstr "Zabalera balio baliogabea"
+
+msgid "Save"
+msgstr "Gorde"
+
+msgid "Reset"
+msgstr "Berrezarri"
+
+msgid ""
+"This gallery contains items activated for panorama view.  These must be "
+"reset to standard items before this module can be deactivated.  You can "
+"reset all items here.  Warning: there is no undo."
+msgstr "Galeria honek panorama ikustatzailearentzat gaituriko elementuak ditu. Elementu horiek elementu arruntetara berezarri behar dira modulu hau ezgaitu aurretik. Elementu horiek hemen berezarri ditzakezu. Kontuz Ezin da atzera egin."
+
+msgid "Reset all items"
+msgstr "Elementu denak berrezarri"
+

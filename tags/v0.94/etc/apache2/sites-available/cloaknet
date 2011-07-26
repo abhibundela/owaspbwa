@@ -1,0 +1,28 @@
+<VirtualHost *:80>
+	ServerName cloaknet
+	ServerAdmin webmaster@localhost
+
+	DocumentRoot /var/www/
+	<Directory />
+		Options FollowSymLinks +ExecCGI
+		AllowOverride None
+	</Directory>
+	<Directory /var/www/>
+		Options Indexes FollowSymLinks MultiViews +ExecCGI
+		AllowOverride All
+		Order allow,deny
+		allow from all
+	</Directory>
+
+	ErrorLog /var/log/apache2/error.log
+
+	# Possible values include: debug, info, notice, warn, error, crit,
+	# alert, emerg.
+	LogLevel warn
+
+	CustomLog /var/log/apache2/access.log combined
+
+	ProxyPass / http://localhost:8080/hackxor/cloaknet/
+	ProxyPassReverse / http://localhost:8080/hackxor/cloaknet/
+
+</VirtualHost>

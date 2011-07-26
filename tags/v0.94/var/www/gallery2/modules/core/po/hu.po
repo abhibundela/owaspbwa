@@ -1,0 +1,3628 @@
+# $Id: hu.po,v 1.11 2006/03/22 04:18:34 mindless Exp $
+#
+# Gallery - a web based photo album viewer and editor
+# Copyright (C) 2000-2006 Bharat Mediratta
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+#
+# Previous translators (as far as known, add yourself here, please):
+# - Gergely Dömsödi <doome@uhulinux.hu>
+#
+# , fuzzy
+# 
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery: Core 1.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-11-04 20:08+0100\n"
+"PO-Revision-Date: 2006-01-06 17:02+0100\n"
+"Last-Translator: Jozsef R.Nagy <joe7@site.hu>\n"
+"Language-Team: Hungarian <gallery-devel@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Gallery Email Test"
+msgstr "Galéria Emailteszt"
+
+msgid "forever"
+msgstr "örökké"
+
+msgid "High Priority (Me first!)"
+msgstr "Magas Prioritás (Engem először!)"
+
+msgid "Low Priority (I want to share!)"
+msgstr "Alacsony Prioritás (Osztozni akarok!)"
+
+msgid "No Markup"
+msgstr ""
+
+msgid "BBCode"
+msgstr "BBCode"
+
+msgid "Raw HTML"
+msgstr "Nyers HTML"
+
+msgid "Database"
+msgstr "Adatbázis"
+
+msgid "File"
+msgstr "Fájl"
+
+# c-format
+#, c-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d perc"
+
+# c-format
+#, c-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d óra"
+
+# c-format
+#, c-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d nap"
+
+# c-format
+#, c-format
+msgid "%d week"
+msgid_plural "%d weeks"
+msgstr[0] "%d hét"
+
+msgid "<none>"
+msgstr "<nincs>"
+
+msgid "install"
+msgstr "telepítés"
+
+msgid "upgrade"
+msgstr "frissítés"
+
+msgid "configure"
+msgstr "beállítás"
+
+msgid "activate"
+msgstr "aktiválás"
+
+msgid "uninstall"
+msgstr "eltávolít"
+
+msgid "deactivate"
+msgstr "deaktiválás"
+
+msgid "No acceleration"
+msgstr ""
+
+msgid "Partial acceleration"
+msgstr ""
+
+msgid "Full acceleration"
+msgstr ""
+
+#, fuzzy
+msgid "Performing Maintenance Tasks"
+msgstr "Rendszerkarbantartás"
+
+#, c-format
+msgid "Downloading %s"
+msgstr ""
+
+#, fuzzy
+msgid "Done."
+msgstr "Kész"
+
+msgid "Upgrade"
+msgstr "Frissítés"
+
+msgid "Download"
+msgstr "Letöltés"
+
+msgid "Inherit settings from parent album"
+msgstr "Beállítások öröklése a szülőalbumtól"
+
+msgid "Use these settings"
+msgstr "Ezen beállítások használata"
+
+#, fuzzy
+msgid "Installing the core module"
+msgstr "Gallery Core Modul"
+
+msgid "key"
+msgstr "kulcs"
+
+msgid "All access"
+msgstr "Minden hozzáférés"
+
+msgid "[core] View item"
+msgstr "[core] Elem megtekintése"
+
+msgid "[core] View resized version(s)"
+msgstr "[core] Átméretezett verziók megtekintése"
+
+msgid "[core] View original version"
+msgstr "[core] Eredeti verzió megtekintése"
+
+msgid "[core] View all versions"
+msgstr "[core] Mindegyik verzió megtekintése"
+
+msgid "[core] Add sub-album"
+msgstr "[core] Al-album hozzáadása"
+
+msgid "[core] Add sub-item"
+msgstr "[core] Al-elem hozzáadása"
+
+msgid "[core] Edit item"
+msgstr "[core] Elem szerkesztése"
+
+msgid "[core] Change item permissions"
+msgstr "[core] Elem jogainak megváltoztatása"
+
+msgid "[core] Delete item"
+msgstr "[core] Elem törlése"
+
+msgid "Upgrading permissions"
+msgstr "Jogok frissítése"
+
+msgid "Deleting old permission tables"
+msgstr "Régi jogosultsági táblák törlése"
+
+msgid "Registered Users"
+msgstr "Regisztrált Felhasználók"
+
+msgid "All Users"
+msgstr "Minden felhasználó"
+
+msgid "Detecting broken derivatives"
+msgstr ""
+
+msgid "Clearing fast-download cache"
+msgstr ""
+
+#, fuzzy
+msgid "Deleting old fast-download cache"
+msgstr "Régi jogosultsági táblák törlése"
+
+msgid "Converting MySQL data to UTF8"
+msgstr ""
+
+msgid "Site Admins"
+msgstr "Oldal adminisztrátorok"
+
+msgid "Everybody"
+msgstr "Mindenki"
+
+msgid "Guest"
+msgstr "Vendég"
+
+msgid "Gallery"
+msgstr "Galéria"
+
+msgid "This is the main page of your Gallery"
+msgstr "Ez a Galéria főoldala"
+
+#, c-format
+msgid "Upgrading permissions (%d items complete, %d remaining)"
+msgstr ""
+
+msgid "Detecting broken derivatives, loading "
+msgstr ""
+
+msgid "Detecting broken derivatives "
+msgstr ""
+
+msgid "Detecting broken derivatives, "
+msgstr ""
+
+msgid "Detecting broken derivatives, saving "
+msgstr ""
+
+#, fuzzy, c-format
+msgid "Deleting old session files (iteration %d)"
+msgstr "Régi jogosultsági táblák törlése"
+
+msgid "add items"
+msgstr "Elemek hozzáadása"
+
+msgid "Album created successfully."
+msgstr "Album sikeresen létrehozva"
+
+msgid "add sub-album"
+msgstr "Belső album hozzáadása"
+
+msgid "add items confirmation"
+msgstr "elemek hozzáadásának megerősítése"
+
+msgid "Base filename"
+msgstr "Alap fájlnév"
+
+msgid "Caption"
+msgstr "Felirat"
+
+msgid "Blank"
+msgstr "Üres"
+
+msgid "From Web Browser"
+msgstr "Webböngészőből"
+
+# c-format
+#, c-format
+msgid "%d megabyte"
+msgid_plural "%d megabytes"
+msgstr[0] "%d megabájt"
+
+# c-format
+#, c-format
+msgid "%d kilobytes"
+msgid_plural "%d kilobytes"
+msgstr[0] "%d Kilobájt"
+
+msgid "From Local Server"
+msgstr "Helyi szerverről"
+
+msgid "Photo"
+msgstr "Fénykép"
+
+msgid "From Web Page"
+msgstr "Weboldalról"
+
+msgid "Gallery Item Administration"
+msgstr "Galéria elem adminisztáció"
+
+msgid "create link"
+msgstr "link létrehozása"
+
+msgid "link an item"
+msgstr "egy elem linkelése"
+
+msgid "delete an item"
+msgstr "egy elem törlése"
+
+msgid "delete confirmation"
+msgstr "törlés megerősítése"
+
+#, c-format
+msgid "delete %s"
+msgstr "%s törlése"
+
+#, c-format
+msgid "edit %s"
+msgstr "%s szerkeztése"
+
+msgid "Settings saved successfully."
+msgstr "Beállítások sikeresen elmentve"
+
+msgid "&laquo; default theme &raquo;"
+msgstr "&laquo; alapértelmezett felület &raquo;"
+
+#, fuzzy
+msgid "Recreating resized images"
+msgstr "Átméretezett képek újragyártása"
+
+#, fuzzy
+msgid "Rebuilding resized images..."
+msgstr "Átméretezett képek újragyártása"
+
+#, fuzzy
+msgid "Rebuilding thumbnails..."
+msgstr "Előnézeti·képek·újragyártása"
+
+msgid "Album"
+msgstr "Album"
+
+#, c-format
+msgid "Processing image %d of %d"
+msgstr "%d/%d kép feldolgozása"
+
+msgid "Changes saved successfully"
+msgstr "Változtatások elmentve"
+
+msgid "Animation Size"
+msgstr "Animáció méret"
+
+msgid "edit captions"
+msgstr "feliratok szerkesztése"
+
+msgid "General"
+msgstr "Általános"
+
+msgid "Movie Size"
+msgstr "Film mérete"
+
+msgid "Thumbnail cropped successfully"
+msgstr "Előnézeti kép vágása sikeres"
+
+msgid "Thumbnail reset successfully"
+msgstr "Előnézeti kép sikeresen visszaállítva"
+
+msgid "Photo 5x3"
+msgstr "5x3-as fénykép"
+
+msgid "Photo 6x4"
+msgstr "6x4-es fénykép"
+
+msgid "Photo 7x5"
+msgstr "7x5-ös fénykép"
+
+msgid "Photo 10x8"
+msgstr "10x8-as fénykép"
+
+msgid "Fullscreen 4x3"
+msgstr "Teljesképernyős 4x3"
+
+msgid "Widescreen 16x9"
+msgstr "Szélesképernyős 16x9"
+
+msgid "CinemaScope 2.35x1"
+msgstr "CinemaScope·2.35x1"
+
+msgid "Square 1x1"
+msgstr "1x1-es négyzet"
+
+msgid "As Image"
+msgstr "Képként"
+
+msgid "Landscape"
+msgstr "Fekvő"
+
+msgid "Portrait"
+msgstr "Álló"
+
+msgid "Crop Thumbnail"
+msgstr "Előnézeti kép kivágása"
+
+msgid "Reverted rotate and scale changes successfully"
+msgstr "Forgatási és nagyítási beállítások sikeresen visszaállítva"
+
+msgid "Rotated photo successfully"
+msgstr "Fényképek sikeresen elforgatva"
+
+msgid "Scaled photo successfully"
+msgstr "Nagyítás sikeres"
+
+msgid "Modify Photo"
+msgstr "Fénykép módosítása"
+
+msgid "Successfully saved theme settings"
+msgstr "Témabeállítások sikeresen elmentve"
+
+msgid "Theme"
+msgstr "Felület"
+
+msgid "make highlight"
+msgstr "kijelölés"
+
+msgid "move item"
+msgstr "elem mozgatása"
+
+#, c-format
+msgid "move %s"
+msgstr "%s mozgatása"
+
+#, c-format
+msgid "edit %s permissions"
+msgstr "%s jogainak szerkesztése"
+
+msgid "reorder items"
+msgstr "elemek újrarendezése"
+
+msgid "Maintenance"
+msgstr "Karbantartás"
+
+msgid "Gallery Site Administration"
+msgstr "Galéria oldal adminisztráció"
+
+msgid "site admin"
+msgstr "adminisztrátor"
+
+msgid "Gallery User Administration"
+msgstr "Galéria felhasználói adminisztráció"
+
+msgid "change password"
+msgstr "jelszó megváltoztatása"
+
+msgid "your account"
+msgstr "a Te fiókod"
+
+msgid "Password Recovery"
+msgstr "Jelszó Pótlása"
+
+msgid "Core"
+msgstr "Mag"
+
+msgid "Gallery 2 Core Module"
+msgstr "Gallery 2 Core modul"
+
+msgid "Add Items"
+msgstr "Elemek hozzáadása"
+
+msgid "Edit Album"
+msgstr "Album szerkeztése"
+
+msgid "Edit Photo"
+msgstr "Fénykép szerkeztése"
+
+msgid "Edit Movie"
+msgstr "Videó szerkeztése"
+
+msgid "Create Link"
+msgstr "Link Létrehozása"
+
+msgid "Add Album"
+msgstr "Album Hozzáadása"
+
+msgid "Edit Permissions"
+msgstr "Jogok szerkesztése"
+
+msgid "View Permissions"
+msgstr "Jogosultságok Megtekintése"
+
+msgid "Delete Album"
+msgstr "Album törlése"
+
+msgid "Delete Photo"
+msgstr "Fénykép Törlése"
+
+msgid "Delete Movie"
+msgstr "Videó Törlése"
+
+msgid "Move Album"
+msgstr "Album mozgatása"
+
+msgid "Move Photo"
+msgstr "Fénykép Mozgatása"
+
+msgid "Move Movie"
+msgstr "Videó Mozgatása"
+
+msgid "Edit Captions"
+msgstr "Feliratok szerkesztése"
+
+msgid "Make Highlight"
+msgstr "Kiemelés"
+
+msgid "Reorder Items"
+msgstr "Elemek újrarendezése"
+
+msgid "Site Admin"
+msgstr "Oldal adminisztrátor"
+
+msgid "Login"
+msgstr "Belépés"
+
+msgid "Your Account"
+msgstr "A Te fiókod"
+
+msgid "Logout"
+msgstr "Kilépés"
+
+msgid "Modules"
+msgstr "Modulok"
+
+msgid "Repository"
+msgstr ""
+
+msgid "Themes"
+msgstr "Témák"
+
+msgid "Display"
+msgstr "Megjelenítés"
+
+msgid "Users"
+msgstr "Felhasználók"
+
+msgid "Groups"
+msgstr "Csoportok"
+
+msgid "Performance"
+msgstr ""
+
+msgid "Toolkit Priority"
+msgstr "Kezelőkészlt prioritása"
+
+msgid "Graphics Toolkits"
+msgstr "Grafikus eszköztár"
+
+msgid "Account Settings"
+msgstr "Felhasználói beállítások"
+
+msgid "Change Password"
+msgstr "Jelszóváltoztatás"
+
+msgid "Link Album"
+msgstr "Album Csatolása"
+
+msgid "Link Photo"
+msgstr "Fénykép Csatolása"
+
+msgid "Link Movie"
+msgstr "Videó Csatolása"
+
+#, c-format
+msgid "Edit %s"
+msgstr "%s szerkeztése"
+
+#, c-format
+msgid "Delete %s"
+msgstr "%s törlése"
+
+#, c-format
+msgid "Move %s"
+msgstr "%s mozgatása"
+
+#, c-format
+msgid "Link %s"
+msgstr "Link %s"
+
+msgid "Build all thumbnails/resizes"
+msgstr "Minden előnézeti/átméretezett kép legyártása"
+
+msgid ""
+"Ensure data files for all derivatives (thumbnails, etc) have been built and rebuild broken "
+"ones."
+msgstr ""
+
+msgid "Build All Thumbnails/Resizes"
+msgstr "Minden Előnézeti Kép/Áméretezett Kép Elkészítése"
+
+msgid "Debug output for failed items:"
+msgstr ""
+
+#, c-format
+msgid "Checked %d items"
+msgstr "%d elem ellenőrizve"
+
+#, c-format
+msgid "%d items built"
+msgstr "%d elem létrehozva"
+
+#, c-format
+msgid "%d items failed"
+msgstr "%d elem sikertelen"
+
+#, fuzzy
+msgid "Delete user sessions"
+msgstr "Fájlrendszer jogosultságok"
+
+msgid ""
+"Delete all persistent user sessions according to your current session expiration settings."
+msgstr ""
+
+msgid "Delete database cache"
+msgstr "Adatbázis gyorsítótár törlése"
+
+msgid ""
+"Gallery stores commonly used database information on disk for increased performance. If you "
+"modify the database directly, you should run this task to clean out the cache and force "
+"Gallery to reload the information from the database."
+msgstr ""
+
+# c-format
+#, c-format
+msgid "Successfully deleted directory: %s"
+msgstr "%s könyvtár sikeresen törölve"
+
+#, c-format
+msgid "Unable to delete directory: %s"
+msgstr "Unable to delete directory: %s"
+
+msgid "Delete template cache"
+msgstr "Felületgyorsítótár törlése"
+
+msgid ""
+"Gallery compiles template files and saves them for increased performance.  If you're "
+"experiencing problems that say <i>Smarty error</i> then you might try running this task.  "
+"Also run this if you remove a local/*.tpl file so Smarty will switch back to the default tpl "
+"file."
+msgstr ""
+
+msgid "Template cache deleted successfully"
+msgstr "Felületgyorsítótár sikeresen törölve"
+
+msgid "album"
+msgstr "album"
+
+msgid "Animation"
+msgstr "Animáció"
+
+msgid "animation"
+msgstr "animáció"
+
+msgid "Gallery Core"
+msgstr "Gallery Core"
+
+msgid "Gallery Core Module"
+msgstr "Gallery Core Modul"
+
+msgid "Search descriptions"
+msgstr "Leírások keresése"
+
+msgid "Search keywords"
+msgstr "Kulcsszavak keresése"
+
+msgid "Search summaries"
+msgstr "Rövid leírások keresése"
+
+msgid "Search titles"
+msgstr "Címek keresése"
+
+msgid "Description"
+msgstr "Leírás"
+
+msgid "Keywords"
+msgstr "Kulcsszavak"
+
+msgid "Summary"
+msgstr "Rövid leírás"
+
+msgid "Title"
+msgstr "Cím"
+
+msgid "Owner"
+msgstr "Tulaj"
+
+msgid "Group"
+msgstr "Csoport"
+
+msgid "group"
+msgstr "csoport"
+
+msgid "Other"
+msgstr "Más"
+
+msgid "Movie"
+msgstr "Film"
+
+msgid "movie"
+msgstr "film"
+
+msgid "photo"
+msgstr "fénykép"
+
+msgid "download"
+msgstr "letöltés"
+
+#, fuzzy
+msgid "Plugins directory does not exist."
+msgstr "'%s' felhasználó nem létezik."
+
+msgid ""
+"Couldn't create plugins subdirectory. Make sure the webserver has write permissions in it."
+msgstr ""
+
+msgid "Couldn't create repository cache path."
+msgstr ""
+
+msgid ""
+"Couldn't create cache subdirectory. Make sure the web server has write permissions in it."
+msgstr ""
+
+#, c-format
+msgid "Error downloading index from '%s'."
+msgstr ""
+
+#, c-format
+msgid "Error downloading index hash from '%s'."
+msgstr ""
+
+msgid "Index integrity check failed."
+msgstr ""
+
+msgid "&laquo; default sort order &raquo;"
+msgstr "&laquo; alapértelmezett rendezés &raquo;"
+
+msgid "Manual sort order"
+msgstr "Kézi elrendezés"
+
+msgid "Origination Date"
+msgstr "Eredeti dátum"
+
+msgid "Creation Date"
+msgstr "Létrehozás dátuma"
+
+msgid "Last Changed Date"
+msgstr "Utoljára módosítva"
+
+msgid "Name"
+msgstr "Név"
+
+msgid "View Count"
+msgstr "Nézettségszámláló"
+
+msgid "Random"
+msgstr "Véletlenszerű"
+
+msgid "&laquo; no presort &raquo;"
+msgstr "&laquo; nincs előrendezés &raquo;"
+
+msgid "Albums First"
+msgstr "Előbb az albumok"
+
+msgid "Most Viewed First"
+msgstr "Legtöbbet nézett előre"
+
+msgid "Ascending"
+msgstr "Növekvő"
+
+msgid "Descending"
+msgstr "Csökkenő"
+
+msgid "Validation disabled until you set allowSessionAccess in config.php"
+msgstr ""
+
+msgid "This page is valid XHTML 1.0"
+msgstr "Az oldal helyes XHTML 1.0"
+
+#, fuzzy
+msgid "Donate to the Gallery project"
+msgstr "Vissza a Galériába"
+
+msgid "G2.1: Blackjack"
+msgstr ""
+
+#, c-format
+msgid "Estimated time remaining: %d:%02d"
+msgstr "Becsült hátralévő idő: %d:%02d"
+
+#, c-format
+msgid "Memory used: %s, total: %s"
+msgstr "Felhasznált memória: %s, összes: %s"
+
+msgid "Rows per album page"
+msgstr "Sorok száma oldalanként"
+
+msgid "Columns per album page"
+msgstr "Oszlopok száma oldalanként"
+
+msgid "Number of items to show per page"
+msgstr "Oldalanként megjelenített elemek száma  "
+
+msgid "Row height (pixels)"
+msgstr ""
+
+msgid "Column width (pixels)"
+msgstr ""
+
+msgid "Show image owners"
+msgstr "Kép tulajdonosának mutatása"
+
+msgid "Show album owners"
+msgstr "Album tulajdonosának mutatása"
+
+msgid "Show micro navigation thumbnails"
+msgstr "Kis navigációs előnézeti képek mutatása"
+
+msgid "Blocks to show in the sidebar"
+msgstr "Az oldalpanelen megjelenítendő blokkok"
+
+msgid "Blocks to show on album pages"
+msgstr "Az albumoldalakon megjelenítendő blokkok"
+
+msgid "Blocks to show on photo pages"
+msgstr "A képek oldalain megjelenítendő blokkok"
+
+msgid "View Samples"
+msgstr "Minták megtekintése"
+
+msgid "Album Frame"
+msgstr "Albumkeret"
+
+msgid "Item Frame"
+msgstr "ElemKeret"
+
+msgid "Photo Frame"
+msgstr "Fényképkeret"
+
+msgid "Color Pack"
+msgstr "Színcsomag"
+
+msgid "You must enter a number greater than 0"
+msgstr "Adjon meg egy 0-nál nagyobb számot"
+
+msgid "Format: [module.BlockName param=value] ..."
+msgstr "Formátum: [modul.BlokkNév paraméter=érték] ..."
+
+#, c-format
+msgid "%dx%d"
+msgstr "%dx%d"
+
+msgid "Audio"
+msgstr "Zene"
+
+msgid "audio"
+msgstr "zene"
+
+msgid "Archive"
+msgstr "Archívum"
+
+msgid "archive"
+msgstr "archívum"
+
+msgid "Document"
+msgstr "Dokumentum"
+
+msgid "document"
+msgstr "dokumentum"
+
+msgid "Spreadsheet"
+msgstr "Táblázat"
+
+msgid "spreadsheet"
+msgstr ""
+
+msgid "Unknown"
+msgstr "Ismeretlen"
+
+msgid "unknown"
+msgstr "ismeretlen"
+
+#, c-format
+msgid ""
+"Invalid return URL! The requested URL %s tried to insert a redirection to %s which is not a "
+"part of this Gallery."
+msgstr ""
+
+msgid "Back"
+msgstr "Vissza"
+
+#, c-format
+msgid "Back to %s"
+msgstr "Vissza ide: %s"
+
+msgid "User"
+msgstr "Felhasználó"
+
+msgid "user"
+msgstr "felhasználó"
+
+msgid "Optimize database"
+msgstr "Adatbázis optimalizálása"
+
+msgid ""
+"Improve the performance of your database.  Results will vary depending on which database "
+"you're using, but this routine maintenance will make your Gallery run faster.  Especially "
+"useful after adding or deleting many items."
+msgstr ""
+"Az adatbázis teljesítményét növeli. Az eredményesség a használt adatbázistól függ, de ez a "
+"karbantartási rutin a Gallery-t gyorsabbá teszi. Különösen hasznos sok elem hozzáadása vagy "
+"törlése után."
+
+msgid "Database optimized successfully"
+msgstr "Adatbázis optimalizálás sikeres"
+
+msgid "Reset view counts"
+msgstr "Nézettségi számláló nullázása"
+
+msgid ""
+"Reset number of views to zero for all albums and items.  This task flushes the database "
+"cache as well."
+msgstr ""
+
+msgid "View counts reset successfully"
+msgstr "Megtekintési számláló sikeresen nullázva"
+
+msgid "Refresh capture dates"
+msgstr "Fotók készítési idejének frissítése"
+
+msgid ""
+"Update capture date stored in Gallery for all items with an available date in the original "
+"data file (usually from EXIF data)."
+msgstr ""
+
+msgid "Processing..."
+msgstr "Feldolgozás..."
+
+msgid "Refresh Capture Dates"
+msgstr "Fotók Készítési Idejének Frissítése"
+
+#, c-format
+msgid "Processing item %d of %d"
+msgstr "%d/%d elem feldolgozása"
+
+#, c-format
+msgid "Updated %d of %d items"
+msgstr "Frissítve %d elem, összesen %d"
+
+msgid "System information"
+msgstr "Rendszerinformáció"
+
+msgid "Get system details; useful for copy/paste into G2 support forum."
+msgstr ""
+
+msgid "core"
+msgstr "mag"
+
+msgid "Gallery version"
+msgstr "Galéria verzió"
+
+msgid "PHP version"
+msgstr "PHP verzió"
+
+msgid "Webserver"
+msgstr "Webszerver"
+
+msgid "Toolkits"
+msgstr "Eszköztárak"
+
+#, fuzzy
+msgid "Acceleration"
+msgstr "Művelet"
+
+msgid "Operating system"
+msgstr "Operációs rendszer"
+
+msgid "Default theme"
+msgstr "Alapértelmezett felület"
+
+#, fuzzy
+msgid "Locale"
+msgstr "Nagyítás"
+
+msgid "Browser"
+msgstr "Böngésző"
+
+msgid "General Settings"
+msgstr "Általános beállítások"
+
+msgid "Settings saved successfully"
+msgstr "Beállítások sikeresen elmentve"
+
+msgid "Added local upload directory successfully"
+msgstr "Helyi feltöltési könyvtár sikeresen hozzáadva"
+
+msgid "Removed local upload directory successfully"
+msgstr "Helyi feltöltőkönyvtár sikeresen törölve"
+
+msgid "Test email sent successfully"
+msgstr "Tesztemail sikeresen elküldve"
+
+msgid "There was a problem processing your request, see below for details."
+msgstr "Hiba történt a kérés feldolgozása közben, részleteket lásd lejjebb."
+
+msgid "Error sending test email, see below for details."
+msgstr "Tesztemail küldése sikertelen, részleteket lásd lejjebb."
+
+msgid "Language Settings"
+msgstr "Nyelvi beállítások"
+
+#, fuzzy
+msgid ""
+"Select language defaults for Gallery. Individual users can override this setting in their "
+"personal preferences or via the language selector block if available. Gallery will try to "
+"automatically detect the language preference of each user if the browser preference check is "
+"enabled."
+msgstr ""
+"Adja meg a Galéria alapértelmezett nyelvi beállításait. Az egyes Felhasználók "
+"felülbírálhatják ezt a beállítást a saját személyes beállításaikkal, vagy a "
+"nyelvválasztóval, ha az aktiválva van."
+
+msgid "Default language"
+msgstr "Alapértelmezett nyelv"
+
+msgid "Check Browser Preference"
+msgstr ""
+
+msgid "gettext"
+msgstr "gettext"
+
+#, c-format
+msgid ""
+"Your webserver does not support localization.  Please instruct your system administrator to "
+"reconfigure PHP with the %s option enabled."
+msgstr ""
+"A webszerver nem támogatja a többnyelvűsítést. Kérd meg a Rendszergazdát, hogy konfigurálja "
+"újra a PHP-t a %s opciót bekapcsolva."
+
+msgid "Date Formats"
+msgstr "Dátumformátumok"
+
+#, c-format
+msgid ""
+"Specify how dates and times are displayed by Gallery.  See %sphp.net%s for details of how to "
+"enter a format string.  Note that the display of some tokens varies according to the active "
+"language."
+msgstr ""
+
+msgid "Style"
+msgstr "Stílus"
+
+msgid "Format"
+msgstr "Formátum"
+
+msgid "Sample"
+msgstr "Minta"
+
+msgid "Date"
+msgstr "Dátum"
+
+msgid "Time"
+msgstr "Idő"
+
+msgid "Date/Time"
+msgstr "Dátum/Idő"
+
+msgid "Filesystem Permissions"
+msgstr "Fájlrendszer jogosultságok"
+
+msgid ""
+"Specify the default permissions for files and directories that Gallery creates. This doesn't "
+"apply to files/directories that Gallery has already created."
+msgstr ""
+"Állítsd be a Galéria által létrehozott könyvtárak és fájlok alapértelmezett jogait. Ez nem "
+"vonatkozik azokra a fájlokra/könyvtárakra, amiket a Galéria már létrehozott."
+
+msgid "New directories"
+msgstr "Új könyvtárak"
+
+msgid "New files"
+msgstr "Új fájlok"
+
+msgid "Local Server Upload Paths"
+msgstr "Helyi szerver feltöltési útvonal"
+
+msgid ""
+"Specify the legal directories on the local server where a user can store files and then "
+"upload them into Gallery using the <i>Upload from Local Server</i> feature.  The paths you "
+"enter here and all the files and directories under those paths will be available to any "
+"Gallery user who has upload privileges, so you should limit this to directories that won't "
+"contain sensitive data (eg. /tmp or /usr/ftp/incoming)"
+msgstr ""
+"Add meg az érvényes könyvtárakat a helyi szerveren, ahová a felhasználófájlokat tehet, "
+"ahonnan feltölti a Galériába a <i>Feltöltés a helyi szerverről</i> funkcióval. Az itt "
+"megadott útvonalak, és az alatta levő fájlok elérhetőek lesznek bármelyik Galéria "
+"felhasználónak, akinek van feltöltési joga, tehát olyan könyvtárakat adjon meg, amik nem "
+"tartalmaznak érzékeny adatokat (pl. /tmp vagy /usr/ftp/incoming)"
+
+msgid "Path"
+msgstr "Útvonal"
+
+msgid "Action"
+msgstr "Művelet"
+
+msgid "remove"
+msgstr "törlés"
+
+msgid "Add"
+msgstr "Hozzáadás"
+
+msgid "You must enter a directory to add."
+msgstr "Add meg a hozzáadandó könyvtárat."
+
+msgid "open_basedir documentation"
+msgstr "open_basedir dokumentáció"
+
+#, c-format
+msgid ""
+"Your webserver is configured to prevent you from accessing that directory.  Please refer to "
+"the %s and consult your webserver administrator."
+msgstr ""
+
+msgid "The webserver does not have permissions to read that directory."
+msgstr "A webszervernek nincs jogosultsága a könyvtár olvasásának."
+
+msgid "The path you specified is not a valid directory."
+msgstr "A beírt útvonal nem egy könyvtár"
+
+msgid "Session Settings"
+msgstr "Kapcsolat beállítások"
+
+msgid "Session Lifetime"
+msgstr "Kapcsolat élettartama"
+
+msgid "Inactivity Timeout"
+msgstr "Inaktivitási időtúllépés"
+
+msgid "Embedded Markup"
+msgstr ""
+
+msgid ""
+"What kind of markup should we allow in user-entered fields?  For security reasons we do not "
+"recommend that you allow raw HTML.  BBCode is a special kind of markup that is secure and "
+"allows for simple text formatting like bold, italics, lists, images and urls."
+msgstr ""
+
+msgid "Markup"
+msgstr ""
+
+msgid "Email"
+msgstr "E-mail"
+
+msgid ""
+"By default Gallery uses PHP's built in mail function to send email which requires no "
+"configuration.  To use a smtp/mail server enter the information below, including "
+"authentication information if required.  Optionally add :port after the server name to use a "
+"non-default port."
+msgstr ""
+"Alapesetben a Galéria a PHP beépített e-mail küldő függvényét használja, ami nem igényel "
+"beállítást. Smtp-/levelezőszerver használatához töltsd ki a lejjebb található mezőket, "
+"beleértve a bejelentkezési adatokat is, amennyiben az szükséges. Esetleg adj egy :port "
+"végződést a kiszolgáló neve után, nem alapértelmezett port használata esetén."
+
+msgid "Server"
+msgstr "Szerver"
+
+msgid "Username"
+msgstr "Felhasználónév"
+
+msgid "Password"
+msgstr "Jelszó"
+
+msgid "SMTP From Address"
+msgstr "SMTP küldő cím"
+
+msgid "Invalid email address"
+msgstr "Hibás emailcím"
+
+msgid ""
+"Send a test email to verify your settings are correct (whether using PHP mail or SMTP "
+"settings above).  Below enter a recipient email address for a test message."
+msgstr ""
+
+msgid "Send Email"
+msgstr "E-mail küldése"
+
+msgid "Email Test Error"
+msgstr "Emailtesztelési Hiba"
+
+msgid "Cookies"
+msgstr "Sütik"
+
+msgid ""
+"When Gallery is embedded in another application (portal, CMS, forum, etc.), then you have "
+"the choice between two options. Everyone else does not have to care about the cookie "
+"settings. Read on for more details."
+msgstr ""
+
+msgid ""
+"If your Gallery is embedded and you leave the following fields empty, then all DownloadItem "
+"links (the URLs of the images and other items) in the embedded Gallery have <b>an appended "
+"GALLERYSID string</b> in the URL which is <b>a minor security risk</b> when your Gallery "
+"users start copy'n'pasting image URLs in forums, guestbooks, etc. The alternative is to set "
+"the <b>cookie path</b>. Gallery will then <b>not append the GALLERYSID to the embedded "
+"DownloadItem URLs</b>. E.g. when Gallery is reachable at http://www.example.com/application/"
+"gallery2/ and the embedding application is at http://www.example.com/application/, then you "
+"have to compare the path /application/gallery2/ with /application/. The cookie path is the "
+"part of the paths that is equal, in this case it is '/application/'. Most often it is just "
+"'/'."
+msgstr ""
+
+msgid ""
+"The <b>cookie domain</b> is also only needed for embedded Gallery installs and only if you "
+"want to get rid of the GALLERYSID string in the embedded DownloadItem URLs. <b>In most "
+"cases, the cookie domain can be left blank.</b> Set it only, if Gallery and the embedding "
+"application are only reachable with <b>different subdomains</b>. E.g. when Gallery is at "
+"http://photos.example.com/ and the application is at http://www.example.com/, then you have "
+"to set the cookie domain example.com (the part of the host string that is common to both, "
+"Gallery and the embedding application)."
+msgstr ""
+
+msgid ""
+"Once you change the cookie settings, <b>all registered users</b> of your Gallery will "
+"<b>have to clear their browser cookie cache</b>. If they do not, they will experience "
+"login / logout / lost session problems."
+msgstr ""
+
+msgid "Invalid cookie path"
+msgstr "Érvénytelen süti"
+
+msgid "Domain"
+msgstr "Domain"
+
+msgid "Invalid cookie domain"
+msgstr "Érvénytelen sütidomain"
+
+msgid "Locking System"
+msgstr "Rendszer zárolása folyamatban"
+
+msgid ""
+"Gallery uses a system of locks to prevent simultaneous changes from interfering with each "
+"other.  There are two types of locking, each with its advantages and disadvantages.  "
+"<b>File</b> based locking is fast and efficient, but won't work on NFS filesystems and will "
+"be unreliable on Windows.  <b>Database</b> locking is slower but is more reliable.  If you "
+"are unsure which to choose, we recommend using file locking.  If you're getting many lock "
+"timeouts, you can try switching to database locking instead.  It's ok to switch back and "
+"forth."
+msgstr ""
+"A Galéria egy zárolási rendszert használ a párhuzamos változtatások megelőzésére.Kétféle "
+"zárolás közül választhatunk, mindegyiknek megvan az előnye és hátránya.A <b>fájl</b> alapú "
+"zárolás gyors, és hatásos, viszont nem működik NFS fájlrendszeren,és Windowson "
+"megbízhatatlan. Az <b>adatbázis</b> alapú zárolás lassabb, de megbízhatóbb.Amennyiben "
+"bizonytalan a választásban, mi a fájlalapú zárolást javasoljuk. Ha sok zárolási "
+"időtullépéssel találkozunk, megpróbálkozhat az adatbázis alapú zárolással. Nincs gond az oda-"
+"vissza váltással."
+
+msgid "Lock system"
+msgstr "Rendszer zárolása"
+
+msgid "Helper Processes"
+msgstr ""
+
+msgid ""
+"Some Gallery modules will use programs on your server to do image processing, archiving and "
+"other operations.  These programs can be very computationally intensive and can impact the "
+"overall performance of a shared web server.  You can make these programs run at a lower "
+"priority so that they play nice.  If you're in a shared hosting environment and your web "
+"host is complaining, try setting your priority low."
+msgstr ""
+
+#, fuzzy
+msgid "Priority"
+msgstr "Kezelőkészlt prioritása"
+
+msgid "Save"
+msgstr "Mentés"
+
+msgid "Reset"
+msgstr "Visszaállítás"
+
+msgid "Create A New Group"
+msgstr "Új csoport létrehozása"
+
+msgid "Group Name"
+msgstr "Csoportnév"
+
+msgid "(required)"
+msgstr "(szükséges)"
+
+msgid "You must enter a group name"
+msgstr "Adj meg egy csoportnevet"
+
+#, c-format
+msgid "Group '%s' already exists"
+msgstr "Már létezik a '%s' csoport"
+
+msgid "Create Group"
+msgstr "Csoport létrehozása"
+
+msgid "Cancel"
+msgstr "Mégsem"
+
+msgid "Create A New User"
+msgstr "Új felhasználó létrehozása"
+
+msgid "You must enter a username"
+msgstr "Adj meg egy felhasználónevet"
+
+#, c-format
+msgid "Username '%s' already exists"
+msgstr "'%s' felhasználónév már létezik"
+
+msgid "Full Name"
+msgstr "Teljes név"
+
+msgid "Email Address"
+msgstr "E-mail cím"
+
+msgid "You must enter an email address"
+msgstr "Adj meg egy e-mail címet"
+
+msgid "Language"
+msgstr "Nyelv"
+
+msgid "You must enter a password"
+msgstr "Adj meg egy jelszót"
+
+msgid "Verify Password"
+msgstr "Jelszó ellenörzése"
+
+msgid "You must enter the password a second time"
+msgstr "Add meg másodszor is a jelszót"
+
+msgid "The passwords you entered did not match"
+msgstr "A beírt jelszavak különböznek"
+
+msgid "Create User"
+msgstr "Felhasználó létrehozása"
+
+msgid "Delete A Group"
+msgstr "Csoport törlése"
+
+msgid "Are you sure?"
+msgstr "Biztosan?"
+
+#, c-format
+msgid "This will completely remove %s from Gallery.  There is no undo!"
+msgstr "Ez teljesen törli %s-t a Galériából. Nincs visszaút!"
+
+msgid "Delete"
+msgstr "Törlés"
+
+msgid "Delete a User"
+msgstr "Felhasználó törlése"
+
+#, c-format
+msgid "User %s is the owner of %s items."
+msgstr "A %s felhasználó %s elem tulajdonosa."
+
+#, c-format
+msgid "Delete user <strong>%s</strong> and..."
+msgstr "<strong>%s</strong> felhasználó törlése és ..."
+
+#, c-format
+msgid "Assign a new owner for all items of %s"
+msgstr "%s minden eleméhez új tulaj rendelése"
+
+#, fuzzy, c-format
+msgid ""
+"Delete all items of %s and assign a new owner for all remaining non empty albums. Items that "
+"%s doesn't have permission to delete will also be reassigned to a new owner."
+msgstr "%s minden elemének törlése és a fennmaradó nem üres albumokhoz új tulajdonos megadása"
+
+msgid "New owner (leaving blank means one of the Site Admins):"
+msgstr "Új tulaj (üresen az Adminisztrátor)"
+
+#, c-format
+msgid "User '%s' does not exist! Cannot assign items to a nonexistent user."
+msgstr "'%s' felhasználó nem létezik! Nem lehet elemeket rendelni nem létező felhasználókhoz."
+
+msgid "The new owner must be a different user than the user we are deleting!"
+msgstr "Az új tulajnak másnak kell lennie, mint akit épp törlünk!"
+
+msgid "The new owner cannot be a Guest / Anonymous user!"
+msgstr "Az új tulaj nem lehet Vendég / Anonymous felhasználó!"
+
+#, c-format
+msgid "This will completely remove <strong>%s</strong> from Gallery.  There is no undo!"
+msgstr ""
+"Ezzel véglegesen eltávolítja a <strong>%s</strong>-t a Galériából. Nincs lehetőség a "
+"visszavonásra!"
+
+msgid "Edit a group"
+msgstr "Csoport szerkesztése"
+
+#, c-format
+msgid "Edit Members of Group '%s'"
+msgstr "Tagok szerkesztése a '%s' csoportban"
+
+#, c-format
+msgid "Added user '%s' to group '%s'"
+msgstr "'%s' felhasználó a '%s' csoportba sikeresen felvéve"
+
+#, c-format
+msgid "Removed user '%s' from group '%s'"
+msgid_plural "Removed %s users from group '%s'"
+msgstr[0] "'%s' felhasználó kivéve a '%s' csoportból"
+
+#, c-format
+msgid "This group contains %d user"
+msgid_plural "This group contains %d users"
+msgstr[0] "Ez a csoport %d felhasználót tartalmaz"
+
+msgid "Members"
+msgstr "Tagok"
+
+msgid "&laquo; first"
+msgstr "&laquo;·első"
+
+msgid "&laquo; back"
+msgstr "&laquo;·vissza"
+
+#, c-format
+msgid "Viewing page %d of %d"
+msgstr "Oldal: %d / %d"
+
+msgid "next &raquo;"
+msgstr "következő &raquo;"
+
+msgid "last &raquo;"
+msgstr "utolsó &raquo;"
+
+msgid "Filter"
+msgstr "Szűrő"
+
+msgid "Clear"
+msgstr "Törlés"
+
+# c-format
+#, c-format
+msgid "%d user matches your filter"
+msgid_plural "%d users match your filter"
+msgstr[0] "%d felhasználó illik a keresésre"
+
+msgid "Remove selected"
+msgstr "Kijelöltek törlése"
+
+msgid "You must select a user to remove."
+msgstr "Válaszd ki a törlendő felhasználót."
+
+msgid "You can't remove yourself from this group."
+msgstr "Nem veheted ki magad ebből a csoportból."
+
+msgid "Add Member"
+msgstr "Tagok hozzáadása"
+
+msgid "You must enter a username."
+msgstr "Adj meg egy felhasználónevet."
+
+#, c-format
+msgid "User '%s' does not exist."
+msgstr "'%s' felhasználó nem létezik."
+
+msgid "This user already is in this group."
+msgstr "A felhasználó már tagja ennek a csoportnak."
+
+msgid "Done"
+msgstr "Kész"
+
+msgid "Edit a user"
+msgstr "Felhasználó szerkesztése"
+
+msgid "That username is already in use"
+msgstr "A felhasználónév már használatban van"
+
+msgid "You must enter a new username"
+msgstr "Adj meg egy új felhasználónevet"
+
+msgid "E-mail Address"
+msgstr "E-mail cím"
+
+msgid "(suggested)"
+msgstr "(ajánlott)"
+
+msgid "Group Management"
+msgstr "Csoport beállítások"
+
+#, c-format
+msgid "Removed group '%s'"
+msgstr "'%s' csoport törölve"
+
+#, c-format
+msgid "Created group '%s'"
+msgstr "'%s' csoport létrehozva"
+
+#, c-format
+msgid "Modified group '%s'"
+msgstr "'%s' csoport módosítva"
+
+# c-format
+#, c-format
+msgid "There is %d group in the system."
+msgid_plural "There are %d total groups in the system."
+msgstr[0] "%d csoport van a rendszerben"
+
+msgid "Edit Group"
+msgstr "Csoport szerkesztése"
+
+msgid "Edit"
+msgstr "Szerkesztés"
+
+msgid "Add/Remove Users"
+msgstr "Felhasználók hozzáadása/eltávolítása"
+
+#, c-format
+msgid "Group '%s' does not exist."
+msgstr "Nem létezik a '%s' csoport"
+
+msgid "You cannot delete that group"
+msgstr "Nem törölheted ezt a csoportot"
+
+msgid "You cannot edit that group's users"
+msgstr "Nem szerkesztheted ennek a csoportnak a felhasználóit"
+
+msgid "Edit Group (by list)"
+msgstr "Csoport szerkesztése (lista)"
+
+msgid "edit"
+msgstr "szerkesztés"
+
+msgid "delete"
+msgstr "törlés"
+
+msgid "members"
+msgstr "tagok"
+
+# c-format
+#, c-format
+msgid "%d group matches your filter"
+msgid_plural "%d groups match your filter"
+msgstr[0] "%d csoport illik a szűrőre"
+
+msgid "System Maintenance"
+msgstr "Rendszerkarbantartás"
+
+#, c-format
+msgid "Completed %s task successfully."
+msgstr "%s feladat sikeresen végrehajtva."
+
+#, c-format
+msgid "The %s task failed to complete successfully."
+msgstr "%s feladat végrehajtása sikertelen."
+
+msgid "Task name"
+msgstr "Feladat neve"
+
+msgid "Last run"
+msgstr "Utolsó futás"
+
+msgid "Success/Fail"
+msgstr "Sikeres/Sikertelen"
+
+msgid "Not run yet"
+msgstr "Még nem futott"
+
+msgid "Success"
+msgstr "Siker"
+
+msgid "Failed"
+msgstr "Sikertelen"
+
+msgid "run now"
+msgstr "futtatás most"
+
+msgid "Last Run Details:"
+msgstr "Utolsó Futás Részletei:"
+
+msgid "Gallery Modules"
+msgstr "Galéria modulok"
+
+#, c-format
+msgid "Successfully installed and auto-configured module %s"
+msgstr "%s modul sikeresen telepítve és beállítva"
+
+#, c-format
+msgid "Successfully installed module %s"
+msgstr "%s modul sikeresen telepítve"
+
+#, c-format
+msgid "Successfully configured module %s"
+msgstr "%s modul sikeresen konfigurálva"
+
+#, c-format
+msgid "Successfully upgraded module %s"
+msgstr "%s modul sikeresen frissítve"
+
+#, c-format
+msgid "Successfully activated module %s"
+msgstr "%s modul sikeresen aktiválva"
+
+#, c-format
+msgid "Successfully deactivated module %s"
+msgstr "%s modul sikeresen kikapcsolva"
+
+#, c-format
+msgid "Successfully uninstalled module %s"
+msgstr "%s modul sikeresen eltávolítva"
+
+msgid ""
+"Gallery features come as separate modules.  You can download and install modules to add more "
+"features to your Gallery, or you can disable features if you don't want to use them.  In "
+"order to use a feature, you must install, configure (if necessary) and activate it.  If you "
+"don't wish to use a feature, you can deactivate it."
+msgstr ""
+"A Galéria lehetőségei különböző modulok formájában jönnek. Ilyen modulok külön "
+"letölthetőekés telepíthetőek, ha új lehetőségeket szeretnénk hozzáadni, vagy törölhetőek ha "
+"valamitmár nem használunk. Az ilyen lehetőségek használatához telepíteni kell a modult majd "
+"aktíválni (esetleg beállítani)."
+
+msgid "Module Name"
+msgstr "Modulnév"
+
+msgid "Version"
+msgstr "Verzió"
+
+msgid "Installed"
+msgstr "Telepítve"
+
+msgid "Actions"
+msgstr "Műveletek"
+
+msgid "Status: Not Installed"
+msgstr "Állapot: nem telepített"
+
+msgid "Status: Active"
+msgstr "Állapot: aktív"
+
+msgid "Status: Inactive"
+msgstr "Állapot: inaktív"
+
+msgid "Status: Upgrade Required (Inactive)"
+msgstr "Állapot: frissíteni kell (inaktív)"
+
+msgid "Status: Incompatible Module (Inactive)"
+msgstr "Állapot: nem kompatibilis modul (inaktív)"
+
+msgid "Incompatible module!"
+msgstr "Inkompatibilis modul!"
+
+#, c-format
+msgid "Core API Required: %s (available: %s)"
+msgstr "Szükséges Core API: %s (jelenleg %s)"
+
+#, c-format
+msgid "Module API Required: %s (available: %s)"
+msgstr "Szükséges modul API: %s (jelenleg %s)"
+
+msgid "Confirm module uninstall"
+msgstr "Modul leszedésének megerősítése"
+
+#, c-format
+msgid "Do you really want to uninstall the %s module?"
+msgstr "Biztosan leszedi a %s modult?"
+
+#, fuzzy
+msgid "This will also remove any permissions and clean up any data created by this module."
+msgstr "Ezzel eltávolít minden jogosultságot, és átmeneti fájlt, amit ez a modul hozott létre"
+
+msgid "Uninstall"
+msgstr "Eltávolítás"
+
+msgid "Performance Tuning"
+msgstr ""
+
+#, fuzzy
+msgid "Updated performance settings successfully"
+msgstr "Tesztemail sikeresen elküldve"
+
+#, fuzzy
+msgid "Deleted all saved pages"
+msgstr "Felhasználó törlése"
+
+msgid ""
+"Improve your Gallery performance by storing entire web pages in the database.  This can "
+"considerably reduce the amount of webserver and database resources required to display a web "
+"page.  The tradeoff is that the web page you see may be a little bit out of date, however "
+"you can always get the most recent version of the page by forcing a refresh in your browser "
+"(typically by holding down the shift key and clicking the reload button)."
+msgstr ""
+
+msgid "Partial Acceleration"
+msgstr ""
+
+#, no-c-format
+msgid ""
+"Partial acceleration gives you roughly 10-25% performance increase, but some forms of "
+"dynamic data (like view counts) will not get updated right away.  All content that appears "
+"in blocks (like the random image block, any sidebar blocks, etc) will always be updated."
+msgstr ""
+
+msgid "Full Acceleration"
+msgstr ""
+
+#, no-c-format
+msgid ""
+"Full acceleration gives roughly a 90% performance increase, but no dynamic data (random "
+"image block, other sidebar blocks, number of items in your shopping cart, view counts, etc) "
+"will get updated until the saved page expires."
+msgstr ""
+
+msgid ""
+"You can additionally specify when saved pages expire.  Setting a longer expiration time will "
+"reduce the load on your server, but will increase the interval before users see changes.  "
+"Lower expiration times mean that users will see more current data, but they will place a "
+"higher load on your server."
+msgstr ""
+
+msgid "Here are some standard acceleration profiles:"
+msgstr ""
+
+#, fuzzy
+msgid "Medium acceleration"
+msgstr "feliratok szerkesztése"
+
+msgid "High acceleration"
+msgstr ""
+
+#, fuzzy
+msgid "Guest Users"
+msgstr "Regisztrált Felhasználók"
+
+msgid "Expires after:"
+msgstr ""
+
+msgid "Clear Saved Pages"
+msgstr ""
+
+msgid "Please make sure that your internet connection is set up properly or try again later."
+msgstr ""
+
+msgid "The repository index has been successfully updated."
+msgstr ""
+
+msgid "All plugins are already up-to-date."
+msgstr ""
+
+msgid "Common Tasks"
+msgstr ""
+
+msgid "Warning: Experimental feature!"
+msgstr ""
+
+msgid ""
+"The repository features are currently experimental, and no actual repository has been set up "
+"yet, so none of these features will work at this time."
+msgstr ""
+
+msgid "Update Index"
+msgstr ""
+
+msgid ""
+"The Gallery repository contains the latest modules and themes extensively tested by the "
+"Gallery team. The repository index contains information about available plugins, such as the "
+"latest versions, available languages and compatibility. The index must be synchronized "
+"periodically with the Gallery server so you are informed about any available updates. No "
+"personal information is sent to the Gallery server during updating. On slower connections "
+"the process might take a minute or two."
+msgstr ""
+
+#, c-format
+msgid ""
+"As of the last update on %s, the repository contains %s modules and %s themes. Its contents "
+"can be viewed on the Modules and Themes tabs."
+msgstr ""
+
+msgid ""
+"The index has never been updated. Click on the Update button to see what updates are "
+"available."
+msgstr ""
+
+#, fuzzy
+msgid "Update"
+msgstr "Dátum"
+
+#, fuzzy
+msgid "Upgrade Gallery"
+msgstr "Galéria"
+
+msgid ""
+"A new version of Gallery is available, but it cannot be upgraded through this interface. "
+"Upgrading it might make some of your current plugins stop working, but others that rely on "
+"the features of the new version may become available. Here are the recommended steps for "
+"upgrading:"
+msgstr ""
+
+msgid "Review plugin compatibility (on the Themes and Modules tabs)"
+msgstr ""
+
+#, c-format
+msgid "%sDownload%s Gallery core"
+msgstr ""
+
+#, c-format
+msgid "Read the %supgrade instructions%s and perform the upgrade"
+msgstr ""
+
+#, fuzzy
+msgid "Gallery Up-To-Date"
+msgstr "Gallery Core"
+
+msgid ""
+"Gallery cannot be upgraded through this interface. When a new version becomes available, "
+"upgrade instructions will be presented here."
+msgstr ""
+
+msgid "Upgrade All Plugins"
+msgstr ""
+
+msgid ""
+"Gallery can automatically upgrade your themes and modules to the latest available versions. "
+"No new plugins will be downloaded."
+msgstr ""
+
+#, fuzzy
+msgid "Upgrade All"
+msgstr "frissítés"
+
+msgid ""
+"Once the repository index has been downloaded, a list of available plugins will be "
+"presented. It can be downloaded by clicking on the Update button on the Common Tasks tab."
+msgstr ""
+
+msgid ""
+"The following plugins are available. Click on the action beside the plugin you're interested "
+"in to see what's available in the repository."
+msgstr ""
+
+msgid "Incompatible plugins are marked with an exclamation icon."
+msgstr ""
+
+#, c-format
+msgid ""
+"A new core module version is available. There may be plugins that are incompatible with the "
+"installed core module, which are not shown here. You can view a %scomplete list%s of "
+"plugins, including incompatible ones, which are marked with a red icon."
+msgstr ""
+
+msgid "Theme Name"
+msgstr "Felület Neve"
+
+#, fuzzy
+msgid "Latest"
+msgstr "utolsó"
+
+#, fuzzy
+msgid "Incompatible Plugin"
+msgstr "Inkompatibilis modul!"
+
+#, fuzzy
+msgid "Incompatible plugin!"
+msgstr "Inkompatibilis modul!"
+
+#, fuzzy, c-format
+msgid "Plugin API Required: %s (available: %s)"
+msgstr "Szükséges modul API: %s (jelenleg %s)"
+
+msgid "No packages have been selected."
+msgstr ""
+
+#, fuzzy
+msgid "Base Files"
+msgstr "Alap fájlnév"
+
+msgid ""
+"The base files required for the theme to work and the English (US) translation will be "
+"downloaded."
+msgstr ""
+
+msgid "Upgrade Base Files"
+msgstr ""
+
+msgid "You can upgrade the base module files."
+msgstr ""
+
+msgid "Upgrade base files"
+msgstr ""
+
+msgid "Base Files Up-To-Date"
+msgstr ""
+
+msgid "This plugin's base files are up-to-date."
+msgstr ""
+
+msgid "Updated Translations"
+msgstr ""
+
+msgid ""
+"Below is a list of translations that have been updated since they were last downloaded. "
+"Select the ones you want to download."
+msgstr ""
+
+msgid "Additional Languages"
+msgstr ""
+
+msgid ""
+"Below is a list of languages this plugin has been translated to. Select the ones you want "
+"included in addition to the ones already downloaded."
+msgstr ""
+
+#, fuzzy
+msgid "Unit Tests"
+msgstr "Egységtesztelő felület"
+
+msgid ""
+"This plugin has unit tests available for download, which are useful for Gallery developers. "
+"All of the module's features are available without the tests."
+msgstr ""
+
+msgid "Download unit tests"
+msgstr ""
+
+#, fuzzy
+msgid "Gallery Repository Setup"
+msgstr "Galéria verzió"
+
+msgid "Warning:"
+msgstr ""
+
+#, c-format
+msgid ""
+"In order to download plugins from the Gallery repository, a special directory needs to be "
+"created where Gallery will store the data. Under your Gallery base directory, create a "
+"directory called '%s' and allow the web server to write into it by appropriately setting the "
+"permissions."
+msgstr ""
+
+msgid "Instructions for Unix-type platforms:"
+msgstr ""
+
+msgid ""
+"Refreshing this page will take you to the Repository if the directory has been successfully "
+"created."
+msgstr ""
+
+msgid "Gallery Themes"
+msgstr "Galéria Felületek"
+
+#, c-format
+msgid "Successfully activated theme %s"
+msgstr "%s felület sikeresen aktiválva"
+
+#, c-format
+msgid "Successfully deactivated theme %s"
+msgstr "%s felület sikeresen deaktiválva"
+
+#, c-format
+msgid "Successfully installed theme %s"
+msgstr "%s felület sikeresen telepítve"
+
+#, c-format
+msgid "Successfully uninstalled theme %s"
+msgstr "%s felület sikeresen eltávolítva"
+
+#, c-format
+msgid "Successfully upgraded theme %s"
+msgstr "%s felület sikeresen frissítve"
+
+msgid "Successfully saved default album settings"
+msgstr "Alapértelmezett albumbeállítások sikeresen elmentve"
+
+msgid "Restored theme settings"
+msgstr "Felületbeállítások visszaállítva"
+
+msgid "All Themes"
+msgstr "Minden Felület"
+
+msgid "Defaults"
+msgstr "Alapértelmezettek"
+
+msgid "Status: Incompatible Theme (Inactive)"
+msgstr "Állapot: Inkompatibilis Felület (Inaktív)"
+
+msgid "Incompatible theme!"
+msgstr "Inkompatibilis felület!"
+
+#, c-format
+msgid "Theme API Required: %s (available: %s)"
+msgstr "Szükséges Felületi API: %s (jelenlegi: %s)"
+
+msgid "(default)"
+msgstr "(alapértelmezett)"
+
+msgid ""
+"These are default display settings for albums in your gallery.  They can be overridden in "
+"each album."
+msgstr ""
+"Ez az albumokhoz tartozó alapértelmezett beállítás. A beállítások albumonként "
+"felülbírálhatóak."
+
+msgid "Default sort order"
+msgstr "Alapértelmezett rendezés"
+
+msgid "with"
+msgstr "szélesség"
+
+msgid "New albums"
+msgstr "Új albumok"
+
+#, c-format
+msgid "%s Theme Settings"
+msgstr "%s Felületi Beállítások"
+
+msgid ""
+"These are the global settings for the theme.  They can be overridden at the album level."
+msgstr ""
+"Ezek a galéria felületének alapértelmezett beállításai. A beállítások albumonként "
+"felülbírálhatóak."
+
+msgid "Available"
+msgstr "Elérhető"
+
+msgid "Choose a block"
+msgstr "Válassz egy blokkot"
+
+msgid "Selected"
+msgstr "Kiválasztott"
+
+msgid "Remove"
+msgstr "Törlés"
+
+msgid "Move Up"
+msgstr "Mozgatás Fel"
+
+msgid "Move Down"
+msgstr "Mozgatás Le"
+
+msgid "Parameter"
+msgstr "Paraméter"
+
+msgid "Value"
+msgstr "Érték"
+
+msgid "There are no settings for this theme"
+msgstr "Ennek a felületnek nincsenek beállításai"
+
+msgid ""
+"The toolkits shown below have some overlap in supported operations and mime types.  Rank the "
+"toolkits here to determine which will perform these operations."
+msgstr ""
+
+msgid "Toolkit"
+msgstr "Eszköztár"
+
+msgid "Order"
+msgstr "Megrendelés"
+
+msgid "up"
+msgstr "fel"
+
+msgid "down"
+msgstr "le"
+
+msgid "User Management"
+msgstr "Felhasználó menedzsment"
+
+#, c-format
+msgid "Removed user '%s'"
+msgstr "'%s' felhasználó törölve"
+
+#, c-format
+msgid "Created user '%s'"
+msgstr "'%s' felhasználó létrehozva"
+
+#, c-format
+msgid "Modified user '%s'"
+msgstr "'%s' felhasználó modosítva"
+
+#, c-format
+msgid "There is %d user in the system."
+msgid_plural "There are %d total users in the system."
+msgstr[0] "%d felhasználó van a rendszerben"
+
+msgid "Edit User"
+msgstr "Felhasználó szerkesztése"
+
+msgid "You cannot delete yourself!"
+msgstr "Nem törölheted magad!"
+
+msgid "You cannot delete the special guest user."
+msgstr "Nem törölheted ezt a speciális vendégfelhasználót."
+
+msgid "Edit User (by list)"
+msgstr "Felhasználó szerkesztése (lista)"
+
+msgid "Thumbnails"
+msgstr "Előnézeti képek"
+
+msgid ""
+"Gallery can create thumbnails at upload time, or create them the first time you want to see "
+"the thumbnail itself.  Either way, it will create the thumbnail once and save it, but if you "
+"create them at upload time it makes viewing albums for the first time go faster at the "
+"expense of a longer upload time."
+msgstr ""
+"A Galéria létre tudja hozni az előnézeti képeket vagy feltöltési időben, vagy amikorelőször "
+"meg szeretnénk tekinteni. Bármelyiket is választjuk, egyszer gyártja le és menti el az "
+"előnézeti képeket, de ha feltöltési időben gyártja le, az albumok megnézése első "
+"alkalommalgyorsabb lesz, viszont hosszabb lesz a feltöltési idő."
+
+msgid "Create thumbnails now"
+msgstr "Előnézeti képek létrehozása most"
+
+msgid "This is a test email from Gallery2"
+msgstr "Ez egy tesztemail a Gallery2-ből"
+
+msgid "Edit Conflict!"
+msgstr "Szerkeztési Konfliktus!"
+
+msgid "Security Violation"
+msgstr "Biztonsági hiba"
+
+msgid "Database Error"
+msgstr "Adatbázis hiba"
+
+msgid "Platform Error"
+msgstr ""
+
+msgid "Error"
+msgstr "Hiba"
+
+msgid ""
+"Your change cannot be completed because somebody else has made a conflicting change to the "
+"same item.  Use the back button in your browser to go back to the page you were on, then "
+"<b>reload that page</b> and try your change again."
+msgstr ""
+
+msgid "Go back and try again"
+msgstr "Vissza, és újra"
+
+msgid "Alternatively, you can return to the main Gallery page and resume browsing."
+msgstr "Esetleg visszatérhetsz a Galéria főoldalára és folytathatod a böngészést."
+
+msgid "The action you attempted is not permitted."
+msgstr "A kért művelethez nincs jogosultsága"
+
+msgid "An error has occurred while interacting with the database."
+msgstr "Hiba történt az adatbázishoz való kapcsolódás közben."
+
+msgid ""
+"The exact nature of database errors is not captured unless Gallery debug mode is enabled in "
+"config.php.  Before seeking support for this error please enable buffered debug output and "
+"retry the operation.  Look near the bottom of the lengthy debug output to find error details."
+msgstr ""
+
+#, fuzzy
+msgid "An error has occurred while interacting with the platform."
+msgstr "Hiba történt az adatbázishoz való kapcsolódás közben."
+
+msgid ""
+"The exact nature of the platform error is unknown. A common cause are insufficient file "
+"system permissions. This can happen if you or your webhost changed something in the file "
+"system, e.g. by restoring data from a backup."
+msgstr ""
+
+msgid "An error has occurred."
+msgstr "Hiba történt."
+
+msgid "Back to the Gallery"
+msgstr "Vissza a Galériába"
+
+msgid "Error Detail"
+msgstr "Hiba részletei"
+
+msgid "System Information"
+msgstr "Rendszerinformáció"
+
+msgid ""
+"You don't have any Graphics Toolkit activated that can handle JPEG images.  If you add "
+"images, you will probably not have any thumbnails."
+msgstr ""
+"Nincs semmilyen grafikus kezelőeszköz installálva JPEG formátumhoz.Ha képeket ad hozzá, nem "
+"fog tudni előnézeti képeket készíteni."
+
+#, c-format
+msgid "Visit the <a href=\"%s\">Modules</a> page to activate a Graphics Toolkit."
+msgstr " Grafikus Eszközkészlet aktiválásához menj a <a href=\"%s\">Modulok</a> oldalra."
+
+msgid "Add Sub-Album"
+msgstr "Al-album hozzáadása"
+
+msgid ""
+"The name of this album on your hard disk.  It must be unique in this album.  Only use "
+"alphanumeric characters, underscores or dashes.  You will be able to rename it later."
+msgstr ""
+"Az album neve a merevlemezen. Egyedinek kell lennie ezen albumon belül. Csak alfanumerikus "
+"karaktereket, alsovonást, és vesszőt tartaltamazhat. Később még átnevezheted."
+
+msgid "Your name contains invalid characters.  Please enter another."
+msgstr "A megadott név hibás karaktereket tartalmaz. Kérem adjon meg másikat."
+
+msgid "You must enter a name for this album."
+msgstr "Adja meg az album nevét."
+
+msgid "The name you entered is already in use.  Please enter another."
+msgstr "A beírt név már használatban van. Kérem adjon meg másikat."
+
+msgid "This is the album title."
+msgstr "Ez az album címe"
+
+msgid "This is the album summary."
+msgstr "Ez az album rövid leírása."
+
+msgid "Keywords are not visible, but are searchable."
+msgstr "A kulcsszavak nem láthatóak, de kereshetőek"
+
+msgid "This is the long description of the album."
+msgstr "Ez az album hosszabb leírása."
+
+msgid "Create"
+msgstr "Létrehozás"
+
+msgid "Upload Complete"
+msgstr "Feltöltés sikeres"
+
+# c-format
+#, c-format
+msgid "Successfully added %d file."
+msgid_plural "Successfully added %d files."
+msgstr[0] "%d fájl sikeresen hozzáadva."
+
+msgid "No files added."
+msgstr "Nem adtam hozzá fájlt."
+
+#, c-format
+msgid "Added %s"
+msgstr "%s hozzáadva"
+
+#, c-format
+msgid "Failed to add %s"
+msgstr "%s hozzáadása sikertelen"
+
+msgid "Add more files"
+msgstr "Mégtöbb fájl hozzáadása"
+
+msgid ""
+"Your webserver is configured to disallow file uploads from your web browser at this time.  "
+"Please contact your system administrator for assistance."
+msgstr ""
+"A webszerver nem engedélyezi a fájlfeltöltéseket az Ön böngészőjéből. Kérjen segítséget a "
+"rendszergazdától."
+
+msgid "Upload files directly from your computer."
+msgstr "Fájlok feltöltése közvetlenül a számítógépéről."
+
+msgid "Enter the full path to the file and an optional caption in the boxes below."
+msgstr "Add meg a fájl teljes elérésí útját, és esetleg feliratot az alábbi mezőkbe."
+
+#, c-format
+msgid ""
+"<b>Note:</b> You can upload up to %s at one time.  If you want to upload more than that, you "
+"must upload the files separately, use a different upload format, or ask your system "
+"administrator to allow larger uploads."
+msgstr ""
+"<b> Megjegyzés: </b> Egyszerre %sot lehet feltölteni. Ha ennél többet szeretnél,vagy külön-"
+"külön töltse fel a fájlokat használj más feltöltési formát, (vagy esetleg kérd meg az "
+"admint, hogy engedélyezze a nagyobb felöltéseket)."
+
+#, c-format
+msgid ""
+"<b>Note:</b> You can upload up to %s at one time.  No individual file may be larger than %s. "
+"If you want to upload more than that, you must upload the files separately, use a different "
+"upload format, or ask your system administrator to allow larger uploads."
+msgstr ""
+"<b> Megjegyzés: </b> Egyszerre %sot lehet feltölteni. Egyik fájl sem haladhatja meg a %sos "
+"méretet. Ha ennél többet szeretnél, vagy külön-külön töltsd fel a fájlokat, vagy használj "
+"más feltöltési formát, (esetleg kérd meg az admint, hogy engedélyezze a nagyobb "
+"felöltéseket)."
+
+msgid "More.."
+msgstr "Több.."
+
+msgid "Set item titles from:"
+msgstr "Elem címének beállítása innen:"
+
+msgid "Assign caption to:"
+msgstr "Felirat hozzárendelése ehhez: "
+
+msgid ""
+"Transfer files that are already on your server into your Gallery.  The files must already "
+"have been uploaded to your server some other way (like FTP) and must be placed in a "
+"directory where they are accessibly by any element on the server.  If you're on Unix this "
+"means that the files and the directory the files are in should have modes of at least 755."
+msgstr ""
+"Képek áthelyezése a Galériába a szerverről. A fájloknak mar a szerveren kell lenniük "
+"(például FTP-vel feltöltve) egy olyan könyvtárban, amit bármilyen program elérhet. Ha ön egy "
+"Unix szervert használ, akkor ez azt jelenti, hogy a fájloknak és könyvtáraknak legalább 755-"
+"ös joggal kell rendelkezniük."
+
+msgid ""
+"For security purposes, you can't use this feature until the Gallery Site Administrator "
+"configures a set of legal upload directories."
+msgstr ""
+"Biztonsági okok miatt ez a lehetőség addig nem használható, amíg az Adminisztrátor nem állít "
+"be helyes feltöltési könyvtárakat."
+
+msgid "Server Path"
+msgstr "Kiszolgáló útvonal"
+
+msgid "You must enter a directory."
+msgstr "Adj meg egy könyvtárat."
+
+msgid ""
+"The directory you entered is invalid.  Make sure that the directory is readable by all users."
+msgstr ""
+"A megadott könyvtár érvénytelen. Győződj meg róla, hogy a könyvtár minden felhasználó "
+"számára olvasható."
+
+msgid ""
+"The directory you entered is illegal.  It must be a sub directory of one of the directories "
+"listed below."
+msgstr ""
+"A megadott könyvtár érvénytelen. Egy a listában megjelent könyvtár alkönyvtárának kellene "
+"lennie."
+
+msgid "An item with the same name already exists."
+msgstr "Egy ilyen nevű elem már létezik."
+
+msgid "Legal Directories"
+msgstr "Érvényes könyvtárak"
+
+msgid "modify"
+msgstr "módosítás"
+
+msgid "Recent Directories"
+msgstr "Friss könyvtárak"
+
+msgid "Find Files"
+msgstr "Fájlok keresése"
+
+#, c-format
+msgid "Directory: %s"
+msgstr "Könyvtár: %s"
+
+msgid "File name"
+msgstr "Fájlnév"
+
+msgid "Type"
+msgstr "Típus"
+
+msgid "Size"
+msgstr "Méret"
+
+msgid "Use Symlink"
+msgstr "Szimbolikus link használata"
+
+# c-format
+#, c-format
+msgid "%d byte"
+msgid_plural "%d bytes"
+msgstr[0] "%d bájt"
+
+msgid "Parent Directory"
+msgstr "Szülőkönyvtár"
+
+msgid "Directory"
+msgstr "Könyvtár"
+
+msgid "(Un)check all known types"
+msgstr "Minden ismert típus ki/bekapcsolása"
+
+msgid "(Un)check symlinks"
+msgstr "Linkek ki/bekapcsolása"
+
+msgid "for selected items"
+msgstr "a kiválasztott elemekre"
+
+msgid "Copy base filenames to:"
+msgstr "Fáljok másolása ide:"
+
+msgid "Add Files"
+msgstr "Fájlok hozzáadása"
+
+msgid "Start Over"
+msgstr "Újrakezdés"
+
+msgid ""
+"Import files into Gallery from another website.  Enter a URL below to a web page anywhere on "
+"the net and Gallery will allow you to upload any media files that it finds on that page.  "
+"Note that if you're entering a URL to a directory, you should end the URL with a trailing "
+"slash (eg, http://example.com/directory/). "
+msgstr ""
+"Fájlok importálása a galériába egy másik weboldalról. Írj be egy bármilyen weboldalra mutató "
+"URL-t, és a galéria letölt róla bármilyen média fájlt, amit ott talál. Ha könyvtárra mutató "
+"URL-t adsz meg, ügyelj arra hogy az URL-nek lezáró '/'-el kell végződnie.(pl: http://www."
+"pelda.hu/konyvtar/)"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "You must enter a URL to a web page"
+msgstr "Adjon meg egy weboldalra mutató URLt"
+
+msgid "The URL entered must begin with http://"
+msgstr "A beírt URL-nek http:// -el kell kezdődnie"
+
+msgid "The web page you specified is unavailable"
+msgstr "A megadott weboldal nem elérhető"
+
+msgid "Nothing to add found from this URL"
+msgstr "Semmi hozzáadható nem található erről a címről"
+
+msgid "Nothing added since no items were selected"
+msgstr "Nem adtunk hozzá semmit, mivel nincs elem kiválasztva"
+
+msgid "Recent URLs"
+msgstr "Friss URL-ek"
+
+#, c-format
+msgid "URL: %s"
+msgstr "URL: %s"
+
+msgid "change"
+msgstr "változtatás"
+
+# c-format
+#, c-format
+msgid "%d url found"
+msgid_plural "%d urls found"
+msgstr[0] "%d urlt nem találtam"
+
+msgid "(Un)check all"
+msgstr "Mind ki/bekapcsol"
+
+msgid "Add URLs"
+msgstr "URLek hozzáadása"
+
+msgid "No Thumbnail"
+msgstr "Nincs előnézet"
+
+msgid "Options"
+msgstr "Opciók"
+
+msgid "Link an Item"
+msgstr "Elem linkelése"
+
+# c-format
+#, c-format
+msgid "Successfully linked %d item"
+msgid_plural "Successfully linked %d items"
+msgstr[0] "%d elem sikeresen linkelve"
+
+msgid "This album contains no items to link."
+msgstr "Az az album nem tartalmaz linkelhető elemeket."
+
+msgid "Source"
+msgstr "Forrás"
+
+msgid "Choose the items you want to link"
+msgstr "Válaszd ki a linkelni kívánt elemeket"
+
+#, c-format
+msgid "(page %d of %d)"
+msgstr "(oldal %d/%d)"
+
+msgid "No sources chosen"
+msgstr "Nincs forrás kiválasztva"
+
+msgid "Check All"
+msgstr "Mindet kijelöl"
+
+msgid "Check None"
+msgstr "Kijelölés megszüntetése"
+
+msgid "Invert"
+msgstr "Megfordítás"
+
+msgid "Previous Page"
+msgstr "Előző oldal"
+
+msgid "Next Page"
+msgstr "Következő oldal"
+
+msgid "Destination"
+msgstr "Cél"
+
+msgid "Choose a new album for the link"
+msgstr "Új album választás a linkhez"
+
+msgid "No destination chosen"
+msgstr "Nincs cél kiválasztva"
+
+msgid "Link"
+msgstr "Link"
+
+msgid "Successfully linked"
+msgstr "Linkelés sikeres"
+
+msgid "Choose a destination album"
+msgstr "Válassz célalbumot"
+
+msgid "Delete Items"
+msgstr "Elemek Törlése"
+
+msgid "No items were selected for deletion"
+msgstr "Nem jelöltél ki elemet törlésre"
+
+# c-format
+#, c-format
+msgid "Successfully deleted %d item"
+msgid_plural "Successfully deleted %d items"
+msgstr[0] "%d elem sikeresen törölve"
+
+msgid "This album contains no items to delete"
+msgstr "Ez az album nem tartalmaz törölhető elemeket"
+
+msgid "Choose the items you want to delete"
+msgstr "Válaszd ki a törölni kívánt elemeket"
+
+msgid "Items selected here will remain selected when moving between pages."
+msgstr ""
+"Az itt kiválasztott elemek kiválasztva maradnak az oldalak között történő mozgás során."
+
+#, c-format
+msgid "One item selected on other pages."
+msgid_plural "%d items selected on other pages."
+msgstr[0] "%d elem van kiválasztva más oldalakon."
+
+msgid "(data)"
+msgstr "(adat)"
+
+# c-format
+#, c-format
+msgid "(album containing %d item)"
+msgid_plural "(album containing %d items)"
+msgstr[0] "(%d elemet tartalmazó album)"
+
+msgid "(empty album)"
+msgstr "(üres album)"
+
+msgid "Deletion Complete"
+msgstr "Törlés sikeres"
+
+msgid "Item successfully deleted"
+msgstr "Elem sikeresen törölve"
+
+#, c-format
+msgid "Are you sure you want to delete this %s?"
+msgstr "Biztosan törölni szeretnéd ezt az %s?"
+
+# c-format
+#, c-format
+msgid "It contains %d item."
+msgid_plural "It contains %d items."
+msgstr[0] "%d elemet tartalmaz."
+
+msgid "There is no undo!"
+msgstr "Nincs mit visszavonni!"
+
+msgid "There was a problem processing your request."
+msgstr "Hiba történt a kérés feldolgozása közben."
+
+msgid "Sort order"
+msgstr "Rendezés"
+
+msgid ""
+"This sets the sort order for the album.  This applies to all current items, and any newly "
+"added items."
+msgstr ""
+"Ezzel állítható az album rendezése. Alkalmazódik minden jelenlegi elemre, és a jövőben "
+"hozzáadottakra is."
+
+#, fuzzy
+msgid "Apply to all subalbums"
+msgstr "Alkalmazás alelemekre"
+
+msgid "Choose a theme for this album. (The way the album is arranged on the page)"
+msgstr "Válassz elrendezést az albumnak. (ahogy az album az oldalon el legyen rendezve)"
+
+msgid "Use this theme in all subalbums"
+msgstr ""
+
+msgid " Every item requires a thumbnail. Set the default size in pixels here."
+msgstr " Minden elemnek kell előnézet. Állítsd be az alap méretet itt (pixelben)."
+
+msgid "You must enter a number (greater than zero)"
+msgstr "Adj meg egy számot (nagyobbat mint 0)"
+
+msgid "Use this thumbnail size in all subalbums"
+msgstr ""
+
+msgid "Resized Images"
+msgstr "Átméretezett képek"
+
+msgid "Each item in your album can have multiple sizes. Define the default sizes here."
+msgstr ""
+"Minden albumbéli elemnek több mérete lehet. Állítsd be itt az alapértelmezett méreteket."
+
+msgid "Active"
+msgstr "Aktív"
+
+msgid "Target Size (pixels)"
+msgstr "Célméret (pixelben)"
+
+msgid "You must enter a valid size"
+msgstr "Adj meg egy helyes méretet"
+
+msgid "Use these target sizes in all subalbums"
+msgstr ""
+
+msgid "Recreate thumbnails and resizes"
+msgstr "Előnézeti és átméretezett képek újragyártása"
+
+msgid ""
+"The thumbnail and resized image settings are for all new items. To apply these settings to "
+"all the items in your album, check the appropriate box."
+msgstr ""
+"Az előnézeti- és átméretezett képekhez tartozó beállítások. Az összes képhez tartozó "
+"előnézeti- és átméretezett kép újragyártásához jelöld be a kivánt funkciókat."
+
+msgid "Recreate thumbnails"
+msgstr "Előnézeti·képek·újragyártása"
+
+msgid "Recreate resized images"
+msgstr "Átméretezett képek újragyártása"
+
+msgid ""
+"In order for Gallery to properly display this animation, it has to know the animation's "
+"width and height.  If you have installed a graphics toolkit that can handle animation types, "
+"then these values may already be set.  If not, they may be set to 0.  If you do not enter "
+"the correct values here, the animation may appear distorted when viewed in your web "
+"browser.  Note that changing these values does <b>not</b> change the animation itself so "
+"experimenting won't cause harm."
+msgstr ""
+"Ahhoz, hogy a galéria helyesen jelenítse meg az animációt, tudnia kell a szélességét és a "
+"magasságát. Ha feltetted az animációkat kezelő grafikus eszköztárat, akkor ezek az értékek "
+"már lehet, hogy be vannak állítva. Ha nem, lehet, hogy 0-ra vannak állítva. Amennyiben nem "
+"állítod be a helyes értékeket itt, előfordulhat, hogy az animáció eltorzulva jelenik meg a "
+"webböngészőben. Megjegyezzük, hogy ha megváltoztatsz valamit, akkor az magára az animációra "
+"<b>nincs</b> hatással, tehát nyugodtan kísérletezhetsz."
+
+msgid "Width"
+msgstr "Szélesség"
+
+msgid "You must enter a value greater than or equal to 0"
+msgstr "Adj meg egy 0-nál nem kisebb számot."
+
+msgid "Height"
+msgstr "Magasság"
+
+#, fuzzy
+msgid "There were errors saving some items"
+msgstr "Hiba történt néhány elem mentése közben"
+
+#, fuzzy
+msgid "There were errors saving all items"
+msgstr "Hiba történt az összes kép mentése közben"
+
+msgid "Successfully saved all items"
+msgstr "Minden elem sikeresen elmentve"
+
+msgid "This album contains no items"
+msgstr "Ez az album nem tartalmaz elemeket"
+
+msgid "Saved successfully."
+msgstr "Sikeresen elmentve."
+
+msgid "This item was modified by somebody else at the same time.  Your changes were lost."
+msgstr "Ezt az elemet valaki más módosította. A Te módosításaid elvesztek."
+
+msgid "You do not have permissions to modify this item."
+msgstr "Nincs jogosultságod ezen elem módosításához."
+
+msgid "Save and Done"
+msgstr "Mentés"
+
+#, c-format
+msgid "Save and Edit Previous %s"
+msgstr "Mentés és előző szerkesztése %s"
+
+#, c-format
+msgid "Save and Edit Next %s"
+msgstr "Mentés és következő szerkesztése %s"
+
+msgid ""
+"The name of this item on your hard disk.  It must be unique in this album.  Only use "
+"alphanumeric characters, underscores or dashes."
+msgstr ""
+"Az elem neve a merevlemezen. Ebben az albumban egyedinek kell lennie. Csak alfanumerikus "
+"karatkert (vagyis számokat és betűket), alsóvonást, és vesszőt tartalmazhat."
+
+msgid "Your name contains invalid characters.  Please choose another."
+msgstr "A megadott név hibás karaktereket tartalmaz. Kérlek válassz másikat."
+
+msgid "You must enter a name for this item."
+msgstr "Add meg az elem nevét."
+
+msgid "The name you entered is already in use.  Please choose another."
+msgstr "A beírt név már használatban van. Kérlek válassz másikat."
+
+msgid "The title of this item."
+msgstr "Ezen elem címe."
+
+msgid "The root album must have a title."
+msgstr "A gyökér albumnak kell cím."
+
+msgid "The summary of this item."
+msgstr "Az elem rövid leírása"
+
+msgid "This is the long description of the item."
+msgstr "Ez az elem hosszabb leírása"
+
+#, c-format
+msgid "%s Date and Time"
+msgstr "%s dátum és idő"
+
+msgid "Set the date and time when this image was captured."
+msgstr "Kép  létrehozási idejének beállítása"
+
+msgid "Set the date and time to be displayed for this item."
+msgstr "Elem kijelzendő dátumának és idejének beállítása"
+
+#, c-format
+msgid "Set the date and time to be displayed for this %s."
+msgstr "Megjelenített dátum és idő beállítása ehhez az elemhez: %s."
+
+msgid "Date:"
+msgstr "Dátum:"
+
+msgid "Time:"
+msgstr "Idő: "
+
+msgid "Use the original capture date and time from file information (e.g. Exif tag):"
+msgstr ""
+"Az eredeti felvétel készítési idejének használata a fájlinformációkból (pl. Exif adat):"
+
+msgid "You must enter a valid date and time"
+msgstr "Adj meg egy helyes dátumot és időt"
+
+msgid "Thumbnail"
+msgstr "Előnézeti kép"
+
+msgid ""
+"Set the size of the thumbnail.  The largest side of the thumbnail will be no larger than "
+"this value. Leave this field blank if you don't want a thumbnail."
+msgstr ""
+"Előnézeti kép méretének beállítása. Az előnézeti kép legnagyobb oldalának mérete nem "
+"lesznagyobb, mint az itt beállított érték. Hagyja üresen, ha nem szeretne előnézeti képet."
+
+msgid ""
+"There are no graphics toolkits enabled that support this type of item, so we cannot create "
+"or modify a thumbnail."
+msgstr ""
+"Ennek az elemnek a formátumhoz nincs grafikus kezelőkészlet telepítve, így nem készíthetsz, "
+"vagy modosíthatsz előnézeti képeket."
+
+msgid ""
+"In order for Gallery to properly display this movie, it has to know the movie's width and "
+"height.  If you have installed a graphics toolkit that can handle movie types, then these "
+"values may already be set.  If not, they may be set to 0.  If you do not enter the correct "
+"values here, the movie may appear distorted when viewed in your web browser.  Note that "
+"changing these values do <b>not</b> change the movie itself so experimentation won't cause "
+"harm."
+msgstr ""
+"Ahhoz, hogy a galéria helyesen jelenítse meg az filmet, tudnia kell a szélességét és a "
+"magasságát. (Amennyiben fel van telepítve az animációt kezelő grafikus eszköztárat, akkor "
+"ezek a beállítások már megfelelőek. Ha nem, állíthatod 0-ra.) Amennyiben nem állítod be itt "
+"az értékeket, előfordulhat, hogy eltorzulva jelenik meg a webböngészőben. Megjegyezzük, hogy "
+"ha itt megváltoztatsz valamit, akkor az magára az animációra <b>nincs</b> hatással, tehát "
+"nyugodtan kísérletezhetsz."
+
+msgid "Resized Photos"
+msgstr "Átméretezett fotók"
+
+msgid ""
+"These sizes are alternate resized versions of the original you would like to have available "
+"for viewing."
+msgstr "Ez a méret az eredeti kép átméretezett verziójának mérete."
+
+msgid ""
+"There are no graphics toolkits enabled that support this type of photo, so we cannot create "
+"or modify resized versions."
+msgstr ""
+"Ehhez a formátumhoz nincs grafikus kezelőkészlet telepítve, így nem készíthet, vagy "
+"modosíthat atméretezett képeket."
+
+msgid ""
+"You can select which part of the photo will be used for the thumbnail.  This will have no "
+"effect on the resized or original versions of the image."
+msgstr ""
+"Kiválaszhatod, hogy a kép mely részét használjuk fel az előnézeti kép létrehozásához. Ez "
+"semmilyen hatással nem lesz a kép átméretezett és eredeti verziójára."
+
+msgid "Aspect Ratio: "
+msgstr "Méretarány"
+
+msgid "Crop"
+msgstr "Kivágás"
+
+msgid "Reset to default"
+msgstr "Visszaállítás alapértelmezettre"
+
+msgid ""
+"There are no graphics toolkits enabled that support this type of photo, so we cannot crop "
+"the thumbnail."
+msgstr ""
+"Ehhez a formátumhoz nincs grafikus kezelőkészlet telepítve, így nem a képlevágás funkció nem "
+"működik."
+
+msgid "Rotate"
+msgstr "Elforgatás"
+
+msgid "You can only rotate the photo in 90 degree increments."
+msgstr "Csak 90 fokos szögekben fordítható el a fénykép."
+
+msgid "CC 90&deg;"
+msgstr "ÓE·90&deg;"
+
+msgid "180&deg;"
+msgstr "180&deg;"
+
+msgid "C 90&deg;"
+msgstr "Ó 90&deg;"
+
+msgid ""
+"There are no graphics toolkits enabled that support this type of photo, so we cannot rotate "
+"it."
+msgstr ""
+"Ehhez a formátumhoz nincs grafikus kezelőkészlet telepítve, így nem a képek forgatása "
+"funkció nem működik."
+
+msgid "Scale"
+msgstr "Nagyítás"
+
+msgid ""
+"Shrink or enlarge the original photo.  When Gallery scales a photo, it maintains the same "
+"aspect ratio (height to width) of the original photo to avoid distortion.  Your photo will "
+"be scaled until it fits inside a bounding box with the size you enter here."
+msgstr ""
+"Az eredeti fénykép nagyítása/kicsinyítése. Amikor a Galéria nagyít egy fényképet, megtartja "
+"a méretarányt, hogy ne torzuljon a kép. A kép addig lesz nagyítva, amig az belefér egy "
+"akkora 'dobozba', aminek a méretét itt megadod."
+
+msgid ""
+"There are no graphics toolkits enabled that support this type of photo, so we cannot scale "
+"it."
+msgstr ""
+"Ehhez a formátumhoz nincs grafikus kezelőkészlet telepítve, így nem a képek átméretezése "
+"funkció nem működik."
+
+msgid "You must enter a size"
+msgstr "Adj meg egy méretet"
+
+msgid "Preserve Original"
+msgstr "Eredeti megtartása"
+
+msgid ""
+"Gallery does not modify your original photo when rotating and scaling. Instead, it "
+"duplicates your photo and works with copies.  This requires a little extra disk space but "
+"prevents your original from getting damaged.  Disabling this option will cause any actions "
+"(rotating, scaling, etc) to modify the original."
+msgstr ""
+"A Galéria nem módosítja az eredeti fényképet ha azt nagyítod, vagy forgatod. Ehelyett "
+"duplikálja a képet, és a másolattal dolgozik. Ez egy kis extra helyet igényel,viszont megvéd "
+"az eredeti kép sérülésétől. Ezen opció kikapcsolásával a módosítások az eredeti képet fogják "
+"érinteni."
+
+msgid "This is a link to another photo, so you cannot change the original"
+msgstr "Ez egy másik fényképre mutató link, így az eredeti nem módosítható"
+
+msgid "There are links to this photo, so you cannot change the original"
+msgstr "Mutatnak linkek erre a fényképre, így az eredeti nem változtatható"
+
+msgid "Preserve Original Photo"
+msgstr "Eredeti fénykép megtartása"
+
+msgid "Modified Photo"
+msgstr "Módosított fénykép"
+
+msgid ""
+"You are using a copy of the original photo that has been scaled or rotated.  The original "
+"photo is still available, but is no longer being used.  Any changes you make will be applied "
+"to the copy instead."
+msgstr ""
+
+msgid "Restore original"
+msgstr "Eredeti visszaállítása"
+
+#, c-format
+msgid ""
+"This album is configured to use the <b>%s</b> theme. These settings only apply to the theme "
+"for this album."
+msgstr ""
+"Ez az album a(z) <b>%s</b> felületet használatára van beállítva. Ezek a beállítások csak az "
+"ehhez az albumhoz tartozó felületpéldányra vonatkoznak."
+
+msgid "Setting"
+msgstr "Beállítás"
+
+msgid "Use Global"
+msgstr "Globális használata"
+
+#, c-format
+msgid "Use these settings in all subalbums that use %s theme"
+msgstr ""
+
+msgid ""
+"Note: to set the same theme for all subalbums, check the appropriate box in <b>Album</b> tab"
+msgstr ""
+
+msgid "Album Highlight"
+msgstr "Albumkiemelés"
+
+msgid "You can make this item the thumbnail for its parent or any ancestor album."
+msgstr "Ez az elem lehet a közvetlen, vagy bármely más szülőalbum előnézeti képe."
+
+msgid "Highlight for:"
+msgstr "Kiemelés a következőhöz:"
+
+msgid "Highlight"
+msgstr "Kiemelés"
+
+msgid "Move an Item"
+msgstr "Egy elem mozgatása"
+
+# c-format
+#, c-format
+msgid "Successfully moved %d item"
+msgid_plural "Successfully moved %d items"
+msgstr[0] "%d elem sikeresen mozgatva"
+
+msgid "This album contains no items to move."
+msgstr "Ez az album nem tartalmaz mozgatható elemeket."
+
+msgid "Choose the items you want to move"
+msgstr "Válaszd ki a mozgatni kívánt elemeket"
+
+msgid ""
+"The destination you chose does not accept sub-albums, so all sub-albums have been deselected."
+msgstr ""
+"Az itt kiválasztott cél nem fogad el al-albumokat, így minden al-album kijelölését "
+"megszüntettem."
+
+msgid ""
+"The destination you chose only accepts sub-albums, so all non-albums have been deselected."
+msgstr ""
+"Az itt kiválasztott cél csak al-albumokat fogad el, így minden nem albumot kijelöltését "
+"megszüntettem."
+
+msgid "You are not allowed to move this item away from here."
+msgstr "Nem mozgathatsz el innen elemet."
+
+msgid "You are not allowed to move an album to the chosen destination."
+msgstr "Az elem mozgatása nem engedélyezett a kiválaszott helyre."
+
+msgid "You are not allowed to move an item to the chosen destination."
+msgstr "Nem mozgathatsz elemet a kiválasztott helyre."
+
+msgid "You cannot move an album into its own subtree."
+msgstr "Az albumot nem mozgatod át saját maga alá."
+
+msgid "Choose a new album for them"
+msgstr "Új album választás nekik"
+
+msgid "You don't have the permission to add items in this album"
+msgstr "Nincs jogosultságod elemek hozzáadására az albumba"
+
+msgid "Move"
+msgstr "Mozgatás"
+
+msgid "Successfully moved"
+msgstr "Mozgatás sikeres"
+
+msgid "Permissions"
+msgstr "Jogok"
+
+msgid "Owner changed successfully"
+msgstr "Tulaj sikeresen megváltoztatva"
+
+msgid "Group permission added successfully"
+msgstr "Csoportjogosultságok hozzáadása sikeres"
+
+msgid "User permission added successfully"
+msgstr "Felhasználói jogosultságok sikeresen hozzáadva"
+
+msgid "Group permission removed successfully"
+msgstr "Csoportjogosultságok sikeresen eltávolítva"
+
+msgid "User permission removed successfully"
+msgstr "Felhasználói jogosultságok sikeresen eltávolítva"
+
+msgid ""
+"Each item has its own independent set of permissions.  Changing the parent's permissions has "
+"no effect on the permissions of the child.  This allows you to restrict access to the parent "
+"of this item, but still grant full access to this item, or vice versa.  The most efficient "
+"way to use this permission system is to create groups and assign permissions to them.  Then "
+"if you want to grant permissions to a specific user, you can add (or remove) the user from "
+"the appropriate group."
+msgstr ""
+"Minden elemnek saját független jogai vannak. A szülő jogainak megváltoztatása nincs hatással "
+"a gyerek jogaira. Így a szülő jogai korlátozhatóak úgy, hogy közben a gyermekre teljes jogot "
+"adunk, és fordítva. A leghatékonyabban úgy használhatjuk ezt a jogrendszert, ha létrehozunk "
+"csoportokat, és jogokat adunk nekik. Később, ha szeretnénk jogot adni egy felhasználónak, "
+"hozzáadhatjuk a kiválasztott csoporthoz."
+
+#, c-format
+msgid "This item is owned by user: %s"
+msgstr "Ezen elem tulajdonosa: %s"
+
+#, c-format
+msgid "This item is owned by user: %s (%s)"
+msgstr "Ezen elem tulaja %s (%s)"
+
+msgid "New owner"
+msgstr "Új tulaj"
+
+msgid "Change"
+msgstr "Változtat"
+
+msgid "Apply new owner to sub-items"
+msgstr "Új tulajdonos alkalmazása a belső elemekre"
+
+msgid "You must enter a user name"
+msgstr "Adj meg egy felhasználónevet"
+
+msgid "The user name you entered is invalid"
+msgstr "A megadott felhasználónév nem megfelelő"
+
+msgid "Apply changes"
+msgstr "Változtatások alkalmazása"
+
+msgid ""
+"This item has sub-items.  The changes you make here can be applied to just this item, or you "
+"can apply them to all sub-items.  Note that applying changes to sub-items will merge your "
+"change into the existing permissions of the sub-items and may be very time consuming if you "
+"have many sub-items.  It's more efficient to grant permissions to groups and then add and "
+"remove users from groups whenever possible. Changes are applied to sub-items by default."
+msgstr ""
+"Ennek az albumnak vannak al-elemi. Az itt eszközölt beállítások alkalmazhatóak csak erre az "
+"elemre, vagy az összes al-elemre. Ha az összes al-elemre érvényesíted a beállításokat, akkor "
+"azok jogosultsági beállításait is módosítod, és ez az al-elemek számától függően nagyon "
+"időigényes lehet. Sokkal hatékonyabb csoportok számára jogosultságokat adni és a csoporthoz "
+"hozzáadni vagy abból kivenni Felhasználókat, amikor ez csak lehetséges. A változások "
+"alapértelmezésben az al-elemekre is alkalmazva lesznek."
+
+msgid "Apply to sub-items"
+msgstr "Alkalmazás alelemekre"
+
+msgid "Group Permissions"
+msgstr "Csoportjogok"
+
+msgid "Group name"
+msgstr "Csoportnév"
+
+msgid "Permission"
+msgstr "Jog"
+
+msgid "New Group Permission"
+msgstr "Új csoport jog"
+
+msgid "Add Permission"
+msgstr "Jogok hozzáadása"
+
+msgid "The permission you chose is invalid"
+msgstr "A választott jog nem megfelelő"
+
+msgid "The group name you entered is invalid"
+msgstr "A beírt csoportnév nem megfelelő"
+
+msgid "Group already has this permission (check sub-permissions)"
+msgstr "Ennek a csoportnak már van ilyen joga (ellenőrizze az aljogokat)"
+
+msgid "User Permissions"
+msgstr "Felhasználói jogok"
+
+msgid "User name"
+msgstr "Felhasználónév"
+
+msgid "New User Permission"
+msgstr "Új felhasználói jog"
+
+msgid "The user already has this permission (check sub-permissions)"
+msgstr "A felhasználónak már van ilyen joga (ellenőrizze az aljogokat)"
+
+msgid "Reorder Album"
+msgstr "Album újrarendezése"
+
+#, fuzzy
+msgid "Order saved successfully"
+msgstr "Változtatások elmentve"
+
+msgid ""
+"This album has an automatic sort order specified, so you cannot change the order of items "
+"manually.  You must remove the automatic sort order to continue."
+msgstr ""
+"Ez az album automatikus rendezésre van állítva. Ha mégis szeretné kézzel rendezni, akkor "
+"előbb kapcsolja ki az automatikus rendezést."
+
+msgid "Change the order of the items in this album."
+msgstr "Elemek elrendezésének megváltoztatása az albumokban"
+
+msgid "Move this item"
+msgstr "Ezen elem mozgatása"
+
+msgid "before"
+msgstr "elé"
+
+msgid "after"
+msgstr "utána"
+
+msgid "Reorder"
+msgstr "Újrarendezés"
+
+msgid "Continue..."
+msgstr "Folytat..."
+
+msgid "Site is temporarily down for maintenance."
+msgstr ""
+
+#, fuzzy
+msgid "Admin Login"
+msgstr "Adminisztrátori opciók"
+
+msgid "Enter a URL"
+msgstr "Adj meg egy URL-t"
+
+msgid "Enter some text describing the URL"
+msgstr "Add meg az URL leírását"
+
+msgid "Enter an image URL"
+msgstr "Adj meg egy kép URL-t"
+
+msgid "B <!-- Button label for Bold -->"
+msgstr "B"
+
+msgid "i <!-- Button label for italic -->"
+msgstr "i"
+
+msgid "list"
+msgstr "lista"
+
+msgid "bullet"
+msgstr ""
+
+msgid "url"
+msgstr "url"
+
+msgid "image"
+msgstr "kép"
+
+msgid "Configuration Error: Missing Theme"
+msgstr "Beállítási Hiba: Hiányzó Felület"
+
+msgid "Missing Theme"
+msgstr "Hiányzó Felület"
+
+#, fuzzy, c-format
+msgid ""
+"This page is configured to use the %s theme, but it is either inactive, not installed, or "
+"incompatible."
+msgstr ""
+"Ez az album a %s felület használatára van beállítva, de az inaktív, vagy nincs telepítve."
+
+#, fuzzy, c-format
+msgid ""
+"This album is configured to use the %s theme, but it is either inactive, not installed, or "
+"incompatible."
+msgstr ""
+"Ez az album a %s felület használatára van beállítva, de az inaktív, vagy nincs telepítve."
+
+#, c-format
+msgid ""
+"To fix this problem you can %sinstall or activate this theme%s or select another default "
+"theme."
+msgstr ""
+"A hiba kijavításához %stelepítheted vagy aktiválhatod ezt a felületet%s vagy válaszhatsz "
+"másik alapértelmezettet."
+
+#, c-format
+msgid ""
+"To fix this problem you can %slogin as a site administrator%s and then %sinstall or activate "
+"this theme%s or select another default theme."
+msgstr ""
+"A hiba kijavításához %sbe kell jelentkezned adminisztrátorként%s, majd %stelepítened vagy "
+"aktiválnod kell ezt a felületet%s vagy választanod másik alapértelmezettet."
+
+#, c-format
+msgid ""
+"To fix this problem you can either %schoose a new theme for this album%s or %sinstall or "
+"activate this theme%s."
+msgstr ""
+"A hiba kijavításához %sválaszhatsz egy új felületet ehhez az albumhoz%s vagy %stelepítheted "
+"vagy aktiválhatod ezt a felületet%s."
+
+#, c-format
+msgid ""
+"To fix this problem you can either %schoose a new theme for this album%s or %slogin as a "
+"site administrator%s and then %sinstall or activate this theme%s."
+msgstr ""
+"A hiba kijavításához %sválaszthatsz egy új felületet az albumhoz%s, vagy %sbejelentkezhetsz "
+"rendszergazdaként%s és %steleplítheted vagy aktiválhatod ezt a felületet%s"
+
+#, c-format
+msgid ""
+"To fix this problem you can either %slogin%s and then %schoose a new theme for this album%s "
+"or %slogin as a site administrator%s and then %sinstall or activate this theme%s."
+msgstr ""
+"A hiba kijavításához %sbejelentkezhetsz%s és %sválaszthatsz egy új felületet az albumhoz%s "
+"vagy %sbejelentkezhetsz az oldal renszergazdájaként%s és %stelepítheted vagy aktiválhatod "
+"ezt a felületet%s."
+
+msgid "Admin Options"
+msgstr "Adminisztrátori opciók"
+
+msgid "User Options"
+msgstr "Felhasználói beállítások"
+
+msgid "Password changed successfully"
+msgstr "Jelszó sikeresen megváltoztatva"
+
+msgid ""
+"You must enter your current password to prove that it's you, then enter your new password "
+"twice to make sure that you didn't make a mistake."
+msgstr ""
+"Add meg a jelenlegi jelszavad, hogy azonosíthassunk, majd írd be kétszer az új jelszót."
+
+msgid "Current Password"
+msgstr "Jelenlegi jelszó"
+
+msgid "You must enter your current password"
+msgstr "Add meg a jelenlegi jelszavad"
+
+msgid "Incorrect password"
+msgstr "Hibás jelszó"
+
+msgid "New Password"
+msgstr "Új jelszó"
+
+msgid "You must enter a new password"
+msgstr "Adj meg egy új jelszót"
+
+msgid "Verify New Password"
+msgstr "Új jelszó ellenőrzése"
+
+msgid "You must enter your new password again!"
+msgstr "Add meg az új jelszavad mégegyszer!"
+
+msgid "Login to your account"
+msgstr "Lépj be a fiókodba"
+
+msgid "Your password has been recovered, please login."
+msgstr "Jelszavad pótoltuk, lépj be."
+
+msgid "Your login information is incorrect.  Please try again."
+msgstr "A belépési információk hibásak. Kérlek próbálkozz újra."
+
+#, c-format
+msgid ""
+"Lost or forgotten passwords can be retrieved using the <a href=\"%s\">recover password</a> "
+"page"
+msgstr ""
+"Elveszett vagy elfelejtett jelszavak pótolhatóak a <a href=\"%s\">jelszópótló oldalon</a> "
+"keresztül"
+
+#, c-format
+msgid "Welcome, %s!"
+msgstr "Üdv %s!"
+
+msgid "Account settings saved successfully"
+msgstr "Felhasználói beállítások sikeresen elmentve"
+
+msgid "(required, password required for change)"
+msgstr ""
+
+msgid "(suggested, password required for change)"
+msgstr ""
+
+#, fuzzy
+msgid "(required to change the e-mail address)"
+msgstr "Adj meg egy e-mail címet"
+
+#, fuzzy
+msgid "You must enter your current password to change the e-mail address"
+msgstr "Add meg a jelenlegi jelszavad"
+
+msgid "Recover a lost or forgotten password"
+msgstr "Elvesztett vagy elfelejtett jelszó pótlása"
+
+msgid ""
+"Recovering your password requires that your user account has an email address assigned, and "
+"that you have access to the listed email address.  A confirmation will be emailed to you "
+"containing a URL which you must visit to set a new password for your account.  To prevent "
+"abuse, password recovery requests can not be attempted more than once in a 20 minute "
+"period.  A recovery confirmation is valid for seven days.  If it is not used during that "
+"time, it will be purged from the system and a new request will have to be made."
+msgstr ""
+"Jelszavad pótlásához szükséges, hogy egy emailcím legyen rendelve a felhasználói fiókodhoz "
+"és hogy hozzáférj ehhez a címhez. Egy igazolást küldünk emailben, mely tartalmaz egy "
+"webcímet, amit meg kell látogatnod az új jelszó beállításához. A kéretlen leveleket "
+"megelőzendő, jelszópotlás csak húszpercenként egyszer kérhető. A pótlási igazolás 7 napig "
+"érvényes. Amennyiben nem használják ezen idő alatt, törlődik a rendszerből és új igazolást "
+"kell kérni."
+
+msgid "Your recovery request has been sent!"
+msgstr "A pótlási kérelmed elküldésre került!"
+
+msgid ""
+"Note that if the account does not have an email address, you may not receive the email and "
+"you should contact your system administrator for help."
+msgstr ""
+"Megjegyezzük, hogy ha a felhasználói fiókhoz nincs érvényes e-mailcím rendelve, akkor "
+"előfordulhat, hogy nem kapod meg a levelet és így a rendszergazdához kell segítségért "
+"fordulnod."
+
+#, c-format
+msgid ""
+"Administrators can use the %sEmergency Password Recovery%s page to recover the admin account "
+"if they fail to receive recovery email due to server problems, or lack of a working email "
+"address."
+msgstr ""
+
+msgid "Recover"
+msgstr "Pótlás"
+
+#, c-format
+msgid ""
+"In order to proceed with the password reset, we have to verify that you are who you claim.  "
+"The best way to be sure is to ask you to make a tiny change in the Gallery directory which "
+"will prove that you have the right permissions.  So, we're going to ask that you create a "
+"new text file called %s in your gallery2 directory. It must contain the following randomly "
+"generated characters:"
+msgstr ""
+
+#, c-format
+msgid "%s"
+msgstr "%s"
+
+#, c-format
+msgid ""
+"As a convenience to you, we've prepared a %scorrect version of login.txt%s for you.  "
+"Download that and copy it into your install directory and you're all set."
+msgstr ""
+"Hogy megkönnyítsük a dolgod előkészítettünk egy %smegfelelő login.txt fájlt%s a számodra. "
+"Töltsd le, másold be az install könyvtáradba és készen vagy."
+
+msgid "Once you've uploaded the file, click refresh to continue."
+msgstr "Ha feltöltötted a fájlt, kattints a frissítésre a folytatáshoz."
+
+msgid "Emergency Administrator Password Reset"
+msgstr ""
+
+msgid ""
+"This page can be used by a system administrator to securely reset the password on any "
+"account."
+msgstr ""
+"Ezen az oldalon keresztül egy rendszergazda biztonságosan állíthat be új jelszót, bármely "
+"fiókhoz."
+
+msgid "Authorization Confirmed"
+msgstr "Azonosítás Megtörtént"
+
+msgid ""
+"Your authorization has been confirmed.  Please enter your new password below.  After setting "
+"your new password you will be taken to the login page."
+msgstr ""
+"Azonosításod megtörtént. Kérlek írd be az általad kiválaszott új jelszót! A jelszó "
+"beállítása után átirányítunk a bejelentkezési oldalra."
+
+msgid "Recover Password for Username"
+msgstr "Felhasználónévhez Tartozó Jelszó Pótlása"
+
+msgid "You must enter a username to recover the password for."
+msgstr "A jelszó pótlásához meg kell adnod a hozzátartozó felhasználónevet."
+
+msgid "The username you entered does not exist."
+msgstr "A megadott felhasználónév nem létezik."
+
+msgid "Authorization Incorrect"
+msgstr "Azonosítás sikertelen"
+
+msgid "Recovery Instructions"
+msgstr "Pótlási Útmutató"
+
+msgid "AuthFile Missing"
+msgstr "Az AzonosítóFájl Hiányzik"
+
+msgid "AuthFile Unreadable"
+msgstr "Az AzonosítóFájl Nem Olvasható"
+
+#, c-format
+msgid "Your %s file is not readable. Please give Gallery read permissions on the file."
+msgstr "A %s fájlod nem olvasható. Adj olvasási jogot a Gallery-nek a fájlhoz."
+
+msgid "Refresh"
+msgstr "Frissítés"
+
+msgid "This page will allow you to reset the password on your account."
+msgstr ""
+"Ezen az oldalon keresztül pótolhatod a felhasználónevedhez tartozó elfelejtett jelszót."
+
+#, c-format
+msgid ""
+"There is no request which matches the username and authorization provided. Request a new "
+"authorization from the <a href=\"%s\">lost password page</a>"
+msgstr ""
+"Nincs olyan kérés ami megegyezne a megadott felhasználónévvel és azonosítóval. Kérj egy új "
+"azonosítást az <a href=\"%s\">elfelejtett jelszó oldalról</a>"
+
+#, c-format
+msgid ""
+"The request you are trying to access has expired.  Request a new authorization from the <a "
+"href=\"%s\">lost password page</a>."
+msgstr ""
+"A kérés melyre hivatkoztál lejárt. Kérj egy új azonosítást az <a href=\"%s\">elfelejtett "
+"jelszó oldalról</a>."
+
+msgid "Authorization missing"
+msgstr "Azonosítás hiánya"
+
+msgid "Username missing"
+msgstr "Felhasználónév hiányzik"
+
+msgid "Submit"
+msgstr "Küldés"
+
+#, c-format
+msgid "Hello %s,"
+msgstr "Hello %s,"
+
+#, c-format
+msgid "You receive this email because a password recovery for %s was requested by %s at %s"
+msgstr ""
+"Azért kapod ezt az emailt, mert %s weboldalhoz a jelszó pótlását kérte %s. Kérés időpontja: %"
+"s"
+
+#, c-format
+msgid "Your username is: %s"
+msgstr "A felhasználóneved: %s"
+
+msgid ""
+"To finish the password recovery process please click the following link and enter the "
+"required information:"
+msgstr ""
+"A jelszópótlási folyamat befejezéséhez kérlek kattins a következő linkre, majd add meg a "
+"kért adatokat:"
+
+msgid "If you did not request this recovery email, you may safely ignore it."
+msgstr "Amennyiben nem Te kérted a jelszó pótlását, hagyd figyelmen kívül e levelet."
+
+msgid "Thank you!"
+msgstr "Köszönjük!"
+
+msgid "guest"
+msgstr "vendég"
+
+#, c-format
+msgid "display mode: %s"
+msgstr "megjelenítési mód: %s"
+
+#, c-format
+msgid "Date: %s"
+msgstr "Dátum: %s"
+
+#, c-format
+msgid "Owner: %s"
+msgstr "Tulajdonos: %s"
+
+# c-format
+#, c-format
+msgid "Size: %d item"
+msgid_plural "Size: %d items"
+msgstr[0] "Méret: %d elem"
+
+# c-format
+#, c-format
+msgid "(%d item total)"
+msgid_plural "(%d items total)"
+msgstr[0] "(%d elem összesen)"
+
+#, c-format
+msgid "Views: %d"
+msgstr "Megtekintés: %d"
+
+msgid "&laquo; album actions &raquo;"
+msgstr "&laquo; Albumműveletek &raquo;"
+
+msgid "&laquo; item actions &raquo;"
+msgstr "&laquo; Elemműveletek &raquo;"
+
+msgid "Go"
+msgstr "Mehet"
+
+msgid "Navigation"
+msgstr "Navigáció"
+
+msgid "next"
+msgstr "következő"
+
+msgid "last"
+msgstr "utolsó"
+
+#, c-format
+msgid "Page %d of %d"
+msgstr "Oldal: %d/%d"
+
+#, c-format
+msgid "%d of %d"
+msgstr "%d/%d"
+
+msgid "first"
+msgstr "első"
+
+msgid "previous"
+msgstr "előző"
+
+msgid "Page:"
+msgstr "Oldal:"
+
+#, c-format
+msgid "%d. %s"
+msgstr "%d. %s"
+
+msgid "Size: "
+msgstr "Méret:"
+
+msgid "Full size: "
+msgstr "Teljes méret:"
+
+msgid "Language selector"
+msgstr "Nyelvválasztó"
+
+msgid "Item actions"
+msgstr "Elemműveletek"
+
+msgid "Use dropdown menu"
+msgstr "Használd a legördülő menüt"
+
+msgid "Login block"
+msgstr "Belépési blokk"
+
+msgid "Links to album/photo peers"
+msgstr "Linkek az albumok/fotók oldalaira"
+
+msgid "Unit test module"
+msgstr "Egységtesztelő modul"
+
+msgid "[test] A permission"
+msgstr "[test] Jogok"
+
+msgid "[test] A second permission"
+msgstr "[test] Egy második jogosultság"
+
+msgid "Unit test theme"
+msgstr "Egységtesztelő felület"
+
+#~ msgid "&laquo; None &raquo;"
+#~ msgstr "&laquo;·Nincs·&raquo;"
+
+#~ msgid "You did it right!"
+#~ msgstr "Jól csináltad!"
+
+#, fuzzy
+#~ msgid "$ cd %s"
+#~ msgstr "%d. %s"
+
+#~ msgid "B"
+#~ msgstr "B"
+
+#~ msgid "i"
+#~ msgstr "i"
+
+#~ msgid "Egyszeru"
+#~ msgstr "Egyszerű"
+
+#~ msgid "Profi"
+#~ msgstr "Profi"
+
+#~ msgid "Unable to delete directory: /templates_c"
+#~ msgstr "Nem lehet törölni a könyvtárat: /templates_c"
+
+#~ msgid "G2RC2: kthxbye"
+#~ msgstr "G2RC2: kthxbye"
+
+#, fuzzy
+#~ msgid "add album"
+#~ msgstr "al-album hozzáadása"
+
+#~ msgid "edit permissions"
+#~ msgstr "jogok szerkesztése"
+
+#, fuzzy
+#~ msgid "view permissions"
+#~ msgstr "jogok szerkesztése"
+
+#~ msgid "login"
+#~ msgstr "belépés"
+
+#~ msgid "and then"
+#~ msgstr "és utána"
+
+#, fuzzy
+#~ msgid "choose a new theme for this album"
+#~ msgstr "új elrendezés választása az albumnak"
+
+#~ msgid "login as a site administrator"
+#~ msgstr "lépjen be adminisztrátorként"
+
+#, fuzzy
+#~ msgid "install or activate this theme"
+#~ msgstr "az elrendezés telepítése vagy aktiválása"
+
+#~ msgid "HDTV 16x9"
+#~ msgstr "HDTV 16x9"
+
+# c-format
+#, fuzzy
+#~ msgid "Successfully deleted directory: /cache/entity"
+#~ msgstr "%d elem sikeresen törölve"
+
+# c-format
+#, fuzzy
+#~ msgid "Successfully deleted directory: /cache/theme"
+#~ msgstr "%d elem sikeresen törölve"
+
+# c-format
+#, fuzzy
+#~ msgid "Successfully deleted directory: /cache/module"
+#~ msgstr "%d elem sikeresen törölve"
+
+# c-format
+#, fuzzy
+#~ msgid "Unable to delete directory: /cache/theme"
+#~ msgstr "%d elem sikeresen törölve"
+
+#~ msgid "Missing Layout"
+#~ msgstr "Hiányzó elrendezés"

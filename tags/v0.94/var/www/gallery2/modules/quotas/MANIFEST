@@ -1,0 +1,137 @@
+# File crc32 crc32(crlf) size size(crlf)  or  R File
+modules/quotas/AdminCreateGroupQuota.inc	1526399808	548887906	6046	6231
+modules/quotas/AdminCreateUserQuota.inc	4019718161	1711281554	6011	6198
+modules/quotas/AdminDeleteGroupQuota.inc	1380665299	3041369767	4640	4785
+modules/quotas/AdminDeleteUserQuota.inc	3369737396	2938868495	4600	4745
+modules/quotas/AdminEditGroupQuota.inc	3121038800	916246676	6663	6868
+modules/quotas/AdminEditUserQuota.inc	2203113598	1858985401	6623	6828
+modules/quotas/AdminQuotas.inc	1687105840	1002850075	11412	11754
+modules/quotas/DiskQuotaOption.inc	4116366645	217399611	4282	4412
+modules/quotas/classes/GNUmakefile	1995366819	843025639	51	52
+modules/quotas/classes/GalleryQuotasHelper.class	2767401206	3964611660	13947	14411
+modules/quotas/classes/GalleryStorage/GNUmakefile	1465776782	2009162633	61	62
+modules/quotas/classes/GalleryStorage/schema.tpl	2931714605	2023188686	4383	4513
+modules/quotas/classes/GalleryStorage/xml-src/A_QuotasMap_1.0.xml	1935613243	3312187849	796	829
+modules/quotas/classes/Maps.inc	436094778	2425487682	322	325
+modules/quotas/classes/Maps.xml	2514565467	601092775	499	519
+modules/quotas/data/transparent.gif	2298612248	2298612248	43	43
+modules/quotas/locale/af/LC_MESSAGES/modules_quotas.mo	1687553327	1687553327	6156	6156
+modules/quotas/locale/cs/LC_MESSAGES/modules_quotas.mo	2763818206	2763818206	6492	6492
+modules/quotas/locale/da/LC_MESSAGES/modules_quotas.mo	3944396674	3944396674	6042	6042
+modules/quotas/locale/de/LC_MESSAGES/modules_quotas.mo	1015756250	1015756250	6703	6703
+modules/quotas/locale/es/LC_MESSAGES/modules_quotas.mo	467745776	467745776	6268	6268
+modules/quotas/locale/eu/LC_MESSAGES/modules_quotas.mo	3101968146	3101968146	6280	6280
+modules/quotas/locale/fr/LC_MESSAGES/modules_quotas.mo	901351647	901351647	6497	6497
+modules/quotas/locale/it/LC_MESSAGES/modules_quotas.mo	2685995069	2685995069	6452	6452
+modules/quotas/locale/ja/LC_MESSAGES/modules_quotas.mo	3878332205	3878332205	4984	4984
+modules/quotas/locale/nl/LC_MESSAGES/modules_quotas.mo	3523561092	3523561092	6255	6255
+modules/quotas/locale/no/LC_MESSAGES/modules_quotas.mo	2097793323	2097793323	6110	6110
+modules/quotas/locale/pl/LC_MESSAGES/modules_quotas.mo	3665863269	3665863269	7128	7128
+modules/quotas/locale/ru/LC_MESSAGES/modules_quotas.mo	183501443	183501443	8663	8663
+modules/quotas/locale/sr/LC_MESSAGES/modules_quotas.mo	3124141699	3124141699	6060	6060
+modules/quotas/locale/sv/LC_MESSAGES/modules_quotas.mo	1428629610	1428629610	6217	6217
+modules/quotas/locale/tr/LC_MESSAGES/modules_quotas.mo	3405150833	3405150833	6158	6158
+modules/quotas/locale/zh_CN/LC_MESSAGES/modules_quotas.mo	3377028430	3377028430	6286	6286
+modules/quotas/locale/zh_TW/LC_MESSAGES/modules_quotas.mo	324402887	324402887	6293	6293
+modules/quotas/module.inc	3768165491	3014757202	4194	4334
+modules/quotas/po/GNUmakefile	1866879166	2808215985	98	103
+modules/quotas/po/af.po	1308640926	2292277977	7398	7675
+modules/quotas/po/cs.po	1631432342	3382322195	7596	7870
+modules/quotas/po/da.po	899119623	3459957170	7239	7506
+modules/quotas/po/de.po	3123195294	4091666625	8353	8644
+modules/quotas/po/es.po	2890713969	3492500000	7581	7862
+modules/quotas/po/eu.po	2620858017	1175538588	7403	7676
+modules/quotas/po/fr.po	2597073526	268740071	7646	7923
+modules/quotas/po/it.po	1327657623	2361416909	7568	7832
+modules/quotas/po/ja.po	3363634367	1853293293	7301	7567
+modules/quotas/po/nl.po	3883314288	1608990241	7530	7795
+modules/quotas/po/no.po	1064896997	1301222121	7207	7471
+modules/quotas/po/pl.po	167478215	4213655889	8202	8466
+modules/quotas/po/ru.po	1346404570	753390762	10451	10730
+modules/quotas/po/sr.po	2648906466	3086558294	7341	7619
+modules/quotas/po/strings.raw	1058968265	759006927	4811	4902
+modules/quotas/po/sv.po	2163501054	2484149633	7498	7777
+modules/quotas/po/tr.po	998300853	648498063	7536	7808
+modules/quotas/po/zh_CN.po	2287563331	2635881266	7345	7605
+modules/quotas/po/zh_TW.po	2031480098	2430283728	7372	7638
+modules/quotas/templates/AdminCreateGroupQuota.tpl	277602113	112724935	2193	2269
+modules/quotas/templates/AdminCreateUserQuota.tpl	3521639265	1832724780	2166	2242
+modules/quotas/templates/AdminDeleteGroupQuota.tpl	3923576925	520091691	1289	1327
+modules/quotas/templates/AdminDeleteUserQuota.tpl	3967689060	3603960941	1276	1314
+modules/quotas/templates/AdminEditGroupQuota.tpl	177538238	976207182	1973	2038
+modules/quotas/templates/AdminEditUserQuota.tpl	4023880576	5675839	1966	2031
+modules/quotas/templates/AdminQuotas.tpl	3150730676	2961912187	10391	10711
+R	modules/quotas/classes/GalleryStorage/DatabaseStorage/schema/GNUmakefile
+R	modules/quotas/classes/GalleryStorage/DatabaseStorage/schema/platform/GNUmakefile
+R	modules/quotas/classes/GalleryStorage/DatabaseStorage/schema/platform/mysql/A_QuotasMap_1_0.sql
+R	modules/quotas/classes/GalleryStorage/DatabaseStorage/schema/platform/mysql/GNUmakefile
+R	modules/quotas/classes/GalleryStorage/DatabaseStorage/schema/platform/mysql/QuotasMap.sql
+R	modules/quotas/classes/GalleryStorage/DatabaseStorage/schema/platform/mysql
+R	modules/quotas/classes/GalleryStorage/DatabaseStorage/schema/platform/oracle/A_QuotasMap_1_0.sql
+R	modules/quotas/classes/GalleryStorage/DatabaseStorage/schema/platform/oracle/GNUmakefile
+R	modules/quotas/classes/GalleryStorage/DatabaseStorage/schema/platform/oracle/QuotasMap.sql
+R	modules/quotas/classes/GalleryStorage/DatabaseStorage/schema/platform/oracle
+R	modules/quotas/classes/GalleryStorage/DatabaseStorage/schema/platform/postgres/A_QuotasMap_1_0.sql
+R	modules/quotas/classes/GalleryStorage/DatabaseStorage/schema/platform/postgres/GNUmakefile
+R	modules/quotas/classes/GalleryStorage/DatabaseStorage/schema/platform/postgres/QuotasMap.sql
+R	modules/quotas/classes/GalleryStorage/DatabaseStorage/schema/platform/postgres
+R	modules/quotas/classes/GalleryStorage/DatabaseStorage/schema/platform
+R	modules/quotas/classes/GalleryStorage/DatabaseStorage/schema/schema.tpl
+R	modules/quotas/classes/GalleryStorage/DatabaseStorage/schema/xml-out/QuotasMap.xml
+R	modules/quotas/classes/GalleryStorage/DatabaseStorage/schema/xml-out
+R	modules/quotas/classes/GalleryStorage/DatabaseStorage/schema/xml-src/A_QuotasMap_1.0.xml
+R	modules/quotas/classes/GalleryStorage/DatabaseStorage/schema/xml-src/A_QuotasMap_1_0.xml
+R	modules/quotas/classes/GalleryStorage/DatabaseStorage/schema/xml-src/GNUmakefile
+R	modules/quotas/classes/GalleryStorage/DatabaseStorage/schema/xml-src/tmp/QuotasMap.xml
+R	modules/quotas/classes/GalleryStorage/DatabaseStorage/schema/xml-src/tmp
+R	modules/quotas/classes/GalleryStorage/DatabaseStorage/schema/xml-src
+R	modules/quotas/classes/GalleryStorage/DatabaseStorage/schema
+R	modules/quotas/classes/GalleryStorage/DatabaseStorage
+R	modules/quotas/classes/QuotasMap.class
+R	modules/quotas/classes/interfaces/GNUmakefile
+R	modules/quotas/classes/interfaces/QuotasMap.inc
+R	modules/quotas/classes/interfaces
+R	modules/quotas/locale/cs_CZ/LC_MESSAGES/modules_quotas.mo
+R	modules/quotas/locale/cs_CZ/LC_MESSAGES
+R	modules/quotas/locale/cs_CZ
+R	modules/quotas/locale/de_DE/LC_MESSAGES/modules_quotas.mo
+R	modules/quotas/locale/de_DE/LC_MESSAGES
+R	modules/quotas/locale/de_DE
+R	modules/quotas/locale/eu_ES/LC_MESSAGES/modules_quotas.mo
+R	modules/quotas/locale/eu_ES/LC_MESSAGES
+R	modules/quotas/locale/eu_ES
+R	modules/quotas/locale/fr_FR/LC_MESSAGES/modules_quotas.mo
+R	modules/quotas/locale/fr_FR/LC_MESSAGES
+R	modules/quotas/locale/fr_FR
+R	modules/quotas/locale/it_IT/LC_MESSAGES/modules_quotas.mo
+R	modules/quotas/locale/it_IT/LC_MESSAGES
+R	modules/quotas/locale/it_IT
+R	modules/quotas/locale/ja_JP/LC_MESSAGES/modules_quotas.mo
+R	modules/quotas/locale/ja_JP/LC_MESSAGES
+R	modules/quotas/locale/ja_JP
+R	modules/quotas/locale/nl_NL/LC_MESSAGES/modules_quotas.mo
+R	modules/quotas/locale/nl_NL/LC_MESSAGES
+R	modules/quotas/locale/nl_NL
+R	modules/quotas/locale/ru_RU/LC_MESSAGES/modules_quotas.mo
+R	modules/quotas/locale/ru_RU/LC_MESSAGES
+R	modules/quotas/locale/ru_RU
+R	modules/quotas/locale/sr_YU/LC_MESSAGES/modules_quotas.mo
+R	modules/quotas/locale/sr_YU/LC_MESSAGES
+R	modules/quotas/locale/sr_YU
+R	modules/quotas/locale/sv_SE/LC_MESSAGES/modules_quotas.mo
+R	modules/quotas/locale/sv_SE/LC_MESSAGES
+R	modules/quotas/locale/sv_SE
+R	modules/quotas/locale/tr_TR/LC_MESSAGES/modules_quotas.mo
+R	modules/quotas/locale/tr_TR/LC_MESSAGES
+R	modules/quotas/locale/tr_TR
+R	modules/quotas/po/cs_CZ.po
+R	modules/quotas/po/de_DE.po
+R	modules/quotas/po/eu_ES.po
+R	modules/quotas/po/fr_FR.po
+R	modules/quotas/po/it_IT.po
+R	modules/quotas/po/ja_JP.po
+R	modules/quotas/po/nl_NL.po
+R	modules/quotas/po/ru_RU.po
+R	modules/quotas/po/sr_YU.po
+R	modules/quotas/po/sv_SE.po
+R	modules/quotas/po/tr_TR.po

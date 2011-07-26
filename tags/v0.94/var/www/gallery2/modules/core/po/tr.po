@@ -1,0 +1,3405 @@
+# $Id: tr.po,v 1.12 2006/03/23 19:59:39 mindless Exp $
+#
+# Gallery - a web based photo album viewer and editor
+# Copyright (C) 2000-2006 Bharat Mediratta
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery: Core 1.1.0\n"
+"POT-Creation-Date: 2005-05-23 02:14+0200\n"
+"PO-Revision-Date: 2006-02-27 00:00+0200\n"
+"Last-Translator: Goker ISIK <admin@ansolon.com>\n"
+"Language-Team: Turkish <admin@ansolon.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Language: Turkish\n"
+"X-Poedit-Country: TURKEY\n"
+
+msgid "Gallery Email Test"
+msgstr "Galeri Email Testi"
+
+msgid "forever"
+msgstr "daima"
+
+msgid "High Priority (Me first!)"
+msgstr ""
+
+msgid "Low Priority (I want to share!)"
+msgstr ""
+
+msgid "No Markup"
+msgstr ""
+
+msgid "BBCode"
+msgstr "BBCode"
+
+msgid "Raw HTML"
+msgstr "Ham HTML"
+
+msgid "Database"
+msgstr "Veritabanı"
+
+msgid "File"
+msgstr "Dosya"
+
+#, c-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d dakika"
+msgstr[1] "%d dakika"
+
+#, c-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d saat"
+msgstr[1] "%d saat"
+
+#, c-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d gün"
+msgstr[1] "%d gün"
+
+#, c-format
+msgid "%d week"
+msgid_plural "%d weeks"
+msgstr[0] "%d hafta"
+msgstr[1] "%d hafta"
+
+msgid "<none>"
+msgstr ""
+
+msgid "install"
+msgstr "kur"
+
+msgid "upgrade"
+msgstr "güncelle"
+
+msgid "configure"
+msgstr "konfigüre et"
+
+msgid "activate"
+msgstr "Aktive et"
+
+msgid "uninstall"
+msgstr "kaldır"
+
+msgid "deactivate"
+msgstr ""
+
+msgid "No acceleration"
+msgstr ""
+
+msgid "Partial acceleration"
+msgstr ""
+
+msgid "Full acceleration"
+msgstr ""
+
+#, fuzzy
+msgid "Performing Maintenance Tasks"
+msgstr "Sistem Bakımı"
+
+#, c-format
+msgid "Downloading %s"
+msgstr ""
+
+#, fuzzy
+msgid "Done."
+msgstr "Tamalandı"
+
+msgid "Upgrade"
+msgstr "Güncelle"
+
+msgid "Download"
+msgstr "Yükle"
+
+msgid "Inherit settings from parent album"
+msgstr ""
+
+msgid "Use these settings"
+msgstr "Bu atarları kullan"
+
+msgid "Installing the core module"
+msgstr "Galeri Çekirdek Modülü Kuruluyor"
+
+msgid "key"
+msgstr "anahtar"
+
+msgid "All access"
+msgstr "Tüm Erişim"
+
+msgid "[core] View item"
+msgstr "[çekirdek] Öge görüntüle"
+
+msgid "[core] View resized version(s)"
+msgstr "[çekirdek] Yeniden boyutlandırışmış versiyonları görüntüle"
+
+msgid "[core] View original version"
+msgstr "[çekirdek] Orjinal versiyonu görüntüle"
+
+msgid "[core] View all versions"
+msgstr "[çekirdek] Tüm versiyonları görüntüle"
+
+msgid "[core] Add sub-album"
+msgstr "[çekirdek] Alt-albüm ekle"
+
+msgid "[core] Add sub-item"
+msgstr "[çekirdek] Alt-öge ekle"
+
+msgid "[core] Edit item"
+msgstr "[çekirdek] Ögeyi görüntüle"
+
+msgid "[core] Change item permissions"
+msgstr "[çekirdek] Öge izinlerini değiştir"
+
+msgid "[core] Delete item"
+msgstr "[çekirdek] Öge sil"
+
+msgid "Upgrading permissions"
+msgstr "İzinler güncelleniyor"
+
+msgid "Deleting old permission tables"
+msgstr "Eski izin tabloları siliniyor"
+
+msgid "Registered Users"
+msgstr "Kayıtlı Kullanıcılar"
+
+msgid "All Users"
+msgstr "Tüm Kullanıcılar"
+
+msgid "Detecting broken derivatives"
+msgstr ""
+
+msgid "Clearing fast-download cache"
+msgstr ""
+
+#, fuzzy
+msgid "Deleting old fast-download cache"
+msgstr "Eski izin tabloları siliniyor"
+
+msgid "Converting MySQL data to UTF8"
+msgstr ""
+
+msgid "Site Admins"
+msgstr "Site Yöneticileri"
+
+msgid "Everybody"
+msgstr "Herkes"
+
+msgid "Guest"
+msgstr "Misafir"
+
+msgid "Gallery"
+msgstr "Galeri"
+
+msgid "This is the main page of your Gallery"
+msgstr "Burası Galeri'nin ana sayfasıdır."
+
+#, c-format
+msgid "Upgrading permissions (%d items complete, %d remaining)"
+msgstr ""
+
+msgid "Detecting broken derivatives, loading "
+msgstr ""
+
+msgid "Detecting broken derivatives "
+msgstr ""
+
+msgid "Detecting broken derivatives, "
+msgstr ""
+
+msgid "Detecting broken derivatives, saving "
+msgstr ""
+
+#, fuzzy, c-format
+msgid "Deleting old session files (iteration %d)"
+msgstr "Eski izin tabloları siliniyor"
+
+msgid "add items"
+msgstr "öge ekle"
+
+msgid "Album created successfully."
+msgstr "Albüm başarıyla yaratıldı."
+
+msgid "add sub-album"
+msgstr "alt-albüm ekle"
+
+msgid "add items confirmation"
+msgstr "öge ekleme doğrulaması"
+
+msgid "Base filename"
+msgstr "Temel dosyaadı"
+
+msgid "Caption"
+msgstr "Başlık"
+
+msgid "Blank"
+msgstr "Boş"
+
+msgid "From Web Browser"
+msgstr ""
+
+#, c-format
+msgid "%d megabyte"
+msgid_plural "%d megabytes"
+msgstr[0] "%d megabyte"
+msgstr[1] "%d megabyte"
+
+#, c-format
+msgid "%d kilobytes"
+msgid_plural "%d kilobytes"
+msgstr[0] "%d kilobyte"
+msgstr[1] "%d kilobyte"
+
+msgid "From Local Server"
+msgstr "Lokal Server'dan"
+
+msgid "Photo"
+msgstr "Foto"
+
+msgid "From Web Page"
+msgstr ""
+
+msgid "Gallery Item Administration"
+msgstr "Galeri Öge Yönetimi"
+
+msgid "create link"
+msgstr "bağlantı yarat"
+
+msgid "link an item"
+msgstr "ögeye link ver"
+
+msgid "delete an item"
+msgstr "öge sil"
+
+msgid "delete confirmation"
+msgstr "doğrulamayı sil"
+
+#, c-format
+msgid "delete %s"
+msgstr "%s sil"
+
+#, c-format
+msgid "edit %s"
+msgstr "%s düzenle"
+
+msgid "Settings saved successfully."
+msgstr "Ayarlar başarıyla kaydedildi."
+
+msgid "&laquo; default theme &raquo;"
+msgstr "&laquo; varsayılan tema &raquo;"
+
+#, fuzzy
+msgid "Recreating resized images"
+msgstr "Recreate thumbnails and resizes"
+
+#, fuzzy
+msgid "Rebuilding resized images..."
+msgstr "Recreate thumbnails and resizes"
+
+msgid "Rebuilding thumbnails..."
+msgstr "Filigranlar yeniden yaratılıyor..."
+
+msgid "Album"
+msgstr "Albüm"
+
+#, c-format
+msgid "Processing image %d of %d"
+msgstr "Resim işleniyor %d / %d"
+
+msgid "Changes saved successfully"
+msgstr "Değişiklikler başarıyla kaydedildi."
+
+msgid "Animation Size"
+msgstr "Animasyon Büyüklüğü"
+
+msgid "edit captions"
+msgstr "başlıkları düzenle"
+
+msgid "General"
+msgstr "Genel"
+
+msgid "Movie Size"
+msgstr "Film Boyutu"
+
+msgid "Thumbnail cropped successfully"
+msgstr "Thumbnail başarıyla tıraşlandı"
+
+msgid "Thumbnail reset successfully"
+msgstr "Thumbnaillar başarıyla sıfırlandı"
+
+msgid "Photo 5x3"
+msgstr "Foto 5x3"
+
+msgid "Photo 6x4"
+msgstr "Foto 6x4"
+
+msgid "Photo 7x5"
+msgstr "Foto 7x5"
+
+msgid "Photo 10x8"
+msgstr "Foto 10x8"
+
+msgid "Fullscreen 4x3"
+msgstr "Tamekran 4x3"
+
+msgid "Widescreen 16x9"
+msgstr "Genişekran 16x9"
+
+msgid "CinemaScope 2.35x1"
+msgstr "CinemaScope 2.35x1"
+
+msgid "Square 1x1"
+msgstr "Kare 1x1"
+
+#, fuzzy
+msgid "As Image"
+msgstr "Edit Image"
+
+msgid "Landscape"
+msgstr ""
+
+msgid "Portrait"
+msgstr "Portre"
+
+msgid "Crop Thumbnail"
+msgstr "Thumbnail'ı tıraşla"
+
+#, fuzzy
+msgid "Reverted rotate and scale changes successfully"
+msgstr "User '%s' has been modified successfully."
+
+msgid "Rotated photo successfully"
+msgstr "Foto başarıyla döndürüldü"
+
+#, fuzzy
+msgid "Scaled photo successfully"
+msgstr "User '%s' has been modified successfully."
+
+msgid "Modify Photo"
+msgstr "Fotoyu Modifiye Et"
+
+msgid "Successfully saved theme settings"
+msgstr "Tema ayarları başarıyla kaydedildi"
+
+msgid "Theme"
+msgstr "Tema"
+
+msgid "make highlight"
+msgstr "öngösterim yap"
+
+msgid "move item"
+msgstr "öge taşı"
+
+#, c-format
+msgid "move %s"
+msgstr "taşı %s"
+
+#, c-format
+msgid "edit %s permissions"
+msgstr "%s izinlerini düzenle"
+
+msgid "reorder items"
+msgstr "ögeleri yeniden sırala"
+
+msgid "Maintenance"
+msgstr "Bakım"
+
+msgid "Gallery Site Administration"
+msgstr "Galeri Site Yönetimi"
+
+msgid "site admin"
+msgstr "site yöneticisi"
+
+msgid "Gallery User Administration"
+msgstr "Galeri Kullanıcı Yönetimi"
+
+msgid "change password"
+msgstr "şifre değiştir"
+
+msgid "your account"
+msgstr "hesabınız"
+
+msgid "Password Recovery"
+msgstr "Şifre Kurtarma"
+
+msgid "Core"
+msgstr "Çekirdek"
+
+msgid "Gallery 2 Core Module"
+msgstr "Galeri 2 Çekirdek Modül"
+
+msgid "Add Items"
+msgstr "Ögeler Ekle"
+
+msgid "Edit Album"
+msgstr "Albümü Düzenle"
+
+msgid "Edit Photo"
+msgstr "Fotoyu Düzenle"
+
+msgid "Edit Movie"
+msgstr "Filmi Düzenle"
+
+msgid "Create Link"
+msgstr "Link Yarat"
+
+msgid "Add Album"
+msgstr "Albüm Ekle"
+
+msgid "Edit Permissions"
+msgstr "İzinleri Düzenle"
+
+msgid "View Permissions"
+msgstr "İzinleri Görüntüle"
+
+msgid "Delete Album"
+msgstr "Albüm Sil"
+
+msgid "Delete Photo"
+msgstr "Foto Sil"
+
+msgid "Delete Movie"
+msgstr "Film Sil"
+
+msgid "Move Album"
+msgstr "Albüm Taşı"
+
+msgid "Move Photo"
+msgstr "Foto Taşı"
+
+msgid "Move Movie"
+msgstr "Film Taşı"
+
+msgid "Edit Captions"
+msgstr "Başlık Düzenle"
+
+msgid "Make Highlight"
+msgstr "Öngösterim Yap"
+
+msgid "Reorder Items"
+msgstr "Ögeleri Yeniden Sırala"
+
+msgid "Site Admin"
+msgstr "Site Yöneticisi"
+
+msgid "Login"
+msgstr "Giriş"
+
+msgid "Your Account"
+msgstr "Hesabınız"
+
+msgid "Logout"
+msgstr "Çıkış"
+
+msgid "Modules"
+msgstr "Modüller"
+
+msgid "Repository"
+msgstr ""
+
+msgid "Themes"
+msgstr "Temalar"
+
+msgid "Display"
+msgstr "Görüntüle"
+
+msgid "Users"
+msgstr "Kullanıcılar"
+
+msgid "Groups"
+msgstr "Gruplar"
+
+msgid "Performance"
+msgstr "Performans"
+
+msgid "Toolkit Priority"
+msgstr "Araç Önceliği"
+
+msgid "Graphics Toolkits"
+msgstr "Grafik Araçları"
+
+msgid "Account Settings"
+msgstr "Hesap Ayarları"
+
+msgid "Change Password"
+msgstr "Şifre Değiştir"
+
+msgid "Link Album"
+msgstr "Albüme Link"
+
+msgid "Link Photo"
+msgstr "Fotoya Link"
+
+msgid "Link Movie"
+msgstr "Filme Link"
+
+#, c-format
+msgid "Edit %s"
+msgstr "%s Düzenle"
+
+#, c-format
+msgid "Delete %s"
+msgstr "%s Sil"
+
+#, c-format
+msgid "Move %s"
+msgstr "%s Taşı"
+
+#, c-format
+msgid "Link %s"
+msgstr "Bağlantı %s"
+
+#, fuzzy
+msgid "Build all thumbnails/resizes"
+msgstr "Thumbnails"
+
+msgid ""
+"Ensure data files for all derivatives (thumbnails, etc) have been built and rebuild broken "
+"ones."
+msgstr ""
+
+#, fuzzy
+msgid "Build All Thumbnails/Resizes"
+msgstr "Thumbnails"
+
+msgid "Debug output for failed items:"
+msgstr ""
+
+#, fuzzy, c-format
+msgid "Checked %d items"
+msgstr "add item"
+
+#, c-format
+msgid "%d items built"
+msgstr "%d öge yapılandırıldı"
+
+#, c-format
+msgid "%d items failed"
+msgstr ""
+
+msgid "Delete user sessions"
+msgstr "Kullanıcı oturumlarını sil"
+
+msgid ""
+"Delete all persistent user sessions according to your current session expiration settings."
+msgstr ""
+
+msgid "Delete database cache"
+msgstr "Veritabanı önbelleğini sil"
+
+msgid ""
+"Gallery stores commonly used database information on disk for increased performance. If you "
+"modify the database directly, you should run this task to clean out the cache and force "
+"Gallery to reload the information from the database."
+msgstr ""
+
+#, c-format
+msgid "Successfully deleted directory: %s"
+msgstr "Klasör başarıyla silindi: %s"
+
+#, c-format
+msgid "Unable to delete directory: %s"
+msgstr "Klasör silinmiyor: %s"
+
+msgid "Delete template cache"
+msgstr "Template önbelleğini sil"
+
+msgid ""
+"Gallery compiles template files and saves them for increased performance.  If you're "
+"experiencing problems that say <i>Smarty error</i> then you might try running this task.  "
+"Also run this if you remove a local/*.tpl file so Smarty will switch back to the default tpl "
+"file."
+msgstr ""
+
+msgid "Template cache deleted successfully"
+msgstr "Template önbelleği başarıyla silindi"
+
+msgid "album"
+msgstr "albüm"
+
+msgid "Animation"
+msgstr "Animasyon"
+
+msgid "animation"
+msgstr "animasyon"
+
+msgid "Gallery Core"
+msgstr "Galeri Çekirdeği"
+
+msgid "Gallery Core Module"
+msgstr "Galeri Çekirdek Modül"
+
+msgid "Search descriptions"
+msgstr "Açıklamaları ara"
+
+msgid "Search keywords"
+msgstr "Anahtar kelimeleri ara"
+
+msgid "Search summaries"
+msgstr "Özetleri Ara"
+
+msgid "Search titles"
+msgstr "Başlıkları ara"
+
+msgid "Description"
+msgstr "Açıklama"
+
+msgid "Keywords"
+msgstr "Anahtar Kelimeler"
+
+msgid "Summary"
+msgstr "Özet"
+
+msgid "Title"
+msgstr "Başlık"
+
+msgid "Owner"
+msgstr "Sahip"
+
+msgid "Group"
+msgstr "Grup"
+
+msgid "group"
+msgstr "grup"
+
+msgid "Other"
+msgstr "Diğer"
+
+msgid "Movie"
+msgstr "Film"
+
+msgid "movie"
+msgstr "film"
+
+msgid "photo"
+msgstr "foto"
+
+msgid "download"
+msgstr "yükle"
+
+#, fuzzy
+msgid "Plugins directory does not exist."
+msgstr "'%s' adlı bir kullanıcı yok."
+
+msgid ""
+"Couldn't create plugins subdirectory. Make sure the webserver has write permissions in it."
+msgstr ""
+
+msgid "Couldn't create repository cache path."
+msgstr ""
+
+msgid ""
+"Couldn't create cache subdirectory. Make sure the web server has write permissions in it."
+msgstr ""
+
+#, c-format
+msgid "Error downloading index from '%s'."
+msgstr ""
+
+#, c-format
+msgid "Error downloading index hash from '%s'."
+msgstr ""
+
+msgid "Index integrity check failed."
+msgstr ""
+
+msgid "&laquo; default sort order &raquo;"
+msgstr "&laquo; varsayılan sıralama &raquo;"
+
+msgid "Manual sort order"
+msgstr "Manuel sıraya diz"
+
+#, fuzzy
+msgid "Origination Date"
+msgstr "Creation Date"
+
+msgid "Creation Date"
+msgstr "Yaratılma Tarihi"
+
+msgid "Last Changed Date"
+msgstr "Son Değiştirme Tarihi"
+
+msgid "Name"
+msgstr "İsim"
+
+msgid "View Count"
+msgstr "Sayacı Görüntüle"
+
+msgid "Random"
+msgstr "Rastgele"
+
+#, fuzzy
+msgid "&laquo; no presort &raquo;"
+msgstr "* No Sort Order *"
+
+msgid "Albums First"
+msgstr "Albüm İlk"
+
+msgid "Most Viewed First"
+msgstr "En Çok Görüntülenen İlk"
+
+msgid "Ascending"
+msgstr "Artan"
+
+msgid "Descending"
+msgstr "Azalan"
+
+msgid "Validation disabled until you set allowSessionAccess in config.php"
+msgstr ""
+
+msgid "This page is valid XHTML 1.0"
+msgstr ""
+
+msgid "Donate to the Gallery project"
+msgstr "Galeri Projesine Bağış Yap"
+
+msgid "G2.1: Blackjack"
+msgstr "G2.1: Blackjack"
+
+#, c-format
+msgid "Estimated time remaining: %d:%02d"
+msgstr ""
+
+#, c-format
+msgid "Memory used: %s, total: %s"
+msgstr "Bellek kullanım: %s, toplam: %s"
+
+msgid "Rows per album page"
+msgstr ""
+
+msgid "Columns per album page"
+msgstr ""
+
+msgid "Number of items to show per page"
+msgstr ""
+
+msgid "Row height (pixels)"
+msgstr ""
+
+msgid "Column width (pixels)"
+msgstr ""
+
+msgid "Show image owners"
+msgstr "Resim sahiplerini göster"
+
+msgid "Show album owners"
+msgstr "Albüm sahiplerini göster"
+
+msgid "Show micro navigation thumbnails"
+msgstr ""
+
+msgid "Blocks to show in the sidebar"
+msgstr ""
+
+msgid "Blocks to show on album pages"
+msgstr ""
+
+msgid "Blocks to show on photo pages"
+msgstr ""
+
+msgid "View Samples"
+msgstr "Örnekleri Görüntüle"
+
+msgid "Album Frame"
+msgstr "Albüm Çerçevesi"
+
+msgid "Item Frame"
+msgstr "Öge Çerçevesi"
+
+msgid "Photo Frame"
+msgstr "Foto Çerçevesi"
+
+msgid "Color Pack"
+msgstr "Renk Paketi"
+
+msgid "You must enter a number greater than 0"
+msgstr "0'dan büyük bir numara girmelisiniz"
+
+msgid "Format: [module.BlockName param=value] ..."
+msgstr ""
+
+#, c-format
+msgid "%dx%d"
+msgstr "%dx%d"
+
+msgid "Audio"
+msgstr "Ses"
+
+msgid "audio"
+msgstr "ses"
+
+msgid "Archive"
+msgstr "Arşiv"
+
+msgid "archive"
+msgstr "arşiv"
+
+msgid "Document"
+msgstr "Döküman"
+
+msgid "document"
+msgstr "döküman"
+
+#, fuzzy
+msgid "Spreadsheet"
+msgstr "Reset"
+
+msgid "spreadsheet"
+msgstr "hesapçizelgesi"
+
+msgid "Unknown"
+msgstr "Bilinmeyen"
+
+msgid "unknown"
+msgstr "bilinmeyen"
+
+#, c-format
+msgid ""
+"Invalid return URL! The requested URL %s tried to insert a redirection to %s which is not a "
+"part of this Gallery."
+msgstr ""
+
+msgid "Back"
+msgstr "Geri"
+
+#, c-format
+msgid "Back to %s"
+msgstr "Geri Dön %s"
+
+msgid "User"
+msgstr "Kullanıcı"
+
+msgid "user"
+msgstr "kullanıcı"
+
+msgid "Optimize database"
+msgstr "Veritabanı optimizasyonu"
+
+msgid ""
+"Improve the performance of your database.  Results will vary depending on which database "
+"you're using, but this routine maintenance will make your Gallery run faster.  Especially "
+"useful after adding or deleting many items."
+msgstr ""
+
+msgid "Database optimized successfully"
+msgstr "Veritabanı başarıyla optimize edildi"
+
+msgid "Reset view counts"
+msgstr ""
+
+msgid ""
+"Reset number of views to zero for all albums and items.  This task flushes the database "
+"cache as well."
+msgstr ""
+
+msgid "View counts reset successfully"
+msgstr "Sayaç görüntülemesi başarıyla sıfırlandı"
+
+msgid "Refresh capture dates"
+msgstr "Yakalama tarihlerini yenile"
+
+msgid ""
+"Update capture date stored in Gallery for all items with an available date in the original "
+"data file (usually from EXIF data)."
+msgstr ""
+
+msgid "Processing..."
+msgstr "işleniyor..."
+
+msgid "Refresh Capture Dates"
+msgstr "Yakalama Tarihlerini Yenile"
+
+#, c-format
+msgid "Processing item %d of %d"
+msgstr "%d / %d öge işleniyor"
+
+#, c-format
+msgid "Updated %d of %d items"
+msgstr "%d / %d öge güncellendi"
+
+msgid "System information"
+msgstr "Sistem Bilgisi"
+
+msgid "Get system details; useful for copy/paste into G2 support forum."
+msgstr "Sistem detaylarını al; G2 destek forumlarına kopyalama/yapıştırma için kullanışlı."
+
+msgid "core"
+msgstr "çekirdek"
+
+msgid "Gallery version"
+msgstr "Galeri Versiyonu"
+
+msgid "PHP version"
+msgstr "PHP Versiyon"
+
+msgid "Webserver"
+msgstr "Webserver"
+
+msgid "Toolkits"
+msgstr "Araçlar"
+
+#, fuzzy
+msgid "Acceleration"
+msgstr "Hareket"
+
+msgid "Operating system"
+msgstr "İşletim Sistemi"
+
+msgid "Default theme"
+msgstr "Default theme"
+
+msgid "Locale"
+msgstr ""
+
+msgid "Browser"
+msgstr "Tarayıcı"
+
+msgid "General Settings"
+msgstr "Genel Ayarlar"
+
+msgid "Settings saved successfully"
+msgstr "Ayarlar başarıyla kaydedildi"
+
+#, fuzzy
+msgid "Added local upload directory successfully"
+msgstr "User '%s' has been modified successfully."
+
+#, fuzzy
+msgid "Removed local upload directory successfully"
+msgstr "Revert to original"
+
+msgid "Test email sent successfully"
+msgstr "Test emailı başarıyla gönderildi."
+
+msgid "There was a problem processing your request, see below for details."
+msgstr "İşlemenizi gerçekleştirirken bir problem oluştu, detaylar için aşağıyı okuyunuz."
+
+msgid "Error sending test email, see below for details."
+msgstr "Test emailı'ı gönderilirken bir hata oluştu, detayları görmek için aşağıyı okuyunuz."
+
+msgid "Language Settings"
+msgstr "Dil Ayarları"
+
+#, fuzzy
+msgid ""
+"Select language defaults for Gallery. Individual users can override this setting in their "
+"personal preferences or via the language selector block if available. Gallery will try to "
+"automatically detect the language preference of each user if the browser preference check is "
+"enabled."
+msgstr ""
+"Select language defaults for Gallery. Individual users can override this setting in their "
+"personal preferences."
+
+msgid "Default language"
+msgstr "Varsayılan Dil"
+
+msgid "Check Browser Preference"
+msgstr ""
+
+msgid "gettext"
+msgstr "gettext"
+
+#, c-format
+msgid ""
+"Your webserver does not support localization.  Please instruct your system administrator to "
+"reconfigure PHP with the %s option enabled."
+msgstr ""
+
+msgid "Date Formats"
+msgstr "Tarih Biçimi"
+
+#, c-format
+msgid ""
+"Specify how dates and times are displayed by Gallery.  See %sphp.net%s for details of how to "
+"enter a format string.  Note that the display of some tokens varies according to the active "
+"language."
+msgstr ""
+
+msgid "Style"
+msgstr "Stil"
+
+msgid "Format"
+msgstr "Biçim"
+
+msgid "Sample"
+msgstr "Örnek"
+
+msgid "Date"
+msgstr "Tarih"
+
+msgid "Time"
+msgstr "Zaman"
+
+msgid "Date/Time"
+msgstr "Tarih/Saat"
+
+msgid "Filesystem Permissions"
+msgstr "Dosyasistemi İzinleri"
+
+#, fuzzy
+msgid ""
+"Specify the default permissions for files and directories that Gallery creates. This doesn't "
+"apply to files/directories that Gallery has already created."
+msgstr ""
+"Here you can specify the default permissions for files and directories that Gallery creates. "
+"This doesn't apply to files/directories that Gallery has already created."
+
+msgid "New directories"
+msgstr "Yeni klasörler"
+
+msgid "New files"
+msgstr "Yeni Dosyalar"
+
+msgid "Local Server Upload Paths"
+msgstr "Local Server Yükleme Klasör Yolları"
+
+msgid ""
+"Specify the legal directories on the local server where a user can store files and then "
+"upload them into Gallery using the <i>Upload from Local Server</i> feature.  The paths you "
+"enter here and all the files and directories under those paths will be available to any "
+"Gallery user who has upload privileges, so you should limit this to directories that won't "
+"contain sensitive data (eg. /tmp or /usr/ftp/incoming)"
+msgstr ""
+
+msgid "Path"
+msgstr "Klasör Yolu"
+
+msgid "Action"
+msgstr "Hareket"
+
+msgid "remove"
+msgstr "kaldır"
+
+msgid "Add"
+msgstr "Ekle"
+
+msgid "You must enter a directory to add."
+msgstr "Eklemek için klasör girmelisiniz."
+
+msgid "open_basedir documentation"
+msgstr "open_basedir dökümantasyonu"
+
+#, c-format
+msgid ""
+"Your webserver is configured to prevent you from accessing that directory.  Please refer to "
+"the %s and consult your webserver administrator."
+msgstr ""
+
+msgid "The webserver does not have permissions to read that directory."
+msgstr "Webserverın bu klasörü okuma izni yok."
+
+msgid "The path you specified is not a valid directory."
+msgstr ""
+
+msgid "Session Settings"
+msgstr "Oturum Ayarları"
+
+msgid "Session Lifetime"
+msgstr "Oturum Süresi"
+
+msgid "Inactivity Timeout"
+msgstr ""
+
+msgid "Embedded Markup"
+msgstr ""
+
+msgid ""
+"What kind of markup should we allow in user-entered fields?  For security reasons we do not "
+"recommend that you allow raw HTML.  BBCode is a special kind of markup that is secure and "
+"allows for simple text formatting like bold, italics, lists, images and urls."
+msgstr ""
+
+msgid "Markup"
+msgstr ""
+
+msgid "Email"
+msgstr "Email"
+
+msgid ""
+"By default Gallery uses PHP's built in mail function to send email which requires no "
+"configuration.  To use a smtp/mail server enter the information below, including "
+"authentication information if required.  Optionally add :port after the server name to use a "
+"non-default port."
+msgstr ""
+
+msgid "Server"
+msgstr "Server"
+
+msgid "Username"
+msgstr "Kullanıcıadı"
+
+msgid "Password"
+msgstr "Şifre"
+
+msgid "SMTP From Address"
+msgstr "SMTP Gönderen Adresi"
+
+msgid "Invalid email address"
+msgstr "Geçersiz email adresi"
+
+msgid ""
+"Send a test email to verify your settings are correct (whether using PHP mail or SMTP "
+"settings above).  Below enter a recipient email address for a test message."
+msgstr ""
+
+msgid "Send Email"
+msgstr "Email Gönder"
+
+msgid "Email Test Error"
+msgstr "Email Test Hatası"
+
+msgid "Cookies"
+msgstr "Çerezler"
+
+msgid ""
+"When Gallery is embedded in another application (portal, CMS, forum, etc.), then you have "
+"the choice between two options. Everyone else does not have to care about the cookie "
+"settings. Read on for more details."
+msgstr ""
+
+msgid ""
+"If your Gallery is embedded and you leave the following fields empty, then all DownloadItem "
+"links (the URLs of the images and other items) in the embedded Gallery have <b>an appended "
+"GALLERYSID string</b> in the URL which is <b>a minor security risk</b> when your Gallery "
+"users start copy'n'pasting image URLs in forums, guestbooks, etc. The alternative is to set "
+"the <b>cookie path</b>. Gallery will then <b>not append the GALLERYSID to the embedded "
+"DownloadItem URLs</b>. E.g. when Gallery is reachable at http://www.example.com/application/"
+"gallery2/ and the embedding application is at http://www.example.com/application/, then you "
+"have to compare the path /application/gallery2/ with /application/. The cookie path is the "
+"part of the paths that is equal, in this case it is '/application/'. Most often it is just "
+"'/'."
+msgstr ""
+
+msgid ""
+"The <b>cookie domain</b> is also only needed for embedded Gallery installs and only if you "
+"want to get rid of the GALLERYSID string in the embedded DownloadItem URLs. <b>In most "
+"cases, the cookie domain can be left blank.</b> Set it only, if Gallery and the embedding "
+"application are only reachable with <b>different subdomains</b>. E.g. when Gallery is at "
+"http://photos.example.com/ and the application is at http://www.example.com/, then you have "
+"to set the cookie domain example.com (the part of the host string that is common to both, "
+"Gallery and the embedding application)."
+msgstr ""
+
+msgid ""
+"Once you change the cookie settings, <b>all registered users</b> of your Gallery will "
+"<b>have to clear their browser cookie cache</b>. If they do not, they will experience "
+"login / logout / lost session problems."
+msgstr ""
+
+msgid "Invalid cookie path"
+msgstr "Geçersiz çerez klasör yolu"
+
+msgid "Domain"
+msgstr "Alanadı"
+
+msgid "Invalid cookie domain"
+msgstr "Geçersiz çerez alanadı"
+
+msgid "Locking System"
+msgstr "Kilitleme Sistemi"
+
+msgid ""
+"Gallery uses a system of locks to prevent simultaneous changes from interfering with each "
+"other.  There are two types of locking, each with its advantages and disadvantages.  "
+"<b>File</b> based locking is fast and efficient, but won't work on NFS filesystems and will "
+"be unreliable on Windows.  <b>Database</b> locking is slower but is more reliable.  If you "
+"are unsure which to choose, we recommend using file locking.  If you're getting many lock "
+"timeouts, you can try switching to database locking instead.  It's ok to switch back and "
+"forth."
+msgstr ""
+
+msgid "Lock system"
+msgstr "Kilit sistemi"
+
+msgid "Helper Processes"
+msgstr ""
+
+msgid ""
+"Some Gallery modules will use programs on your server to do image processing, archiving and "
+"other operations.  These programs can be very computationally intensive and can impact the "
+"overall performance of a shared web server.  You can make these programs run at a lower "
+"priority so that they play nice.  If you're in a shared hosting environment and your web "
+"host is complaining, try setting your priority low."
+msgstr ""
+
+msgid "Priority"
+msgstr "Öncelik"
+
+msgid "Save"
+msgstr "Kaydet"
+
+msgid "Reset"
+msgstr "Sıfırla"
+
+msgid "Create A New Group"
+msgstr "Yeni Grup Yarat"
+
+msgid "Group Name"
+msgstr "Grup Adı"
+
+msgid "(required)"
+msgstr "[gerekli]"
+
+msgid "You must enter a group name"
+msgstr "Grup adı girmelisiniz"
+
+#, c-format
+msgid "Group '%s' already exists"
+msgstr "Grup '%s' zaten mevcut"
+
+msgid "Create Group"
+msgstr "Grup Yarat"
+
+msgid "Cancel"
+msgstr "İptal"
+
+msgid "Create A New User"
+msgstr "Yeni Kullanıcı Yarat"
+
+msgid "You must enter a username"
+msgstr "Kullanıcıadı girmelisiniz."
+
+#, c-format
+msgid "Username '%s' already exists"
+msgstr "'%s' kullanıcı adı zaten mevcut."
+
+msgid "Full Name"
+msgstr "İsim"
+
+msgid "Email Address"
+msgstr "Email Adresi"
+
+msgid "You must enter an email address"
+msgstr "Email adresi girmelisiniz"
+
+msgid "Language"
+msgstr "Dil"
+
+msgid "You must enter a password"
+msgstr "Şifre girmelisiniz"
+
+msgid "Verify Password"
+msgstr "Şifreyi Doğrula"
+
+msgid "You must enter the password a second time"
+msgstr ""
+
+msgid "The passwords you entered did not match"
+msgstr "Girmiş olduğunuz şifreler aynı değil"
+
+msgid "Create User"
+msgstr "Kullanıcı Yarat"
+
+msgid "Delete A Group"
+msgstr "Grup Sil"
+
+msgid "Are you sure?"
+msgstr "Emin misiniz?"
+
+#, c-format
+msgid "This will completely remove %s from Gallery.  There is no undo!"
+msgstr ""
+
+msgid "Delete"
+msgstr "Sil"
+
+msgid "Delete a User"
+msgstr "Kullanıcı Sil"
+
+#, c-format
+msgid "User %s is the owner of %s items."
+msgstr "Kullanıcı %s, %s ögenin sahibi."
+
+#, c-format
+msgid "Delete user <strong>%s</strong> and..."
+msgstr "<strong>%s</strong> kullanıcısını sil ve..."
+
+#, c-format
+msgid "Assign a new owner for all items of %s"
+msgstr ""
+
+#, c-format
+msgid ""
+"Delete all items of %s and assign a new owner for all remaining non empty albums. Items that "
+"%s doesn't have permission to delete will also be reassigned to a new owner."
+msgstr ""
+
+msgid "New owner (leaving blank means one of the Site Admins):"
+msgstr ""
+
+#, c-format
+msgid "User '%s' does not exist! Cannot assign items to a nonexistent user."
+msgstr ""
+
+msgid "The new owner must be a different user than the user we are deleting!"
+msgstr "Yeni sahip, sildiğimiz kullanıcıdan farklı bir kullanıcı olmak zorunda!"
+
+msgid "The new owner cannot be a Guest / Anonymous user!"
+msgstr "Yeni sahip Ziyaretçi / Anonim kullanıcı olamaz!"
+
+#, c-format
+msgid "This will completely remove <strong>%s</strong> from Gallery.  There is no undo!"
+msgstr ""
+
+msgid "Edit a group"
+msgstr "Grup Düzenle"
+
+#, c-format
+msgid "Edit Members of Group '%s'"
+msgstr ""
+
+#, c-format
+msgid "Added user '%s' to group '%s'"
+msgstr "Kullanıcı '%s'  '%s' grubuna eklendi"
+
+#, c-format
+msgid "Removed user '%s' from group '%s'"
+msgid_plural "Removed %s users from group '%s'"
+msgstr[0] "%s'  adlı kullanıcı %s' grubundan silindi"
+msgstr[1] "%s'  adlı kullanıcılar %s' grubundan silindi"
+
+#, c-format
+msgid "This group contains %d user"
+msgid_plural "This group contains %d users"
+msgstr[0] "Bu Grup %d kullanıcı içeriyor"
+msgstr[1] "Bu Grup %d kullanıcı içeriyor"
+
+msgid "Members"
+msgstr "Üyeler"
+
+msgid "&laquo; first"
+msgstr "&laquo; ilk"
+
+msgid "&laquo; back"
+msgstr "&laquo; geri"
+
+#, c-format
+msgid "Viewing page %d of %d"
+msgstr "Sayfa görüntüleniyor %d / %d"
+
+msgid "next &raquo;"
+msgstr "sonra &raquo;"
+
+msgid "last &raquo;"
+msgstr "son &raquo;"
+
+msgid "Filter"
+msgstr "Filtre"
+
+msgid "Clear"
+msgstr "Temiz"
+
+#, c-format
+msgid "%d user matches your filter"
+msgid_plural "%d users match your filter"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "Remove selected"
+msgstr "Seçlenleri kaldır"
+
+msgid "You must select a user to remove."
+msgstr "Silmek için kullanıcı seçmelisiniz."
+
+msgid "You can't remove yourself from this group."
+msgstr "Kendiniz bu gruptan çıkartamazsınız."
+
+msgid "Add Member"
+msgstr "Üye Ekle"
+
+msgid "You must enter a username."
+msgstr "Kullanıcıadı girmelisiniz."
+
+#, c-format
+msgid "User '%s' does not exist."
+msgstr "'%s' adlı bir kullanıcı yok."
+
+msgid "This user already is in this group."
+msgstr "Bu kullanıcı zaten bu grupta."
+
+msgid "Done"
+msgstr "Tamalandı"
+
+msgid "Edit a user"
+msgstr "Kullanıcı düzenle"
+
+msgid "That username is already in use"
+msgstr "Bu kullanıcı adı zaten kullanılıyor."
+
+msgid "You must enter a new username"
+msgstr "Yeni kullanıcı adı girmelisiniz"
+
+msgid "E-mail Address"
+msgstr "Email Adresi"
+
+msgid "(suggested)"
+msgstr "(önerilen)"
+
+msgid "Group Management"
+msgstr "Grup Yönetimi"
+
+#, c-format
+msgid "Removed group '%s'"
+msgstr "'%s' adlı grup silindi"
+
+#, c-format
+msgid "Created group '%s'"
+msgstr "Grup  '%s' yaratıldı"
+
+#, c-format
+msgid "Modified group '%s'"
+msgstr " '%s' gurubu değiştirildi"
+
+#, c-format
+msgid "There is %d group in the system."
+msgid_plural "There are %d total groups in the system."
+msgstr[0] "Sistemde toplam %d grup var."
+msgstr[1] "Sistemde toplam %d grup var."
+
+msgid "Edit Group"
+msgstr "Grup Düzenle"
+
+msgid "Edit"
+msgstr "Düzenle"
+
+msgid "Add/Remove Users"
+msgstr "Kullanıcı Ekle/Kaldır"
+
+#, c-format
+msgid "Group '%s' does not exist."
+msgstr "Grup '%s' mevcut değil."
+
+msgid "You cannot delete that group"
+msgstr "Bu grubu silemezsiniz"
+
+msgid "You cannot edit that group's users"
+msgstr "Bu grubun kullanıcılarını düzenleyemezsiniz"
+
+msgid "Edit Group (by list)"
+msgstr "Grup Düzenle (listeden)"
+
+msgid "edit"
+msgstr "düzenle"
+
+msgid "delete"
+msgstr "sil"
+
+msgid "members"
+msgstr "üyeler"
+
+#, c-format
+msgid "%d group matches your filter"
+msgid_plural "%d groups match your filter"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "System Maintenance"
+msgstr "Sistem Bakımı"
+
+#, c-format
+msgid "Completed %s task successfully."
+msgstr "Görev %s başarıyla tamamlandı."
+
+#, fuzzy, c-format
+msgid "The %s task failed to complete successfully."
+msgstr "User '%s' has been modified successfully."
+
+msgid "Task name"
+msgstr "Görev adı"
+
+msgid "Last run"
+msgstr "Son çalıştırma"
+
+msgid "Success/Fail"
+msgstr "Başarılı/Başarısız"
+
+msgid "Not run yet"
+msgstr "Henüz çalıştırılmadı"
+
+msgid "Success"
+msgstr "Başarılı"
+
+msgid "Failed"
+msgstr "Başarısız"
+
+msgid "run now"
+msgstr "şimdi çalıştır"
+
+msgid "Last Run Details:"
+msgstr "Son Çalıştırma Detayları:"
+
+msgid "Gallery Modules"
+msgstr "Galeri Modülleri"
+
+#, c-format
+msgid "Successfully installed and auto-configured module %s"
+msgstr "Modül %s başarıyla otomatik konfigüre edildi ve kuruldu"
+
+#, c-format
+msgid "Successfully installed module %s"
+msgstr "Modül %s başarıyla kuruldu"
+
+#, c-format
+msgid "Successfully configured module %s"
+msgstr "Modül %s başarıyla yapılandırıldı."
+
+#, c-format
+msgid "Successfully upgraded module %s"
+msgstr "Modül %s başarıyla güncellendi"
+
+#, c-format
+msgid "Successfully activated module %s"
+msgstr "Modül  %s başarıyla etkinleştirildi"
+
+#, c-format
+msgid "Successfully deactivated module %s"
+msgstr "Modül %s başarıyla çalışamaz duruma getirildi."
+
+#, c-format
+msgid "Successfully uninstalled module %s"
+msgstr "Modül %s başarıyla kaldırıldı"
+
+msgid ""
+"Gallery features come as separate modules.  You can download and install modules to add more "
+"features to your Gallery, or you can disable features if you don't want to use them.  In "
+"order to use a feature, you must install, configure (if necessary) and activate it.  If you "
+"don't wish to use a feature, you can deactivate it."
+msgstr ""
+
+msgid "Module Name"
+msgstr "Modül Adı"
+
+msgid "Version"
+msgstr "Versiyon"
+
+msgid "Installed"
+msgstr "Kuruldu"
+
+msgid "Actions"
+msgstr "Hareketler"
+
+msgid "Status: Not Installed"
+msgstr "Durum: Kurulmadı"
+
+msgid "Status: Active"
+msgstr "Durum: Aktif"
+
+msgid "Status: Inactive"
+msgstr "Durum : Aktif Değil"
+
+msgid "Status: Upgrade Required (Inactive)"
+msgstr "Durum: Güncelleme gerekli (Aktif Değik)"
+
+msgid "Status: Incompatible Module (Inactive)"
+msgstr "Durum: Uyumsuz Modül (Aktif Değil)"
+
+msgid "Incompatible module!"
+msgstr "Uyumsuz modül!"
+
+#, c-format
+msgid "Core API Required: %s (available: %s)"
+msgstr ""
+
+#, c-format
+msgid "Module API Required: %s (available: %s)"
+msgstr ""
+
+msgid "Confirm module uninstall"
+msgstr ""
+
+#, c-format
+msgid "Do you really want to uninstall the %s module?"
+msgstr "%s modülünü gerçekten kaldırmak istiyor musunuz?"
+
+msgid "This will also remove any permissions and clean up any data created by this module."
+msgstr ""
+
+msgid "Uninstall"
+msgstr "Kaldır"
+
+msgid "Performance Tuning"
+msgstr ""
+
+#, fuzzy
+msgid "Updated performance settings successfully"
+msgstr "Test emailı başarıyla gönderildi."
+
+msgid "Deleted all saved pages"
+msgstr "Tüm kaydedilmiş sayfalar silindi"
+
+msgid ""
+"Improve your Gallery performance by storing entire web pages in the database.  This can "
+"considerably reduce the amount of webserver and database resources required to display a web "
+"page.  The tradeoff is that the web page you see may be a little bit out of date, however "
+"you can always get the most recent version of the page by forcing a refresh in your browser "
+"(typically by holding down the shift key and clicking the reload button)."
+msgstr ""
+
+msgid "Partial Acceleration"
+msgstr ""
+
+#, no-c-format
+msgid ""
+"Partial acceleration gives you roughly 10-25% performance increase, but some forms of "
+"dynamic data (like view counts) will not get updated right away.  All content that appears "
+"in blocks (like the random image block, any sidebar blocks, etc) will always be updated."
+msgstr ""
+
+msgid "Full Acceleration"
+msgstr ""
+
+#, no-c-format
+msgid ""
+"Full acceleration gives roughly a 90% performance increase, but no dynamic data (random "
+"image block, other sidebar blocks, number of items in your shopping cart, view counts, etc) "
+"will get updated until the saved page expires."
+msgstr ""
+
+msgid ""
+"You can additionally specify when saved pages expire.  Setting a longer expiration time will "
+"reduce the load on your server, but will increase the interval before users see changes.  "
+"Lower expiration times mean that users will see more current data, but they will place a "
+"higher load on your server."
+msgstr ""
+
+msgid "Here are some standard acceleration profiles:"
+msgstr ""
+
+#, fuzzy
+msgid "Medium acceleration"
+msgstr "başlıkları düzenle"
+
+msgid "High acceleration"
+msgstr ""
+
+msgid "Guest Users"
+msgstr "Ziyaretçi Kullanıcılar"
+
+msgid "Expires after:"
+msgstr ""
+
+msgid "Clear Saved Pages"
+msgstr ""
+
+msgid "Please make sure that your internet connection is set up properly or try again later."
+msgstr ""
+
+msgid "The repository index has been successfully updated."
+msgstr ""
+
+msgid "All plugins are already up-to-date."
+msgstr ""
+
+msgid "Common Tasks"
+msgstr ""
+
+msgid "Warning: Experimental feature!"
+msgstr ""
+
+msgid ""
+"The repository features are currently experimental, and no actual repository has been set up "
+"yet, so none of these features will work at this time."
+msgstr ""
+
+msgid "Update Index"
+msgstr ""
+
+msgid ""
+"The Gallery repository contains the latest modules and themes extensively tested by the "
+"Gallery team. The repository index contains information about available plugins, such as the "
+"latest versions, available languages and compatibility. The index must be synchronized "
+"periodically with the Gallery server so you are informed about any available updates. No "
+"personal information is sent to the Gallery server during updating. On slower connections "
+"the process might take a minute or two."
+msgstr ""
+
+#, c-format
+msgid ""
+"As of the last update on %s, the repository contains %s modules and %s themes. Its contents "
+"can be viewed on the Modules and Themes tabs."
+msgstr ""
+
+msgid ""
+"The index has never been updated. Click on the Update button to see what updates are "
+"available."
+msgstr ""
+
+msgid "Update"
+msgstr "Güncelle"
+
+msgid "Upgrade Gallery"
+msgstr "Galeriyi Güncelle"
+
+msgid ""
+"A new version of Gallery is available, but it cannot be upgraded through this interface. "
+"Upgrading it might make some of your current plugins stop working, but others that rely on "
+"the features of the new version may become available. Here are the recommended steps for "
+"upgrading:"
+msgstr ""
+
+msgid "Review plugin compatibility (on the Themes and Modules tabs)"
+msgstr ""
+
+#, c-format
+msgid "%sDownload%s Gallery core"
+msgstr ""
+
+#, c-format
+msgid "Read the %supgrade instructions%s and perform the upgrade"
+msgstr ""
+
+#, fuzzy
+msgid "Gallery Up-To-Date"
+msgstr "Galeri Çekirdeği"
+
+msgid ""
+"Gallery cannot be upgraded through this interface. When a new version becomes available, "
+"upgrade instructions will be presented here."
+msgstr ""
+
+msgid "Upgrade All Plugins"
+msgstr ""
+
+msgid ""
+"Gallery can automatically upgrade your themes and modules to the latest available versions. "
+"No new plugins will be downloaded."
+msgstr ""
+
+msgid "Upgrade All"
+msgstr "Hepsini Güncelle"
+
+msgid ""
+"Once the repository index has been downloaded, a list of available plugins will be "
+"presented. It can be downloaded by clicking on the Update button on the Common Tasks tab."
+msgstr ""
+
+msgid ""
+"The following plugins are available. Click on the action beside the plugin you're interested "
+"in to see what's available in the repository."
+msgstr ""
+
+msgid "Incompatible plugins are marked with an exclamation icon."
+msgstr ""
+
+#, c-format
+msgid ""
+"A new core module version is available. There may be plugins that are incompatible with the "
+"installed core module, which are not shown here. You can view a %scomplete list%s of "
+"plugins, including incompatible ones, which are marked with a red icon."
+msgstr ""
+
+msgid "Theme Name"
+msgstr "Tema Adı"
+
+msgid "Latest"
+msgstr "Son"
+
+msgid "Incompatible Plugin"
+msgstr "Uyumsuz Eklenti"
+
+msgid "Incompatible plugin!"
+msgstr "Uyumsuz eklenti!"
+
+#, c-format
+msgid "Plugin API Required: %s (available: %s)"
+msgstr ""
+
+msgid "No packages have been selected."
+msgstr ""
+
+msgid "Base Files"
+msgstr "Temel Dosyalar"
+
+msgid ""
+"The base files required for the theme to work and the English (US) translation will be "
+"downloaded."
+msgstr ""
+
+msgid "Upgrade Base Files"
+msgstr ""
+
+msgid "You can upgrade the base module files."
+msgstr ""
+
+msgid "Upgrade base files"
+msgstr ""
+
+msgid "Base Files Up-To-Date"
+msgstr ""
+
+msgid "This plugin's base files are up-to-date."
+msgstr ""
+
+msgid "Updated Translations"
+msgstr ""
+
+msgid ""
+"Below is a list of translations that have been updated since they were last downloaded. "
+"Select the ones you want to download."
+msgstr ""
+
+msgid "Additional Languages"
+msgstr ""
+
+msgid ""
+"Below is a list of languages this plugin has been translated to. Select the ones you want "
+"included in addition to the ones already downloaded."
+msgstr ""
+
+msgid "Unit Tests"
+msgstr ""
+
+msgid ""
+"This plugin has unit tests available for download, which are useful for Gallery developers. "
+"All of the module's features are available without the tests."
+msgstr ""
+
+msgid "Download unit tests"
+msgstr ""
+
+#, fuzzy
+msgid "Gallery Repository Setup"
+msgstr "Galeri Versiyonu"
+
+msgid "Warning:"
+msgstr ""
+
+#, c-format
+msgid ""
+"In order to download plugins from the Gallery repository, a special directory needs to be "
+"created where Gallery will store the data. Under your Gallery base directory, create a "
+"directory called '%s' and allow the web server to write into it by appropriately setting the "
+"permissions."
+msgstr ""
+
+msgid "Instructions for Unix-type platforms:"
+msgstr ""
+
+msgid ""
+"Refreshing this page will take you to the Repository if the directory has been successfully "
+"created."
+msgstr ""
+
+msgid "Gallery Themes"
+msgstr "Galeri Temaları"
+
+#, c-format
+msgid "Successfully activated theme %s"
+msgstr "Tema %s başarıyla etkinleştirildi"
+
+#, c-format
+msgid "Successfully deactivated theme %s"
+msgstr "Tema %s başarıyla çalışamaz duruma getirildi."
+
+#, c-format
+msgid "Successfully installed theme %s"
+msgstr "Tema %s başarıyla kuruldu"
+
+#, c-format
+msgid "Successfully uninstalled theme %s"
+msgstr "Tema %s başarıyla kaldırıldı"
+
+#, c-format
+msgid "Successfully upgraded theme %s"
+msgstr "Tema %s başarıyla güncellendi"
+
+msgid "Successfully saved default album settings"
+msgstr "Varsayılan albüm ayarları başarıyla kaydedildi"
+
+msgid "Restored theme settings"
+msgstr "Tema ayarları iade edildi"
+
+msgid "All Themes"
+msgstr "Tüm Temalar"
+
+msgid "Defaults"
+msgstr "Varsayılanlar"
+
+msgid "Status: Incompatible Theme (Inactive)"
+msgstr "Durum: Uyumsuz Tema (Aktif Değil)"
+
+msgid "Incompatible theme!"
+msgstr "Uyumsuz tema!"
+
+#, c-format
+msgid "Theme API Required: %s (available: %s)"
+msgstr ""
+
+msgid "(default)"
+msgstr "(varsayılan)"
+
+msgid ""
+"These are default display settings for albums in your gallery.  They can be overridden in "
+"each album."
+msgstr ""
+"Bunlar Galerinizde bulunan albümlerin varsayulan görüntüleme özellikleri. Her albüm için bu "
+"ayarlar yenilenebilir."
+
+msgid "Default sort order"
+msgstr "Varsayılan sıralandırma"
+
+msgid "with"
+msgstr "genişlik"
+
+msgid "New albums"
+msgstr "Yeni albümler"
+
+#, c-format
+msgid "%s Theme Settings"
+msgstr "%s Tema Ayarları"
+
+msgid ""
+"These are the global settings for the theme.  They can be overridden at the album level."
+msgstr "Bunlar tema için global ayarlar.  Albüm seviyesinde bunlar yeniden yapılandırılabilir."
+
+msgid "Available"
+msgstr "Kullanılabilir"
+
+msgid "Choose a block"
+msgstr "Blok seç"
+
+msgid "Selected"
+msgstr "Seçilmiş"
+
+msgid "Remove"
+msgstr "Kaldır"
+
+msgid "Move Up"
+msgstr "Yukarı Taşı"
+
+msgid "Move Down"
+msgstr "Aşağı Taşı"
+
+msgid "Parameter"
+msgstr "Parametre"
+
+msgid "Value"
+msgstr "Değer"
+
+msgid "There are no settings for this theme"
+msgstr "Bu tema için ayarlar yok"
+
+msgid ""
+"The toolkits shown below have some overlap in supported operations and mime types.  Rank the "
+"toolkits here to determine which will perform these operations."
+msgstr ""
+
+msgid "Toolkit"
+msgstr "Araç"
+
+msgid "Order"
+msgstr "Sırala"
+
+msgid "up"
+msgstr "yukarı"
+
+msgid "down"
+msgstr "aşşağı"
+
+msgid "User Management"
+msgstr "Kullanıcı Yönetimi"
+
+#, c-format
+msgid "Removed user '%s'"
+msgstr "%s' adlı kullanıcı silindi"
+
+#, c-format
+msgid "Created user '%s'"
+msgstr "%s' adlı kullanıcı yaratıldı"
+
+#, c-format
+msgid "Modified user '%s'"
+msgstr "'%s' adlı kullanıcı değiştirildi"
+
+#, c-format
+msgid "There is %d user in the system."
+msgid_plural "There are %d total users in the system."
+msgstr[0] "Sistemde toplam %d kullanıcı var."
+msgstr[1] "Sistemde toplam %d kullanıcı var."
+
+msgid "Edit User"
+msgstr "Kullanıcı Düzenle"
+
+msgid "You cannot delete yourself!"
+msgstr "Kendinizi Silemezsiniz!"
+
+msgid "You cannot delete the special guest user."
+msgstr "Özel misafir kullanıcıyı silemezsiniz."
+
+msgid "Edit User (by list)"
+msgstr "Kullanıcı Düzenle (listeden)"
+
+msgid "Thumbnails"
+msgstr "Thumbnails"
+
+msgid ""
+"Gallery can create thumbnails at upload time, or create them the first time you want to see "
+"the thumbnail itself.  Either way, it will create the thumbnail once and save it, but if you "
+"create them at upload time it makes viewing albums for the first time go faster at the "
+"expense of a longer upload time."
+msgstr ""
+"Galeri thumbnailları gönderme anında yaratabilir, ya da thumbnail'ı ilk görmek istediğinizde "
+"anda yaratır. İki yolda da, thumbnaillar bir kez yaratılır ve kaydedilir, ancak gönderirken "
+"thumbnailları yaratırsanız albümler ik görüntülenmelerinde daha hızlı çalışacak ancak "
+"göndermek süresi uzayacaktır."
+
+msgid "Create thumbnails now"
+msgstr "Thumbnailları şimdi yarat"
+
+msgid "This is a test email from Gallery2"
+msgstr "Bu Galeri 2 test emailıdır"
+
+msgid "Edit Conflict!"
+msgstr "Çalışmayı Düzenle!"
+
+msgid "Security Violation"
+msgstr "Güvenlik İhlali"
+
+msgid "Database Error"
+msgstr "Veritabanı Hatası"
+
+msgid "Platform Error"
+msgstr ""
+
+msgid "Error"
+msgstr "Hata"
+
+msgid ""
+"Your change cannot be completed because somebody else has made a conflicting change to the "
+"same item.  Use the back button in your browser to go back to the page you were on, then "
+"<b>reload that page</b> and try your change again."
+msgstr ""
+
+msgid "Go back and try again"
+msgstr "Geri dönüp tekrar deneyin"
+
+msgid "Alternatively, you can return to the main Gallery page and resume browsing."
+msgstr ""
+"Alternatif olarak, Galeri ana sayfasına dönebilir ve taramayı yeniden başlatabilirsiniz."
+
+msgid "The action you attempted is not permitted."
+msgstr ""
+
+msgid "An error has occurred while interacting with the database."
+msgstr ""
+
+msgid ""
+"The exact nature of database errors is not captured unless Gallery debug mode is enabled in "
+"config.php.  Before seeking support for this error please enable buffered debug output and "
+"retry the operation.  Look near the bottom of the lengthy debug output to find error details."
+msgstr ""
+
+msgid "An error has occurred while interacting with the platform."
+msgstr ""
+
+msgid ""
+"The exact nature of the platform error is unknown. A common cause are insufficient file "
+"system permissions. This can happen if you or your webhost changed something in the file "
+"system, e.g. by restoring data from a backup."
+msgstr ""
+
+msgid "An error has occurred."
+msgstr "Hatayla karşılaşıldı."
+
+msgid "Back to the Gallery"
+msgstr "Galeriye Dön"
+
+msgid "Error Detail"
+msgstr "Hata Detayı"
+
+msgid "System Information"
+msgstr "Sistem Bilgisi"
+
+msgid ""
+"You don't have any Graphics Toolkit activated that can handle JPEG images.  If you add "
+"images, you will probably not have any thumbnails."
+msgstr ""
+
+#, c-format
+msgid "Visit the <a href=\"%s\">Modules</a> page to activate a Graphics Toolkit."
+msgstr ""
+
+msgid "Add Sub-Album"
+msgstr "Alt-albüm Ekle"
+
+#, fuzzy
+msgid ""
+"The name of this album on your hard disk.  It must be unique in this album.  Only use "
+"alphanumeric characters, underscores or dashes.  You will be able to rename it later."
+msgstr ""
+"The name represents the location of this item on your hard drive.  It is not visible "
+"anywhere, except possibly in the URL.  It must be unique in this album.  <b>Note:</b> You "
+"can only use alphanumeric characters, underscore (_) and hyphen (-) in your names."
+
+msgid "Your name contains invalid characters.  Please enter another."
+msgstr "Adınız geçersiz karakter içeriyor.  Lütfen başka bir tane giriniz."
+
+msgid "You must enter a name for this album."
+msgstr "Bu albüm için isim girmelisiniz."
+
+msgid "The name you entered is already in use.  Please enter another."
+msgstr "Girmiş olduğunuz isim zaten kullanılıyor. Lütfen farklı bir tane girin."
+
+msgid "This is the album title."
+msgstr "Bu albüm başlığı."
+
+msgid "This is the album summary."
+msgstr "Bu albüm özeti."
+
+msgid "Keywords are not visible, but are searchable."
+msgstr ""
+
+msgid "This is the long description of the album."
+msgstr "Bu albümün uzun açıklaması."
+
+msgid "Create"
+msgstr "Yarat"
+
+msgid "Upload Complete"
+msgstr "Yükleme Tamamlandı"
+
+#, c-format
+msgid "Successfully added %d file."
+msgid_plural "Successfully added %d files."
+msgstr[0] "%d dosya başarıyla eklendi."
+msgstr[1] "%d dosya başarıyla eklendi."
+
+msgid "No files added."
+msgstr "Dosya eklenmedi."
+
+#, c-format
+msgid "Added %s"
+msgstr "Eklendi %s"
+
+#, c-format
+msgid "Failed to add %s"
+msgstr "%s eklemesi başarısız"
+
+msgid "Add more files"
+msgstr "Daha fazla dosya ekle"
+
+msgid ""
+"Your webserver is configured to disallow file uploads from your web browser at this time.  "
+"Please contact your system administrator for assistance."
+msgstr ""
+
+#, fuzzy
+msgid "Upload files directly from your computer."
+msgstr "Upload a file directly from your computer."
+
+msgid "Enter the full path to the file and an optional caption in the boxes below."
+msgstr ""
+
+#, c-format
+msgid ""
+"<b>Note:</b> You can upload up to %s at one time.  If you want to upload more than that, you "
+"must upload the files separately, use a different upload format, or ask your system "
+"administrator to allow larger uploads."
+msgstr ""
+
+#, c-format
+msgid ""
+"<b>Note:</b> You can upload up to %s at one time.  No individual file may be larger than %s. "
+"If you want to upload more than that, you must upload the files separately, use a different "
+"upload format, or ask your system administrator to allow larger uploads."
+msgstr ""
+
+msgid "More.."
+msgstr "Daha.."
+
+msgid "Set item titles from:"
+msgstr ""
+
+#, fuzzy
+msgid "Assign caption to:"
+msgstr "Gallery Site Administration"
+
+msgid ""
+"Transfer files that are already on your server into your Gallery.  The files must already "
+"have been uploaded to your server some other way (like FTP) and must be placed in a "
+"directory where they are accessibly by any element on the server.  If you're on Unix this "
+"means that the files and the directory the files are in should have modes of at least 755."
+msgstr ""
+
+msgid ""
+"For security purposes, you can't use this feature until the Gallery Site Administrator "
+"configures a set of legal upload directories."
+msgstr ""
+
+msgid "Server Path"
+msgstr "Server Klasör Yolu"
+
+msgid "You must enter a directory."
+msgstr "Klasör girmelisiniz."
+
+msgid ""
+"The directory you entered is invalid.  Make sure that the directory is readable by all users."
+msgstr ""
+
+msgid ""
+"The directory you entered is illegal.  It must be a sub directory of one of the directories "
+"listed below."
+msgstr ""
+
+msgid "An item with the same name already exists."
+msgstr ""
+
+msgid "Legal Directories"
+msgstr "Yasal Klasörler"
+
+msgid "modify"
+msgstr "modifiye et"
+
+msgid "Recent Directories"
+msgstr "Yeni Klasörler"
+
+msgid "Find Files"
+msgstr "Dosyaları Bul"
+
+#, c-format
+msgid "Directory: %s"
+msgstr "Klasör: %s"
+
+msgid "File name"
+msgstr "Dosya Adı"
+
+msgid "Type"
+msgstr "Tür"
+
+msgid "Size"
+msgstr "Boyut"
+
+msgid "Use Symlink"
+msgstr ""
+
+#, c-format
+msgid "%d byte"
+msgid_plural "%d bytes"
+msgstr[0] "%d byte"
+msgstr[1] "%d byte"
+
+msgid "Parent Directory"
+msgstr "Ana Klasör"
+
+msgid "Directory"
+msgstr "Klasör"
+
+msgid "(Un)check all known types"
+msgstr ""
+
+msgid "(Un)check symlinks"
+msgstr ""
+
+#, fuzzy
+msgid "for selected items"
+msgstr "[core] Delete item"
+
+msgid "Copy base filenames to:"
+msgstr "Temel dosya adlarını kopyala:"
+
+msgid "Add Files"
+msgstr "Dosya Ekle"
+
+msgid "Start Over"
+msgstr "Baştan Başla"
+
+msgid ""
+"Import files into Gallery from another website.  Enter a URL below to a web page anywhere on "
+"the net and Gallery will allow you to upload any media files that it finds on that page.  "
+"Note that if you're entering a URL to a directory, you should end the URL with a trailing "
+"slash (eg, http://example.com/directory/). "
+msgstr ""
+
+msgid "URL"
+msgstr "URL"
+
+#, fuzzy
+msgid "You must enter a URL to a web page"
+msgstr "You must enter a user name"
+
+msgid "The URL entered must begin with http://"
+msgstr ""
+
+#, fuzzy
+msgid "The web page you specified is unavailable"
+msgstr "The user name you entered is invalid"
+
+msgid "Nothing to add found from this URL"
+msgstr ""
+
+msgid "Nothing added since no items were selected"
+msgstr ""
+
+msgid "Recent URLs"
+msgstr "Yeni URL'ler"
+
+#, c-format
+msgid "URL: %s"
+msgstr "URL: %s"
+
+msgid "change"
+msgstr "değiştir"
+
+#, c-format
+msgid "%d url found"
+msgid_plural "%d urls found"
+msgstr[0] "%d url bulundu "
+msgstr[1] "%d url bulundu"
+
+msgid "(Un)check all"
+msgstr ""
+
+msgid "Add URLs"
+msgstr "URL'ler ekle"
+
+msgid "No Thumbnail"
+msgstr "Thumbnail Yok"
+
+msgid "Options"
+msgstr "Seçenekler"
+
+msgid "Link an Item"
+msgstr "Ögeye Link Ver"
+
+#, c-format
+msgid "Successfully linked %d item"
+msgid_plural "Successfully linked %d items"
+msgstr[0] "%d öge başarıyla linklendi"
+msgstr[1] "%d öge başarıyla linklendi"
+
+msgid "This album contains no items to link."
+msgstr "Bu albüm link verebilmek için hiç bir öge içermiyor."
+
+msgid "Source"
+msgstr "Kaynak"
+
+msgid "Choose the items you want to link"
+msgstr "Link vermek istediğiniz ögeleri seçiniz"
+
+#, c-format
+msgid "(page %d of %d)"
+msgstr "(sayfa %d / %d)"
+
+msgid "No sources chosen"
+msgstr "Hiçbir kaynak seçilmedi"
+
+msgid "Check All"
+msgstr "Hepsini işaretle"
+
+msgid "Check None"
+msgstr "Hiçbirini işaretleme"
+
+msgid "Invert"
+msgstr "Ters Çevir"
+
+msgid "Previous Page"
+msgstr "Önceki Sayfa"
+
+msgid "Next Page"
+msgstr "Sonraki Sayfa"
+
+msgid "Destination"
+msgstr "Hedef"
+
+msgid "Choose a new album for the link"
+msgstr "Bağlantı için yeni bir albüm seçin"
+
+msgid "No destination chosen"
+msgstr "Hedef seçilmedi"
+
+msgid "Link"
+msgstr "Bağlantı"
+
+msgid "Successfully linked"
+msgstr "Başarıyla link verildi"
+
+#, fuzzy
+msgid "Choose a destination album"
+msgstr "Choose the destination of the selected items"
+
+msgid "Delete Items"
+msgstr "Ögeleri Sil"
+
+msgid "No items were selected for deletion"
+msgstr "Silinmesi için hiçbir öge seçilmedi"
+
+#, c-format
+msgid "Successfully deleted %d item"
+msgid_plural "Successfully deleted %d items"
+msgstr[0] "%d öge başarıyla silindi"
+msgstr[1] "%d öge başarıyla silindi"
+
+msgid "This album contains no items to delete"
+msgstr "Bu albüm silmek için hiçbir öge içermiyor"
+
+msgid "Choose the items you want to delete"
+msgstr "Silmek istediğiniz ögeleri seçiniz"
+
+msgid "Items selected here will remain selected when moving between pages."
+msgstr ""
+
+#, c-format
+msgid "One item selected on other pages."
+msgid_plural "%d items selected on other pages."
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "(data)"
+msgstr "(veri)"
+
+#, c-format
+msgid "(album containing %d item)"
+msgid_plural "(album containing %d items)"
+msgstr[0] "(albüm %d öge içeriyor)"
+msgstr[1] "(albüm %d öge içeriyor)"
+
+msgid "(empty album)"
+msgstr "(boş albüm)"
+
+msgid "Deletion Complete"
+msgstr "Silme İşlemi Tamamlandı"
+
+msgid "Item successfully deleted"
+msgstr "Öge başarıyla silindi"
+
+#, c-format
+msgid "Are you sure you want to delete this %s?"
+msgstr "%s silmek istediğinizden emin misiniz?"
+
+#, c-format
+msgid "It contains %d item."
+msgid_plural "It contains %d items."
+msgstr[0] "%d öge içeriyor."
+msgstr[1] "%d öge içeriyor."
+
+msgid "There is no undo!"
+msgstr "Geri Dönüş Yok!"
+
+msgid "There was a problem processing your request."
+msgstr "İşleminizi gerçekleştirirken bir problem oluştu."
+
+msgid "Sort order"
+msgstr "Sıralandır"
+
+msgid ""
+"This sets the sort order for the album.  This applies to all current items, and any newly "
+"added items."
+msgstr ""
+
+msgid "Apply to all subalbums"
+msgstr "Tüm alt-albümlere uygula"
+
+msgid "Choose a theme for this album. (The way the album is arranged on the page)"
+msgstr ""
+
+msgid "Use this theme in all subalbums"
+msgstr ""
+
+msgid " Every item requires a thumbnail. Set the default size in pixels here."
+msgstr "Her öge için thumbnail gereklidir. Varsayılan boyutu piksel olarak girin."
+
+msgid "You must enter a number (greater than zero)"
+msgstr "Bir numara girmelisiniz (sıfırdan büyük)"
+
+msgid "Use this thumbnail size in all subalbums"
+msgstr ""
+
+msgid "Resized Images"
+msgstr ""
+
+msgid "Each item in your album can have multiple sizes. Define the default sizes here."
+msgstr ""
+
+msgid "Active"
+msgstr "Aktif"
+
+msgid "Target Size (pixels)"
+msgstr "Hedef Büyüklül (pixel)"
+
+msgid "You must enter a valid size"
+msgstr "Geçerli bir boyut girmelisiniz."
+
+msgid "Use these target sizes in all subalbums"
+msgstr ""
+
+msgid "Recreate thumbnails and resizes"
+msgstr "Recreate thumbnails and resizes"
+
+msgid ""
+"The thumbnail and resized image settings are for all new items. To apply these settings to "
+"all the items in your album, check the appropriate box."
+msgstr ""
+
+msgid "Recreate thumbnails"
+msgstr "Thumbnailları yeniden yarat"
+
+msgid "Recreate resized images"
+msgstr ""
+
+msgid ""
+"In order for Gallery to properly display this animation, it has to know the animation's "
+"width and height.  If you have installed a graphics toolkit that can handle animation types, "
+"then these values may already be set.  If not, they may be set to 0.  If you do not enter "
+"the correct values here, the animation may appear distorted when viewed in your web "
+"browser.  Note that changing these values does <b>not</b> change the animation itself so "
+"experimenting won't cause harm."
+msgstr ""
+
+msgid "Width"
+msgstr "Genişlik"
+
+msgid "You must enter a value greater than or equal to 0"
+msgstr "0'dan büyük ya da eşit bir değer girmelisiniz"
+
+msgid "Height"
+msgstr "Yükseklik"
+
+msgid "There were errors saving some items"
+msgstr "Bazı ögeleri kaydetmede hata var"
+
+msgid "There were errors saving all items"
+msgstr ""
+
+msgid "Successfully saved all items"
+msgstr "Tüm ögeler başarıyla kaydedildi"
+
+msgid "This album contains no items"
+msgstr "Bu albüm öge içermiyor"
+
+msgid "Saved successfully."
+msgstr "Başarıyla kaydedildi."
+
+msgid "This item was modified by somebody else at the same time.  Your changes were lost."
+msgstr ""
+
+msgid "You do not have permissions to modify this item."
+msgstr "Bu ögeyi modifiye etmek için izniniz yok."
+
+msgid "Save and Done"
+msgstr "Kaydet ve Bitir"
+
+#, c-format
+msgid "Save and Edit Previous %s"
+msgstr "Kaydet ve Önceki %s Düzenle"
+
+#, c-format
+msgid "Save and Edit Next %s"
+msgstr "Kaydet ve Sonraki %s Düzenle"
+
+#, fuzzy
+msgid ""
+"The name of this item on your hard disk.  It must be unique in this album.  Only use "
+"alphanumeric characters, underscores or dashes."
+msgstr ""
+"The name represents the location of this item on your hard drive.  It is not visible "
+"anywhere, except possibly in the URL.  It must be unique in this album.  <b>Note:</b> You "
+"can only use alphanumeric characters, underscore (_) and hyphen (-) in your names."
+
+msgid "Your name contains invalid characters.  Please choose another."
+msgstr "Adınız geçersiz karakter içeriyor.  Lütfen başka bir tane seçiniz."
+
+msgid "You must enter a name for this item."
+msgstr "Bu öge için isim girmelisiniz."
+
+msgid "The name you entered is already in use.  Please choose another."
+msgstr "Girmiş olduğunuz isim zaten kullanılıyor. Lütfen farklı bir tane seçin."
+
+msgid "The title of this item."
+msgstr "Bu ögenin başlığı."
+
+msgid "The root album must have a title."
+msgstr "Kök albümün başlığı olmak zorunda."
+
+msgid "The summary of this item."
+msgstr "Bu ögenin özeti."
+
+msgid "This is the long description of the item."
+msgstr "Bu ögenin uzun açıklaması."
+
+#, c-format
+msgid "%s Date and Time"
+msgstr "%s Tarih ve Saat"
+
+msgid "Set the date and time when this image was captured."
+msgstr ""
+
+msgid "Set the date and time to be displayed for this item."
+msgstr ""
+
+#, c-format
+msgid "Set the date and time to be displayed for this %s."
+msgstr ""
+
+msgid "Date:"
+msgstr "Tarih:"
+
+msgid "Time:"
+msgstr "Saat: "
+
+msgid "Use the original capture date and time from file information (e.g. Exif tag):"
+msgstr ""
+
+msgid "You must enter a valid date and time"
+msgstr "Geçerli bir tarih ve saat girmelisiniz."
+
+msgid "Thumbnail"
+msgstr "Thumbnail"
+
+msgid ""
+"Set the size of the thumbnail.  The largest side of the thumbnail will be no larger than "
+"this value. Leave this field blank if you don't want a thumbnail."
+msgstr ""
+
+msgid ""
+"There are no graphics toolkits enabled that support this type of item, so we cannot create "
+"or modify a thumbnail."
+msgstr ""
+
+msgid ""
+"In order for Gallery to properly display this movie, it has to know the movie's width and "
+"height.  If you have installed a graphics toolkit that can handle movie types, then these "
+"values may already be set.  If not, they may be set to 0.  If you do not enter the correct "
+"values here, the movie may appear distorted when viewed in your web browser.  Note that "
+"changing these values do <b>not</b> change the movie itself so experimentation won't cause "
+"harm."
+msgstr ""
+
+msgid "Resized Photos"
+msgstr "Yeniden Boyutlandırışmış Fotolar"
+
+msgid ""
+"These sizes are alternate resized versions of the original you would like to have available "
+"for viewing."
+msgstr ""
+
+msgid ""
+"There are no graphics toolkits enabled that support this type of photo, so we cannot create "
+"or modify resized versions."
+msgstr ""
+
+msgid ""
+"You can select which part of the photo will be used for the thumbnail.  This will have no "
+"effect on the resized or original versions of the image."
+msgstr ""
+
+msgid "Aspect Ratio: "
+msgstr ""
+
+msgid "Crop"
+msgstr "Tıraşla"
+
+msgid "Reset to default"
+msgstr "Varsayılanlara sıfırla"
+
+msgid ""
+"There are no graphics toolkits enabled that support this type of photo, so we cannot crop "
+"the thumbnail."
+msgstr ""
+
+msgid "Rotate"
+msgstr "Döndür"
+
+#, fuzzy
+msgid "You can only rotate the photo in 90 degree increments."
+msgstr "You can only rotate the image in 90 degree increments."
+
+msgid "CC 90&deg;"
+msgstr "CC 90&der;"
+
+msgid "180&deg;"
+msgstr "180&deg;"
+
+msgid "C 90&deg;"
+msgstr "C 90&der;"
+
+msgid ""
+"There are no graphics toolkits enabled that support this type of photo, so we cannot rotate "
+"it."
+msgstr ""
+
+msgid "Scale"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Shrink or enlarge the original photo.  When Gallery scales a photo, it maintains the same "
+"aspect ratio (height to width) of the original photo to avoid distortion.  Your photo will "
+"be scaled until it fits inside a bounding box with the size you enter here."
+msgstr ""
+"Shrink or enlarge the original image.  When Gallery scales an image, it maintains the same "
+"aspect ratio (height to width) of the original image to avoid distortion.  The value you "
+"enter below forms a bounding box in pixels.  Gallery will scale the image until it is as "
+"large as possible while still fitting inside the box."
+
+msgid ""
+"There are no graphics toolkits enabled that support this type of photo, so we cannot scale "
+"it."
+msgstr ""
+
+msgid "You must enter a size"
+msgstr "Boyut girmelisiniz"
+
+msgid "Preserve Original"
+msgstr "Orjinali Koru"
+
+msgid ""
+"Gallery does not modify your original photo when rotating and scaling. Instead, it "
+"duplicates your photo and works with copies.  This requires a little extra disk space but "
+"prevents your original from getting damaged.  Disabling this option will cause any actions "
+"(rotating, scaling, etc) to modify the original."
+msgstr ""
+
+msgid "This is a link to another photo, so you cannot change the original"
+msgstr ""
+
+msgid "There are links to this photo, so you cannot change the original"
+msgstr "Bu resme bağlantılar var, bu nedenle orjinali değiştiremezsiniz"
+
+msgid "Preserve Original Photo"
+msgstr "Orjinal Fotoyu Koru"
+
+msgid "Modified Photo"
+msgstr "Modifiye edilmiş Foto"
+
+#, fuzzy
+msgid ""
+"You are using a copy of the original photo that has been scaled or rotated.  The original "
+"photo is still available, but is no longer being used.  Any changes you make will be applied "
+"to the copy instead."
+msgstr ""
+"You are using a copy of the original image that has been scaled or rotated.  The original "
+"image is still available, but is no longer being used.  Any changes you make will be applied "
+"to the copy instead."
+
+msgid "Restore original"
+msgstr "Orjinali geri yükle"
+
+#, c-format
+msgid ""
+"This album is configured to use the <b>%s</b> theme. These settings only apply to the theme "
+"for this album."
+msgstr ""
+
+msgid "Setting"
+msgstr "Ayarlar"
+
+msgid "Use Global"
+msgstr "Global Kullan"
+
+#, c-format
+msgid "Use these settings in all subalbums that use %s theme"
+msgstr ""
+
+msgid ""
+"Note: to set the same theme for all subalbums, check the appropriate box in <b>Album</b> tab"
+msgstr ""
+
+msgid "Album Highlight"
+msgstr "Albüm Öngösterimi"
+
+#, fuzzy
+msgid "You can make this item the thumbnail for its parent or any ancestor album."
+msgstr "Do you want to make this item the highlight of its parent album?"
+
+msgid "Highlight for:"
+msgstr "Öngösterim:"
+
+msgid "Highlight"
+msgstr "Öngösterim"
+
+msgid "Move an Item"
+msgstr "Öge Taşı"
+
+#, c-format
+msgid "Successfully moved %d item"
+msgid_plural "Successfully moved %d items"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "This album contains no items to move."
+msgstr ""
+
+msgid "Choose the items you want to move"
+msgstr "Taşımak istediğiniz ögeleri seçiniz"
+
+msgid ""
+"The destination you chose does not accept sub-albums, so all sub-albums have been deselected."
+msgstr ""
+
+msgid ""
+"The destination you chose only accepts sub-albums, so all non-albums have been deselected."
+msgstr ""
+
+msgid "You are not allowed to move this item away from here."
+msgstr ""
+
+msgid "You are not allowed to move an album to the chosen destination."
+msgstr ""
+
+msgid "You are not allowed to move an item to the chosen destination."
+msgstr ""
+
+msgid "You cannot move an album into its own subtree."
+msgstr ""
+
+msgid "Choose a new album for them"
+msgstr ""
+
+msgid "You don't have the permission to add items in this album"
+msgstr ""
+
+msgid "Move"
+msgstr "Taşı"
+
+msgid "Successfully moved"
+msgstr "Başarıyla taşındı"
+
+msgid "Permissions"
+msgstr "İzinler"
+
+msgid "Owner changed successfully"
+msgstr "Sahip başarıyla değiştirildi"
+
+msgid "Group permission added successfully"
+msgstr "Grup izinleri başarıyla eklendi"
+
+msgid "User permission added successfully"
+msgstr "Kullanıcı izinleri başarıyla eklendi"
+
+msgid "Group permission removed successfully"
+msgstr "Grup izinleri başarıyla kaldırıldı"
+
+msgid "User permission removed successfully"
+msgstr "Kullanıcı izinleri başarıyla kaldırıldı"
+
+msgid ""
+"Each item has its own independent set of permissions.  Changing the parent's permissions has "
+"no effect on the permissions of the child.  This allows you to restrict access to the parent "
+"of this item, but still grant full access to this item, or vice versa.  The most efficient "
+"way to use this permission system is to create groups and assign permissions to them.  Then "
+"if you want to grant permissions to a specific user, you can add (or remove) the user from "
+"the appropriate group."
+msgstr ""
+
+#, c-format
+msgid "This item is owned by user: %s"
+msgstr ""
+
+#, c-format
+msgid "This item is owned by user: %s (%s)"
+msgstr ""
+
+msgid "New owner"
+msgstr "Yeni Sahip"
+
+msgid "Change"
+msgstr "Değiştir"
+
+msgid "Apply new owner to sub-items"
+msgstr "Yeni sahibi alt-ögelere uygula"
+
+msgid "You must enter a user name"
+msgstr "Kullanıcı adı girmelisiniz"
+
+msgid "The user name you entered is invalid"
+msgstr "Girmiş olduğunuz kullanıcı adı geçersiz"
+
+msgid "Apply changes"
+msgstr "Değişiklikleri uygula"
+
+#, fuzzy
+msgid ""
+"This item has sub-items.  The changes you make here can be applied to just this item, or you "
+"can apply them to all sub-items.  Note that applying changes to sub-items will merge your "
+"change into the existing permissions of the sub-items and may be very time consuming if you "
+"have many sub-items.  It's more efficient to grant permissions to groups and then add and "
+"remove users from groups whenever possible. Changes are applied to sub-items by default."
+msgstr ""
+"This item has sub-items.  The changes you make here can be applied to just this item, or you "
+"can apply them to all sub-items.  Note that applying changes to sub-items will merge your "
+"change into the existing permissions of the sub-items and may be very time consuming if you "
+"have many of sub-items.  It's more efficient to grant permissions to groups and then add and "
+"remove users from groups whenever possible."
+
+msgid "Apply to sub-items"
+msgstr "Alt-ögelere uygula"
+
+msgid "Group Permissions"
+msgstr "Grup İzinleri"
+
+msgid "Group name"
+msgstr "Grup adı"
+
+msgid "Permission"
+msgstr "İzin"
+
+msgid "New Group Permission"
+msgstr "Yeni Grup İzinleri"
+
+msgid "Add Permission"
+msgstr "İzin Ekle"
+
+msgid "The permission you chose is invalid"
+msgstr "Seçmiş olduğunuz izinler geçersiz"
+
+msgid "The group name you entered is invalid"
+msgstr "Girmiş olduğunuz grup ismi geçersiz"
+
+msgid "Group already has this permission (check sub-permissions)"
+msgstr "Grubun zaten bu izinleri var (alt-izinleri kontrol edin)"
+
+msgid "User Permissions"
+msgstr "Kullanıcı İzinleri"
+
+msgid "User name"
+msgstr "Kullanıcı adı"
+
+msgid "New User Permission"
+msgstr "Yeni Kullanıcı İzinleri"
+
+msgid "The user already has this permission (check sub-permissions)"
+msgstr "Kullanıcı zaten bu izne sahip (alt-izinleri kontrol et)"
+
+msgid "Reorder Album"
+msgstr "Albümü Yeniden Sırala"
+
+msgid "Order saved successfully"
+msgstr "İstek başarıyla kaydedildi"
+
+msgid ""
+"This album has an automatic sort order specified, so you cannot change the order of items "
+"manually.  You must remove the automatic sort order to continue."
+msgstr ""
+
+msgid "Change the order of the items in this album."
+msgstr "Bu albümdeki ögelerin sıralanışını değiştir."
+
+msgid "Move this item"
+msgstr "Bu ögeyi taşı"
+
+msgid "before"
+msgstr "önce"
+
+msgid "after"
+msgstr "sonra"
+
+msgid "Reorder"
+msgstr "Yeniden Sırala"
+
+msgid "Continue..."
+msgstr "Devam..."
+
+msgid "Site is temporarily down for maintenance."
+msgstr ""
+
+msgid "Admin Login"
+msgstr "Yönetici Girişi"
+
+msgid "Enter a URL"
+msgstr "Url Gir"
+
+msgid "Enter some text describing the URL"
+msgstr ""
+
+msgid "Enter an image URL"
+msgstr ""
+
+msgid "B <!-- Button label for Bold -->"
+msgstr "B"
+
+msgid "i <!-- Button label for italic -->"
+msgstr "i"
+
+msgid "list"
+msgstr "liste"
+
+msgid "bullet"
+msgstr ""
+
+msgid "url"
+msgstr "url"
+
+msgid "image"
+msgstr "resim"
+
+msgid "Configuration Error: Missing Theme"
+msgstr ""
+
+msgid "Missing Theme"
+msgstr "Kayıp Tema"
+
+#, c-format
+msgid ""
+"This page is configured to use the %s theme, but it is either inactive, not installed, or "
+"incompatible."
+msgstr ""
+
+#, c-format
+msgid ""
+"This album is configured to use the %s theme, but it is either inactive, not installed, or "
+"incompatible."
+msgstr ""
+
+#, fuzzy, c-format
+msgid ""
+"To fix this problem you can %sinstall or activate this theme%s or select another default "
+"theme."
+msgstr "Bu problemi çözmek için, %s ya da %s  yollarını deneyebilirsiniz."
+
+#, fuzzy, c-format
+msgid ""
+"To fix this problem you can %slogin as a site administrator%s and then %sinstall or activate "
+"this theme%s or select another default theme."
+msgstr "Bu problemi çözmek için, %s ya da %s  yollarını deneyebilirsiniz."
+
+#, c-format
+msgid ""
+"To fix this problem you can either %schoose a new theme for this album%s or %sinstall or "
+"activate this theme%s."
+msgstr ""
+
+#, c-format
+msgid ""
+"To fix this problem you can either %schoose a new theme for this album%s or %slogin as a "
+"site administrator%s and then %sinstall or activate this theme%s."
+msgstr ""
+
+#, c-format
+msgid ""
+"To fix this problem you can either %slogin%s and then %schoose a new theme for this album%s "
+"or %slogin as a site administrator%s and then %sinstall or activate this theme%s."
+msgstr ""
+
+msgid "Admin Options"
+msgstr "Yönetici Seçenekleri"
+
+msgid "User Options"
+msgstr "Kullanıcı Seçenekleri"
+
+msgid "Password changed successfully"
+msgstr "Şifre başarıyla değiştirildi"
+
+msgid ""
+"You must enter your current password to prove that it's you, then enter your new password "
+"twice to make sure that you didn't make a mistake."
+msgstr ""
+
+msgid "Current Password"
+msgstr "Mevcut Şifre"
+
+msgid "You must enter your current password"
+msgstr "Kullanmakta olduğunuz şifreyi girmelisiniz"
+
+msgid "Incorrect password"
+msgstr "Yanlış şifre"
+
+msgid "New Password"
+msgstr "Yeni Şifre"
+
+msgid "You must enter a new password"
+msgstr "Yeni şifre girmelisiniz"
+
+msgid "Verify New Password"
+msgstr "Yeni Şifreyi Doğrula"
+
+msgid "You must enter your new password again!"
+msgstr "Tekrar yeni şifrenizi girmelisiniz!"
+
+msgid "Login to your account"
+msgstr "Hesabınıza giriş yapın"
+
+msgid "Your password has been recovered, please login."
+msgstr ""
+
+msgid "Your login information is incorrect.  Please try again."
+msgstr "Giriş bilgileriniz yanlış.  Lütfen tekrar deneyiniz."
+
+#, c-format
+msgid ""
+"Lost or forgotten passwords can be retrieved using the <a href=\"%s\">recover password</a> "
+"page"
+msgstr ""
+
+#, c-format
+msgid "Welcome, %s!"
+msgstr ""
+
+msgid "Account settings saved successfully"
+msgstr "Hesap ayarları başarıyla kaydedildi"
+
+msgid "(required, password required for change)"
+msgstr ""
+
+msgid "(suggested, password required for change)"
+msgstr ""
+
+#, fuzzy
+msgid "(required to change the e-mail address)"
+msgstr "Email adresi girmelisiniz"
+
+#, fuzzy
+msgid "You must enter your current password to change the e-mail address"
+msgstr "Kullanmakta olduğunuz şifreyi girmelisiniz"
+
+msgid "Recover a lost or forgotten password"
+msgstr ""
+
+msgid ""
+"Recovering your password requires that your user account has an email address assigned, and "
+"that you have access to the listed email address.  A confirmation will be emailed to you "
+"containing a URL which you must visit to set a new password for your account.  To prevent "
+"abuse, password recovery requests can not be attempted more than once in a 20 minute "
+"period.  A recovery confirmation is valid for seven days.  If it is not used during that "
+"time, it will be purged from the system and a new request will have to be made."
+msgstr ""
+
+msgid "Your recovery request has been sent!"
+msgstr "Kurtarma isteğiniz gönderildi!"
+
+msgid ""
+"Note that if the account does not have an email address, you may not receive the email and "
+"you should contact your system administrator for help."
+msgstr ""
+
+#, c-format
+msgid ""
+"Administrators can use the %sEmergency Password Recovery%s page to recover the admin account "
+"if they fail to receive recovery email due to server problems, or lack of a working email "
+"address."
+msgstr ""
+
+msgid "Recover"
+msgstr "Kurtar"
+
+#, c-format
+msgid ""
+"In order to proceed with the password reset, we have to verify that you are who you claim.  "
+"The best way to be sure is to ask you to make a tiny change in the Gallery directory which "
+"will prove that you have the right permissions.  So, we're going to ask that you create a "
+"new text file called %s in your gallery2 directory. It must contain the following randomly "
+"generated characters:"
+msgstr ""
+
+#, c-format
+msgid "%s"
+msgstr "%s"
+
+#, c-format
+msgid ""
+"As a convenience to you, we've prepared a %scorrect version of login.txt%s for you.  "
+"Download that and copy it into your install directory and you're all set."
+msgstr ""
+
+msgid "Once you've uploaded the file, click refresh to continue."
+msgstr ""
+
+msgid "Emergency Administrator Password Reset"
+msgstr ""
+
+msgid ""
+"This page can be used by a system administrator to securely reset the password on any "
+"account."
+msgstr ""
+
+msgid "Authorization Confirmed"
+msgstr ""
+
+msgid ""
+"Your authorization has been confirmed.  Please enter your new password below.  After setting "
+"your new password you will be taken to the login page."
+msgstr ""
+
+msgid "Recover Password for Username"
+msgstr ""
+
+msgid "You must enter a username to recover the password for."
+msgstr "Şifrenizi kurtarmak için kullanıcıadı girmelisiniz."
+
+msgid "The username you entered does not exist."
+msgstr "Girmiş olduğunuz kullanıcı adı geçersiz."
+
+msgid "Authorization Incorrect"
+msgstr ""
+
+msgid "Recovery Instructions"
+msgstr ""
+
+msgid "AuthFile Missing"
+msgstr ""
+
+msgid "AuthFile Unreadable"
+msgstr ""
+
+#, c-format
+msgid "Your %s file is not readable. Please give Gallery read permissions on the file."
+msgstr ""
+
+msgid "Refresh"
+msgstr "Yenile"
+
+msgid "This page will allow you to reset the password on your account."
+msgstr ""
+
+#, c-format
+msgid ""
+"There is no request which matches the username and authorization provided. Request a new "
+"authorization from the <a href=\"%s\">lost password page</a>"
+msgstr ""
+
+#, c-format
+msgid ""
+"The request you are trying to access has expired.  Request a new authorization from the <a "
+"href=\"%s\">lost password page</a>."
+msgstr ""
+
+msgid "Authorization missing"
+msgstr ""
+
+msgid "Username missing"
+msgstr "Kullanıcı adı kayıp"
+
+msgid "Submit"
+msgstr "Gönder"
+
+#, c-format
+msgid "Hello %s,"
+msgstr "Merhaba %s,"
+
+#, c-format
+msgid "You receive this email because a password recovery for %s was requested by %s at %s"
+msgstr ""
+
+#, c-format
+msgid "Your username is: %s"
+msgstr "Kullanıcı adınız: %s"
+
+msgid ""
+"To finish the password recovery process please click the following link and enter the "
+"required information:"
+msgstr ""
+
+msgid "If you did not request this recovery email, you may safely ignore it."
+msgstr ""
+
+msgid "Thank you!"
+msgstr "Teşekkürler!"
+
+msgid "guest"
+msgstr "misafir"
+
+#, c-format
+msgid "display mode: %s"
+msgstr "görüntüleme modu: %s"
+
+#, c-format
+msgid "Date: %s"
+msgstr "Tarih: %s"
+
+#, c-format
+msgid "Owner: %s"
+msgstr "Sahibi: %s"
+
+#, c-format
+msgid "Size: %d item"
+msgid_plural "Size: %d items"
+msgstr[0] "Boyut: %d öge"
+msgstr[1] "Boyut: %d öge"
+
+#, c-format
+msgid "(%d item total)"
+msgid_plural "(%d items total)"
+msgstr[0] "(toplam %d öge)"
+msgstr[1] "(toplam %d öge)"
+
+#, c-format
+msgid "Views: %d"
+msgstr "Görüntüleme: %d"
+
+msgid "&laquo; album actions &raquo;"
+msgstr "&laquo; albüm hareketleri &raquo;"
+
+msgid "&laquo; item actions &raquo;"
+msgstr "&laquo; öge hareketleri &raquo;"
+
+msgid "Go"
+msgstr "Git"
+
+msgid "Navigation"
+msgstr "Navigasyon"
+
+msgid "next"
+msgstr "sonraki"
+
+msgid "last"
+msgstr "son"
+
+#, c-format
+msgid "Page %d of %d"
+msgstr "Sayfa %d / %d"
+
+#, c-format
+msgid "%d of %d"
+msgstr "%d / %d"
+
+msgid "first"
+msgstr "ilk"
+
+msgid "previous"
+msgstr "önceki"
+
+msgid "Page:"
+msgstr "Sayfa:"
+
+#, c-format
+msgid "%d. %s"
+msgstr "%d. %s"
+
+msgid "Size: "
+msgstr "Boyut:"
+
+msgid "Full size: "
+msgstr "Tam boyut:"
+
+msgid "Language selector"
+msgstr "Dil seçici"
+
+msgid "Item actions"
+msgstr "Öge hareketleri"
+
+msgid "Use dropdown menu"
+msgstr ""
+
+msgid "Login block"
+msgstr "Giriş bloğu"
+
+msgid "Links to album/photo peers"
+msgstr ""
+
+msgid "Unit test module"
+msgstr ""
+
+msgid "[test] A permission"
+msgstr "[test] İzin"
+
+msgid "[test] A second permission"
+msgstr "[test] İkinci izin"
+
+msgid "Unit test theme"
+msgstr ""

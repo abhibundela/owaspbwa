@@ -1,0 +1,269 @@
+# $Id: sr.po,v 1.7 2006/03/22 04:18:18 mindless Exp $
+#
+# Gallery - a web based photo album viewer and editor
+# Copyright (C) 2000-2006 Bharat Mediratta
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery: Comments 1.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-08-14 16:52+0200\n"
+"PO-Revision-Date: 2005-09-07 17:45+0200\n"
+"Last-Translator: Jozef Selesi <selesi@gmail.com>\n"
+"Language-Team: Srpski <gallery-translations@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.10\n"
+
+msgid "Add Comment"
+msgstr "Dodavanje komentara"
+
+msgid "add comment"
+msgstr "dodaj komentar"
+
+msgid "show comments"
+msgstr "prikaži komentare"
+
+msgid "Comments"
+msgstr "Komentari"
+
+msgid "User commenting system"
+msgstr "Sistem korisničkih komentara"
+
+msgid "Extra Data"
+msgstr "Posebni podaci"
+
+msgid "[comment] Add comments"
+msgstr "[komentar] Dodavanje komentara"
+
+msgid "[comment] Edit comments"
+msgstr "[komentar] Ažuriranje komentara"
+
+msgid "[comment] Delete comments"
+msgstr "[komentar] Brisanje komentara"
+
+msgid "[comment] View comments"
+msgstr "[komentar] Pregled komentara"
+
+msgid "[comment] All access"
+msgstr "[komentar] Sva prava"
+
+#, fuzzy
+msgid "View Latest Comments"
+msgstr "Pregled komentara"
+
+msgid "View Comments"
+msgstr "Pregled komentara"
+
+#, c-format
+msgid "Comments: %d"
+msgstr "Komantara: %d"
+
+#, fuzzy
+msgid "Guest Comments"
+msgstr "Pregled komentara"
+
+msgid "Comment Module"
+msgstr "Modul za komentare"
+
+msgid "Search comments"
+msgstr "Pretraga komentara"
+
+msgid "Subject"
+msgstr "Naslov"
+
+msgid "Comment"
+msgstr "Komentar"
+
+msgid "Commenter"
+msgstr "Komentator"
+
+msgid "Comment Preview"
+msgstr "Pregled pre slanja"
+
+msgid "Posted by"
+msgstr "Postavio"
+
+#, c-format
+msgid "%s (%s)"
+msgstr "%s (%s)"
+
+msgid "(required)"
+msgstr "(obavezno)"
+
+msgid "You must enter a subject!"
+msgstr "Morate uneti naslov!"
+
+msgid "You must enter a comment!"
+msgstr "Morate uneti komantar!"
+
+msgid "Preview"
+msgstr "Prikaži pre slanja"
+
+msgid "Save"
+msgstr "Sačuvaj"
+
+msgid "Cancel"
+msgstr "Otkaži"
+
+msgid "edit"
+msgstr "izmeni"
+
+msgid "delete"
+msgstr "obriši"
+
+msgid "show full"
+msgstr "prikaži u celini"
+
+msgid "show summary"
+msgstr "prikaži sažetak"
+
+#, c-format
+msgid "Posted by %s on %s (%s)"
+msgstr "Postavio %s u %s (%s)"
+
+#, c-format
+msgid "Posted by %s on %s"
+msgstr "Postavio %s u %s"
+
+msgid "Comment change confirmation"
+msgstr "Potvrda izmene komentara"
+
+msgid "Comment added successfully"
+msgstr "Komentar uspešno dodat"
+
+msgid "Comment deleted successfully"
+msgstr "Komentar uspešno obrisan"
+
+msgid "Comment modified successfully"
+msgstr "Komentar uspešno izmenjen"
+
+#, fuzzy
+msgid "Comments Settings"
+msgstr "Komentari"
+
+#, fuzzy
+msgid "Settings saved successfully"
+msgstr "Komentar uspešno dodat"
+
+msgid "Show link for Latest Comments:"
+msgstr ""
+
+msgid "Number of comments on Latest Comments page:"
+msgstr ""
+
+msgid "Invalid value"
+msgstr ""
+
+msgid "Reset"
+msgstr ""
+
+msgid "Delete this comment?"
+msgstr "Brisanje ovog komentara?"
+
+msgid "Are you sure?"
+msgstr "Da li ste sigurni?"
+
+msgid "Delete this comment?  There is no undo!"
+msgstr "Brisanje ovog komentara? Ne može se poništiti!"
+
+msgid "Delete"
+msgstr "Briši"
+
+msgid "Edit comment"
+msgstr "Izmena komentara"
+
+msgid "You must enter a username."
+msgstr "Morate uneti korisničko ime."
+
+msgid "The username you entered is invalid."
+msgstr "Korisničko ime koje ste uneli je neispravno."
+
+msgid "Host"
+msgstr "Računar"
+
+msgid "Date"
+msgstr "Datum"
+
+msgid "The date you entered is invalid."
+msgstr "Datum koji ste uneli je neispravan."
+
+msgid "You must enter a date"
+msgstr "Morate uneti datum"
+
+msgid "You must enter a subject"
+msgstr "Morate uneti naslov"
+
+msgid "You must enter a comment"
+msgstr "Morate uneti komentar"
+
+#, fuzzy
+msgid "Latest Comments"
+msgstr "Pregled komentara"
+
+msgid "Comment changed successfully"
+msgstr "Komentar uspešno izmenjen"
+
+msgid "There are no comments for this item"
+msgstr "Nema komentara u vezi sa ovim objektom"
+
+msgid "Recent comments"
+msgstr "Nedavno postavljeni komentari"
+
+#, c-format
+msgid "(view all %d comments)"
+msgstr "(pregled svih %d komentara)"
+
+msgid "Show comments"
+msgstr "Prikaži komentare"
+
+msgid "Number of comments"
+msgstr "Broj komentara"
+
+msgid "1"
+msgstr "1"
+
+msgid "2"
+msgstr "2"
+
+msgid "3"
+msgstr "3"
+
+msgid "4"
+msgstr "4"
+
+msgid "5"
+msgstr "5"
+
+msgid "10"
+msgstr "10"
+
+msgid "20"
+msgstr "20"
+
+msgid "30"
+msgstr "30"
+
+msgid "50"
+msgstr "50"
+
+msgid "100"
+msgstr "100"
+
+msgid "999"
+msgstr "999"

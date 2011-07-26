@@ -1,0 +1,97 @@
+# $Id: ja.po,v 1.6 2006/03/22 04:18:48 mindless Exp $
+#
+# Gallery - a web based photo album viewer and editor
+# Copyright (C) 2000-2006 Bharat Mediratta
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery: Debugging 1.0.3\n"
+"POT-Creation-Date: 2003-09-20 19:32+0900\n"
+"PO-Revision-Date: 2005-11-03 20:10+0900\n"
+"Last-Translator: Kennichi Uehara <ken.w3m+nospam@gmail.com>\n"
+"Language-Team: Japanese <gallery-devel@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Gallery Debug"
+msgstr "Gallery デバッグ"
+
+msgid "Debugging"
+msgstr "デバッグ"
+
+msgid "Debugging and Developer Tools"
+msgstr "デバッグと開発者向けツール"
+
+msgid "Gallery"
+msgstr "Gallery"
+
+msgid "Show Debug Tree"
+msgstr "デバッグ ツリーを表示"
+
+msgid "Debug Tree"
+msgstr "デバッグ ツリー"
+
+#, c-format
+msgid "%d: (%s)"
+msgstr "%d: (%s)"
+
+msgid "[browse]"
+msgstr "[ブラウズ]"
+
+#~ msgid "(%s)"
+#~ msgstr "(%s)"
+
+#~ msgid "(%s::%s)"
+#~ msgstr "(%s::%s)"
+
+#~ msgid "Error (%s)"
+#~ msgstr "エラー (%s)"
+
+#~ msgid "Error (%s): %s"
+#~ msgstr "エラー (%s): %s"
+
+#~ msgid "Gallery Debug File Viewer"
+#~ msgstr "Gallery デバッグ　ファイルビューワ"
+
+#~ msgid "Source code for file: %s"
+#~ msgstr "ファイルのソースコード: %s"
+
+#~ msgid "at line"
+#~ msgstr "ライン"
+
+#~ msgid "in file"
+#~ msgstr "ファイル"
+
+#~ msgid "show debug tree"
+#~ msgstr "デバッグツリーを表示"
+
+#~ msgid "Debug Settings"
+#~ msgstr "デバッグ設定"
+
+#~ msgid "No available settings for the Debug module."
+#~ msgstr "現在デバッグモジュールの設定項目はありません。"
+
+#, fuzzy
+#~ msgid "Debugging Options"
+#~ msgstr "デバッグ設定"
+
+#~ msgid "Filter members-names with regexp:"
+#~ msgstr "正規表現でメンバー名をフィルタ:"
+
+#~ msgid "Filter"
+#~ msgstr "フィルタ"
