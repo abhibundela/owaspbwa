@@ -32,7 +32,7 @@ Realistic, Intentionally Vulnerable Applications:
   * [http://owaspbwa/tikiwiki TikiWiki] version 1.9.5 (PHP, released September 5, 2006)
   * [http://awstats.sourceforge.net/ AWStats] version 6.4 (build 1.814, Perl, released February 25,2005)
   * [http://www.orangehrm.com/ OrangeHRM] version 2.4.2 (PHP, released May 7, 2009)
-  * [http://www.gtd-php/.com gtd-php] version 0.7 (PHP, released September 30, 2006)
+  * [http://www.gtd-php.com/ gtd-php] version 0.7 (PHP, released September 30, 2006)
   * [http://gallery.menalto.com/ Gallery2] version 2.1 (PHP, released March 23, 2006)
   * [http://www.joomla.org/ Joomla] version 1.5.15 (PHP, released November 4, 2009)
 
