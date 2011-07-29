@@ -16,7 +16,7 @@ This project includes applications from various sources (listed in no particular
   * [http://www.gh0s7.net/ Ghost] (PHP)
   * [http://code.google.com/p/zaproxy/ ZAP-WAVE] (Java JSP)
   
-Realistic, Intentionally Vulnerable Applications:
+==Realistic, Intentionally Vulnerable Applications:==
   * [http://www.owasp.org/index.php/Category:OWASP_Vicnum_Project OWASP Vicnum] version 1.4 (PHP/Perl)
   * [http://peruggia.sourceforge.net/ Peruggia] version 1.2 (PHP)
   * [http://google-gruyere.appspot.com/ Google Gruyere] version 2010-07-15 (Python)
