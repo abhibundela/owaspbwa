@@ -5,26 +5,33 @@
 This will be the user guide for the OWASP BWA VM.
 
 
-= Details =
+= Getting Started =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+The VM is distributed in VMware format.  Will work in their free products.
 
-= Enabling and Disabling ModSecurity
+= Updating application code =
 
-(to be completed)
+Software for many applications can be updated in place by editing the files (.php, .jsp, .aspx, etc). 
 
-= Rebuilding WebGoat (Java) = 
+== Rebuilding !WebGoat (Java) == 
 
 (to be completed)
 
-= Rebuilding WebGoat.net = 
+== Rebuilding! WebGoat.net == 
 
 (to be completed - doesn't seem possible yet.)
 
+= Enabling and Disabling !ModSecurity
+
+(to be completed)
+
+
+
 = Advanced Topics =
+
+== Converting VM for other software ==
+
+(to be completed)
 
 == Updating components from repositories =
 
