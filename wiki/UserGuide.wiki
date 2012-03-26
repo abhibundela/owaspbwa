@@ -17,7 +17,7 @@ Software for many applications can be updated in place by editing the files (.ph
 
 (to be completed)
 
-== Rebuilding! WebGoat.net == 
+== Rebuilding !WebGoat.net == 
 
 (to be completed - doesn't seem possible yet.)
 
