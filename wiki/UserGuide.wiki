@@ -1,0 +1,41 @@
+#summary User Guide for the OWASP BWA VM.
+
+= Introduction =
+
+This will be the user guide for the OWASP BWA VM.
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
+
+= Enabling and Disabling ModSecurity
+
+(to be completed)
+
+= Rebuilding WebGoat (Java) = 
+
+(to be completed)
+
+= Rebuilding WebGoat.net = 
+
+(to be completed - doesn't seem possible yet.)
+
+= Advanced Topics =
+
+== Updating components from repositories =
+
+Various components on the OWASP BWA VM can be updated from their public repositories.  Any such updates carry a risk of breaking the respective application, but have potential to provide additional features without having to wait for the next release of the OWASP BWA VM.
+
+=== OWASP BWA Specific Content ===
+
+Code and files that are not available in any other public repositories are stored in the SVN repository for OWASP BWA at Google Code.  That can be updated by running:
+
+owaspbwa-svn-update.sh
+
+=== Other components ===
+
+(to be completed)
