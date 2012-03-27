@@ -15,7 +15,7 @@ This will be the user guide for the OWASP BWA VM.
 
 The OWASP BWA VM is distributed in VMware virtual machine and virtual disk format.  It has been specifically configured to work with their no cost (Player and X) and older products (in addition to their newer, commercial offerings).
 
-See [Converting_Virtual_Machine_Format] if you want to use the VM with other virtualization software.
+See [#Converting_Virtual_Machine_Format] if you want to use the VM with other virtualization software.
 
 
 = Updating application code =
