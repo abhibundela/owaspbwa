@@ -1,21 +1,21 @@
-# Only set these if PHP 5 is loaded as an apache module
-<IfModule mod_php5.c>
-php_flag magic_quotes_gpc Off
-#php_flag allow_url_fopen on
-#php_flag allow_url_include on
-</IfModule>
+#ErrorDocument 403 "By default, Mutillidae only allows access from localhost (127.*.*.*). Edit the .htaccess file to change this behavior (not recommended on a public network)."
+#Order Deny,Allow
+#Deny from all
 
-# Only set these if PHP 4 is loaded as an apache module
-<IfModule mod_php4.c>
-php_flag magic_quotes_gpc Off
-#php_flag allow_url_fopen on
-#php_flag allow_url_include on
-</IfModule>
+## This allows access from localhost
+#Allow from 127.
+#Allow from localhost
 
-# limit access to local area network
-#<Limit GET POST PUT>
-# order deny,allow
-# deny from all
-# allow from 127.0.0.1
-#</Limit>
+## This is to allow access from other machines on Virtual Box host-only networks.
+#Allow from 192.168.0.0/16
 
+## The following section disables PHP magic quoting feature.
+## Turning these on will cause issues with Mutillidae.
+## Note: Turning these on should NEVER be relied on as a method for securing against injection attemps. 
+## As of PHP 6 these options will be removed for exactley that reason.
+
+## Donated by Kenny Kurtz
+
+php_flag magic_quotes_gpc off
+php_flag magic_quotes_sybase off
+php_flag magic_quotes_runtime off

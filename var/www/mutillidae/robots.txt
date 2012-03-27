@@ -1,3 +1,7 @@
 User-agent: *
 Disallow: ./passwords/
 Disallow: ./config.inc
+Disallow: ./classes/
+Disallow: ./javascript/
+Disallow: ./owasp-esapi-php/
+Disallow: ./documentation/

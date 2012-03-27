@@ -1,0 +1,1004 @@
+<p><b>03/08/2012</b>: Jeremy Druin</p>
+<blockquote>
+	<p>Change Log for Mutillidae 2.1.17:</p>
+	<ul>
+		<li>
+			Added new menu items for DOM injection and Cookie injection.
+		</li>
+		<li>Added a delete captured data button to the captured data page</li>
+		<li>
+			Added new sub-menus to the cross site scripting menu for persistent
+			and reflected cross site scripting. The pages to which the links point
+			are existing pages but the new menus will help new users locate targets
+			for these types of cross site scripting.
+		</li>
+		<li>Added large number of proven scripts to the Mutillidae-Test-Scripts.txt file</li>
+		<li>Added link on View Blog Entries back to Add to Your Blog</li>
+		<li>Added link on Add Blog Entries back to View Blogs</li>
+		<li>Fixed typo on HTML 5 storage page</li>
+		<li>Added delete buttons to the HTML 5 web storage page to help testing</li>
+	</ul>
+</blockquote>
+
+<p><b>03/01/2012</b>: Jeremy Druin</p>
+<blockquote>
+	<p>Change Log for Mutillidae 2.1.16:</p>
+	<ul>
+		<li>
+			Additional hints added to HTML5 Web Storage page to overwrite 
+			current web storage
+		</li>
+		<li>
+			Additional hints added to HTML5 Web Storage page concerning reading
+			current web storage. Added code examples for document.write and
+			using Firebug command line.
+		</li>
+		<li>
+			Added several new items to the Easter Egg file Mutillidae-Test-Scripts.txt
+		</li>
+		<li>
+			New vulnerability added. The HTML5 Storage page now has cross site
+			scripting via DOM injection. The "storage key" field is vulnerable.
+		</li>
+		<li>Added hints about DOM injection to the HTML5 Storage page.</li>
+		<li>Added hints to the capture-data.php page about cross site scripting</li>
+		<li>Updated the vulnerabilities listing</li>
+	</ul>
+</blockquote>
+
+<p><b>02/11/2012</b>: Jeremy Druin</p>
+<blockquote>
+	<p>Change Log for Mutillidae 2.1.15:</p>
+	<ul>
+		<li>
+			Upgraded the "JavaScript Validation" for the dns-lookup.php page. The 
+			JavaScript validation is only activated in security level 1. The new
+			validation checks for cross-site scripting characters in addition to
+			OS command injection characters.
+			
+			The validations are trivial to defeat by disabling JS in the browser 
+			or using an interception proxy to bypass the validation.
+		</li>
+		<li>
+			In security level 1, on page add-to-your-blog.php the CSRF token
+			is now generated. The token is predictable although perhaps not
+			obvious. The intention is for students to use Burp-Suite 
+			sequencer to discover the pattern and inject the next token in
+			the sequence (or to subtract each token from the last token).
+		</li>
+		<li>
+			The CSRF token generator for the add-to-your-blog.php page is 
+			now using the OWASP Randomizer to generate random tokens
+			in security level 5. The previous generator used mt_random()
+			which was not really random.
+			
+			These new tokens have an entropy of around 132 bits.
+		</li>
+	</ul>
+</blockquote>
+
+<p><b>01/30/2012</b>: Jeremy Druin</p>
+<blockquote>
+	<p>Change Log for Mutillidae 2.1.14:</p>
+	<ul>
+		<li>
+			Made menu smaller width. Menu is 10% of screen now. This should
+			help when using mutillidae on a classroom projector showing at 
+			1024 x 768.
+		</li>
+		<li>Made Banner 2.5% less tall. Gotta make some room people.</li>
+		<li>Fixed formatting bug in dns-lookup.php that made hints look funny</li>
+		<li>
+			Added lots of new advanced examples to the Easter Egg file called Mutillidae-Test-Scripts.txt.
+			The file is located in the documentation folder.
+		</li>
+		<li>
+			Password Generator (password-generator.php): Fixed bug by removing brackets
+			from possible characters that will be used to make password.
+		</li>
+		<li>
+			Added new field to accounts: Boolean is_admin. 
+		</li>
+		<li>
+			Added concept of administrative users and regular users
+		</li>
+		<li>
+			Added new vulnerability. There are secret pages that can be brute forced using
+			a brute forcing tool like DirBuster or Burp-Intruder. Using Burp-Intruder
+			try cycling through the "page" parameter with common names for secret pages.
+			For example, try secret.php.
+		</li>
+		<li>Fixed typo on page not found page</li>
+		<li>Created authorization required page</li>
+		<li>Added "Secret" Administrative Pages to menu under A8 - Failure to Restrict URL Access</li>
+		<li>Made menu item for Robots.txt more obvious</li>
+		<li>Fixed typo on vulnerabilties documentation</li>
+		<li>"Logged in user" now says "logged in admin" if the logged in user is an admin
+		<li>Updated accounts created as targets</li>
+		<li>Improved output formatting on phpinfo.php page</li>
+		<li>
+			Altered phpinfo.php so that admins can see page in any level but regular users
+			can only see page in security levels 0 and 1.
+		</li>
+	</ul>
+</blockquote>
+
+<p><b>01/10/2012</b>: Jeremy Druin</p>
+<blockquote>
+	<p>Change Log for Mutillidae 2.1.13:</p>
+	<ul>
+		<li>Added Mutillidae YouTube channel link to menu</li>
+		<li>Fixed some menu links so they open in new window</li>
+		<li>
+			Added a hint to the framer.php page telling the user to try to
+			change the security level.
+		</li>
+		<li>
+			Added a new page called anti-framing-protection.inc. The page
+			shows developers how to implement old-style javascript frame busting code.
+			This isn''t used for new browsers because x-frame-options has supplanted the
+			frame busting code, but there are still many old browsers running
+			in kiosks and such.
+		</li>
+		<li>Added more documentation in the Easter Egg file Mutillidae test scripts</li>
+		<li>Added Kevin Johnson as honorary default user</li>
+		<li>Added more values to default database to make SQL injection more interesting</li>
+		<li>Reduced the size of the header thickness to make more room</li>
+		<li>Greatly improved SQL Injection tutorial or at least typed a lot more stuff</li>
+		<li>
+			Upgraded the Easter Egg file with more tips and tricks; mainly on
+			SQL injection
+		</li>
+	</ul>
+</blockquote>
+
+<p><b>01/09/2012</b>: Jeremy Druin</p>
+<blockquote>
+	<p>Change Log for Mutillidae 2.1.12:</p>
+	<ul>
+		<li>
+			Changed sort order for captured-data.php to descending by date so last capture 
+			floats to top
+		</li>
+		<li>Added a refresh button to the captured-data.php page</li>
+		<li>Added all the latest pen-testing scripts to the easter egg file Mutillidae-Test-Scripts.txt</li>
+		<li>Improved the hints on the HTML5 Storage page</li>
+		<li>Oops. Fixed bug in HTML5 storage PHP page.</li>
+		<li>Upgraded code in process-login-attempt.php pointed out by Josep Duran</li>
+		<li>
+			Fixed a bug on add-to-your-blog.php in the CSRF code which would not allow a
+			new blog to be saved. Bug found by by Josep Duran.
+		</li>
+		<li>Made the table output on add-to-your-blog.php look nicer.</li>
+		<li>Got rid of unneeded commented out code on set-background-color.php</li>
+		<li>Improved output readability on dns-lookup.php</li>
+		<li>Improved output readability on set-background-color.php</li>
+	</ul>
+</blockquote>
+
+<p><b>12/27/2011</b>: Jeremy Druin</p>
+<blockquote>
+	<p>Change Log for Mutillidae 2.1.11:</p>
+	<ul>
+		<li>
+			Added more tools to pen-test-tool-lookup.php.
+		</li>
+		<li>
+			Added lots of HTML5 attacks to the easter egg file Mutillidae-Test-Scripts.txt
+		</li>
+		<li>
+			Added new page capture.php which captures any information sent to the page
+			in GET or POST parameters and saves them to a database table. Can be used
+			to capture cookies, session storage, local storage, or other data. The page is 
+			designed to reflect the capture cookie page used in the SANS 542 Web Application
+			Pen Testing course currently taught by Kevin Johnson of SecureIdeas.
+			
+			This page is designed to capture any parameters sent and store them in a file 
+			and a database table. It loops through the POST and GET parameters and records 
+			them to a file named captured-data.txt. On Windows system, the file should be 
+			found at C:/xampp/htdocs/mutillidae/captured-data.txt. The page also tries to 
+			store the captured data in a database table named captured_data. There is 
+			another page named captured-data.php that attempts to list the contents of 
+			this table.
+		</li>
+		<li>
+			Added new page captured-data.php which displays data captured by page
+			capture.php. In true Mutillidae fashion, this page is as vulnerable as
+			all the others. Try hacking the hacker by sending SQL injections and XSS
+			to the capture.php.
+		</li>
+		<li>
+			Changed includes for database configuration to require_once so that
+			some pages can stand alone or work with index.php
+		</li>
+		<li>Added a new table to the database called captured_data</li>
+		<li>Added better comments to index.php</li>
+		<li>Added data capture pages to menu under "Other"</li>
+		<li>
+			Added detailed tutorials to the HTML5 storage page and the pen-test-tools.php
+			page showing how to pen-test and exploit HTML5 storage and perform JSON
+			injections. To see the new hints sections browse to the pages and click
+			the hints button. The hints show at the bottom of the page.
+			The HINTS button is on the menu at the top of the screen.
+		</li>
+	</ul>
+</blockquote>
+
+<p><b>12/17/2011</b>: Jeremy Druin</p>
+<blockquote>
+	<p>Change Log for Mutillidae 2.1.10:</p>
+	<ul>
+		<li>
+			Added menu item for the BACK buttons that are on all the pages. They are
+			injectable to cause XSS. The menu item is located under OWASP Top 10 --&gt;
+			A2 - Cross Site Scripting (XSS) --&gt; Via HTTP Headers --&gt; Those BACK Buttons.
+			Any page will do. I just picked one at random.
+		</li>
+		<li>
+			Corrected some errors in the HTML5 storage hints. You have to enable HINTS level 1
+			to see the hints. The HINTS button is on the menu at the top of the screen.
+		</li>
+		<li>
+			Renamed setupreset.php to set-up-database.php
+		</li>
+		<li>Fixed a nasty bug in view someones blog where the dropdown was missing names of bloggers</li>
+		<li>Fixed a minor formatting bug in html5-storage.php</li>
+		<li>Adjusted the graphics on the home page</li>
+		<li>
+			Added a new page pen-test-tool-lookup.php. This page is vulnerable to JSON injection.
+			A large tutorial was added as well showing how to perform JavaScript XSS injection
+			into the JSON data so that the XSS executes.
+			To see the tutorial, click the HINTS button. As an exercise, the user is encouraged
+			to perform a JSON string injection and an HTML injection after learning how to
+			perform the XSS injection. The JSON has been carefully designed to make it relatively
+			easier to get the JSON injection to work. JSON injection can be somewhat tricky 
+			if a user has not tried it before and/or does not use JSON in web applications.
+			The HINTS button is on the menu at the top of the screen.
+			The page is also vulnerable to SQL injection, HTML injection, 
+			and JSON string injection in addition to XSS.
+		</li>
+		<li>
+			The next step will be to add defenses to pen-test-tool-lookup.php. There will
+			be a level 1 defense and a level 5 defense. The level 1 will just be
+			JavaScript validation. Level 5 defense will be more robust and
+			hopefully difficult to defeat. This will be release 2.1.11 or later.
+		</li>
+	</ul>
+</blockquote>
+
+<p><b>12/16/2011</b>: Jeremy Druin</p>
+<blockquote>
+	<p>Change Log for Mutillidae 2.1.9:</p>
+	<ul>
+		<li>
+			Added a large cross site request forgery tutorial. To access the tutorial, the HINTS
+			have to be on level 2.
+		</li>
+		<li>
+			Adding better formatting to the Cross Site Scripting Tutorial
+		</li>
+		<li>
+			Updated the menu to point the user to two pages which are vulnerale to CSRF
+		</li>
+	</ul>
+</blockquote>
+
+<p><b>12/15/2011</b>: Jeremy Druin</p>
+<blockquote>
+	<p>Change Log for Mutillidae 2.1.8:</p>
+	<ul>
+		<li>
+			Bug fix: The links on the front home page were absolute instead of
+			relative. This was not an issue in XAMPP installations but caused
+			an issue when installed on Samurai because Samurai uses
+			http://mutillidae as Mutillidae's URL while XAMPP just uses
+			http://localhost. The links should have been relative anyway.
+		</li>
+	</ul>
+</blockquote>
+
+<p><b>11/26/2011</b>: Jeremy Druin</p>
+<blockquote>
+	<p>Change Log for Mutillidae 2.1.7:</p>
+	<ul>
+		<li>
+			Added a new page for HTML5 storage. The page is meant to show how to both use 
+			and attack HTML5 storage. The page supports Local and Session storage types.
+			The user can attack the storage in two contexts. They can act as if they want 
+			to read to contents of their own browsers session storage to see if the 
+			developer put authorization tokens or other items into the storage.
+			They can also try to use XSS to steal the session storage. In this use-case
+			the user would be acting as if they wanted to read someone elses storage.
+			A large number of hints has been added to the page. The page name is 
+			"html5-storage.php" and can be accessed from the Cross Site Scripting menu
+			and information leakage menu. In security level zero, the page has no defenses.
+			In level 1, the page will use trivial JavaScript validation. In security level 5,
+			the page will refuse to put the secrets in client side storage.
+		</li>
+	</ul>
+</blockquote>
+
+<p><b>11/13/2011</b>: Jeremy Druin / Kenny Kurtz</p>
+<blockquote>
+	<p>Change Log for Mutillidae 2.1.6:</p>
+	<ul>
+		<li>
+			Enhanced the .htaccess file to automatically disable magic quotes on systems 
+			which enable them by default (such as some OSX versions of PHP)
+		</li>
+		<li>
+			Fixed some bugs in the phpinfo.php file that made the page display weird.
+		</li>
+		<li>
+			Enhanced the hidden PHPINFO page so that it would work if the user
+			browsed to http://localhost/mutillidae/index.php?page=phpinfo.php
+			or to http://localhost/mutillidae/phpinfo.php. This example assumes
+			Mutillidae is running on localhost.
+		</li>
+		<li>
+			Fixed a bug in index.php that kept the log-visit page from being included.
+		</li>
+		<li>
+			Fixed a bug in log-visit.php that kept the page from working.
+		</li>
+		<li>
+			Fixed installation instructions format for IE 8 not in compatibility mode.
+		</li> 
+	</ul>
+</blockquote>
+
+<p><b>11/10/2011</b>: Jeremy Druin</p>
+<blockquote>
+	<p>Change Log for Mutillidae 2.1.5:</p>
+	<ul>
+		<li>Added vuln to login sequence. Now a cookie is created with username. Students should try to XSS 
+		the cookie and see what happens. Also try a response splitting attack because a cookie is an HTTP 
+		header.
+		</li>
+		<li>Created new twitter feed to make Mutillidae announcements
+		 and other web vulnerability tweaks. @webpwnized
+		</li>
+		<li>
+			Fixed installation instructions format for IE 8 not in compatibility mode
+		</li> 
+	</ul>
+</blockquote>
+
+<p><b>10/14/2011</b>: Jeremy Druin</p>
+<blockquote>
+	<p>Change Log for Mutillidae 2.1.4:</p>
+	<ul>
+		<li>Moved usage instructions and php errors from the home page to their own pages.</li>
+		<li>In insecure mode, changed the method of the user-info.php page to GET in order to make it easier
+			to use sqlmap against Mutillidae. sqlmap supports POST but it is easier to use with
+			GET.
+		</li>
+		<li>Added hints about sqlmap to sql injection tutorial and to the easter egg file</li>
+		<li>Added a credit card table as a target in the database</li>
+		<li>Confirmed that the view-blog table can be attacked with sqlmap. The answer is in the Easter Egg file.</li>
+		<li>Updated the SQL injection tutorial file</li>
+	</ul>
+</blockquote>
+
+<p><b>10/13/2011</b>: Jeremy Druin</p>
+<blockquote>
+	<p>Change Log for Mutillidae 2.1.3:</p>
+	<ul>
+		<li>
+			Fix a bug. If the user was on the home page, without having clicked any
+			link to this point (such as when using a bookmark), then the user clicked the 
+			"change security level", the page would redirect to page not found.
+		</li>
+		<li>Increased the slide time for the ddsmoothmenu to make it slow down a little bit</li>
+		<li>Added a NEW vulnerability. Many sites have crazy pages that show server settings, expose
+			admin functionality, allow configuration, or other features a user should not be able to 
+			see. The problem is not the pages themselves so much as the fact that developers think
+			no one will guess the name and browse to them. Shoulder surfing, guessing, brute-forcing, etc
+			can be used to find these pages. Mutillidae now has such a page. It is in the 
+			"Server Misconfiguration" category. See secret-administrative-pages.php for hints.
+		</li>
+		<li>Augmented the installation instructions</li>
+		<li>Added link to ihackcharities to front page</li>
+	</ul>
+</blockquote>
+
+<p><b>09/25/2011</b>: Jeremy Druin</p>
+<blockquote>
+	<p>Change Log for Mutillidae 2.1.2:</p>
+	<ul>
+		<li>
+			Added a new security level. Now there is security level 1. The only difference
+			in this release between level 0 and level 1 is that level 1 has JS validation.
+			The JS validation has been in place for a while to allow but was activated in
+			level 0. Since level 0 is supposed to be very easy, the decision was made
+			to create level 1 and move JS validation to level 1. The JS validation is
+			trivial to bypass. Simply disable JS or use a proxy such as Tamper Data,
+			Paros, Burp, WebScarab, or others.
+		</li>
+		<li>Page homenotes.php has been merged with home.php.</li>
+		<li>Page home.html has been renamed home.php</li>
+		<li>Added protection for SQL injection to add to your blog.php output of the 
+			current users blog entries. Prior to this patch, you could SQL inject 
+			in security level 5 by putting your injection in the current users
+			login name because the query uses the current users login name as the input
+			to the query.
+		</li>
+		<li>Improved the DNS lookup page to add JS validation in security level 1 mode.</li>
+		<li>Changed padding for BACK button to use styles rather than HTML BR tags.</li>
+		<li>Changed the password generator password length to 15 to set a better
+			example.</li>
+		<li>Some refactoring on user-info.php and login.php to clean up code</li>
+	</ul>
+</blockquote>
+
+<p><b>09/16/2011</b>: Jeremy Druin</p>
+<blockquote>
+	<p>Change Log for Mutillidae 2.1.1:</p>
+	<ul>
+		<li>
+			Added CSRF Protection to page add to your blog. This only works in secure
+			mode.
+		</li>
+		<li>Added more scripts to the easter egg file (Mutillidae Test Scripts)</li>
+		<li>Bug fix: The setupandreset.php errors were not printing out.</li>
+		<li>Stupid bug fix: Removed the "open DB" that was firing before the database was actually created.</li>
+		<li>Created output on page setupandreset.php to show what happened</li>
+		<li>Added try/catch and more error handling to setupandreset.php</li>
+	</ul>
+</blockquote>
+
+<p><b>08/31/2011</b>: Jeremy Druin</p>
+
+<blockquote>
+	<p>Change Log for Mutillidae 2.1.0:</p>
+	<ul>
+		<li>
+			Fixed error on page add to your blog. Input user was not escaped or encoded in secure mode.
+		</li>
+		<li>
+			Major change. The MYSQL connection has been changed from procedure mysql_ functions to using
+			object oriented instances from the class mysqli. mysqli became available in PHP 5.3.0
+			and is brand new to Mutillidae. There is a high chance of error. Please let me
+			know if there are bugs found. This new class gives us many new abilities
+			including the ability to call stored procedures without using concatenation. This 
+			change affects the entire project and changes the capabilities of the project
+			which is why the minor version was updated.
+			
+			All of the database code has been ripped out and replaced from the ground up. Next will
+			be to add stored procedures and views to the database. When SQL injection is done on
+			meta data, there will be many more targets. Users will be able to steal the source code
+			from views and procs during pen tests along with dumping tables.
+		</li>
+		<li>Added row number to output on add to your blog</li>
+		<li>Added logging for successful and failed login attempts.</li>
+		<li>Fixed bug in closing bold tag tokenizer on add to your blog</li>
+		<li>
+			Updated page arbitrary-file-inclusion.php. 
+			Now you can practice making arbitrary system files load. The fun never ends.
+		</li>
+		<li>
+			Added SQL injection defenses to closedb.inc. This may not make much sense unless
+		you know that closedb.inc logs to the hitlog table. Part of what it logs is user agent
+		and referer which are controls by the user.
+		</li>
+		<li>Create new page log-visit.php which logs each request to the server. This page
+		could be used to poison the log with XSS or SQL inject the database.
+		</li>
+		<li>Fix bug on dns-lookup.php that allowed the log to be injected even in secure mode.</li>
+		<li>Add new page vulnerabilities.php that document the vulnearbilities on each page to help
+		users know what to try</li>
+		<li>Renamed home.htm to home.html for compliance with convention</li>
+		<li>Reconfigured index.php to open database as late as possible</li>
+		<li>Refactored opendb.inc to use standard error handling like rest of site. Page
+		size is much smaller as a result</li>
+		<li>Added a new XSS vulnerability to page user-info.php. This can be exploited by inputing scripts
+		into the username field.</li>
+		<li>Added row count output to the show-log.php page</li>
+		<li>Fixed back button so it doesnt span entire width of the page</li>
+		<li>Added error output to page register.php. In insecure mode, the user can get a lot
+		of information about the insert. In secure mode, we keep that to ourselves.</li>				 
+	</ul>
+</blockquote>
+
+<p><b>08/19/2011</b>: Jeremy Druin</p>
+
+<blockquote>
+	<p>Change Log for Mutillidae 2.0.13:</p>
+	<ul>
+		<li>
+			Added a new page called password-generator that allowed the user to practice HTML injection,
+			cross site scripting, and JavaScript injection. The page is primarily intended
+			to practice the JS injection in as easy a way as possible.
+		</li>
+	</ul>
+</blockquote>
+
+<p><b>07/24/2011</b>: Jeremy Druin</p>
+
+<blockquote>
+	<p>Change Log for Mutillidae 2.0.12:</p>
+	<ul>
+		<li>
+			Changed the label of the link to "Cross Site Framing" to "Click-Jacking"			
+		</li>
+		<li>
+			Created a new page to frame the Mutillidae site so we can practice
+			Cross-Site Framing. Added a menu item under 
+			Other --&gt; Information Leakage --&gt; Cross-Site Framing.
+			In secure mode, Mutillidae does not allow itself to be framed by
+			third party sites. Enjoy.
+		</li>
+		<li>
+			Created a new menu path for "Missing HTTPOnly Attribute" because
+			it doesn't really fit directly into a XSS exploit. It is a 
+			misconfiguration that leads to an exploit.
+		<li>
+			Created a new page to talk about the site footer displaying the
+			user agent string. The new page includes hints.
+		</li>
+		<li>Refactored footer.php to remove database closing code. This code is in index.php now.</li>
+		<li>
+		Added new vulnerability for remote file inclusion. 
+		Access via "A4 - Insecure Direct Object References" --&gt; "Arbitrary File Incusion".
+		Enjoy!
+		</li>
+	</ul>
+</blockquote>
+
+<p><b>07/17/2011</b>: Jeremy Druin</p>
+
+<blockquote>
+	<p>Change Log for Mutillidae 2.0.11:</p>
+	<ul>
+		<li>
+			Oops! Fixed a bug in the secure code which (ironically) did not 
+			stop the command injection as long as the attacker chained the attack
+			with a validly formed IPV4 address. I forgot to put the starts-with
+			and ends-with symbols on the RegEx.
+		</li>
+		<li>
+			Added IPV6 pattern as a valid pattern on page dns-lookup.php. The 
+			page will accept IPV6, IPV4, or Domain Name.
+		</li>
+		<li>Made some cosmetic improvements to the dns-lookup.php page</li>
+		<li>
+			Added a whole new batch of fun. Mutillidae now supports (and defends)
+			against Cascading Style Injection. Enjoy.
+		</li>
+	</ul>
+</blockquote>
+
+<p><b>07/09/2011</b>: Jeremy Druin</p>
+
+<blockquote>
+	<p>Change Log for Mutillidae 2.0.10:</p>
+	<ul>
+		<li>Added new vulnerability HTTP Parameter Pollution on page user-poll.php</li>
+		<li>
+			Added defense for JavaScript injection in the "Back" buttons.
+			In secure mode, Mutillidae will encode the HTTP Referer header using
+			JavaScript encoding
+		</li>
+	</ul>
+</blockquote>
+
+<p><b>06/21/2011</b>: Jeremy Druin</p>
+
+<blockquote>
+	<p>Change Log for Mutillidae 2.0.9.1:</p>
+	<ul>
+		<li>Added new menu items under SQLi for SQLi Insert Injection</li>
+		<li>Added new menu item for documentation</li>
+		<li>Moved constants into constants.php file</li>
+		<li>Patched tabbing in home.htm</li>
+		<li>Added additional instructions on supressing PHP errors with XamppLite. Thanks to Miguel 
+		Wherner for the tip.</li>
+		<li>Added more hints to command injection page</li>
+		<li>Updated the Easter egg file</li>
+		<li>Added "Bookmark This Site" button to the resources tab in the menu</li>
+		<li>Added lots more default users</li>
+		<li>
+			Added a stored procedure for users to attempt to extract the source
+			code using SQL injection
+		</li>
+		<li>Added a stored procedure to support logins so we can start
+		to put real security into this thing.</li>
+		<li>Added new article "How to Access Mutillidae over Virtual Box Host Only Network"</li>
+		<li>Introduced a new vulnerability: JavaScript Injection</li>		
+	</ul>
+</blockquote>
+
+<p><b>06/15/2011</b>: Jeremy Druin</p>
+
+<blockquote>
+	<p>Change Log for Mutillidae 2.0.8:</p>
+	<ul>
+		<li>
+			Added more comments to the code to explain how defenses work</li>
+		<li>
+		Added support for the &lt;u&gt;&lt;/u&gt; tag to the blog. In secure mode Mutillidae will allow this tag
+		but still safely encode output and stop XSS.</li>
+		<li>
+		Added JavaScript filtering to prevent single quotes from being entered in blog entries. This give practice 
+		bypassing JavaScript "security" and helps the user understand JavaScript cannot provide security.
+		</li>
+		<li>
+			Added lots of JS filtering to login.php. Nearly all characters are filtered. Users are encouraged
+			to understand that JavaScript and filtering are useless for security.
+		</li> 
+		<li>Added autofocus to login.php and add-to-blog.php</li>
+		<li>
+			Added more "allowed dangerous HTML tags" to the blog. Until now only the bold HTML tag was supported. Also
+			the output was not HTML5 compliant. For example, if the user entered a bold tag, then a bold tag was output
+			however the bold tag is depreciated. Styles must be used. So Mutillidae allows the user to input
+			a bold tag but will correctly encode this as a sytle upon output. The italic tag is now supported
+			as a dangerous input which is safely output without fear of Cross Site Scripting. These defenses
+			only operate in secure mode of course. In insecure mode, the site allows any input and simply outputs
+			whatever is input without any encoding.
+		</li>
+		<li>
+			Changed menu for OWASP A1 - Injection to differentiate between SQL, HTML, and Command Injection. This should make
+			it more clear which pages exhibit vulnerabilities with the specific injecton sub-types. Also added new link for 
+			Blind SQL Injection.
+		</li>
+		<li>
+			Changed menu for OWASP A2 - Cross Site Scripting to differentiate between XSS coming in via user supplied fields 
+			(GET/POST) and values within HTTP Request Headers.
+		</li>
+		<li>
+			Added tutorials feature.
+		</li>
+		<li>Added SQL Injection Totorial</li>
+		<li>Added Cross Site Scripting tutorial</li>
+		<li>Added Command Injection tutorial</li>		
+		<li>
+			Added new feature. Hints can now be at different levels. Each time the user clicks Hints, the level increases by 1 until rolling over.
+		</li>
+		<li>Removed the installation instructions from the home page. A new page for instructions is created and linked from the menu.
+		<li>
+			Augmented the installation instructions to include running from Samurai, creating a custom ISO, installing 
+			to XAMPP, and running in virutal machines.
+		</li>
+		<li>Reformatted install instructions and main home page to be compliant with HTML 5</li>
+	</ul>
+</blockquote>
+
+<p><b>05/20/2011</b>: Jeremy Druin</p>
+
+<blockquote>
+	<p>Change Log for Mutillidae 2.0.7:</p>
+	<ul>
+		<li>
+			Added a new page rene-magritte.php to explore click-jacking.
+			
+			In secure mode, Mutillidae will send the X-FRAME-OPTIONS: DENY
+			header. In modern browsers, this will cause the browser to throw an
+			error rather than allow the page rene-magritte.php to be framed.
+		</li>
+		<li>
+			Added a resources link to the main menu. Links are to information
+			or tools that can help with testing Mutillidae.
+		</li>
+		<li>
+			Added new class LogHandler to take over logging. Previously
+			logging statements has to be copied to each spot that logging
+			was needed. With the new class, logging requires only one
+			line of code and the logger automatically logs based on the 
+			current security level. If in insecure mode, no attempt
+			to stop XSS or SQLi is made.
+			
+			With the new class, many less lines of code are needed and many
+			more places log. With more places logging, there is a much better
+			chance of finding a log exploit and taking advantage (insecure mode).
+			
+			Logging added to pages: add-to-your-blog, dns-lookup, text-file-viewer,
+			source-viewer.php, register.php, redirectandlog.php, and user-info.php
+		</li>
+		<li>
+			Added more default users to initial setup to give more targets.
+		</li>
+	</ul>
+</blockquote>
+
+<p><b>05/10/2011</b>: Jeremy Druin</p>
+
+<blockquote>
+	<p>Change Log for Mutillidae 2.0.6:</p>
+	<ul>
+		<li>
+			Added a new security vulnerability and counteracting secure code.
+			The "business requirements" for the add-new-blog-entry page 
+			now require users to be able to enter a bold tag
+			in their blog.
+
+			In secure mode, Mutillidae allows this functionality while still 
+			protecting the users from mallicous injection input.
+		</li>
+		<li>
+			A new secret page has been added. There are lots of test scripts
+			that the developers used to hack Mutillidae inside. It will be very hard
+			to guess the name of the file but there are plenty of vulns
+			that will allow users to locate and open the file.
+		</li>
+	</ul>
+</blockquote>
+
+<p><b>04/22/2011</b>: Jeremy Druin</p>
+
+<blockquote>
+	<p>Change Log for Mutillidae 2.0.6:</p>
+	<ul>
+		<li>
+			Added a new security vulnerability and counteracting secure code.
+			Cookies are unprotected in insecure mode, but in secure mode, the
+			cookies will have the HTTPOnly attribute applied to them.
+			
+			In reality this vulnerability was always in Mutillidae since ignoring
+			the issue opens the vulnerability (the ability for scripts to access the
+			cookie values). The change is acknowleging this issue and adding the 
+			defense. 
+			
+			Once we get an SSL certificate installed, the next logical step will be to 
+			add the "Secure" attribute to cookies in secure mode, but to not
+			add this attribute in insecure mode. 
+		</li>
+		<li>
+			Added the X-FRAME-OPTIONS: DENY click-jacking defense in secure mode.
+			In insecure mode, the site does nothing and ignores the issue entirely.
+			This defense only works in newer browsers and javascript framebusters are
+			needed to help older browsers.
+		</li>
+		<li>Added insecure comments vulnerability and defense. Some developers use 
+			HTML or JavaScript comments instead of using the frameworks comments 
+			(ASP.NET, Java, PHP, Etc.)
+		</li>
+		<li>Rearranged instructions on home page to emphasize the PHP.ini 
+			configuration changes that are needed to get rid of errors.
+		</li>
+		<li>Rewrote opendb.inc to have error trapping and custom
+			error handling. If there is an error, there will be some diagnistic
+			information available.
+		</li>
+	</ul>
+</blockquote>
+
+<p><b>04/14/2011</b>: Jeremy Druin</p>
+
+<blockquote>
+	<p>Change Log for Mutillidae 2.0.5:</p>
+	<ul>
+		<li>
+			browser-info.php - Patched a bug which disabled entire page if the 
+			whois server is not reachable. Now only that one line will be disabled.
+			Also replaced Windows style file path slashes with Unix style. Either 
+			slash will work in Windows but Linux only accepts the Unix style
+			path else throws an error.
+		</li>
+	</ul>
+</blockquote>
+
+<p><b>04/13/2011</b>: Jeremy Druin</p>
+
+<blockquote>
+	<p>Change Log for Mutillidae 2.0.4:</p>
+	<ul>
+		<li>
+			user-info.php - Added XSS defenses to the output so that users cannot poison 
+			their username, password or signature to cause XSS.
+			This only works in secure code.
+		</li>
+		<li>
+			register.php - Added XSS defenses to the output so that users cannot poison 
+			their username to cause XSS. This only works in secure code.
+		</li>
+		<li>
+			header.php - Added link to this changelog. Changed style of upper header to 
+			allow more space for logged in user text. In very small screens, the text was 
+			overlapping. Also, the size of the mascot image was reduced to give the user 
+			more screen space.
+		</li>
+		<li>change-log.php - Added new XSS vulnerability for users to try.
+	</ul>
+</blockquote>
+
+<p><b>03/30/2011</b>: Jeremy Druin</p>
+
+<blockquote>
+	<p>Change Log for Mutillidae 2.0.3:</p>
+	<ul>
+		<li>index.php - Added PHP version detection and altered forms caching defenses and 
+			server header information defenses to use header_remove() only if the version
+			of PHP is at 5.3 or above. Made version string variable that contains whatever
+			version string is for Mutillidae plus "nice" output. Samurai is going through
+			a PHP version change to 5.3 right now and XAMPP just went through the same change.
+			This code is meant to bridge users caught between versions.
+		</li>
+		<li>
+			header.php - Made version output simpler. header.php only outputs the header
+			string.
+		</li>
+		<li>
+			footer.php - Added PHP version to footer output in insecure mode. In secure mode, server version is not shown.
+		</li>
+	</ul>
+</blockquote>
+
+<p><b>03/25/2011</b>: Jeremy Druin</p>
+
+<blockquote>
+	<p>Change Log for Mutillidae 2.0.2 Beta:<br>
+	<br>
+	Whole site</p>
+	<ul>
+		<li>Made local relative links without leading dot</li>
+		<li>Installed on Samurai 0.95 for testing. Found that Samurai doesnt like the leading dot in local file paths. Those were removed from the index.php page.</li>
+		<li>Made version a variable in index.php to make updating version string easier</li>
+		<li>Added new forms caching information leakage vulnerability</li>
+		<li>Added new vulnerability for X-Powered-By and discussed removing the Server HTTP header in comments</li>
+	</ul>
+</blockquote>
+
+<p><b>03/23/2011</b>: Jeremy Druin</p>
+
+<blockquote>
+	<p>Change Log for Mutillidae 2.0.1 Beta:<br>
+	<br>
+	Whole site</p>
+	<ul>
+		<li>Replaced root relative links with local relative links to allow more freedom in root folder name</li>
+		<li>Added email address for Jeremy</li>
+		<li>Added change log to site</li>
+		<li>Added Toggle Hints into core menu but link disappears in secure mode</li>
+		<li>Added new failure to restrict URL access vuln</li>
+	</ul>
+</blockquote>
+
+<p><b>03/23/2011</b>: Jeremy Druin</p>
+<blockquote>
+	<p>Change Log for Mutillidae 2.0 Beta:<br>
+	<br>
+	Whole site</p>
+	<ul>
+		<li>Site implements the OWASP ESAPI API for PHP including showing how to 
+		instantiate classes and call methods for output encoding.</li>
+		<li>Site now allows user to switch between secure and insecure mode to 
+		allow the user to employ an attack then try the same attack against more 
+		secure code</li>
+		<li>All code for both modes of operation are available for inspection 
+		and include large amounts of explanation comments for both the insecure 
+		and secure sections. Code is commented in such a way to help developers 
+		understand the security concepts as opposed to only seeing the PHP 
+		implementation</li>
+		<li>Added custom error handling to site which reacts differently 
+		depending on security mode</li>
+		<li>Site has larger hint sections with more hints included</li>
+		<li>Added menuing system for easier navigation</li>
+		<li>Added toolbar at top of each page for critical functions (hints, 
+		security mode, home page, etc.)</li>
+		<li>Converted styles to CSS</li>
+		<li>Collected images into single folder</li>
+		<li>Added links to helpful tools and sites with more information: OWASP, 
+		Toad for PHP, Eclipse PDT, Samurai WTF, and Backtrack 4 R2</li>
+		<li>Released new web interface design and navigation for each page</li>
+		<li>Installed TRY/CATCH handling in all pages</li>
+	</ul>
+	<p>add-to-your-blog.php </p>
+	<ul>
+		<li>additional reflected XSS vuln added</li>
+		<li>SQLi vector added</li>
+		<li>additional stored XSS vuln added</li>
+		<li>demonstrates output encoding</li>
+		<li>demonstrates SQLi prevention</li>
+		<li>non-input box attack vector added</li>
+	</ul>
+	<p>browser-info.php</p>
+	<ul>
+		<li>demonstrates safer JavaScript</li>
+		<li>created ClientInformationHandler class to gather client information</li>
+		<li>demonstrates output encoding</li>
+		<li>added JavaScript attack vector using innerHTML</li>
+	</ul>
+	<p>credits.php</p>
+	<ul>
+		<li>added Insecure Direct Object Reference defenses</li>
+	</ul>
+	<p>dns-lookup.php</p>
+	<ul>
+		<li>In secure mode, added strong server-side validation for page. Page 
+		allows both ip based and DNS name based attacks and includes defenses 
+		for both.</li>
+	</ul>
+	<p>footer.php</p>
+	<ul>
+		<li>added new attack vector to allow refelected XSS via HTTP headers</li>
+		<li>added defenses for input coming from HTTP headers</li>
+		<li>added comments encouraging developers to treat ALL input as evil and 
+		not just the input boxes they created</li>
+	</ul>
+	<p>header.php</p>
+	<ul>
+		<li>Replaced menu with mouseover navagation and updated menu with new 
+		attacks</li>
+		<li>Added new stored cross site scripting attacks and defenses</li>
+		<li>Added code to allow site to ignore user created cookies in secure 
+		mode and react to user created cookies in insecure mode</li>
+	</ul>
+	<p>home.html</p>
+	<ul>
+		<li>Added instructions</li>
+		<li>Added warning about PHP.ini files that come with new XAMPP/PHP 
+		versions 5.3 and 6.0 (future)</li>
+	</ul>
+	<p>homenotes.php</p>
+	<ul>
+		<li>Created newly formatted hints section</li>
+	</ul>
+	<p>index.php</p>
+	<ul>
+		<li>Created new processing framework</li>
+		<li>Added the ability to use session storage</li>
+		<li>Installed initialization code</li>
+	</ul>
+	<p>login.php</p>
+	<ul>
+		<li>added HTML maxlength to allow practice of circumventing trivial and 
+		useless HTML based defenses</li>
+		<li>Added detection of whether user is currently logged in with new 
+		funcitonality. Site will auto-detect when users are logged in and change 
+		links appropriately</li>
+		<li>Added new reflected XSS vector</li>
+	</ul>
+	<p>process-commands.php</p>
+	<ul>
+		<li>new file which collects all &quot;do&quot; commands together</li>
+		<li>installed several new attack vectors and defenses based on the &quot;do&quot; 
+		commands</li>
+	</ul>
+	<p>redirectandlog.php</p>
+	<ul>
+		<li>Created new HTTP parameter pollution attack</li>
+		<li>Installed advanced mapping defences with validation</li>
+		<li>Installed strong validation defenses</li>
+	</ul>
+	<p>register.php</p>
+	<ul>
+		<li>installed SQLi and XSS defenses</li>
+		<li>reformatted page with new design and error feedback</li>
+	</ul>
+	<p>show-log.php</p>
+	<ul>
+		<li>installed DOS defenses</li>
+		<li>added DOS attack vector</li>
+		<li>installed tabular output</li>
+		<li>added defenses for injection attacks and XSS</li>
+		<li>added attack vector against log</li>
+	</ul>
+	<p>source-viewer.php/text-viewer.php</p>
+	<ul>
+		<li>Added/augmented attack vectors</li>
+		<li>Added new attack vectors to allow loading of local server files</li>
+		<li>Filename injection (Insecure Direct Object Reference)</li>
+		<li>SQL Injection, (Fix: Use Schematized Stored Procedures)</li>
+		<li>Cross Site Scripting, (Fix: Encode all output)</li>
+		<li>Cross Site Request Forgery, (Fix: Tokenize transactions)</li>
+		<li>Insecure Direct Object Reference, (Fix: Tokenize Object References)</li>
+		<li>Denial of Service, (Fix: Truncate Log Queries)</li>
+		<li>Loading of Local Files, (Fix: Tokenize Object Reference - Filename 
+		references in this case)</li>
+		<li>Improper Error Handling, (Fix: Employ custom error handler)</li>
+		<li>SQL Exception, (Fix: Employ custom error handler)</li>
+		<li>HTTP Parameter Pollution (Fix: Scope request variables)</li>
+		<li>Added mapping defenses</li>
+	</ul>
+	<p>user-info.php</p>
+	<ul>
+		<li>added SQL and XSS defenses</li>
+		<li>added tabular output</li>
+	</ul>
+	<p>view-someones-blog.php</p>
+	<ul>
+		<li>installed SQLi and XSS defenses</li>
+		<li>installed trivial and useless &quot;tokens&quot; to allow user to bypass HTML 
+		code which intends to confuse instead of defend.</li>
+	</ul>
+</blockquote>

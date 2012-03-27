@@ -1,4 +1,10 @@
-<?php
-$conn = mysql_connect($dbhost, $dbuser, $dbpass) or die('Error connecting to mysql');
-mysql_select_db($dbname) or die('Did you <a href="setupreset.php">setup/reset the DB</a>? <p><b>SQL Error:</b>' . mysql_error($conn) . '<p><b>SQL Statement:</b>' . $query);
+<?php 
+	try{	
+		$conn = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
+		if (!$conn) {
+   		   	throw (new Exception("Error connecting to MySQL database. Connection error: ".$conn->connect_errorno." - ".$conn->connect_error." Error: ".$conn->errorno." - ".$conn->error, $conn->errorno));
+	    }// end if
+	} catch (Exception $e) {
+		echo $CustomErrorHandler->FormatError($e, "Error attempting to open MySQL connection.");
+	}// end try		
 ?>

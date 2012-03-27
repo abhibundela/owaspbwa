@@ -1,0 +1,1549 @@
+127.0.0.1
+page = capture-data.php; 
+
+127.0.0.1
+page = capture-data.php; 
+
+127.0.0.1
+page = capture-data.php; 
+
+127.0.0.1
+page = capture-data.php; 
+
+127.0.0.1
+page = capture-data.php; 
+
+127.0.0.1
+page = capture-data.php; 
+
+127.0.0.1
+page = capture-data.php; 
+
+127.0.0.1
+page = capture-data.php; 
+
+127.0.0.1
+page = capture-data.php; 
+
+127.0.0.1
+cookie = __utma=232538841.1714947816.1325206254.1325206254.1325206254.1; __utmb=232538841.4.10.1325206254; __utmc=232538841; __utmz=232538841.1325206254.1.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=online javascript; 
+
+127.0.0.1
+cookie = PHPSESSID=t90uhrlg4nsv8d0tt5aeqnb596; 
+
+127.0.0.1
+cookie = PHPSESSID=t90uhrlg4nsv8d0tt5aeqnb596; 
+
+127.0.0.1
+page = capture-data.php; 
+
+127.0.0.1
+
+127.0.0.1
+page = capture-data.php; 
+
+127.0.0.1
+page = capture-data.php; 
+
+127.0.0.1
+page = capture-data.php; 
+dwarf = smokestack; 
+
+127.0.0.1
+page = capture-data.php; 
+
+127.0.0.1
+page = capture-data.php; 
+
+Client Operating System: 
+Client Browser: rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Hostname: localhost
+Client IP: 127.0.0.1
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php
+Client Port: 2413
+Captured Data: page = capture-data.php
+PHPSESSID = kqlb2e58j89focntvum0jiarq4
+
+Client Operating System: 
+Client Browser: rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Hostname: localhost
+Client IP: 127.0.0.1
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php
+Client Port: 2441
+Captured Data: page = capture-data.php
+PHPSESSID = kqlb2e58j89focntvum0jiarq4
+
+Client Operating System: 
+Client Browser: rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Hostname: localhost
+Client IP: 127.0.0.1
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=capture-data.php
+Client Port: 2469
+Captured Data: page = capture-data.php
+showhints = 1
+PHPSESSID = kqlb2e58j89focntvum0jiarq4
+
+Client Operating System: 
+Client Browser: rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Hostname: localhost
+Client IP: 127.0.0.1
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=capture-data.php
+Client Port: 2497
+Captured Data: page = capture-data.php
+showhints = 1
+PHPSESSID = kqlb2e58j89focntvum0jiarq4
+
+Client Operating System: 
+Client Browser: rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Hostname: localhost
+Client IP: 127.0.0.1
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=capture-data.php
+Client Port: 2525
+Captured Data: page = capture-data.php\r\nshowhints = 0\r\nPHPSESSID = kqlb2e58j89focntvum0jiarq4\r\n
+Client Operating System: 
+Client Browser: rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Hostname: localhost
+Client IP: 127.0.0.1
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=capture-data.php
+Client Port: 2550
+Captured Data: page = capture-data.php\r\nshowhints = 0\r\nPHPSESSID = kqlb2e58j89focntvum0jiarq4\r\n
+Client Operating System: 
+Client Browser: rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Hostname: localhost
+Client IP: 127.0.0.1
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=capture-data.php
+Client Port: 2575
+Captured Data: page = capture-data.php\r\nshowhints = 0\r\nPHPSESSID = kqlb2e58j89focntvum0jiarq4\r\n
+Client Operating System: 
+Client Browser: rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Hostname: localhost
+Client IP: 127.0.0.1
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=capture-data.php
+Client Port: 2600
+Captured Data: page = capture-data.php\r\nshowhints = 0\r\nPHPSESSID = kqlb2e58j89focntvum0jiarq4\r\n
+
+
+Client Hostname: localhost
+Client IP: 127.0.0.1
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=capture-data.php
+Client Port: 2625
+Captured Data: page = capture-data.php\r\nshowhints = 0\r\nPHPSESSID = kqlb2e58j89focntvum0jiarq4\r\n
+
+
+Client Hostname: localhost
+Client IP: 127.0.0.1
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php
+Client Port: 1211
+Captured Data: page = capture-data.php
+PHPSESSID = u3e8h5mqqc6v005fjnup1j4a86
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php
+Client Port: 1221
+Captured Data: page = capture-data.php
+PHPSESSID = u3e8h5mqqc6v005fjnup1j4a86
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php
+Client Port: 1228
+Captured Data: page = capture-data.php
+PHPSESSID = u3e8h5mqqc6v005fjnup1j4a86
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php
+Client Port: 1235
+Captured Data: page = capture-data.php
+PHPSESSID = u3e8h5mqqc6v005fjnup1j4a86
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=captured-data.php
+Client Port: 1273
+Captured Data: page = capture-data.php
+PHPSESSID = u3e8h5mqqc6v005fjnup1j4a86
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=pen-test-tool-lookup.php
+Client Port: 2054
+Captured Data: cookie = showhints=1; PHPSESSID=57uj21th0e2u2b4cqrmlefbrj2
+showhints = 1
+PHPSESSID = 57uj21th0e2u2b4cqrmlefbrj2
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=pen-test-tool-lookup.php
+Client Port: 2112
+Captured Data: cookie = showhints=1; PHPSESSID=57uj21th0e2u2b4cqrmlefbrj2
+showhints = 1
+PHPSESSID = 57uj21th0e2u2b4cqrmlefbrj2
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=pen-test-tool-lookup.php
+Client Port: 2229
+Captured Data: cookie = showhints=1; PHPSESSID=57uj21th0e2u2b4cqrmlefbrj2
+showhints = 1
+PHPSESSID = 57uj21th0e2u2b4cqrmlefbrj2
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=html5-storage.php
+Client Port: 7676
+Captured Data: html5storage = sessionStorage(CartSession):ABCDEFG; sessionStorage(</span><script> var s = sessionStorage; var l = localStorage; var m = ""; for(i=0;i<s.length;i  ){m  = "sessionStorage:"   s.key(i)   ";\n";} for(i=0;i<l.length;i  ){m  = "localStorage:"   l.key(i)   ";\n";} alert(m); </script><span>):adf; sessionStorage(SessionID):japurhgnalbjdgfaljkfr; sessionStorage(EnterpriseSelfDestructSequence):A1B2C3; sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(<script> var s = sessionStorage; var l = localStorage; var m = ""; for(i=0;i<s.length;i  ){m  = "sessionStorage:"   s.key(i)   ";\n";} for(i=0;i<l.length;i  ){m  = "localStorage:"   l.key(i)   ";\n";} alert(m); </script>):adf; sessionStorage(CurrentBrowser):undefined; sessionStorage(CurrentlyLoggedInUser):1233456789; sessionStorage(adsf):adf; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(MessageOfTheDay):Go Cats!;
+showhints = 1
+PHPSESSID = cp2cpcuv7n59hc3bg7f0s5h6u4
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=html5-storage.php
+Client Port: 8966
+Captured Data: html5storage = sessionStorage(CartSession):; sessionStorage(</span><script>alert(1);</script><span>):; sessionStorage(</span><span onblur="alert(1);">ERROR</span><span>):; sessionStorage(</span><span onfocus="alert(1);">ERROR</span><span>):; sessionStorage(SessionID):; sessionStorage(EnterpriseSelfDestructSequence):; sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(</span><onload ="alert(1);"></span><span>):; sessionStorage(</span><body onload="alert(1);">ERROR</body><span>):; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(</span><span onload ="alert(1);"></span><span>):; sessionStorage(<script> var s = sessionStorage; var l = localStorage; var m = ""; for(i=0;i<s.length;i  ){m  = "sessionStorage:"   s.key(i)   ";\n";} for(i=0;i<l.length;i  ){m  = "localStorage:"   l.key(i)   ";\n";} alert(m); </script>):; sessionStorage(</span><span onmouseover="alert(1);">ERROR</span><span>):; sessionStorage(</span><script> var s = sessionStorage; var l = localStorage; var m = ""; for(i=0;i<s.length;i  ){m  = "sessionStorage:"   s.key(i)   ";\n";} for(i=0;i<l.length;i  ){m  = "localStorage:"   l.key(i)   ";\n";} alert(m); </script><span>):; sessionStorage(CurrentBrowser):undefined; sessionStorage(</span><span onerror ="alert(1);">ERROR</span><span>):; sessionStorage(CurrentlyLoggedInUser):; sessionStorage(adsf):; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(MessageOfTheDay):Go Cats!;
+showhints = 1
+PHPSESSID = 598ls4sa59tsi7428ckncm1q92
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=pen-test-tool-lookup.php
+Client Port: 2121
+Captured Data: cookie = PHPSESSID=id6tlmp1f9nn2m5ffmpdq87sv7
+PHPSESSID = id6tlmp1f9nn2m5ffmpdq87sv7
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=pen-test-tool-lookup.php
+Client Port: 2221
+Captured Data: cookie = PHPSESSID=id6tlmp1f9nn2m5ffmpdq87sv7
+PHPSESSID = id6tlmp1f9nn2m5ffmpdq87sv7
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=pen-test-tool-lookup.php
+Client Port: 2258
+Captured Data: cookie = PHPSESSID=id6tlmp1f9nn2m5ffmpdq87sv7
+PHPSESSID = id6tlmp1f9nn2m5ffmpdq87sv7
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=html5-storage.php
+Client Port: 8402
+Captured Data: html5storage = sessionStorage(CartSession):ABCDEFG; sessionStorage(SessionID):japurhgnalbjdgfaljkfr; sessionStorage(EnterpriseSelfDestructSequence):A1B2C3; sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(CurrentBrowser):undefined; sessionStorage(CurrentlyLoggedInUser):1233456789; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(MessageOfTheDay):Go Cats!;
+showhints = 0
+PHPSESSID = id6tlmp1f9nn2m5ffmpdq87sv7
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=pen-test-tool-lookup.php
+Client Port: 2012
+Captured Data: cookie = showhints=0; PHPSESSID=jiue1lrshbnm4lkn0v0d6vm875
+showhints = 0
+PHPSESSID = jiue1lrshbnm4lkn0v0d6vm875
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=pen-test-tool-lookup.php
+Client Port: 2077
+Captured Data: cookie = showhints=0; PHPSESSID=jiue1lrshbnm4lkn0v0d6vm875
+showhints = 0
+PHPSESSID = jiue1lrshbnm4lkn0v0d6vm875
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=captured-data.php
+Client Port: 1239
+Captured Data: page = capture-data.php
+PHPSESSID = oi527lagifivpjekfuufb6k2a5
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=captured-data.php
+Client Port: 1704
+Captured Data: page = capture-data.php
+PHPSESSID = oi527lagifivpjekfuufb6k2a5
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=pen-test-tool-lookup.php
+Client Port: 1847
+Captured Data: cookie = PHPSESSID=oi527lagifivpjekfuufb6k2a5
+PHPSESSID = oi527lagifivpjekfuufb6k2a5
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=pen-test-tool-lookup.php
+Client Port: 1937
+Captured Data: cookie = PHPSESSID=oi527lagifivpjekfuufb6k2a5
+PHPSESSID = oi527lagifivpjekfuufb6k2a5
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=pen-test-tool-lookup.php
+Client Port: 1976
+Captured Data: cookie = PHPSESSID=oi527lagifivpjekfuufb6k2a5
+PHPSESSID = oi527lagifivpjekfuufb6k2a5
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=pen-test-tool-lookup.php
+Client Port: 2041
+Captured Data: cookie = PHPSESSID=oi527lagifivpjekfuufb6k2a5
+PHPSESSID = oi527lagifivpjekfuufb6k2a5
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=html5-storage.php
+Client Port: 2328
+Captured Data: html5storage = sessionStorage(SessionID):japurhgnalbjdgfaljkfr; sessionStorage(EnterpriseSelfDestructSequence):A1B2C3; sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(CurrentBrowser):undefined; sessionStorage(CurrentlyLoggedInUser):1233456789; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(MessageOfTheDay):Go Cats!;
+showhints = 0
+PHPSESSID = 60ongvase8falrcq487tmaknn5
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=/documentation/Mutillidae-test-scripts.txt
+Client Port: 1204
+Captured Data: cookie = PHPSESSID=cfg701c19ai47i9a3c0pp32gv0
+PHPSESSID = cfg701c19ai47i9a3c0pp32gv0
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=/documentation/Mutillidae-test-scripts.txt
+Client Port: 1208
+Captured Data: html5storage = sessionStorage(CartSession):ABCDEFG; sessionStorage(SessionID):japurhgnalbjdgfaljkfr; sessionStorage(EnterpriseSelfDestructSequence):A1B2C3; sessionStorage(CurrentlyLoggedInUser):1233456789; localStorage(AccountNumber):123456; localStorage(MessageOfTheDay):Hello World;
+PHPSESSID = cfg701c19ai47i9a3c0pp32gv0
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=/documentation/Mutillidae-test-scripts.txt
+Client Port: 1210
+Captured Data: html5storage = sessionStorage(CartSession):ABCDEFG; sessionStorage(SessionID):japurhgnalbjdgfaljkfr; sessionStorage(EnterpriseSelfDestructSequence):A1B2C3; sessionStorage(CurrentlyLoggedInUser):1233456789; localStorage(AccountNumber):123456; localStorage(MessageOfTheDay):Hello World;
+PHPSESSID = cfg701c19ai47i9a3c0pp32gv0
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php
+Client Port: 1940
+Captured Data: page = capture-data.php
+PHPSESSID = cfg701c19ai47i9a3c0pp32gv0
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 3475
+Captured Data: username = asdf
+password = asdf
+showhints = 0
+PHPSESSID = cfg701c19ai47i9a3c0pp32gv0
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 4015
+Captured Data: page = capture-data.php
+showhints = 0
+PHPSESSID = cfg701c19ai47i9a3c0pp32gv0
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 4126
+Captured Data: username = Jeremy
+password = password1
+showhints = 0
+PHPSESSID = cfg701c19ai47i9a3c0pp32gv0
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 1082
+Captured Data: PHPSESSID = q29uohume60hqk6ofes6db4qm3
+PHPSESSID = q29uohume60hqk6ofes6db4qm3
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 1093
+Captured Data: page = capture-data.php
+PHPSESSID = q29uohume60hqk6ofes6db4qm3
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 1147
+Captured Data: page = capture-data.php
+PHPSESSID = q29uohume60hqk6ofes6db4qm3
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 1182
+Captured Data: PHPSESSID = q29uohume60hqk6ofes6db4qm3
+PHPSESSID = q29uohume60hqk6ofes6db4qm3
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 1183
+Captured Data: PHPSESSID = q29uohume60hqk6ofes6db4qm3
+PHPSESSID = q29uohume60hqk6ofes6db4qm3
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 1251
+Captured Data: PHPSESSID = q29uohume60hqk6ofes6db4qm3
+PHPSESSID = q29uohume60hqk6ofes6db4qm3
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 1261
+Captured Data: page = capture-data.php
+PHPSESSID = q29uohume60hqk6ofes6db4qm3
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 1337
+Captured Data: PHPSESSID = q29uohume60hqk6ofes6db4qm3
+PHPSESSID = q29uohume60hqk6ofes6db4qm3
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 1403
+Captured Data: PHPSESSID = q29uohume60hqk6ofes6db4qm3
+PHPSESSID = q29uohume60hqk6ofes6db4qm3
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 1491
+Captured Data: PHPSESSID = q29uohume60hqk6ofes6db4qm3
+PHPSESSID = q29uohume60hqk6ofes6db4qm3
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 1595
+Captured Data: PHPSESSID = q29uohume60hqk6ofes6db4qm3
+PHPSESSID = q29uohume60hqk6ofes6db4qm3
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 1651
+Captured Data: PHPSESSID = q29uohume60hqk6ofes6db4qm3
+PHPSESSID = q29uohume60hqk6ofes6db4qm3
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 1861
+Captured Data: page = capture-data.php
+PHPSESSID = q29uohume60hqk6ofes6db4qm3
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 1957
+Captured Data: page = capture-data.php
+PHPSESSID = q29uohume60hqk6ofes6db4qm3
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 2044
+Captured Data: PHPSESSID = q29uohume60hqk6ofes6db4qm3
+PHPSESSID = q29uohume60hqk6ofes6db4qm3
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 192.168.56.101
+--------------------------------------------------
+Client Hostname: 192.168.56.101
+Client User Agent: 
+Client Referrer: 
+Client Port: 36698
+Captured Data: page = capture-data.php
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 192.168.56.101
+--------------------------------------------------
+Client Hostname: 192.168.56.101
+Client User Agent: 
+Client Referrer: 
+Client Port: 43364
+Captured Data: page = capture-data.php
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 192.168.56.101
+--------------------------------------------------
+Client Hostname: 192.168.56.101
+Client User Agent: 
+Client Referrer: 
+Client Port: 47868
+Captured Data: page = capture-data.php
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 192.168.56.101
+--------------------------------------------------
+Client Hostname: 192.168.56.101
+Client User Agent: 
+Client Referrer: 
+Client Port: 47870
+Captured Data: page = capture-data.php
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 192.168.56.101
+--------------------------------------------------
+Client Hostname: 192.168.56.101
+Client User Agent: 
+Client Referrer: 
+Client Port: 38607
+Captured Data: page = capture-data.php
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=documentation\mutillidae-test-scripts.txt
+Client Port: 1567
+Captured Data: cookie = showhints=1; PHPSESSID=bibm24ehj102e5pqmsubgs09o6
+showhints = 1
+PHPSESSID = bibm24ehj102e5pqmsubgs09o6
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=documentation\mutillidae-test-scripts.txt
+Client Port: 1567
+Captured Data: showhints = 1; PHPSESSID=bibm24ehj102e5pqmsubgs09o6
+showhints = 1
+PHPSESSID = bibm24ehj102e5pqmsubgs09o6
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=documentation\mutillidae-test-scripts.txt
+Client Port: 1565
+Captured Data: html5storage = sessionStorage(CartSession):ABCDEFG; sessionStorage(SessionID):japurhgnalbjdgfaljkfr; sessionStorage(EnterpriseSelfDestructSequence):A1B2C3; sessionStorage(CurrentlyLoggedInUser):1233456789; localStorage(AccountNumber):123456; localStorage(MessageOfTheDay):Hello World;
+showhints = 1
+PHPSESSID = bibm24ehj102e5pqmsubgs09o6
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=documentation\mutillidae-test-scripts.txt
+Client Port: 1607
+Captured Data: html5storage = sessionStorage(CartSession):ABCDEFG; sessionStorage(SessionID):japurhgnalbjdgfaljkfr; sessionStorage(EnterpriseSelfDestructSequence):A1B2C3; sessionStorage(CurrentlyLoggedInUser):1233456789; localStorage(AccountNumber):123456; localStorage(MessageOfTheDay):Hello World;
+showhints = 1
+PHPSESSID = bibm24ehj102e5pqmsubgs09o6
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=documentation\mutillidae-test-scripts.txt
+Client Port: 1667
+Captured Data: cookie = showhints=1; PHPSESSID=bibm24ehj102e5pqmsubgs09o6
+showhints = 1
+PHPSESSID = bibm24ehj102e5pqmsubgs09o6
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=documentation\mutillidae-test-scripts.txt
+Client Port: 1663
+Captured Data: showhints = 1; PHPSESSID=bibm24ehj102e5pqmsubgs09o6
+showhints = 1
+PHPSESSID = bibm24ehj102e5pqmsubgs09o6
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=documentation\mutillidae-test-scripts.txt
+Client Port: 1673
+Captured Data: html5storage = sessionStorage(CartSession):ABCDEFG; sessionStorage(SessionID):japurhgnalbjdgfaljkfr; sessionStorage(EnterpriseSelfDestructSequence):A1B2C3; sessionStorage(CurrentlyLoggedInUser):1233456789; localStorage(AccountNumber):123456; localStorage(MessageOfTheDay):Hello World;
+showhints = 1
+PHPSESSID = bibm24ehj102e5pqmsubgs09o6
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=documentation\mutillidae-test-scripts.txt
+Client Port: 1674
+Captured Data: html5storage = sessionStorage(CartSession):ABCDEFG; sessionStorage(SessionID):japurhgnalbjdgfaljkfr; sessionStorage(EnterpriseSelfDestructSequence):A1B2C3; sessionStorage(CurrentlyLoggedInUser):1233456789; localStorage(AccountNumber):123456; localStorage(MessageOfTheDay):Hello World;
+showhints = 1
+PHPSESSID = bibm24ehj102e5pqmsubgs09o6
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)
+Client Referrer: http://localhost/mutillidae/index.php
+Client Port: 1571
+Captured Data: page = capture-data.php\r\nPHPSESSID = u7lg4bll230itrjuibienmdav6\r\nshowhints = 0\r\n--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)
+Client Referrer: http://localhost/mutillidae/documentation/Mutillidae-Test-Scripts.txt
+Client Port: 1710
+Captured Data: PHPSESSID = u7lg4bll230itrjuibienmdav6
+showhints = 0
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)
+Client Referrer: http://localhost/mutillidae/documentation/Mutillidae-Test-Scripts.txt
+Client Port: 1714
+Captured Data: html5storage = 
+PHPSESSID = u7lg4bll230itrjuibienmdav6
+showhints = 0
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)
+Client Referrer: http://localhost/mutillidae/documentation/Mutillidae-Test-Scripts.txt
+Client Port: 1713
+Captured Data: cookie = 
+PHPSESSID = u7lg4bll230itrjuibienmdav6
+showhints = 0
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)
+Client Referrer: http://localhost/mutillidae/documentation/Mutillidae-Test-Scripts.txt
+Client Port: 1718
+Captured Data: PHPSESSID = u7lg4bll230itrjuibienmdav6
+showhints = 0
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)
+Client Referrer: http://localhost/mutillidae/documentation/Mutillidae-Test-Scripts.txt
+Client Port: 1774
+Captured Data: username = Peter+Wiener
+password = 555-555-0199@example.com
+PHPSESSID = u7lg4bll230itrjuibienmdav6
+showhints = 1
+uid = deleted
+username = deleted
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 192.168.56.101
+--------------------------------------------------
+Client Hostname: 192.168.56.101
+Client User Agent: w3af.sourceforge.net
+Client Referrer: http://192.168.56.102/
+Client Port: 60732
+Captured Data: page = capture-data.php
+showhints = 1
+PHPSESSID = ia2vg9qecgu3q4h5loivsbotf3
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=home.php
+Client Port: 1308
+Captured Data: page = capture-data.php
+PHPSESSID = g87la1q57upavemme2jibiv5r6
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=login.php
+Client Port: 1402
+Captured Data: page = capture-data.php
+PHPSESSID = g87la1q57upavemme2jibiv5r6
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=show-log.php
+Client Port: 1581
+Captured Data: page = capture-data.php
+c = PHPSESSID=g87la1q57upavemme2jibiv5r6
+PHPSESSID = g87la1q57upavemme2jibiv5r6
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=show-log.php
+Client Port: 1839
+Captured Data: page = capture-data.php
+c = PHPSESSID=g87la1q57upavemme2jibiv5r6
+PHPSESSID = g87la1q57upavemme2jibiv5r6
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=html5-storage.php
+Client Port: 1244
+Captured Data: page = capture-data.php
+PHPSESSID = v768rc0lhu5ua50s21qcbgvp64
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: 
+Client Port: 1271
+Captured Data: page = capture-data.php
+PHPSESSID = v768rc0lhu5ua50s21qcbgvp64
+<script>alert(0)</script> = 
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=capture-data.php
+Client Port: 1301
+Captured Data: page = capture-data.php
+showhints = 1
+PHPSESSID = v768rc0lhu5ua50s21qcbgvp64
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=capture-data.php
+Client Port: 1333
+Captured Data: page = capture-data.php
+showhints = 2
+PHPSESSID = v768rc0lhu5ua50s21qcbgvp64
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=capture-data.php
+Client Port: 1361
+Captured Data: page = capture-data.php
+showhints = 2
+PHPSESSID = v768rc0lhu5ua50s21qcbgvp64
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=captured-data.php
+Client Port: 2602
+Captured Data: page = capture-data.php
+deleteLogs = deleteLogs
+PHPSESSID = ms2g3bshg7ve1lqodrqigjfdm2
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 1695
+Captured Data: html5storage = sessionStorage(CartSession):ABCDEFG; sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; sessionStorage(CurrentBrowser):undefined; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; localStorage(AccountNumberALPHA):123456ALPHA; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = uvoph4672i48brg13t768nec64
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 1700
+Captured Data: page = capture-data.php
+PHPSESSID = uvoph4672i48brg13t768nec64
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=view-someones-blog.php
+Client Port: 1809
+Captured Data: html5storage = sessionStorage(CartSession):ABCDEFG; sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; sessionStorage(CurrentBrowser):undefined; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; localStorage(AccountNumberALPHA):123456ALPHA; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = uvoph4672i48brg13t768nec64
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 1843
+Captured Data: html5storage = sessionStorage(CartSession):ABCDEFG; sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; sessionStorage(CurrentBrowser):undefined; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; localStorage(AccountNumberALPHA):123456ALPHA; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = uvoph4672i48brg13t768nec64
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=view-someones-blog.php
+Client Port: 1863
+Captured Data: html5storage = sessionStorage(CartSession):ABCDEFG; sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; sessionStorage(CurrentBrowser):undefined; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; localStorage(AccountNumberALPHA):123456ALPHA; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = uvoph4672i48brg13t768nec64
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=view-someones-blog.php
+Client Port: 1898
+Captured Data: html5storage = sessionStorage(CartSession):ABCDEFG; sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; sessionStorage(CurrentBrowser):undefined; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; localStorage(AccountNumberALPHA):123456ALPHA; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = uvoph4672i48brg13t768nec64
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=view-someones-blog.php
+Client Port: 4364
+Captured Data: html5storage = sessionStorage(CartSession):ABCDEFG; sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; sessionStorage(CurrentBrowser):undefined; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; localStorage(AccountNumberALPHA):123456ALPHA; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = uvoph4672i48brg13t768nec64
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=view-someones-blog.php
+Client Port: 4400
+Captured Data: html5storage = sessionStorage(CartSession):ABCDEFG; sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; sessionStorage(CurrentBrowser):undefined; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; localStorage(AccountNumberALPHA):123456ALPHA; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = uvoph4672i48brg13t768nec64
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=view-someones-blog.php
+Client Port: 4432
+Captured Data: html5storage = sessionStorage(CartSession):ABCDEFG; sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; sessionStorage(CurrentBrowser):undefined; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; localStorage(AccountNumberALPHA):123456ALPHA; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = uvoph4672i48brg13t768nec64
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=view-someones-blog.php
+Client Port: 4464
+Captured Data: html5storage = sessionStorage(CartSession):ABCDEFG; sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; sessionStorage(CurrentBrowser):undefined; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; localStorage(AccountNumberALPHA):123456ALPHA; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = uvoph4672i48brg13t768nec64
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=view-someones-blog.php
+Client Port: 4496
+Captured Data: html5storage = sessionStorage(CartSession):ABCDEFG; sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; sessionStorage(CurrentBrowser):undefined; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; localStorage(AccountNumberALPHA):123456ALPHA; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = uvoph4672i48brg13t768nec64
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=view-someones-blog.php
+Client Port: 4528
+Captured Data: html5storage = sessionStorage(CartSession):ABCDEFG; sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; sessionStorage(CurrentBrowser):undefined; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; localStorage(AccountNumberALPHA):123456ALPHA; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = uvoph4672i48brg13t768nec64
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=view-someones-blog.php
+Client Port: 4560
+Captured Data: html5storage = sessionStorage(CartSession):ABCDEFG; sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; sessionStorage(CurrentBrowser):undefined; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; localStorage(AccountNumberALPHA):123456ALPHA; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = uvoph4672i48brg13t768nec64
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=view-someones-blog.php
+Client Port: 4594
+Captured Data: html5storage = sessionStorage(CartSession):ABCDEFG; sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; sessionStorage(CurrentBrowser):undefined; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; localStorage(AccountNumberALPHA):123456ALPHA; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = uvoph4672i48brg13t768nec64
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=view-someones-blog.php
+Client Port: 4636
+Captured Data: html5storage = sessionStorage(CartSession):ABCDEFG; sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; sessionStorage(CurrentBrowser):undefined; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; localStorage(AccountNumberALPHA):123456ALPHA; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = uvoph4672i48brg13t768nec64
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=view-someones-blog.php
+Client Port: 4670
+Captured Data: html5storage = sessionStorage(CartSession):ABCDEFG; sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; sessionStorage(CurrentBrowser):undefined; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; localStorage(AccountNumberALPHA):123456ALPHA; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = uvoph4672i48brg13t768nec64
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 4706
+Captured Data: html5storage = sessionStorage(CartSession):ABCDEFG; sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; sessionStorage(CurrentBrowser):undefined; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; localStorage(AccountNumberALPHA):123456ALPHA; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = uvoph4672i48brg13t768nec64
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=view-someones-blog.php
+Client Port: 4737
+Captured Data: html5storage = sessionStorage(CartSession):ABCDEFG; sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; sessionStorage(CurrentBrowser):undefined; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; localStorage(AccountNumberALPHA):123456ALPHA; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = uvoph4672i48brg13t768nec64
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=view-someones-blog.php
+Client Port: 4764
+Captured Data: html5storage = sessionStorage(CartSession):ABCDEFG; sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; sessionStorage(CurrentBrowser):undefined; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; localStorage(AccountNumberALPHA):123456ALPHA; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = uvoph4672i48brg13t768nec64
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=view-someones-blog.php
+Client Port: 4801
+Captured Data: html5storage = sessionStorage(CartSession):ABCDEFG; sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; sessionStorage(CurrentBrowser):undefined; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; localStorage(AccountNumberALPHA):123456ALPHA; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = uvoph4672i48brg13t768nec64
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=view-someones-blog.php
+Client Port: 4831
+Captured Data: html5storage = sessionStorage(CartSession):ABCDEFG; sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; sessionStorage(CurrentBrowser):undefined; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; localStorage(AccountNumberALPHA):123456ALPHA; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = uvoph4672i48brg13t768nec64
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=view-someones-blog.php
+Client Port: 4865
+Captured Data: html5storage = sessionStorage(CartSession):ABCDEFG; sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; sessionStorage(CurrentBrowser):undefined; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; localStorage(AccountNumberALPHA):123456ALPHA; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = uvoph4672i48brg13t768nec64
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=view-someones-blog.php
+Client Port: 4889
+Captured Data: html5storage = sessionStorage(CartSession):ABCDEFG; sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; sessionStorage(CurrentBrowser):undefined; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; localStorage(AccountNumberALPHA):123456ALPHA; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = uvoph4672i48brg13t768nec64
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=view-someones-blog.php
+Client Port: 4927
+Captured Data: html5storage = sessionStorage(CartSession):ABCDEFG; sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; sessionStorage(CurrentBrowser):undefined; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; localStorage(AccountNumberALPHA):123456ALPHA; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = uvoph4672i48brg13t768nec64
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=view-someones-blog.php
+Client Port: 4953
+Captured Data: html5storage = sessionStorage(CartSession):ABCDEFG; sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; sessionStorage(CurrentBrowser):undefined; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; localStorage(AccountNumberALPHA):123456ALPHA; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = uvoph4672i48brg13t768nec64
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=view-someones-blog.php
+Client Port: 4991
+Captured Data: html5storage = sessionStorage(CartSession):ABCDEFG; sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; sessionStorage(CurrentBrowser):undefined; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; localStorage(AccountNumberALPHA):123456ALPHA; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = uvoph4672i48brg13t768nec64
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=view-someones-blog.php
+Client Port: 1052
+Captured Data: html5storage = sessionStorage(CartSession):ABCDEFG; sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; sessionStorage(CurrentBrowser):undefined; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; localStorage(AccountNumberALPHA):123456ALPHA; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = uvoph4672i48brg13t768nec64
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=view-someones-blog.php
+Client Port: 1090
+Captured Data: html5storage = sessionStorage(CartSession):ABCDEFG; sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; sessionStorage(CurrentBrowser):undefined; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; localStorage(AccountNumberALPHA):123456ALPHA; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = uvoph4672i48brg13t768nec64
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=view-someones-blog.php
+Client Port: 1123
+Captured Data: html5storage = sessionStorage(CartSession):ABCDEFG; sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; sessionStorage(CurrentBrowser):undefined; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):VALUE; localStorage(AccountNumberALPHA):123456ALPHA; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = uvoph4672i48brg13t768nec64
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 1144
+Captured Data: html5storage = sessionStorage(asdf):d; sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(CurrentBrowser):undefined; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = prnrqpa7sr15d7t7vpti5r5u24
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 2714
+Captured Data: html5storage = sessionStorage(asdf):d; sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(CurrentBrowser):undefined; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = prnrqpa7sr15d7t7vpti5r5u24
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 2811
+Captured Data: html5storage = sessionStorage(asdf):d; sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(CurrentBrowser):undefined; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = prnrqpa7sr15d7t7vpti5r5u24
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 2843
+Captured Data: html5storage = sessionStorage(asdf):d; sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(CurrentBrowser):undefined; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = prnrqpa7sr15d7t7vpti5r5u24
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 2893
+Captured Data: html5storage = sessionStorage(asdf):d; sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(CurrentBrowser):undefined; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = prnrqpa7sr15d7t7vpti5r5u24
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 2922
+Captured Data: html5storage = sessionStorage(asdf):d; sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(CurrentBrowser):undefined; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = prnrqpa7sr15d7t7vpti5r5u24
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 2954
+Captured Data: html5storage = sessionStorage(asdf):d; sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(CurrentBrowser):undefined; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = prnrqpa7sr15d7t7vpti5r5u24
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 2986
+Captured Data: html5storage = sessionStorage(asdf):d; sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(CurrentBrowser):undefined; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = prnrqpa7sr15d7t7vpti5r5u24
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 4369
+Captured Data: html5storage = sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):df; sessionStorage(CurrentBrowser):undefined; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure;
+showhints = 0
+PHPSESSID = prnrqpa7sr15d7t7vpti5r5u24
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 4403
+Captured Data: html5storage = sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):df; sessionStorage(CurrentBrowser):undefined; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure;
+showhints = 0
+PHPSESSID = prnrqpa7sr15d7t7vpti5r5u24
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+--------------------------------------------------
+Client Hostname: localhost
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=view-someones-blog.php
+Client Port: 4464
+Captured Data: html5storage = sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i  ){var lKey = l.key(i);m  = lKey   "="   l.getItem(lKey)   ";\n";};for(i=0;i<s.length;i  ){var lKey = s.key(i);m  = lKey   "="   s.getItem(lKey)   ";\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>):df; sessionStorage(CurrentBrowser):undefined; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure;
+showhints = 0
+PHPSESSID = prnrqpa7sr15d7t7vpti5r5u24
+--------------------------------------------------
+

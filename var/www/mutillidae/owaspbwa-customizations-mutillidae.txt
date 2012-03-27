@@ -3,6 +3,6 @@
 
 - Edited database connection information in config.inc
 
-- Edited database name in setupreset.php.
+- Edited database name in set-up-database.php.
 
-- Edit logic in setupreset.php to drop tables instead of relying on dropping the database (which won't drop due to the .svn directory).
+- Edited 'admin' user password (changed to 'admin') and added non-admin named 'user' with password 'user' in set-up-database.php.
