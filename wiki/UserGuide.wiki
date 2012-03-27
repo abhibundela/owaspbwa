@@ -2,8 +2,6 @@
 
 <wiki:toc max_depth="2" />
 
-#sidebar TableOfContents
-
 = Introduction =
 
 This will be the user guide for the OWASP BWA VM.
@@ -13,10 +11,12 @@ This will be the user guide for the OWASP BWA VM.
 
 = Getting Started =
 
-
 == Virtual Machine Format ==
 
-The VM is distributed in VMware virtual machine and virtual disk format.  It has been specifically configured to work with their no cost (Player and X) and older products (in addition to their newer, commercial offerings).
+The OWASP BWA VM is distributed in VMware virtual machine and virtual disk format.  It has been specifically configured to work with their no cost (Player and X) and older products (in addition to their newer, commercial offerings).
+
+See [Converting Virtual Machine Format] if you want to use the VM with other virtualization software.
+
 
 = Updating application code =
 
@@ -38,7 +38,7 @@ Software for many applications can be updated in place by editing the files (.ph
 
 = Advanced Topics =
 
-== Converting VM for other software ==
+== Converting Virtual Machine Format ==
 
 (to be completed)
 
