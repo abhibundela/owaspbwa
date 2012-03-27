@@ -2,6 +2,8 @@
 
 <wiki:toc max_depth="2" />
 
+#sidebar TableOfContents
+
 = Introduction =
 
 This will be the user guide for the OWASP BWA VM.
