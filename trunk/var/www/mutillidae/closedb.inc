@@ -1,13 +1,10 @@
-<?php
-$query = "INSERT INTO hitlog(hostname, ip, browser, referer, date) VALUES ('".
-	gethostbyaddr($_SERVER['REMOTE_ADDR']) . "', '".
-	$_SERVER['REMOTE_ADDR'] . "', '".
-	$_SERVER['HTTP_USER_AGENT'] . "', '".
-	$_SERVER['HTTP_REFERER'] . "', ".
-	" now() )";
-//echo $query;
-$result = mysql_query($query);
-echo mysql_error($conn );
-
-mysql_close($conn);
+<?php 
+	try{
+		$lResult = $conn->close();
+		if (!$lResult) {
+		   	throw (new Exception("Error executing query. Connection error: ".$conn->connect_errorno." - ".$conn->connect_error." Error: ".$conn->errorno." - ".$conn->error, $conn->errorno));
+		}// end if
+	} catch (Exception $e) {
+		echo $CustomErrorHandler->FormatError($e, "Error attempting to close MySQL connection.");
+	}// end try		
 ?>
