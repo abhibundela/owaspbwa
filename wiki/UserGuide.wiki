@@ -1,5 +1,7 @@
 #summary User Guide for the OWASP BWA VM.
 
+<wiki:toc max_depth="2" />
+
 = Introduction =
 
 This will be the user guide for the OWASP BWA VM.
@@ -9,7 +11,10 @@ This will be the user guide for the OWASP BWA VM.
 
 = Getting Started =
 
-The VM is distributed in VMware format.  Will work in their free products.
+
+== Virtual Machine Format ==
+
+The VM is distributed in VMware virtual machine and virtual disk format.  It has been specifically configured to work with their no cost (Player and X) and older products (in addition to their newer, commercial offerings).
 
 = Updating application code =
 
