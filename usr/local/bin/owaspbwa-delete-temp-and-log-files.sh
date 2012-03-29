@@ -4,7 +4,7 @@
 rm -rf /tmp/*
 
 # delete WebGoat builds
-cd /var/lib/tomcat6/WebGoat-svn
+cd /owaspbwa/WebGoat-svn
 mvn clean
 
 # delete histories in home directories
