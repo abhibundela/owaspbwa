@@ -31,6 +31,15 @@ echo "---- Updating from ModSecurity Core Rule Set SVN Repo ----"
 svn update --accept theirs-full /owaspbwa/modsecurity-crs-svn
 if [ "$?"-ne 0]; then echo "SVN Update from ModSecurity Core Rule Set SVN Repo Failed!"; exit 1; fi 
 
+echo "---- Updating from OWASP WebGoat (Java) SVN Repo ----"
+svn update --accept theirs-full /owaspbwa/WebGoat-svn
+if [ "$?"-ne 0]; then echo "SVN Update from OWASP WebGoat (Java) SVN Repo Failed!"; exit 1; fi 
+# build and deploy new version of WebGoat
+echo "Compiling and deploying WebGoat in /owaspbwa/WebGoat-svn...." 
+cd /owaspbwa/WebGoat-svn
+mvn tomcat:undeploy ; mvn war:exploded tomcat:exploded
+cd - # return to previous directory
+
 echo "---- Updating from webgoat.net GIT Repo ----"
 cd /owaspbwa/webgoat.net-git
 git pull 
