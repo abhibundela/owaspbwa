@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="DeployWar" name="OWASP-CSRFGuard-TestApp">
+	<target name="init">
+		<property file="local.properties" />
+
+		<buildnumber />
+		<property name="app.name"    		   value="CSRFGuardTestApp"/>
+		<property name="project.name" value="${ant.project.name}" />
+		<property name="project.version" value="2.2" />
+		<property name="src.dir" location="${basedir}/src" />
+		<property name="dist.dir" location="${basedir}/dist" />
+		<property name="lib.dir" location="${basedir}/lib" />
+		<property name="license.file" location="${basedir}/LICENSE" />
+		<property name="readme.file" location="${basedir}/README" />
+		<property name="webcontent.dir" location="${basedir}/WebContent" />
+		<property name="web.war.file"					value="${dist.dir}/${app.name}.war"/>
+		<property name="tomcat.webapps"					value="/var/lib/tomcat6/webapps"/>
+		
+		<property name="classes.web.build.dir" 			location="${webcontent.dir}/WEB-INF/classes" />  
+		
+	</target>
+
+	<target depends="init" description="clean up the build area" name="clean">
+		<delete includeemptydirs="true" failonerror="false">
+			<fileset dir="${dist.dir}" includes="**/*" />
+		</delete>
+		<mkdir dir="${dist.dir}" />
+	</target>
+
+	<target depends="clean" description="packages up the source files" name="source">
+		<zip destfile="${dist.dir}/${project.name}-${project.version}-src.zip">
+			<zipfileset dir="${basedir}" includes="build.xml" prefix="${project.name}-${project.version}" />
+			<zipfileset dir="${src.dir}" excludes="**/.*" prefix="${project.name}-${project.version}/src" />
+			<zipfileset dir="${webcontent.dir}" prefix="${project.name}-${project.version}/WebContent" />
+		</zip>
+	</target>
+	
+	   <target depends="init" name="compile" 
+   			 
+   			   description="compile source">
+
+      	<javac srcdir="${src.dir}"
+             		destdir="${classes.web.build.dir}"
+             		debug="${debug}"
+             		includes="**/*.java" >
+           
+		</javac>
+		</target>
+
+		
+		   <target name="war" 
+   			   depends="compile" 
+   			   description="create war file ">             
+
+		<war 
+			destfile="${web.war.file}" 
+			compress="true" 		
+			update="true"
+			webxml="${webcontent.dir}/WEB-INF/web.xml"
+			>
+				<fileset dir="${webcontent.dir}" includes="**/*" />
+
+		</war>
+      	<echo message="war file created"/>
+	</target>
+	
+	  <target name="DeployWar" depends="war"
+   	description="Copy war to Tomcat">
+
+    <!-- Install war to Tomcat -->
+    <delete dir="${tomcat.webapps}/${app.name}"/>
+    <delete file="${tomcat.webapps}/${app.name}.war"/>
+    <copy file="${web.war.file}" tofile="${tomcat.webapps}/${app.name}.war"/>
+	 
+  </target> 
+</project>

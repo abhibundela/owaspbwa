@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE taglib
+  PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN"
+  "http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+
+<!-- a tag library descriptor -->
+
+<taglib>
+  <!-- after this the default space is
+	"http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd"
+   -->
+
+  <!-- The version number of this tag library -->
+  <tlibversion>1.0</tlibversion>
+
+  <!-- The JSP specification version required to function -->
+  <jspversion>1.1</jspversion>
+
+  <!-- The short name of this tag library -->
+  <shortname>request</shortname>
+
+  <!-- Public URI that uniquely identifies this version of the tag library -->
+  <uri>http://jakarta.apache.org/taglibs/request</uri>
+
+  <!-- General information about this tag library -->
+  <info>
+    The REQUEST custom tag library contains tags which can be used to
+    access all the information about the HTTP request for a JSP page.
+  </info>
+
+  <!-- ******************** Defined Custom Tags *************************** -->
+
+  <tag>
+    <name>cookie</name>
+    <tagclass>org.apache.taglibs.request.CookieTag</tagclass>
+    <bodycontent>empty</bodycontent>
+    <info>Get the value of a single request cookie.</info>
+    <attribute>
+      <name>name</name>
+      <required>true</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+  </tag>
+
+  <tag>
+    <name>cookies</name>
+    <tagclass>org.apache.taglibs.request.CookiesTag</tagclass>
+    <teiclass>org.apache.taglibs.request.CookiesTEI</teiclass>
+    <bodycontent>JSP</bodycontent>
+    <info>Loop through all request cookies or get the properties of a single named cookie.</info>
+    <attribute>
+      <name>id</name>
+      <required>true</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>name</name>
+      <required>false</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+  </tag>
+
+  <tag>
+    <name>existscookie</name>
+    <tagclass>org.apache.taglibs.request.ExistsCookieTag</tagclass>
+    <bodycontent>JSP</bodycontent>
+    <info>Includes the body of the tag if the request cookie exists.</info>
+    <attribute>
+      <name>name</name>
+      <required>true</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>value</name>
+      <required>false</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+  </tag>
+
+  <tag>
+    <name>querystring</name>
+    <tagclass>org.apache.taglibs.request.QueryStringTag</tagclass>
+    <bodycontent>empty</bodycontent>
+    <info>Get the value of a single querystring parameter.</info>
+    <attribute>
+      <name>name</name>
+      <required>true</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+  </tag>
+
+  <tag>
+    <name>querystrings</name>
+    <tagclass>org.apache.taglibs.request.QueryStringsTag</tagclass>
+    <teiclass>org.apache.taglibs.request.QueryStringsTEI</teiclass>
+    <bodycontent>JSP</bodycontent>
+    <info>Loop through all querystring parameters.</info>
+    <attribute>
+      <name>id</name>
+      <required>true</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+  </tag>
+
+  <tag>
+    <name>existsquerystring</name>
+    <tagclass>org.apache.taglibs.request.ExistsQueryStringTag</tagclass>
+    <bodycontent>JSP</bodycontent>
+    <info>Includes the body of the tag if the request querystring parameter exists.</info>
+    <attribute>
+      <name>name</name>
+      <required>true</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>value</name>
+      <required>false</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+  </tag>
+
+  <tag>
+    <name>header</name>
+    <tagclass>org.apache.taglibs.request.HeaderTag</tagclass>
+    <bodycontent>empty</bodycontent>
+    <info>Get the value of a single request header.</info>
+    <attribute>
+      <name>name</name>
+      <required>true</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+  </tag>
+
+  <tag>
+    <name>headers</name>
+    <tagclass>org.apache.taglibs.request.HeadersTag</tagclass>
+    <teiclass>org.apache.taglibs.request.HeadersTEI</teiclass>
+    <bodycontent>JSP</bodycontent>
+    <info>Loop through all headers, or get the properties of a single header.</info>
+    <attribute>
+      <name>id</name>
+      <required>true</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>name</name>
+      <required>false</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+  </tag>
+
+  <tag>
+    <name>headervalues</name>
+    <tagclass>org.apache.taglibs.request.HeaderValuesTag</tagclass>
+    <teiclass>org.apache.taglibs.request.HeaderValuesTEI</teiclass>
+    <bodycontent>JSP</bodycontent>
+    <info>Loop through all the values for a header which has multiple values.</info>
+    <attribute>
+      <name>id</name>
+      <required>true</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+  </tag>
+
+  <tag>
+    <name>existsheader</name>
+    <tagclass>org.apache.taglibs.request.ExistsHeaderTag</tagclass>
+    <bodycontent>JSP</bodycontent>
+    <info>Includes the body of the tag if the request HTTP Header exists.</info>
+    <attribute>
+      <name>name</name>
+      <required>true</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>value</name>
+      <required>false</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+  </tag>
+
+  <tag>
+    <name>issecure</name>
+    <tagclass>org.apache.taglibs.request.IsSecureTag</tagclass>
+    <bodycontent>JSP</bodycontent>
+    <info>Test whether the HTTP connection is secure (using HTTPS).</info>
+    <attribute>
+      <name>value</name>
+      <required>false</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+  </tag>
+
+  <tag>
+    <name>issessionfromcookie</name>
+    <tagclass>org.apache.taglibs.request.IsSessionFromCookieTag</tagclass>
+    <bodycontent>JSP</bodycontent>
+    <info>Test whether the HTTP session was from a cookie.</info>
+    <attribute>
+      <name>value</name>
+      <required>false</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+  </tag>
+
+  <tag>
+    <name>issessionfromurl</name>
+    <tagclass>org.apache.taglibs.request.IsSessionFromURLTag</tagclass>
+    <bodycontent>JSP</bodycontent>
+    <info>Test whether the HTTP session was from URL encoding.</info>
+    <attribute>
+      <name>value</name>
+      <required>false</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+  </tag>
+
+  <tag>
+    <name>issessionvalid</name>
+    <tagclass>org.apache.taglibs.request.IsSessionValidTag</tagclass>
+    <bodycontent>JSP</bodycontent>
+    <info>Test whether the HTTP session is valid.</info>
+    <attribute>
+      <name>value</name>
+      <required>false</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+  </tag>
+
+  <tag>
+    <name>isuserinrole</name>
+    <tagclass>org.apache.taglibs.request.IsUserInRoleTag</tagclass>
+    <bodycontent>JSP</bodycontent>
+    <info>Test whether the remote user is in a role.</info>
+    <attribute>
+      <name>role</name>
+      <required>yes</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>value</name>
+      <required>false</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+  </tag>
+
+  <tag>
+    <name>parameter</name>
+    <tagclass>org.apache.taglibs.request.ParameterTag</tagclass>
+    <bodycontent>empty</bodycontent>
+    <info>Output the value of a single parameter.</info>
+    <attribute>
+      <name>name</name>
+      <required>true</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+  </tag>
+
+  <tag>
+    <name>parameters</name>
+    <tagclass>org.apache.taglibs.request.ParametersTag</tagclass>
+    <teiclass>org.apache.taglibs.request.ParametersTEI</teiclass>
+    <bodycontent>JSP</bodycontent>
+    <info>Loop through all parameters.</info>
+    <attribute>
+      <name>id</name>
+      <required>true</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>name</name>
+      <required>false</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+  </tag>
+
+  <tag>
+    <name>parametervalues</name>
+    <tagclass>org.apache.taglibs.request.ParameterValuesTag</tagclass>
+    <teiclass>org.apache.taglibs.request.ParameterValuesTEI</teiclass>
+    <bodycontent>JSP</bodycontent>
+    <info>Get the name and values of a single parameter.</info>
+    <attribute>
+      <name>id</name>
+      <required>true</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+  </tag>
+
+  <tag>
+    <name>existsparameter</name>
+    <tagclass>org.apache.taglibs.request.ExistsParameterTag</tagclass>
+    <bodycontent>JSP</bodycontent>
+    <info>Includes the body of the tag if the request parameter exists.</info>
+    <attribute>
+      <name>name</name>
+      <required>true</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>value</name>
+      <required>false</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+  </tag>
+
+  <tag>
+    <name>request</name>
+    <tagclass>org.apache.taglibs.request.RequestTag</tagclass>
+    <teiclass>org.apache.taglibs.request.RequestTEI</teiclass>
+    <bodycontent>empty</bodycontent>
+    <info>Get information about the current request.</info>
+    <attribute>
+      <name>id</name>
+      <required>true</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+  </tag>
+
+  <tag>
+    <name>attribute</name>
+    <tagclass>org.apache.taglibs.request.AttributeTag</tagclass>
+    <bodycontent>empty</bodycontent>
+    <info>Get the value of a single request attribute.</info>
+    <attribute>
+      <name>name</name>
+      <required>true</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+  </tag>
+
+  <tag>
+    <name>attributes</name>
+    <tagclass>org.apache.taglibs.request.AttributesTag</tagclass>
+    <teiclass>org.apache.taglibs.request.AttributesTEI</teiclass>
+    <bodycontent>JSP</bodycontent>
+    <info>Loop through all request attributes.</info>
+    <attribute>
+      <name>id</name>
+      <required>true</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+  </tag>
+
+  <tag>
+    <name>existsattribute</name>
+    <tagclass>org.apache.taglibs.request.ExistsAttributeTag</tagclass>
+    <bodycontent>JSP</bodycontent>
+    <info>Includes the body of the tag if the request attribute exists.</info>
+    <attribute>
+      <name>name</name>
+      <required>true</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>value</name>
+      <required>false</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+  </tag>
+
+  <tag>
+    <name>setattribute</name>
+    <tagclass>org.apache.taglibs.request.SetAttributeTag</tagclass>
+    <bodycontent>JSP</bodycontent>
+    <info>Sets the value of a request attribute to the content in the body of the tag.</info>
+    <attribute>
+      <name>name</name>
+      <required>true</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+  </tag>
+  <tag>
+    <name>removeattribute</name>
+    <tagclass>org.apache.taglibs.request.RemoveAttributeTag</tagclass>
+    <bodycontent>empty</bodycontent>
+    <info>Removes an attribute from a request.</info>
+    <attribute>
+      <name>name</name>
+      <required>true</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+  </tag>
+</taglib>

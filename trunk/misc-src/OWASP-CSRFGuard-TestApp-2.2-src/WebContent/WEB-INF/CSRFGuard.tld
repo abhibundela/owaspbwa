@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE taglib PUBLIC 
+ "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN" 
+ "http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_2.dtd">
+<!--
+	CSRFGuard.tld
+	Copyright (c) 2008 - The OWASP Foundation
+-->
+<taglib>
+	<tlib-version>1</tlib-version>
+	<jsp-version>1.2</jsp-version>
+	<short-name>CSRFGuard Tag Library</short-name>
+	<tag>
+		<name>token</name>
+		<tag-class>org.owasp.csrfguard.tags.Token</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+	<tag>
+		<name>token-name</name>
+		<tag-class>org.owasp.csrfguard.tags.TokenName</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+	<tag>
+		<name>token-value</name>
+		<tag-class>org.owasp.csrfguard.tags.TokenValue</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+</taglib>

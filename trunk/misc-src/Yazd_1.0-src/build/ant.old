@@ -1,0 +1,47 @@
+#! /bin/sh
+
+# //--------------------------------------------------------------------------//
+# // $RCSfile: ant,v $
+# // $Revision: 1.2 $
+# // $Date: 2001/08/01 05:01:08 $
+# //
+# // Standard main Jive ant file
+# //--------------------------------------------------------------------------//
+
+
+# //--------------------------------------------------------------------------//
+# // Set the path to the main jive directory (can be relative or absolut).    //
+# //--------------------------------------------------------------------------//
+echo "hello"
+JIVE_HOME=..
+export JIVE_HOME
+
+# //--------------------------------------------------------------------------//
+# // Check for the JAVA_HOME environment variable                             //
+# //--------------------------------------------------------------------------//
+if [ "$JAVA_HOME" != "" ] ; then
+    # //----------------------------------------------------------------------//
+    # // Create Ant's classpath                                               //
+    # //----------------------------------------------------------------------//
+    CP=$JAVA_HOME/lib/tools.jar:$JIVE_HOME/build/lib/ant.jar:$JIVE_HOME/build/lib/jaxp.jar:$JIVE_HOME/build/lib/crimson.jar
+    
+    # //----------------------------------------------------------------------//
+    # // Run ant                                                              //
+    # //----------------------------------------------------------------------//
+    $JAVA_HOME/bin/java -classpath $CP -Dant.home=$JIVE_HOME/build/lib -Djive.home=$JIVE_HOME org.apache.tools.ant.Main $@    
+else
+    # //----------------------------------------------------------------------//
+    # // No JAVA_HOME error message                                           //
+    # //----------------------------------------------------------------------//
+    echo "Jive Build Error:"
+    echo "-----------------"
+    echo "The JAVA_HOME environment variable is not set. JAVA_HOME should point"
+    echo "to your echo java directory, ie: /usr/local/bin/jdk1.3. You can set"
+    echo "this via the command line like so:"
+    echo "  export JAVA_HOME=/usr/local/bin/jdk1.3"
+    echo "Note that this will only set the JAVA_HOME environment variable"
+    echo "within the context of your current shell. To set it permanently,"
+    echo "please consult your shell's documentation about environment"
+    echo "variables."
+fi
+
