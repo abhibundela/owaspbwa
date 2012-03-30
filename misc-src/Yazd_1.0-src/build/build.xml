@@ -1,0 +1,358 @@
+<?xml version="1.0"?>
+
+
+<!--
+    $RCSfile: build.xml,v $
+    $Revision: 1.11 $
+    $Date: 2001/08/01 16:29:26 $
+-->
+
+<!-- How to use this build script ========================================== -->
+<!--
+    Windows:
+        In the \build directory, run the "ant.bat" bat file:
+        c:\cvs\yazd> ant.bat
+    Unix:
+        In the /build directory, run the "ant" script:
+        user@host:~/cvs/yazd % ./ant
+        If you have problems running the "ant" script, you might need to
+        give it execute permissions:
+        chmod +x ant
+
+    There is no need to install Ant on your machine - we include all the Ant
+    jars in the CVS repository.
+
+    Please send comments or questions to aaflatooni@yasna.com.
+-->
+<project name="Yazd" default="war" basedir=".">
+
+    <!-- Name of our project. This is used for building distributions and    -->
+    <!-- a few other things.                                                 -->
+    <property name="name" value="Yasna" />
+
+    <!-- The path of the base Yazd directory. Since we run this file from    -->
+    <!-- the /build directory, the relative path is a directory below this   -->
+    <!-- project's base dir.                                                 -->
+    <!-- The yazd.home property is set in the ant.bat or ant script.         -->
+    <property name="rel.path" value="${basedir}/${Yasna.home}" />
+
+    <!-- To force and overwrite of any copied files, run your ant task as:   -->
+    <!-- ant -Doverwrite=true taskName                                       -->
+    <property name="overwrite" value="false" />
+
+    <!-- If your computer does not have internet access, set the following   -->
+    <!-- property to true. You can also overwrite this property by passing   -->
+    <!-- it in as a command line property:                                   -->
+    <!-- ant -Doffline=true taskName                                         -->
+    <!-- This property is used for the javadoc task - it needs to know when  -->
+    <!-- you're offline so it can use a local copy of Sun's package-list.    -->
+    <property name="offline" value="true" />
+
+    <!-- sub lib directory - sub build files should overwrite this by        -->
+    <!-- passing in a command line parameter                                 -->
+    <!-- currently, this points back to the main yazd dir - there shouldn't  -->
+    <!-- be any jars there!                                                  -->
+    <property name="sub.lib.src.dir" value="${rel.path}" />
+
+    <!-- You can specify a target in sub-build files (for example, the       -->
+    <!-- tools). The default target is "all". This can be overwritten like   -->
+    <!-- so: ant -Dtarget=someTarget ...                                     -->
+    <property name="target" value="all" />
+
+    <!-- source dirs ======================================================= -->
+    <property name="core.src.dir" value="${rel.path}/source" />
+    <property name="docs.src.dir" value="${rel.path}/docs" />
+    <property name="javadoc.src.dir" value="${rel.path}/source/core" />
+    <property name="build.lib.src.dir" value="${rel.path}/build/lib" />
+    <property name="app.lib.src.dir" value="${rel.path}/application/lib" />
+    <property name="skins.src.dir" value="${rel.path}/skins" />
+    <property name="filters.src.dir" value="${rel.path}/source/filters" />
+    <property name="tools.src.dir" value="${rel.path}/tools" />
+    <property name="i18n.src.dir" value="${rel.path}/source/i18n" />
+
+    <!-- destination/target dirs =========================================== -->
+    <property name="build.dest.dir" value="${rel.path}/classes" /> 
+    <property name="javadoc.dest.dir" value="${rel.path}/javadoc" />
+    <property name="jspc.dest.dir" value="${rel.path}/jspc" />
+    <property name="jar.dest.dir" value="${app.lib.src.dir}" />
+    <property name="war.dest.dir" value="/var/lib/tomcat6/webapps" />
+
+    <!-- javadoc specific props ============================================ -->
+    <property name="javadoc.dependencies" value="${rel.path}/javadoc" />
+    <property name="javadoc.stylesheetfile"
+        value="${javadoc.dependencies}/style.css" />
+    <property name="javadoc.overview"
+        value="${javadoc.dependencies}/overview.html" />
+
+    <!-- Override any of the above properties in this properties file ====== -->
+    <property file="Yasna_build.properties" />
+
+    <!-- Build dependencies (jar files) for the Yazd source code =========== -->
+    <path id="build.dependencies">
+        <!-- Sub build files can specify that its jars come first in the     -->
+        <!-- classpath by passing in the sub.lib.src.dir property.           -->
+        <!-- By default, sub.lib.src.dir points to rel.path                  -->
+        <fileset dir="${sub.lib.src.dir}">
+            <include name="*.jar" />
+        </fileset>
+        <!-- Next come jars in the build/lib directory                       -->
+        <fileset dir="${build.lib.src.dir}">
+            <include name="*.jar" />
+            <exclude name="ant.jar" />
+            <exclude name="jaxp.jar" />
+            <exclude name="crimson.jar" />
+        </fileset>
+        <!-- Lastly add the jars in the WEB-INF/lib directory                -->
+        <fileset dir="${app.lib.src.dir}">
+            <include name="*.jar" />
+        </fileset>
+    </path>
+
+    <!-- compile =========================================================== -->
+    <!-- An alias for all compile tasks                                      -->
+    <target name="compile" depends="compilecore">
+    </target>
+
+    <!-- compilecore ======================================================= -->
+    <!-- Compiles core Yazd source code (including filters)                  -->
+    <target name="compilecore">
+        <!-- create the build dir -->
+        <mkdir dir="${build.dest.dir}" />
+        <echo message="Compiling ${core.src.dir}" />
+        <javac
+            destdir="${build.dest.dir}"
+            includes="**/*.java"
+            includeAntRuntime="no"
+
+        >
+            <classpath>
+                <path refid="build.dependencies" />
+            </classpath>
+            <src path="${core.src.dir}" />
+        </javac>
+    </target>
+
+    <!-- compiletools ====================================================== -->
+    <!-- An alias for compiling all of the Yazd tools.                       -->
+    <target name="compiletools" depends="ubbexport, xmlvalidator">
+    </target>
+
+    <!-- ubbexport ========================================================= -->
+    <!-- Builds the ubbexport tool.                                          -->
+    <target name="ubbexport" depends="jar">
+        <ant antfile="${tools.src.dir}/ubbexport/build/build.xml"
+            dir="${tools.src.dir}/ubbexport/build"
+            target="${target}"
+        />
+    </target>
+
+    <!-- xmlvalidator ====================================================== -->
+    <!-- Builds the xmlvalidator tool.                                       -->
+    <target name="xmlvalidator" depends="jar">
+        <ant antfile="${tools.src.dir}/xmlvalidator/build/build.xml"
+            dir="${tools.src.dir}/xmlvalidator/build"
+            target="${target}"
+        />
+    </target>
+
+    <!-- dataconverter ===================================================== -->
+    <!-- Builds the dataconverter tool.                                       -->
+    <target name="dataconverter" depends="jar">
+        <ant antfile="${tools.src.dir}/xmlvalidator/build/build.xml"
+            dir="${tools.src.dir}/dataconverter/build"
+            target="${target}"
+        />
+    </target>
+
+    <!-- compilejsp ======================================================== -->
+    <!-- Compiles a given JSP in a given skin directory                      -->
+    <!-- Example: ant -Dskin=admin -Dfile=index.jsp compilejsp               -->
+    <target name="compilejsp" depends="jar">
+        <mkdir dir="${jspc.dest.dir}" />
+        <mkdir dir="${jspc.dest.dir}/source" />
+        <mkdir dir="${jspc.dest.dir}/source/${skin}" />
+        <mkdir dir="${jspc.dest.dir}/classes" />
+        <mkdir dir="${jspc.dest.dir}/classes/${skin}" />
+        <echo message=" Running Jasper on ${skin}/${file}..." />
+        <java classname="org.apache.jasper.JspC" fork="yes">
+            <arg line="-d ${jspc.dest.dir}/source/${skin} ${skins.src.dir}/${skin}/${file}" />
+            <classpath>
+                <path location="${build.lib.src.dir}/jaxp.jar" />
+                <path location="${build.lib.src.dir}/crimson.jar" />
+                <path refid="build.dependencies" />
+            </classpath>
+        </java>
+        <echo message=" Compiling generated java file..." />
+        <javac srcdir="${jspc.dest.dir}/source/${skin}"
+            destdir="${jspc.dest.dir}/classes/${skin}"
+            includes="${jspc.dest.dir}/source/${skin}/*.java"
+        >
+            <classpath>
+                <path location="${jar.dest.dir}/yazd.jar" />
+                <path refid="build.dependencies" />
+            </classpath>
+        </javac>
+    </target>
+
+    <!-- javadoc =========================================================== -->
+    <!-- An alias for all javadoc tasks                                      -->
+    <target name="javadoc" depends="javadoccore">
+    </target>
+
+    <!-- javadoccore ======================================================= -->
+    <!-- Generates JavaDocs on all core Yazd code (including filters)        -->
+    <target name="javadoccore">
+        <!-- create the javadoc dir -->
+        <mkdir dir="${javadoc.dest.dir}" />
+        <!-- dir to the source dir -->
+        <copy todir="${core.src.dir}">
+            <fileset dir="${javadoc.dependencies}" includes="**/package.html" />
+        </copy>
+        <!-- run the javadoc command -->
+        <javadoc
+            packagenames="com.Yasna.forum,
+                          com.Yasna.forum.filter,
+                          com.Yasna.forum.util,
+                          com.Yasna.util"
+            destdir="${javadoc.dest.dir}"
+            stylesheetfile="${javadoc.stylesheetfile}"
+            windowtitle="Yazd Documentation"
+            doctitle="&lt;font face='verdana,arial,helvetica'>Yazd 1.0 3&lt;/font>"
+            header="&lt;b>Yazd&lt;/b>"
+            bottom="&lt;i>Copyright &amp;copy; 2000-2001 Yasna Inc. &lt;/i>"
+        >
+            <classpath>
+                <pathelement path="${build.dest.dir}" />
+                <path refid="build.dependencies" />
+            </classpath>
+            <sourcepath>
+                <pathelement path="${core.src.dir}" />
+                <pathelement path="${filters.src.dir}" />
+            </sourcepath>
+        </javadoc>
+        <!-- delete the package.html files we moved into the source dir -->
+        <delete>
+            <fileset dir="${core.src.dir}" includes="**/package.html" />
+        </delete>
+    </target>
+
+    <!-- jar =============================================================== -->
+    <!-- Creates a jar file of the classes in the build dir                  -->
+    <target name="jar" depends="compile">
+        <echo message="Creating yazd.jar in ${jar.dest.dir}" />
+        <jar
+            jarfile="${jar.dest.dir}/yazd.jar"
+        >
+            <!-- main classes -->
+            <fileset dir="${build.dest.dir}"
+                includes="com/Yasna/**/*.class, *.properties"
+            />
+        </jar>
+        <!-- delete the temporary directory -->
+    </target>
+
+    <!-- war =============================================================== -->
+    <!-- Creates a war file of the classes in the build dir.                 -->
+    <!-- Caveat: This task isn't up-to-date                                  -->
+    <target name="war" depends="jar">
+        <war warfile="${war.dest.dir}/yazd.war"
+            webxml="${rel.path}/build/WEB-INF/web.xml"
+        >
+            <lib dir="${app.lib.src.dir}">
+                <include name="*.jar" />
+            </lib>
+            <!--
+            <zipfileset dir="${rel.path}/build/WEB-INF/yazdHome/logs"
+                prefix="WEB-INF/yazdHome/logs"
+            />
+            <zipfileset dir="${rel.path}/build/WEB-INF/yazdHome/search"
+                prefix="WEB-INF/yazdHome/search"
+            />
+            -->
+            <zipfileset dir="${rel.path}/build/WEB-INF/yazdHome"
+                prefix="WEB-INF/yazdHome"
+            />
+            <classes dir="${rel.path}/build/WEB-INF/classes" />
+            <fileset dir="${skins.src.dir}">
+                <include name="**/*.html" />
+                <include name="**/*.jsp" />
+                <include name="**/*.gif" />
+                <include name="**/*.css" />
+            </fileset>
+        </war>
+    </target>
+
+    <!-- deployjar ========================================================= -->
+    <!-- Copy the yazd.jar file to the specified directory. The jar deploy   -->
+    <!-- directory is specified in the yazd_build.properties file            -->
+    <!-- Example:                                                            -->
+    <!-- deploy.jar.dir=c:\\yourAppServer\\yazd\\WEB-INF\\lib               -->
+    <!-- or                                                                  -->
+    <!-- deploy.jar.dir=/home/appServer/yazd/WEB-INF/lib                    -->
+    <target name="deployjar" depends="jar">
+        <copy todir="${deploy.jar.dir}"
+            file="${jar.dest.dir}/yazd.jar"
+            overwrite="${overwrite}"
+        />
+    </target>
+
+    <!-- deploywar ========================================================= -->
+    <!-- Copy the yazd.war file to the specified directory. The war deploy   -->
+    <!-- directory is specified in the yazd_build.properties file  as        -->
+    <!-- the property "deploy.war.dir"                                       -->
+    <target name="deploywar" depends="war">
+        <copy todir="${deploy.war.dir}"
+            file="${war.dest.dir}/yazd.war"
+            overwrite="${overwrite}"
+        />
+    </target>
+
+    <!-- deployskin ======================================================== -->
+    <!-- Deploys a skin to the specified skin directory. The property        -->
+    <!-- "deploy.skin.dir" should be in the yazd.properties file like so:    -->
+    <!-- deploy.skin.dir=c:\\yourAppServer\\yazd2                            -->
+    <!-- or                                                                  -->
+    <!-- deploy.skin.dir=/home/appServer/yazd2                               -->
+    <target name="deployskin">
+        <mkdir dir="${deploy.skin.dir}/${skin}" />
+        <copy todir="${deploy.skin.dir}/${skin}" overwrite="${overwrite}">
+            <fileset dir="${skins.src.dir}/${skin}">
+                <exclude name="**/*-dev" />
+                <exclude name="**/test/**" />
+            </fileset>
+        </copy>
+    </target>
+
+    <!-- tool ============================================================== -->
+    <target name="tool">
+        <ant dir="${rel.path}/tools/${toolname}/build"
+            antfile="build.xml"
+            target="${target}"
+        />
+    </target>
+
+    <!-- clean ============================================================= -->
+    <!-- Deletes all build-created directories and files                     -->
+    <target name="clean">
+        <!-- delete build classes -->
+        <delete dir="${build.dest.dir}" />
+        <!-- delete generated javadoc -->
+        <delete dir="${javadoc.dest.dir}" />
+        <!-- delete the diff file -->
+        <delete dir="${diff.dest.dir}" />
+        <!-- delete the jspc dir -->
+        <delete dir="${jspc.dest.dir}" />
+        <!-- delete the yazd.jar file -->
+        <delete file="${jar.dest.dir}/yazd.jar" />
+        <!-- delete the yazd.war file -->
+        <delete file="${war.dest.dir}/yazd.war" />
+    </target>
+
+    <!-- all =============================================================== -->
+    <!-- Does a compile by default                                           -->
+    <target name="all" depends="compile">
+    </target>
+
+</project>
+
+

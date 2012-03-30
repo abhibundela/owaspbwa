@@ -1,0 +1,24 @@
+#! /bin/sh
+YAZD_HOME=.. 
+export YAZD_HOME
+if [ "$JAVA_HOME" != "" ] ; then 
+    CP=$JAVA_HOME/lib/tools.jar:$YAZD_HOME/build/lib/ant.jar:$YAZD_HOME/build/lib/jaxp.jar:$YAZD_HOME/build/lib/crimson.jar
+     
+    # //----------------------------------------------------------------------//
+    # // Run ant                                                              // 
+    # //----------------------------------------------------------------------//     
+    $JAVA_HOME/bin/java -classpath $CP -Dant.home=/usr/share/java/ -DYasna.home=$YAZD_HOME org.apache.tools.ant.Main $@
+
+else 
+    echo "YAZD Build Error:"
+    echo "-----------------"
+    echo "The JAVA_HOME environment variable is not set. JAVA_HOME should point"
+    echo "to your echo java directory, ie: /usr/local/bin/jdk1.3. You can set"
+    echo "this via the command line like so:"
+    echo "  export JAVA_HOME=/usr/local/bin/jdk1.3"
+    echo "Note that this will only set the JAVA_HOME environment variable"
+    echo "within the context of your current shell. To set it permanently,"
+    echo "please consult your shell's documentation about environment"
+    echo "variables."
+fi
+
