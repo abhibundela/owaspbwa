@@ -31,6 +31,10 @@ echo "---- Updating from ModSecurity Core Rule Set SVN Repo ----"
 svn update --accept theirs-full /owaspbwa/modsecurity-crs-svn
 if [ "$?"-ne 0]; then echo "SVN Update from ModSecurity Core Rule Set SVN Repo Failed!"; exit 1; fi 
 
+echo "---- Updating from BodgeIt SVN Repo ----"
+svn update --accept theirs-full /owaspbwa/bodgeit-svn
+if [ "$?"-ne 0]; then echo "SVN Update from BodgeIt SVN Repo Failed!"; exit 1; fi 
+
 echo "---- Updating from OWASP WebGoat (Java) SVN Repo ----"
 svn update --accept theirs-full /owaspbwa/WebGoat-svn
 if [ "$?"-ne 0]; then echo "SVN Update from OWASP WebGoat (Java) SVN Repo Failed!"; exit 1; fi 
