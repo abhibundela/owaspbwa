@@ -41,7 +41,23 @@ if [ "$?"-ne 0]; then echo "SVN Update from OWASP WebGoat (Java) SVN Repo Failed
 # build and deploy new version of WebGoat
 echo "Compiling and deploying WebGoat in /owaspbwa/WebGoat-svn...." 
 cd /owaspbwa/WebGoat-svn
-mvn tomcat:undeploy ; mvn war:exploded tomcat:exploded
+mvn tomcat:undeploy ; mvn compile ; mvn war:exploded tomcat:exploded
+cd - # return to previous directory
+
+echo "---- Updating from OWASP ESAPI Java SwingSet SVN Repo ----"
+svn update --accept theirs-full /owaspbwa/owasp-esapi-java-swingset-svn
+echo "Compiling and deploying OWASP ESAPI Java SwingSet in /owaspbwa/owasp-esapi-java-swingset-svn...." 
+# build and deploy new version of OWASP ESAPI Java SwingSet 
+cd /owaspbwa/owasp-esapi-java-swingset-svn
+mvn tomcat:undeploy ; mvn compile ; mvn war:exploded tomcat:exploded
+cd - # return to previous directory
+
+echo "---- Updating from OWASP ESAPI Java SwingSet Interactive SVN Repo ----"
+svn update --accept theirs-full /owaspbwa/owasp-esapi-java-swingset-interactive-svn
+echo "Compiling and deploying OWASP ESAPI Java SwingSet Interactive in /owaspbwa/owasp-esapi-java-swingset-interactive-svn...." 
+# build and deploy new version of OWASP ESAPI Java SwingSet Interactive
+cd /owaspbwa/owasp-esapi-java-swingset-interactive-svn/SwingSet
+ant
 cd - # return to previous directory
 
 echo "---- Updating from webgoat.net GIT Repo ----"
