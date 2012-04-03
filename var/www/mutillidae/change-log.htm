@@ -1,3 +1,48 @@
+<p><b>03/15/2012</b>: Jeremy Druin</p>
+<blockquote>
+	<p>Change Log for Mutillidae 2.1.18:</p>
+	<ul>
+		<li>The setup datebase page now clears HTML 5 Local and Session Storage</li>
+		<li>Fixed alignment issues with icons on the captured-data page.</li>
+		<li>
+			Partially protected capture-data.php page so that the page can capture
+			values that cause SQL injection. Other fields are left unprotected so
+			users can practice sending SQL injections.
+		</li>
+		<li>Added timestamp to records captured in the captured-data.txt text file</li>
+		<li>
+			Added script to home page to add a value to HTML 5 storage when user visit the site.
+			This will give users a web storage target to go after even if they dont visit the 
+			HTML 5 storage page.
+		</li>
+		<li>
+			Coverted log-visit.php from using the hitlog table to using the 
+			LogHandler class. This will help consolodate code into a single
+			point of failure for the logging process. All the code has been removed
+			from log-visit.php except a call to the LogHandler.
+		</li> 
+		<li>Adjusted top horizontal menu padding to move buttons closer together</li>
+		<li>
+			Added two new buttons to the top horizontal menu to allow user to get
+			to the view log page and the view captured data page easier.
+		</li>
+		<li>
+			Removed the gethostbyaddr() function from the LogHandler to prevent the 
+			long timeouts associated with the function when the DNS server is not
+			available. If PHP changes so that the function has a timeout setting
+			it will be brought back.
+		</li>
+		<li>
+			Changed delete icon from jpeg to a transparent PNG so the icon can be put inline
+			to the table headers to save space.
+		</li>
+		<li>Added delete log button to the show log page.</li>
+		<li>Rearranged the buttons on the show logs page, added new icons, and cleaned up the code</li>
+		<li>Added new information output about numner of records found to view logs page</li>
+		<li>Made the buttons on the captured data page smaller to free up some space.</li>
+	</ul>
+</blockquote>
+
 <p><b>03/08/2012</b>: Jeremy Druin</p>
 <blockquote>
 	<p>Change Log for Mutillidae 2.1.17:</p>

@@ -46,6 +46,14 @@
    		break;
    	}// end switch		
 
+   	if(isset($_GET["deleteLogs"])){
+		$query = "TRUNCATE TABLE hitlog;";
+
+		$result = $conn->query($query);
+		if (!$result) {
+	    	throw (new Exception('Error executing query: '.$conn->error, $conn->errorno));
+	    }// end if	
+	}// end if isset
 ?>
 
 <div class="page-title">Log</div>
@@ -63,18 +71,30 @@
 		$result = $conn->query($query);
 		if (!$result) {
 	    	throw (new Exception('Error executing query: '.$conn->error, $conn->errorno));
-	    }// end if	
+	    }// end if
 
 		// we have rows. Begin drawing output.
-		echo '<TABLE border="1px" width="100%" class="main-table-frame">';
-		echo '<TR class="report-header"><td colspan="10">'.$result->num_rows.' log records found</td></tr>';
-	    echo '<TR class="report-header">
-			    <td><B>Hostname</B></td>
-			    <td><B>IP</B></td>
-			    <td><B>Browser Agent</B></td>
-			    <td><B>Page Viewed</B></td>
-			    <td><B>Date/Time</B></td>
-		    </TR>';
+		echo '<table border="1px" width="100%" class="main-table-frame">';
+		echo '<tr class="report-header">';
+		echo '	<td colspan="10">';		
+		echo '		<span><img width="32px" height="32px" src="./images/information-icon-64-64.png" style="vertical-align:middle;" />'.$result->num_rows.' log records found<span>';
+		echo '		<span title="Click to refresh log file" onclick="document.location.reload(true);" style="cursor: pointer;margin-left:35px;margin-right:35px;white-space:nowrap;font-weight:bold;">';
+		echo '			<img width="32px" height="32px" src="./images/refresh-button-48px-by-48px.png" style="vertical-align:middle;" />';
+		echo '			Refresh Logs';
+		echo '		</span>';
+		echo '		<span title="Click to delete log file" onclick="document.location=\'./index.php?page=show-log.php&deleteLogs=deleteLogs\';" style="cursor: pointer;white-space:nowrap;font-weight:bold;">';
+		echo '			<img width="32px" height="32px" src="./images/delete-icon-256-256.png" style="vertical-align:middle;" />';
+		echo '			Delete Logs';
+		echo '		</span>';
+		echo '	</td>';
+		echo '</tr>';		
+	    echo '<tr class="report-header">
+			    <td style="font-weight:bold;">Hostname</td>
+			    <td style="font-weight:bold;">IP</td>
+			    <td style="font-weight:bold;">Browser Agent</td>
+			    <td style="font-weight:bold;">Page Viewed</td>
+			    <td style="font-weight:bold;">Date/Time</td>
+		    </tr>';
 
 	    if ($lLimitOutput){
 	    	echo '<tr><td class="error-header" colspan="10">Note: DOS defenses enabled. Rows limited to last 20.</td></tr>';
@@ -98,15 +118,15 @@
 				$lDate = $Encoder->encodeForHTML($row->date);				
 			}// end if
 				
-			echo "<TR>
+			echo "<tr>
 					<td>{$lHostname}</td>
 					<td>{$lClientIPAddress}</td>
 					<td>{$lBrowser}</td>
 					<td>{$lReferer}</td>
 					<td>{$lDate}</td>
-				</TR>\n";
+				</tr>\n";
 		}//end while $row
-		echo "</TABLE>";
+		echo "</table>";
 	} catch (Exception $e) {
 		echo $CustomErrorHandler->FormatError($e, "Error writing rows.");
 	}// end try;

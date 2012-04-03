@@ -139,7 +139,9 @@
 						}// end if
 					?>
 					<td><a href="./index.php?do=toggle-security&page=<?php echo $lPage?>">Toggle Security</a></td>
-					<td><a href="set-up-database.php">Setup/Reset the DB</a></td>
+					<td><a href="set-up-database.php">Reset DB</a></td>
+					<td><a href="./index.php?page=show-log.php">View Log</a></td>
+					<td><a href="./index.php?page=captured-data.php">View Captured Data</a></td>
 				</tr>
 			</table>	
 		</td>
@@ -229,7 +231,8 @@
 									<ul>
 										<li><a href="index.php?page=capture-data.php">Capture Data Page</a></li>
 									</ul>
-								</li>								<li>
+								</li>
+								<li>
 									<a href="">Command Injection</a>
 									<ul>
 										<li><a href="./index.php?page=dns-lookup.php">DNS Lookup</a></li>
@@ -272,13 +275,13 @@
 								<li>
 									<a href="">Reflected (First Order)</a>
 									<ul>
-										<li><a href="?page=text-file-viewer.php">Text File Viewer</a></li>
 										<li><a href="./index.php?page=dns-lookup.php">DNS Lookup</a></li>
-										<li><a href="?page=user-info.php">User Info</a></li>
-										<li><a href="./index.php?page=set-background-color.php">Set Background Color</a></li>
 										<li><a href="./index.php?page=pen-test-tool-lookup.php">Pen Test Tool Lookup</a></li>
-										<li><a href="index.php?page=html5-storage.php">HTML5 Storage</a></li>
-										<li><a href="index.php?page=capture-data.php">Capture Data Page</a></li>
+										<li><a href="./index.php?page=text-file-viewer.php">Text File Viewer</a></li>
+										<li><a href="./index.php?page=user-info.php">User Info</a></li>
+										<li><a href="./index.php?page=set-background-color.php">Set Background Color</a></li>
+										<li><a href="./index.php?page=html5-storage.php">HTML5 Storage</a></li>
+										<li><a href="./index.php?page=capture-data.php">Capture Data Page</a></li>
 									</ul>
 								</li>
 								<li>

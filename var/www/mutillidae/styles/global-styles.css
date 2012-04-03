@@ -195,8 +195,8 @@ table.header-menu-table tr td{
 table.header-menu-table tr td a{
 	text-decoration: none;
 	display: block;
-	padding-right: 30px;
-	padding-left: 30px;
+	padding-right: 15px;
+	padding-left: 15px;
 	padding-top: 5px;
 	padding-bottom: 5px;
 }

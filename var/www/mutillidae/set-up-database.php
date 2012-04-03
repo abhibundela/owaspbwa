@@ -307,7 +307,14 @@ try{
 		}// end if
 	} catch (Exception $e) {
 		echo $CustomErrorHandler->FormatError($e, "Error attempting to close MySQL connection.");
-	}// end try			
+	}// end try
+	
+	try{
+		echo "<script>try{sessionStorage.clear();localStorage.clear();}catch(e){alert(\"Error clearing HTML 5 Local and Session Storage\" + e.toString();)};</script>";
+		echo "<div class=\"database-success-message\">HTML 5 Local and Session Storage cleared</div>";
+	} catch (Exception $e) {
+		echo $CustomErrorHandler->FormatError($e, "Error attempting to clear HTML 5 Local and Session Storage.");
+	}// end try
 	
 } catch (Exception $e) {
 	echo $CustomErrorHandler->FormatError($e, $lQuery);

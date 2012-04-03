@@ -61,8 +61,11 @@
 	
 	if ($lProtectAgainstSQLInjection) {
 		$lClientHostname = $conn->real_escape_string($lClientHostname);
-		$lCapturedData = $conn->real_escape_string($lCapturedData);
+		$lClientUserAgentString = $conn->real_escape_string($lClientUserAgentString);
+		$lClientReferrer = $conn->real_escape_string($lClientReferrer);
 	}// end if $lProtectAgainstSQLInjection	
+
+	$lCapturedData = $conn->real_escape_string($lCapturedData);
 	
 	try {	    	
 		switch ($_SESSION["security-level"]){
@@ -123,10 +126,14 @@
 
 	$lFilename = "captured-data.txt";
 	try{
+		$lmDateTime = new DateTime();
+		$lCurrentDateTimeArray = getdate();
+		$lCurrentDateTime = date('m-d-Y H:i:s', mktime($lCurrentDateTimeArray['hours'], $lCurrentDateTimeArray['minutes'], $lCurrentDateTimeArray['seconds'], $lCurrentDateTimeArray['mon'], $lCurrentDateTimeArray['mday'], $lCurrentDateTimeArray['year']));
 		$lFileHandle = fopen($lFilename, "a");		
 		fwrite($lFileHandle, PHP_EOL);
 		fwrite($lFileHandle, "--------------------------------------------------".PHP_EOL);
 		fwrite($lFileHandle, "Client IP: ".$lClientIP.PHP_EOL);
+		fwrite($lFileHandle, "Timestamp: ".$lCurrentDateTime." GMT".PHP_EOL);
 		fwrite($lFileHandle, "--------------------------------------------------".PHP_EOL);
 		fwrite($lFileHandle, "Client Hostname: ".$lClientHostname.PHP_EOL);
 		fwrite($lFileHandle, "Client User Agent: ".$lClientUserAgentString.PHP_EOL);

@@ -112,7 +112,7 @@ Content-Type: application/x-www-form-urlencoded
 Content-Length: 122
 
 <span class="important-code">
-username=username1&;password=pass1&confirm_password=pass1&my_signature=signature1&register-php-submit-button=Create+Account
+username=username1&amp;;password=pass1&amp;confirm_password=pass1&amp;my_signature=signature1&amp;register-php-submit-button=Create+Account
 </span>
 </code>
 			<br/><br/>

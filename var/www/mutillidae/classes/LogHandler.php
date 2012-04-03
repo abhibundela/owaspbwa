@@ -60,12 +60,17 @@ class LogHandler {
 		 * defense. A parameterized stored procedure would be better.
 		 */
 		if (!$this->stopSQLInjection) {
-			$lClientName = gethostbyaddr($_SERVER['REMOTE_ADDR']);
+			/* gethostbyaddr() causing a lot of issues because there is not
+			 * a way to set timeout settings. It is being removed for now.
+			 */
+			//$lClientName = gethostbyaddr($_SERVER['REMOTE_ADDR']);
+			$lClientName = $_SERVER['REMOTE_ADDR'];
 			$lClientIP = $_SERVER['REMOTE_ADDR'];
 			//$lUserAgent = $lUserAgent;
 			//$TransactionDescription = $TransactionDescription;
 		}else{
-			$lClientName = $MySQLConnection->real_escape_string(gethostbyaddr($_SERVER['REMOTE_ADDR']));
+			//$lClientName = $MySQLConnection->real_escape_string(gethostbyaddr($_SERVER['REMOTE_ADDR']));
+			$lClientName = $MySQLConnection->real_escape_string($_SERVER['REMOTE_ADDR']);
 			$lClientIP = $MySQLConnection->real_escape_string($_SERVER['REMOTE_ADDR']);
 			$lUserAgent = $MySQLConnection->real_escape_string($lUserAgent);
 			$TransactionDescription = $MySQLConnection->real_escape_string($TransactionDescription);
