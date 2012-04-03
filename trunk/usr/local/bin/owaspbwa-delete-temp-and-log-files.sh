@@ -3,10 +3,6 @@
 # delete files in /tmp
 rm -rf /tmp/*
 
-# delete WebGoat builds
-cd /owaspbwa/WebGoat-svn
-mvn clean
-
 # delete histories in home directories
 rm /root/.bash_history
 rm /root/.mysql_history
