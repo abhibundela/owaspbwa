@@ -78,13 +78,13 @@
 	</tr>
 	<tr><td>&nbsp;</td></tr>
 </table>
-<span title="Click to refresh captured data log" onclick="document.location.reload(true);" style="cursor: pointer;margin-right:25px;">
-	<img src="./images/refresh-button-48px-by-48px.png" align="middle" />
-	<span style="font-weight: bold;">Refresh</span>
+<span title="Click to refresh captured data log" onclick="document.location.reload(true);" style="cursor: pointer;margin-right:35px;font-weight: bold;">
+	<img width="32px" height="32px" src="./images/refresh-button-48px-by-48px.png" style="vertical-align:middle;" />
+	Refresh
 </span>
-<span title="Click to delete captured data log" onclick="document.location='./index.php?page=captured-data.php&deleteLogs=deleteLogs';" style="cursor: pointer;" >
-	<img height="48px" width="48px" src="./images/delete-icon-256-256.jpeg" align="middle" />
-	<span style="font-weight: bold;">Delete Logs</span>
+<span title="Click to delete captured data log. This deletes the database table only. The text file is not affected." onclick="document.location='./index.php?page=captured-data.php&deleteLogs=deleteLogs';" style="cursor: pointer;font-weight: bold;">
+	<img width="32px" height="32px" src="./images/delete-icon-256-256.png" style="vertical-align:middle;" />
+	Delete Capured Data
 </span>
 <br/>
 

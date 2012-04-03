@@ -56,7 +56,12 @@ class ClientInformationHandler {
     
     public function getClientHostname(){
     	if (isset($_SERVER['REMOTE_ADDR'])){
-    		return gethostbyaddr($_SERVER['REMOTE_ADDR']);
+    		/* gethostbyaddr() is causing issues because it doesnt
+    		 * have a timeout attribute. It will be brought back if
+    		 * a timeout is added.
+    		 */
+    		//return gethostbyaddr($_SERVER['REMOTE_ADDR']);
+    		return $_SERVER['REMOTE_ADDR'];
        	}// end if
     }// end function
     

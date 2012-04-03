@@ -57,7 +57,7 @@
 
 	window.sessionStorage.setItem("CurrentBrowser", Navigator.userAgent);
 	window.localStorage.setItem("MessageOfTheDay","Go Cats!");
-		
+
 	var addRow = function(pKey, pItem, pStorageType){
 		try{
 			var lDocRoot = window.document;
@@ -192,15 +192,15 @@
 </form>
 <div style="margin-left:auto; margin-right:auto; width:600px;">
 	<span title="Click to delete session storage" onclick='sessionStorage.clear(); var node=window.document.getElementById("idSessionStorageTableBody"); while(node.hasChildNodes()){node.removeChild(node.firstChild)}; init();' style="cursor: pointer;" >
-		<img height="24px" width="24px" src="./images/delete-icon-256-256.jpeg" style="vertical-align: middle;" />
+		<img height="24px" width="24px" src="./images/delete-icon-256-256.png" style="vertical-align: middle;" />
 		<span style="font-weight: bold;">Session Storage</span>
 	</span>
 	<span title="Click to delete locate storage" onclick='localStorage.clear(); var node=window.document.getElementById("idSessionStorageTableBody"); while(node.hasChildNodes()){node.removeChild(node.firstChild)}; init();' style="cursor: pointer;" >
-		<img height="24px" width="24px" src="./images/delete-icon-256-256.jpeg" style="vertical-align: middle;margin-left: 20px;" />
+		<img height="24px" width="24px" src="./images/delete-icon-256-256.png" style="vertical-align: middle;margin-left: 20px;" />
 		<span style="font-weight: bold;">Local Storage</span>
 	</span>
 	<span title="Click to delete all html 5 storage" onclick='sessionStorage.clear();localStorage.clear(); var node=window.document.getElementById("idSessionStorageTableBody"); while(node.hasChildNodes()){node.removeChild(node.firstChild)}; init();' style="cursor: pointer;" >
-		<img height="24px" width="24px" src="./images/delete-icon-256-256.jpeg" style="vertical-align: middle;margin-left: 20px;" />
+		<img height="24px" width="24px" src="./images/delete-icon-256-256.png" style="vertical-align: middle;margin-left: 20px;" />
 		<span style="font-weight: bold;">All Storage</span>
 	</span>
 </div>

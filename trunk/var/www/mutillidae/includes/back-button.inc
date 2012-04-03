@@ -27,6 +27,7 @@
 ?>
 
 <div style="margin: 5px;">
+	<span style="font-weight: bold;" title="Click to return to the last page. It seems this button gets its value from the HTTP Referer field and places this value into a JavaScript.">
 	<a 	onclick="document.location.href='<?php echo $lHTTPReferer; ?>';" 
 		style="cursor:pointer;">
 		<img	src="./images/back-button-128px-by-128px.png" 
@@ -36,6 +37,7 @@
 				align="middle" 
 		/>
 		&nbsp;
-		<span style="font-weight: bold;">Back</span>
+		Back
 	</a>
+	</span>
 </div>

@@ -485,5 +485,8 @@
     /* ------------------------------------------
      * CLOSE DATABASE CONNECTION
      * ------------------------------------------ */
-    require_once 'closedb.inc';
+    require_once ("closedb.inc");
+    
+   	require_once ("./includes/create-html-5-web-storage-target.inc");	
+    
 ?>
