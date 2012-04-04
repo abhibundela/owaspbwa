@@ -37,6 +37,9 @@ echo "---- Updating from BodgeIt SVN Repo ----"
 svn update /owaspbwa/bodgeit-svn
 if [ "$?" -ne 0 ] ; then echo "SVN Update from BodgeIt SVN Repo Failed!"; exit 1; fi 
 
+echo "---- Starting Tomcat for possible deployment of updates to WebGoat (Java) and the ESAPI SwingSet ----"
+/usr/sbin/service tomcat6 start
+
 echo "---- Updating from OWASP WebGoat (Java) SVN Repo ----"
 svn update /owaspbwa/WebGoat-svn
 if [ "$?" -ne 0 ] ; then echo "SVN Update from OWASP WebGoat (Java) SVN Repo Failed!"; exit 1; fi 
@@ -54,6 +57,9 @@ echo "Compiling and deploying OWASP ESAPI Java SwingSet in /owaspbwa/owasp-esapi
 cd /owaspbwa/owasp-esapi-java-swingset-svn
 mvn tomcat:undeploy ; mvn compile ; mvn war:exploded tomcat:exploded
 cd - # return to previous directory
+
+echo "---- Stopping Tomcat ----"
+/usr/sbin/service tomcat6 stop
 
 echo "---- Updating from OWASP ESAPI Java SwingSet Interactive SVN Repo ----"
 svn update /owaspbwa/owasp-esapi-java-swingset-interactive-svn
