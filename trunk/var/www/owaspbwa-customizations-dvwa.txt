@@ -1,4 +1,0 @@
-
-- Edited database connection information in config/config.inc.php
-
-- Edited dvwa/dvwa/includes/DBMS/MySQL.php to allow database reset even if the database cannot be deleted (due to presence of .svn directory).
