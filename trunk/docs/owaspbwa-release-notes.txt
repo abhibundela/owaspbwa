@@ -15,6 +15,29 @@ download the .7z archive if possible to save bandwidth (and time).
 you run it only on the "host only" or "NAT" network in the virtual machine 
 settings !!! 
 
+Version 1.0rc1 - 2012-04-04
+- Added new applications:
+  - Added OWASP WebGoat.NET 
+   (https://www.owasp.org/index.php/Category:OWASP_WebGoat.NET)
+  - Added OWASP ESAPI SwingSet 
+    (https://www.owasp.org/index.php/ESAPI_Swingset)
+  - Added OWASP ESAPI SwingSet Interactive 
+    (https://www.owasp.org/index.php/ESAPI_Swingset)
+  - Added Jotto (from OWASP Vicnum project - 
+    http://www.owasp.org/index.php/Category:OWASP_Vicnum_Project)
+- Updated applications: Mutillidae, WebGoat (Java), ModSecurity, ModSecurity 
+  Core Rule Set, BodgeIt, OWASP ZAP WAVE, Damn Vulnerable Web Application,
+  WackoPicko
+- Added owaspbwa-*-rebuild.sh scripts to build and deploy applications from 
+  source (WebGoat, Yazd, CSRFGuard Test Apps, SwingSet Apps)
+- Added owaspbwa-update-*.sh scripts to automatically pull updates from source
+  repositories (OWASP BWA only and for all applications)
+- Cleaned up installations of WebGoat and Yazd
+- Fixed issue with PHP configuration to allow Remote File Include (RFI) 
+  vulnerabilities.
+- Created User Guide at http://code.google.com/p/owaspbwa/wiki/UserGuide (not
+  yet complete).
+
 Version 0.94 - 2011-07-24
 - No changes from 0.94rc3.
 
