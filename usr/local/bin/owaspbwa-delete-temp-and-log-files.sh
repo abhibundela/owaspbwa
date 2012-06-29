@@ -9,7 +9,6 @@ rm /root/.mysql_history
 rm /root/.nano_history
 rm -rf /root/.ssh
 rm -rf /root/.subversion
-rm -rf /root/.m2
 rm /home/user/.bash_history
 rm /home/user/.mysql_history
 rm /home/user/.nano_history

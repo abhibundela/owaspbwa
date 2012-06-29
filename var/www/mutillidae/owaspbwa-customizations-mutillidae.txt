@@ -3,6 +3,6 @@
 
 - Edited database connection information in config.inc
 
-- Edited database name in set-up-database.php.
+- Edited database name in set-up-database.php. (from owasp10 to mutillidae)
 
 - Edited 'admin' user password (changed to 'admin') and added non-admin named 'user' with password 'user' in set-up-database.php.

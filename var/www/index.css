@@ -3,6 +3,7 @@ body {
 	font: normal 12px auto "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
 	color: #4f6b72;
 	background: #E6EAE9;
+	margin:3%;
 }
 /*Source: http://www.jankoatwarpspeed.com/post/2008/05/22/CSS-Message-Boxes-for-different-message-types.aspx*/
 .warning {

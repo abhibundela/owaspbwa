@@ -7,7 +7,22 @@
 	<body>
 		<div>&nbsp;</div>
 		<div class="page-title">Setting up the database...</div><br /><br />
-
+		<span style="text-align: center;">
+			<div>&nbsp;</div>
+			<div class="label">If you see no error messages, it should be done.</div>
+			<div>&nbsp;</div>
+			<div class="label"><a href="index.php">Continue back to the frontpage.</a></div>
+		</span>
+		<br /><br />
+		<script>
+			try{
+				window.sessionStorage.clear();
+				window.localStorage.clear();
+			}catch(e){
+				alert("Error clearing HTML 5 Local and Session Storage" + e.toString());
+			};
+		</script>
+		<div class="database-success-message">HTML 5 Local and Session Storage cleared unless error popped-up already.</div>
 <?php
 
 //initialize custom error handler
@@ -15,16 +30,19 @@ require_once 'classes/CustomErrorHandler.php';
 if (!isset($CustomErrorHandler)){
 	$CustomErrorHandler = 
 	new CustomErrorHandler("owasp-esapi-php/src/", 0);
-}// end if	
+}// end if
 
 include 'config.inc';
+
+$lErrorDetected = FALSE;
 
 try{
 
 	try{	
 		$lMySQLiConnection = new mysqli($dbhost, $dbuser, $dbpass);
 		if (mysqli_connect_errno()) {
-   		   	throw (new Exception("Error connecting to MySQL database. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
+			$lErrorDetected = TRUE;
+			throw (new Exception("Error connecting to MySQL database. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
 		}else{
 			echo "<div class=\"database-success-message\">Connected to MySQL database</div>";	
 	    }// end if
@@ -36,7 +54,8 @@ try{
 		$lQuery = "DROP DATABASE IF EXISTS mutillidae";
 		$lResult = $lMySQLiConnection->query($lQuery);
 		if (!$lResult) {
-		   	throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
+			$lErrorDetected = TRUE;
+			throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
 		}else{
 			echo "<div class=\"database-success-message\">Executed query 'DROP DATABASE IF EXISTS' with result ".$lResult."</div>";
 		}// end if
@@ -47,7 +66,8 @@ try{
 	$lQuery = "CREATE DATABASE mutillidae";
 	$lResult = $lMySQLiConnection->query($lQuery);
 	if (!$lResult) {
-	   	throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
+		$lErrorDetected = TRUE;
+		throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
 	}else{
 		echo "<div class=\"database-success-message\">Executed query 'CREATE DATABASE' with result ".$lResult."</div>";
 	}// end if
@@ -55,16 +75,12 @@ try{
 	$lQuery = "USE mutillidae";
 	$lResult = $lMySQLiConnection->query($lQuery);
 	if (!$lResult) {
-	   	throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
+		$lErrorDetected = TRUE;
+		throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
 	}else{
 		echo "<div class=\"database-success-message\">Executed query 'USE DATABASE' with result ".$lResult."</div>";
 	}// end if
-		
-	//include 'closedb.inc';
-	//echo "<div class=\"database-success-message\">Executed query 'CLOSE DATABASE' with result ".$lResult."</div>";
-	
-	//include 'opendb.inc';
-	
+			
 	$lQuery = 'CREATE TABLE blogs_table( '.
 			 'cid INT NOT NULL AUTO_INCREMENT, '.
 	         'blogger_name TEXT, '.
@@ -73,7 +89,8 @@ try{
 			 'PRIMARY KEY(cid))';	
 	$lResult = $lMySQLiConnection->query($lQuery);
 	if (!$lResult) {
-	   	throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
+		$lErrorDetected = TRUE;
+		throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
 	}else{
 		echo "<div class=\"database-success-message\">Executed query 'CREATE TABLE' with result ".$lResult."</div>";
 	}// end if
@@ -87,7 +104,8 @@ try{
 			 'PRIMARY KEY(cid))';
 	$lResult = $lMySQLiConnection->query($lQuery);
 	if (!$lResult) {
-	   	throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
+		$lErrorDetected = TRUE;
+		throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
 	}else{
 		echo "<div class=\"database-success-message\">Executed query 'CREATE TABLE' with result ".$lResult."</div>";
 	}// end if
@@ -102,7 +120,8 @@ try{
 			 'PRIMARY KEY(cid))';		 
 	$lResult = $lMySQLiConnection->query($lQuery);
 	if (!$lResult) {
-	   	throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
+		$lErrorDetected = TRUE;
+		throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
 	}else{
 		echo "<div class=\"database-success-message\">Executed query 'CREATE TABLE' with result ".$lResult."</div>";
 	}// end if
@@ -127,7 +146,8 @@ try{
 		('ed', 'pentest', 'Commandline KungFu anyone?', 'FALSE')";
 	$lResult = $lMySQLiConnection->query($lQuery);
 	if (!$lResult) {
-	   	throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
+		$lErrorDetected = TRUE;
+		throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
 	}else{
 		echo "<div class=\"database-success-message\">Executed query 'INSERT INTO TABLE' with result ".$lResult."</div>";
 	}// end if
@@ -147,7 +167,8 @@ try{
 		(12, 'asprox', 'Fear me, for I am asprox!', '2009-03-01 22:31:13')";
 	$lResult = $lMySQLiConnection->query($lQuery);
 	if (!$lResult) {
-	   	throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
+		$lErrorDetected = TRUE;
+		throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
 	}else{
 		echo "<div class=\"database-success-message\">Executed query 'INSERT INTO TABLE' with result ".$lResult."</div>";
 	}// end if
@@ -160,7 +181,8 @@ try{
 			 'PRIMARY KEY(ccid))';
 	$lResult = $lMySQLiConnection->query($lQuery);
 	if (!$lResult) {
-	   	throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
+		$lErrorDetected = TRUE;
+		throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
 	}else{
 		echo "<div class=\"database-success-message\">Executed query 'CREATE TABLE' with result ".$lResult."</div>";
 	}// end if
@@ -173,7 +195,8 @@ try{
 		(5, '1234567812345678', '627', '2018-11-01 13:31:13')";
 	$lResult = $lMySQLiConnection->query($lQuery);
 	if (!$lResult) {
-	   	throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
+		$lErrorDetected = TRUE;
+		throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
 	}else{
 		echo "<div class=\"database-success-message\">Executed query 'INSERT INTO TABLE' with result ".$lResult."</div>";
 	}// end if
@@ -188,7 +211,8 @@ try{
 			'PRIMARY KEY(tool_id))';
 	$lResult = $lMySQLiConnection->query($lQuery);
 	if (!$lResult) {
-	   	throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
+		$lErrorDetected = TRUE;
+		throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
 	}else{
 		echo "<div class=\"database-success-message\">Executed query 'CREATE TABLE' with result ".$lResult."</div>";
 	}// end if
@@ -216,7 +240,8 @@ try{
 		(20, 'Google intitle', 'Discovery', 'Search Engine','intitle and site directives allow directory discovery. GHDB available to provide hints. See Hackers for Charity site.')";
 	$lResult = $lMySQLiConnection->query($lQuery);
 	if (!$lResult) {
-	   	throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
+		$lErrorDetected = TRUE;
+		throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
 	}else{
 		echo "<div class=\"database-success-message\">Executed query 'INSERT INTO TABLE' with result ".$lResult."</div>";
 	}// end if
@@ -235,7 +260,8 @@ try{
 			')';
 	$lResult = $lMySQLiConnection->query($lQuery);
 	if (!$lResult) {
-	   	throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
+		$lErrorDetected = TRUE;
+		throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
 	}else{
 		echo "<div class=\"database-success-message\">Executed query 'CREATE TABLE' with result ".$lResult."</div>";
 	}// end if
@@ -248,7 +274,8 @@ try{
 	";
 	$lResult = $lMySQLiConnection->query($lQuery);
 	if (!$lResult) {
-	   	throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
+		$lErrorDetected = TRUE;
+		throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
 	}else{
 		echo "<div class=\"database-success-message\">Executed query 'CREATE PROCEDURE' with result ".$lResult."</div>";
 	}// end if
@@ -267,7 +294,8 @@ try{
 	";
 	$lResult = $lMySQLiConnection->query($lQuery);
 	if (!$lResult) {
-	   	throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
+		$lErrorDetected = TRUE;
+		throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
 	}else{
 		echo "<div class=\"database-success-message\">Executed query 'CREATE PROCEDURE' with result ".$lResult."</div>";
 	}// end if
@@ -293,7 +321,8 @@ try{
 	";
 	$lResult = $lMySQLiConnection->query($lQuery);
 	if (!$lResult) {
-	   	throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
+		$lErrorDetected = TRUE;
+		throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
 	}else{
 		echo "<div class=\"database-success-message\">Executed query 'CREATE PROCEDURE' with result ".$lResult."</div>";
 	}// end if
@@ -301,33 +330,28 @@ try{
 	try{
 		$lResult = $lMySQLiConnection->close();
 		if (!$lResult) {
-		   	throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
+			$lErrorDetected = TRUE;
+			throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
 		}else{
 			echo "<div class=\"database-success-message\">Executed query 'CLOSE DATABASE' with result ".$lResult."</div>";
 		}// end if
 	} catch (Exception $e) {
 		echo $CustomErrorHandler->FormatError($e, "Error attempting to close MySQL connection.");
 	}// end try
-	
-	try{
-		echo "<script>try{sessionStorage.clear();localStorage.clear();}catch(e){alert(\"Error clearing HTML 5 Local and Session Storage\" + e.toString();)};</script>";
-		echo "<div class=\"database-success-message\">HTML 5 Local and Session Storage cleared</div>";
-	} catch (Exception $e) {
-		echo $CustomErrorHandler->FormatError($e, "Error attempting to clear HTML 5 Local and Session Storage.");
-	}// end try
-	
+		
 } catch (Exception $e) {
 	echo $CustomErrorHandler->FormatError($e, $lQuery);
 }// end try
 
+// if no errors were detected, send the user back to the page that requested the database be reset.
+//We use JS instead of HTTP Location header so that HTML5 clearing JS above will run
+if(!$lErrorDetected){
+	echo "<script>if(confirm(\"No PHP or MySQL errors were detected when resetting the database.\\n\\nClick OK to proceed or Cancel to stay on this page.\")){document.location=\"".$_SERVER["HTTP_REFERER"]."\"};</script>";
+	//header("Location: ".$_SERVER["HTTP_REFERER"], true, 302);
+}// end if
+
 $CustomErrorHandler = null;
 ?>
 
-		<span style="text-align: center;">
-			<div>&nbsp;</div>
-			<div class="label">If you see no errors above, it should be done.</div>
-			<div>&nbsp;</div>
-			<div class="label"><a href="index.php">Continue back to the frontpage.</a></div>
-		</span>
 	</body>
 </html>

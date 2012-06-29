@@ -15,6 +15,16 @@ download the .7z archive if possible to save bandwidth (and time).
 you run it only on the "host only" or "NAT" network in the virtual machine 
 settings !!! 
 
+Version 1.0rc2 - 2012-07-XX
+- Added new applications:
+
+- Updated WebGoat, Mutillidae, other applications from source repositories
+- Removed links to OWASP ESAPI SwingSet (non-Interactive).  That application
+  has been deprecated and replaced by the SwingSet Interactive.
+- Changed version numbers in index.html to better indicate applications that
+  are updated from public SVN or GIT repositories.
+- Layout improvements to index.html file (layout could still use some work).
+
 Version 1.0rc1 - 2012-04-04
 - Added new applications:
   - Added OWASP WebGoat.NET 
