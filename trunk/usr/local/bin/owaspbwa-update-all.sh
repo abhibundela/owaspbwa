@@ -49,14 +49,16 @@ cd /owaspbwa/WebGoat-svn
 mvn tomcat:undeploy ; mvn compile ; mvn war:exploded tomcat:exploded
 cd - # return to previous directory
 
-echo "---- Updating from OWASP ESAPI Java SwingSet SVN Repo ----"
-svn update /owaspbwa/owasp-esapi-java-swingset-svn
-if [ "$?" -ne 0 ] ; then echo "SVN Update from OWASP ESAPI Java SwingSet SVN Repo Failed!"; exit 1; fi 
-echo "Compiling and deploying OWASP ESAPI Java SwingSet in /owaspbwa/owasp-esapi-java-swingset-svn...." 
+# The OWASP ESAPI Java SwingSet (non-Interactive) is deprecated so we no longer update it here
+
+#echo "---- Updating from OWASP ESAPI Java SwingSet SVN Repo ----"
+#svn update /owaspbwa/owasp-esapi-java-swingset-svn
+#if [ "$?" -ne 0 ] ; then echo "SVN Update from OWASP ESAPI Java SwingSet SVN Repo Failed!"; exit 1; fi 
+#echo "Compiling and deploying OWASP ESAPI Java SwingSet in /owaspbwa/owasp-esapi-java-swingset-svn...." 
 # build and deploy new version of OWASP ESAPI Java SwingSet 
-cd /owaspbwa/owasp-esapi-java-swingset-svn
-mvn tomcat:undeploy ; mvn compile ; mvn war:exploded tomcat:exploded
-cd - # return to previous directory
+#cd /owaspbwa/owasp-esapi-java-swingset-svn
+#mvn tomcat:undeploy ; mvn compile ; mvn war:exploded tomcat:exploded
+#cd - # return to previous directory
 
 echo "---- Stopping Tomcat ----"
 /usr/sbin/service tomcat6 stop

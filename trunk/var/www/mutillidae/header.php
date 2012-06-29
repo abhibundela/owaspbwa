@@ -103,7 +103,7 @@
 					<td style="text-align:center;">
 						<span style="text-align:center; font-weight: bold; font-size:30px; text-align: center;">
 						<img style="vertical-align: middle; margin-right: 25px;" border="0px" width="75px" height="50px" align="top" src="./images/coykillericon.png"/>
-							Mutillidae: Born to be Hacked
+							NOWASP (Mutillidae): Hack Like You Mean It
 						</span>
 					</td>
 				</tr>		
@@ -492,7 +492,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="https://addons.mozilla.org/en-US/firefox/collections/jdruin/pr/" target="_blank">
+							<a href="https://addons.mozilla.org/en-US/firefox/collections/jdruin/pro-web-developer-qa-pack/" target="_blank">
 								Professional Web Application Developer Quality Assurance Pack
 							</a>
 						</li>
@@ -518,7 +518,10 @@
 			</a>
 		</div>
 		<div class="label" style="text-align: center;">
-			Site hacked...err...quality-tested with Samurai WTF, Backtrack, Firefox, Burp-Suite, Netcat
+			Site hacked...err...quality-tested with Samurai WTF, Backtrack, Firefox, Burp-Suite, Netcat, and 
+			<a href="https://addons.mozilla.org/en-US/firefox/collections/jdruin/pro-web-developer-qa-pack/" style="text-decoration: none;">
+			these Mozilla Add-ons
+			</a>
 		</div>
 		<div>&nbsp;</div>
 		<div>&nbsp;</div>

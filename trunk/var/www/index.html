@@ -13,7 +13,7 @@
 </script>
 <script type="text/javascript">
 animatedcollapse.addDiv('webgoat', 'fade=1,height=120px')
-animatedcollapse.addDiv('webgoat_net', 'fade=1,height=40px')
+animatedcollapse.addDiv('webgoat_net', 'fade=1,height=60px')
 animatedcollapse.addDiv('swingset', 'fade=1,height=60px')
 animatedcollapse.addDiv('swingset_interactive', 'fade=1,height=60px')
 animatedcollapse.addDiv('zapwave', 'fade=1,height=60px')
@@ -60,8 +60,8 @@ animatedcollapse.init()
 <body>
 <center><table>
   <tr>
-    <!--<td id="header"><img src="images/owasp.png" height="150px" width="200px"/></td>-->
-    <td id="header"><h1>OWASP Broken Web Applications</h1></td>
+    <td id="header" align="right" valign="center"><img src="images/owasp.png" height="150px" width="200px"/></td>
+    <td id="header" align="left" valign="center"><h1>OWASP Broken Web Applications</h1></td>
   </tr>
 </table></center>
 <p>
@@ -69,60 +69,54 @@ This is the VM for the <a href="http://www.owasp.org">Open Web Application Secur
 <p>
 For details about the known vulnerabilities in these applications, see <a href="http://sourceforge.net/apps/trac/owaspbwa/report/1">http://sourceforge.net/apps/trac/owaspbwa/report/1</a>.
 <p>
-<div class="warning"> !!! This VM has many serious security issues.  We strongly recommend that you run<br>
-    it only on the "host only" or "NAT" network in the virtual machine settings !!!</div>
+<center><div class="warning" style="width: 600px;"> !!! This VM has many serious security issues.  We strongly recommend that you run it only on the "host only" or "NAT" network in the virtual machine settings !!!</div></center>
 <p>
+<center><table>
+<tr><th style="width:860px"><h4>Training Applications</h4></th></tr>
 <table>
-<tr><th><h4>Training Applications</h4></th></tr>
-<tr><td><a href="javascript:animatedcollapse.toggle('webgoat')"><img src="images/Knob_Add.png" width="20px" height="20px" border="0" /><a href="WebGoat/attack">OWASP WebGoat (Java)</a>
+<tr><td><a href="javascript:animatedcollapse.toggle('webgoat')"><img src="images/Knob_Add.png" width="20px" height="20px" border="0" /><a href="WebGoat/attack">OWASP WebGoat</a>
 	<div id="webgoat" style="width: 400px; background: #D2FBFF; display:none">
-	<b>Version: </b>5.4.x<br />
+	<b>Version: </b>5.4+SVN<br />
 	<b>Language: </b>Java<br />
 	<b>Credentials (username/password): </b>guest/guest<br />
 	<b>Credentials (username/password): </b>admin/admin<br />
 	<b>Credentials (username/password): </b>webgoat/webgoat<br />
 	<b>Link: </b><a href="http://www.owasp.org/index.php/Category:OWASP_WebGoat_Project">home page</a><br />
-	</div></td></tr>
+	</div></td>
 	
-		<tr><td ><a href="javascript:animatedcollapse.toggle('webgoat_net')"><img src="images/Knob_Add.png" width="20px" height="20px" border="0" /><a href="webgoat.net/">OWASP WebGoat.net</a>
+	<td ><a href="javascript:animatedcollapse.toggle('webgoat_net')"><img src="images/Knob_Add.png" width="20px" height="20px" border="0" /><a href="webgoat.net/">OWASP WebGoat.NET</a>
 	<div id="webgoat_net" style="width: 400px; background: #D2FBFF; display:none">
+	<b>Version: </b>xxxxxxx+GIT<br />
 	<b>Language: </b>C# ASP.NET<br />
 	<b>Link: </b><a href="https://www.owasp.org/index.php/Category:OWASP_WebGoat.NET">home page</a>
 	</div></td></tr>
 	
-	<tr><td ><a href="javascript:animatedcollapse.toggle('swingset')"><img src="images/Knob_Add.png" width="20px" height="20px" border="0" /><a href="ESAPI-Java-SwingSet/main">OWASP ESAPI Java SwingSet</a>
-	<div id="swingset" style="width: 400px; background: #D2FBFF; display:none">
-	<b>Version: </b>05b2.x<br />
-	<b>Language: </b>Java<br />
-	<b>Link: </b><a href="https://www.owasp.org/index.php/ESAPI_Swingset">home page</a>
-	</div></td></tr>
-	
 	<tr><td ><a href="javascript:animatedcollapse.toggle('swingset_interactive')"><img src="images/Knob_Add.png" width="20px" height="20px" border="0" /><a href="ESAPI-Java-SwingSet-Interactive/main">OWASP ESAPI Java SwingSet Interactive</a>
 	<div id="swingset_interactive" style="width: 400px; background: #D2FBFF; display:none">
-	<b>Version: </b>1.0.1.x<br />
+	<b>Version: </b>1.0.1+SVN<br />
 	<b>Language: </b>Java<br />
 	<b>Link: </b><a href="https://www.owasp.org/index.php/ESAPI_Swingset">home page</a>
-	</div></td></tr>
+	</div></td>
 	
-	<tr><td ><a href="javascript:animatedcollapse.toggle('zapwave')"><img src="images/Knob_Add.png" width="20px" height="20px" border="0" /><a href="zapwave/">OWASP ZAP-WAVE</a>
+	<td ><a href="javascript:animatedcollapse.toggle('zapwave')"><img src="images/Knob_Add.png" width="20px" height="20px" border="0" /><a href="zapwave/">OWASP ZAP-WAVE</a>
 	<div id="zapwave" style="width: 400px; background: #D2FBFF; display:none">
-	<b>Version: </b>0.2.x<br />
+	<b>Version: </b>0.2+SVN<br />
 	<b>Language: </b>Java JSP<br />
 	<b>Link: </b><a href="http://code.google.com/p/zaproxy/">home page</a><br />
 	</div></td></tr>
 	
 <tr><td ><a href="javascript:animatedcollapse.toggle('mutillidae')"><img src="images/Knob_Add.png" width="20px" height="20px" border="0" /><a href="mutillidae">Mutillidae</a>
 	<div id="mutillidae" style="width: 400px; background: #D2FBFF; display:none">
-	<b>Version: </b>2.1.18<br />
+	<b>Version: </b>2.1.20<br />
 	<b>Language: </b>PHP<br />
 	<b>Credentials (username/password): </b>admin/admin<br />
 	<b>Credentials (username/password): </b>user/user<br />
 	<b>Link: </b><a href="http://www.irongeek.com/i.php?page=security/mutillidae-deliberately-vulnerable-php-owasp-top-10">home page</a><br />
-	</div></td></tr>
+	</div></td>
 	
-<tr><td><a href="javascript:animatedcollapse.toggle('dvwa')"><img src="images/Knob_Add.png" width="20px" height="20px" border="0" /><a href="dvwa">Damn Vulnerable Web Application</a>
+	<td><a href="javascript:animatedcollapse.toggle('dvwa')"><img src="images/Knob_Add.png" width="20px" height="20px" border="0" /><a href="dvwa">Damn Vulnerable Web Application</a>
 	<div id="dvwa" style="width: 400px; background: #D2FBFF; display:none">
-	<b>Version: </b>1.8.x<br />
+	<b>Version: </b>1.8+SVN<br />
 	<b>Language: </b>PHP<br />
 	<b>Credentials (username/password): </b>admin/admin<br />
 	<b>Credentials (username/password): </b>user/user<br />
@@ -138,18 +132,19 @@ For details about the known vulnerabilities in these applications, see <a href="
 	<b>Link: </b><a href="http://www.gh0s7.net">home page</a><br />
 	</div></td></tr>
 	
-</table>
+</table></table>
 <p>
 <table>
-<tr><th><h4>Realistic, Intentionally Vulnerable Applications</h4></th></tr>
+<tr><th style="width:860px"><h4>Realistic, Intentionally Vulnerable Applications</h4></th></tr>
+<table>
 <tr><td><a href="javascript:animatedcollapse.toggle('OWASPVicnum')"><img src="images/Knob_Add.png" width="20px" height="20px" border="0" /><a href="vicnum">OWASP Vicnum</a>
 	<div id="OWASPVicnum" style="width: 400px; background: #D2FBFF; display:none">
 	<b>Version: </b>1.4<br />
 	<b>Language: </b>PHP/Perl<br />
 	<b>Link: </b><a href="http://www.owasp.org/index.php/Category:OWASP_Vicnum_Project">home page</a><br />
-	</div></td></tr>
+	</div></td>
 	
-	<tr><td><a href="javascript:animatedcollapse.toggle('jotto')"><img src="images/Knob_Add.png" width="20px" height="20px" border="0" /><a href="jotto">Jotto</a>
+	<td><a href="javascript:animatedcollapse.toggle('jotto')"><img src="images/Knob_Add.png" width="20px" height="20px" border="0" /><a href="jotto">Jotto</a>
 	<div id="jotto" style="width: 400px; background: #D2FBFF; display:none">
 	<b>Language: </b>PHP/Perl<br />
 	<b>Link: </b><a href="http://www.owasp.org/index.php/Category:OWASP_Vicnum_Project">home page</a></div></td></tr>
@@ -161,8 +156,9 @@ For details about the known vulnerabilities in these applications, see <a href="
 	<b>Credentials (username/password): </b>admin/admin<br />
 	<b>Credentials (username/password): </b>user/user<br />
 	<b>Link: </b><a href="http://peruggia.sourceforge.net/">home page</a><br />
-	</div></td></tr>
-<tr><td ><a href="javascript:animatedcollapse.toggle('gruyere')"><img src="images/Knob_Add.png" width="20px" height="20px" border="0" /><a href="/gruyere/">Google Gruyere</a>
+	</div></td>
+	
+	<td ><a href="javascript:animatedcollapse.toggle('gruyere')"><img src="images/Knob_Add.png" width="20px" height="20px" border="0" /><a href="/gruyere/">Google Gruyere</a>
 	<div id="gruyere" style="width: 400px; background: #D2FBFF; display:none">
 	<b>Version: </b>2010-07-15<br />
 	<b>Language: </b>Python<br />
@@ -174,11 +170,11 @@ For details about the known vulnerabilities in these applications, see <a href="
 	<b>Version: </b>2011-04-06<br />
 	<b>Language: </b>Java JSP<br />
 	<b>Link: </b><a href="http://hackxor.sourceforge.net/cgi-bin/index.pl">home page</a><br />
-	</div></td></tr>
+	</div></td>
 	
-	<tr><td ><a href="javascript:animatedcollapse.toggle('WackoPicko')"><img src="images/Knob_Add.png" width="20px" height="20px" border="0" /></a><a href="WackoPicko">WackoPicko</a>
+	<td ><a href="javascript:animatedcollapse.toggle('WackoPicko')"><img src="images/Knob_Add.png" width="20px" height="20px" border="0" /></a><a href="WackoPicko">WackoPicko</a>
 	<div id="WackoPicko" style="width: 400px; background: #D2FBFF; display:none">
-	<b>Version: </b>2011-07-12<br />
+	<b>Version: </b>2011-07-12+GIT<br />
 	<b>Language: </b>PHP<br />
 	<b>User Credentials (username/password): </b>scanner1/scanner1<br />
 	<b>User Credentials (username/password): </b>scanner2/scanner2<br />
@@ -191,13 +187,15 @@ For details about the known vulnerabilities in these applications, see <a href="
 	<tr><td ><a href="javascript:animatedcollapse.toggle('bodgeit')"><img src="images/Knob_Add.png" width="20px" height="20px" border="0" /><a href="bodgeit/">BodgeIt</a>
 	<div id="bodgeit" style="width: 400px; background: #D2FBFF; display:none">
 	<b>Language: </b>Java JSP<br />
-	<b>Version: </b>1.3.x<br />
+	<b>Version: </b>1.3+SVN<br />
 	<b>Link: </b><a href="http://code.google.com/p/bodgeit/">home page</a><br />
 	</div></td></tr>
-</table>
+</table></table>
+
 <p>
 <table>
-<tr><th><h4>Old (Vulnerable) Versions of Real Applications</h4></th></tr>
+<tr><th style="width:860px"><h4>Old (Vulnerable) Versions of Real Applications</h4></th></tr>
+<table>
 <tr><td><a href="javascript:animatedcollapse.toggle('wordpress')"><img src="images/Knob_Add.png" width="20px" height="20px" border="0" /></a><a href="wordpress">WordPress</a>
 	<div id="wordpress" style="width: 400px; background: #D2FBFF; display:none">
 	<b>Version: </b>2.0.0<br />
@@ -250,7 +248,7 @@ For details about the known vulnerabilities in these applications, see <a href="
 	<b>Link: </b><a href="http://www.forumsoftware.ca/">home page</a><br />
 	</div></td>
 	
-<td><!--<a href="javascript:animatedcollapse.toggle('phpbb2')"><img src="images/Knob_Add.png" width="20px" height="20px" border="0" /></a><a href="phpBB2">phpBB</a>
+<!--<td><a href="javascript:animatedcollapse.toggle('phpbb2')"><img src="images/Knob_Add.png" width="20px" height="20px" border="0" /></a><a href="phpBB2">phpBB</a>
 	<div id="phpbb2" style="width: 400px; background: #D2FBFF; display:none">
 	<b>Version: </b>2.0.0<br />
 	<b>Language: </b>PHP<br />
@@ -259,8 +257,9 @@ For details about the known vulnerabilities in these applications, see <a href="
 	<b>Credentials (username/password): </b>mod/mod<br />
 	<b>Release Date: </b>April 4, 2002<br />
 	<b>Link: </b><a href="http://www.phpbb.com/">home page</a><br />
-	</div>--></td></tr>
-<tr><td ><a href="javascript:animatedcollapse.toggle('webcal')"><img src="images/Knob_Add.png" width="20px" height="20px" border="0" /></a><a href="webcal">WebCalendar</a>
+	</div></td>-->
+	
+	<td ><a href="javascript:animatedcollapse.toggle('webcal')"><img src="images/Knob_Add.png" width="20px" height="20px" border="0" /></a><a href="webcal">WebCalendar</a>
 	<div id="webcal" style="width: 400px; background: #D2FBFF; display:none">
 	<b>Version: </b>1.0.3<br />
 	<b>Language: </b>PHP<br />
@@ -270,7 +269,8 @@ For details about the known vulnerabilities in these applications, see <a href="
 	<b>Release Date: </b>April 11, 2006<br />
 	<b>Link: </b><a href="http://www.k5n.us/webcalendar.php">home page</a><br />
 	</div></td>
-	
+	</tr>
+<tr>
 <td ><a href="javascript:animatedcollapse.toggle('gallery2')"><img src="images/Knob_Add.png" width="20px" height="20px" border="0" /></a><a href="gallery2">Gallery2</a>
 	<div id="gallery2" style="width: 400px; background: #D2FBFF; display:none">
 	<b>Version: </b>2.1<br />
@@ -279,9 +279,9 @@ For details about the known vulnerabilities in these applications, see <a href="
 	<b>Credentials (username/password): </b>user/user<br />
 	<b>Release Date: </b>March 23, 2006<br />
 	<b>Link: </b><a href="http://gallery.menalto.com/">home page</a><br />
-	</div></td></tr>
+	</div></td>
 	
-<tr><td ><a href="javascript:animatedcollapse.toggle('tikiwiki')"><img src="images/Knob_Add.png" width="20px" height="20px" border="0" /></a><a href="tikiwiki">Tiki Wiki</a>
+	<td ><a href="javascript:animatedcollapse.toggle('tikiwiki')"><img src="images/Knob_Add.png" width="20px" height="20px" border="0" /></a><a href="tikiwiki">Tiki Wiki</a>
 	<div id="tikiwiki" style="width: 400px; background: #D2FBFF; display:none">
 	<b>Version: </b>1.9.5<br />
 	<b>Language: </b>PHP<br />
@@ -290,7 +290,8 @@ For details about the known vulnerabilities in these applications, see <a href="
 	<b>Release Date: </b>September 5, 2006<br />
 	<b>Link: </b><a href="http://info.tiki.org/tiki-index.php">home page</a><br />
 	</div></td>
-	
+	</tr>
+<tr>
 <td ><a href="javascript:animatedcollapse.toggle('joomla')"><img src="images/Knob_Add.png" width="20px" height="20px" border="0" /></a><a href="joomla">Joomla</a>
 	<div id="joomla" style="width: 400px; background: #D2FBFF; display:none">
 	<b>Version: </b>1.5.15<br />
@@ -302,9 +303,9 @@ For details about the known vulnerabilities in these applications, see <a href="
 	<b>Credentials (username/password): </b>registered/registered<br />
 	<b>Release Date: </b>November 4, 2009<br />
 	<b>Link: </b><a href="http://www.joomla.org">home page</a><br />
-	</div></td></tr>
+	</div></td>
 	
-<tr><td ><a href="javascript:animatedcollapse.toggle('awstats')"><img src="images/Knob_Add.png" width="20px" height="20px" border="0" /></a><a href="awstats/awstats.pl?config=owaspbwa">AWStats</a>
+	<td ><a href="javascript:animatedcollapse.toggle('awstats')"><img src="images/Knob_Add.png" width="20px" height="20px" border="0" /></a><a href="awstats/awstats.pl?config=owaspbwa">AWStats</a>
 	<div id="awstats" style="width: 400px; background: #D2FBFF; display:none">
 	<b>Version: </b>6.4 (build 1.814)<br />
 	<b>Language: </b>Perl<br />
@@ -312,7 +313,7 @@ For details about the known vulnerabilities in these applications, see <a href="
 	<b>Link: </b><a href="http://awstats.sourceforge.net/">home page</a><br />
 	</div></td>
 	
-<td ><!--<a href="javascript:animatedcollapse.toggle('redmine')"><img src="images/Knob_Add.png" width="20px" height="20px" border="0" /></a><a href="redmine">Redmine</a>
+<!--<td ><a href="javascript:animatedcollapse.toggle('redmine')"><img src="images/Knob_Add.png" width="20px" height="20px" border="0" /></a><a href="redmine">Redmine</a>
 	<div id="redmine" style="width: 400px; background: #D2FBFF; display:none">
 	<b>Version: </b>0.9.6<br />
 	<b>Language: </b>Ruby<br />
@@ -320,21 +321,22 @@ For details about the known vulnerabilities in these applications, see <a href="
 	<b>Credentials (username/password): </b>user/user<br />
 	<b>Release Date: </b>July 08, 2010<br />
 	<b>Link: </b><a href="http://www.redmine.org/">home page</a><br />
-	</div>--></td>
+	</div></td>-->
 	
 </tr>
-</table>
+</table></table>
 <p>
 <table>
-<tr><th><h4>Demonstration Pages/Small Applications</h4></th><tr>
+<tr><th style="width:860px"><h4>Demonstration Pages/Small Applications</h4></th><tr>
+<table>
 <tr><td><a href="javascript:animatedcollapse.toggle('owaspCSRFGuard')"><img src="images/Knob_Add.png" width="20px" height="20px" border="0" /><a href="OWASP-CSRFGuard-Test-Application.html">OWASP CSRFGuard Test Application</a>
 	<div id="owaspCSRFGuard" style="width: 400px; background: #D2FBFF; display:none">
 	<b>Version: </b>2.2<br />
 	<b>Language: </b>Java<br />
 	<b>Link: </b><a href="http://www.owasp.org/index.php/Category:OWASP_CSRFGuard_Project">home page</a><br />
-	</div></td></tr>
+	</div></td>
 	
-<tr><td ><a href="javascript:animatedcollapse.toggle('mandiantStruts')"><img src="images/Knob_Add.png" width="20px" height="20px" border="0" /><a href="mandiant-struts-forms.html">Mandiant Struts Forms</a>
+	<td ><a href="javascript:animatedcollapse.toggle('mandiantStruts')"><img src="images/Knob_Add.png" width="20px" height="20px" border="0" /><a href="mandiant-struts-forms.html">Mandiant Struts Forms</a>
 	<div id="mandiantStruts" style="width: 400px; background: #D2FBFF; display:none">
 	<b>Language: </b>Java Struts<br />
 	</div></td></tr>
@@ -342,24 +344,24 @@ For details about the known vulnerabilities in these applications, see <a href="
 <tr><td><a href="javascript:animatedcollapse.toggle('mono')"><img src="images/Knob_Add.png" width="20px" height="20px" border="0" /><a href="mono">Simple ASP.NET Forms</a>
 	<div id="mono" style="width: 400px; background: #D2FBFF; display:none">
 	<b>Language: </b>C# ASP.NET<br />
-	</div></td></tr>
+	</div></td>
 	
-<tr><td ><a href="javascript:animatedcollapse.toggle('domXSSexample')"><img src="images/Knob_Add.png" width="20px" height="20px" border="0" /><a href="dom-xss-example.html">Simple Form with DOM Cross Site Scripting</a>
+	<td ><a href="javascript:animatedcollapse.toggle('domXSSexample')"><img src="images/Knob_Add.png" width="20px" height="20px" border="0" /><a href="dom-xss-example.html">Simple Form with DOM Cross Site Scripting</a>
 	<div id="domXSSexample" style="width: 400px; background: #D2FBFF; display:none">
 	<b>Language: </b>JavaScript<br />
 	</div></td></tr>
-</table>
+</table></table>
 
 <p>
 <table>
-<tr><th><h4>OWASP Demonstration Applications</h4></th></tr>
+<tr><th><h4>OWASP Demonstration Application</h4></th></tr>
 <tr><td><a href="javascript:animatedcollapse.toggle('appsensor')"><img src="images/Knob_Add.png" width="20px" height="20px" border="0" /></a><a href="AppSensorDemo/">OWASP AppSensor Demo Application</a>
         <div id="appsensor" style="width: 400px; background: #D2FBFF; display:none">
         <b>Language: </b>Java<br />
         <b>Link: </b><a href="http://www.owasp.org/index.php/Category:OWASP_AppSensor_Project">home page</a><br />
         </div></td></tr>
 </table>
-
+</center>
 <h4>Vulnerabilities in Applications</h4>
 <p>
 For information about the known vulnerabilities in these applications (or to submit some), visit <a href="http://sourceforge.net/apps/trac/owaspbwa/report/1">http://sourceforge.net/apps/trac/owaspbwa/report/1</a>.

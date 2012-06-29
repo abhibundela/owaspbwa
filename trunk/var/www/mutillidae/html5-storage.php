@@ -85,12 +85,24 @@
 		};// end try
 	};//end JavaScript function addRow
 
+	var setMessage = function(/* String */ pMessage){
+		var lMessageSpan = document.getElementById("idAddItemMessageSpan");
+		lMessageSpan.innerHTML = pMessage;
+		lMessageSpan.setAttribute("class","success-message");
+	};// end function setMessage
+
 	var addItemToStorage = function(theForm){
 		try{			
 			var lKey = theForm.DOMStorageKey.value;
 			var lItem = theForm.DOMStorageItem.value;
 			var lType = "";
-			var lMessageSpan = document.getElementById("idAddItemMessageSpan");
+			var lUnacceptableKeyPattern = "[^A-Za-z0-9]";
+
+			//alert(lKey.match(lAcceptableKeyPattern));
+			if (lKey.match(lUnacceptableKeyPattern)){
+				setMessage("Unable to add key " + lKey.toString() + " because it contains non-alphanumeric characters");
+				return false;
+			}// end if
 
 			if (gUseJavaScriptValidation == "TRUE"){
 				var lInvalidTR = document.getElementById("id-invalid-input-tr");
@@ -111,13 +123,12 @@
 			}// end if
 
 			addRow(lKey, lItem, lType);
-			lMessageSpan.innerHTML = "Added key " + lKey.toString() + " to " + lType.toString() + " storage";
-			lMessageSpan.setAttribute("class","success-message");
+			setMessage("Added key " + lKey.toString() + " to " + lType.toString() + " storage");
 
 		}catch(/*Exception*/ e){
 			alert("Error in function addItemToStorage(): " + e.name + "-" + e.message);
 		}// end try
-	}// end JavaScript function
+	};// end JavaScript function
 
 	var init = function(){
 		var s = sessionStorage;
@@ -136,7 +147,7 @@
 			if(lKey.match(/^[^Secure]/)){addRow(lKey, l.getItem(lKey), "Local");};
 		}// end if
 
-	}//end JavaScript function init
+	};//end JavaScript function init
 	
 </script>
 

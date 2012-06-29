@@ -228,3 +228,685 @@ Captured Data: html5storage = sessionStorage(SessionStorageTarget):This is set b
 PHPSESSID = b4dhgmp4893p3eko95hphnq274
 --------------------------------------------------
 
+
+--------------------------------------------------
+Client IP: 192.168.56.101
+Timestamp: 04-08-2012 03:16:45 GMT
+--------------------------------------------------
+Client Hostname: 192.168.56.101
+Client User Agent: Wget/1.12 (linux-gnu)
+Client Referrer: http://192.168.56.102/mutillidae/
+Client Port: 44976
+Captured Data: page = capture-data.php
+showhints = 1
+PHPSESSID = ak8qi1uo0kh80uu9udhblmlss5
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 192.168.56.101
+Timestamp: 04-08-2012 03:17:00 GMT
+--------------------------------------------------
+Client Hostname: 192.168.56.101
+Client User Agent: Wget/1.12 (linux-gnu)
+Client Referrer: http://192.168.56.102/mutillidae/index.php?page=capture-data.php
+Client Port: 45025
+Captured Data: page = capture-data.php
+showhints = 0
+PHPSESSID = ak8qi1uo0kh80uu9udhblmlss5
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 192.168.56.101
+Timestamp: 04-08-2012 03:25:48 GMT
+--------------------------------------------------
+Client Hostname: 192.168.56.101
+Client User Agent: Wget/1.12 (linux-gnu)
+Client Referrer: http://192.168.56.102/mutillidae/
+Client Port: 59027
+Captured Data: page = capture-data.php
+showhints = 1
+PHPSESSID = sa4sk02keh88g79ihfecmhqpt1
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 192.168.56.101
+Timestamp: 04-08-2012 03:26:03 GMT
+--------------------------------------------------
+Client Hostname: 192.168.56.101
+Client User Agent: Wget/1.12 (linux-gnu)
+Client Referrer: http://192.168.56.102/mutillidae/index.php?page=capture-data.php
+Client Port: 59084
+Captured Data: page = capture-data.php
+showhints = 0
+PHPSESSID = sa4sk02keh88g79ihfecmhqpt1
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 192.168.56.101
+Timestamp: 04-08-2012 03:30:32 GMT
+--------------------------------------------------
+Client Hostname: 192.168.56.101
+Client User Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)
+Client Referrer: http://192.168.56.102/mutillidae/
+Client Port: 36523
+Captured Data: page = capture-data.php
+PHPSESSID = 0lq7gar2irnjt7t2uk55s9taq0
+showhints = 1
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 192.168.56.101
+Timestamp: 04-08-2012 03:30:48 GMT
+--------------------------------------------------
+Client Hostname: 192.168.56.101
+Client User Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)
+Client Referrer: http://192.168.56.102/mutillidae/documentation/Mutillidae-Test-Scripts.txt
+Client Port: 36633
+Captured Data: PHPSESSID = 0lq7gar2irnjt7t2uk55s9taq0
+showhints = 0
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 192.168.56.101
+Timestamp: 04-08-2012 19:01:47 GMT
+--------------------------------------------------
+Client Hostname: 192.168.56.101
+Client User Agent: Wget/1.12 (linux-gnu)
+Client Referrer: http://192.168.56.102/mutillidae/
+Client Port: 47018
+Captured Data: page = capture-data.php
+showhints = 1
+PHPSESSID = t22fbd12hfdpa91hrnrmvblr17
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 192.168.56.101
+Timestamp: 04-08-2012 19:02:07 GMT
+--------------------------------------------------
+Client Hostname: 192.168.56.101
+Client User Agent: Wget/1.12 (linux-gnu)
+Client Referrer: http://192.168.56.102/mutillidae/index.php?page=capture-data.php
+Client Port: 47068
+Captured Data: page = capture-data.php
+showhints = 0
+PHPSESSID = t22fbd12hfdpa91hrnrmvblr17
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 192.168.56.101
+Timestamp: 04-27-2012 02:19:16 GMT
+--------------------------------------------------
+Client Hostname: 192.168.56.101
+Client User Agent: Ruby
+Client Referrer: 
+Client Port: 36654
+Captured Data: page = capture-data.php
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 192.168.56.101
+Timestamp: 04-27-2012 02:19:22 GMT
+--------------------------------------------------
+Client Hostname: 192.168.56.101
+Client User Agent: Ruby
+Client Referrer: 
+Client Port: 36663
+Captured Data: page = capture-data.php
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 192.168.56.101
+Timestamp: 04-27-2012 02:20:30 GMT
+--------------------------------------------------
+Client Hostname: 192.168.56.101
+Client User Agent: Ruby
+Client Referrer: 
+Client Port: 36721
+Captured Data: page = capture-data.php
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 192.168.56.101
+Timestamp: 04-27-2012 02:21:31 GMT
+--------------------------------------------------
+Client Hostname: 192.168.56.101
+Client User Agent: Ruby
+Client Referrer: 
+Client Port: 36801
+Captured Data: page = capture-data.php
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 192.168.56.101
+Timestamp: 04-27-2012 02:21:32 GMT
+--------------------------------------------------
+Client Hostname: 192.168.56.101
+Client User Agent: Ruby
+Client Referrer: 
+Client Port: 36805
+Captured Data: page = capture-data.php
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 192.168.56.101
+Timestamp: 04-27-2012 02:22:10 GMT
+--------------------------------------------------
+Client Hostname: 192.168.56.101
+Client User Agent: Ruby
+Client Referrer: 
+Client Port: 36835
+Captured Data: page = capture-data.php
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 192.168.56.101
+Timestamp: 04-27-2012 02:22:11 GMT
+--------------------------------------------------
+Client Hostname: 192.168.56.101
+Client User Agent: Ruby
+Client Referrer: 
+Client Port: 36837
+Captured Data: page = capture-data.php
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 192.168.56.101
+Timestamp: 04-27-2012 02:23:50 GMT
+--------------------------------------------------
+Client Hostname: 192.168.56.101
+Client User Agent: Ruby
+Client Referrer: 
+Client Port: 36925
+Captured Data: page = capture-data.php
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 192.168.56.101
+Timestamp: 04-27-2012 02:23:57 GMT
+--------------------------------------------------
+Client Hostname: 192.168.56.101
+Client User Agent: Ruby
+Client Referrer: 
+Client Port: 36934
+Captured Data: page = capture-data.php
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 192.168.56.101
+Timestamp: 04-27-2012 02:27:46 GMT
+--------------------------------------------------
+Client Hostname: 192.168.56.101
+Client User Agent: Ruby
+Client Referrer: 
+Client Port: 37013
+Captured Data: page = capture-data.php
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 192.168.56.101
+Timestamp: 04-27-2012 02:27:51 GMT
+--------------------------------------------------
+Client Hostname: 192.168.56.101
+Client User Agent: Ruby
+Client Referrer: 
+Client Port: 37022
+Captured Data: page = capture-data.php
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 192.168.56.101
+Timestamp: 04-27-2012 02:28:59 GMT
+--------------------------------------------------
+Client Hostname: 192.168.56.101
+Client User Agent: Ruby
+Client Referrer: 
+Client Port: 37080
+Captured Data: page = capture-data.php
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 192.168.56.101
+Timestamp: 04-27-2012 02:30:07 GMT
+--------------------------------------------------
+Client Hostname: 192.168.56.101
+Client User Agent: Ruby
+Client Referrer: 
+Client Port: 37154
+Captured Data: page = capture-data.php
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 192.168.56.101
+Timestamp: 04-27-2012 02:30:08 GMT
+--------------------------------------------------
+Client Hostname: 192.168.56.101
+Client User Agent: Ruby
+Client Referrer: 
+Client Port: 37156
+Captured Data: page = capture-data.php
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 192.168.56.101
+Timestamp: 04-27-2012 02:30:42 GMT
+--------------------------------------------------
+Client Hostname: 192.168.56.101
+Client User Agent: Ruby
+Client Referrer: 
+Client Port: 37186
+Captured Data: page = capture-data.php
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 192.168.56.101
+Timestamp: 04-27-2012 02:30:43 GMT
+--------------------------------------------------
+Client Hostname: 192.168.56.101
+Client User Agent: Ruby
+Client Referrer: 
+Client Port: 37188
+Captured Data: page = capture-data.php
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 192.168.56.101
+Timestamp: 04-27-2012 02:32:27 GMT
+--------------------------------------------------
+Client Hostname: 192.168.56.101
+Client User Agent: Ruby
+Client Referrer: 
+Client Port: 37284
+Captured Data: page = capture-data.php
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 192.168.56.101
+Timestamp: 04-27-2012 02:32:35 GMT
+--------------------------------------------------
+Client Hostname: 192.168.56.101
+Client User Agent: Ruby
+Client Referrer: 
+Client Port: 37293
+Captured Data: page = capture-data.php
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 192.168.56.101
+Timestamp: 04-28-2012 03:39:19 GMT
+--------------------------------------------------
+Client Hostname: 192.168.56.101
+Client User Agent: Ruby
+Client Referrer: 
+Client Port: 50815
+Captured Data: page = capture-data.php
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 192.168.56.101
+Timestamp: 04-28-2012 03:39:28 GMT
+--------------------------------------------------
+Client Hostname: 192.168.56.101
+Client User Agent: Ruby
+Client Referrer: 
+Client Port: 50824
+Captured Data: page = capture-data.php
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 192.168.56.101
+Timestamp: 04-28-2012 03:41:08 GMT
+--------------------------------------------------
+Client Hostname: 192.168.56.101
+Client User Agent: Ruby
+Client Referrer: 
+Client Port: 50879
+Captured Data: page = capture-data.php
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 192.168.56.101
+Timestamp: 04-28-2012 03:41:21 GMT
+--------------------------------------------------
+Client Hostname: 192.168.56.101
+Client User Agent: Ruby
+Client Referrer: 
+Client Port: 50888
+Captured Data: page = capture-data.php
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+Timestamp: 05-07-2012 01:37:33 GMT
+--------------------------------------------------
+Client Hostname: 127.0.0.1
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko/20100101 Firefox/11.0
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 2122
+Captured Data: html5storage = sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(SessionStorageTarget):This is set by the index.php page; sessionStorage(CurrentBrowser):undefined; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(LocalStorageTarget):This is set by the index.php page;
+PHPSESSID = qqcf3ffighhlkqo38e79hb0sl1
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+Timestamp: 05-07-2012 01:38:26 GMT
+--------------------------------------------------
+Client Hostname: 127.0.0.1
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko/20100101 Firefox/11.0
+Client Referrer: http://localhost/mutillidae/index.php?page=view-someones-blog.php
+Client Port: 2311
+Captured Data: html5storage = sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(SessionStorageTarget):This is set by the index.php page; sessionStorage(CurrentBrowser):undefined; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(LocalStorageTarget):This is set by the index.php page;
+PHPSESSID = qqcf3ffighhlkqo38e79hb0sl1
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+Timestamp: 05-07-2012 01:41:29 GMT
+--------------------------------------------------
+Client Hostname: 127.0.0.1
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko/20100101 Firefox/11.0
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 2352
+Captured Data: html5storage = sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(SessionStorageTarget):This is set by the index.php page; sessionStorage(CurrentBrowser):undefined; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(LocalStorageTarget):This is set by the index.php page;
+PHPSESSID = qqcf3ffighhlkqo38e79hb0sl1
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+Timestamp: 05-09-2012 00:32:53 GMT
+--------------------------------------------------
+Client Hostname: 127.0.0.1
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko/20100101 Firefox/11.0
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 1100
+Captured Data: html5storage = sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(SessionStorageTarget):This is set by the index.php page; sessionStorage(CurrentBrowser):undefined; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(LocalStorageTarget):This is set by the index.php page; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = k3dc0avavgg40rttqph190pk25
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+Timestamp: 05-09-2012 00:33:14 GMT
+--------------------------------------------------
+Client Hostname: 127.0.0.1
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko/20100101 Firefox/11.0
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 1106
+Captured Data: html5storage = sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(SessionStorageTarget):This is set by the index.php page; sessionStorage(CurrentBrowser):undefined; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(LocalStorageTarget):This is set by the index.php page; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = k3dc0avavgg40rttqph190pk25
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+Timestamp: 05-09-2012 00:33:15 GMT
+--------------------------------------------------
+Client Hostname: 127.0.0.1
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko/20100101 Firefox/11.0
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 1110
+Captured Data: html5storage = sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(SessionStorageTarget):This is set by the index.php page; sessionStorage(CurrentBrowser):undefined; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(LocalStorageTarget):This is set by the index.php page; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = k3dc0avavgg40rttqph190pk25
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+Timestamp: 05-09-2012 00:54:34 GMT
+--------------------------------------------------
+Client Hostname: 127.0.0.1
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko/20100101 Firefox/11.0
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 1178
+Captured Data: html5storage = sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(SessionStorageTarget):This is set by the index.php page; sessionStorage(CurrentBrowser):undefined; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(LocalStorageTarget):This is set by the index.php page; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = k3dc0avavgg40rttqph190pk25
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+Timestamp: 05-09-2012 00:54:34 GMT
+--------------------------------------------------
+Client Hostname: 127.0.0.1
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko/20100101 Firefox/11.0
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 1179
+Captured Data: html5storage = sessionStorage(Secure.IsUserLoggedIn?):No; sessionStorage(Secure.AuthenticationToken):DU837HHFYTEYUE9S1934; sessionStorage(SessionStorageTarget):This is set by the index.php page; sessionStorage(CurrentBrowser):undefined; localStorage(Secure.CurrentStateofHTML5Storage):Completely Insecure; localStorage(LocalStorageTarget):This is set by the index.php page; localStorage(MessageOfTheDay):Go Cats!;
+PHPSESSID = k3dc0avavgg40rttqph190pk25
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+Timestamp: 05-09-2012 01:19:53 GMT
+--------------------------------------------------
+Client Hostname: 127.0.0.1
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko/20100101 Firefox/11.0
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 1243
+Captured Data: html5storage = Secure.CurrentStateofHTML5Storage=Completely Insecure;LocalStorageTarget=This is set by the index.php page;MessageOfTheDay=Go Cats!;
+PHPSESSID = k3dc0avavgg40rttqph190pk25
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+Timestamp: 05-09-2012 01:20:48 GMT
+--------------------------------------------------
+Client Hostname: 127.0.0.1
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko/20100101 Firefox/11.0
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 1250
+Captured Data: html5storage = Secure.CurrentStateofHTML5Storage=Completely Insecure;LocalStorageTarget=This is set by the index.php page;MessageOfTheDay=Go Cats!;
+PHPSESSID = k3dc0avavgg40rttqph190pk25
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+Timestamp: 05-09-2012 01:20:51 GMT
+--------------------------------------------------
+Client Hostname: 127.0.0.1
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko/20100101 Firefox/11.0
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 1246
+Captured Data: html5storage = Secure.CurrentStateofHTML5Storage=Completely Insecure;LocalStorageTarget=This is set by the index.php page;MessageOfTheDay=Go Cats!;
+PHPSESSID = k3dc0avavgg40rttqph190pk25
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+Timestamp: 05-09-2012 01:20:52 GMT
+--------------------------------------------------
+Client Hostname: 127.0.0.1
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko/20100101 Firefox/11.0
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 1250
+Captured Data: html5storage = Secure.CurrentStateofHTML5Storage=Completely Insecure;LocalStorageTarget=This is set by the index.php page;MessageOfTheDay=Go Cats!;
+PHPSESSID = k3dc0avavgg40rttqph190pk25
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+Timestamp: 05-09-2012 01:21:00 GMT
+--------------------------------------------------
+Client Hostname: 127.0.0.1
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko/20100101 Firefox/11.0
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 1260
+Captured Data: html5storage = Secure.CurrentStateofHTML5Storage=Completely Insecure;LocalStorageTarget=This is set by the index.php page;MessageOfTheDay=Go Cats!;
+PHPSESSID = k3dc0avavgg40rttqph190pk25
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+Timestamp: 05-09-2012 01:21:02 GMT
+--------------------------------------------------
+Client Hostname: 127.0.0.1
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko/20100101 Firefox/11.0
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 1262
+Captured Data: html5storage = Secure.CurrentStateofHTML5Storage=Completely Insecure;LocalStorageTarget=This is set by the index.php page;MessageOfTheDay=Go Cats!;
+PHPSESSID = k3dc0avavgg40rttqph190pk25
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+Timestamp: 05-09-2012 01:22:30 GMT
+--------------------------------------------------
+Client Hostname: 127.0.0.1
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko/20100101 Firefox/11.0
+Client Referrer: http://localhost/mutillidae/index.php?page=dns-lookup.php
+Client Port: 1286
+Captured Data: html5storage = Secure.CurrentStateofHTML5Storage=Completely Insecure;LocalStorageTarget=This is set by the index.php page;MessageOfTheDay=Go Cats!;
+PHPSESSID = k3dc0avavgg40rttqph190pk25
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+Timestamp: 05-15-2012 02:21:48 GMT
+--------------------------------------------------
+Client Hostname: 127.0.0.1
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko/20100101 Firefox/11.0
+Client Referrer: http://localhost/mutillidae/index.php?page=pen-test-tool-lookup.php
+Client Port: 2523
+Captured Data: cookie = PHPSESSID=sac9njhnvpdvvgqrkl9io2tb37
+PHPSESSID = sac9njhnvpdvvgqrkl9io2tb37
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+Timestamp: 05-16-2012 01:21:52 GMT
+--------------------------------------------------
+Client Hostname: 127.0.0.1
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko/20100101 Firefox/11.0
+Client Referrer: http://localhost/mutillidae/index.php?page=pen-test-tool-lookup.php
+Client Port: 1862
+Captured Data: cookie = PHPSESSID=nb7rtdmbu4ai26l30a1he2nmh2
+PHPSESSID = nb7rtdmbu4ai26l30a1he2nmh2
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+Timestamp: 05-16-2012 01:33:17 GMT
+--------------------------------------------------
+Client Hostname: 127.0.0.1
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko/20100101 Firefox/11.0
+Client Referrer: http://localhost/mutillidae/index.php?page=pen-test-tool-lookup.php
+Client Port: 2120
+Captured Data: cookie = PHPSESSID=nb7rtdmbu4ai26l30a1he2nmh2
+PHPSESSID = nb7rtdmbu4ai26l30a1he2nmh2
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 192.168.56.101
+Timestamp: 05-16-2012 22:50:52 GMT
+--------------------------------------------------
+Client Hostname: 192.168.56.101
+Client User Agent: Mozilla/5.0 (X11; Linux i686; rv:10.0.2) Gecko/20100101 Firefox/10.0.2
+Client Referrer: http://192.168.56.102/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 33307
+Captured Data: page = capture-data.php
+username = jeremy
+uid = 4
+PHPSESSID = 8pfapk9f6uedt5hdftankouvf6
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 192.168.56.101
+Timestamp: 05-16-2012 22:53:15 GMT
+--------------------------------------------------
+Client Hostname: 192.168.56.101
+Client User Agent: Mozilla/5.0 (X11; Linux i686; rv:10.0.2) Gecko/20100101 Firefox/10.0.2
+Client Referrer: http://192.168.56.102/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 33317
+Captured Data: page = capture-data.php
+username = jeremy
+uid = 4
+PHPSESSID = 8pfapk9f6uedt5hdftankouvf6
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+Timestamp: 05-16-2012 22:57:16 GMT
+--------------------------------------------------
+Client Hostname: 127.0.0.1
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko/20100101 Firefox/11.0
+Client Referrer: http://localhost/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 1461
+Captured Data: cookie = PHPSESSID=f374vcvskml7e1c13424jt3120
+PHPSESSID = f374vcvskml7e1c13424jt3120
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 192.168.56.101
+Timestamp: 05-16-2012 23:15:01 GMT
+--------------------------------------------------
+Client Hostname: 192.168.56.101
+Client User Agent: Mozilla/5.0 (X11; Linux i686; rv:10.0.2) Gecko/20100101 Firefox/10.0.2
+Client Referrer: http://192.168.56.102/mutillidae/index.php?page=add-to-your-blog.php
+Client Port: 33387
+Captured Data: page = capture-data.php
+username = jeremy
+uid = 4
+PHPSESSID = 8pfapk9f6uedt5hdftankouvf6
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 192.168.56.101
+Timestamp: 05-16-2012 23:15:10 GMT
+--------------------------------------------------
+Client Hostname: 192.168.56.101
+Client User Agent: Mozilla/5.0 (X11; Linux i686; rv:10.0.2) Gecko/20100101 Firefox/10.0.2
+Client Referrer: http://192.168.56.102/mutillidae/set-up-database.php
+Client Port: 33391
+Captured Data: page = capture-data.php
+username = jeremy
+uid = 4
+PHPSESSID = 8pfapk9f6uedt5hdftankouvf6
+--------------------------------------------------
+

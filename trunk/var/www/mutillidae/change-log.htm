@@ -1,3 +1,42 @@
+<p><b>05/14/2012</b>: Jeremy Druin</p>
+<blockquote>
+	<p>Change Log for NOWASP (Codename: Mutillidae) 2.1.20:</p>
+	<ul>
+		<li>Changed some color schemes</li>
+		<li>
+			Bug fix: The html5 key validation on the on the html5 page was too restrictive. The validator 
+			was throwing errors even when the input was ok. This validation checks for any non-alphanumeric
+			characters and prints an error if non-alphanumeric characters are found. This error message contains the bad key
+			the user input. Since the site fails to output encode this error message, it is possible to perform DOM injection.
+		</li> 
+	</ul>
+</blockquote>
+
+<p><b>05/13/2012</b>: Jeremy Druin</p>
+<blockquote>
+	<p>Change Log for Mutillidae 2.1.19:</p>
+	<ul>
+		<li>
+			Fixed broken link to https://addons.mozilla.org/en-US/firefox/collections/jdruin/pro-web-developer-qa-pack/ (Mozilla Add Ons)
+			on the "Resources" sub-menu.
+		</li>
+		<li>
+			Added "validation" to the html5 storage page for the "key" field. This validation checks for any non-alphanumeric
+			characters and prints an error if non-alphanumeric characters are found. This error message contains the bad key
+			the user input. Since the site fails to output encode this error message, it is possible to perform DOM injection.
+		</li>
+		<li>
+			Added a large number of HTML 5 based exploits to the Mutillidae-Test-Scripts.txt file. Approximately 100 lines
+			of new demonstration code has been added.
+		</li>
+		<li>
+			On the setup or reset database page, if no errors were detected, the page now sends
+			the user back to the page that requested the database be reset. A popup box
+			gives the user the option to stay on the page.
+		</li>
+	</ul>
+</blockquote>
+
 <p><b>03/15/2012</b>: Jeremy Druin</p>
 <blockquote>
 	<p>Change Log for Mutillidae 2.1.18:</p>
