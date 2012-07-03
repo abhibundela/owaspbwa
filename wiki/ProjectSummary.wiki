@@ -11,10 +11,13 @@ This project includes applications from various sources (listed in no particular
 
 ==Training Applications:==
   * [http://www.owasp.org/index.php/Category:OWASP_WebGoat_Project OWASP WebGoat] version 5.4+SVN (Java)
-  * [http://www.irongeek.com/i.php?page=security/mutillidae-deliberately-vulnerable-php-owasp-top-10 Mutillidae version 1.5] (PHP)
-  * [http://www.dvwa.co.uk/ Damn Vulnerable Web Application] version 1.07.x (PHP)
+  * [https://www.owasp.org/index.php/Category:OWASP_WebGoat.NET OWASP WebGoat.NET] version 2011-10-19+GIT
+  * [https://www.owasp.org/index.php/ESAPI_Swingset OWASP ESAPI Java SwingSet Interactive] version 1.0.1+SVN
+  * [http://code.google.com/p/zaproxy/ OWASP ZAP-WAVE] version 0.2+SVN (Java JSP)
+  * [http://www.irongeek.com/i.php?page=security/mutillidae-deliberately-vulnerable-php-owasp-top-10 Mutillidae] version 2.1.20 (PHP)
+  * [http://www.dvwa.co.uk/ Damn Vulnerable Web Application] version 1.8+SVN (PHP)
   * [http://www.gh0s7.net/ Ghost] (PHP)
-  * [http://code.google.com/p/zaproxy/ ZAP-WAVE] (Java JSP)
+
   
 ==Realistic, Intentionally Vulnerable Applications:==
   * [http://www.owasp.org/index.php/Category:OWASP_Vicnum_Project OWASP Vicnum] version 1.4 (PHP/Perl)
