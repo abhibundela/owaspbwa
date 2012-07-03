@@ -5,12 +5,12 @@
 
 The Open Web Application Security Project (OWASP) Broken Web Applications Project is distributed as a Virtual Machine in [http://www.vmware.com VMware] format compatible with their no-cost [http://www.vmware.com/products/player/ VMware Player] and [http://www.vmware.com/products/server/ VMware Server] products (along with their commercial products).
 
-= Applications included (as of the 0.94 release) =
+= Applications included (as of the 1.0 release) =
 
 This project includes applications from various sources (listed in no particular order).
 
 ==Training Applications:==
-  * [http://www.owasp.org/index.php/Category:OWASP_WebGoat_Project OWASP WebGoat] version 5.3.x(Java)
+  * [http://www.owasp.org/index.php/Category:OWASP_WebGoat_Project OWASP WebGoat] version 5.4+SVN (Java)
   * [http://www.irongeek.com/i.php?page=security/mutillidae-deliberately-vulnerable-php-owasp-top-10 Mutillidae version 1.5] (PHP)
   * [http://www.dvwa.co.uk/ Damn Vulnerable Web Application] version 1.07.x (PHP)
   * [http://www.gh0s7.net/ Ghost] (PHP)
