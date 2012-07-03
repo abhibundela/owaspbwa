@@ -29,7 +29,9 @@ This project includes applications from various sources.
   * [http://code.google.com/p/bodgeit/ BodgeIt] version 1.3+SVN (Java JSP)
 
 ==Old Versions of Real Applications:==
-  * [http://wordpress.org/ WordPress] 2.0.0 (PHP, released December 31, 2005)
+  * [http://wordpress.org/ WordPress] 2.0.0 (PHP, released December 31, 2005) with plugins:
+    * [http://www.wildbits.de/mygallery/ myGallery] version 1.2
+    * [http://timrohrer.com/blog/?page_id=71 Spreadsheet for WordPress] version 0.6
   * [http://www.orangehrm.com/ OrangeHRM] version 2.4.2 (PHP, released May 7, 2009)
   * [http://sourceforge.net/projects/getboo/ GetBoo] version 1.04 (PHP, released April 7, 2008)
   * [http://www.gtd-php.com/ gtd-php] version 0.7 (PHP, released September 30, 2006)
