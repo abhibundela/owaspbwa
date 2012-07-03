@@ -7,7 +7,7 @@ The Open Web Application Security Project (OWASP) Broken Web Applications Projec
 
 = Applications included (as of the 1.0 release) =
 
-This project includes applications from various sources (listed in no particular order).
+This project includes applications from various sources.
 
 ==Training Applications:==
   * [http://www.owasp.org/index.php/Category:OWASP_WebGoat_Project OWASP WebGoat] version 5.4+SVN (Java)
@@ -21,11 +21,12 @@ This project includes applications from various sources (listed in no particular
   
 ==Realistic, Intentionally Vulnerable Applications:==
   * [http://www.owasp.org/index.php/Category:OWASP_Vicnum_Project OWASP Vicnum] version 1.4 (PHP/Perl)
+  * [http://www.owasp.org/index.php/Category:OWASP_Vicnum_Project OWASP Jotto] (PHP/Perl)
   * [http://peruggia.sourceforge.net/ Peruggia] version 1.2 (PHP)
   * [http://google-gruyere.appspot.com/ Google Gruyere] version 2010-07-15 (Python)
-  * [http://hackxor.sourceforge.net/cgi-bin/index.pl Hackxor] (Java JSP)
-  * [https://github.com/adamdoupe/WackoPicko WackoPicko] (PHP)
-  * [http://code.google.com/p/bodgeit/ BodgeIt] (Java JSP)
+  * [http://hackxor.sourceforge.net/cgi-bin/index.pl Hackxor] version 2011-04-06 (Java JSP)
+  * [https://github.com/adamdoupe/WackoPicko WackoPicko] version 2011-07-12+GIT (PHP)
+  * [http://code.google.com/p/bodgeit/ BodgeIt] version 1.3+SVN (Java JSP)
 
 ==Old Versions of Real Applications:==
   * [http://wordpress.org/ WordPress] 2.0.0 (PHP, released December 31, 2005, downloaded from [http://www.oldapps.com/Wordpress.php www.oldapps.com])
