@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>VulnerabilityDetectionChallenge</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!-- Define a Security Constraint on this Application -->
+  <security-constraint>
+    <web-resource-collection>
+     <web-resource-name>Weak authentication - basic</web-resource-name>
+     <url-pattern>/passive/session/weak-authentication-basic.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+     <role-name>tomcat</role-name>
+     <role-name>role1</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <!-- Define the Login Configuration for this Application -->
+  <login-config>
+    <auth-method>BASIC</auth-method>
+    <realm-name>Application</realm-name>
+    <!--realm-name>Weak authentication - basic</realm-name-->
+  </login-config>
+
+  <!-- Security roles referenced by this web application -->
+  <security-role>
+    <description>
+      The role that is required to access protected pages
+    </description>
+     <role-name>tomcat</role-name>
+  </security-role>
+  
+  <security-role>
+    <description>
+      The role that is required to access protected pages
+    </description>
+     <role-name>role1</role-name>
+  </security-role>
+
+</web-app>
