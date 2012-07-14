@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.10, created on 2011-04-17 15:14:39
+<?php /* Smarty version 2.6.10, created on 2012-07-13 15:00:47
          compiled from gallery:modules/core/templates/UserPreferences.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'html_options', 'gallery:modules/core/templates/UserPreferences.tpl', 61, false),)), $this); ?>

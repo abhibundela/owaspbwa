@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.10, created on 2011-04-17 15:19:06
+<?php /* Smarty version 2.6.10, created on 2012-07-13 15:00:26
          compiled from gallery:modules/imageblock/templates/ImageBlock.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'markup', 'gallery:modules/imageblock/templates/ImageBlock.tpl', 48, false),array('modifier', 'default', 'gallery:modules/imageblock/templates/ImageBlock.tpl', 70, false),)), $this); ?>

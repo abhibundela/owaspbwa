@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.10, created on 2011-04-17 15:13:55
+<?php /* Smarty version 2.6.10, created on 2012-07-13 15:00:26
          compiled from gallery:modules/comment/templates/blocks/ViewComments.tpl */ ?>
 <?php if (empty ( $this->_tpl_vars['item'] )): ?> <?php $this->assign('item', $this->_tpl_vars['theme']['item']); ?> <?php endif;  if (empty ( $this->_tpl_vars['show'] )): ?> <?php $this->assign('show', 3); ?> <?php endif;  echo $this->_reg_objects['g'][0]->callback(array('type' => "comment.LoadComments",'itemId' => $this->_tpl_vars['item']['id'],'show' => $this->_tpl_vars['show']), $this);?>
 

@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.10, created on 2011-04-17 15:13:55
+<?php /* Smarty version 2.6.10, created on 2012-07-13 15:00:25
          compiled from gallery:modules/search/templates/blocks/SearchBlock.tpl */ ?>
 <?php if (! isset ( $this->_tpl_vars['showAdvancedLink'] )): ?> <?php $this->assign('showAdvancedLink', 'true'); ?> <?php endif; ?>
 

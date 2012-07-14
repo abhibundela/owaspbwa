@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.10, created on 2011-04-17 15:13:55
+<?php /* Smarty version 2.6.10, created on 2012-07-13 15:00:25
          compiled from gallery:themes/matrix/templates/sidebar.tpl */ ?>
 <div id="gsSidebar" class="gcBorder1">
     <?php $_from = $this->_tpl_vars['theme']['params']['sidebarBlocks']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
