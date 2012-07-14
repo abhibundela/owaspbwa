@@ -6,6 +6,7 @@ class LogHandler {
 	protected $mSecurityLevel = 0;
 	protected $ESAPI = null;
 	protected $Encoder = null;
+	protected $mMySQLHandler = null;
 
 	private function doSetSecurityLevel($pSecurityLevel){
 		$this->mSecurityLevel = $pSecurityLevel;
@@ -36,13 +37,23 @@ class LogHandler {
 		require_once $pPathToESAPI . 'ESAPI.php';
 		$this->ESAPI = new ESAPI($pPathToESAPI . 'ESAPI.xml');
 		$this->Encoder = $this->ESAPI->getEncoder();
+		
+		/* Initialize MySQL Connection handler */
+		require_once 'MySQLHandler.php';
+		$this->mMySQLHandler = new MySQLHandler($pPathToESAPI, $pSecurityLevel);
+				
 	}// end function
 	   	
 	public function setSecurityLevel($pSecurityLevel){
 		$this->doSetSecurityLevel($pSecurityLevel);
+		$this->mMySQLHandler->setSecurityLevel($pSecurityLevel);
 	}// end function
 	
-	public function writeToLog($MySQLConnection, $TransactionDescription){
+	public function getSecurityLevel($pSecurityLevel){
+		return $this->mSecurityLevel;
+	}// end function
+		
+	public function writeToLog($TransactionDescription){
 
 		if (!$this->encodeOutput){
 			$lUserAgent = $_SERVER['HTTP_USER_AGENT'];
@@ -56,7 +67,7 @@ class LogHandler {
 		/*Here we are protecting against SQL injection and other types of 
 		 * database injection.	   				 *
 		 *  
-		 * Note: This is fairly secure, but $MySQLConnection->real_escape_string is not the best
+		 * Note: This is fairly secure, but $this->mMySQLHandler->escapeDangerousCharacters is not the best
 		 * defense. A parameterized stored procedure would be better.
 		 */
 		if (!$this->stopSQLInjection) {
@@ -69,24 +80,26 @@ class LogHandler {
 			//$lUserAgent = $lUserAgent;
 			//$TransactionDescription = $TransactionDescription;
 		}else{
-			//$lClientName = $MySQLConnection->real_escape_string(gethostbyaddr($_SERVER['REMOTE_ADDR']));
-			$lClientName = $MySQLConnection->real_escape_string($_SERVER['REMOTE_ADDR']);
-			$lClientIP = $MySQLConnection->real_escape_string($_SERVER['REMOTE_ADDR']);
-			$lUserAgent = $MySQLConnection->real_escape_string($lUserAgent);
-			$TransactionDescription = $MySQLConnection->real_escape_string($TransactionDescription);
+			//$lClientName = $this->mMySQLHandler->escapeDangerousCharacters(gethostbyaddr($_SERVER['REMOTE_ADDR']));
+			$lClientName = $this->mMySQLHandler->escapeDangerousCharacters($_SERVER['REMOTE_ADDR']);
+			$lClientIP = $this->mMySQLHandler->escapeDangerousCharacters($_SERVER['REMOTE_ADDR']);
+			$lUserAgent = $this->mMySQLHandler->escapeDangerousCharacters($lUserAgent);
+			$TransactionDescription = $this->mMySQLHandler->escapeDangerousCharacters($TransactionDescription);
 		}// end if
-		
-		$query = "INSERT INTO hitlog(hostname, ip, browser, referer, date) VALUES ('".
+
+		$lQuery = "INSERT INTO hitlog(hostname, ip, browser, referer, date) VALUES ('".
 			$lClientName . "', '".
 			$lClientIP . "', '".
 			$lUserAgent . "', '".
 			$TransactionDescription . "', ".
 			" now() )";
-			
-		$result = $MySQLConnection->query($query);
-		if ($MySQLConnection->errorno > 0) {
-	    	throw (new Exception('Error: '.$MySQLConnection->error, $MySQLConnection->errorno));
-	    }// end if $MySQLConnection->errorno>0
+
+		try{
+    		$lResult = $this->mMySQLHandler->executeQuery($lQuery);
+		} catch (Exception $e) {
+			throw(new Exception("Error attempting to write to log table: ".$e->getMessage(), $e->getCode(), $e));
+		}// end try
+		
 	}// end method
 	
 }// end class

@@ -1,3 +1,20 @@
+
+<!-- Bubble hints code -->
+<?php 
+	try{
+   		$lArbitraryRedirectionPointBallonTip = $BubbleHintHandler->getHint("ArbitraryRedirectionPoint");
+	} catch (Exception $e) {
+		echo $CustomErrorHandler->FormatError($e, "Error attempting to execute query to fetch bubble hints.");
+	}// end try
+?>
+
+<script type="text/javascript">
+	$(function() {
+		$('[ArbitraryRedirectionPoint]').attr("title", "<?php echo $lArbitraryRedirectionPointBallonTip; ?>");
+		$('[ArbitraryRedirectionPoint]').balloon();
+	});
+</script>
+
 <div class="page-title">Credits</div>
 
 <?php include_once './includes/back-button.inc';?>
@@ -23,20 +40,20 @@
 				<div class="label" style="text-align: center;">Created by Irongeek.com. Developed by Adrian &quot;<a href="http://www.irongeek.com">Irongeek</a>&quot; Crenshaw and <a href="mailto:mutillidae-development@gmail.com">Jeremy Druin</a></div>
 				<div>&nbsp;</div>
 				<div>&nbsp;</div>
-   				<div><a href="index.php?page=redirectandlog.php&forwardurl=http://www.irongeek.com/">Adrian Crenshaw</a> would like to thank 
+   				<div ArbitraryRedirectionPoint=\"1\"><a href="index.php?page=redirectandlog.php&forwardurl=http://www.irongeek.com/">Adrian Crenshaw</a> would like to thank 
 				the following people for helping him with the Mutillidae project:</div>
-				<div>&nbsp;</div>
-				<div><a href="index.php?page=redirectandlog.php&forwardurl=http://www.owasp.org">OWASP</a> for making the vulnerability&nbsp; 
+				<div ArbitraryRedirectionPoint=\"1\">&nbsp;</div>
+				<div ArbitraryRedirectionPoint=\"1\"><a href="index.php?page=redirectandlog.php&forwardurl=http://www.owasp.org">OWASP</a> for making the vulnerability&nbsp; 
 				list I based this on.</div>
-				<div><a href="index.php?page=redirectandlog.php&forwardurl=http://www.issa-kentuckiana.org/">ISSA Kentuckiana</a></div>
-				<div><a href="index.php?page=redirectandlog.php&forwardurl=http://www.owasp.org/index.php/Louisville">OWASP Louisville </a></div>
-				<div><a href="index.php?page=redirectandlog.php&forwardurl=http://www.pocodoy.com/blog/">Brian Blankenship</a> for his support 
+				<div ArbitraryRedirectionPoint=\"1\"><a href="index.php?page=redirectandlog.php&forwardurl=http://www.issa-kentuckiana.org/">ISSA Kentuckiana</a></div>
+				<div ArbitraryRedirectionPoint=\"1\"><a href="index.php?page=redirectandlog.php&forwardurl=http://www.owasp.org/index.php/Louisville">OWASP Louisville </a></div>
+				<div ArbitraryRedirectionPoint=\"1\"><a href="index.php?page=redirectandlog.php&forwardurl=http://www.pocodoy.com/blog/">Brian Blankenship</a> for his support 
 				of the idea.</div>
-				<div><a href="index.php?page=redirectandlog.php&forwardurl=http://www.room362.com/">Mubix</a> for confirming the name</div>
-				<div><a href="index.php?page=redirectandlog.php&forwardurl=http://www.isd-podcast.com/">InfoSec Daily Podcast</a></div>
-				<div><a href="index.php?page=redirectandlog.php&forwardurl=http://pauldotcom.com/">PaulDotCom Podcast</a></div>
-				<div>All sorts of folks at <a href="index.php?page=redirectandlog.php&forwardurl=http://www.php.net/">PHP.net </a>for code snippets: kaigillmann </div>
-				<div><a href="index.php?page=redirectandlog.php&forwardurl=https://addons.mozilla.org/en-US/firefox/collections/jdruin/pr/">Professional Web Application Developer Quality Assurance Pack</a> by <a href="mailto:mutillidae-development@gmail.com">Jeremy Druin</a></div>
+				<div ArbitraryRedirectionPoint=\"1\"><a href="index.php?page=redirectandlog.php&forwardurl=http://www.room362.com/">Mubix</a> for confirming the name</div>
+				<div ArbitraryRedirectionPoint=\"1\"><a href="index.php?page=redirectandlog.php&forwardurl=http://www.isd-podcast.com/">InfoSec Daily Podcast</a></div>
+				<div ArbitraryRedirectionPoint=\"1\"><a href="index.php?page=redirectandlog.php&forwardurl=http://pauldotcom.com/">PaulDotCom Podcast</a></div>
+				<div ArbitraryRedirectionPoint=\"1\">All sorts of folks at <a href="index.php?page=redirectandlog.php&forwardurl=http://www.php.net/">PHP.net </a>for code snippets: kaigillmann </div>
+				<div ArbitraryRedirectionPoint=\"1\"><a href="index.php?page=redirectandlog.php&forwardurl=https://addons.mozilla.org/en-US/firefox/collections/jdruin/pr/">Professional Web Application Developer Quality Assurance Pack</a> by <a href="mailto:mutillidae-development@gmail.com">Jeremy Druin</a></div>
    			';
    		break;
     		

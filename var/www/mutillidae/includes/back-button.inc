@@ -1,5 +1,5 @@
 <?php
-
+	
 	switch ($_SESSION["security-level"]){
    		case "0": // This code is insecure
    			// DO NOTHING: This is insecure		
@@ -26,8 +26,24 @@
    	}// end if
 ?>
 
+<?php 
+	try{
+   		$lHTMLEventReflectedXSSExecutionPointBallonTip = $BubbleHintHandler->getHint("HTMLEventReflectedXSSExecutionPoint");
+	} catch (Exception $e) {
+		echo $CustomErrorHandler->FormatError($e, "Error attempting to execute query to fetch bubble hints.");
+	}// end try
+
+?>
+
+<script type="text/javascript">
+	$(function() {
+		$('[HTMLEventReflectedXSSExecutionPoint]').attr("title", "<?php echo $lHTMLEventReflectedXSSExecutionPointBallonTip; ?>");
+		$('[HTMLEventReflectedXSSExecutionPoint]').balloon();
+	});
+</script>
+
 <div style="margin: 5px;">
-	<span style="font-weight: bold;" title="Click to return to the last page. It seems this button gets its value from the HTTP Referer field and places this value into a JavaScript.">
+	<span style="font-weight: bold;" HTMLEventReflectedXSSExecutionPoint="1">
 	<a 	onclick="document.location.href='<?php echo $lHTTPReferer; ?>';" 
 		style="cursor:pointer;">
 		<img	src="./images/back-button-128px-by-128px.png" 

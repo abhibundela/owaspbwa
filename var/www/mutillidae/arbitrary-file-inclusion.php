@@ -45,32 +45,42 @@
     }// end try;
 ?>
 
+<!-- Bubble hints code -->
+<?php 
+	try{
+   		$lReflectedXSSExecutionPointBallonTip = $BubbleHintHandler->getHint("ReflectedXSSExecutionPoint");
+   		$lLocalFileInclusionVulnerabilityBallonTip = $BubbleHintHandler->getHint("LocalFileInclusionVulnerability");
+	} catch (Exception $e) {
+		echo $CustomErrorHandler->FormatError($e, "Error attempting to execute query to fetch bubble hints.");
+	}// end try	
+?>
+
+<script type="text/javascript">
+	$(function() {
+		$('[ReflectedXSSExecutionPoint]').attr("title", "<?php echo $lReflectedXSSExecutionPointBallonTip; ?>");
+		$('[ReflectedXSSExecutionPoint]').balloon();
+		$('[LocalFileInclusionVulnerability]').attr("title", "<?php echo $lLocalFileInclusionVulnerabilityBallonTip; ?>");
+		$('[LocalFileInclusionVulnerability]').balloon();
+	});
+</script>
+
 <div class="page-title">Arbitrary File Inclusion</div>
 
 <?php include_once './includes/back-button.inc';?>
 
-<table style="margin-left:auto; margin-right:auto;">
+<table style="margin-left:auto; margin-right:auto;width:600px;">
 	<tr>
 		<td colspan="2" class="form-header">Arbitrary File Inclusion</td>
 	</tr>
 	<tr><td>&nbsp;</td></tr>
+	<tr style="text-align: left;">
+		<td ReflectedXSSExecutionPoint="1" colspan="2" class="label">Current Page: <?php echo $lPage; ?></td>
+	</tr> 
 	<tr><td>&nbsp;</td></tr>
 	<tr>
-		<td class="label">Current Page: </td>
-		<td><?php echo $lPage; ?></td>
-	</tr>
-	<tr><td>&nbsp;</td></tr>
-	<tr><td>&nbsp;</td></tr>
-	<tr>
-		<td colspan="2" style="text-align:center;" class="label">
+		<td LocalFileInclusionVulnerability="1" colspan="2" class="label">
 			Notice that the page displayed by Mutillidae is decided 
-			by the value in the "page" variable.<br>
-			The "page" variable is passed as a URL query parameter.  
-		</td>
-	</tr>
-	<tr>
-		<td colspan="2" style="text-align:center;" class="label">
-			What could possibly go wrong? 
+			by the value in the "page" variable. What could possibly go wrong? 
 		</td>
 	</tr>
 	<tr><td>&nbsp;</td></tr>

@@ -68,6 +68,25 @@
 	}// end if isSet($_POST["user-poll-php-submit-button"])
 ?>
 
+<!-- Bubble hints code -->
+<?php 
+	try{
+   		$lReflectedXSSExecutionPointBallonTip = $BubbleHintHandler->getHint("ReflectedXSSExecutionPoint");
+   		$lParameterPollutionInjectionPointBallonTip = $BubbleHintHandler->getHint("ParameterPollutionInjectionPoint");
+	} catch (Exception $e) {
+		echo $CustomErrorHandler->FormatError($e, "Error attempting to execute query to fetch bubble hints.");
+	}// end try
+?>
+
+<script type="text/javascript">
+	$(function() {
+		$('[ReflectedXSSExecutionPoint]').attr("title", "<?php echo $lReflectedXSSExecutionPointBallonTip; ?>");
+		$('[ReflectedXSSExecutionPoint]').balloon();
+		$('[ParameterPollutionInjectionPoint]').attr("title", "<?php echo $lParameterPollutionInjectionPointBallonTip; ?>");
+		$('[ParameterPollutionInjectionPoint]').balloon();
+	});
+</script>
+
 <div class="page-title">User Poll</div>
 
 <?php include_once './includes/back-button.inc';?>
@@ -110,7 +129,7 @@
 			</tr>
 			<tr>
 				<td class="label">
-					Your Initials:<input type="text" name="initials" />
+					Your Initials:<input type="text" name="initials" ParameterPollutionInjectionPoint="1" />
 				</td>
 			</tr>
 			<tr><td></td></tr>
@@ -122,7 +141,7 @@
 			<tr><td></td></tr>
 			<tr><td></td></tr>
 			<tr>
-				<td class="report-header">
+				<td class="report-header" ReflectedXSSExecutionPoint="1">
 				<?php 
 					if (!$lEncodeOutput){
 						echo $lUserChoiceMessage; 

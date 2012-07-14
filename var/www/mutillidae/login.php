@@ -69,6 +69,26 @@
 //-->
 </script>
 
+<!-- Bubble hints code -->
+<?php 
+	try{
+   		$lReflectedXSSExecutionPointBallonTip = $BubbleHintHandler->getHint("ReflectedXSSExecutionPoint");
+   		$lSQLInjectionPointBallonTip = $BubbleHintHandler->getHint("SQLInjectionPoint");
+   		
+	} catch (Exception $e) {
+		echo $CustomErrorHandler->FormatError($e, "Error attempting to execute query to fetch bubble hints.");
+	}// end try
+?>
+
+<script type="text/javascript">
+	$(function() {
+		$('[ReflectedXSSExecutionPoint]').attr("title", "<?php echo $lReflectedXSSExecutionPointBallonTip; ?>");
+		$('[ReflectedXSSExecutionPoint]').balloon();
+		$('[SQLInjectionPoint]').attr("title", "<?php echo $lSQLInjectionPointBallonTip; ?>");
+		$('[SQLInjectionPoint]').balloon();		
+	});
+</script>
+
 <div class="page-title">Login</div>
 
 <?php include_once './includes/back-button.inc';?>
@@ -92,11 +112,11 @@
 			<tr><td></td></tr>
 			<tr>
 				<td class="label">Name</td>
-				<td><input type="text" name="username" maxlength="20" size="20"></td>
+				<td><input SQLInjectionPoint="1" type="text" name="username" maxlength="20" size="20"></td>
 			</tr>
 			<tr>
 				<td class="label">Password</td>
-				<td><input type="password" name="password" maxlength="20" size="20"></td>
+				<td><input SQLInjectionPoint="1" type="password" name="password" maxlength="20" size="20"></td>
 			</tr>
 			<tr><td></td></tr>
 			<tr>
@@ -117,7 +137,7 @@
 <div id="id-log-out-div" style="text-align: center; display: none;">
 	<table align="center">
 		<tr>
-			<td colspan="2" class="hint-header">You are logged in as <?php echo $_SESSION['logged_in_user']; ?></td>
+			<td ReflectedXSSExecutionPoint="1" colspan="2" class="hint-header">You are logged in as <?php echo $_SESSION['logged_in_user']; ?></td>
 		</tr>
 		<tr><td></td></tr>
 		<tr><td></td></tr>

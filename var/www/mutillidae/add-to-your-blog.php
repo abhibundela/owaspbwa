@@ -178,30 +178,52 @@
 			if(strlen($lBlogEntry) > 0){
 				$lValidationFailed = FALSE;
 				
-				$query = "INSERT INTO blogs_table(blogger_name, comment, date) VALUES ('".
+				$lQuery = "INSERT INTO blogs_table(blogger_name, comment, date) VALUES ('".
 					$lLoggedInUser . "', '".
 					$lBlogEntry  . "', " .
 					" now() )";
 					
-				//	$query = "CALL insertBlogEntry('".$logged_in_user."', '".$lBlogEntry."');";
+				//	$lQuery = "CALL insertBlogEntry('".$logged_in_user."', '".$lBlogEntry."');";
 		
-				$result = $conn->query($query);
-				if (!$result) {
+				$lQueryResult = $conn->query($lQuery);
+				if (!$lQueryResult) {
 			    	throw (new Exception('Error executing query: '.$conn->error, $conn->errorno));
 			    }// end if
 				
-				$LogHandler->writeToLog($conn, "Blog entry added by: " . $lLoggedInUser);
+				$LogHandler->writeToLog("Blog entry added by: " . $lLoggedInUser);
 				
 			}else{
 				$lValidationFailed = TRUE;
 			}// end if(strlen($lBlogEntry) > 0)
 		} catch (Exception $e) {
-			echo $CustomErrorHandler->FormatError($e, "Error: ".$conn->error." Query: ".$query);
+			echo $CustomErrorHandler->FormatError($e, "Error: ".$conn->error." Query: ".$lQuery);
 		}// end try
 	}else {
 		$lValidationFailed = FALSE;
 	}// end if isSet($_POST["add-to-your-blog-php-submit-button"])
 ?>
+
+<!-- Bubble hints code -->
+<?php 
+	try{
+   		$lReflectedXSSExecutionPointBallonTip = $BubbleHintHandler->getHint("ReflectedXSSExecutionPoint");
+   		$lXSRFVulnerabilityAreaBallonTip = $BubbleHintHandler->getHint("XSRFVulnerabilityArea");
+   		$lHTMLandXSSandSQLInjectionPointBallonTip = $BubbleHintHandler->getHint("HTMLandXSSandSQLInjectionPoint");   		
+	} catch (Exception $e) {
+		echo $CustomErrorHandler->FormatError($e, "Error attempting to execute query to fetch bubble hints.");
+	}// end try	
+?>
+
+<script type="text/javascript">
+	$(function() {
+		$('[ReflectedXSSExecutionPoint]').attr("title", "<?php echo $lReflectedXSSExecutionPointBallonTip; ?>");
+		$('[ReflectedXSSExecutionPoint]').balloon();
+		$('[XSRFVulnerabilityArea]').attr("title", "<?php echo $lXSRFVulnerabilityAreaBallonTip; ?>");
+		$('[XSRFVulnerabilityArea]').balloon();
+		$('[HTMLandXSSandSQLInjectionPoint]').attr("title", "<?php echo $lHTMLandXSSandSQLInjectionPointBallonTip; ?>");
+		$('[HTMLandXSSandSQLInjectionPoint]').balloon();		
+	});
+</script>
 
 <!-- BEGIN HTML OUTPUT  -->
 <script type="text/javascript">
@@ -221,6 +243,7 @@
 		}
 	};// end JavaScript function onSubmitBlogEntry()
 </script>
+
 <div class="page-title">Welcome To The Blog</div>
 
 <?php include_once './includes/back-button.inc';?>
@@ -231,7 +254,8 @@
 			method="post" 
 			enctype="application/x-www-form-urlencoded" 
 			onsubmit="return onSubmitBlogEntry(this);"
-			id="idBlogForm">		
+			id="idBlogForm"
+			>		
 		<input name="csrf-token" type="hidden" value="<?php echo $lNewCSRFTokenForNextRequest; ?>" />
 		<span>
 			<a href="http://localhost/mutillidae/index.php?page=view-someones-blog.php">
@@ -247,17 +271,17 @@
 			</tr>
 			<tr><td></td></tr>
 			<tr>
-				<td id="id-blog-form-header-td" class="form-header">Add blog for <?php echo $lLoggedInUser?></td>
+				<td id="id-blog-form-header-td" ReflectedXSSExecutionPoint="1" class="form-header">Add blog for <?php echo $lLoggedInUser?></td>
 			</tr>
 			<tr><td></td></tr>
 			<tr><td class="report-header">Note: &lt;b&gt;,&lt;/b&gt;,&lt;i&gt;,&lt;/i&gt;,&lt;u&gt; and &lt;/u&gt; are now allowed in blog entries</td></tr>
 			<tr>
-				<td><textarea rows="10" cols="65" name="blog_entry"></textarea></td>
+				<td><textarea name="blog_entry" HTMLandXSSandSQLInjectionPoint="1" rows="10" cols="65"></textarea></td>
 			</tr>
 			<tr><td></td></tr>
 			<tr>
 				<td style="text-align:center;">
-					<input name="add-to-your-blog-php-submit-button" class="button" type="submit" value="Save Blog Entry" />
+					<input name="add-to-your-blog-php-submit-button" XSRFVulnerabilityArea="1" class="button" type="submit" value="Save Blog Entry" />
 				</td>
 			</tr>
 			<tr><td></td></tr>
@@ -275,15 +299,12 @@
 	/* Display current user's blog entries */
 	try {
 		/* Note that the logged in user could be used for SQL injection */
-		$query  = "SELECT * FROM blogs_table WHERE
+		$lQuery  = "SELECT * FROM blogs_table WHERE
 				blogger_name like '{$lLoggedInUser}%'
 				ORDER BY date DESC
 				LIMIT 0 , 100";
-				
-		$result = $conn->query($query);
-		if (!$result) {
-	    	throw (new Exception('Error: '.$conn->error, $conn->errorno));
-	    }// end if
+	    
+	    $lQueryResult = $MySQLHandler->executeQuery($lQuery);
 				
 		echo '<div>&nbsp;</div>
 				<span>
@@ -294,7 +315,7 @@
 				</span>';
 		echo '<table border="1px" width="90%" class="main-table-frame">';
 	    echo ' 	<tr class="report-header">
-		    		<td colspan="4">'.$result->num_rows.' Current Blog Entries</td>
+		    		<td colspan="4">'.$lQueryResult->num_rows.' Current Blog Entries</td>
 		    	</tr>
 		    	<tr class="report-header">
 		    		<td>&nbsp;</td>
@@ -304,7 +325,7 @@
 			    </tr>';
 
 	    $lRowNumber = 0;
-	    while($row = $result->fetch_object()){
+	    while($row = $lQueryResult->fetch_object()){
 	    	
 	    	$lRowNumber++;
 	    	
@@ -335,15 +356,15 @@
 
 			echo "<tr>
 					<td>{$lRowNumber}</td>
-					<td>{$lBloggerName}</td>
+					<td ReflectedXSSExecutionPoint=\"1\">{$lBloggerName}</td>
 					<td>{$lDate}</td>
-					<td>{$lComment}</td>
+					<td ReflectedXSSExecutionPoint=\"1\">{$lComment}</td>
 				</tr>\n";
 		}//end while $row
 		echo "</table><div>&nbsp;</div>";		
 
 	} catch (Exception $e) {
-		echo $CustomErrorHandler->FormatError($e, $query);
+		echo $CustomErrorHandler->FormatError($e, $lQuery);
 	}// end try	
 ?>
 

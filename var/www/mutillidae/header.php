@@ -3,10 +3,15 @@
 
 		switch ($_SESSION["security-level"]){
 	   		case "0": // This code is insecure
+				$logged_in_user = $_SESSION['logged_in_user'];
+				$logged_in_usersignature = $_SESSION['logged_in_usersignature'];
+				$lSecurityLevelDescription = "Hosed";
+	   		break;
 	   		case "1": // This code is insecure
 	   			// DO NOTHING: This is equivalent to using client side security		
 				$logged_in_user = $_SESSION['logged_in_user'];
 				$logged_in_usersignature = $_SESSION['logged_in_usersignature'];
+				$lSecurityLevelDescription = "Arrogent";
 	   		break;
 		    
 	   		case "2":
@@ -29,7 +34,8 @@
 	   			// this is HTML encoding because we are outputting data into HTML
 				$logged_in_user = $Encoder->encodeForHTML($_SESSION['logged_in_user']);
 				$logged_in_usersignature = $Encoder->encodeForHTML($_SESSION['logged_in_usersignature']);
-	   		break;
+				$lSecurityLevelDescription = "Secure";
+			break;
 	   	}// end switch		
 
 	   	$lUserAuthorizationLevelText = 'User';
@@ -37,12 +43,48 @@
 	   		$lUserAuthorizationLevelText = 'Admin';
 	   	}// end if
 
-		$message = "Logged In " . $lUserAuthorizationLevelText . ": " . $logged_in_user . " (" . $logged_in_usersignature . ")";	   	
+		$lAuthenticationStatusMessage = "Logged In " . $lUserAuthorizationLevelText . ": " . $logged_in_user . " (" . $logged_in_usersignature . ")";	   	
 	   	
 	} else {
 		$logged_in_user = "anonymous";
-		$message = "Not Logged In";
-	}// end if
+		$lAuthenticationStatusMessage = "Not Logged In";
+	}// end if($_SESSION['loggedin'] == "True")
+
+	if ($BubbleHintHandler->hintsAreDispayed()){
+		$lPopupHintsLabel = "Hide Popup Hints";
+	}else {
+		$lPopupHintsLabel = "Show Popup Hints";
+	}//end if		
+
+		switch ($_SESSION["security-level"]){
+	   		case "0": // This code is insecure
+				$lSecurityLevelDescription = "Hosed";
+	   		break;
+	   		case "1": // This code is insecure
+	   			// DO NOTHING: This is equivalent to using client side security		
+				$lSecurityLevelDescription = "Arrogent";
+	   		break;
+		    
+	   		case "2":
+	   		case "3":
+	   		case "4":
+	   		case "5": // This code is fairly secure
+				$lSecurityLevelDescription = "Secure";
+			break;
+	   	}// end switch		
+	
+	$lHintsMessage = "Hints: ".$_SESSION["hints-enabled"];
+	$lSecurityLevelMessage = "Security Level: ".$_SESSION["security-level"]." (".$lSecurityLevelDescription.")";
+?>
+
+<!-- Bubble hints code -->
+<?php 
+	try{
+   		$lReflectedXSSExecutionPointBallonTip = $BubbleHintHandler->getHint("ReflectedXSSExecutionPoint");
+   		$lCookieTamperingAffectedAreaBallonTip = $BubbleHintHandler->getHint("CookieTamperingAffectedArea"); 
+	} catch (Exception $e) {
+		echo $CustomErrorHandler->FormatError($e, "Error attempting to execute query to fetch bubble hints.");
+	}// end try	
 ?>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
@@ -73,25 +115,13 @@
 			contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
 		});
 	</script>
-
 	<script type="text/javascript">
-		var onLoadOfBody = function(theBody){
-			var l_securityLevel = '<?php echo $_SESSION["security-level"]; ?>';
-			<?php /*var l_loginMessage = '<?php echo $message ?>';*/?>
-			var l_hintsStatus = '<?php echo $_SESSION["hints-enabled"] ?>';
-			
-			switch(l_securityLevel){
-				case "0": var l_securityLevelDescription = 'Hosed'; break;
-				case "1": var l_securityLevelDescription = 'Arrogent'; break;
-				case "2": var l_securityLevelDescription = '2'; break;
-				case "3": var l_securityLevelDescription = '3'; break;
-				case "4": var l_securityLevelDescription = '4'; break;
-				case "5": var l_securityLevelDescription = 'Secure'; break; 
-			}// end switch
-			//document.getElementById("idSystemInformationHeading").innerHTML = l_loginMessage;
-			document.getElementById("idHintsStatusHeading").innerHTML = 'Hints: ' + l_hintsStatus;
-			document.getElementById("idSecurityLevelHeading").innerHTML = 'Security Level: ' + l_securityLevel + ' (' + l_securityLevelDescription + ')';
-		}// end function onLoadOfBody()
+		$(function() {
+			$('[ReflectedXSSExecutionPoint]').attr("title", "<?php echo $lReflectedXSSExecutionPointBallonTip; ?>");
+			$('[ReflectedXSSExecutionPoint]').balloon();
+			$('[CookieTamperingAffectedArea]').attr("title", "<?php echo $lCookieTamperingAffectedAreaBallonTip; ?>");
+			$('[CookieTamperingAffectedArea]').balloon();
+		});
 	</script>
 </head>
 <body onload="onLoadOfBody(this);">
@@ -114,9 +144,9 @@
 		<td bgcolor="#ccccff" align="center" colspan="7">
 			<?php /* Note: $C_VERSION_STRING in index.php */ ?>
 			<span class="version-header"><?php echo $C_VERSION_STRING;?></span>
-			<span id="idSecurityLevelHeading" class="version-header" style="margin-left: 40px;"></span>
-			<span id="idHintsStatusHeading" class="version-header" style="margin-left: 40px;"></span>
-			<span id="idSystemInformationHeading" class="version-header" style="margin-left: 40px;"><?php echo $message ?></span>
+			<span id="idSecurityLevelHeading" class="version-header" style="margin-left: 40px;"><?php echo $lSecurityLevelMessage; ?></span>
+			<span id="idHintsStatusHeading" CookieTamperingAffectedArea="1" class="version-header" style="margin-left: 40px;"><?php echo $lHintsMessage; ?></span>
+			<span id="idSystemInformationHeading" ReflectedXSSExecutionPoint="1" class="version-header" style="margin-left: 40px;"><?php echo $lAuthenticationStatusMessage ?></span>
 		</td>
 	</tr>
 	<tr>
@@ -142,6 +172,7 @@
 					<td><a href="set-up-database.php">Reset DB</a></td>
 					<td><a href="./index.php?page=show-log.php">View Log</a></td>
 					<td><a href="./index.php?page=captured-data.php">View Captured Data</a></td>
+					<td><a href="./index.php?do=toggle-bubble-hints&page=<?php echo $lPage?>"><?php echo $lPopupHintsLabel; ?></a></td>
 				</tr>
 			</table>	
 		</td>
@@ -163,10 +194,16 @@
 								}// end if
 							?>
 						</li>
-						<li><a href="./index.php?do=toggle-security&page=<?php echo $lPage?>">Toggle Security</a></li>
+						<?php 
+							if ($_SESSION['security-level'] == 0){
+								echo '<li><a href="./index.php?do=toggle-hints&page='.$lPage.'">Toggle Hints</a></li>';
+							}// end if
+						?>
+						<li><a href="./index.php?do=toggle-security&page=<?php echo $lPage; ?>">Toggle Security</a></li>
 						<li><a href="set-up-database.php">Setup/Reset the DB</a></li>
 						<li><a href="./index.php?page=show-log.php">Show Log</a></li>
 						<li><a href="./index.php?page=credits.php">Credits</a></li>
+						<li><a href="./index.php?do=toggle-bubble-hints&page=<?php echo $lPage; ?>"><?php echo $lPopupHintsLabel; ?></a></li>
 					</ul>
 				</li>
 				<li style="border-color: #ffffff;border-style: solid;border-width: 1px">
@@ -247,6 +284,7 @@
 												Password Generator
 											</a>
 										</li>
+										<li><a href="./index.php?page=browser-info.php">Browser Info</a></li>
 									</ul>
 								</li>
 								<li>
@@ -390,6 +428,7 @@
 						<li>
 							<a href="http://www.owasp.org/index.php/Top_10_2010-A8" target="_blank">A8 - Failure to Restrict URL Access</a>
 							<ul>
+								<li><a href="index.php?page=source-viewer.php">Source Viewer</a></li>
 								<li><a href="index.php?page=secret-administrative-pages.php">"Secret" Administrative Pages</a></li>
 								<li><a href="http://en.wikipedia.org/wiki/Robots_exclusion_standard">Robots.txt</a></li>
 							</ul>

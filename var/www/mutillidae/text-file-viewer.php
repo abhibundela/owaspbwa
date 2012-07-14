@@ -29,6 +29,25 @@
 	}// end try
 ?>
 
+<!-- Bubble hints code -->
+<?php 
+	try{
+   		$lReflectedXSSExecutionPointBallonTip = $BubbleHintHandler->getHint("ReflectedXSSExecutionPoint");
+   		$lHTMLandXSSandSQLInjectionPointBallonTip = $BubbleHintHandler->getHint("HTMLandXSSandSQLInjectionPoint");
+	} catch (Exception $e) {
+		echo $CustomErrorHandler->FormatError($e, "Error attempting to execute query to fetch bubble hints.");
+	}// end try
+?>
+
+<script type="text/javascript">
+	$(function() {
+		$('[ReflectedXSSExecutionPoint]').attr("title", "<?php echo $lReflectedXSSExecutionPointBallonTip; ?>");
+		$('[ReflectedXSSExecutionPoint]').balloon();
+		$('[HTMLandXSSandSQLInjectionPoint]').attr("title", "<?php echo $lHTMLandXSSandSQLInjectionPointBallonTip; ?>");
+		$('[HTMLandXSSandSQLInjectionPoint]').balloon();
+	});
+</script>
+
 <div class="page-title">Hacker Files of Old</div>
 
 <?php include_once './includes/back-button.inc';?>
@@ -51,7 +70,7 @@
 		<tr>
 			<td class="label">Text File Name</td>
 			<td>
-				<select size="1" name="textfile" id="id_textfile_select">
+				<select size="1" name="textfile" id="id_textfile_select" HTMLandXSSandSQLInjectionPoint="1">
 					<option value="<?php if ($lUseTokenization){echo 1;}else{echo 'http://www.textfiles.com/hacking/auditool.txt';}?>">Intrusion Detection in Computers by Victor H. Marshall (January 29, 1991)</option>
 					<option value="<?php if ($lUseTokenization){echo 2;}else{echo 'http://www.textfiles.com/hacking/atms';}?>">An Overview of ATMs and Information on the Encoding System</option>
 					<option value="<?php if ($lUseTokenization){echo 3;}else{echo 'http://www.textfiles.com/hacking/backdoor.txt';}?>">How to Hold Onto UNIX Root Once You Have It</option>
@@ -68,6 +87,7 @@
 		</tr>
 		<tr><td></td></tr>
 		<tr><td class="label" colspan="2">For other great old school hacking texts, check out <a href="http://www.textfiles.com/">http://www.textfiles.com/</a>.</td></tr>
+		<tr><td></td></tr>
 	</table>
 </form>
 
@@ -113,14 +133,14 @@
 					$pTextFile = $_REQUEST['textfile'];
 		   			if ($pTextFile <>"") {
 		   				$handle = fopen($pTextFile, "r");
-		   				echo '<p class="label">File: '.$pTextFile.'</p>';
+		   				echo '<span ReflectedXSSExecutionPoint=\"1\" class="label">File: '.$pTextFile.'</span>';
 		   				echo '<pre>';
 		   				echo stream_get_contents($handle);
 						echo '</pre>';
 						fclose($handle);
 					}// end if
 
-		   			$LogHandler->writeToLog($conn, "Displayed contents of URL: " . $pTextFile);
+		   			$LogHandler->writeToLog("Displayed contents of URL: " . $pTextFile);
 
 			}elseif ($lUseTokenization){
 		   			/* The "textfile" is expected to be integer, so validate as such. Also,
@@ -158,12 +178,12 @@
 		   					case 5: $lURL = "http://www.textfiles.com/hacking/hacking101.hac";break;
 		   				}// end switch($pTextFile)
 
-		   				$LogHandler->writeToLog($conn, "Displayed contents of URL: " . $lURL);
+		   				$LogHandler->writeToLog("Displayed contents of URL: " . $lURL);
 		   			
 						try{
 						    // open file handle
 			   				$handle = fopen($lURL, "r");
-			   				echo '<p class="label">File: '.$lURL.'</p>';
+			   				echo '<span ReflectedXSSExecutionPoint=\"1\" class="label">File: '.$pTextFile.'</span>';
 			   				echo '<pre>';
 			   				echo stream_get_contents($handle);
 							echo '</pre>';

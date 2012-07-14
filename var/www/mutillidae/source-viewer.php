@@ -38,6 +38,25 @@
 	}// end if
 ?>
 
+<!-- Bubble hints code -->
+<?php 
+	try{
+   		$lReflectedXSSExecutionPointBallonTip = $BubbleHintHandler->getHint("ReflectedXSSExecutionPoint");
+   		$lHTMLandXSSandSQLInjectionPointBallonTip = $BubbleHintHandler->getHint("HTMLandXSSandSQLInjectionPoint");
+	} catch (Exception $e) {
+		echo $CustomErrorHandler->FormatError($e, "Error attempting to execute query to fetch bubble hints.");
+	}// end try
+?>
+
+<script type="text/javascript">
+	$(function() {
+		$('[ReflectedXSSExecutionPoint]').attr("title", "<?php echo $lReflectedXSSExecutionPointBallonTip; ?>");
+		$('[ReflectedXSSExecutionPoint]').balloon();
+		$('[HTMLandXSSandSQLInjectionPoint]').attr("title", "<?php echo $lHTMLandXSSandSQLInjectionPointBallonTip; ?>");
+		$('[HTMLandXSSandSQLInjectionPoint]').balloon();
+	});
+</script>
+
 <div class="page-title">Source Code Viewer</div>
 
 <?php include_once './includes/back-button.inc';?>
@@ -70,7 +89,7 @@
 						echo '<input type="hidden" name="CSRFToken" value="'.$lCSRFTokenStructure->getCSRFToken().'"/>';
 					}//end if
 				?>
-				<select name="phpfile" id="id_file_select">
+				<select name="phpfile" id="id_file_select" HTMLandXSSandSQLInjectionPoint="1">
 				<?php 
 					$_SESSION['source-viewer-files-array'] = "";						
 					if(!$lBeSmart){
@@ -160,7 +179,7 @@
 				// Insecure Mode: Skip validation
 				$lFilename = $pPHPFile;
 
-				$LogHandler->writeToLog($conn, "Page source-viewer.php loaded file: " . $lFilename);
+				$LogHandler->writeToLog("Page source-viewer.php loaded file: " . $lFilename);
 
 			}elseif ($lBeSmart){
 	   			/* The "phpfile" is expected to be integer, so validate as such. Also,
@@ -204,12 +223,12 @@
 				 */ 
 				$lFilename = $laAllowedPHPFiles[$pPHPFile];
 
-				$LogHandler->writeToLog($conn, "Page source-viewer.php loaded file: " . $lFilename);				
+				$LogHandler->writeToLog("Page source-viewer.php loaded file: " . $lFilename);				
 		   	}// end if $lBeSmart
 
 		   	// try to display the file
 		   	try {
-	   			echo '<p class="label">File: '.$lFilename.'</p>';
+	   			echo '<span ReflectedXSSExecutionPoint=\"1\" class="label">File: '.$lFilename.'</span>';
 	   			echo '<pre>';
 				highlight_file($lFilename);
 				echo '</pre>';

@@ -1,9 +1,19 @@
 <?php
+
 	/* ------------------------------------------
 	 * Constants used in application
 	 * ------------------------------------------ */
 	include_once './includes/constants.php';
-    
+
+	/* ------------------------------------------------------
+	 * INCLUDE CLASS DEFINITION PRIOR TO INITIALIZING SESSION
+	 * ------------------------------------------------------ */
+	require_once 'classes/MySQLHandler.php';
+	require_once 'owasp-esapi-php/src/ESAPI.php';
+	require_once 'classes/CustomErrorHandler.php';
+	require_once 'classes/LogHandler.php';
+	require_once 'classes/BubbleHintHandler.php';
+	
     /* ------------------------------------------
      * INITIALIZE SESSION
      * ------------------------------------------ */
@@ -13,28 +23,8 @@
     }// end if
 
     // ----------------------------------------
-	// initialize showhints session and cookie 
+	// initialize security level to "insecure" 
 	// ----------------------------------------
-	/* This code is here to create a simulated vulnerability. Some
-	 * sites put authorication and status tokens in cookies instead
-	 * of the session. This is a mistake. The user controls the 
-	 * cookies entirely.
-	 */
-	if (isset($_COOKIE["showhints"])){
-		$l_showhints_cookie = $_COOKIE["showhints"];
-	}else{
-		$l_showhints_cookie = 0;
-	}// end if
-
-	// make session = cookie
-	$_SESSION["showhints"] = $l_showhints_cookie;
-	switch ($l_showhints_cookie){
-		case 0: $_SESSION["hints-enabled"] = "Disabled (".$l_showhints_cookie." - I try harder)"; break;
-		case 1: $_SESSION["hints-enabled"] = "Enabled (".$l_showhints_cookie." - 5cr1pt K1dd1e)"; break;
-		case 2: $_SESSION["hints-enabled"] = "Enabled (".$l_showhints_cookie." - Noob)"; break;
-	}// end switch
-	    
-    // initialize security level to "insecure"
     if (!isset($_SESSION['security-level'])){
     	$_SESSION['security-level'] = '0';
     }// end if
@@ -46,38 +36,129 @@
 	    $_SESSION['logged_in_usersignature'] = '';	    	
     }// end if    
     
-    if (!isset($_SESSION["hints-enabled"])){
-    	$_SESSION["hints-enabled"] = "Disabled";
-    }// end if
+    // ----------------------------------------
+	// initialize showhints session and cookie 
+	// ----------------------------------------
+	/* This code is here to create a simulated vulnerability. Some
+	 * sites put authorication and status tokens in cookies instead
+	 * of the session. This is a mistake. The user controls the 
+	 * cookies entirely.
+	*/    
+	if (isset($_COOKIE["showhints"])){
+		$l_showhints = $_COOKIE["showhints"];
+	}else{
+		$l_showhints = 0;
 
+		/*
+		 * If in secure mode, we want the cookie to be protected
+		 * with HTTPOnly flag. There is some irony here. In secure code,
+		 * we are to ignore authorization cookies, so we are protecting
+		 * a cookie we know we are going to ignore. But the point is to
+		 * provide an example to developers of proper coding techniques.
+		 */
+	   	switch ($_SESSION["security-level"]){
+	   		case "0": // This code is insecure
+	   		case "1": // This code is insecure
+	   			$lProtectCookies = FALSE;
+	   		break;
+			
+			case "2":
+			case "3":
+			case "4":
+	   		case "5": // This code is fairly secure
+	   			$lProtectCookies = TRUE;
+	   		break;
+	   	}// end switch		
+		
+		if ($lProtectCookies){
+			setcookie('showhints', $l_showhints.";HTTPOnly");
+		}else {
+			setcookie('showhints', $l_showhints);
+		}// end if $lProtectCookies
+	}// end if (isset($_COOKIE["showhints"])){
+
+	if (!isset($_SESSION["showhints"]) || ($_SESSION["showhints"] != $l_showhints)){
+		// make session = cookie
+		$_SESSION["showhints"] = $l_showhints;
+		switch ($l_showhints){
+			case 0: $_SESSION["hints-enabled"] = "Disabled (".$l_showhints." - I try harder)"; break;
+			case 1: $_SESSION["hints-enabled"] = "Enabled (".$l_showhints." - 5cr1pt K1dd1e)"; break;
+			case 2: $_SESSION["hints-enabled"] = "Enabled (".$l_showhints." - Noob)"; break;
+		}// end switch
+	}//end if
+	
 	/* ------------------------------------------
 	 * initialize OWASP ESAPI for PHP
 	 * ------------------------------------------ */
-    require_once 'owasp-esapi-php/src/ESAPI.php';
-	if (!isset($ESAPI)){
-		$ESAPI = new ESAPI('owasp-esapi-php/src/ESAPI.xml');
-		$Encoder = $ESAPI->getEncoder();
-		$ESAPIRandomizer = $ESAPI->getRandomizer();
+	/*
+	if (!is_object($_SESSION["Objects"]["ESAPIHandler"])){
+		$_SESSION["Objects"]["ESAPIHandler"] = new ESAPI('owasp-esapi-php/src/ESAPI.xml');
+		$_SESSION["Objects"]["ESAPIEncoder"] = $_SESSION["Objects"]["ESAPIHandler"]->getEncoder();
+		$_SESSION["Objects"]["ESAPIRandomizer"] = $_SESSION["Objects"]["ESAPIHandler"]->getRandomizer();
 	}// end if
-
+	
+	// Set up an alias by reference so object can be referenced in memory without copying
+	$ESAPI = &$_SESSION["Objects"]["ESAPIHandler"];
+	$Encoder = &$_SESSION["Objects"]["ESAPIEncoder"];
+	$ESAPIRandomizer = &$_SESSION["Objects"]["ESAPIRandomizer"];
+	*/
+	$ESAPI = new ESAPI('owasp-esapi-php/src/ESAPI.xml');
+	$Encoder = $ESAPI->getEncoder();
+	$ESAPIRandomizer = $ESAPI->getRandomizer();
+	
 	/* ------------------------------------------
 	 * initialize custom error handler
 	 * ------------------------------------------ */
-    require_once 'classes/CustomErrorHandler.php';
-	if (!isset($CustomErrorHandler)){
-		$CustomErrorHandler = 
-		new CustomErrorHandler("owasp-esapi-php/src/", $_SESSION["security-level"]);
-	}// end if	
-
-	/* ------------------------------------------
- 	* initialize log error handler
- 	* ------------------------------------------ */
-    require_once 'classes/LogHandler.php';
-	if (!isset($LogHandler)){
-		$LogHandler = 
-		new LogHandler("owasp-esapi-php/src/", $_SESSION["security-level"]);
+	/*
+	if (!is_object($_SESSION["Objects"]["CustomErrorHandler"])){
+		$_SESSION["Objects"]["CustomErrorHandler"] = new CustomErrorHandler("owasp-esapi-php/src/", $_SESSION["security-level"]);
 	}// end if
 	
+	$CustomErrorHandler = &$_SESSION["Objects"]["CustomErrorHandler"];
+	*/
+	$CustomErrorHandler = new CustomErrorHandler("owasp-esapi-php/src/", $_SESSION["security-level"]);
+	
+	/* ------------------------------------------
+ 	* initialize log handler
+ 	* ------------------------------------------ */
+	/*
+	if (!is_object($_SESSION["Objects"]["LogHandler"])){
+		$_SESSION["Objects"]["LogHandler"] = new LogHandler("owasp-esapi-php/src/", $_SESSION["security-level"]);
+	}// end if
+	
+	$LogHandler = &$_SESSION["Objects"]["LogHandler"];
+	*/
+	$LogHandler = new LogHandler("owasp-esapi-php/src/", $_SESSION["security-level"]);
+	
+	/* ------------------------------------------
+ 	* initialize MySQL handler
+ 	* ------------------------------------------ */
+	/*
+	if (!is_object($_SESSION["Objects"]["MySQLHandler"])){
+		$_SESSION["Objects"]["MySQLHandler"] = new MySQLHandler("owasp-esapi-php/src/", $_SESSION["security-level"]);
+	}// end if
+	
+	$MySQLHandler = &$_SESSION["Objects"]["MySQLHandler"];
+	*/
+	$MySQLHandler = new MySQLHandler("owasp-esapi-php/src/", $_SESSION["security-level"]);
+	
+	/* ------------------------------------------
+ 	* initialize balloon-hint handler
+ 	* ------------------------------------------ */
+	/*
+   	if (!is_object($_SESSION["Objects"]["BubbleHintHandler"])){
+		$_SESSION["Objects"]["BubbleHintHandler"] = new BubbleHintHandler("owasp-esapi-php/src/", $_SESSION["security-level"]);
+	}// end if
+	
+	// Set up an alias by reference so object can be referenced in memory without copying
+	$BubbleHintHandler = &$_SESSION["Objects"]["BubbleHintHandler"];
+	*/
+	$BubbleHintHandler = new BubbleHintHandler("owasp-esapi-php/src/", $_SESSION["security-level"]);
+	
+	if ($_SESSION["showhints"] != $BubbleHintHandler->getHintLevel()){
+		$BubbleHintHandler->setHintLevel($_SESSION["showhints"]);
+	}//end if
+
     /* ------------------------------------------
      * INITIALIZE DATABASE
      * ------------------------------------------ */
@@ -102,7 +183,6 @@
 	/* ------------------------------------------
      * REACT TO CLIENT SIDE CHANGES
      * ------------------------------------------ */
-
 	switch ($_SESSION["security-level"]){
    		case "0": // This code is insecure
    		case "1": // This code is insecure
@@ -488,5 +568,5 @@
     require_once ("closedb.inc");
     
    	require_once ("./includes/create-html-5-web-storage-target.inc");	
-    
+   	require_once ("./includes/bubble-hints.inc");
 ?>

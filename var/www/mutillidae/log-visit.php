@@ -9,7 +9,7 @@
 	 * SQL Exception, (Fix: Employ custom error handler)
 	 */
 	try {
-		$LogHandler->writeToLog($conn, "User visited");	
+		$LogHandler->writeToLog("User visited");	
 	} catch (Exception $e) {
 		echo $CustomErrorHandler->FormatError($e, $query);
 	}// end try
