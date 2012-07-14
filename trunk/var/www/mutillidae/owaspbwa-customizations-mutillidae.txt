@@ -3,12 +3,13 @@ Files edited to run Mutillidae on OWASPBWA
 - Edited .htaccess to allow remote access
 
 - Edited database connection information in:
-  o config.inc (though that is not deprecated)
+  o config.inc (though that file is now deprecated)
   o classes\MySQLHandler.php
-  
-- Edited database name in set-up-database.php. (from owasp10 to mutillidae)
 
-- Edited 'admin' user password (changed to 'admin') and added non-admin named 'user' with password 'user' in set-up-database.php.
+- Edited set-up-database.php:
+  o Edited database name (from owasp10 to mutillidae)
+  o Edited 'admin' user password (changed to 'admin') and 
+  o Added non-admin named 'user' with password 'user'
 
 
 
@@ -18,9 +19,29 @@ How to update Mutillidae:
 
 2. Unzip file to directory on Host OS
 
-3. With Windows Explorer, copy all files from ...\LATEST-mutillidae-X.Y.Z.zip\mutillidae to \\owaspbwa\owaspbwa\owaspbwa-svn\var\www\mutillidae
+3. Stop services in a root prompt by running owaspbwa-services-stop.sh
 
-4. Use TortoiseSVN to look at the Diff for the files listed above (in "Files edited to run Mutillidae on OWASPBWA").  If there are changes to areas other than listed, then re-make the modifications described.  If there are not other changes, then the file can be reverted.
+4. With Windows Explorer, copy all files from ...\LATEST-mutillidae-X.Y.Z.zip\mutillidae to \\owaspbwa\owaspbwa\owaspbwa-svn\var\www\mutillidae
 
-5. Do an SVN Add on the mutillidae directory to add any new files to SVN.
+5. Use TortoiseSVN to look at the Diff for the files listed above (in "Files edited to run Mutillidae on OWASPBWA").  If there are changes to areas other than listed, then re-make the modifications described.  If there are not other changes, then the file can be reverted.
 
+6. Do an SVN Add on the \\owaspbwa\owaspbwa\owaspbwa-svn\var\www\mutillidae directory to add any new files to SVN.
+
+7. Do an SVN Commit on the \\owaspbwa\owaspbwa\owaspbwa-svn\var\www\mutillidae directory to commit changes.
+
+8. Fix file ownership by running this in a root prompt:
+   chown -R www-data:www-data /owaspbwa/owaspbwa-svn/var/www/mutillidae
+
+9. Start services in a root prompt by running owaspbwa-services-start.sh
+
+10. Browse to http://owaspbwa/mutillidae/set-up-database.php to reset database
+
+11. Attempt login (username user, password user) and work with site a bit to verify operation.  If you modify any data in app, reset the database again when done.
+
+12. Stop services in a root prompt by running owaspbwa-services-stop.sh
+
+13. Do an SVN Add on the directory \\owaspbwa\owaspbwa\owaspbwa-svn\var\lib\mysql\mutillidae to add new database files to SVN.
+
+14. Do an SVN Commit on the directory \\owaspbwa\owaspbwa\owaspbwa-svn\var\lib\mysql\mutillidae to commit database changes.
+
+  - DONE - 
