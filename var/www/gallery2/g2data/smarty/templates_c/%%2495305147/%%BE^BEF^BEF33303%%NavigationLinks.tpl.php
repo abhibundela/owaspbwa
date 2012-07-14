@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.10, created on 2011-04-17 15:13:55
+<?php /* Smarty version 2.6.10, created on 2012-07-13 15:00:26
          compiled from gallery:modules/core/templates/blocks/NavigationLinks.tpl */ ?>
 <?php if (! empty ( $this->_tpl_vars['navigationLinks'] )): ?>
 <div class="<?php echo $this->_tpl_vars['class']; ?>
