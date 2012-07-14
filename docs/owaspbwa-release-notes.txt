@@ -15,15 +15,19 @@ download the .7z archive if possible to save bandwidth (and time).
 you run it only on the "host only" or "NAT" network in the virtual machine 
 settings !!! 
 
-Version 1.0rc2 - 2012-07-XX
-- Added new applications:
-
-- Updated WebGoat, Mutillidae, other applications from source repositories
+Version 1.0rc2 - 2012-07-14
+- Added new application: wavsep (http://code.google.com/p/wavsep/)
+- Updated WebGoat.NET, WebGoat (Java), and other applications from source 
+  repositories.  Updated Mutillidae.
 - Removed links to OWASP ESAPI SwingSet (non-Interactive).  That application
   has been deprecated and replaced by the SwingSet Interactive.
 - Changed version numbers in index.html to better indicate applications that
   are updated from public SVN or GIT repositories.
 - Layout improvements to index.html file (layout could still use some work).
+- Fixed bugs in Yazd (may have been present in 1.0rc1 or before)
+- Changes MySQL configuration to store database and table names as lower case
+  (facilitates use of software written on Windows that may not strictly adhere
+  to one case for identifiers)
 
 Version 1.0rc1 - 2012-04-04
 - Added new applications:
