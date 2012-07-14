@@ -42,7 +42,7 @@
 	   		break;
 	   	}// end switch
 
-		$LogHandler->writeToLog($conn, "Attempt to log in by user: " . $username);
+		$LogHandler->writeToLog("Attempt to log in by user: " . $username);
 	   	
 		$result = $conn->query($query);
 		if (!$result) {
@@ -85,11 +85,11 @@
 				setrawcookie("uid", $row->cid);
 			}// end if
 			
-			$LogHandler->writeToLog($conn, "Logged in user: " . $row->username . " (" . $row->cid . ")");
+			$LogHandler->writeToLog("Logged in user: " . $row->username . " (" . $row->cid . ")");
 			
 			header('Location: index.php', true, 302);
 		} else {
-			$LogHandler->writeToLog($conn, "Failed login for user: " . $row->username);
+			$LogHandler->writeToLog("Failed login for user: " . $row->username);
 			$failedloginflag=1;
     	}// end if ($result->num_rows > 0)
 	    

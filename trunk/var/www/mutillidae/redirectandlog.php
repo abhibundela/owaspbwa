@@ -27,7 +27,7 @@
 	   			 * validate as string. 
 	   			 */
 	   			$forwardurl=$_REQUEST["forwardurl"];
-				$LogHandler->writeToLog($conn, "Redirected user to: " . $forwardurl);				
+				$LogHandler->writeToLog("Redirected user to: " . $forwardurl);				
 				echo '<meta http-equiv="refresh" content="0;url='.$forwardurl.'">';
 				//header("Location: " . $forwardurl); /* Redirect browser */
 				exit; /* prevent other headers from runnning */				
@@ -77,7 +77,7 @@
 	   					case 10:$lURL = "https://addons.mozilla.org/en-US/firefox/collections/jdruin/pr/";break;
 	   				}// end switch($forwardurl)
 
-					$LogHandler->writeToLog($conn, "Redirected user to: " . $lURL);				
+					$LogHandler->writeToLog("Redirected user to: " . $lURL);				
 	   				echo '<meta http-equiv="refresh" content="0;url='.$lURL.'">';/* Redirect browser */
 					//header("Location: " . $lURL); /* Redirect browser */
 					exit; /* prevent other headers from runnning */		

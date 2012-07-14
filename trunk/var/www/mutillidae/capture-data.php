@@ -14,12 +14,6 @@
 	 * ------------------------------------------ */
 	include_once './includes/constants.php';
 
-    /* ------------------------------------------
-     * INITIALIZE DATABASE
-     * ------------------------------------------ */
-    require_once 'config.inc';
-    require_once 'opendb.inc';
-
 	/* ------------------------------------------
 	 * initialize OWASP ESAPI for PHP
 	 * ------------------------------------------ */
@@ -46,7 +40,23 @@
 		$LogHandler = 
 		new LogHandler("owasp-esapi-php/src/", $_SESSION["security-level"]);
 	}// end if	
-    
+
+	/* ------------------------------------------
+ 	* initialize MySQL handler
+ 	* ------------------------------------------ */
+	require_once 'classes/MySQLHandler.php';
+	if (!is_object($MySQLHandler)){
+		$MySQLHandler = new MySQLHandler("owasp-esapi-php/src/", $_SESSION["security-level"]);
+	}// end if	
+	
+	/* ------------------------------------------
+ 	* initialize balloon-hint handler
+ 	* ------------------------------------------ */
+	require_once 'classes/BubbleHintHandler.php';
+	if (!is_object($BubbleHintHandler)){
+		$BubbleHintHandler = new BubbleHintHandler("owasp-esapi-php/src/", $_SESSION["security-level"]);
+	}// end if	
+		
 	require_once 'classes/ClientInformationHandler.php';
 	$lClientInformationHandler = new ClientInformationHandler();
 	
@@ -60,12 +70,12 @@
 	$lClientPort = $lClientInformationHandler->getClientPort();
 	
 	if ($lProtectAgainstSQLInjection) {
-		$lClientHostname = $conn->real_escape_string($lClientHostname);
-		$lClientUserAgentString = $conn->real_escape_string($lClientUserAgentString);
-		$lClientReferrer = $conn->real_escape_string($lClientReferrer);
+		$lClientHostname = $MySQLHandler->escapeDangerousCharacters($lClientHostname);
+		$lClientUserAgentString = $MySQLHandler->escapeDangerousCharacters($lClientUserAgentString);
+		$lClientReferrer = $MySQLHandler->escapeDangerousCharacters($lClientReferrer);
 	}// end if $lProtectAgainstSQLInjection	
 
-	$lCapturedData = $conn->real_escape_string($lCapturedData);
+	$lCapturedData = $MySQLHandler->escapeDangerousCharacters($lCapturedData);
 	
 	try {	    	
 		switch ($_SESSION["security-level"]){
@@ -96,10 +106,10 @@
 		}// end for each
 
 		if ($lProtectAgainstSQLInjection) {
-			$lClientHostname = $conn->real_escape_string($lClientHostname);
-			$lCapturedData = $conn->real_escape_string($lCapturedData);
-			$lClientUserAgentString = $conn->real_escape_string($lClientUserAgentString);
-			$lClientReferrer = $conn->real_escape_string($lClientReferrer);
+			$lClientHostname = $MySQLHandler->escapeDangerousCharacters($lClientHostname);
+			$lCapturedData = $MySQLHandler->escapeDangerousCharacters($lCapturedData);
+			$lClientUserAgentString = $MySQLHandler->escapeDangerousCharacters($lClientUserAgentString);
+			$lClientReferrer = $MySQLHandler->escapeDangerousCharacters($lClientReferrer);
 		}// end if $lProtectAgainstSQLInjection	
 	
 		$lQueryString = 
@@ -115,10 +125,7 @@
 				" now()" .
 			")";
 
-		$result = $conn->query($lQueryString);
-		if (!$result) {
-	    	throw (new Exception('Error executing query: '.$conn->error, $conn->errorno));
-	    }// end if
+		$result = $MySQLHandler->executeQuery($lQueryString);
 		
 	} catch (Exception $e) {
 		echo $CustomErrorHandler->FormatError($e, $lQueryString);
@@ -147,16 +154,43 @@
 		echo $CustomErrorHandler->FormatError($e, "Error trying to save captured data from capture.php into file " . $lFilename);
 	}// end try
 	
+	try {
+		$LogHandler->writeToLog("Captured user data");
+		$LogHandler->writeToLog("Captured Client IP: ".$lClientIP);
+		$LogHandler->writeToLog("Captured Client Hostname: ".$lClientHostname);
+		$LogHandler->writeToLog("Captured Client User Agent: ".$lClientUserAgentString);
+		$LogHandler->writeToLog("Captured Client Referrer: ".$lClientReferrer);
+		$LogHandler->writeToLog("Captured Client Port: ".$lClientPort);
+		$LogHandler->writeToLog("Captured Data: ".$lCapturedData);		
+	} catch (Exception $e) {
+		echo $CustomErrorHandler->FormatError($e, $query);
+	}// end try
+	
     /* ------------------------------------------
      * LOG USER VISIT TO PAGE
      * ------------------------------------------ */
 	require_once ("log-visit.php");
     
-    /* ------------------------------------------
-     * CLOSE DATABASE CONNECTION
-     * ------------------------------------------ */
-    require_once 'closedb.inc';	
 ?>
+
+<!-- Bubble hints code -->
+<?php 
+	try{
+   		$lReflectedXSSExecutionPointBallonTip = $BubbleHintHandler->getHint("ReflectedXSSExecutionPoint");
+   		$lSQLInjectionPointBallonTip = $BubbleHintHandler->getHint("SQLInjectionPoint");
+	} catch (Exception $e) {
+		echo $CustomErrorHandler->FormatError($e, "Error attempting to execute query to fetch bubble hints.");
+	}// end try	
+?>
+
+<script type="text/javascript">
+	$(function() {
+		$('[ReflectedXSSExecutionPoint]').attr("title", "<?php echo $lReflectedXSSExecutionPointBallonTip; ?>");
+		$('[ReflectedXSSExecutionPoint]').balloon();
+		$('[SQLInjectionPoint]').attr("title", "<?php echo $lSQLInjectionPointBallonTip; ?>");
+		$('[SQLInjectionPoint]').balloon();
+	});
+</script>
 
 <link rel="stylesheet" type="text/css" href="./styles/global-styles.css" />
 <div class="page-title">Capture Data</div>
@@ -171,17 +205,17 @@
 	</tr>
 	<tr><td>&nbsp;</td></tr>
 	<tr>
-		<td>
+		<td SQLInjectionPoint="1">
 			This page is designed to capture any parameters sent and store them in a file and a database table. It loops through
 			the POST and GET parameters and records them to a file named <?php print $lFilename; ?>. On this system, the 
 			file should be found at <?php print pathinfo($_SERVER["SCRIPT_FILENAME"], PATHINFO_DIRNAME) . "/" . $lFilename; ?>. The page
-			also tries to store the captured data in a database table named captured_data. There is another page named
+			also tries to store the captured data in a database table named captured_data and <a href="./index.php?page=show-log.php">logs</a> the captured data. There is another page named
 			<a href="index.php?page=captured-data.php">captured-data.php</a> that attempts to list the contents of this table.
 		</td>
 	</tr>
 	<tr><td>&nbsp;</td></tr>
 	<tr>
-		<th>
+		<th ReflectedXSSExecutionPoint="1">
 			The data captured on this request is: <?php print $lCapturedData; ?>
 		</th>
 	</tr>

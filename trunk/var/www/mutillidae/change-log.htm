@@ -1,3 +1,65 @@
+<p><b>06/15/2012</b>: Jeremy Druin</p>
+<blockquote>
+	<p>Change Log for NOWASP 2.2.0 (Codename: Mutillidae):</p>
+	<ul>
+		<li>Added balloon tips to help users using jQuery ballons</li>
+		<li>Added jQuery to Mutillidae</li>
+		<li>Added large amounts of hints to html-5 web storage page</li>
+		<li>Added notes and demos from AIDE conference talk to pen test lookup tools page</li>
+		<li>Added notes and demos from AIDE conference talk to html-5 storage page</li>
+		<li>Added notes and demos from AIDE conference talk to all pages with cross site scripting (click hints to see)</li>
+		<li>Made show hints code more efficient</li>
+		<li>Fixed the width of the command injection level-2 hints</li>
+		<li>Added more comments to index.php</li>
+		<li>
+			Made it so the "hints" cookie shows all the time rather than only if the user changes the hint
+			level
+		</li>
+		<li>Made is easier for user to hack the hints cookie to make hints appears when hints should not appear</li>
+		<li>Regression tested the hints functionality since most of it changed</li>
+		<li>
+			Syncronized bubble-hints handler with security levels. The bubble hint can change with the security
+			level. This provides a foundation for the future.
+		</li>
+		<li>Created the MySQLHandler class</li>
+		<li>Converted bubble hint handler to use MySQLHandler class</li>
+		<li>Improved command injection hints on the DNS lookup page</li>
+		<li>Cleaned up some code on the DNS lookup page</li>
+		<li>
+			Converted log file to using the MySQLHandler class instead of the connection previously
+			passed on each call to log. This will make logging more simple and faster.
+		</li>
+		<li>Added getSecurityLevel() method to logging class and the MySQLHandler class</li>
+		<li>Made hints routine run faster</li>
+		<li>Improved the vulnerabilities listing in vulnerabilities.php</li>
+		<li>Improved code on add to your blog</li>
+		<li>Switched add to blog page to use object oriented sql handler</li>
+		<li>Added toggle-hints to the core controls menu</li>
+		<li>Added "show popup hints" options to menu</li>
+		<li>
+			Tried to move object storage to session so objects are only generated once per session then
+			persisted for the remainder of the session. This greatly imporves performance of objects
+			plus allows the objects to be persistent (remember things).
+			
+			Didnt work. PHP cannot persist objects.
+		</li>
+		<li>Cleaned up code on arbitrary file inclusion page</li>
+		<li>Standardized the bubble hint code to make it easy to add new hints</li>
+		<li>Added browser-info.php to the JavaScript injection menu</li>
+		<li>Fixed a bug in the hints formatting on the browser-info.php page</li>
+		<li>Corrected mistakes in the vulnerabilities listing page</li>
+		<li>Simplified main menu bar under title at top of each page</li>
+		<li>Added logging to the authorization required error page</li>
+		<li>Added logging to the capture data page to log the captured data</li>
+		<li>Converted the capture data page to use OOP SQL handler</li>
+		<li>Added source viewer page to the menu for Failure to Restrict URL access</li>
+		<li>Fixed formatting issue on text file viewer</li>
+		<li>Fixed some old formatting issues in user info php left over from Mutillidae 1.0</li>
+		<li>Fixed code clarity in user info</li>
+		<li>Converted user info to use MySQL handler class</li>
+	</ul>
+</blockquote>
+
 <p><b>05/14/2012</b>: Jeremy Druin</p>
 <blockquote>
 	<p>Change Log for NOWASP (Codename: Mutillidae) 2.1.20:</p>
@@ -8,7 +70,11 @@
 			was throwing errors even when the input was ok. This validation checks for any non-alphanumeric
 			characters and prints an error if non-alphanumeric characters are found. This error message contains the bad key
 			the user input. Since the site fails to output encode this error message, it is possible to perform DOM injection.
-		</li> 
+		</li>
+		<li>Add the html5-storage.php to the vulnerabilities listing.</li>
+		<li>Bug Fix: Fixed a bug in pen-test-tool-lookup.php for security level 5 in which the page would throw
+			an error upon submitting the tool to look up.
+		</li>
 	</ul>
 </blockquote>
 

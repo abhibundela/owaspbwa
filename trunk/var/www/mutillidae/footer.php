@@ -40,7 +40,26 @@
 					$lPHPVersion = "PHP Version: Not Available (Secure mode doesn't blab the server version)";
 		   		break;
 		   	}// end switch
-	echo '<div class="footer">Browser: '.$lUserAgentString.'</div>';
+?>
+		   	
+<!-- Bubble hints code -->
+<?php 
+	try{
+   		$lReflectedXSSExecutionPointBallonTip = $BubbleHintHandler->getHint("ReflectedXSSExecutionPoint");
+	} catch (Exception $e) {
+		echo $CustomErrorHandler->FormatError($e, "Error attempting to execute query to fetch bubble hints.");
+	}// end try
+?>
+
+<script type="text/javascript">
+	$(function() {
+		$('[ReflectedXSSExecutionPoint]').attr("title", "<?php echo $lReflectedXSSExecutionPointBallonTip; ?>");
+		$('[ReflectedXSSExecutionPoint]').balloon();
+	});
+</script>
+
+<?php 
+	echo '<div ReflectedXSSExecutionPoint=\"1\" class="footer">Browser: '.$lUserAgentString.'</div>';
 	echo '<div class="footer">'.$lPHPVersion.'</div>';
 ?>
 

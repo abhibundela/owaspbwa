@@ -265,6 +265,73 @@ try{
 	}else{
 		echo "<div class=\"database-success-message\">Executed query 'CREATE TABLE' with result ".$lResult."</div>";
 	}// end if
+
+	$lQuery = 
+			'CREATE TABLE balloon_tips('.
+				'tip_key VARCHAR(64) NOT NULL, '.
+				'hint_level INT, '.
+				'tip TEXT, '.
+				'PRIMARY KEY(tip_key, hint_level)'.
+			')';
+	$lResult = $lMySQLiConnection->query($lQuery);
+	if (!$lResult) {
+		$lErrorDetected = TRUE;
+		throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
+	}else{
+		echo "<div class=\"database-success-message\">Executed query 'CREATE TABLE' with result ".$lResult."</div>";
+	}// end if
+
+	$lQuery ="INSERT INTO `balloon_tips` (`tip_key`, `hint_level`, `tip`) VALUES
+			('ParameterPollutionInjectionPoint', 0, 'User input is not evaluated for duplicate parameters'),
+			('ParameterPollutionInjectionPoint', 1, 'If user input contains the same variable more than once, the system will only accept one of the values. This can be used to trick the system into accepting a correct value and a mallicious value but only counting the mallicious value.'),
+			('ParameterPollutionInjectionPoint', 2, 'Send two copies of the same parameter. Note carefully if the system uses the first, second, or both values. Some systems will concatenate the values together. If the system uses the first value, inject the value you want the system to count first.'),
+			('CSSInjectionPoint', 0, 'User input is incorporated into the style sheet returned from the server'),
+			('CSSInjectionPoint', 1, 'User input is incorporated into the style sheet returned from the server without being properly encoded. This allows an attacker to inject cross-site scripts or HTML into the input and break out of the style-sheet context. Arbitrary JavaScript and HTML can be injected.'),
+			('CSSInjectionPoint', 2, 'Locate the input parameter that is incorporated into the style sheet. Determine what chracters are needed to properly complete the style so it is sytactically correct. Inject this closing statement along with a JavaScript or HTML to be executed.'),
+			('JSONInjectionPoint', 0, 'User input is incorporated into the JSON returned from the server'),
+			('JSONInjectionPoint', 1, 'User input is incorporated into the JSON returned from the server without being properly encoded. This allows an attacker to inject JSON into the input and break out of the JSON context. Arbitrary JavaScript can be injected.'),
+			('JSONInjectionPoint', 2, 'Locate the input parameter that is incorporated into the JSON. Determine what chracters are needed to properly complete the JSON so it is sytactically correct. Inject this closing statement along with a JavaScript to be executed.'),
+			('DOMXSSExecutionPoint', 0, 'This location contains dynamic output modified by the DOM'),
+			('DOMXSSExecutionPoint', 1, 'Lack of output encoding controls often result in cross-site scripting when user input is incorporated into the DOM'),
+			('DOMXSSExecutionPoint', 2, 'This output is vulnerable to cross-site scripting because user-input is incorporated into the DOM without properly encoding the user input first. Determine which input field contributes output here and inject HTML or scripts'),
+			('ArbitraryRedirectionPoint', 0, 'Arbitrary redirection is a type of insecure direct object reference'),
+			('ArbitraryRedirectionPoint', 1, 'See if a URL can be injected in place of the intended URL'),
+			('ArbitraryRedirectionPoint', 2, 'Try injecting a URL into the parameter which contains the page to which the site thinks the user should be redirected to. It may be neccesary to use a complete URL including the protocol.'),
+			('SQLInjectionPoint', 0, 'SQL Injection may occur on any page interacting with a database'),
+			('SQLInjectionPoint', 1, 'Try injecting single-quotes and other special control characters'),
+			('SQLInjectionPoint', 2, 'Try injecting single-quotes and other special control characters to produce an error if possible. Note any queries in the error to assist in injecting a complete query. Try using SQLMAP to inject queries.'),
+			('CookieTamperingAffectedArea', 0, 'Cookies may store system state information'),
+			('CookieTamperingAffectedArea', 1, 'Inspect the value of the cookies with a Firefox add-on like Cookie-Manager or a non-transparent proxy like Burp or Zap'),
+			('CookieTamperingAffectedArea', 2, 'Change the value of the cookies to see what affect is produced on the site. Also watch how the values of the cookies change after using different site features.'),
+			('JavaScriptInjectionPoint', 0, 'This location does not use JavaScript string encoding'),
+			('JavaScriptInjectionPoint', 1, 'This location is vulnerable to JavaScript string injection. The first step is to determine which parameter is output here'),
+			('JavaScriptInjectionPoint', 2, 'Locate the input parameter that is output to this location and inject raw JavaScript commands. Use the view-source to see if the syntax of the injection is correct'),
+			('LocalFileInclusionVulnerability', 0, 'Perhaps a file other than the one intended could be included in this page'),
+			('LocalFileInclusionVulnerability', 1, 'This page is vulnerable a local file inclusion vulnerability because it does not strongly validate that only explicitly named-pages are allowed.'),
+			('LocalFileInclusionVulnerability', 2, 'Identify the input parameter that accepts the filename to be included then change that parameter to a system file such as /etc/passwd or C:\\boot.ini'),
+			('HTMLandXSSandSQLInjectionPoint', 0, 'Inputs are usually a good place to start testing for cross-site scripting, HTML injection and SQL injection'),
+			('HTMLandXSSandSQLInjectionPoint', 1, 'This input is vulnerable to multiple types of injection including cross-site scripting, HTML injection and SQL injection'),
+			('HTMLandXSSandSQLInjectionPoint', 2, 'To get started with cross-site scripting and HTML injection, inject a JavaScript or HTML code then view-source on the resulting page to see if the script syntax is correct. For SQL injection, start by injecting a single-quote to produce an error.'),
+			('OSCommandInjectionPoint', 0, 'Inputs are usually a good place to start testing for command injection'),
+			('OSCommandInjectionPoint', 1, 'This input is vulnerable to multiple types of injection'),
+			('OSCommandInjectionPoint', 2, 'This input is vulnerable to command injection plus may provide an injection point for reflected cross-site scripting. Try stating with \"127.0.0.1 && dir\".'),
+			('XSRFVulnerabilityArea', 0, 'HTML forms are vulnerable to cross-site request forgery by default although sensitive forms may be protected'),
+			('XSRFVulnerabilityArea', 1, 'This form is vulnerable to cross-site request forgery. Knowing the form action and inputs is the first step.'),
+			('XSRFVulnerabilityArea', 2, 'Use this form to commit cross-site request forgery. Capture a legitimate request in Burp/Zap then create a cross-site script that sends the equivilent request when a user executes the cross-site script.'),
+			('ReflectedXSSExecutionPoint', 0, 'This location contains dynamic output'),
+			('ReflectedXSSExecutionPoint', 1, 'Lack of output encoding controls often result in cross-site scripting'),
+			('ReflectedXSSExecutionPoint', 2, 'This output is vulnerable to cross-site scripting. Determine which input field contributes output here and inject scripts'),
+			('HTMLEventReflectedXSSExecutionPoint', 0, 'This location contains dynamic output'),
+			('HTMLEventReflectedXSSExecutionPoint', 1, 'Lack of output encoding controls often result in cross-site scripting; in this case via HTML Event injection.'),
+			('HTMLEventReflectedXSSExecutionPoint', 2, 'This output is vulnerable to cross-site scripting because the input is not encoded prior to be used as a value in an HTML event. Determine which input field contributes output here and inject scripts.')
+			;";
+	$lResult = $lMySQLiConnection->query($lQuery);
+	if (!$lResult) {
+		$lErrorDetected = TRUE;
+		throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
+	}else{
+		echo "<div class=\"database-success-message\">Executed query 'INSERT INTO TABLE' with result ".$lResult."</div>";
+	}// end if
 	
 	$lQuery = "
 	CREATE PROCEDURE getBestCollegeBasketballTeam ()

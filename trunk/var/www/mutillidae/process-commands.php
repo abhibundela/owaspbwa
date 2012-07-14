@@ -16,7 +16,16 @@
 
     /* Precondition: $_REQUEST["do"] is not NULL */
     switch ($_REQUEST["do"]) {
-	    case "logout":
+    	
+    	case "toggle-bubble-hints":
+    		if ($BubbleHintHandler->hintsAreDispayed()){
+    			$BubbleHintHandler->hideHints();
+    		}else{
+    			$BubbleHintHandler->showHints();
+    		}//end if
+    	break;//case "show-bubble-hints"
+	    
+    	case "logout":
 		    $_SESSION["loggedin"] = "False";
 		    $_SESSION['logged_in_user'] = '';
 		    $_SESSION['logged_in_usersignature'] = '';
@@ -27,30 +36,20 @@
 	    	header("Location: index.php?page=login.php", TRUE, 302);
 	    	exit(0);
 	    break;//case "logout"
-	
-		case "toggle-hints":
-			// see if their even is a cookie
-			if (isset($_COOKIE["showhints"])){
-				$l_showhints = $_COOKIE["showhints"];
-			}else{
-				$l_showhints = 0;
-			}// end if
 
-			/* Make hints go up a level or roll over*/
+		case "toggle-hints":
+			/*
+			 * Grab current cookie. The cookie might be legitimate or the user 
+			 * might have changed it 
+			*/
+			$l_showhints = $_COOKIE["showhints"];
+
+			/* Make hints either increase one level or roll over to zero. */
 			$l_showhints += 1;
 			if ($l_showhints > $C_MAX_HINT_LEVEL){
 				$l_showhints = 0;
 			}// end if
-			
-			/* Syncronize session with cookie. User might have changed cookie. */
-			$_SESSION["showhints"] = $l_showhints_cookie;
-			
-			switch ($l_showhints_cookie){
-				case 0: $_SESSION["hints-enabled"] = "Disabled (".$l_showhints_cookie." - I try harder)"; break;
-				case 1: $_SESSION["hints-enabled"] = "Enabled (".$l_showhints_cookie." - 5cr1pt K1dd1e)"; break;
-				case 2: $_SESSION["hints-enabled"] = "Enabled (".$l_showhints_cookie." - Noob)"; break;
-			}// end switch
-			
+
 			/*
 			 * If in secure mode, we want the cookie to be protected
 			 * with HTTPOnly flag. There is some irony here. In secure code,
@@ -64,11 +63,18 @@
 				setcookie('showhints', $l_showhints);
 			}// end if
 			
+			/* Guarantee that the hints cookie officially has the new hint level */
 			$_COOKIE["showhints"] = $l_showhints;
+			
+			/* Redirect the user back to the same page they clicked the "Toggle Hints" button
+			 * The index.php page will take care of using this new hint-level value to 
+			 * syncronize the page-hints and balloon tip hints. The "exit()" function makes
+			 * sure we do not accidentally write any "body" lines.
+			 */
 		    header("Location: ".$_SERVER['SCRIPT_NAME'].'?'.str_ireplace('do=toggle-hints&', '', $_SERVER['QUERY_STRING']), true, 302);
 			exit();
 		break;//case "toggle-hints"
-		
+
 		case "toggle-security":
 			/* Make security level go up a level or roll over*/
 			$lSecurityLevel = $_SESSION["security-level"];
@@ -85,14 +91,16 @@
 		     * There is a way to defeat this.
 		     */
 			if ($lSecurityLevel > 1){
-		    	$_SESSION["showhints"] = FALSE;
-				$_SESSION["hints-enabled"] = "Disabled";
+		    	$_SESSION["showhints"] = 0;
+				$_SESSION["hints-enabled"] = "Disabled (0 - I try harder)";
 				setcookie("showhints", "0");
-			}// end if		    
+			}// end if			
 
 			// change how much information errors barf onto the page.
 		    $CustomErrorHandler->setSecurityLevel($lSecurityLevel);
 		    $LogHandler->setSecurityLevel($lSecurityLevel);
+		    $BubbleHintHandler->setSecurityLevel($lSecurityLevel);
+		   	$MySQLHandler->setSecurityLevel($lSecurityLevel);		    
 
 		    $_SESSION["security-level"] = $lSecurityLevel;
 		    

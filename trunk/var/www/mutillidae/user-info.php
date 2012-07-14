@@ -16,9 +16,28 @@
     		break;
     	}//end switch
    	} catch (Exception $e) {
-		echo $CustomErrorHandler->FormatError($e, $lQuery);
+		echo $CustomErrorHandler->FormatError($e, $lQueryString);
    	}// end try;
 ?>
+
+<!-- Bubble hints code -->
+<?php 
+	try{
+   		$lReflectedXSSExecutionPointBallonTip = $BubbleHintHandler->getHint("ReflectedXSSExecutionPoint");
+   		$lSQLInjectionPointBallonTip = $BubbleHintHandler->getHint("SQLInjectionPoint");
+	} catch (Exception $e) {
+		echo $CustomErrorHandler->FormatError($e, "Error attempting to execute query to fetch bubble hints.");
+	}// end try
+?>
+
+<script type="text/javascript">
+	$(function() {
+		$('[ReflectedXSSExecutionPoint]').attr("title", "<?php echo $lReflectedXSSExecutionPointBallonTip; ?>");
+		$('[ReflectedXSSExecutionPoint]').balloon();
+		$('[SQLInjectionPoint]').attr("title", "<?php echo $lSQLInjectionPointBallonTip; ?>");
+		$('[SQLInjectionPoint]').balloon();
+	});
+</script>
 
 <div class="page-title">View your details</div>
 
@@ -41,11 +60,11 @@
 		<tr><td></td></tr>
 		<tr>
 			<td class="label">Name</td>
-			<td><input type="text" name="username" size="20"></td>
+			<td><input SQLInjectionPoint="1" type="text" name="username" size="20"></td>
 		</tr>
 		<tr>
 			<td class="label">Password</td>
-			<td><input type="password" name="password" size="20"></td>
+			<td><input SQLInjectionPoint="1" type="password" name="password" size="20"></td>
 		</tr>
 		<tr><td></td></tr>
 		<tr>
@@ -74,9 +93,13 @@
 					$lUsername = $_REQUEST["username"];
 					$lPassword = $_REQUEST["password"];
 			
-					$LogHandler->writeToLog($conn, "Recieved request to display user information for: " . $lUsername);
+					try {
+						$LogHandler->writeToLog("Recieved request to display user information for: " . $lUsername);					
+					} catch (Exception $e) {
+						//do nothing
+					}
 	    			
-	    			$lQuery  = "SELECT * FROM accounts WHERE username='". 
+	    			$lQueryString  = "SELECT * FROM accounts WHERE username='". 
 	    			$lUsername .
 	    			"' AND password='" . 
 	    			$lPassword . 
@@ -95,12 +118,12 @@
 					$lUsername = $_POST["username"];
 					$lPassword = $_POST["password"];
 			
-					$LogHandler->writeToLog($conn, "Recieved request to display user information for: " . $lUsername);
+					$LogHandler->writeToLog("Recieved request to display user information for: " . $lUsername);
 	    			
-					$lQuery  = "SELECT * FROM accounts WHERE username='".
-	    			$conn->real_escape_string($lUsername).
+					$lQueryString  = "SELECT * FROM accounts WHERE username='".
+	    			$MySQLHandler->escapeDangerousCharacters($lUsername).
 	    			"' AND password='".
-	    			$conn->real_escape_string($lPassword).
+	    			$MySQLHandler->escapeDangerousCharacters($lPassword).
 	    			 "'";
 
 		  			/* 
@@ -121,16 +144,17 @@
 	    		break;
 	    	}// end switch
 
-    		$result = $conn->query($lQuery);
-			if (!$result) {
-		    	throw (new Exception('Error executing query: '.$conn->error, $conn->errorno));
-		    }// end if
+    		$lQueryStringResult = $MySQLHandler->executeQuery($lQueryString);
     		
-			if ($result->num_rows > 0) {
-				echo '<p class="report-header">Results for '.$row->username.'. '.$result->num_rows.' records found.<p>';
-			    while($row = $result->fetch_object()){
-				
-					$LogHandler->writeToLog($conn, "Displayed user-information for: " . $row->username);				
+			if ($lQueryStringResult->num_rows > 0) {
+				echo '<p class="report-header">Results for '.$row->username.'. '.$lQueryStringResult->num_rows.' records found.<p>';
+			    while($row = $lQueryStringResult->fetch_object()){
+			    	
+			    	try {
+						$LogHandler->writeToLog("Displayed user-information for: " . $row->username);				
+			    	} catch (Exception $e) {
+			    		// do nothing
+			    	}
 					
 					if(!$lEncodeOutput){
 						$lUsername = $row->username;
@@ -142,17 +166,17 @@
 						$lSignature = $Encoder->encodeForHTML($row->mysignature);			
 					}// end if
 					
-					echo "<b>Username=</b>{$lUsername}<br>";
-					echo "<b>Password=</b>{$lPassword}<br>";
-					echo "<b>Signature=</b>{$lSignature}<br><p>";
+					echo "<span style=\"font-weight:bold;\">Username=</span><span ReflectedXSSExecutionPoint=\"1\">{$lUsername}</span><br/>";
+					echo "<span style=\"font-weight:bold;\">Password=</span><span ReflectedXSSExecutionPoint=\"1\">{$lPassword}</span><br/>";
+					echo "<span style=\"font-weight:bold;\">Signature=</span><span ReflectedXSSExecutionPoint=\"1\">{$lSignature}</span><br/><br/>";
 				}// end while
-				echo "<p>";
+
 			} else {
 				echo '<script>document.getElementById("id-bad-cred-tr").style.display=""</script>';
-			}// end if ($result->num_rows > 0)
+			}// end if ($lQueryStringResult->num_rows > 0)
 				
     	} catch (Exception $e) {
-			echo $CustomErrorHandler->FormatError($e, $lQuery);
+			echo $CustomErrorHandler->FormatError($e, $lQueryString);
        	}// end try;
     	
 	}// end if (isset($_POST)) 

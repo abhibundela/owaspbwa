@@ -61,7 +61,7 @@
 		   		break;
 		   	}// end switch
 
-			$LogHandler->writeToLog($conn, "Attempting to add account for: " . $username);				
+			$LogHandler->writeToLog("Attempting to add account for: " . $username);				
 		   	
 		   	if (strlen($username) == 0) {
 		   		$lValidationFailed = true;
@@ -79,16 +79,36 @@
 			    	throw (new Exception('Error inserting records: '.$conn->error, $conn->errorno));
 			    }// end if
 				echo '<h2 class="success-message">Account created for ' . $lUsernameText .'. '.$conn->affected_rows.' rows inserted.</h2>';
-				$LogHandler->writeToLog($conn, "Added account for: " . $username);
+				$LogHandler->writeToLog("Added account for: " . $username);
 		   	}// end if (!$lValidationFailed)
 			
 		} catch (Exception $e) {
-			$LogHandler->writeToLog($conn, "Failed to add account for: " . $username);
+			$LogHandler->writeToLog("Failed to add account for: " . $username);
 			echo $CustomErrorHandler->FormatError($e, $query);
 		}// end try
 			
 	}// end if (isset($_POST["register-php-submit-button"])){
 ?>
+
+<!-- Bubble hints code -->
+<?php 
+	try{
+   		$lHTMLandXSSandSQLInjectionPointBalloonTip = $BubbleHintHandler->getHint("HTMLandXSSandSQLInjectionPoint");
+   		$lSQLInjectionPointBallonTip = $BubbleHintHandler->getHint("SQLInjectionPoint");
+   		
+	} catch (Exception $e) {
+		echo $CustomErrorHandler->FormatError($e, "Error attempting to execute query to fetch bubble hints.");
+	}// end try
+?>
+
+<script type="text/javascript">
+	$(function() {
+		$('[HTMLandXSSandSQLInjectionPoint]').attr("title", "<?php echo $lHTMLandXSSandSQLInjectionPointBalloonTip; ?>");
+		$('[HTMLandXSSandSQLInjectionPoint]').balloon();
+		$('[SQLInjectionPoint]').attr("title", "<?php echo $lSQLInjectionPointBallonTip; ?>");
+		$('[SQLInjectionPoint]').balloon();	
+	});
+</script>
 
 <div id="id-registration-form-div">
 	<form action="index.php?page=register.php" method="post" enctype="application/x-www-form-urlencoded">
@@ -105,19 +125,19 @@
 			<tr><td></td></tr>
 			<tr>
 				<td class="label">Username</td>
-				<td><input type="text" name="username" size="20"></td>
+				<td><input HTMLandXSSandSQLInjectionPoint="1" type="text" name="username" size="20"></td>
 			</tr>
 			<tr>
 				<td class="label">Password</td>
-				<td><input type="password" name="password" size="20"></td>
+				<td><input SQLInjectionPoint="1" type="password" name="password" size="20"></td>
 			</tr>
 			<tr>
 				<td class="label">Confirm Password</td>
-				<td><input type="password" name="confirm_password" size="20"></td>
+				<td><input SQLInjectionPoint="1" type="password" name="confirm_password" size="20"></td>
 			</tr>
 			<tr>
 				<td class="label">Signature</td>
-				<td><textarea rows="10" cols="50" name="my_signature"></textarea></td>
+				<td><textarea HTMLandXSSandSQLInjectionPoint="1" rows="10" cols="50" name="my_signature"></textarea></td>
 			</tr>			
 			<tr><td></td></tr>
 			<tr>

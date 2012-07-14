@@ -35,6 +35,14 @@
     			$lEnableJavaScriptValidation = TRUE;
     		break;
     	}// end switch
+    	
+		try{
+    		$lOSCommandInjectionPointBallonTip = $BubbleHintHandler->getHint("OSCommandInjectionPoint");
+       		$lReflectedXSSExecutionPointBallonTip = $BubbleHintHandler->getHint("ReflectedXSSExecutionPoint");
+		} catch (Exception $e) {
+			echo $CustomErrorHandler->FormatError($e, "Error attempting to execute query to fetch bubble hints.");
+		}// end try
+    		    	    	
 	}catch(Exception $e){
 		echo $CustomErrorHandler->FormatError($e, "Error setting up configuration on page dns-lookup.php");
 	}// end try	
@@ -44,6 +52,15 @@
 
 <?php include_once './includes/back-button.inc';?>
 
+<script type="text/javascript">
+	$(function() {
+		$('[OSCommandInjectionPoint]').attr("title", "<?php echo $lOSCommandInjectionPointBallonTip; ?>");
+		$('[OSCommandInjectionPoint]').balloon();
+		$('[ReflectedXSSExecutionPoint]').attr("title", "<?php echo $lReflectedXSSExecutionPointBallonTip; ?>");
+		$('[ReflectedXSSExecutionPoint]').balloon();
+	});
+</script>
+    
 <!-- BEGIN HTML OUTPUT  -->
 <script type="text/javascript">
 	var onSubmitBlogEntry = function(/* HTMLForm */ theForm){
@@ -92,7 +109,7 @@
 		<tr><td></td></tr>
 		<tr>
 			<td class="label">Hostname/IP</td>
-			<td><input type="text" id="idTargetHostInput" name="target_host" size="20"></td>
+			<td><input type="text" id="idTargetHostInput" name="target_host" size="20" OSCommandInjectionPoint="1" /></td>
 		</tr>
 		<tr><td></td></tr>
 		<tr>
@@ -119,11 +136,9 @@
 	if (isset($_POST["dns-lookup-php-submit-button"])){
 	    try{
 	    	if ($targethost_validated){
-	    		echo '<p class="report-header">Results for '.$lTargetHostText.'<p>';
-    			echo '<pre class="report-header" style="text-align:left;">';
-    			echo shell_exec("nslookup " . $targethost);
-				echo '</pre>';
-				$LogHandler->writeToLog($conn, "Executed operating system command: nslookup " . $lTargetHostText);
+	    		echo '<p class="report-header" ReflectedXSSExecutionPoint="1">Results for '.$lTargetHostText.'<p>';
+    			echo '<pre class="report-header" style="text-align:left;">'.shell_exec("nslookup " . $targethost).'</pre>';
+				$LogHandler->writeToLog("Executed operating system command: nslookup " . $lTargetHostText);
 	    	}else{
 	    		echo '<script>document.getElementById("id-bad-cred-tr").style.display=""</script>';
 	    	}// end if ($targethost_validated){
@@ -145,12 +160,11 @@
 					<td class="hint-body">
 						<ul class="hints">
 						  	<li>
-						  		<b>For Command Injection Flaws:</b> Directly building a command to use in a
-								shell? Bad idea! Try command separators like ; and && depending on if 
-								you are using Linux or Windows respectively. 
+						  		<b>Command Injection Flaws:</b> Try command separators like ;, & and && depending on if 
+								you are using Linux or Windows respectively.
 							</li>
-							<li>Windows uses "&&" to link commands.</li>
-							<li>Linux uses "&&" to link commands and ";" as a command separater.</li>
+							<li>Windows uses "&" and "&&" to link commands.</li>
+							<li>Linux uses "&" and "&&" to link commands and ";" as a command separater.</li>
 						</ul>
 					</td>
 				</tr>

@@ -47,15 +47,31 @@
    	}// end switch		
 
    	if(isset($_GET["deleteLogs"])){
-		$query = "TRUNCATE TABLE captured_data";
+		$lQueryString = "TRUNCATE TABLE captured_data";
 
-		$result = $conn->query($query);
-		if (!$result) {
+		$lQueryResult = $conn->query($lQueryString);
+		if (!$lQueryResult) {
 	    	throw (new Exception('Error executing query: '.$conn->error, $conn->errorno));
 	    }// end if	
 	}// end if isset
    	
 ?>
+
+<!-- Bubble hints code -->
+<?php 
+	try{
+   		$lReflectedXSSExecutionPointBallonTip = $BubbleHintHandler->getHint("ReflectedXSSExecutionPoint");
+	} catch (Exception $e) {
+		echo $CustomErrorHandler->FormatError($e, "Error attempting to execute query to fetch bubble hints.");
+	}// end try
+?>
+
+<script type="text/javascript">
+	$(function() {
+		$('[ReflectedXSSExecutionPoint]').attr("title", "<?php echo $lReflectedXSSExecutionPointBallonTip; ?>");
+		$('[ReflectedXSSExecutionPoint]').balloon();
+	});
+</script>
 
 <div class="page-title">Captured Data</div>
 
@@ -90,22 +106,19 @@
 
 <?php
 	try{// to draw table
-		$query = "SELECT ip_address, hostname, port, user_agent_string, referrer, data, capture_date 
+		$lQueryString = "SELECT ip_address, hostname, port, user_agent_string, referrer, data, capture_date 
 				  FROM captured_data 
 				  ORDER BY capture_date DESC";
 
 		if ($lLimitOutput){
-	    	$query .= " LIMIT 20";
+	    	$lQueryString .= " LIMIT 20";
 	    }// end if
-		
-		$result = $conn->query($query);
-		if (!$result) {
-	    	throw (new Exception('Error executing query: '.$conn->error, $conn->errorno));
-	    }// end if	
+
+		$lQueryResult = $MySQLHandler->executeQuery($lQueryString);	
 
 		// we have rows. Begin drawing output.
 		echo '<table border="1px" width="100%" class="main-table-frame">';
-		echo '<tr class="report-header"><td colspan="10">'.$result->num_rows.' captured records found</td></tr>';
+		echo '<tr class="report-header"><td colspan="10">'.$lQueryResult->num_rows.' captured records found</td></tr>';
 	    echo '<tr class="report-header">
 			    <td><b>Hostname</b></td>
 			    <td><b>Client IP Address</b></td>
@@ -121,7 +134,7 @@
 	    }// end if
 
 	    $lRowNumber = 0;
-	    while($row = $result->fetch_object()){
+	    while($row = $lQueryResult->fetch_object()){
 	    	$lRowNumber++;
 			
 			if(!$lEncodeOutput){
@@ -146,9 +159,9 @@
 					<td>{$lHostname}</td>
 					<td>{$lClientIPAddress}</td>
 					<td>{$lClientPort}</td>
-					<td>{$lClientUserAgentString}</td>
-					<td>{$lClientReferrer}</td>
-					<td>{$lData}</td>
+					<td ReflectedXSSExecutionPoint=\"1\">{$lClientUserAgentString}</td>
+					<td ReflectedXSSExecutionPoint=\"1\">{$lClientReferrer}</td>
+					<td ReflectedXSSExecutionPoint=\"1\">{$lData}</td>
 					<td>{$lCaptureDate}</td>
 				</tr>\n";
 		}//end while $row

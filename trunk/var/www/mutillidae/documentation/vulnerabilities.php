@@ -16,6 +16,9 @@
 		<li>JavaScript validation bypass</li>
 		<li>XSS in the form title via logged in username</li>
 		<li>The show-hints cookie can be changed by user to enable hints even though they are not suppose to show in secure mode</li>
+		<li>HTML injection in blog input field</li>
+		<li>Application Exception Output</li>
+		<li>Known Vulnerable Output: Name, Comment, "Add blog for" title</li>
 	</ul>
 </div>
 
@@ -115,7 +118,7 @@
 <div style="padding-left: 40px;">
 	<ul>
 		<li>XSS via logged in user name and signature</li>
-		<li>The Setup/reset the DB menu item canbe enabled by setting the uid value of the cookie to 1</li>
+		<li>The hints the DB menu item can be enabled by setting the uid value of the cookie to 1</li>
 	</ul>
 </div>
 
@@ -123,6 +126,16 @@
 <div style="padding-left: 40px;">
 	<ul>
 		<li>No known vulnerabilities. We should add something.</li>
+	</ul>
+</div>
+
+<p class="label">html5-storage.php</p>
+<div style="padding-left: 40px;">
+	<ul>
+		<li>
+			DOM injection on the add-key error message because the key entered is output
+			into the error message without being encoded.
+		</li>
 	</ul>
 </div>
 

@@ -36,6 +36,26 @@
 	}// end if (isset($_POST)) 
 ?>
 
+
+<!-- Bubble hints code -->
+<?php 
+	try{
+   		$lCSSInjectionPointBallonTip = $BubbleHintHandler->getHint("CSSInjectionPoint");
+   		$lReflectedXSSExecutionPointBallonTip = $BubbleHintHandler->getHint("ReflectedXSSExecutionPoint");
+	} catch (Exception $e) {
+		echo $CustomErrorHandler->FormatError($e, "Error attempting to execute query to fetch bubble hints.");
+	}// end try
+?>
+
+<script type="text/javascript">
+	$(function() {
+		$('[CSSInjectionPoint]').attr("title", "<?php echo $lCSSInjectionPointBallonTip; ?>");
+		$('[CSSInjectionPoint]').balloon();
+		$('[ReflectedXSSExecutionPoint]').attr("title", "<?php echo $lReflectedXSSExecutionPointBallonTip; ?>");
+		$('[ReflectedXSSExecutionPoint]').balloon();
+	});
+</script>
+
 <div class="page-title">Set Background Color</div>
 
 <?php include_once './includes/back-button.inc'; ?>
@@ -60,7 +80,7 @@
 		<tr>
 			<td class="label">Background Color</td>
 			<td>
-				<input type="text" name="background_color" size="6">
+				<input CSSInjectionPoint="1" type="text" name="background_color" size="6">
 			</td>
 		</tr>
 		<tr><td></td></tr>
@@ -71,7 +91,7 @@
 		</tr>
 		<tr><td></td></tr>
 		<tr>
-			<td class="informative-message" colspan="2" style="text-align: center;">
+			<td ReflectedXSSExecutionPoint="1" class="informative-message" colspan="2" style="text-align: center;">
 				The current background color is <?php echo $lBackgroundColorText; ?>
 			</td>
 		</tr>

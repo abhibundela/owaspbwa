@@ -1,8 +1,26 @@
+Files edited to run Mutillidae on OWASPBWA
 
 - Edited .htaccess to allow remote access
 
-- Edited database connection information in config.inc
-
+- Edited database connection information in:
+  o config.inc (though that is not deprecated)
+  o classes\MySQLHandler.php
+  
 - Edited database name in set-up-database.php. (from owasp10 to mutillidae)
 
 - Edited 'admin' user password (changed to 'admin') and added non-admin named 'user' with password 'user' in set-up-database.php.
+
+
+
+How to update Mutillidae:
+
+1. Download latest release from http://sourceforge.net/projects/mutillidae/
+
+2. Unzip file to directory on Host OS
+
+3. With Windows Explorer, copy all files from ...\LATEST-mutillidae-X.Y.Z.zip\mutillidae to \\owaspbwa\owaspbwa\owaspbwa-svn\var\www\mutillidae
+
+4. Use TortoiseSVN to look at the Diff for the files listed above (in "Files edited to run Mutillidae on OWASPBWA").  If there are changes to areas other than listed, then re-make the modifications described.  If there are not other changes, then the file can be reverted.
+
+5. Do an SVN Add on the mutillidae directory to add any new files to SVN.
+
