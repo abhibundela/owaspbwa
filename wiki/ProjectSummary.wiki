@@ -5,19 +5,19 @@
 
 The Open Web Application Security Project (OWASP) Broken Web Applications Project is distributed as a Virtual Machine in [http://www.vmware.com VMware] format compatible with their no-cost [http://www.vmware.com/products/player/ VMware Player] and [http://www.vmware.com/products/server/ VMware Server] products (along with their commercial products).
 
-= Applications included (as of the 1.0 release) =
+= Applications included (as of the 1.0rc2 release) =
 
 This project includes applications from various sources.
 
 ==Training Applications:==
   * [http://www.owasp.org/index.php/Category:OWASP_WebGoat_Project OWASP WebGoat] version 5.4+SVN (Java)
-  * [https://www.owasp.org/index.php/Category:OWASP_WebGoat.NET OWASP WebGoat.NET] version 2011-10-19+GIT
+  * [https://www.owasp.org/index.php/Category:OWASP_WebGoat.NET OWASP WebGoat.NET] version 2012-07-05+GIT
   * [https://www.owasp.org/index.php/ESAPI_Swingset OWASP ESAPI Java SwingSet Interactive] version 1.0.1+SVN
   * [http://code.google.com/p/zaproxy/ OWASP ZAP-WAVE] version 0.2+SVN (Java JSP)
-  * [http://www.irongeek.com/i.php?page=security/mutillidae-deliberately-vulnerable-php-owasp-top-10 Mutillidae] version 2.1.20 (PHP)
+  * [http://www.irongeek.com/i.php?page=security/mutillidae-deliberately-vulnerable-php-owasp-top-10 Mutillidae] version 2.2.0 (PHP)
   * [http://www.dvwa.co.uk/ Damn Vulnerable Web Application] version 1.8+SVN (PHP)
   * [http://www.gh0s7.net/ Ghost] (PHP)
-
+  * [http://code.google.com/p/wavsep/ WAVSEP] version 1.1.1 (Java JSP)
   
 ==Realistic, Intentionally Vulnerable Applications:==
   * [http://www.owasp.org/index.php/Category:OWASP_Vicnum_Project OWASP Vicnum] version 1.4 (PHP/Perl)
