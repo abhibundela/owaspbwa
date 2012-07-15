@@ -18,6 +18,16 @@ The OWASP BWA VM is distributed in VMware virtual machine and virtual disk forma
 See [#Converting_Virtual_Machine_Format Converting Virtual Machine Format] if you want to use the VM with other virtualization software.
 
 
+== Viewing Web Page ==
+
+To be completed.
+
+== Usernames and Passwords ==
+
+In general, applications on OWASP BWA have been configured with an administrative account named 'admin' with a password of 'admin' and a "normal" user account named 'user' with a password of 'user'.  In some cases, however, this was not possible or additional accounts were required.
+
+The full list of credentials for each application can be found on the main OWASP BWA web page (in the VM).  In order to view the credentials for each application, click the green plus next to the application name on that we page to show more information about the application.
+
 = Updating application code =
 
 Software for many applications can be updated in place by editing the files (.php, .jsp, .aspx, etc). 
