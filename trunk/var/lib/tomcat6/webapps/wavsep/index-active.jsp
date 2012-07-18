@@ -9,7 +9,7 @@
 <body>
 
 <br><b>Actively Detectable Security Exposures</b><br>
-<a href="active/index.jsp">Evaluation of Active Exposures Detection Accuracy</a><br><br>
+<a href="active/index-main.jsp">Evaluation of Active Exposures Detection Accuracy</a><br><br>
 
 </body>
 </html>

@@ -8,6 +8,8 @@
 </head>
 <body>
 
+<B><FONT size="6"> Reflected Cross Site Scripting:</FONT></B><BR>
+
 <br><b>GET Input Vector</b><br>
 <a href="RXSS-Detection-Evaluation-GET/index.jsp">Evaluation of RXSS Detection Accuracy - GET</a><br><br>
 
