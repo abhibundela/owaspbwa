@@ -11,11 +11,10 @@ $input = $_POST['player'] ;
   <title>Vicnum results from the database</title>
  
 </head>
-<body bgcolor=white text=navy>
+<body background="images/ctech.png" text=navy>
 <table  CELLPADDING="1" WIDTH="100%"> 
   <tr> 
-    <td WIDTH="90%"><h2><u>Vicnum</h2></u> 
-    <td WIDTH="10%"><h3><a href="/help/help1.html">HELP</a></h3> 
+    <td WIDTH="70%"><img src="images/jottowelcome.png">
   </tr> 
 </table> 
 <hr size="3" color="#FF00FF"> 
@@ -24,12 +23,12 @@ $input = $_POST['player'] ;
 
 <?php 
 
-echo "<h3>You have requested results for Vicnum player $input :" ;
+echo "<h3>You have requested results for Jotto player $input :" ;
 
    $connection = mysql_connect("localhost","vicnum","vicnum");
    mysql_select_db("vicnum", $connection);
 
-   $query = "SELECT name,guess,count,tod FROM results WHERE results.name  = '$input'";
+   $query = "SELECT name,guess,count,tod FROM jottoresults WHERE jottoresults.name  = '$input'";
    $result = mysql_query($query) or die ("ERROR in $query" . " " . mysql_error());
 
    if  (mysql_num_rows($result) > 0 ) {

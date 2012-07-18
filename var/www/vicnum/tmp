@@ -1,0 +1,10 @@
+<?php
+// retrieving posted info 
+$input = $_POST['player'] ;
+$unionname = $_POST['unionname'] ;
+if($unionname == "") $unionname = "namechangedtounknown"  ;
+//block stored XSS 
+$lessthan = "/\<>";
+if (preg_match($lessthan,$unionname))  {
+$unionname = "namechangedtounknown" ; }
+?>

@@ -4,11 +4,13 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <title>Vicnum players with perfect scores </title>
+  <title>Jotto players  who have hacked the game and the database</title>
 </head>
-<body bgcolor=white text=navy >
+<body background="images/ctech.png" text=navy >
 
-<h2><u>Top Vicnum Players</u></h2>
+<h2>Place a record in the database with your name (that clearly identifies you !) concatenated to the end of the magic name and with a score of zero. You can get a hint as to that magic name by finding the worst possible jotto score.  If there is a tie find the older record.</h2>
+
+
 <hr size="3" color="#FF00FF"></h2>
 
 <pre>
@@ -18,14 +20,15 @@
    mysql_select_db("vicnum", $connection);
 
    $result = mysql_query ("SELECT name,guess,count,tod FROM
-                          results WHERE count =1 order by tod", $connection);
+                          jottoresults WHERE (count =0  AND name like  \"lucky%\") order by tod", $connection);
    $cnt = mysql_num_rows($result); 
 
-print "<H2>Below please find all $cnt Vicnum players in the database with perfect scores.\n<hr>" ;
+print "<H2>Below are all $cnt Jotto players who have clearly hacked the game and the database.\n<hr>" ;
    
    while ($row = mysql_fetch_array($result, MYSQL_NUM))
    {
-     print "$row[0] has guessed $row[1] in $row[2] guess on $row[3] \n";
+    $xrows = substr($row[0],5);
+     print "$xrows has guessed $row[1] in $row[2] guesses on $row[3] \n";
    }
 
 ?>

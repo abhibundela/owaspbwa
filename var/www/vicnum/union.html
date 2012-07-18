@@ -1,0 +1,54 @@
+<html><head>
+<title> Welcome to the Union Challenge</title>
+<link rel="shortcut icon" href="/favicon.ico" />
+<script language="JavaScript">
+function sf() {
+document.g.player.focus();
+		}
+</script>
+<script language="JavaScript">
+function checktag(){
+var RE = /[<>]/;
+ if (RE.test(document.g.player.value)) {
+  alert("Invalid characters entered ");
+	return false;
+ } else {
+  	return true;
+ }
+}
+</script>
+
+</head>
+<body background="images/ctech.png" text=navy   onLoad="sf();">
+<table  CELLPADDING="5" WIDTH="100%"> 
+  <tr> 
+    <td WIDTH="80%"><img src="images/unionwelcome.png">
+  </tr> 
+</table> 
+<hr size="3" color="#FF00FF"></h2>
+<table  CELLPADDING="5" WIDTH="100%"> 
+  <tr> 
+    <td WIDTH="70%">The Vicnum project has two games (guessnum and jotto) that share a database. An addional challenge is to see if you can 'join' the two games.
+  </tr> 
+</table> 
+<p>
+Enter your name and the click on the PLAY button to begin the Union challenge!
+<!-- to enable refected XSS comment out onsubmit="return checktag()"-->
+<form NAME="g" ACTION="union1.php" METHOD="get">
+<input type="text" name="unionname" >
+<input type="hidden" name="admin" VALUE="N">
+<input TYPE="SUBMIT"  VALUE="PLAY">
+</form>
+<hr size="3" color="#FF00FF"><br>
+<p>
+This Union challenge is part of the Vicnum project which was developed for educational purposes to demonstrate common web vulnerabilities. 
+
+For comments please visit the 
+<a href="http://www.owasp.org/index.php/Category:OWASP_Vicnum_Project"> OWASP project page.<A>
+<p><p>
+<a href="http://www.linkedin.com/in/mkraushar">Mordecai Kraushar</A>
+<br>
+<br>
+<a href="http://www.ciphertechs.com" >
+<img SRC="images/CipherTechs.jpg" align="LEFT"></a> 
+<body>
