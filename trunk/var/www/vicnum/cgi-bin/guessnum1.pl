@@ -7,7 +7,7 @@ $admin=param('admin') ;
 if ($admin eq 'Y')  {
 #print "Going to admin page ...... \n " ; 
 $url =  $ENV{'SERVER_ADDR'};
-print "Location:  http://$url/vicnum/admin/\n\n";
+print "Location:  http://$url/admin.html\n\n";
 		}
 my $guess = "" ; 
 my $nc = "" ; 
@@ -18,9 +18,8 @@ $guess .= $randnum unless ($guess =~ /$randnum/)  ; }
 #  code to obfuscate  
 $nc = encode_base64($guess); 
 print header; 
-print "<head><title> Let's Play Vicnum </title></head>" ;
-print "<body bgcolor=white text=navy\"
- onLoad=\"document.F.userguess.focus();\">" ;
+print "<head><title> Let's Play Guessnum </title></head>" ;
+print "<body background=\"../images/ctech.png\" text=navy onLoad=sf()>" ;
 #  code to block xss  
 $_ = $player ;
 # code below prevents entering <> in a name
@@ -29,12 +28,14 @@ $_ = $player ;
 print <<mk
 <table  CELLPADDING="1" WIDTH="100%"> 
   <tr> 
-    <td WIDTH="90%"><h2><u>Vicnum</h2></u> 
-    <td WIDTH="10%"><h3><a href="/help/help1.html">HELP</a></h3> 
+    <td WIDTH="80%"><img src="../images/guessnum.png">
   </tr> 
 </table> 
 <hr size="3" color="#FF00FF"> 
 <h2>Welcome $player - the computer has chosen a number 
+<script language="JavaScript">
+function sf() {document.F.userguess.focus();}
+</script>
 
 <script language="JavaScript">
 function checktag(){
@@ -49,7 +50,7 @@ var RE = /\\D/;
 </script>
 <p>
 Enter your first guess and then click on the Guess button  </h2>
-<form NAME="F" ONSUBMIT="return checktag()" ACTION="vicnum2.pl" METHOD="post">
+<form NAME="F" ONSUBMIT="return checktag()" ACTION="guessnum2.pl" METHOD="post">
 <input type="text" size=3 maxlength=3 name="userguess" >
 <input type="hidden" name="player" value="$player">
 <input type="hidden" name="VIEWSTATE" value="$nc">
@@ -60,7 +61,7 @@ Enter your first guess and then click on the Guess button  </h2>
 <p>
 <hr size="3" color="#FF00FF">
 <p>
-The Vicnum project was developed for educational purposes to demonstrate common web vulnerabilities. 
+Guessnum is part of the Vicnum project which was developed for educational purposes to demonstrate common web vulnerabilities. 
 
 For comments please visit the 
 <a href="http://www.owasp.org/index.php/Category:OWASP_Vicnum_Project"> OWASP project page.</A>

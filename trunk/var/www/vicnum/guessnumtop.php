@@ -4,11 +4,11 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <title>Vicnum players  who have clearly hacked </title>
+  <title>Guessnum players with perfect scores </title>
 </head>
-<body bgcolor=white text=navy >
+<body background="images/ctech.png" text=navy >
 
-<h2><u>Vicnum Players with a guess count of zero and a guess value > 999</u></h2>
+<h2><u>Top Guessnum Players</u></h2>
 <hr size="3" color="#FF00FF"></h2>
 
 <pre>
@@ -18,14 +18,14 @@
    mysql_select_db("vicnum", $connection);
 
    $result = mysql_query ("SELECT name,guess,count,tod FROM
-                          results WHERE (count =0  AND guess>999) order by tod", $connection);
+                          guessnumresults WHERE count =1 order by tod", $connection);
    $cnt = mysql_num_rows($result); 
 
-print "<H2>Below are all $cnt Vicnum players in the database who have clearly hacked the game.\n<hr>" ;
+print "<H2>Below please find all $cnt Guessnum players in the database with perfect scores.\n<hr>" ;
    
    while ($row = mysql_fetch_array($result, MYSQL_NUM))
    {
-     print "$row[0] has guessed $row[1] in $row[2] guesses on $row[3] \n";
+     print "$row[0] has guessed $row[1] in $row[2] guess on $row[3] \n";
    }
 
 ?>
@@ -35,7 +35,7 @@ print "<H2>Below are all $cnt Vicnum players in the database who have clearly ha
 <pre>
 
 
-<h4>The Vicnum project was developed for educational purposes to demonstrate common web vulnerabilities. 
+<h4>Guessnum is part of the Vicnum project which was developed for educational purposes to demonstrate common web vulnerabilities. 
 
 For comments please visit the <a href="http://www.owasp.org/index.php/Category:OWASP_Vicnum_Project">OWASP project page.<A>
 <br></pre>

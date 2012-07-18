@@ -3,19 +3,17 @@ use CGI ':standard' ;
 use MIME::Base64 ;
 
 # can be called from two different places 
-# either vicnum1.pl the very first time or
-# by itself. vicnum2.pl guess will store previous guesses and call itself
 # After the number has been guessed the player will be invited to save his score 
 
 $player=param('player') ;
 $userguess=param('userguess');
 $nc  = param('VIEWSTATE'); 
-# code to unobfuscate follows , must sync with vicnum1 and vicnum3
+# code to unobfuscate follows , must sync with guessnum1 and guessnum3
 $guess = decode_base64($nc); 
 # $guess = $guess -9 ;
 $oldguess = param('oldguess')  || "" ; 
 print header ;
-print "<html><head><title>Vicnum - Guess the Computer's number</title>" ;
+print "<html><head><title>Guessnum - Guess the Computer's number</title>" ;
 print "<script language=\"JavaScript\">" ;
 print "<!--\n" ;
 print ("function sf() {document.F.userguess.focus(); }") ;
@@ -33,12 +31,11 @@ print "  	return true; " ;
 print " } " ;
 print "} " ;
 print "</script> " ;
-print ("<body bgcolor=white text=navy  onLoad=sf()>") ;
+print "<body background=\"../images/ctech.png\" text=navy  onLoad=sf()>" ;
 
 print " <table  CELLPADDING=1 WIDTH=100%>  " ;
 print "   <tr>  " ;
-print "     <td WIDTH=90%><h2><u>Vicnum</h2></u>  " ;
-print "     <td WIDTH=10%><h3><a href=\"/help/help1.html\">HELP</a></h3>" ;
+print "     <td WIDTH=70%><img src=\"../images/guessnum.png\"> ";
 print "   </tr>" ;
 print " </table>" ;
 print "<hr size=\"3\" color=\"#FF00FF\"><p>";
@@ -60,7 +57,7 @@ if ($guess =~ /$_/) {
   	print "<h2><b>Congratulations - you guessed $guess in $cnt attempts</h2><p>";
 # Consider encoding the guess here as well		
 	print "<h3>Click on the CONTINUE button to proceed<br>";
-	print "<form NAME=F ACTION=vicnum3.pl METHOD=post>" ;
+	print "<form NAME=F ACTION=guessnum3.pl METHOD=post>" ;
 	print "<input type=hidden name=player value=$player>"; 
 	print "<input type=hidden name=cnt value=$cnt>"; 
         print "<input type=hidden name=VIEWSTATE value=$nc>";
@@ -68,7 +65,7 @@ if ($guess =~ /$_/) {
 	print "</form></h3><p>" ;
 	
 print "<br><hr size=\"3\" color=\"#FF00FF\"><p>";
-print "<h4>The Vicnum project was developed for educational purposes to demonstrate common web vulnerabilities. <br> For comments please visit the <a href=\"http://www.owasp.org/index.php/Category:OWASP_Vicnum_Project\">OWASP project page.<A>"; 
+print "<h4>Guessnum is part of the Vicnum project which was developed for educational purposes to demonstrate common web vulnerabilities. <br> For comments please visit the <a href=\"http://www.owasp.org/index.php/Category:OWASP_Vicnum_Project\">OWASP project page.<A>"; 
 	exit ; }
 
 $charfound = 0;
@@ -105,7 +102,7 @@ print <<mk
 <hr>
 <p>
 Enter your next guess and then click on the Guess button  </h2>
-<form NAME="F" ONSUBMIT="return checktag()" ACTION="vicnum2.pl" METHOD="post">
+<form NAME="F" ONSUBMIT="return checktag()" ACTION="guessnum2.pl" METHOD="post">
 <input type="text" size=5 maxlength=3 name="userguess" >
 <input type="hidden" name="player" value="$player">
 <input type="hidden" name="mcode" value="$mcode">
@@ -117,7 +114,7 @@ Enter your next guess and then click on the Guess button  </h2>
 <hr size="3" color="#FF00FF">
 <pre>
 
-<h4>The Vicnum project was developed for educational purposes to demonstrate common web vulnerabilities. 
+<h4>Guessnum is part of the Vicnum project which was developed for educational purposes to demonstrate common web vulnerabilities. 
 
 For comments please visit the <a href="http://www.owasp.org/index.php/Category:OWASP_Vicnum_Project">OWASP project page.<A>
 

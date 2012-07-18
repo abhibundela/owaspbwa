@@ -2,7 +2,7 @@
 use CGI ':standard' ;
 use MIME::Base64 ;
 
-# called from vicnum2 when guess has completed
+# called from guessnum2 when guess has completed
 # original code mentioned database , now redirects to php code that writes 
 # optionally insert code to write right now
 
@@ -19,5 +19,5 @@ $guess1 = "92BEF345Apecan" . $guess  ;
 print "Set-Cookie:Milano=$player1\;path=/\n" ;
 print "Set-Cookie:Brussels=$cnt1\;path=/\n" ;
 print "Set-Cookie:Geneva=$guess1\;path=/\n" ;
-print "Location: ../vicnum4.php\n\n";
+print "Location: ../guessnum4.php\n\n";
 

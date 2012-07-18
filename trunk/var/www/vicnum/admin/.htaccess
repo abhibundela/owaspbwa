@@ -1,4 +1,4 @@
 AuthType Basic
 AuthName "Admin Only "
-AuthUserFile /var/www/vicnum/admin/.users
+AuthUserFile /var/www/admin/.users
 Require valid-user
