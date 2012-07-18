@@ -8,15 +8,17 @@
 </head>
 <body>
 
+<B><FONT size="6"> SQL Injection:</FONT></B><BR>
+
 <br><b>GET Input Vector</b><br>
-<a href="SInjection-Detection-Evaluation-GET-500Error/index.jsp">Evaluation of SQL Injection Detection Accuracy - GET - Errornous 500 Responses</a><br><br>
-<a href="SInjection-Detection-Evaluation-GET-200Error/index.jsp">Evaluation of SQL Injection Detection Accuracy - GET - Errornous 200 Responses</a><br><br>
+<a href="SInjection-Detection-Evaluation-GET-500Error/index.jsp">Evaluation of SQL Injection Detection Accuracy - GET - Erroneous 500 Responses</a><br><br>
+<a href="SInjection-Detection-Evaluation-GET-200Error/index.jsp">Evaluation of SQL Injection Detection Accuracy - GET - Erroneous 200 Responses</a><br><br>
 <a href="SInjection-Detection-Evaluation-GET-200Valid/index.jsp">Evaluation of SQL Injection Detection Accuracy - GET - 200 Responses With Differentiation</a><br><br>
 <a href="SInjection-Detection-Evaluation-GET-200Identical/index.jsp">Evaluation of SQL Injection Detection Accuracy - GET - Identical 200 Responses</a><br><br>
 
 <br><b>POST Input Vector</b><br>
-<a href="SInjection-Detection-Evaluation-POST-500Error/index.jsp">Evaluation of SQL Injection Detection Accuracy - POST - Errornous 500 Responses</a><br><br>
-<a href="SInjection-Detection-Evaluation-POST-200Error/index.jsp">Evaluation of SQL Injection Detection Accuracy - POST - Errornous 200 Responses</a><br><br>
+<a href="SInjection-Detection-Evaluation-POST-500Error/index.jsp">Evaluation of SQL Injection Detection Accuracy - POST - Erroneous 500 Responses</a><br><br>
+<a href="SInjection-Detection-Evaluation-POST-200Error/index.jsp">Evaluation of SQL Injection Detection Accuracy - POST - Erroneous 200 Responses</a><br><br>
 <a href="SInjection-Detection-Evaluation-POST-200Valid/index.jsp">Evaluation of SQL Injection Detection Accuracy - POST - 200 Responses With Differentiation</a><br><br>
 <a href="SInjection-Detection-Evaluation-POST-200Identical/index.jsp">Evaluation of SQL Injection Detection Accuracy - POST - Identical 200 Responses</a><br><br>
 

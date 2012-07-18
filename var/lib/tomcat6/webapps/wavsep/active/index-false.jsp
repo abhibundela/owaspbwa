@@ -10,6 +10,8 @@
 
 <a href="RXSS-FalsePositives-GET/index.jsp">False Positive Reflected Cross Site Scripting Test Cases - GET</a><br></br>
 <a href="SInjection-FalsePositives-GET/index.jsp">False Positive SQL Injection Test Cases - GET</a><br></br>
+<a href="LFI-FalsePositives-GET/index.jsp">False Positive Local File Inclusion Test Cases - GET (Not Including Code Inclusion)</a><br></br>
+<a href="RFI-FalsePositives-GET/index.jsp">False Positive Remote File Inclusion Test Cases - GET (Not Including Code Inclusion)</a><br></br>
 
 </body>
 </html>
