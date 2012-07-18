@@ -47,6 +47,6 @@ For comments please visit the
 <br>
 <br>
 <a href="http://www.ciphertechs.com" >
-<img SRC="images/CipherTechs.jpg" align="LEFT"></a> 
+<img SRC="../images/CipherTechs.jpg" align="LEFT"></a> 
 <body>
 mk
