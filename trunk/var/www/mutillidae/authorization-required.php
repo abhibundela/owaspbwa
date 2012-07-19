@@ -2,8 +2,8 @@
 	try {
 		$LogHandler->writeToLog("User attempted to access forbidden page.");	
 	} catch (Exception $e) {
-		echo $CustomErrorHandler->FormatError($e, $query);
-	}// end try		
+		echo $CustomErrorHandler->FormatError($e, "Error writing to log");
+	}// end try	
 ?>
 
 <div class="page-title">Authorization Required</div>

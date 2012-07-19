@@ -13,7 +13,8 @@
    		case "1": // This code is insecure
    			// DO NOTHING: This is insecure		
 			$lEncodeOutput = FALSE;
-			$lHTTPParameterPollutionDetected = FALSE;			
+			$lProtectAgainstMethodSwitching = FALSE;
+			$lHTTPParameterPollutionDetected = FALSE;
 		break;
 	    		
 		case "2":
@@ -35,7 +36,8 @@
    			// encode the output following OWASP standards
    			// this will be HTML encoding because we are outputting data into HTML
 			$lEncodeOutput = TRUE;
-
+			$lProtectAgainstMethodSwitching = TRUE;
+			
 			// Detect multiple params with same name (HTTP Parameter Pollution)
 			$lQueryString  = explode('&', $_SERVER['QUERY_STRING']);
 			$lKeys = array();
@@ -45,7 +47,7 @@
 			foreach ($lQueryString as $lParameter){
 				$lPair = explode('=', $lParameter);
 				array_push($lKeys, $lPair[0]);
-			}
+			}//end for each
 
 			$lCountUnique = count(array_unique($lKeys));
 			$lCountTotal = count($lKeys);
@@ -55,17 +57,41 @@
    		break;
    	}// end switch		
 
+   	// initialize message
    	$lUserChoiceMessage = "No choice selected";
 
-   	if (!$lHTTPParameterPollutionDetected && isSet($_GET["user-poll-php-submit-button"])){
-		try {
+   	// determine if user clicked the submit buttton
+   	if(!$lProtectAgainstMethodSwitching){
+   		$lUserPollSubmitButtonClicked = isSet($_REQUEST["user-poll-php-submit-button"]);
+   	}else{
+   		$lUserPollSubmitButtonClicked = isSet($_GET["user-poll-php-submit-button"]);
+   	}//end if   
 
-			$lUserChoiceMessage = "Your choice was {$_GET["choice"]}";
-			
-		} catch (Exception $e) {
-			echo $CustomErrorHandler->FormatError($e, $query);
-		}// end try
-	}// end if isSet($_POST["user-poll-php-submit-button"])
+   	// if user clicked submit button, process input parameters
+   	if($lUserPollSubmitButtonClicked){
+   		
+   		// if we want to enforce GET method, we need to be careful to specify $_GET
+	   	if(!$lProtectAgainstMethodSwitching){
+	   		$lUserChoice = $_REQUEST["choice"];
+	   		$lUserInitials = $_REQUEST["initials"];
+	   	}else{
+	   		$lUserChoice = $_GET["choice"];
+	   		$lUserInitials = $_GET["initials"];
+	   	}//end if   
+   	
+	   	// Encode output to protect against cross site scripting 
+		if ($lEncodeOutput){
+			$lUserInitials = $Encoder->encodeForHTML($lUserInitials);
+			$lUserChoice = $Encoder->encodeForHTML($lUserChoice);
+		}// end if
+
+		// if parameter pollution is not detected, print user choice 
+	   	if (!$lHTTPParameterPollutionDetected){
+			$lUserChoiceMessage = "Your choice was {$lUserChoice}";
+			$LogHandler->writeToLog("User voted for: " . $lUserChoice);
+	   	}// end if isSet($_POST["user-poll-php-submit-button"])
+	   	
+   	}//end if $lUserPollSubmitButtonClicked
 ?>
 
 <!-- Bubble hints code -->
@@ -129,7 +155,7 @@
 			</tr>
 			<tr>
 				<td class="label">
-					Your Initials:<input type="text" name="initials" ParameterPollutionInjectionPoint="1" />
+					Your Initials:<input type="text" name="initials" ParameterPollutionInjectionPoint="1" value="<?php echo $lUserInitials; ?>"/>
 				</td>
 			</tr>
 			<tr><td></td></tr>
@@ -159,15 +185,6 @@
 	if ($lHTTPParameterPollutionDetected) {
 		echo '<script>document.getElementById("id-bad-vote-tr").style.display="";</script>'; 
 	}// end if ($lHTTPParameterPollutionDetected)
-?>
-
-<?php
-	/* Display current user's choice */
-	try {
-
-	} catch (Exception $e) {
-		echo $CustomErrorHandler->FormatError($e, $query);
-	}// end try	
 ?>
 
 <?php

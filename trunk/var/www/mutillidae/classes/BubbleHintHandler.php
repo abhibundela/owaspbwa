@@ -34,7 +34,12 @@ class BubbleHintHandler {
 	   		break;
 	   	}// end switch		
 	}// end function
-				
+	
+	private function doShowHideHints($pboolShow){
+		$this->mDisplayHints = $pboolShow;
+		$_SESSION["BubbleHintHandler"]["mDisplayHints"] = $pboolShow;
+	}// end function
+						
 	public function __construct($pPathToESAPI, $pSecurityLevel){
 		
 		$this->doSetSecurityLevel($pSecurityLevel);
@@ -47,7 +52,13 @@ class BubbleHintHandler {
 		/* Initialize MySQL Connection handler */
 		require_once 'MySQLHandler.php';
 		$this->mMySQLHandler = new MySQLHandler($pPathToESAPI, $pSecurityLevel);
-		
+
+		if(!isset($_SESSION["BubbleHintHandler"]["mDisplayHints"])){
+			$this->doShowHideHints(TRUE);
+		}else{
+			$this->doShowHideHints($_SESSION["BubbleHintHandler"]["mDisplayHints"]);
+		}//end if
+
 	}// end function
 	
 	/* PHP cant remeber any information in class after request is over, hence the 
@@ -55,16 +66,15 @@ class BubbleHintHandler {
 	PHP is limited.
 	*/
 	public function showHints(){
-		$this->mDisplayHints = $_SESSION[BubbleHintHandler][mDisplayHints] = TRUE;
+		$this->doShowHideHints(TRUE);
 	}// end function
 
 	public function hideHints(){
-		$this->mDisplayHints = $_SESSION[BubbleHintHandler][mDisplayHints] = FALSE;
+		$this->doShowHideHints(FALSE);
 	}// end function
 	
 	public function hintsAreDispayed(){
-		//return $this->mDisplayHints;
-		return $_SESSION[BubbleHintHandler][mDisplayHints];
+		return $this->mDisplayHints;
 	}// end function
 	
 	public function setSecurityLevel($pSecurityLevel){
@@ -103,8 +113,8 @@ class BubbleHintHandler {
     		$lDataRow = $lResult->fetch_object();
 			return $lDataRow->tip;
 		} catch (Exception $e) {
-			throw(new Exception("Error attempting to read from get hint table: ".$e->getMessage(), $e->getCode(), $e));
-		}// end try		
+			throw(new Exception("Error attempting to read from hint table: ".$e->getMessage()));
+		}// end try
 	}// end method
 
 }// end class

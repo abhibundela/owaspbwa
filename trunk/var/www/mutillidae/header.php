@@ -50,11 +50,11 @@
 		$lAuthenticationStatusMessage = "Not Logged In";
 	}// end if($_SESSION['loggedin'] == "True")
 
-	if ($BubbleHintHandler->hintsAreDispayed()){
+	if ($BubbleHintHandler->hintsAreDispayed() == 1){
 		$lPopupHintsLabel = "Hide Popup Hints";
 	}else {
 		$lPopupHintsLabel = "Show Popup Hints";
-	}//end if		
+	}//end if
 
 		switch ($_SESSION["security-level"]){
 	   		case "0": // This code is insecure
