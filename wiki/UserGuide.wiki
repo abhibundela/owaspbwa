@@ -4,10 +4,9 @@
 
 = Introduction =
 
-This will be the user guide for the OWASP BWA VM.
+This will be the user guide for the OWASP BWA VM.  For details about the applications included in the VM, see the ProjectSummary page.
 
-* !!! NOTE - This document is a work in progress.  Please provide us [#Feedback feedback] on any errors or areas not covered !!! *
-
+* !!! NOTE - This document is a work in progress.  Please provide us [#Getting_Involved feedback] on any errors or areas not covered !!! *
 
 = Getting Started =
 
@@ -17,16 +16,23 @@ The OWASP BWA VM is distributed in VMware virtual machine and virtual disk forma
 
 See [#Converting_Virtual_Machine_Format Converting Virtual Machine Format] if you want to use the VM with other virtualization software.
 
-
 == Viewing Web Page ==
 
-To be completed.
+When the OWASP BWA VM is started, it will provide information on the console with the IP address of the VM and various ways to access and manage it.  
+
+It is highly recommended (though not required) that you add an entry into your 'hosts' file of your virtual host OS to resolve the hostname 'owaspbwa' with the IP address shown in the console on bootup.  The entry will look like below (replace 192.168.15.130 with the IP of your VM).  This document (and the vulnerability list http://sourceforge.net/apps/trac/owaspbwa/report/1) assume that you have added this entry.
+
+{{{
+192.168.15.130	owaspbwa
+}}}
+
+Once the entry is added, you can view the main page for the VM at http://owaspbwa/.  That page includes links and lots of additional information about each of the applications.
 
 == Usernames and Passwords ==
 
 In general, applications on OWASP BWA have been configured with an administrative account named 'admin' with a password of 'admin' and a "normal" user account named 'user' with a password of 'user'.  In some cases, however, this was not possible or additional accounts were required.
 
-The full list of credentials for each application can be found on the main OWASP BWA web page (in the VM).  In order to view the credentials for each application, click the *green plus* next to the application name on that we page to show more information about the application.
+The full list of credentials for each application can be found on the main OWASP BWA web page (in the VM at http://owaspbwa/).  In order to view the credentials for each application, click the *green plus* next to the application name on that we page to show more information about the application.
 
 = Updating application code =
 
