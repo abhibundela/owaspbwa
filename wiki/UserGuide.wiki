@@ -51,16 +51,28 @@ For applications that require rebuilding before changes take effect, the followi
 
 Unfortunately, it is not currently possible to rebuild the !WebGoat.NET application code on the VM itself.  The application code can be accessed and rebuild from another machine via the Samba share at \\owaspbwa\owaspbwa\webgoat.net-git\
 
-= Enabling and Disabling !ModSecurity
+= Enabling and Disabling !ModSecurity =
 
-(to be completed)
+The VM ships with Apache !ModSecurity enabled, but no rules sets in use (so nothing is blocked or logged).  
 
-owaspbwa-modsecurity-crs-block.sh
+In order to log (but not block) any requests using the OWASP !ModSecurity Core Rule Set, run the following command.  Log messages appear in /var/log/apache2/error.log (shared at \\owaspbwa\var\log\apache2\error.log).
+
+{{{
 owaspbwa-modsecurity-crs-log.sh
+}}}
+
+In order to both block and log requests using the OWASP !ModSecurity Core Rule Set, run:
+
+{{{
+owaspbwa-modsecurity-crs-block.sh
+}}}
+
+
+To disable all !ModSecurity rules (returning to the state the VM ships in), run:
+
+{{{
 owaspbwa-modsecurity-crs-off.sh
-
-
-
+}}}
 
 = Advanced Topics =
 
