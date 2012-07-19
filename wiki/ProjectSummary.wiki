@@ -1,9 +1,13 @@
 #summary A summary of the OWASP Broken Web Applications project
 #labels Featured
 
+This page provides a brief summary of the OWASP Broken Web Application project.  For additional details, see the [UserGuide User Guide].
+
 = Virtual Machine Format =
 
-The Open Web Application Security Project (OWASP) Broken Web Applications Project is distributed as a Virtual Machine in [http://www.vmware.com VMware] format compatible with their no-cost [http://www.vmware.com/products/player/ VMware Player] and [http://www.vmware.com/products/server/ VMware Server] products (along with their commercial products).
+The Open Web Application Security Project (OWASP) Broken Web Applications Project is distributed as a Virtual Machine in [http://www.vmware.com VMware] format compatible with their no-cost [http://www.vmware.com/products/player/ VMware Player] and [http://www.vmware.com/products/vsphere-hypervisor/overview.html VMware vSphere Hypervisor (ESXi)] products (along with their older and commercial products).
+
+See [UserGuide#Converting_Virtual_Machine_Format Converting Virtual Machine Format in the User Guide] if you want to use the VM with other virtualization software.
 
 = Applications included (as of the 1.0 release) =
 
