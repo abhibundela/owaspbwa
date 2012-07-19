@@ -6,7 +6,7 @@
 
 This will be the user guide for the OWASP BWA VM.
 
-* !!! NOTE - This document is a work in progress.  Please provide us [# Feedback feedback] on any errors or areas not covered !!! *
+* !!! NOTE - This document is a work in progress.  Please provide us [#Feedback feedback] on any errors or areas not covered !!! *
 
 
 = Getting Started =
@@ -83,3 +83,22 @@ Code and files that are not available in any other public repositories are store
 owaspbwa-update-owaspbwa-only.sh
 
 Running this command may also update the application databases stored on the VM. That update may cause issues with applications that have their own public repository since the application itself is not updated by this command.
+
+
+= Getting Involved =
+
+== Reporting Bugs == 
+
+All known bugs (not the intentional security issues) in the VM are in the Google Code issue tracker (see "Issues" in the menu above).  Please report any additional bugs you discover.
+
+== Known Vulnerabilities ==
+
+The known security vulnerabilities in the applications are tracked at http://sourceforge.net/apps/trac/owaspbwa/report/1. Please submit any additional issues that you discover. 
+
+== Google Group ==
+
+This project has a (relatively low traffic) Google Group at http://groups.google.com/group/owaspbwa.  Feel free to join and ask questions about the VM, make suggestions, etc.
+
+== Twitter ==
+
+To get release announcements and other news from the project on Twitter, follow @owaspbwa or visit https://twitter.com/owaspbwa/.
