@@ -5,11 +5,67 @@
 
 = Introduction =
 
-This will be the user guide for the OWASP BWA VM.  For details about the applications included in the VM, see the ProjectSummary page.
+This is the user guide for the OWASP BWA VM.  
 
 * !!! NOTE - This document is a work in progress.  Please provide us [#Getting_Involved feedback] on any errors or areas not covered !!! *
 
+= Applications included (as of the 1.0 release) =
+
+This project includes applications from various sources.
+
+==Training Applications:==
+  * [http://www.owasp.org/index.php/Category:OWASP_WebGoat_Project OWASP WebGoat] version 5.4+SVN (Java)
+  * [https://www.owasp.org/index.php/Category:OWASP_WebGoat.NET OWASP WebGoat.NET] version 2012-07-05+GIT
+  * [https://www.owasp.org/index.php/ESAPI_Swingset OWASP ESAPI Java SwingSet Interactive] version 1.0.1+SVN
+  * [http://www.irongeek.com/i.php?page=security/mutillidae-deliberately-vulnerable-php-owasp-top-10 Mutillidae] version 2.2.2 (PHP)
+  * [http://www.dvwa.co.uk/ Damn Vulnerable Web Application] version 1.8+SVN (PHP)
+  * [http://www.gh0s7.net/ Ghost] (PHP)
+
+  
+==Realistic, Intentionally Vulnerable Applications:==
+  * [http://www.owasp.org/index.php/Category:OWASP_Vicnum_Project OWASP Vicnum] version 1.5 (PHP/Perl)
+  * [http://peruggia.sourceforge.net/ Peruggia] version 1.2 (PHP)
+  * [http://google-gruyere.appspot.com/ Google Gruyere] version 2010-07-15 (Python)
+  * [http://hackxor.sourceforge.net/cgi-bin/index.pl Hackxor] version 2011-04-06 (Java JSP)
+  * [https://github.com/adamdoupe/WackoPicko WackoPicko] version 2011-07-12+GIT (PHP)
+  * [http://code.google.com/p/bodgeit/ BodgeIt] version 1.3+SVN (Java JSP)
+
+==Old Versions of Real Applications:==
+  * [http://wordpress.org/ WordPress] 2.0.0 (PHP, released December 31, 2005) with plugins:
+    * [http://www.wildbits.de/mygallery/ myGallery] version 1.2
+    * [http://timrohrer.com/blog/?page_id=71 Spreadsheet for WordPress] version 0.6
+  * [http://www.orangehrm.com/ OrangeHRM] version 2.4.2 (PHP, released May 7, 2009)
+  * [http://sourceforge.net/projects/getboo/ GetBoo] version 1.04 (PHP, released April 7, 2008)
+  * [http://www.gtd-php.com/ gtd-php] version 0.7 (PHP, released September 30, 2006)
+  * [http://www.forumsoftware.ca/ Yazd] version 1.0 (Java, released February 20, 2002)
+  * [http://www.k5n.us/webcalendar.php WebCalendar] version 1.03 (PHP, released April 11, 2006)
+  * [http://gallery.menalto.com/ Gallery2] version 2.1 (PHP, released March 23, 2006)
+  * [http://owaspbwa/tikiwiki TikiWiki] version 1.9.5 (PHP, released September 5, 2006)
+  * [http://www.joomla.org/ Joomla] version 1.5.15 (PHP, released November 4, 2009)
+  * [http://awstats.sourceforge.net/ AWStats] version 6.4 (build 1.814, Perl, released February 25,2005)
+
+==Applications for Testing Tools:==
+  * [http://code.google.com/p/zaproxy/ OWASP ZAP-WAVE] version 0.2+SVN (Java JSP)
+  * [http://code.google.com/p/wavsep/ WAVSEP] version 1.2 (Java JSP)
+  * [http://code.google.com/p/wivet/ WIVET] version 3+SVN (Java JSP)
+
+==Demonstration Pages / Small Applications:==
+  * [http://www.owasp.org/index.php/Category:OWASP_CSRFGuard_Project OWASP CSRFGuard] Test Application version 2.2 (Java)
+  * [http://www.mandiant.com/ Mandiant] Struts Forms (Java/Struts)
+  * Simple ASP.NET Forms (ASP.NET/C#)
+  * Simple Form with DOM Cross Site Scripting (HTML/!JavaScript)
+  
+==OWASP Demonstration Applications==  
+  * [http://www.owasp.org/index.php/Category:OWASP_AppSensor_Project OWASP AppSensor Demo Application] (Java)  
+  
+
 = Getting Started =
+
+== Download ==
+
+The VM can be downloaded as a .zip file or as a much smaller [http://www.7-zip.org/ .7z 7-zip Archive].  *BOTH FILES CONTAIN THE EXACT SAME VM!*  I recommend that you download the .7z archive if possible to save bandwidth (and time). 7-zip IS [http://www.7-zip.org/download.html available for Mac, Linux, and other Operating Systems].
+
+Download from [http://sourceforge.net/projects/owaspbwa/files/ http://sourceforge.net/projects/owaspbwa/files/].
 
 == Virtual Machine Format ==
 
@@ -17,7 +73,9 @@ The Open Web Application Security Project (OWASP) Broken Web Applications Projec
 
 See [#Converting_Virtual_Machine_Format Converting Virtual Machine Format] if you want to use the VM with other virtualization software.
 
-== Viewing Web Page ==
+The VM requires no installation.  Simply extract the files from the archive and then start the VM in your virtualization software.
+
+== Viewing the Web Page ==
 
 When the OWASP BWA VM is started, it will provide information on the console with the IP address of the VM and various ways to access and manage it.  
 
