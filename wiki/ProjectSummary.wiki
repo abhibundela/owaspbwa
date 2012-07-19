@@ -5,7 +5,7 @@
 
 The Open Web Application Security Project (OWASP) Broken Web Applications Project is distributed as a Virtual Machine in [http://www.vmware.com VMware] format compatible with their no-cost [http://www.vmware.com/products/player/ VMware Player] and [http://www.vmware.com/products/server/ VMware Server] products (along with their commercial products).
 
-= Applications included (as of the 1.0rc2 release) =
+= Applications included (as of the 1.0 release) =
 
 This project includes applications from various sources.
 
@@ -13,15 +13,13 @@ This project includes applications from various sources.
   * [http://www.owasp.org/index.php/Category:OWASP_WebGoat_Project OWASP WebGoat] version 5.4+SVN (Java)
   * [https://www.owasp.org/index.php/Category:OWASP_WebGoat.NET OWASP WebGoat.NET] version 2012-07-05+GIT
   * [https://www.owasp.org/index.php/ESAPI_Swingset OWASP ESAPI Java SwingSet Interactive] version 1.0.1+SVN
-  * [http://code.google.com/p/zaproxy/ OWASP ZAP-WAVE] version 0.2+SVN (Java JSP)
-  * [http://www.irongeek.com/i.php?page=security/mutillidae-deliberately-vulnerable-php-owasp-top-10 Mutillidae] version 2.2.0 (PHP)
+  * [http://www.irongeek.com/i.php?page=security/mutillidae-deliberately-vulnerable-php-owasp-top-10 Mutillidae] version 2.2.2 (PHP)
   * [http://www.dvwa.co.uk/ Damn Vulnerable Web Application] version 1.8+SVN (PHP)
   * [http://www.gh0s7.net/ Ghost] (PHP)
-  * [http://code.google.com/p/wavsep/ WAVSEP] version 1.1.1 (Java JSP)
+
   
 ==Realistic, Intentionally Vulnerable Applications:==
-  * [http://www.owasp.org/index.php/Category:OWASP_Vicnum_Project OWASP Vicnum] version 1.4 (PHP/Perl)
-  * [http://www.owasp.org/index.php/Category:OWASP_Vicnum_Project OWASP Jotto] (PHP/Perl)
+  * [http://www.owasp.org/index.php/Category:OWASP_Vicnum_Project OWASP Vicnum] version 1.5 (PHP/Perl)
   * [http://peruggia.sourceforge.net/ Peruggia] version 1.2 (PHP)
   * [http://google-gruyere.appspot.com/ Google Gruyere] version 2010-07-15 (Python)
   * [http://hackxor.sourceforge.net/cgi-bin/index.pl Hackxor] version 2011-04-06 (Java JSP)
@@ -41,6 +39,11 @@ This project includes applications from various sources.
   * [http://owaspbwa/tikiwiki TikiWiki] version 1.9.5 (PHP, released September 5, 2006)
   * [http://www.joomla.org/ Joomla] version 1.5.15 (PHP, released November 4, 2009)
   * [http://awstats.sourceforge.net/ AWStats] version 6.4 (build 1.814, Perl, released February 25,2005)
+
+==Applications for Testing Tools:==
+  * [http://code.google.com/p/zaproxy/ OWASP ZAP-WAVE] version 0.2+SVN (Java JSP)
+  * [http://code.google.com/p/wavsep/ WAVSEP] version 1.2 (Java JSP)
+  * [http://code.google.com/p/wivet/ WIVET] version 3+SVN (Java JSP)
 
 ==Demonstration Pages / Small Applications:==
   * [http://www.owasp.org/index.php/Category:OWASP_CSRFGuard_Project OWASP CSRFGuard] Test Application version 2.2 (Java)
