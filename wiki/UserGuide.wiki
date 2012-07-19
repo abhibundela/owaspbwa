@@ -13,7 +13,7 @@ This will be the user guide for the OWASP BWA VM.
 
 == Virtual Machine Format ==
 
-The OWASP BWA VM is distributed in VMware virtual machine and virtual disk format.  It has been specifically configured to work with their no cost (Player and X) and older products (in addition to their newer, commercial offerings).
+The OWASP BWA VM is distributed in VMware virtual machine and virtual disk format.  It has been specifically configured to work with their no cost (Player and Server) and older products (in addition to their newer, commercial offerings).
 
 See [#Converting_Virtual_Machine_Format Converting Virtual Machine Format] if you want to use the VM with other virtualization software.
 
@@ -32,17 +32,57 @@ The full list of credentials for each application can be found on the main OWASP
 
 Software for many applications can be updated in place by editing the files (.php, .jsp, .aspx, etc). 
 
-== Rebuilding !WebGoat (Java) == 
+For applications that require rebuilding before changes take effect, the following table shows the command to run to rebuild and redeploy the application:
 
-(to be completed)
+|| Application || Commmand ||
+|| OWASP !WebGoat (Java) || owaspbwa-webgoat-rebuild.sh ||
+|| OWASP !WebGoat (Java) || * See [#Rebuilding_OWASP_WebGoat.NET Rebuilding OWASP WebGoat.NET] Below  ||
+|| OWASP ESAPI !SwingSet Interactive || owaspbwa-swingset-interactive-rebuild.sh ||
+|| OWASP CSRFGuard Test Application || owaspbwa-csrfguard-test-apps-rebuild.sh ||
+|| Yazd || owaspbwa-yazd-rebuild.sh ||
 
-== Rebuilding !WebGoat.net == 
+== Rebuilding OWASP WebGoat.NET == 
 
-(to be completed - doesn't seem possible yet.)
+Unfortunately, it is not currently possible to rebuild the WebGoat.NET application code on the VM itself.  The application code can be accessed and rebuild from another machine via the Samba share at \\owaspbwa\owaspbwa\webgoat.net-git\
+
+
+
+== Rebuilding OWASP !WebGoat (Java) == 
+
+Rebuild OWASP !WebGoat by running the following command from a terminal:
+
+owaspbwa-webgoat-rebuild.sh
+
+== Rebuilding OWASP ESAPI !SwingSet Interactive == 
+
+Rebuild OWASP ESAPI !SwingSet Interactive by running the following command from a terminal:
+
+owaspbwa-swingset-interactive-rebuild.sh
+
+
+
+== Rebuilding OWASP CSRFGuard Test Application ==
+
+Rebuild OWASP CSRFGuard Test Application by running the following command from a terminal:
+
+owaspbwa-csrfguard-test-apps-rebuild.sh
+
+== Rebuilding Yazd == 
+
+Rebuild OWASP CSRFGuard Test Application by running the following command from a terminal:
+
+owaspbwa-yazd-rebuild.sh
+
+
 
 = Enabling and Disabling !ModSecurity
 
 (to be completed)
+
+owaspbwa-modsecurity-crs-block.sh
+owaspbwa-modsecurity-crs-log.sh
+owaspbwa-modsecurity-crs-off.sh
+
 
 
 
@@ -56,12 +96,20 @@ Software for many applications can be updated in place by editing the files (.ph
 
 Various components on the OWASP BWA VM can be updated from their public repositories.  Any such updates carry a risk of breaking the respective application, but have potential to provide additional features without having to wait for the next release of the OWASP BWA VM.
 
+Generally, users who desire this feature should try updating all components first.  If errors are encountered, please report them to the OWASP BWA developers.  Then, revert the VM to an earlier, working state and attempt to update only the OWASP BWA specific content.
+
+=== All Components ===
+
+In order to update the files for OWASP BWA, along with code for applications that are pulled from public source code repositories, run the command:
+
+owaspbwa-update-all.sh
+
+This may result in application errors if there are updates to the application that do not work in the VM.  This is often due to changes in the structure of the database used by the application.  If this occurs, check the application for instructions on how to rebuild the database.  Some applications include a page or link that will rebuild the database automatically.
+
 === OWASP BWA Specific Content ===
 
 Code and files that are not available in any other public repositories are stored in the SVN repository for OWASP BWA at Google Code.  That can be updated by running:
 
-owaspbwa-svn-update.sh
+owaspbwa-update-owaspbwa-only.sh
 
-=== Other components ===
-
-(to be completed)
+Running this command may also update the application databases stored on the VM. That update may cause issues with applications that have their own public repository since the application itself is not updated by this command.
