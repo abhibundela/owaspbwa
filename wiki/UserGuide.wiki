@@ -103,7 +103,7 @@ Once booted, the VM can be administered few a few different mechanisms. Note, th
 
 *In all cases, use a username of "root" and a password of "owaspbwa".*
 
-= Updating application code =
+= Updating Application Code =
 
 Software for many applications can be updated in place by editing the files (.php, .jsp, .aspx, etc). 
 
