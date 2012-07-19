@@ -11,7 +11,7 @@ This is the user guide for the OWASP BWA VM.
 
 = Applications included (as of the 1.0 release) =
 
-This project includes applications from various sources.
+This project includes open source applications of various types.  Below is is a list of the applications and versions currently on the VM.  A the version number ending in +SVN or +GIT indicates that the application is pulled directly to the VM from the application's public source code repository and the code running may be later than the version number indicated.
 
 ==Training Applications:==
   * [http://www.owasp.org/index.php/Category:OWASP_WebGoat_Project OWASP WebGoat] version 5.4+SVN (Java)
