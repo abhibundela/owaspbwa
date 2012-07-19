@@ -12,7 +12,7 @@ This will be the user guide for the OWASP BWA VM.  For details about the applica
 
 == Virtual Machine Format ==
 
-The OWASP BWA VM is distributed in VMware virtual machine and virtual disk format.  It has been specifically configured to work with their no cost (Player and Server) and older products (in addition to their newer, commercial offerings).
+The Open Web Application Security Project (OWASP) Broken Web Applications Project is distributed as a Virtual Machine in [http://www.vmware.com VMware] format compatible with their no-cost [http://www.vmware.com/products/player/ VMware Player] and [http://www.vmware.com/products/vsphere-hypervisor/overview.html VMware vSphere Hypervisor (ESXi)] products (along with their older and commercial products).
 
 See [#Converting_Virtual_Machine_Format Converting Virtual Machine Format] if you want to use the VM with other virtualization software.
 
