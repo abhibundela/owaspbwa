@@ -6,7 +6,7 @@
 
 This will be the user guide for the OWASP BWA VM.
 
-* !!! NOTE - This document is a work in progress and is very incomplete !!! *
+* !!! NOTE - This document is a work in progress.  Please provide us [# Feedback feedback] on any errors or areas not covered !!! *
 
 
 = Getting Started =
