@@ -26,7 +26,7 @@ To be completed.
 
 In general, applications on OWASP BWA have been configured with an administrative account named 'admin' with a password of 'admin' and a "normal" user account named 'user' with a password of 'user'.  In some cases, however, this was not possible or additional accounts were required.
 
-The full list of credentials for each application can be found on the main OWASP BWA web page (in the VM).  In order to view the credentials for each application, click the green plus next to the application name on that we page to show more information about the application.
+The full list of credentials for each application can be found on the main OWASP BWA web page (in the VM).  In order to view the credentials for each application, click the *green plus* next to the application name on that we page to show more information about the application.
 
 = Updating application code =
 
@@ -35,10 +35,10 @@ Software for many applications can be updated in place by editing the files (.ph
 For applications that require rebuilding before changes take effect, the following table shows the command that can be run in a terminal to run to rebuild and redeploy the application:
 
 || Application || Source Location || Rebuild Commmand ||
-|| OWASP !WebGoat (Java) || \\owaspbwa\owaspbwa\WebGoat-svn\ || owaspbwa-webgoat-rebuild.sh ||
+|| OWASP !WebGoat (Java) || \\owaspbwa\owaspbwa\!WebGoat-svn\ || owaspbwa-webgoat-rebuild.sh ||
 || OWASP !WebGoat (Java) || \\owaspbwa\owaspbwa\webgoat.net-git\ || See [#Rebuilding_OWASP_!WebGoat.NET Rebuilding OWASP WebGoat.NET] Below  ||
 || OWASP ESAPI !SwingSet Interactive || \\owaspbwa\owaspbwa\owasp-esapi-java-swingset-interactive-svn || owaspbwa-swingset-interactive-rebuild.sh ||
-|| OWASP CSRFGuard Test Applications || \\owaspbwa\owaspbwa\owaspbwa-svn\misc-src\OWASP-CSRFGuard-TestApp-2.2-src and \\owaspbwa\owaspbwa\owaspbwa-svn\misc-src\OWASP-CSRFGuard-TestApp-2.2-Vulnerable-src || owaspbwa-csrfguard-test-apps-rebuild.sh ||
+|| OWASP CSRFGuard Test Applications || \\owaspbwa\owaspbwa\owaspbwa-svn\misc-src\OWASP-CSRFGuard-!TestApp-2.2-src and \\owaspbwa\owaspbwa\owaspbwa-svn\misc-src\OWASP-CSRFGuard-!TestApp-2.2-Vulnerable-src || owaspbwa-csrfguard-test-apps-rebuild.sh ||
 || Yazd || \\owaspbwa\owaspbwa\owaspbwa-svn\misc-src\Yazd_1.0-src || owaspbwa-yazd-rebuild.sh ||
 
 == Rebuilding OWASP !WebGoat.NET == 
