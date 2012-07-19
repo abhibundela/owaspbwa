@@ -184,19 +184,20 @@
 					" now() )";
 					
 				//	$lQuery = "CALL insertBlogEntry('".$logged_in_user."', '".$lBlogEntry."');";
-		
-				$lQueryResult = $conn->query($lQuery);
-				if (!$lQueryResult) {
-			    	throw (new Exception('Error executing query: '.$conn->error, $conn->errorno));
-			    }// end if
-				
+
+				try {
+					$MySQLHandler->executeQuery($lQuery);	
+				} catch (Exception $e) {
+					echo $CustomErrorHandler->FormatError($e, "Error inserting blog: " . $lQuery);
+				}//end try
+	    		
 				$LogHandler->writeToLog("Blog entry added by: " . $lLoggedInUser);
 				
 			}else{
 				$lValidationFailed = TRUE;
 			}// end if(strlen($lBlogEntry) > 0)
 		} catch (Exception $e) {
-			echo $CustomErrorHandler->FormatError($e, "Error: ".$conn->error." Query: ".$lQuery);
+			echo $CustomErrorHandler->FormatError($e, "Error inserting blog");
 		}// end try
 	}else {
 		$lValidationFailed = FALSE;
@@ -303,8 +304,18 @@
 				blogger_name like '{$lLoggedInUser}%'
 				ORDER BY date DESC
 				LIMIT 0 , 100";
+	    	    
+		try {
+			$lQueryResult = $MySQLHandler->executeQuery($lQuery);	
+		} catch (Exception $e) {
+			echo $CustomErrorHandler->FormatError($e, "Error selecting blog entries for " . $lLoggedInUser . ": " . $lQuery);
+		}//end try
 	    
-	    $lQueryResult = $MySQLHandler->executeQuery($lQuery);
+		try {
+			$LogHandler->writeToLog("Selected blog entries for " . $lLoggedInUser);	
+		} catch (Exception $e) {
+			echo $CustomErrorHandler->FormatError($e, "Error writing selected blog entries to log");
+		}// end try
 				
 		echo '<div>&nbsp;</div>
 				<span>

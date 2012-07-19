@@ -129,6 +129,14 @@ class CustomErrorHandler{
 		$this->doSetSecurityLevel($pSecurityLevel);
 	}// end function
 	
+	public function getExceptionMessage(Exception $e, $pDiagnosticInformation){		
+		$lExceptionMessage = "";
+		do {
+        	$lExceptionMessage .= sprintf("%s on line %d: %s %s (%d) [%s] <br />\n", $e->getFile(), $e->getLine(), $e->getMessage(), $pDiagnosticInformation, $e->getCode(), get_class($e));
+    	} while($e = $e->getPrevious());
+    	return $lExceptionMessage;
+	}//end function getExceptionMessage
+	
 	public function FormatError(Exception $e, $pDiagnosticInformation){
 	
 		switch ($this->mSecurityLevel){
