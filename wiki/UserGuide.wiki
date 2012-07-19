@@ -32,48 +32,18 @@ The full list of credentials for each application can be found on the main OWASP
 
 Software for many applications can be updated in place by editing the files (.php, .jsp, .aspx, etc). 
 
-For applications that require rebuilding before changes take effect, the following table shows the command to run to rebuild and redeploy the application:
+For applications that require rebuilding before changes take effect, the following table shows the command that can be run in a terminal to run to rebuild and redeploy the application:
 
-|| Application || Commmand ||
-|| OWASP !WebGoat (Java) || owaspbwa-webgoat-rebuild.sh ||
-|| OWASP !WebGoat (Java) || * See [#Rebuilding_OWASP_WebGoat.NET Rebuilding OWASP WebGoat.NET] Below  ||
-|| OWASP ESAPI !SwingSet Interactive || owaspbwa-swingset-interactive-rebuild.sh ||
-|| OWASP CSRFGuard Test Application || owaspbwa-csrfguard-test-apps-rebuild.sh ||
-|| Yazd || owaspbwa-yazd-rebuild.sh ||
+|| Application || Source Location || Rebuild Commmand ||
+|| OWASP !WebGoat (Java) || \\owaspbwa\owaspbwa\WebGoat-svn\ || owaspbwa-webgoat-rebuild.sh ||
+|| OWASP !WebGoat (Java) || \\owaspbwa\owaspbwa\webgoat.net-git\ || See [#Rebuilding_OWASP_!WebGoat.NET Rebuilding OWASP WebGoat.NET] Below  ||
+|| OWASP ESAPI !SwingSet Interactive || \\owaspbwa\owaspbwa\owasp-esapi-java-swingset-interactive-svn || owaspbwa-swingset-interactive-rebuild.sh ||
+|| OWASP CSRFGuard Test Applications || \\owaspbwa\owaspbwa\owaspbwa-svn\misc-src\OWASP-CSRFGuard-TestApp-2.2-src and \\owaspbwa\owaspbwa\owaspbwa-svn\misc-src\OWASP-CSRFGuard-TestApp-2.2-Vulnerable-src || owaspbwa-csrfguard-test-apps-rebuild.sh ||
+|| Yazd || \\owaspbwa\owaspbwa\owaspbwa-svn\misc-src\Yazd_1.0-src || owaspbwa-yazd-rebuild.sh ||
 
-== Rebuilding OWASP WebGoat.NET == 
+== Rebuilding OWASP !WebGoat.NET == 
 
-Unfortunately, it is not currently possible to rebuild the WebGoat.NET application code on the VM itself.  The application code can be accessed and rebuild from another machine via the Samba share at \\owaspbwa\owaspbwa\webgoat.net-git\
-
-
-
-== Rebuilding OWASP !WebGoat (Java) == 
-
-Rebuild OWASP !WebGoat by running the following command from a terminal:
-
-owaspbwa-webgoat-rebuild.sh
-
-== Rebuilding OWASP ESAPI !SwingSet Interactive == 
-
-Rebuild OWASP ESAPI !SwingSet Interactive by running the following command from a terminal:
-
-owaspbwa-swingset-interactive-rebuild.sh
-
-
-
-== Rebuilding OWASP CSRFGuard Test Application ==
-
-Rebuild OWASP CSRFGuard Test Application by running the following command from a terminal:
-
-owaspbwa-csrfguard-test-apps-rebuild.sh
-
-== Rebuilding Yazd == 
-
-Rebuild OWASP CSRFGuard Test Application by running the following command from a terminal:
-
-owaspbwa-yazd-rebuild.sh
-
-
+Unfortunately, it is not currently possible to rebuild the !WebGoat.NET application code on the VM itself.  The application code can be accessed and rebuild from another machine via the Samba share at \\owaspbwa\owaspbwa\webgoat.net-git\
 
 = Enabling and Disabling !ModSecurity
 
