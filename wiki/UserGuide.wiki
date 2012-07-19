@@ -104,11 +104,11 @@ Once booted, the VM can be administered few a few different mechanisms. Note, th
 
 = Updating Application Code =
 
-Software for many applications can be updated in place by editing the files (.php, .jsp, .aspx, etc). 
+Software for many applications can be updated in place by editing the files (.php, .jsp, .aspx, etc). This can be done on the command line (via the console or SSH), but is more commonly done via the Samba shares at \\owaspbwa\.  Once files are edited, the resulting changes should take effect immediately.
 
-For applications that require rebuilding before changes take effect, the following table shows the command that can be run in a terminal to run to rebuild and redeploy the application:
+Some applications require compilation and redeployment before changes take effect, however.  For those, the source code can be edited using Samba shares (or on the command line), then a script can be run in a terminal to rebuild and redeploy the application.  The following tables shows information for the applications that require compilation.
 
-|| Application || Source Location (Share) || Rebuild Commmand ||
+|| Application || Source Location (Share) || Rebuild Script ||
 || OWASP !WebGoat (Java) || \\owaspbwa\owaspbwa\!WebGoat-svn\ || owaspbwa-webgoat-rebuild.sh ||
 || OWASP !WebGoat.NET || \\owaspbwa\owaspbwa\webgoat.net-git\ || Cannot currently be rebuilt on VM. Can rebuild on another machine via share. ||
 || OWASP ESAPI !SwingSet Interactive || \\owaspbwa\owaspbwa\owasp-esapi-java-swingset-interactive-svn || owaspbwa-swingset-interactive-rebuild.sh ||
@@ -117,9 +117,9 @@ For applications that require rebuilding before changes take effect, the followi
 
 = Enabling and Disabling OWASP !ModSecurity Core Rule Set =
 
-The VM ships with Apache !ModSecurity enabled, but no rules sets in use (so nothing is blocked or logged).  
+The VM ships with Apache !ModSecurity enabled, but no rule sets in use (so nothing is blocked or logged).  The VM provides easy mechanisms to enable and disable the [https://www.owasp.org/index.php/Category:OWASP_ModSecurity_Core_Rule_Set_Project OWASP !ModSecurity Core Rule Set] as shown below.  The purpose of this feature is to allow users to see firsthand the effectiveness (and limitations) of the Core Rule Set in catching malicious requests.
 
-In order to log (but not block) any requests using the [https://www.owasp.org/index.php/Category:OWASP_ModSecurity_Core_Rule_Set_Project OWASP !ModSecurity Core Rule Set], run the following command.  Log messages appear in /var/log/apache2/error.log (shared at \\owaspbwa\var\log\apache2\error.log).
+In order to log (but not block) any requests using the OWASP !ModSecurity Core Rule Set, run the following command.  Log messages appear in /var/log/apache2/error.log (shared at \\owaspbwa\var\log\apache2\error.log).
 
 {{{
 owaspbwa-modsecurity-crs-log.sh
@@ -130,7 +130,6 @@ In order to both block and log requests using the OWASP !ModSecurity Core Rule S
 {{{
 owaspbwa-modsecurity-crs-block.sh
 }}}
-
 
 To disable all !ModSecurity rules (returning to the state the VM ships in), run:
 
@@ -148,7 +147,7 @@ The OWASP BWA developers believe that the VM should be easily convertible to run
 
 Users who attempt to use the VM in another virtualization software are encouraged to provide [#Getting_Involved feedback] on the process, weather or not it was successful.
 
-== Updating components from repositories =
+== Updating Components From Repositories =
 
 Various components on the OWASP BWA VM can be updated from their public repositories.  Any such updates carry a risk of breaking the respective application, but have potential to provide additional features without having to wait for the next release of the OWASP BWA VM.
 
