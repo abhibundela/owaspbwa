@@ -13,7 +13,7 @@ This is the user guide for the OWASP BWA VM.
 
 This project includes open source applications of various types.  Below is is a list of the applications and versions currently on the VM.  A the version number ending in +SVN or +GIT indicates that the application is pulled directly to the VM from the application's public source code repository and the code running may be later than the version number indicated.
 
-==Training Applications:==
+== Training Applications ==
   * [http://www.owasp.org/index.php/Category:OWASP_WebGoat_Project OWASP WebGoat] version 5.4+SVN (Java)
   * [https://www.owasp.org/index.php/Category:OWASP_WebGoat.NET OWASP WebGoat.NET] version 2012-07-05+GIT
   * [https://www.owasp.org/index.php/ESAPI_Swingset OWASP ESAPI Java SwingSet Interactive] version 1.0.1+SVN
@@ -22,7 +22,7 @@ This project includes open source applications of various types.  Below is is a 
   * [http://www.gh0s7.net/ Ghost] (PHP)
 
   
-==Realistic, Intentionally Vulnerable Applications:==
+== Realistic, Intentionally Vulnerable Applications ==
   * [http://www.owasp.org/index.php/Category:OWASP_Vicnum_Project OWASP Vicnum] version 1.5 (PHP/Perl)
   * [http://peruggia.sourceforge.net/ Peruggia] version 1.2 (PHP)
   * [http://google-gruyere.appspot.com/ Google Gruyere] version 2010-07-15 (Python)
@@ -30,7 +30,7 @@ This project includes open source applications of various types.  Below is is a 
   * [https://github.com/adamdoupe/WackoPicko WackoPicko] version 2011-07-12+GIT (PHP)
   * [http://code.google.com/p/bodgeit/ BodgeIt] version 1.3+SVN (Java JSP)
 
-==Old Versions of Real Applications:==
+== Old Versions of Real Applications ==
   * [http://wordpress.org/ WordPress] 2.0.0 (PHP, released December 31, 2005) with plugins:
     * [http://www.wildbits.de/mygallery/ myGallery] version 1.2
     * [http://timrohrer.com/blog/?page_id=71 Spreadsheet for WordPress] version 0.6
@@ -44,21 +44,20 @@ This project includes open source applications of various types.  Below is is a 
   * [http://www.joomla.org/ Joomla] version 1.5.15 (PHP, released November 4, 2009)
   * [http://awstats.sourceforge.net/ AWStats] version 6.4 (build 1.814, Perl, released February 25,2005)
 
-==Applications for Testing Tools:==
+== Applications for Testing Tools ==
   * [http://code.google.com/p/zaproxy/ OWASP ZAP-WAVE] version 0.2+SVN (Java JSP)
   * [http://code.google.com/p/wavsep/ WAVSEP] version 1.2 (Java JSP)
   * [http://code.google.com/p/wivet/ WIVET] version 3+SVN (Java JSP)
 
-==Demonstration Pages / Small Applications:==
+== Demonstration Pages / Small Applications ==
   * [http://www.owasp.org/index.php/Category:OWASP_CSRFGuard_Project OWASP CSRFGuard] Test Application version 2.2 (Java)
   * [http://www.mandiant.com/ Mandiant] Struts Forms (Java/Struts)
   * Simple ASP.NET Forms (ASP.NET/C#)
   * Simple Form with DOM Cross Site Scripting (HTML/!JavaScript)
   
-==OWASP Demonstration Applications==  
+== OWASP Demonstration Applications ==  
   * [http://www.owasp.org/index.php/Category:OWASP_AppSensor_Project OWASP AppSensor Demo Application] (Java)  
   
-
 = Getting Started =
 
 == Download ==
@@ -75,11 +74,11 @@ See [#Converting_Virtual_Machine_Format Converting Virtual Machine Format] if yo
 
 The VM requires no installation.  Simply extract the files from the archive and then start the VM in your virtualization software.
 
-== Viewing the Web Page ==
+== Viewing the VM's Starting Page ==
 
 When the OWASP BWA VM is started, it will provide information on the console with the IP address of the VM and various ways to access and manage it.  
 
-It is highly recommended (though not required) that you add an entry into your 'hosts' file of your virtual host OS to resolve the hostname 'owaspbwa' with the IP address shown in the console on bootup.  The entry will look like below (replace 192.168.15.130 with the IP of your VM).  This document (and the vulnerability list http://sourceforge.net/apps/trac/owaspbwa/report/1) assume that you have added this entry.
+It is highly recommended (though not required) that you add an entry into your 'hosts' file of your virtual host OS to resolve the hostname 'owaspbwa' with the IP address shown in the console on bootup.  The entry will look like below (replace 192.168.15.130 with the IP of your VM).  This document (and the vulnerability list at http://sourceforge.net/apps/trac/owaspbwa/report/1) assume that you have added this entry.
 
 {{{
 192.168.15.130	owaspbwa
