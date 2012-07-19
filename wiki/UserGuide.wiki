@@ -34,9 +34,9 @@ Software for many applications can be updated in place by editing the files (.ph
 
 For applications that require rebuilding before changes take effect, the following table shows the command that can be run in a terminal to run to rebuild and redeploy the application:
 
-|| Application || Source Location || Rebuild Commmand ||
+|| Application || Source Location (Share) || Rebuild Commmand ||
 || OWASP !WebGoat (Java) || \\owaspbwa\owaspbwa\!WebGoat-svn\ || owaspbwa-webgoat-rebuild.sh ||
-|| OWASP !WebGoat (Java) || \\owaspbwa\owaspbwa\webgoat.net-git\ || See [#Rebuilding_OWASP_!WebGoat.NET Rebuilding OWASP WebGoat.NET] Below  ||
+|| OWASP !WebGoat.NET || \\owaspbwa\owaspbwa\webgoat.net-git\ || Cannot currently be rebuilt on VM. Can rebuild on another machine via share. ||
 || OWASP ESAPI !SwingSet Interactive || \\owaspbwa\owaspbwa\owasp-esapi-java-swingset-interactive-svn || owaspbwa-swingset-interactive-rebuild.sh ||
 || OWASP CSRFGuard Test Applications || \\owaspbwa\owaspbwa\owaspbwa-svn\misc-src\OWASP-CSRFGuard-!TestApp-2.2-src and \\owaspbwa\owaspbwa\owaspbwa-svn\misc-src\OWASP-CSRFGuard-!TestApp-2.2-Vulnerable-src || owaspbwa-csrfguard-test-apps-rebuild.sh ||
 || Yazd || \\owaspbwa\owaspbwa\owaspbwa-svn\misc-src\Yazd_1.0-src || owaspbwa-yazd-rebuild.sh ||
