@@ -76,7 +76,9 @@ Users can edit the Core Rule Set rules in effect by editing files under /etc/apa
 
 == Converting Virtual Machine Format ==
 
-(to be completed)
+The OWASP BWA developers believe that the VM should be easily convertible to run under virtualization software other than VMware products, but the process has not been attempted. 
+
+Users who attempt to use the VM in another virtualization software are encouraged to provide [#Getting_Involved feedback] on the process, weather or not it was successful.
 
 == Updating components from repositories =
 
@@ -88,7 +90,9 @@ Generally, users who desire this feature should try updating all components firs
 
 In order to update the files for OWASP BWA, along with code for applications that are pulled from public source code repositories, run the command:
 
+{{{
 owaspbwa-update-all.sh
+}}}
 
 This may result in application errors if there are updates to the application that do not work in the VM.  This is often due to changes in the structure of the database used by the application.  If this occurs, check the application for instructions on how to rebuild the database.  Some applications include a page or link that will rebuild the database automatically.
 
@@ -96,10 +100,11 @@ This may result in application errors if there are updates to the application th
 
 Code and files that are not available in any other public repositories are stored in the SVN repository for OWASP BWA at Google Code.  That can be updated by running:
 
+{{{
 owaspbwa-update-owaspbwa-only.sh
+}}}
 
 Running this command may also update the application databases stored on the VM. That update may cause issues with applications that have their own public repository since the application itself is not updated by this command.
-
 
 = Getting Involved =
 
