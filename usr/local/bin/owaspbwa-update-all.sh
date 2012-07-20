@@ -37,6 +37,10 @@ echo "---- Updating from BodgeIt SVN Repo ----"
 svn update /owaspbwa/bodgeit-svn
 if [ "$?" -ne 0 ] ; then echo "SVN Update from BodgeIt SVN Repo Failed!"; exit 1; fi 
 
+echo "---- Updating from WIVET SVN Repo ----"
+svn update /owaspbwa/wivet-svn
+if [ "$?" -ne 0 ] ; then echo "SVN Update from WIVET SVN Repo Failed!"; exit 1; fi 
+
 echo "---- Starting Tomcat for possible deployment of updates to WebGoat (Java) and the ESAPI SwingSet ----"
 /usr/sbin/service tomcat6 start
 
