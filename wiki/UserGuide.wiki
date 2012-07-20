@@ -5,13 +5,15 @@
 
 = Introduction =
 
-This is the user guide for the OWASP BWA VM.  
+This is the user guide for the [https://www.owasp.org/ Open Web Application Security Project (OWASP)] Broken Web Applications Project.  This open source project produces a Virtual Machine (VM) running a variety of web applications with security vulnerabilities.
 
 * NOTE - This document is a work in progress.  Please provide us [#Getting_Involved feedback] on any errors or areas not covered *
 
-= Applications Included (as of the 1.0 release) =
+= Applications Included =
 
 This project includes open source applications of various types.  Below is is a list of the applications and versions currently on the VM.  A the version number ending in +SVN or +GIT indicates that the application is pulled directly to the VM from the application's public source code repository and the code running may be later than the version number indicated.
+
+The lists below are current as of the 1.0 release.
 
 == Training Applications ==
 Applications designed for learning which guide the user to specific, intentional vulnerabilities.
