@@ -15,8 +15,16 @@ download the .7z archive if possible to save bandwidth (and time).
 you run it only on the "host only" or "NAT" network in the virtual machine 
 settings !!! 
 
+Version 1.0 - 2012-07-23
+- Added new application: WIVET (http://code.google.com/p/wivet/)
+- Updated WAVSEP, Mutillidae, Vicnum
+- Created new category for "Applications for Testing Tools", containing
+  OWASP ZAP WAVE, WIVET, and WAVSEP
+- Major update to User Guide at http://code.google.com/p/owaspbwa/wiki/UserGuide.
+  Removed some other project Wiki pages that were incorporated into User Guide.
+  
 Version 1.0rc2 - 2012-07-14
-- Added new application: wavsep (http://code.google.com/p/wavsep/)
+- Added new application: WAVSEP (http://code.google.com/p/wavsep/)
 - Updated WebGoat.NET, WebGoat (Java), and other applications from source 
   repositories.  Updated Mutillidae.
 - Removed links to OWASP ESAPI SwingSet (non-Interactive).  That application
