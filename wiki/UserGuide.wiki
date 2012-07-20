@@ -108,7 +108,9 @@ Once booted, the VM can be administered few a few different mechanisms. Note, th
 
 In all cases, use a username of "root" and a password of "owaspbwa".
 
-= Updating Application Code =
+= Usage =
+
+== Updating Application Code ==
 
 Software for many applications can be updated in place by editing the files (.php, .jsp, .aspx, etc). This can be done on the command line (via the console or SSH), but is more commonly done via the Samba shares at \\owaspbwa\.  Once files are edited, the resulting changes should take effect immediately.
 
@@ -121,7 +123,7 @@ Some applications require compilation and redeployment before changes take effec
 || OWASP CSRFGuard Test Applications || \\owaspbwa\owaspbwa\owaspbwa-svn\misc-src\OWASP-CSRFGuard-!TestApp-2.2-src and \\owaspbwa\owaspbwa\owaspbwa-svn\misc-src\OWASP-CSRFGuard-!TestApp-2.2-Vulnerable-src || owaspbwa-csrfguard-test-apps-rebuild.sh ||
 || Yazd || \\owaspbwa\owaspbwa\owaspbwa-svn\misc-src\Yazd_1.0-src || owaspbwa-yazd-rebuild.sh ||
 
-= Enabling and Disabling OWASP !ModSecurity Core Rule Set =
+== Enabling and Disabling OWASP !ModSecurity Core Rule Set ==
 
 The VM ships with Apache !ModSecurity enabled, but no rule sets in use (so nothing is blocked or logged).  The VM provides easy mechanisms to enable and disable the [https://www.owasp.org/index.php/Category:OWASP_ModSecurity_Core_Rule_Set_Project OWASP !ModSecurity Core Rule Set] as shown below.  The purpose of this feature is to allow users to see firsthand the effectiveness (and limitations) of the Core Rule Set in catching malicious requests.
 
@@ -144,6 +146,12 @@ owaspbwa-modsecurity-crs-off.sh
 }}}
 
 Users can edit the Core Rule Set rules in effect by editing files under /etc/apache2/modsecurity-crs/ (shared at \\owaspbwa\etc\apache2\modsecurity-crs\).  Users are also free to alter the Apache configuration to use an entirely different set of !ModSecurity rules.
+
+== Logging ==
+
+The logging configuration for all components on the VM have been left at the default settings, but the user is free to edit the logging configuration in order to see the impact of changes.
+
+Logs can be accessed under the /var/log/ directory (shared at \\owaspbwa\var\log\).  All logs are deleted when the VM is distributed, so all log entries that a user sees are due to their own activity on the system.
 
 = Advanced Topics =
 
