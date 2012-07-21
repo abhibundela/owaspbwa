@@ -42,7 +42,7 @@ How to update Mutillidae:
 
 10. Browse to http://owaspbwa/mutillidae/set-up-database.php to reset database
 
-11. Attempt login (username user, password user) and work with site a bit to verify operation.  If you modify any data in app, reset the database again when done.
+11. Attempt login (username user, password user) and work with site a bit to verify operation.  If you modify any data in app, reset the database again when done (or at least Delete logs by visiting http://owaspbwa/mutillidae/index.php?page=show-log.php&deleteLogs=deleteLogs)
 
 12. Stop services in a root prompt by running owaspbwa-services-stop.sh
 
