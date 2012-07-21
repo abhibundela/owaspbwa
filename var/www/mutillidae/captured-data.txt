@@ -1602,3 +1602,35 @@ showhints = 0
 PHPSESSID = sovf5d1g0l17p82m2usaacr3e7
 --------------------------------------------------
 
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+Timestamp: 07-21-2012 03:26:49 GMT
+--------------------------------------------------
+Client Hostname: 127.0.0.1
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:13.0) Gecko/20100101 Firefox/13.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=html5-storage.php
+Client Port: 3676
+Captured Data: page = capture-data.php
+showhints = 0
+username = jeremy
+uid = 4
+PHPSESSID = 9osv6ppqdkkqr02orvgfvtgre7
+--------------------------------------------------
+
+
+--------------------------------------------------
+Client IP: 127.0.0.1
+Timestamp: 07-21-2012 03:26:59 GMT
+--------------------------------------------------
+Client Hostname: 127.0.0.1
+Client User Agent: Mozilla/5.0 (Windows NT 5.1; rv:13.0) Gecko/20100101 Firefox/13.0.1
+Client Referrer: http://localhost/mutillidae/index.php?page=html5-storage.php
+Client Port: 3684
+Captured Data: page = capture-data.php
+showhints = 0
+username = jeremy
+uid = 4
+PHPSESSID = 9osv6ppqdkkqr02orvgfvtgre7
+--------------------------------------------------
+

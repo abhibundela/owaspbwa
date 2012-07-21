@@ -61,13 +61,6 @@
 	</ul>
 </div>
 
-<p class="label">closedb.inc<span class="big-asterik">*</span></p>
-<div style="padding-left: 40px;">
-	<ul>
-		<li>No known vulnerabilities. We should add something.</li>
-	</ul>
-</div>
-
 <p class="label">config.inc<span class="big-asterik">*</span></p>
 <div style="padding-left: 40px;">
 	<ul>
@@ -181,13 +174,6 @@
 </div>
 
 <p class="label">notes.php</p>
-<div style="padding-left: 40px;">
-	<ul>
-		<li>No known vulnerabilities. We should add something.</li>
-	</ul>
-</div>
-
-<p class="label">opendb.inc<span class="big-asterik">*</span></p>
 <div style="padding-left: 40px;">
 	<ul>
 		<li>No known vulnerabilities. We should add something.</li>

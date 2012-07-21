@@ -47,12 +47,14 @@
    	}// end switch		
 
    	if(isset($_GET["deleteLogs"])){
-		$lQueryString = "TRUNCATE TABLE captured_data";
-
-		$lQueryResult = $conn->query($lQueryString);
-		if (!$lQueryResult) {
-	    	throw (new Exception('Error executing query: '.$conn->error, $conn->errorno));
-	    }// end if	
+		
+		try{
+			$lQueryString = "TRUNCATE TABLE captured_data";
+			$lQueryResult = $MySQLHandler->executeQuery($lQueryString);
+		} catch (Exception $e) {
+			echo $CustomErrorHandler->FormatError($e, $lQueryString);
+		}// end try
+	
 	}// end if isset
    	
 ?>

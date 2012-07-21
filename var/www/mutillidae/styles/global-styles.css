@@ -5,6 +5,10 @@ html{
 	font-family: sans-serif, tahoma, verdana, serif;
 }
 
+input,textarea{
+	border-radius: 5px;
+}
+
 code{
 	 margin-left:50px;
 	 white-space: pre-wrap;
@@ -37,6 +41,7 @@ div.page-title,span.page-title{
 	border-color: #000000;
 	border-width: 1px;
 	border-style: solid;
+	border-radius: 5px;
 }
 
 div.footer{
@@ -72,6 +77,7 @@ div.click-jacking-button{
 }
 
 input.button{
+	border-radius: 5px;
 	font-weight: bold;
 	background-color: #ccccff;
 	border-color: black;
@@ -120,12 +126,14 @@ table.tutorial tr td{
 	border: 1px solid black;
 	padding-left: 15px;
 	padding-right: 15px;
+	border-radius: 5px;
 }
 
 table.tutorial tr.tutorial-title td{
 	background-color: #ffffaa;
 	text-align: center;
 	font-weight: bold;
+	border-radius: 5px;
 }
 
 /* ------------------------------------------------- */
@@ -139,7 +147,8 @@ table.tutorial tr.tutorial-title td{
 	 border-color: #000000;
 	 border-style: groove;
 	 border-width: 1px;
-	 padding: 3px;	 
+	 padding: 3px;	
+	 border-radius: 5px;
  }
 
  *.report-details{
@@ -242,6 +251,7 @@ table tr td.form-header{
 	padding-left: 30px;
 	padding-right: 30px;
 	font-size: 18px;
+	border-radius: 5px;
 }
 
 /* ------------------------------------------------- */
@@ -285,6 +295,7 @@ table tr td.hint-header{
 	color: #990000;
 	padding-left: 30px;
 	padding-right: 30px;
+	border-radius: 5px;
 }
 
 table tr td.hint-body{
@@ -293,6 +304,7 @@ table tr td.hint-body{
 	border-style: solid;
 	padding-left: 30px;
 	padding-right: 30px;
+	border-radius: 5px;	
 }
 
 ul.hints li{

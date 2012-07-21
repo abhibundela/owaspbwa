@@ -41,7 +41,7 @@
 		}// end if
 	
     } catch (Exception $e) {
-		echo $CustomErrorHandler->FormatError($e, $query);
+		echo $CustomErrorHandler->FormatError($e, "Error attempting to set up page configuration");
     }// end try;
 ?>
 

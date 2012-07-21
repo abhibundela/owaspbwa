@@ -105,12 +105,10 @@
 						<option value="6C57C4B5-B341-4539-977B-7ACB9D42985A">Show All</option>
 						<?php
 							try {
-								$query  = "SELECT * FROM accounts";
-								$result = $conn->query($query);
-								if (!$result) {
-							    	throw (new Exception('Error executing query: '.$conn->error, $conn->errorno));
-							    }// end if							    
-							    while($row = $result->fetch_object()){
+								$lQueryString  = "SELECT * FROM accounts";
+								$lQueryResult = $MySQLHandler->executeQuery($lQueryString);
+								
+							    while($row = $lQueryResult->fetch_object()){
 
 									if(!$lEncodeOutput){
 										$lUsername = $row->username;
@@ -122,7 +120,7 @@
 									
 								}// end while
 							} catch (Exception $e) {
-								echo $CustomErrorHandler->FormatError($e, $query);
+								echo $CustomErrorHandler->FormatError($e, $lQueryString);
 							}// end try		
 						?>
 					</select>
@@ -143,7 +141,7 @@
 	if(isSet($_POST["view-someones-blog-php-submit-button"])){
 		try {
 
-			/* Note that $conn->real_escape_string is ok but not the best defense. Stored
+			/* Note that $MySQLHandler->escapeDangerousCharacters is ok but not the best defense. Stored
 			 * Procedures are a much more powerful defense, run much faster, can be
 			 * trapped in a schema, can run on the database, and can be called from
 			 * any number of web applications. Stored procs are the true anti-pwn.
@@ -151,7 +149,7 @@
 			 * but they are safe by default. Queries are vulnerable by default.
 			 */
 			if($lProtectAgainstSQLInjection){
-				$lAuthor = $conn->real_escape_string($_POST["author"]);
+				$lAuthor = $MySQLHandler->escapeDangerousCharacters($_POST["author"]);
 			}else{
 				$lAuthor = $_REQUEST["author"];
 			}// end if
@@ -163,22 +161,19 @@
 					$lAuthor = "%";
 				}// end if
 
-				$query  = "SELECT * FROM blogs_table WHERE
+				$lQueryString  = "SELECT * FROM blogs_table WHERE
 							blogger_name like '{$lAuthor}'
 							ORDER BY date DESC
 							LIMIT 0 , 100";
-							
-				$result = $conn->query($query);
-				if (!$result) {
-			    	throw (new Exception('Error executing query: '.$conn->error, $conn->errorno));
-			    }// end if
+
+				$lQueryResult = $MySQLHandler->executeQuery($lQueryString);
 
 				/* Report Header */
 				echo '<div>&nbsp;</div>';
 				echo '<table border="1px" width="90%" class="main-table-frame">';
 			    echo '
 			    	<tr class="report-header">
-			    		<td colspan="4">'.$result->num_rows.' Current Blog Entries</td>
+			    		<td colspan="4">'.$lQueryResult->num_rows.' Current Blog Entries</td>
 			    	</tr>
 			    	<tr class="report-header">
 			    		<td>&nbsp;</td>
@@ -188,7 +183,7 @@
 				    </tr>';
 
 			    $lRowNumber = 0;
-			    while($row = $result->fetch_object()){
+			    while($row = $lQueryResult->fetch_object()){
 			    	
 			    	$lRowNumber++;
 			    			    	
@@ -232,7 +227,7 @@
 			}// end if ($lAuthor == "53241E83-76EC-4920-AD6D-503DD2A6BA68" || strlen($lAuthor) == 0)		
 
 		} catch (Exception $e) {
-			echo $CustomErrorHandler->FormatError($e, $query);
+			echo $CustomErrorHandler->FormatError($e, $lQueryString);
 		}// end try		
 	}// end if isSet($_POST["view-someones-blog-php-submit-button"])
 ?>

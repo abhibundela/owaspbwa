@@ -16,7 +16,7 @@
 		   		case "0": // This code is insecure
 		   		case "1": // This code is insecure
 		   			// DO NOTHING: This is equivalent to using client side security		
-					$query = "INSERT INTO accounts (username, password, mysignature) VALUES ('" . 
+					$lQueryString = "INSERT INTO accounts (username, password, mysignature) VALUES ('" . 
 					$username ."', '" . 
 					$password . "', '" . 
 					$mysignature .
@@ -52,10 +52,10 @@
 		  			 * Concerning SQL Injection, use parameterized stored procedures. Parameterized
 		  			 * queries is not good enough. You cannot use least privilege with queries.
 		  			 */
-		   			$query = "INSERT INTO accounts (username, password, mysignature) VALUES ('" . 
-					$conn->real_escape_string($username)  ."', '" . 
-					$conn->real_escape_string($password) . "', '" . 
-					$conn->real_escape_string($mysignature) .
+		   			$lQueryString = "INSERT INTO accounts (username, password, mysignature) VALUES ('" . 
+						$MySQLHandler->escapeDangerousCharacters($username)  ."', '" . 
+						$MySQLHandler->escapeDangerousCharacters($password) . "', '" . 
+						$MySQLHandler->escapeDangerousCharacters($mysignature) .
 					"')";
 					$lUsernameText = $Encoder->encodeForHTML($username);
 		   		break;
@@ -74,17 +74,15 @@
 		   	}// end if
 				
 		   	if (!$lValidationFailed){
-				$result = $conn->query($query);
-				if ($conn->affected_rows == -1) {
-			    	throw (new Exception('Error inserting records: '.$conn->error, $conn->errorno));
-			    }// end if
-				echo '<h2 class="success-message">Account created for ' . $lUsernameText .'. '.$conn->affected_rows.' rows inserted.</h2>';
+				$lQueryResult = $MySQLHandler->executeQuery($lQueryString);
+
+				echo '<h2 class="success-message">Account created for ' . $lUsernameText .'. '.$MySQLHandler->affected_rows().' rows inserted.</h2>';
 				$LogHandler->writeToLog("Added account for: " . $username);
 		   	}// end if (!$lValidationFailed)
 			
 		} catch (Exception $e) {
-			$LogHandler->writeToLog("Failed to add account for: " . $username);
-			echo $CustomErrorHandler->FormatError($e, $query);
+			echo $CustomErrorHandler->FormatError($e, $lQueryString);
+			$LogHandler->writeToLog("Failed to add account for: " . $username);			
 		}// end try
 			
 	}// end if (isset($_POST["register-php-submit-button"])){

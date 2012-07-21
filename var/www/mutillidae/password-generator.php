@@ -89,7 +89,7 @@
 			<tr><td></td></tr>
 			<tr>
 				<td style="text-align:center;">
-					<input name="password-generator-php-submit-button" class="button" type="button" value="Generate" onclick="onSubmitOfGeneratorForm(this.form);" />
+					<input name="password-generator-php-submit-button" class="button" type="button" value="Generate Password" onclick="onSubmitOfGeneratorForm(this.form);" />
 				</td>
 			</tr>
 			<tr><td></td></tr>
