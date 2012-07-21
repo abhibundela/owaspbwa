@@ -87,7 +87,8 @@
 	// Begin hints section
 	if ($_SESSION["showhints"]) {
 		echo '
-			<table>
+		<br/>
+		<table>
 				<tr><td class="hint-header">Hints</td></tr>
 				<tr>
 					<td class="hint-body">

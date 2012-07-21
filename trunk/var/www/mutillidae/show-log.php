@@ -47,12 +47,14 @@
    	}// end switch		
 
    	if(isset($_GET["deleteLogs"])){
-		$query = "TRUNCATE TABLE hitlog;";
+   		
+		try{
+			$lQueryString = "TRUNCATE TABLE hitlog";
+			$lQueryResult = $MySQLHandler->executeQuery($lQueryString);
+		} catch (Exception $e) {
+			echo $CustomErrorHandler->FormatError($e, $lQueryString);
+		}// end try
 
-		$result = $conn->query($query);
-		if (!$result) {
-	    	throw (new Exception('Error executing query: '.$conn->error, $conn->errorno));
-	    }// end if	
 	}// end if isset
 ?>
 
@@ -78,22 +80,19 @@
 
 <?php
 	try{// to draw table
-		$query = "SELECT * FROM `hitlog` ORDER BY date DESC";
+		$lQueryString = "SELECT * FROM `hitlog` ORDER BY date DESC";
 	    
 		if ($lLimitOutput){
-	    	$query .= " LIMIT 20";
+	    	$lQueryString .= " LIMIT 20";
 	    }// end if
 		
-		$result = $conn->query($query);
-		if (!$result) {
-	    	throw (new Exception('Error executing query: '.$conn->error, $conn->errorno));
-	    }// end if
-
+		$lQueryResult = $MySQLHandler->executeQuery($lQueryString);
+					    
 		// we have rows. Begin drawing output.
 		echo '<table border="1px" width="100%" class="main-table-frame">';
 		echo '<tr class="report-header">';
 		echo '	<td colspan="10">';		
-		echo '		<span><img width="32px" height="32px" src="./images/information-icon-64-64.png" style="vertical-align:middle;" />'.$result->num_rows.' log records found<span>';
+		echo '		<span><img width="32px" height="32px" src="./images/information-icon-64-64.png" style="vertical-align:middle;" />'.$lQueryResult->num_rows.' log records found<span>';
 		echo '		<span title="Click to refresh log file" onclick="document.location.reload(true);" style="cursor: pointer;margin-left:35px;margin-right:35px;white-space:nowrap;font-weight:bold;">';
 		echo '			<img width="32px" height="32px" src="./images/refresh-button-48px-by-48px.png" style="vertical-align:middle;" />';
 		echo '			Refresh Logs';
@@ -117,7 +116,7 @@
 	    }// end if
 
 	    $lRowNumber = 0;
-	    while($row = $result->fetch_object()){
+	    while($row = $lQueryResult->fetch_object()){
 	    	$lRowNumber++;
 			
 			if(!$lEncodeOutput){
@@ -144,7 +143,7 @@
 		}//end while $row
 		echo "</table>";
 	} catch (Exception $e) {
-		echo $CustomErrorHandler->FormatError($e, "Error writing rows.");
+		echo $CustomErrorHandler->FormatError($e, "Error writing log table rows.".$lQueryString);
 	}// end try;
 ?>
 

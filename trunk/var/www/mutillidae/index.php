@@ -158,12 +158,6 @@
 	if ($_SESSION["showhints"] != $BubbleHintHandler->getHintLevel()){
 		$BubbleHintHandler->setHintLevel($_SESSION["showhints"]);
 	}//end if
-
-    /* ------------------------------------------
-     * INITIALIZE DATABASE
-     * ------------------------------------------ */
-    require_once 'config.inc';
-    require_once 'opendb.inc';
 	
 	/* ------------------------------------------
      * PROCESS REQUESTS
@@ -194,18 +188,16 @@
 			 * 	Lack of custom error page, Application Exception
 			 */
    			if (isset($_COOKIE['uid'])){
-			    try {	    	
-					$query  = "SELECT * FROM accounts WHERE cid='" . $_COOKIE['uid'] . "'";
-					$result = $conn->query($query);
-					if (!$result) {
-				    	throw (new Exception('Error executing query: '.$conn->error, $conn->errorno));
-				    }// end if
+ 
+				try{
+					$lQueryString = "SELECT * FROM accounts WHERE cid='" . $_COOKIE['uid'] . "'";
+					$lQueryResult = $MySQLHandler->executeQuery($lQueryString);
 
 				    // Switch to whatever cookie the user sent to simulate sites
 				    // that use client-side authorization tokens. Auth information
 				    // should never be in cookies.
-				    if ($result->num_rows > 0) {
-					    $row = $result->fetch_object();
+				    if ($lQueryResult->num_rows > 0) {
+					    $row = $lQueryResult->fetch_object();
 						$_SESSION['loggedin'] = 'True';
 						$_SESSION['uid'] = $row->cid;
 						$_SESSION['logged_in_user'] = $row->username;
@@ -215,7 +207,7 @@
 			    	}// end if ($result->num_rows > 0)
 				    
 				} catch (Exception $e) {
-			   		echo $CustomErrorHandler->FormatError($e, $query); 
+			   		echo $CustomErrorHandler->FormatError($e, $lQueryString); 
 			   	}// end try
    			}else{
 	   			/* 
@@ -565,7 +557,7 @@
     /* ------------------------------------------
      * CLOSE DATABASE CONNECTION
      * ------------------------------------------ */
-    require_once ("closedb.inc");
+    $MySQLHandler->closeDatabaseConnection();
     
    	require_once ("./includes/create-html-5-web-storage-target.inc");	
    	require_once ("./includes/bubble-hints.inc");

@@ -68,7 +68,7 @@
 		<a href="http://www.irongeek.com/i.php?page=security/mutillidae-deliberately-vulnerable-php-owasp-top-10" target="_blank">
 			Mutillidae
 		</a> 
-		can downloaded from <a href="http://irongeek.com" target="_blank">Irongeek's Site</a>
+		can downloaded from <a href="http://sourceforge.net/projects/mutillidae/" target="_blank">Sourceforge</a>
 	</div>
 </body>
 </html>

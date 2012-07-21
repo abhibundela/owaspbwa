@@ -90,15 +90,15 @@
 			$lProtectAgainstCSRF = TRUE;
 			$lCSRFTokenStrength = "HIGH";
 			
-			/* Note that $conn->real_escape_string is ok but not the best defense. Stored
+			/* Note that $MySQLHandler->escapeDangerousCharacters is ok but not the best defense. Stored
 			 * Procedures are a much more powerful defense, run much faster, can be
 			 * trapped in a schema, can run on the database, and can be called from
 			 * any number of web applications. Stored procs are the true anti-pwn.
 			 * There are 3 ways that stored procs can be made vulenrable by developers,
 			 * but they are safe by default. Queries are vulnerable by default.
 			 */
-			$lLoggedInUser = $conn->real_escape_string($logged_in_user);
-			
+			$lLoggedInUser = $MySQLHandler->escapeDangerousCharacters($logged_in_user);
+
 			/* 
 			 * There is no security in JS validation. You must validate on the server.
 			 * JS is easy to bypass.
@@ -159,7 +159,7 @@
 			// Grab inputs
 			if ($lProtectAgainstSQLInjection){
 				// This might prevent SQL injection on the insert.
-				$lBlogEntry = $conn->real_escape_string($_POST["blog_entry"]);
+				$lBlogEntry = $MySQLHandler->escapeDangerousCharacters($_POST["blog_entry"]);
 			}else{
 				$lBlogEntry = $_REQUEST["blog_entry"];
 			}// end if

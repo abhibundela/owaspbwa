@@ -69,14 +69,11 @@
 	//--------------------------------------------
 	//Get the tools to populate the drop down box
 	//--------------------------------------------
-	try {
-		$query  = "SELECT tool_id, tool_name FROM pen_test_tools;";
-		$qPenTestToolOptions = $conn->query($query);
-		if (!$qPenTestToolOptions) {
-	    	throw (new Exception('Error executing query: '.$conn->error, $conn->errorno));
-	    }// end if   
+	try{
+		$lQueryString  = "SELECT tool_id, tool_name FROM pen_test_tools;";
+		$qPenTestToolOptions = $MySQLHandler->executeQuery($lQueryString);
 	} catch (Exception $e) {
-		echo $CustomErrorHandler->FormatError($e, $query);
+		echo $CustomErrorHandler->FormatError($e, $lQueryString);
 	}// end try
 	
 	//--------------------------------------------------------
@@ -94,7 +91,7 @@
 		if(!empty($lPostedButton)){
 			
 			if ($lProtectAgainstSQLInjection) {
-				$lPostedToolID = $conn->real_escape_string($lPostedToolID);
+				$lPostedToolID = $MySQLHandler->escapeDangerousCharacters($lPostedToolID);
 			}//end if		
 			
 			if ($lPostedToolID == "0923ac83-8b50-4eda-ad81-f1aac6168c5c" || strlen($lPostedToolID) == 0){
@@ -108,15 +105,15 @@
 					$lWhereClause = ";";
 				}// end if
 				
-				$query  = "SELECT tool_id, tool_name, phase_to_use, tool_type, comment 
+				try{
+					$lQueryString  = "SELECT tool_id, tool_name, phase_to_use, tool_type, comment 
 						   FROM pen_test_tools" . 
-						   $lWhereClause;
-
-				$qPenTestToolResults = $conn->query($query);
-				if (!$qPenTestToolResults) {
-			    	throw (new Exception('Error executing query: '.$conn->error, $conn->errorno));
-			    }// end if there are no results
-
+						   $lWhereClause;			
+					$qPenTestToolResults = $MySQLHandler->executeQuery($lQueryString);
+				} catch (Exception $e) {
+					echo $CustomErrorHandler->FormatError($e, $lQueryString);
+				}// end try
+			    
 				try {
 					$lPenTestToolsDetails = "";
 					$lPenTestToolsJSON = 
@@ -131,7 +128,7 @@
 					
 					//print $lPenTestToolsJSON;
 				} catch (Exception $e) {
-    				throw (new Exception('Error working with query results: '.$conn->error, $conn->errorno));
+    				throw (new Exception("Error working with query results"));
 				}// end try			    
 			    
 			}// end if user didnt pick anything

@@ -13,7 +13,7 @@
 				$username = $_REQUEST["username"];
 				$password = $_REQUEST["password"];
 	   			
-	   			$query = 	"SELECT * FROM accounts WHERE username='". 
+	   			$lQueryString = 	"SELECT * FROM accounts WHERE username='". 
 			   				$username.
 			   				"' AND password='". 
 			   				$password.
@@ -33,24 +33,20 @@
 	  			 * Note: While escaping works ok in some case, it is not the best defense.
 	  			 * Using stored procedures is a much stronger defense.
 	  			 */
-	   			$query  = 	"SELECT * FROM accounts WHERE username='". 
-				   			$conn->real_escape_string($username) .
+	   			$lQueryString  = 	"SELECT * FROM accounts WHERE username='". 
+				   			$MySQLHandler->escapeDangerousCharacters($username) .
 				   			"' AND password='". 
-				   			$conn->real_escape_string($password). 
+				   			$MySQLHandler->escapeDangerousCharacters($password). 
 				   			"'";
 	   			$lProtectCookies = TRUE;
 	   		break;
 	   	}// end switch
 
 		$LogHandler->writeToLog("Attempt to log in by user: " . $username);
-	   	
-		$result = $conn->query($query);
-		if (!$result) {
-	    	throw (new Exception('Error executing query: '.$conn->error, $conn->errorno));
-	    }// end if
-
-	    if ($result->num_rows > 0) {
-		    $row = $result->fetch_object();
+		
+		$lQueryResult = $MySQLHandler->executeQuery($lQueryString);
+	    if ($lQueryResult->num_rows > 0) {
+		    $row = $lQueryResult->fetch_object();
 			$failedloginflag=0;
 			$_SESSION['loggedin'] = 'True';
 			$_SESSION['uid'] = $row->cid;
@@ -91,9 +87,9 @@
 		} else {
 			$LogHandler->writeToLog("Failed login for user: " . $row->username);
 			$failedloginflag=1;
-    	}// end if ($result->num_rows > 0)
+    	}// end if ($lQueryResult->num_rows > 0)
 	    
 	} catch (Exception $e) {
-		echo $CustomErrorHandler->FormatError($e, $query);
+		echo $CustomErrorHandler->FormatError($e, $lQueryString);
 	}// end try
 ?>

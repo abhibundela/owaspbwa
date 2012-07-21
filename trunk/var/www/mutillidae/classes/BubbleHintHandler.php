@@ -90,7 +90,7 @@ class BubbleHintHandler {
 		$this->mHintLevel = $pHintLevel;
 	}// end function
 
-	public function getHintLevel($pHintLevel){
+	public function getHintLevel(){
 		return $this->mHintLevel;
 	}// end function
 	

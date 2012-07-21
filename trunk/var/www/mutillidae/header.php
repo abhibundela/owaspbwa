@@ -132,7 +132,7 @@
 				<tr>
 					<td style="text-align:center;">
 						<span style="text-align:center; font-weight: bold; font-size:30px; text-align: center;">
-						<img style="vertical-align: middle; margin-right: 25px;" border="0px" width="75px" height="50px" align="top" src="./images/coykillericon.png"/>
+						<img style="vertical-align: middle; margin-right: 10px;" border="0px" width="50px" height="40px" align="top" src="./images/coykillericon.png"/>
 							NOWASP (Mutillidae): Hack Like You Mean It
 						</span>
 					</td>
@@ -270,6 +270,12 @@
 									</ul>
 								</li>
 								<li>
+									<a href="">Frame Source Injection</a>
+									<ul>
+										<li><a href="index.php?page=document-viewer.php&PathToDocument=documentation/how-to-access-Mutillidae-over-Virtual-Box-network.php">Document Viewer</a></li>
+									</ul>
+								</li>
+								<li>
 									<a href="">Command Injection</a>
 									<ul>
 										<li><a href="./index.php?page=dns-lookup.php">DNS Lookup</a></li>
@@ -291,6 +297,7 @@
 									<a href="">HTTP Parameter Pollution</a>
 									<ul>
 										<li><a href="./index.php?page=user-poll.php">Poll Question</a></li>
+										<li><a href="index.php?page=document-viewer.php&PathToDocument=documentation/how-to-access-Mutillidae-over-Virtual-Box-network.php">Document Viewer</a></li>
 									</ul>
 								</li>
 								<li>
@@ -320,6 +327,7 @@
 										<li><a href="./index.php?page=set-background-color.php">Set Background Color</a></li>
 										<li><a href="./index.php?page=html5-storage.php">HTML5 Storage</a></li>
 										<li><a href="./index.php?page=capture-data.php">Capture Data Page</a></li>
+										<li><a href="index.php?page=document-viewer.php&PathToDocument=documentation/how-to-access-Mutillidae-over-Virtual-Box-network.php">Document Viewer</a></li>
 									</ul>
 								</li>
 								<li>
@@ -430,14 +438,14 @@
 							<ul>
 								<li><a href="index.php?page=source-viewer.php">Source Viewer</a></li>
 								<li><a href="index.php?page=secret-administrative-pages.php">"Secret" Administrative Pages</a></li>
-								<li><a href="http://en.wikipedia.org/wiki/Robots_exclusion_standard">Robots.txt</a></li>
+								<li><a href="index.php?page=robots-txt.php">Robots.txt</a></li>
 							</ul>
 						</li>
 						<li>
 							<a href="http://www.owasp.org/index.php/Top_10_2010-A9" target="_blank">A9 - Insufficient Transport Layer Protection</a>
 							<ul>
-								<li><a href="?page=login.php">Login</a></li>
-								<li><a href="?page=user-info.php">User Info</a></li>
+								<li><a href="index.php?page=login.php">Login</a></li>
+								<li><a href="index.php?page=user-info.php">User Info</a></li>
 							</ul>
 						</li>
 						<li>

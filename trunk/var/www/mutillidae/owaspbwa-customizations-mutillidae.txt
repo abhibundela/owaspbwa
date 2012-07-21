@@ -12,6 +12,12 @@ Files edited to run Mutillidae on OWASPBWA
   o Added non-admin named 'user' with password 'user'
 
 
+- Edited \includes\sql-injection-tutorial.inc
+  o Edited database name (from owasp10 to mutillidae)
+
+- Edited \documentation\Mutillidae-Test-Scripts.txt
+  o Edited database name (from owasp10 to mutillidae)
+
 
 How to update Mutillidae:
 
