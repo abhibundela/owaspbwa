@@ -1,4 +1,0 @@
-A lot like vicnum only based on the computer coming up with a word, not a number. Different encoding options as well.
-Set up is similiar to vicnum , only the database is called jotto and the guess is char(5). And of  course you need to customize apache to make the scripts work and directories indexable ... 
-
-Much more related verbage in the vicnum manual.
