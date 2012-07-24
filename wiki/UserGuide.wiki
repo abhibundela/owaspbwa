@@ -20,7 +20,7 @@ Applications designed for learning which guide the user to specific, intentional
   * [http://www.owasp.org/index.php/Category:OWASP_WebGoat_Project OWASP WebGoat] version 5.4+SVN (Java)
   * [https://www.owasp.org/index.php/Category:OWASP_WebGoat.NET OWASP WebGoat.NET] version 2012-07-05+GIT
   * [https://www.owasp.org/index.php/ESAPI_Swingset OWASP ESAPI Java SwingSet Interactive] version 1.0.1+SVN
-  * [http://www.irongeek.com/i.php?page=security/mutillidae-deliberately-vulnerable-php-owasp-top-10 Mutillidae] version 2.2.2 (PHP)
+  * [http://www.irongeek.com/i.php?page=security/mutillidae-deliberately-vulnerable-php-owasp-top-10 Mutillidae] version 2.2.3 (PHP)
   * [http://www.dvwa.co.uk/ Damn Vulnerable Web Application] version 1.8+SVN (PHP)
   * [http://www.gh0s7.net/ Ghost] (PHP)
 
