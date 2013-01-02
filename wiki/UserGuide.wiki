@@ -53,7 +53,7 @@ Open source applications with one or more known security issues.
 Applications designed for testing automated tools like web application security scanners. 
   * [http://code.google.com/p/zaproxy/ OWASP ZAP-WAVE] version 0.2+SVN (Java JSP)
   * [http://code.google.com/p/wavsep/ WAVSEP] version 1.2 (Java JSP)
-  * [http://code.google.com/p/wivet/ WIVET] version 3+SVN (Java JSP)
+  * [http://code.google.com/p/wivet/ WIVET] version 3+SVN (PHP)
 
 == Demonstration Pages / Small Applications ==
 Little applications or pages with intentional vulnerabilities to demonstrate specific concepts.
