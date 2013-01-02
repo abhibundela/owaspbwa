@@ -68,4 +68,14 @@
 #    <Directory /var/www/redmine>
 #        Options -MultiViews
 #    </Directory>
+
+# Begin changes for cyclone_app installation
+
+   RailsBaseURI /cyclone
+   RailsEnv development
+   <Directory /var/www/cyclone>
+      Options -MultiViews
+   </Directory>
+# end changes for cyclone_app installation
+
 </VirtualHost>
