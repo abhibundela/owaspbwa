@@ -41,6 +41,10 @@ echo "---- Updating from WIVET SVN Repo ----"
 svn update /owaspbwa/wivet-svn
 if [ "$?" -ne 0 ] ; then echo "SVN Update from WIVET SVN Repo Failed!"; exit 1; fi 
 
+echo "---- Updating from Mutillidae SVN Repo ----"
+svn update /owaspbwa/mutillidae-svn
+if [ "$?" -ne 0 ] ; then echo "SVN Update from Mutillidae SVN Repo Failed!"; exit 1; fi 
+
 echo "---- Starting Tomcat for possible deployment of updates to WebGoat (Java) and the ESAPI SwingSet ----"
 /usr/sbin/service tomcat6 start
 
@@ -87,6 +91,40 @@ cd /owaspbwa/WackoPicko-relative_urls-git
 git pull 
 if [ "$?" -ne 0 ] ; then echo "GIT Update from WackoPicko GIT Repo Failed!"; exit 1; fi 
 cd - # return to previous directory
+
+
+# update the five Spiderlabs apps from Git
+
+echo "---- Updating from CryptOMG GIT Repo ----"
+cd /owaspbwa/CryptOMG-git
+git pull 
+if [ "$?" -ne 0 ] ; then echo "GIT Update from CryptOMG GIT Repo Failed!"; exit 1; fi 
+cd - # return to previous directory
+
+echo "---- Updating from ShelLOL GIT Repo ----"
+cd /owaspbwa/ShelLOL-git
+git pull 
+if [ "$?" -ne 0 ] ; then echo "GIT Update from ShelLOL GIT Repo Failed!"; exit 1; fi 
+cd - # return to previous directory
+
+echo "---- Updating from SQLol GIT Repo ----"
+cd /owaspbwa/SQLol-git
+git pull 
+if [ "$?" -ne 0 ] ; then echo "GIT Update from SQLol GIT Repo Failed!"; exit 1; fi 
+cd - # return to previous directory
+
+echo "---- Updating from XMLmao GIT Repo ----"
+cd /owaspbwa/XMLmao-git
+git pull 
+if [ "$?" -ne 0 ] ; then echo "GIT Update from XMLmao GIT Repo Failed!"; exit 1; fi 
+cd - # return to previous directory
+
+echo "---- Updating from XSSmh GIT Repo ----"
+cd /owaspbwa/XSSmh-git
+git pull 
+if [ "$?" -ne 0 ] ; then echo "GIT Update from XSSmh GIT Repo Failed!"; exit 1; fi 
+cd - # return to previous directory
+
 
 echo "---- Fixing file permissions and restarting services ----"
 #when we update the scripts in /usr/local/bin, it may break the permissions
