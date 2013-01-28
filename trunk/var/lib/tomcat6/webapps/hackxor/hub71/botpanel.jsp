@@ -139,7 +139,7 @@ if(session.getAttribute("ip").equals(request.getHeader("X-Forwarded-For"))){
 			else if(!md5(oldpass).equals(getSetting("passhash", user, con)))
 			    out.print("Password Incorrect");
 			else{
-			    changeSetting("passhash", user, newpass1, con);
+			    changeSetting("passhash", user, md5(newpass1), con);
 			    emailMessage = "Your password has been changed to " + newpass1;
 			    out.print("<br>Password sucessfully updated<br>");
 			    }
