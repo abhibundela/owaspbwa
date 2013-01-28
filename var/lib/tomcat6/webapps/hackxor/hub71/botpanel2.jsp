@@ -67,7 +67,7 @@ if(session.getAttribute("ip").equals(request.getHeader("X-Forwarded-For"))){
 			else if(!md5(oldpass).equals(getSetting("passhash", user, con)))
 			    out.print("Password Incorrect<br>");
 			else{
-			    changeSetting("passhash", user, newpass1, con);
+			    changeSetting("passhash", user, md5(newpass1), con);
 			    out.print("<br>Password sucessfully updated<br>");
 			    }
 			}
