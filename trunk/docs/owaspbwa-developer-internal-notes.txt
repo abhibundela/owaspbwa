@@ -13,3 +13,6 @@ After upgrading the Ubuntu OS, prevent "tying" VM to a specific MAC address, wit
 
 -----------------------------------------------------------------------
 
+find -L /var/www/mutillidae -name \*.php -type f -exec sed -i "s:'/includes/:'/mutillidae/includes/:g" {} \;
+
+

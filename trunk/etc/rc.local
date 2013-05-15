@@ -14,6 +14,10 @@
 # start gruyere (runs on port 8008)
 python /owaspbwa/gruyere/gruyere.py &
 
+# start owasp 1-liners (runs on port 8081)
+cd /owaspbwa/owasp-1-liner-git
+/usr/bin/gradle -b build-nossl.gradle jettyRun &
+
 # display some info to the user
 
 /usr/local/bin/rc.local-owaspbwa-info.sh > /dev/tty1 # output to first virtual console
