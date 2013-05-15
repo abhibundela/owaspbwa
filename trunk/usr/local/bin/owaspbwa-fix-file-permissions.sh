@@ -1,7 +1,11 @@
 #!/bin/sh
 owaspbwa-services-stop.sh
 echo ".: Fixing Web Permissions :."
-chown -R www-data:www-data /owaspbwa/owaspbwa-svn/var/www
+
+# use find -L instead of chown -R to follow symlinks in .../var/www
+#chown -R www-data:www-data /owaspbwa/owaspbwa-svn/var/www
+find -L /owaspbwa/owaspbwa-svn/var/www -exec chown www-data:www-data '{}' \;
+
 chown -R www-data:www-data /owaspbwa/owaspbwa-svn/var/lib/awstats
 echo ".: Fixing MySQL Permissions:."
 chown -R mysql:mysql /owaspbwa/owaspbwa-svn/var/lib/mysql
