@@ -29,9 +29,10 @@ echo "---- Updating from OWASP ZAP WAVE SVN Repo ----"
 svn update /owaspbwa/owasp-zap-wave-svn
 if [ "$?" -ne 0 ] ; then echo "SVN Update from OWASP ZAP WAVE SVN Repo Failed!"; exit 1; fi 
 
-echo "---- Updating from ModSecurity Core Rule Set SVN Repo ----"
-svn update /owaspbwa/modsecurity-crs-svn
-if [ "$?" -ne 0 ] ; then echo "SVN Update from ModSecurity Core Rule Set SVN Repo Failed!"; exit 1; fi 
+# The ModSecurity Core Rule Set has moved to GitHub, so we no longer update it here
+#echo "---- Updating from ModSecurity Core Rule Set SVN Repo ----"
+#svn update /owaspbwa/modsecurity-crs-svn
+#if [ "$?" -ne 0 ] ; then echo "SVN Update from ModSecurity Core Rule Set SVN Repo Failed!"; exit 1; fi 
 
 echo "---- Updating from BodgeIt SVN Repo ----"
 svn update /owaspbwa/bodgeit-svn
@@ -125,6 +126,11 @@ git pull
 if [ "$?" -ne 0 ] ; then echo "GIT Update from XSSmh GIT Repo Failed!"; exit 1; fi 
 cd - # return to previous directory
 
+echo "---- Updating from ModSecurity Core Rule Set GIT Repo ----"
+cd /owaspbwa/owasp-modsecurity-crs-git
+git pull 
+if [ "$?" -ne 0 ] ; then echo "GIT Update from ModSecurity Core Rule Set GIT Repo Failed!"; exit 1; fi 
+cd - # return to previous directory
 
 echo "---- Fixing file permissions and restarting services ----"
 #when we update the scripts in /usr/local/bin, it may break the permissions
