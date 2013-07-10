@@ -60,6 +60,7 @@
     #Added for redmine
 #    RailsEnv production
 #    RailsBaseURI /redmine
+#    RailsEnv development
 #    PassengerDefaultUser www-data
     #PassengerRoot /usr/local/lib/ruby/gems/1.8/gems/passenger-3.0.2
 #    PassengerRuby /usr/bin/ruby
@@ -77,5 +78,16 @@
       Options -MultiViews
    </Directory>
 # end changes for cyclone_app installation
+
+# Begin changes for RailsGoat installation
+
+   RailsBaseURI /railsgoat
+   RailsEnv development
+   PassengerRuby /usr/local/rvm/gems/ruby-1.9.3-p286\@railsgoat/bin/ruby
+   #PassengerAppRoot /owaspbwa/railsgoat-git
+   <Directory /var/www/railsgoat>
+      Options -MultiViews
+   </Directory>
+# end changes for RailsGoat installation
 
 </VirtualHost>

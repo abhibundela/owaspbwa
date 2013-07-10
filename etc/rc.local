@@ -18,6 +18,13 @@ python /owaspbwa/gruyere/gruyere.py &
 cd /owaspbwa/owasp-1-liner-git
 /usr/bin/gradle -b build-nossl.gradle jettyRun &
 
+# start OWASP RailsGoat (runs on port 3000)
+# NOTE - Did not get this to work, but now we run that application
+#   through Apache anyway so we don't need to do this.
+#cd /owaspbwa/railsgoat-git
+#export HOME=/root 
+#/usr/local/rvm/rubies/ruby-1.9.3-p286/bin/ruby /usr/local/rvm/gems/ruby-1.9.3-p286/bin/rails s -P /owaspbwa/railsgoat-git/tmp/pids/server.pid -c /owaspbwa/railsgoat-git/config.ru -d > /railgoat-stdout.txt 2> /railsgoat-stderr.txt
+
 # display some info to the user
 
 /usr/local/bin/rc.local-owaspbwa-info.sh > /dev/tty1 # output to first virtual console
