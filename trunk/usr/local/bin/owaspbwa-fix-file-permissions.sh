@@ -6,6 +6,9 @@ echo ".: Fixing Web Permissions :."
 #chown -R www-data:www-data /owaspbwa/owaspbwa-svn/var/www
 find -L /owaspbwa/owaspbwa-svn/var/www -exec chown www-data:www-data '{}' \;
 
+chown -R www-data:www-data /owaspbwa/railsgoat-git/
+chown -R www-data:www-data /owaspbwa/bwa_cyclone_transfers-git/
+
 chown -R www-data:www-data /owaspbwa/owaspbwa-svn/var/lib/awstats
 echo ".: Fixing MySQL Permissions:."
 chown -R mysql:mysql /owaspbwa/owaspbwa-svn/var/lib/mysql

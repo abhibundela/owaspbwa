@@ -132,6 +132,12 @@ git pull
 if [ "$?" -ne 0 ] ; then echo "GIT Update from ModSecurity Core Rule Set GIT Repo Failed!"; exit 1; fi 
 cd - # return to previous directory
 
+echo "---- Updating from OWASP RailsGoat GIT Repo ----"
+cd /owaspbwa/railsgoat-git
+git pull 
+if [ "$?" -ne 0 ] ; then echo "GIT Update from OWASP RailsGoat GIT Repo Failed!"; exit 1; fi 
+cd - # return to previous directory
+
 echo "---- Fixing file permissions and restarting services ----"
 #when we update the scripts in /usr/local/bin, it may break the permissions
 chmod +x /owaspbwa/owaspbwa-svn/usr/local/bin/*.sh
