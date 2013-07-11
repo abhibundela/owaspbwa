@@ -15,7 +15,7 @@ download the .7z archive if possible to save bandwidth (and time).
 you run it only on the "host only" or "NAT" network in the virtual machine 
 settings !!! 
 
-Version 1.1rc1 - 2013-07-10
+Version 1.1beta1 - 2013-07-10
 - Added new applications: OWASP 1-liner, OWASP RailsGoat, OWASP Bricks,
   SpiderLabs "Magical Code Injection Rainbow", Cyclone
 - Updated Mutillidae (name, version, and to use new SVN repository)
