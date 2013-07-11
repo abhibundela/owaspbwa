@@ -21,9 +21,10 @@ echo "---- Updating from OWASP BWA SVN Repo ----"
 svn update --accept theirs-full /owaspbwa/owaspbwa-svn
 if [ "$?" -ne 0 ] ; then echo "SVN Update from OWASP BWA SVN Repo Failed!"; exit 1; fi 
 
-echo "---- Updating from DVWA SVN Repo ----"
-svn update /owaspbwa/dvwa-svn
-if [ "$?" -ne 0 ] ; then echo "SVN Update from DVWA SVN Repo Failed!"; exit 1; fi 
+# DVWA has moved to Git
+#echo "---- Updating from DVWA SVN Repo ----"
+#svn update /owaspbwa/dvwa-svn
+#if [ "$?" -ne 0 ] ; then echo "SVN Update from DVWA SVN Repo Failed!"; exit 1; fi 
 
 echo "---- Updating from OWASP ZAP WAVE SVN Repo ----"
 svn update /owaspbwa/owasp-zap-wave-svn
@@ -127,7 +128,7 @@ if [ "$?" -ne 0 ] ; then echo "GIT Update from XSSmh GIT Repo Failed!"; exit 1; 
 cd - # return to previous directory
 
 echo "---- Updating from ModSecurity Core Rule Set GIT Repo ----"
-cd /owaspbwa/owasp-modsecurity-crs-git
+cd /owaspbwa/owasp-modsecurity-crs-git/
 git pull 
 if [ "$?" -ne 0 ] ; then echo "GIT Update from ModSecurity Core Rule Set GIT Repo Failed!"; exit 1; fi 
 cd - # return to previous directory
@@ -136,6 +137,12 @@ echo "---- Updating from OWASP RailsGoat GIT Repo ----"
 cd /owaspbwa/railsgoat-git
 git pull 
 if [ "$?" -ne 0 ] ; then echo "GIT Update from OWASP RailsGoat GIT Repo Failed!"; exit 1; fi 
+cd - # return to previous directory
+
+echo "---- Updating from DVWA GIT Repo ----"
+cd /owaspbwa/dvwa-git
+git pull 
+if [ "$?" -ne 0 ] ; then echo "GIT Update from DVWA GIT Repo Failed!"; exit 1; fi 
 cd - # return to previous directory
 
 echo "---- Fixing file permissions and restarting services ----"
