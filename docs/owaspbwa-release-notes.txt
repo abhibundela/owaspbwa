@@ -15,6 +15,20 @@ download the .7z archive if possible to save bandwidth (and time).
 you run it only on the "host only" or "NAT" network in the virtual machine 
 settings !!! 
 
+Version 1.1rc1 - 2013-07-10
+- Added new applications: OWASP 1-liner, OWASP RailsGoat, OWASP Bricks,
+  SpiderLabs "Magical Code Injection Rainbow", Cyclone
+- Updated Mutillidae (name, version, and to use new SVN repository)
+- Updated DVWA to new Git repository
+- Added SSL support to web server
+- Updated ModSecurity and updated Core Rule Set to current in Git
+- Known issues:
+  o ModSecurity CRS blocking does not work
+  o OWASP 1-liner application appears to have functional issues (it was
+    heavily modified to run on the VM through Apache)
+  o Other new applications have not been fully tested 
+  o User Guide has not been updated
+
 Version 1.0 - 2012-07-24
 - Added new application: WIVET (http://code.google.com/p/wivet/)
 - Updated WAVSEP, Mutillidae, Vicnum
