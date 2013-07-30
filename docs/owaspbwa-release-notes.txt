@@ -15,6 +15,12 @@ download the .7z archive if possible to save bandwidth (and time).
 you run it only on the "host only" or "NAT" network in the virtual machine 
 settings !!! 
 
+Version 1.1 - 2013-07-29
+- Updated Mutillidae and Cyclone 
+- Updated OWASP Bricks to use its SVN repository
+- Fixed ModSecurity CRS blocking and rebuild ModSecurity to include Lua 
+  support
+
 Version 1.1beta1 - 2013-07-10
 - Added new applications: OWASP 1-liner, OWASP RailsGoat, OWASP Bricks,
   SpiderLabs "Magical Code Injection Rainbow", Cyclone
