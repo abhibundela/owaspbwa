@@ -13,7 +13,7 @@ This is the user guide for the [https://www.owasp.org/ Open Web Application Secu
 
 This project includes open source applications of various types.  Below is is a list of the applications and versions currently on the VM.  A the version number ending in +SVN or +GIT indicates that the application is pulled directly to the VM from the application's public source code repository and the code running may be later than the version number indicated.
 
-The lists below are current as of the 1.0 release.
+The lists below are current as of the 1.1 release.
 
 == Training Applications ==
 Applications designed for learning which guide the user to specific, intentional vulnerabilities.
@@ -30,11 +30,13 @@ Applications designed for learning which guide the user to specific, intentional
 == Realistic, Intentionally Vulnerable Applications ==
 Applications that have a wide variety of intentional security vulnerabilities, but are designed to look and work like a real application.
   * [http://www.owasp.org/index.php/Category:OWASP_Vicnum_Project OWASP Vicnum] version 1.5 (PHP/Perl)
-  * [http://peruggia.sourceforge.net/ Peruggia] version 1.2 (PHP)
+  * [http://1-liner.org/ OWASP 1-Liner] (Java/JavaScript)
   * [http://google-gruyere.appspot.com/ Google Gruyere] version 2010-07-15 (Python)
   * [http://hackxor.sourceforge.net/cgi-bin/index.pl Hackxor] version 2011-04-06 (Java JSP)
   * [https://github.com/adamdoupe/WackoPicko WackoPicko] version 2011-07-12+GIT (PHP)
   * [http://code.google.com/p/bodgeit/ BodgeIt] version 1.3+SVN (Java JSP)
+  * [https://github.com/fridaygoldsmith/bwa_cyclone_transfers Cyclone Transfers] (Ruby on Rails)
+  * [http://peruggia.sourceforge.net/ Peruggia] version 1.2 (PHP)
 
 == Old Versions of Real Applications ==
 Open source applications with one or more known security issues.
