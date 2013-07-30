@@ -16,10 +16,15 @@ you run it only on the "host only" or "NAT" network in the virtual machine
 settings !!! 
 
 Version 1.1 - 2013-07-29
-- Updated Mutillidae and Cyclone 
-- Updated OWASP Bricks to use its SVN repository
+- Updated Mutillidae, Cyclone, and WAVSEP 
+- Updated OWASP Bricks and configured it to pull from SVN
 - Fixed ModSecurity CRS blocking and rebuild ModSecurity to include Lua 
   support
+- Increased RAM allocated to VM to 1Gb
+- Set Tomcat to run as root (to allow some traversal issues tested by 
+  WAVSEP)
+- Updated landing page for OWASP 1-Liner to reflect that the application
+  is not fully functional
 
 Version 1.1beta1 - 2013-07-10
 - Added new applications: OWASP 1-liner, OWASP RailsGoat, OWASP Bricks,
