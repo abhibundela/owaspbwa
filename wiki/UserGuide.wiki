@@ -90,7 +90,7 @@ The VM requires no installation.  Simply extract the files from the archive and 
 
 When the OWASP BWA VM is started, it will provide information on the console with the IP address of the VM and various ways to access and manage it.  
 
-It is highly recommended (though not required) that you add an entry into your 'hosts' file of your virtual host OS to resolve the hostname 'owaspbwa' with the IP address shown in the console on bootup.  The entry will look like below (replace 192.168.15.130 with the IP of your VM).  This document (and the vulnerability list at http://sourceforge.net/apps/trac/owaspbwa/report/1) assume that you have added this entry.
+It is highly recommended (though not required for most applications) that you add an entry into your 'hosts' file of your virtual host OS to resolve the hostname 'owaspbwa' with the IP address shown in the console on bootup.  The entry will look like below (replace 192.168.15.130 with the IP of your VM).  This document (and the vulnerability list at http://sourceforge.net/apps/trac/owaspbwa/report/1) assume that you have added this entry.
 
 {{{
 192.168.15.130	owaspbwa
