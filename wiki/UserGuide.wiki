@@ -23,9 +23,9 @@ Applications designed for learning which guide the user to specific, intentional
   * [http://www.irongeek.com/i.php?page=security/mutillidae-deliberately-vulnerable-php-owasp-top-10 OWASP Mutillidae II] version 2.5.16+SVN (PHP)
   * [http://railsgoat.cktricky.com/ OWASP RailsGoat] (Ruby on Rails)
   * [http://sechow.com/bricks/ OWASP Bricks] version 1.4+SVN (PHP)
-  * [http://www.dvwa.co.uk/ Damn Vulnerable Web Application] version 1.8+SVN (PHP)
+  * [http://www.dvwa.co.uk/ Damn Vulnerable Web Application] version 1.8+GIT(PHP)
   * [http://www.gh0s7.net/ Ghost] (PHP)
-  * [https://www.trustwave.com/spiderlabs/ Magical Code Injection Rainbow] version 2013-01-27+Git (PHP)
+  * [https://www.trustwave.com/spiderlabs/ Magical Code Injection Rainbow] version 2013-01-27+GIT (PHP)
 
 == Realistic, Intentionally Vulnerable Applications ==
 Applications that have a wide variety of intentional security vulnerabilities, but are designed to look and work like a real application.
