@@ -163,7 +163,10 @@ Logs can be accessed under the /var/log/ directory (shared at \\owaspbwa\var\log
 
 == Converting Virtual Machine Format ==
 
-The OWASP BWA developers believe that the VM should be easily convertible to run under virtualization software other than VMware products, but the process has not been attempted. 
+The OWASP BWA developers believe that the VM should be easily convertible to run under virtualization software other than VMware products.
+
+Users have reported the VM to work in the following virtualization software packages:
+  * [https://www.virtualbox.org/ VirtualBox]
 
 Users who attempt to use the VM in another virtualization software are encouraged to provide [#Getting_Involved feedback] on the process, whether or not it was successful.
 
