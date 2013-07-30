@@ -47,6 +47,10 @@ echo "---- Updating from Mutillidae SVN Repo ----"
 svn update /owaspbwa/mutillidae-svn
 if [ "$?" -ne 0 ] ; then echo "SVN Update from Mutillidae SVN Repo Failed!"; exit 1; fi 
 
+echo "---- Updating from OWASP Bricks SVN Repo ----"
+svn update /owaspbwa/owaspbricks-svn
+if [ "$?" -ne 0 ] ; then echo "SVN Update from OWASP Bricks SVN Repo Failed!"; exit 1; fi 
+
 echo "---- Starting Tomcat for possible deployment of updates to WebGoat (Java) and the ESAPI SwingSet ----"
 /usr/sbin/service tomcat6 start
 
@@ -143,6 +147,12 @@ echo "---- Updating from DVWA GIT Repo ----"
 cd /owaspbwa/dvwa-git
 git pull 
 if [ "$?" -ne 0 ] ; then echo "GIT Update from DVWA GIT Repo Failed!"; exit 1; fi 
+cd - # return to previous directory
+
+echo "---- Updating from Cyclone Transfers GIT Repo ----"
+cd /owaspbwa/bwa_cyclone_transfers-git
+git pull 
+if [ "$?" -ne 0 ] ; then echo "GIT Update from Cyclone Transfers GIT Repo Failed!"; exit 1; fi 
 cd - # return to previous directory
 
 echo "---- Fixing file permissions and restarting services ----"
