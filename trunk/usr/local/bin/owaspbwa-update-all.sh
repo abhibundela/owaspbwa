@@ -99,37 +99,37 @@ if [ "$?" -ne 0 ] ; then echo "GIT Update from WackoPicko GIT Repo Failed!"; exi
 cd - # return to previous directory
 
 
-# update the five Spiderlabs apps from Git
+# update the five Spiderlabs apps from Git (commented out since those apps have been moved to a new, unified Git repo that we are not yet using)
 
-echo "---- Updating from CryptOMG GIT Repo ----"
-cd /owaspbwa/CryptOMG-git
-git pull 
-if [ "$?" -ne 0 ] ; then echo "GIT Update from CryptOMG GIT Repo Failed!"; exit 1; fi 
-cd - # return to previous directory
+# echo "---- Updating from CryptOMG GIT Repo ----"
+# cd /owaspbwa/CryptOMG-git
+# git pull 
+# if [ "$?" -ne 0 ] ; then echo "GIT Update from CryptOMG GIT Repo Failed!"; exit 1; fi 
+# cd - # return to previous directory
 
-echo "---- Updating from ShelLOL GIT Repo ----"
-cd /owaspbwa/ShelLOL-git
-git pull 
-if [ "$?" -ne 0 ] ; then echo "GIT Update from ShelLOL GIT Repo Failed!"; exit 1; fi 
-cd - # return to previous directory
+# echo "---- Updating from ShelLOL GIT Repo ----"
+# cd /owaspbwa/ShelLOL-git
+# git pull 
+# if [ "$?" -ne 0 ] ; then echo "GIT Update from ShelLOL GIT Repo Failed!"; exit 1; fi 
+# cd - # return to previous directory
 
-echo "---- Updating from SQLol GIT Repo ----"
-cd /owaspbwa/SQLol-git
-git pull 
-if [ "$?" -ne 0 ] ; then echo "GIT Update from SQLol GIT Repo Failed!"; exit 1; fi 
-cd - # return to previous directory
+# echo "---- Updating from SQLol GIT Repo ----"
+# cd /owaspbwa/SQLol-git
+# git pull 
+# if [ "$?" -ne 0 ] ; then echo "GIT Update from SQLol GIT Repo Failed!"; exit 1; fi 
+# cd - # return to previous directory
 
-echo "---- Updating from XMLmao GIT Repo ----"
-cd /owaspbwa/XMLmao-git
-git pull 
-if [ "$?" -ne 0 ] ; then echo "GIT Update from XMLmao GIT Repo Failed!"; exit 1; fi 
-cd - # return to previous directory
+# echo "---- Updating from XMLmao GIT Repo ----"
+# cd /owaspbwa/XMLmao-git
+# git pull 
+# if [ "$?" -ne 0 ] ; then echo "GIT Update from XMLmao GIT Repo Failed!"; exit 1; fi 
+# cd - # return to previous directory
 
-echo "---- Updating from XSSmh GIT Repo ----"
-cd /owaspbwa/XSSmh-git
-git pull 
-if [ "$?" -ne 0 ] ; then echo "GIT Update from XSSmh GIT Repo Failed!"; exit 1; fi 
-cd - # return to previous directory
+# echo "---- Updating from XSSmh GIT Repo ----"
+# cd /owaspbwa/XSSmh-git
+# git pull 
+# if [ "$?" -ne 0 ] ; then echo "GIT Update from XSSmh GIT Repo Failed!"; exit 1; fi 
+# cd - # return to previous directory
 
 echo "---- Updating from ModSecurity Core Rule Set GIT Repo ----"
 cd /owaspbwa/owasp-modsecurity-crs-git/
