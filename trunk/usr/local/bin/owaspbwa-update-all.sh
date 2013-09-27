@@ -43,9 +43,9 @@ echo "---- Updating from WIVET SVN Repo ----"
 svn update /owaspbwa/wivet-svn
 if [ "$?" -ne 0 ] ; then echo "SVN Update from WIVET SVN Repo Failed!"; exit 1; fi 
 
-echo "---- Updating from Mutillidae SVN Repo ----"
-svn update /owaspbwa/mutillidae-svn
-if [ "$?" -ne 0 ] ; then echo "SVN Update from Mutillidae SVN Repo Failed!"; exit 1; fi 
+#echo "---- Updating from Mutillidae SVN Repo ----"
+#svn update /owaspbwa/mutillidae-svn
+#if [ "$?" -ne 0 ] ; then echo "SVN Update from Mutillidae SVN Repo Failed!"; exit 1; fi 
 
 echo "---- Updating from OWASP Bricks SVN Repo ----"
 svn update /owaspbwa/owaspbricks-svn
@@ -130,6 +130,12 @@ cd - # return to previous directory
 # git pull 
 # if [ "$?" -ne 0 ] ; then echo "GIT Update from XSSmh GIT Repo Failed!"; exit 1; fi 
 # cd - # return to previous directory
+
+echo "---- Updating from Mutillidae GIT Repo ----"
+cd /owaspbwa/mutillidae-git/
+git pull 
+if [ "$?" -ne 0 ] ; then echo "GIT Update from Mutillidae GIT Repo Failed!"; exit 1; fi 
+cd - # return to previous directory
 
 echo "---- Updating from ModSecurity Core Rule Set GIT Repo ----"
 cd /owaspbwa/owasp-modsecurity-crs-git/
