@@ -15,6 +15,10 @@ download the .7z archive if possible to save bandwidth (and time).
 you run it only on the "host only" or "NAT" network in the virtual machine 
 settings !!! 
 
+Version 1.1.1 - 2013-09-27
+- Updated Mutillidae and transitioned to use its new Git repository
+- Fixed issue with Tomcat not starting in some circumstances
+
 Version 1.1 - 2013-07-30
 - Updated Mutillidae, Cyclone, and WAVSEP 
 - Updated OWASP Bricks and configured it to pull from SVN
