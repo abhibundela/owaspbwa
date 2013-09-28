@@ -13,14 +13,14 @@ This is the user guide for the [https://www.owasp.org/ Open Web Application Secu
 
 This project includes open source applications of various types.  Below is is a list of the applications and versions currently on the VM.  A the version number ending in +SVN or +GIT indicates that the application is pulled directly to the VM from the application's public source code repository and the code running may be later than the version number indicated.
 
-The lists below are current as of the 1.1 release.
+The lists below are current as of the 1.1.1 release.
 
 == Training Applications ==
 Applications designed for learning which guide the user to specific, intentional vulnerabilities.
   * [http://www.owasp.org/index.php/Category:OWASP_WebGoat_Project OWASP WebGoat] version 5.4+SVN (Java)
   * [https://www.owasp.org/index.php/Category:OWASP_WebGoat.NET OWASP WebGoat.NET] version 2012-07-05+GIT
   * [https://www.owasp.org/index.php/ESAPI_Swingset OWASP ESAPI Java SwingSet Interactive] version 1.0.1+SVN
-  * [http://www.irongeek.com/i.php?page=security/mutillidae-deliberately-vulnerable-php-owasp-top-10 OWASP Mutillidae II] version 2.5.16+SVN (PHP)
+  * [http://www.irongeek.com/i.php?page=security/mutillidae-deliberately-vulnerable-php-owasp-top-10 OWASP Mutillidae II] version 2.6.3.1+SVN (PHP)
   * [http://railsgoat.cktricky.com/ OWASP RailsGoat] (Ruby on Rails)
   * [http://sechow.com/bricks/ OWASP Bricks] version 1.4+SVN (PHP)
   * [http://www.dvwa.co.uk/ Damn Vulnerable Web Application] version 1.8+GIT(PHP)
