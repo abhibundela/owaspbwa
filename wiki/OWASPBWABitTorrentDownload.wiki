@@ -1,0 +1,16 @@
+#summary Links to BitTorrent download pages for OWASPBWA VM.
+
+= Introduction =
+
+In addition to the SourceForge downloads page for the OWASPBWA VM at http://sourceforge.net/projects/owaspbwa/files/, the VM is also available via BitTorrent using [http://burnbit.com BurnBit].
+
+Use one of the links below to download the current VM using BitTorrent.  The VM is available in three formats, all of which contain the same VM:
+
+  * 7zip: Virtual Disk and VMware Virtual Machine files, compressed using 7-zip.  Smallest download, but requires 7-zip to decompress.
+  * Zip: Virtual Disk and VMware Virtual Machine files, compressed using Zip. Most operating systems include tools to decompress Zip files.
+  * Ova: Virtual Machine in Open Virtualization Archive format.  Downloading this format may make use of the VM in tools other than VMware products a bit easier.
+
+|| Version || Format || Download Page || Size || MD5 ||
+|| 1.1.1 || 7-zip|| http://burnbit.com/torrent/259256/OWASP_Broken_Web_Apps_VM_1_1_1_7z || 1.2 GB || 388fe51941133854c895661c7493126c ||
+|| 1.1.1 || Zip || http://burnbit.com/torrent/259254/OWASP_Broken_Web_Apps_VM_1_1_1_zip || 1.6 GB || 6355c7bb17ddbf03e7e8b7b36ed3124c ||
+|| 1.1.1 || OVA|| http://burnbit.com/torrent/259255/OWASP_Broken_Web_Apps_VM_1_1_1_ova || 1.8 GB || 9e3dcc03ac8f8de2b0d02d3b8e68fd56 ||
