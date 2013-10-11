@@ -1,6 +1,4 @@
-#summary Links to !BitTorrent download pages for OWASPBWA VM.
-
-= Introduction =
+#summary Links to BitTorrent download pages for OWASPBWA VM.
 
 In addition to the !SourceForge downloads page for the OWASPBWA VM at http://sourceforge.net/projects/owaspbwa/files/, the VM is also available via !BitTorrent using [http://burnbit.com BurnBit].
 
