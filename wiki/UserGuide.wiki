@@ -18,12 +18,12 @@ The lists below are current as of the 1.1.1 release.
 == Training Applications ==
 Applications designed for learning which guide the user to specific, intentional vulnerabilities.
   * [http://www.owasp.org/index.php/Category:OWASP_WebGoat_Project OWASP WebGoat] version 5.4+SVN (Java)
-  * [https://www.owasp.org/index.php/Category:OWASP_WebGoat.NET OWASP WebGoat.NET] version 2012-07-05+GIT
-  * [https://www.owasp.org/index.php/ESAPI_Swingset OWASP ESAPI Java SwingSet Interactive] version 1.0.1+SVN
+  * [https://www.owasp.org/index.php/Category:OWASP_WebGoat.NET OWASP WebGoat.NET] version 2012-07-05+GIT (ASP.NET)
+  * [https://www.owasp.org/index.php/ESAPI_Swingset OWASP ESAPI Java SwingSet Interactive] version 1.0.1+SVN (Java)
   * [http://www.irongeek.com/i.php?page=security/mutillidae-deliberately-vulnerable-php-owasp-top-10 OWASP Mutillidae II] version 2.6.3.1+SVN (PHP)
   * [http://railsgoat.cktricky.com/ OWASP RailsGoat] (Ruby on Rails)
   * [http://sechow.com/bricks/ OWASP Bricks] version 1.4+SVN (PHP)
-  * [http://www.dvwa.co.uk/ Damn Vulnerable Web Application] version 1.8+GIT(PHP)
+  * [http://www.dvwa.co.uk/ Damn Vulnerable Web Application] version 1.8+GIT (PHP)
   * [http://www.gh0s7.net/ Ghost] (PHP)
   * [https://www.trustwave.com/spiderlabs/ Magical Code Injection Rainbow] version 2013-01-27+GIT (PHP)
 
