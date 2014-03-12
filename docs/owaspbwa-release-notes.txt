@@ -15,6 +15,11 @@ download the .7z archive if possible to save bandwidth (and time).
 you run it only on the "host only" or "NAT" network in the virtual machine 
 settings !!! 
 
+Version 1.2 - 2014-03-??
+- Updated Mutillidae and WAVSEP
+- Removed IP address restrictions on Mutillidae
+- Added bWAPP application
+
 Version 1.1.1 - 2013-09-27
 - Updated Mutillidae and transitioned to use its new Git repository
 - Fixed issue with Tomcat not starting in some circumstances
