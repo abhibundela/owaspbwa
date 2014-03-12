@@ -86,80 +86,94 @@ cd /owaspbwa/owasp-esapi-java-swingset-interactive-svn/SwingSet
 ant
 cd - # return to previous directory
 
-echo "---- Updating from webgoat.net GIT Repo ----"
+echo "---- Updating from webgoat.net Git Repo ----"
 cd /owaspbwa/webgoat.net-git
 git pull 
-if [ "$?" -ne 0 ] ; then echo "GIT Update from webgoat.net GIT Repo Failed!"; exit 1; fi 
+if [ "$?" -ne 0 ] ; then echo "GIT Update from webgoat.net Git Repo Failed!"; exit 1; fi 
 cd - # return to previous directory
 
-echo "---- Updating from WackoPicko GIT Repo ----"
+echo "---- Updating from WackoPicko Git Repo ----"
 cd /owaspbwa/WackoPicko-relative_urls-git
 git pull 
-if [ "$?" -ne 0 ] ; then echo "GIT Update from WackoPicko GIT Repo Failed!"; exit 1; fi 
+if [ "$?" -ne 0 ] ; then echo "GIT Update from WackoPicko Git Repo Failed!"; exit 1; fi 
 cd - # return to previous directory
 
 
-# update the five Spiderlabs apps from Git (commented out since those apps have been moved to a new, unified Git repo that we are not yet using)
+# update the five Spiderlabs apps from Git (commented out since those apps have been moved to a new, unified Git Repo that we are not yet using)
 
-# echo "---- Updating from CryptOMG GIT Repo ----"
+# echo "---- Updating from CryptOMG Git Repo ----"
 # cd /owaspbwa/CryptOMG-git
 # git pull 
-# if [ "$?" -ne 0 ] ; then echo "GIT Update from CryptOMG GIT Repo Failed!"; exit 1; fi 
+# if [ "$?" -ne 0 ] ; then echo "GIT Update from CryptOMG Git Repo Failed!"; exit 1; fi 
 # cd - # return to previous directory
 
-# echo "---- Updating from ShelLOL GIT Repo ----"
+# echo "---- Updating from ShelLOL Git Repo ----"
 # cd /owaspbwa/ShelLOL-git
 # git pull 
-# if [ "$?" -ne 0 ] ; then echo "GIT Update from ShelLOL GIT Repo Failed!"; exit 1; fi 
+# if [ "$?" -ne 0 ] ; then echo "GIT Update from ShelLOL Git Repo Failed!"; exit 1; fi 
 # cd - # return to previous directory
 
-# echo "---- Updating from SQLol GIT Repo ----"
+# echo "---- Updating from SQLol Git Repo ----"
 # cd /owaspbwa/SQLol-git
 # git pull 
-# if [ "$?" -ne 0 ] ; then echo "GIT Update from SQLol GIT Repo Failed!"; exit 1; fi 
+# if [ "$?" -ne 0 ] ; then echo "GIT Update from SQLol Git Repo Failed!"; exit 1; fi 
 # cd - # return to previous directory
 
-# echo "---- Updating from XMLmao GIT Repo ----"
+# echo "---- Updating from XMLmao Git Repo ----"
 # cd /owaspbwa/XMLmao-git
 # git pull 
-# if [ "$?" -ne 0 ] ; then echo "GIT Update from XMLmao GIT Repo Failed!"; exit 1; fi 
+# if [ "$?" -ne 0 ] ; then echo "GIT Update from XMLmao Git Repo Failed!"; exit 1; fi 
 # cd - # return to previous directory
 
-# echo "---- Updating from XSSmh GIT Repo ----"
+# echo "---- Updating from XSSmh Git Repo ----"
 # cd /owaspbwa/XSSmh-git
 # git pull 
-# if [ "$?" -ne 0 ] ; then echo "GIT Update from XSSmh GIT Repo Failed!"; exit 1; fi 
+# if [ "$?" -ne 0 ] ; then echo "GIT Update from XSSmh Git Repo Failed!"; exit 1; fi 
 # cd - # return to previous directory
 
-echo "---- Updating from Mutillidae GIT Repo ----"
+echo "---- Updating from Mutillidae Git Repo ----"
 cd /owaspbwa/mutillidae-git/
 git pull 
-if [ "$?" -ne 0 ] ; then echo "GIT Update from Mutillidae GIT Repo Failed!"; exit 1; fi 
+if [ "$?" -ne 0 ] ; then echo "GIT Update from Mutillidae Git Repo Failed!"; exit 1; fi 
 cd - # return to previous directory
 
-echo "---- Updating from ModSecurity Core Rule Set GIT Repo ----"
+echo "---- Updating from ModSecurity Core Rule Set Git Repo ----"
 cd /owaspbwa/owasp-modsecurity-crs-git/
 git pull 
-if [ "$?" -ne 0 ] ; then echo "GIT Update from ModSecurity Core Rule Set GIT Repo Failed!"; exit 1; fi 
+if [ "$?" -ne 0 ] ; then echo "GIT Update from ModSecurity Core Rule Set Git Repo Failed!"; exit 1; fi 
 cd - # return to previous directory
 
-echo "---- Updating from OWASP RailsGoat GIT Repo ----"
+echo "---- Updating from OWASP RailsGoat Git Repo ----"
 cd /owaspbwa/railsgoat-git
 git pull 
-if [ "$?" -ne 0 ] ; then echo "GIT Update from OWASP RailsGoat GIT Repo Failed!"; exit 1; fi 
+if [ "$?" -ne 0 ] ; then echo "GIT Update from OWASP RailsGoat Git Repo Failed!"; exit 1; fi 
 cd - # return to previous directory
 
-echo "---- Updating from DVWA GIT Repo ----"
+echo "---- Updating from DVWA Git Repo ----"
 cd /owaspbwa/dvwa-git
 git pull 
-if [ "$?" -ne 0 ] ; then echo "GIT Update from DVWA GIT Repo Failed!"; exit 1; fi 
+if [ "$?" -ne 0 ] ; then echo "GIT Update from DVWA Git Repo Failed!"; exit 1; fi 
 cd - # return to previous directory
 
-echo "---- Updating from Cyclone Transfers GIT Repo ----"
+echo "---- Updating from Cyclone Transfers Git Repo ----"
 cd /owaspbwa/bwa_cyclone_transfers-git
 git pull 
-if [ "$?" -ne 0 ] ; then echo "GIT Update from Cyclone Transfers GIT Repo Failed!"; exit 1; fi 
+if [ "$?" -ne 0 ] ; then echo "GIT Update from Cyclone Transfers Git Repo Failed!"; exit 1; fi 
 cd - # return to previous directory
+
+echo "---- Updating from bWAPP Git Repo ----"
+cd /owaspbwa/bwapp-git
+git pull 
+if [ "$?" -ne 0 ] ; then echo "GIT Update from bWAPP Git Repo Failed!"; exit 1; fi 
+cd - # return to previous directory
+
+echo "---- Updating from WAVSEP Git Repo ----"
+cd /owaspbwa/wavsep-git
+git pull 
+if [ "$?" -ne 0 ] ; then echo "GIT Update from WAVSEP Git Repo Failed!"; exit 1; fi 
+cd - # return to previous directory
+
+#### TODO - call script to rebuild / redeploy WAVSEP
 
 echo "---- Fixing file permissions and restarting services ----"
 #when we update the scripts in /usr/local/bin, it may break the permissions
@@ -170,3 +184,6 @@ owaspbwa-fix-file-permissions.sh
 
 #reset the mutillidae database
 wget -qO- http://127.0.0.1/mutillidae/set-up-database.php &> /dev/null
+
+#reset the bWAPP database
+wget -qO- http://127.0.0.1/bWAPP/reset.php?secret=bWAPP &> /dev/null
