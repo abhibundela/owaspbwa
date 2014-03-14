@@ -182,8 +182,5 @@ chmod +x /owaspbwa/owaspbwa-svn/usr/local/bin/*.sh
 #the script below will restart services after fixing permissions
 owaspbwa-fix-file-permissions.sh
 
-#reset the mutillidae database
-wget -qO- http://127.0.0.1/mutillidae/set-up-database.php &> /dev/null
-
-#reset the bWAPP database
-wget -qO- http://127.0.0.1/bWAPP/reset.php?secret=bWAPP &> /dev/null
+# reset databases on various applications that have automated capability
+owaspbwa-reset-databases.sh
