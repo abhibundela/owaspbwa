@@ -7,7 +7,10 @@ How to package a new version of the OWASPBWA VM.
 
 - Update /etc/issue file with new version number
 - Update owaspbwa-readme.txt with new version number
-- Update /var/www/index.html with new version number
+- Update /var/www/index.html with 
+  o New OWASP BWA version number
+  o New applications (if appropriate)
+  o Updated application version numbers (if appropriate)
 - Clean up any data in applications / databases
   o Reset Mutillidae database by visiting http://owaspbwa/mutillidae/set-up-database.php or executing
     wget -qO- http://127.0.0.1/mutillidae/set-up-database.php &> /dev/null
@@ -29,3 +32,7 @@ OR (on 64-bit Windows)
 > "c:\Program Files (x86)\VMware\VMware Workstation\vmware-vdiskmanager.exe" -k -q "OWASP Broken Web Apps-cl1.vmdk"
 - Delete vmware*.log files from VM directory
 - Use 7-zip to compress directory with VM.  Follow the Windows "platform convention" of not including the directory in the .7z or .zip file.
+- Use VMware's OVFTool to create the .ova version with a command line the follow (replace 1.1.1 with the appropriate version number): 
+> "c:\Program Files\VMware\VMware OVF Tool\ovftool.exe" "OWASP Broken Web Apps.vmx" ..\OWASP_Broken_Web_Apps_VM_1.1.1.ova
+- Generate MD5's for 3 distribution files (.zip, .7z, and .ova). These will be verified with what SourceForge reports after uploading the files there.
+ 
