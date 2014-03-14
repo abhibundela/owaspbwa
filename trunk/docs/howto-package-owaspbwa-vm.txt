@@ -7,9 +7,12 @@ How to package a new version of the OWASPBWA VM.
 
 - Update /etc/issue file with new version number
 - Update owaspbwa-readme.txt with new version number
+- Update /var/www/index.html with new version number
 - Clean up any data in applications / databases
   o Reset Mutillidae database by visiting http://owaspbwa/mutillidae/set-up-database.php or executing
     wget -qO- http://127.0.0.1/mutillidae/set-up-database.php &> /dev/null
+  o Reset bWAPP database by visiting http://owaspbwa/bWAPP/reset.php?secret=bWAPP or executing
+    wget -qO- http://127.0.0.1/bWAPP/reset.php?secret=bWAPP &> /dev/null
 - Run owaspbwa-modsecurity-crs-off.sh to ensure that the ModSecurity Core Rule Set is not logging or blocking requests.
 - Stop services by running owaspbwa-services-stop.sh
 - Commit changes to SVN
