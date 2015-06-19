@@ -18,22 +18,13 @@ owaspbwa-services-stop.sh
 echo "---- Updating from OWASP BWA SVN Repo ----"
 # Use --accept theirs-full particularly because database files may have been 
 # altered locally and we are okay with overwriting those with what is in SVN.
+# altered locally and we are okay with overwriting those with what is in SVN.
 svn update --accept theirs-full /owaspbwa/owaspbwa-svn
 if [ "$?" -ne 0 ] ; then echo "SVN Update from OWASP BWA SVN Repo Failed!"; exit 1; fi 
-
-# DVWA has moved to Git
-#echo "---- Updating from DVWA SVN Repo ----"
-#svn update /owaspbwa/dvwa-svn
-#if [ "$?" -ne 0 ] ; then echo "SVN Update from DVWA SVN Repo Failed!"; exit 1; fi 
 
 echo "---- Updating from OWASP ZAP WAVE SVN Repo ----"
 svn update /owaspbwa/owasp-zap-wave-svn
 if [ "$?" -ne 0 ] ; then echo "SVN Update from OWASP ZAP WAVE SVN Repo Failed!"; exit 1; fi 
-
-# The ModSecurity Core Rule Set has moved to GitHub, so we no longer update it here
-#echo "---- Updating from ModSecurity Core Rule Set SVN Repo ----"
-#svn update /owaspbwa/modsecurity-crs-svn
-#if [ "$?" -ne 0 ] ; then echo "SVN Update from ModSecurity Core Rule Set SVN Repo Failed!"; exit 1; fi 
 
 echo "---- Updating from BodgeIt SVN Repo ----"
 svn update /owaspbwa/bodgeit-svn
@@ -42,10 +33,6 @@ if [ "$?" -ne 0 ] ; then echo "SVN Update from BodgeIt SVN Repo Failed!"; exit 1
 echo "---- Updating from WIVET SVN Repo ----"
 svn update /owaspbwa/wivet-svn
 if [ "$?" -ne 0 ] ; then echo "SVN Update from WIVET SVN Repo Failed!"; exit 1; fi 
-
-#echo "---- Updating from Mutillidae SVN Repo ----"
-#svn update /owaspbwa/mutillidae-svn
-#if [ "$?" -ne 0 ] ; then echo "SVN Update from Mutillidae SVN Repo Failed!"; exit 1; fi 
 
 echo "---- Updating from OWASP Bricks SVN Repo ----"
 svn update /owaspbwa/owaspbricks-svn
@@ -98,38 +85,11 @@ git pull
 if [ "$?" -ne 0 ] ; then echo "GIT Update from WackoPicko Git Repo Failed!"; exit 1; fi 
 cd - # return to previous directory
 
-
-# update the five Spiderlabs apps from Git (commented out since those apps have been moved to a new, unified Git Repo that we are not yet using)
-
-# echo "---- Updating from CryptOMG Git Repo ----"
-# cd /owaspbwa/CryptOMG-git
-# git pull 
-# if [ "$?" -ne 0 ] ; then echo "GIT Update from CryptOMG Git Repo Failed!"; exit 1; fi 
-# cd - # return to previous directory
-
-# echo "---- Updating from ShelLOL Git Repo ----"
-# cd /owaspbwa/ShelLOL-git
-# git pull 
-# if [ "$?" -ne 0 ] ; then echo "GIT Update from ShelLOL Git Repo Failed!"; exit 1; fi 
-# cd - # return to previous directory
-
-# echo "---- Updating from SQLol Git Repo ----"
-# cd /owaspbwa/SQLol-git
-# git pull 
-# if [ "$?" -ne 0 ] ; then echo "GIT Update from SQLol Git Repo Failed!"; exit 1; fi 
-# cd - # return to previous directory
-
-# echo "---- Updating from XMLmao Git Repo ----"
-# cd /owaspbwa/XMLmao-git
-# git pull 
-# if [ "$?" -ne 0 ] ; then echo "GIT Update from XMLmao Git Repo Failed!"; exit 1; fi 
-# cd - # return to previous directory
-
-# echo "---- Updating from XSSmh Git Repo ----"
-# cd /owaspbwa/XSSmh-git
-# git pull 
-# if [ "$?" -ne 0 ] ; then echo "GIT Update from XSSmh Git Repo Failed!"; exit 1; fi 
-# cd - # return to previous directory
+echo "---- Updating from MCIR Git Repo ----"
+cd /owaspbwa/MCIR-git
+git pull 
+if [ "$?" -ne 0 ] ; then echo "GIT Update from MCIR Git Repo Failed!"; exit 1; fi 
+cd - # return to previous directory
 
 echo "---- Updating from Mutillidae Git Repo ----"
 cd /owaspbwa/mutillidae-git/
@@ -143,11 +103,11 @@ git pull
 if [ "$?" -ne 0 ] ; then echo "GIT Update from ModSecurity Core Rule Set Git Repo Failed!"; exit 1; fi 
 cd - # return to previous directory
 
-echo "---- Updating from OWASP RailsGoat Git Repo ----"
-cd /owaspbwa/railsgoat-git
-git pull 
-if [ "$?" -ne 0 ] ; then echo "GIT Update from OWASP RailsGoat Git Repo Failed!"; exit 1; fi 
-cd - # return to previous directory
+#echo "---- Updating from OWASP RailsGoat Git Repo ----"
+#cd /owaspbwa/railsgoat-git
+#git pull 
+#if [ "$?" -ne 0 ] ; then echo "GIT Update from OWASP RailsGoat Git Repo Failed!"; exit 1; fi 
+#cd - # return to previous directory
 
 echo "---- Updating from DVWA Git Repo ----"
 cd /owaspbwa/dvwa-git

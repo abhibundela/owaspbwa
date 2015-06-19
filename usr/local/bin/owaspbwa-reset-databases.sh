@@ -13,3 +13,8 @@ wget -qO- http://127.0.0.1/owaspbricks/config/setup.php  &> /dev/null
 
 # reset the DVWA database
 wget -qO- http://127.0.0.1/dvwa/setup.php --post-data="create_db=Create+%2F+Reset+Database" &> /dev/null
+
+#reset the MCIR sqlol database
+wget -qO- http://127.0.0.1/MCIR/sqlol/resetbutton.php  &> /dev/null
+
+

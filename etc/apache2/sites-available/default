@@ -76,6 +76,7 @@
    RailsEnv development
    <Directory /var/www/cyclone>
       Options -MultiViews
+      PassengerRuby /usr/local/rvm/wrappers/ruby-1.9.3-p286/ruby
    </Directory>
 # end changes for cyclone_app installation
 
@@ -83,10 +84,10 @@
 
    RailsBaseURI /railsgoat
    RailsEnv development
-   PassengerRuby /usr/local/rvm/gems/ruby-1.9.3-p286\@railsgoat/bin/ruby
    #PassengerAppRoot /owaspbwa/railsgoat-git
    <Directory /var/www/railsgoat>
       Options -MultiViews
+      PassengerRuby /usr/local/rvm/wrappers/ruby-1.9.3-p484@railsgoat/ruby
    </Directory>
 # end changes for RailsGoat installation
 
