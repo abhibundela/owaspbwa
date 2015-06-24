@@ -15,11 +15,13 @@ download the .7z archive if possible to save bandwidth (and time).
 you run it only on the "host only" or "NAT" network in the virtual machine 
 settings !!! 
 
-Version 1.2rc1 - 2014-03-14
+Version 1.2rc1 - 2015-06-??
 - Updated Mutillidae and WAVSEP
   o Removed IP address restrictions on Mutillidae
   o Added script to rebuild WAVSEP
 - Added bWAPP application and script to automatically update bWAPP
+- Added OWASP Security Shepherd application and supporting scripts.
+- Likely other application updates
 
 Version 1.1.1 - 2013-09-27
 - Updated Mutillidae and transitioned to use its new Git repository
