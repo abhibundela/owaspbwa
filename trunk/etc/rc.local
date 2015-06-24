@@ -25,6 +25,9 @@ cd /owaspbwa/owasp-1-liner-git
 #export HOME=/root 
 #/usr/local/rvm/rubies/ruby-1.9.3-p286/bin/ruby /usr/local/rvm/gems/ruby-1.9.3-p286/bin/rails s -P /owaspbwa/railsgoat-git/tmp/pids/server.pid -c /owaspbwa/railsgoat-git/config.ru -d > /railgoat-stdout.txt 2> /railsgoat-stderr.txt
 
+# start second instance of mysql on 3307 (used by SecurityShepherd)
+/usr/bin/mysqld_multi start
+
 # display some info to the user
 
 /usr/local/bin/rc.local-owaspbwa-info.sh > /dev/tty1 # output to first virtual console
