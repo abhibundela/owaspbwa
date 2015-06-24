@@ -18,10 +18,10 @@ wget -qO- http://127.0.0.1/dvwa/setup.php --post-data="create_db=Create+%2F+Rese
 wget -qO- http://127.0.0.1/MCIR/sqlol/resetbutton.php  &> /dev/null
 
 #reset the security shepherd database
-cat /owaspbwa/SecurityShepherd-git/SecurityShepherdCore/database/dropAndRecreateCoreDB.sql | mysql --user="securityshepherd" --password="securityshepherd"
-cat /owaspbwa/SecurityShepherd-git/SecurityShepherdCore/database/SHA*.sql | mysql --user="securityshepherd" --password="securityshepherd" --database="core"
-cat /owaspbwa/SecurityShepherd-git/SecurityShepherdCore/database/coreSchema.sql | mysql --user="securityshepherd" --password="securityshepherd"
-cat /owaspbwa/SecurityShepherd-git/SecurityShepherdCore/database/moduleSchemas.sql | mysql --user="securityshepherd" --password="securityshepherd"
+cat /owaspbwa/SecurityShepherd-git/SecurityShepherdCore/database/dropAndRecreateCoreDB.sql | mysql -h 127.0.0.1 --port=3307 --user="securityshepherd" --password="securityshepherd"
+cat /owaspbwa/SecurityShepherd-git/SecurityShepherdCore/database/SHA*.sql | mysql -h 127.0.0.1 --port=3307 --user="securityshepherd" --password="securityshepherd" --database="core"
+cat /owaspbwa/SecurityShepherd-git/SecurityShepherdCore/database/coreSchema.sql | mysql -h 127.0.0.1 --port=3307 --user="securityshepherd" --password="securityshepherd"
+cat /owaspbwa/SecurityShepherd-git/SecurityShepherdCore/database/moduleSchemas.sql | mysql -h 127.0.0.1 --port=3307 --user="securityshepherd" --password="securityshepherd"
 
 
 
