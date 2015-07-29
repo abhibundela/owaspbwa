@@ -1,0 +1,25 @@
+127.0.0.1	localhost
+127.0.1.1	owaspbwa	owaspbwa.localdomain
+
+# following lines are for the hackxor application
+127.0.0.1	wraithmail
+127.0.0.1	cloaknet
+127.0.0.1	gghb
+127.0.0.1	hub71
+127.0.0.1	utrack
+127.0.0.1	wraithbox
+
+# the following are used for OWASP 1 Liner
+127.0.0.1	local.1-liner.org
+127.0.0.1	other.1-liner.org
+127.0.0.1	local.l-liner.org
+127.0.0.1	3rd-party.info
+127.0.0.1	attackr.se
+
+# The following lines are desirable for IPv6 capable hosts
+::1     localhost ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+ff02::3 ip6-allhosts
