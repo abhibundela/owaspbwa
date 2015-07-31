@@ -25,7 +25,7 @@ Applications designed for learning which guide the user to specific, intentional
   * [http://sechow.com/bricks/ OWASP Bricks] version 2.2+SVN (PHP)
   * [https://www.owasp.org/index.php/OWASP_Security_Shepherd OWASP Security Shepherd] version 2.4+GIT (Java)
   * [http://www.gh0s7.net/ Ghost] (PHP)
-  * [https://www.trustwave.com/spiderlabs/ Magical Code Injection Rainbow] version 2014-08-20+GIT (PHP)
+  * [https://github.com/SpiderLabs/MCIR Magical Code Injection Rainbow] version 2014-08-20+GIT (PHP)
   * [http://www.itsecgames.com/ bWAPP] version 1.9+GIT (PHP)
   * [http://www.dvwa.co.uk/ Damn Vulnerable Web Application] version 1.8+GIT (PHP)
 
