@@ -33,7 +33,7 @@ Applications designed for learning which guide the user to specific, intentional
 == Realistic, Intentionally Vulnerable Applications ==
 Applications that have a wide variety of intentional security vulnerabilities, but are designed to look and work like a real application.
   * [http://www.owasp.org/index.php/Category:OWASP_Vicnum_Project OWASP Vicnum] version 1.5 (PHP/Perl)
-  * [http://1-liner.org/ OWASP 1-Liner] (Java/JavaScript)
+  * [http://1-liner.org/ OWASP 1-Liner] (Java/!JavaScript)
   * [http://google-gruyere.appspot.com/ Google Gruyere] version 2010-07-15 (Python)
   * [http://hackxor.sourceforge.net/cgi-bin/index.pl Hackxor] version 2011-04-06 (Java JSP)
   * [https://github.com/adamdoupe/WackoPicko WackoPicko] version 2011-07-12+GIT (PHP)
